@@ -1,0 +1,2414 @@
+{
+  "Rows": {
+    "RowColumnAttachedInfos": {
+      "8": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 30.0
+        }
+      },
+      "9": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 10.0
+        }
+      },
+      "11": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 30.0
+        }
+      },
+      "12": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 10.0
+        }
+      },
+      "13": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 30.0
+        }
+      },
+      "14": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 10.0
+        }
+      },
+      "15": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 20.0
+        }
+      },
+      "16": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 20.0
+        }
+      },
+      "17": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 40.0
+        }
+      },
+      "34": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 10.0
+        }
+      }
+    },
+    "InLogicalVisibleIndexes": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      37,
+      38,
+      39,
+      40
+    ],
+    "Count": 41
+  },
+  "Cols": {
+    "RowColumnAttachedInfos": {
+      "73": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 20.0,
+          "IsHidden": true
+        }
+      }
+    },
+    "InLogicalVisibleIndexes": [
+      62,
+      63,
+      64,
+      65,
+      66,
+      67,
+      68,
+      69,
+      70,
+      71,
+      72,
+      73,
+      76
+    ],
+    "Count": 77
+  },
+  "Values": {
+    "1,1": "検索用SQLクエリ",
+    "1,48": "URLから遷移→印刷画面",
+    "2,1": "建屋の値で階を絞り込む",
+    "2,17": "届出者部署の値で氏名を絞り込む",
+    "2,35": "ログインユーザ",
+    "2,40": "%CurrentUser%",
+    "2,48": "URL_届出ID",
+    "3,1": "階の値で部屋番号を絞り込む",
+    "3,10": "IF(N6=\"\",\"0\",\"aaaa\")",
+    "3,48": "URL_終夜フラグ",
+    "7,1": "終夜運転機器名称",
+    "7,13": "建屋",
+    "7,25": "階",
+    "7,37": "運転部屋",
+    "10,1": "届出者部署",
+    "10,13": "届出者氏名",
+    "10,25": "明日以降開始の届出",
+    "10,34": "過去の届出",
+    "11,43": "条件クリア",
+    "15,3": "終夜区分",
+    "15,7": "運転部屋",
+    "15,15": "終夜運転機器名称",
+    "15,25": "運転期間",
+    "15,35": "届出者部署",
+    "15,43": "届出者氏名",
+    "15,49": "休日夜間連絡先",
+    "15,58": "申請ID",
+    "15,64": "届出ID",
+    "16,25": "開始日",
+    "16,30": "終了日",
+    "17,1": "印刷",
+    "17,56": "届出取下"
+  },
+  "Formulas": {
+    "2,28": "IF(B12=\"\",\"99999999\",0)",
+    "2,10": "IF(N9=\"\",\"LL\",\"\")",
+    "3,10": "IF(Z9=\"\",\"0\",\"aaaa\")",
+    "17,3": "IF(OR(BS18=\"0\",BS18=\"\"),\"通常\",\"長期\")",
+    "2,54": "IFERROR(GETURLQUERYVALUE(\"notification_id\"),\"\")",
+    "3,54": "IFERROR(GETURLQUERYVALUE(\"longterm\"),\"\")"
+  },
+  "AttachInfos": {
+    "1,1": {
+      "CellType": {
+        "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
+            "ConditionAndCommandPairList": [
+              {
+                "Condition": {
+                  "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                  "param": {
+                    "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
+                    "cellLocations": [
+                      {
+                        "SerializeProperty": "=届出一覧!Z12"
+                      }
+                    ]
+                  },
+                  "value": "1"
+                },
+                "CommandList": [
+                  {
+                    "$type": "Forguncy.Model.QueryCommand, ServerDesignerCommon",
+                    "TargetTableName": "T_OvernightNotification",
+                    "SqlCondition": {
+                      "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+                      "Condition1": {
+                        "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+                        "Condition1": {
+                          "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+                          "Condition1": {
+                            "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+                            "Condition1": {
+                              "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+                              "Condition1": {
+                                "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+                                "Condition1": {
+                                  "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+                                  "Condition1": {
+                                    "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+                                    "Condition1": {
+                                      "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+                                      "Condition1": {
+                                        "$type": "ForguncyDataAccess.TextCESqlCondition, ForguncyDataAccess",
+                                        "CompareType": 6,
+                                        "ColumnBindingInfo": {
+                                          "TableName": "T_OvernightNotification",
+                                          "ColumnName": "overnight_registration_id",
+                                          "RelationBinding": {
+                                            "RelatedTable": "T_OvernightRegistration",
+                                            "RelatedColumn": "overnight_registration_id",
+                                            "DisplayColumn": "overnight_epuipment_name"
+                                          }
+                                        },
+                                        "Value": {
+                                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                          "SerializeProperty": "=届出一覧!B9"
+                                        }
+                                      },
+                                      "Condition2": {
+                                        "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                                        "ColumnBindingInfo": {
+                                          "TableName": "T_OvernightNotification",
+                                          "ColumnName": "overnight_registration_id",
+                                          "RelationBinding": {
+                                            "RelatedTable": "T_OvernightRegistration",
+                                            "RelatedColumn": "overnight_registration_id",
+                                            "DisplayColumn": "First_Classification_Code"
+                                          }
+                                        },
+                                        "Value": {
+                                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                          "SerializeProperty": "=届出一覧!N9"
+                                        }
+                                      }
+                                    },
+                                    "Condition2": {
+                                      "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                                      "ColumnBindingInfo": {
+                                        "TableName": "T_OvernightNotification",
+                                        "ColumnName": "overnight_registration_id",
+                                        "RelationBinding": {
+                                          "RelatedTable": "T_OvernightRegistration",
+                                          "RelatedColumn": "overnight_registration_id",
+                                          "DisplayColumn": "Second_Classification_Code"
+                                        }
+                                      },
+                                      "Value": {
+                                        "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                        "SerializeProperty": "=届出一覧!Z9"
+                                      }
+                                    }
+                                  },
+                                  "Condition2": {
+                                    "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                                    "ColumnBindingInfo": {
+                                      "TableName": "T_OvernightNotification",
+                                      "ColumnName": "overnight_registration_id",
+                                      "RelationBinding": {
+                                        "RelatedTable": "T_OvernightRegistration",
+                                        "RelatedColumn": "overnight_registration_id",
+                                        "DisplayColumn": "basic_room_Information_id"
+                                      }
+                                    },
+                                    "Value": {
+                                      "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                      "SerializeProperty": "=届出一覧!AL9"
+                                    }
+                                  }
+                                },
+                                "Condition2": {
+                                  "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                                  "ColumnBindingInfo": {
+                                    "TableName": "T_OvernightNotification",
+                                    "ColumnName": "notifier_dept_code"
+                                  },
+                                  "Value": {
+                                    "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                    "SerializeProperty": "=届出一覧!B12"
+                                  }
+                                }
+                              },
+                              "Condition2": {
+                                "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                                "ColumnBindingInfo": {
+                                  "TableName": "T_OvernightNotification",
+                                  "ColumnName": "notifier_z_code"
+                                },
+                                "Value": {
+                                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                  "SerializeProperty": "=届出一覧!N12"
+                                }
+                              }
+                            },
+                            "Condition2": {
+                              "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                              "CompareType": 1,
+                              "ColumnBindingInfo": {
+                                "TableName": "T_OvernightNotification",
+                                "ColumnName": "delete_flg"
+                              },
+                              "Value": "1"
+                            }
+                          },
+                          "Condition2": {
+                            "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                            "CompareType": 1,
+                            "ColumnBindingInfo": {
+                              "TableName": "T_OvernightNotification",
+                              "ColumnName": "overnight_registration_id",
+                              "RelationBinding": {
+                                "RelatedTable": "T_OvernightRegistration",
+                                "RelatedColumn": "overnight_registration_id",
+                                "DisplayColumn": "delete_flg"
+                              }
+                            },
+                            "Value": "1"
+                          }
+                        },
+                        "Condition2": {
+                          "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                          "CompareType": 2,
+                          "ColumnBindingInfo": {
+                            "TableName": "T_OvernightNotification",
+                            "ColumnName": "overnight_start_dete"
+                          },
+                          "Value": {
+                            "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                            "SerializeProperty": "=TODAY()"
+                          }
+                        }
+                      },
+                      "Condition2": {
+                        "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                        "CompareType": 1,
+                        "ColumnBindingInfo": {
+                          "TableName": "T_OvernightNotification",
+                          "ColumnName": "FGC_State"
+                        },
+                        "Value": "取下"
+                      }
+                    },
+                    "Params": [
+                      "=B9",
+                      "=N9",
+                      "=Z9",
+                      "=AL9",
+                      "=B12",
+                      "=N12"
+                    ],
+                    "ID": "08913513306b464990661cffe2d85da2"
+                  }
+                ],
+                "Comments": "明日以降に開始",
+                "ID": "01726dcf-efee-4aa7-a8c6-0b79d6174224"
+              },
+              {
+                "Condition": {
+                  "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                  "param": {
+                    "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
+                    "cellLocations": [
+                      {
+                        "SerializeProperty": "=届出一覧!AI12"
+                      }
+                    ]
+                  },
+                  "value": "1"
+                },
+                "CommandList": [
+                  {
+                    "$type": "Forguncy.Model.QueryCommand, ServerDesignerCommon",
+                    "TargetTableName": "T_OvernightNotification",
+                    "SqlCondition": {
+                      "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+                      "Condition1": {
+                        "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+                        "Condition1": {
+                          "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+                          "Condition1": {
+                            "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+                            "Condition1": {
+                              "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+                              "Condition1": {
+                                "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+                                "Condition1": {
+                                  "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+                                  "Condition1": {
+                                    "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+                                    "Condition1": {
+                                      "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+                                      "Condition1": {
+                                        "$type": "ForguncyDataAccess.TextCESqlCondition, ForguncyDataAccess",
+                                        "CompareType": 6,
+                                        "ColumnBindingInfo": {
+                                          "TableName": "T_OvernightNotification",
+                                          "ColumnName": "overnight_registration_id",
+                                          "RelationBinding": {
+                                            "RelatedTable": "T_OvernightRegistration",
+                                            "RelatedColumn": "overnight_registration_id",
+                                            "DisplayColumn": "overnight_epuipment_name"
+                                          }
+                                        },
+                                        "Value": {
+                                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                          "SerializeProperty": "=届出一覧!B9"
+                                        }
+                                      },
+                                      "Condition2": {
+                                        "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                                        "ColumnBindingInfo": {
+                                          "TableName": "T_OvernightNotification",
+                                          "ColumnName": "overnight_registration_id",
+                                          "RelationBinding": {
+                                            "RelatedTable": "T_OvernightRegistration",
+                                            "RelatedColumn": "overnight_registration_id",
+                                            "DisplayColumn": "First_Classification_Code"
+                                          }
+                                        },
+                                        "Value": {
+                                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                          "SerializeProperty": "=届出一覧!N9"
+                                        }
+                                      }
+                                    },
+                                    "Condition2": {
+                                      "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                                      "ColumnBindingInfo": {
+                                        "TableName": "T_OvernightNotification",
+                                        "ColumnName": "overnight_registration_id",
+                                        "RelationBinding": {
+                                          "RelatedTable": "T_OvernightRegistration",
+                                          "RelatedColumn": "overnight_registration_id",
+                                          "DisplayColumn": "Second_Classification_Code"
+                                        }
+                                      },
+                                      "Value": {
+                                        "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                        "SerializeProperty": "=届出一覧!Z9"
+                                      }
+                                    }
+                                  },
+                                  "Condition2": {
+                                    "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                                    "ColumnBindingInfo": {
+                                      "TableName": "T_OvernightNotification",
+                                      "ColumnName": "overnight_registration_id",
+                                      "RelationBinding": {
+                                        "RelatedTable": "T_OvernightRegistration",
+                                        "RelatedColumn": "overnight_registration_id",
+                                        "DisplayColumn": "basic_room_Information_id"
+                                      }
+                                    },
+                                    "Value": {
+                                      "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                      "SerializeProperty": "=届出一覧!AL9"
+                                    }
+                                  }
+                                },
+                                "Condition2": {
+                                  "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                                  "ColumnBindingInfo": {
+                                    "TableName": "T_OvernightNotification",
+                                    "ColumnName": "notifier_dept_code"
+                                  },
+                                  "Value": {
+                                    "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                    "SerializeProperty": "=届出一覧!B12"
+                                  }
+                                }
+                              },
+                              "Condition2": {
+                                "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                                "ColumnBindingInfo": {
+                                  "TableName": "T_OvernightNotification",
+                                  "ColumnName": "notifier_z_code"
+                                },
+                                "Value": {
+                                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                  "SerializeProperty": "=届出一覧!N12"
+                                }
+                              }
+                            },
+                            "Condition2": {
+                              "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                              "CompareType": 1,
+                              "ColumnBindingInfo": {
+                                "TableName": "T_OvernightNotification",
+                                "ColumnName": "delete_flg"
+                              },
+                              "Value": "1"
+                            }
+                          },
+                          "Condition2": {
+                            "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                            "CompareType": 1,
+                            "ColumnBindingInfo": {
+                              "TableName": "T_OvernightNotification",
+                              "ColumnName": "overnight_registration_id",
+                              "RelationBinding": {
+                                "RelatedTable": "T_OvernightRegistration",
+                                "RelatedColumn": "overnight_registration_id",
+                                "DisplayColumn": "delete_flg"
+                              }
+                            },
+                            "Value": "1"
+                          }
+                        },
+                        "Condition2": {
+                          "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                          "CompareType": 4,
+                          "ColumnBindingInfo": {
+                            "TableName": "T_OvernightNotification",
+                            "ColumnName": "overnight_end_date"
+                          },
+                          "Value": {
+                            "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                            "SerializeProperty": "=TODAY()"
+                          }
+                        }
+                      },
+                      "Condition2": {
+                        "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                        "CompareType": 1,
+                        "ColumnBindingInfo": {
+                          "TableName": "T_OvernightNotification",
+                          "ColumnName": "FGC_State"
+                        },
+                        "Value": "取下"
+                      }
+                    },
+                    "Params": [
+                      "=B9",
+                      "=N9",
+                      "=Z9",
+                      "=AL9",
+                      "=B12",
+                      "=N12"
+                    ],
+                    "ID": "ac1645ccd7374c019e97822e53a71f41"
+                  }
+                ],
+                "Comments": "前日までに終了",
+                "ID": "dccfc5ea-40f3-4ece-a5f5-de3afc408318"
+              },
+              {
+                "CommandList": [
+                  {
+                    "$type": "Forguncy.Model.QueryCommand, ServerDesignerCommon",
+                    "TargetTableName": "T_OvernightNotification",
+                    "SqlCondition": {
+                      "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+                      "Condition1": {
+                        "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+                        "Condition1": {
+                          "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+                          "Condition1": {
+                            "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+                            "Condition1": {
+                              "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+                              "Condition1": {
+                                "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+                                "Condition1": {
+                                  "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+                                  "Condition1": {
+                                    "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+                                    "Condition1": {
+                                      "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+                                      "Condition1": {
+                                        "$type": "ForguncyDataAccess.TextCESqlCondition, ForguncyDataAccess",
+                                        "CompareType": 6,
+                                        "ColumnBindingInfo": {
+                                          "TableName": "T_OvernightNotification",
+                                          "ColumnName": "overnight_registration_id",
+                                          "RelationBinding": {
+                                            "RelatedTable": "T_OvernightRegistration",
+                                            "RelatedColumn": "overnight_registration_id",
+                                            "DisplayColumn": "overnight_epuipment_name"
+                                          }
+                                        },
+                                        "Value": {
+                                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                          "SerializeProperty": "=届出一覧!B9"
+                                        }
+                                      },
+                                      "Condition2": {
+                                        "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                                        "ColumnBindingInfo": {
+                                          "TableName": "T_OvernightNotification",
+                                          "ColumnName": "overnight_registration_id",
+                                          "RelationBinding": {
+                                            "RelatedTable": "T_OvernightRegistration",
+                                            "RelatedColumn": "overnight_registration_id",
+                                            "DisplayColumn": "First_Classification_Code"
+                                          }
+                                        },
+                                        "Value": {
+                                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                          "SerializeProperty": "=届出一覧!N9"
+                                        }
+                                      }
+                                    },
+                                    "Condition2": {
+                                      "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                                      "ColumnBindingInfo": {
+                                        "TableName": "T_OvernightNotification",
+                                        "ColumnName": "overnight_registration_id",
+                                        "RelationBinding": {
+                                          "RelatedTable": "T_OvernightRegistration",
+                                          "RelatedColumn": "overnight_registration_id",
+                                          "DisplayColumn": "Second_Classification_Code"
+                                        }
+                                      },
+                                      "Value": {
+                                        "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                        "SerializeProperty": "=届出一覧!Z9"
+                                      }
+                                    }
+                                  },
+                                  "Condition2": {
+                                    "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                                    "ColumnBindingInfo": {
+                                      "TableName": "T_OvernightNotification",
+                                      "ColumnName": "overnight_registration_id",
+                                      "RelationBinding": {
+                                        "RelatedTable": "T_OvernightRegistration",
+                                        "RelatedColumn": "overnight_registration_id",
+                                        "DisplayColumn": "basic_room_Information_id"
+                                      }
+                                    },
+                                    "Value": {
+                                      "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                      "SerializeProperty": "=届出一覧!AL9"
+                                    }
+                                  }
+                                },
+                                "Condition2": {
+                                  "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                                  "ColumnBindingInfo": {
+                                    "TableName": "T_OvernightNotification",
+                                    "ColumnName": "notifier_dept_code"
+                                  },
+                                  "Value": {
+                                    "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                    "SerializeProperty": "=届出一覧!B12"
+                                  }
+                                }
+                              },
+                              "Condition2": {
+                                "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                                "ColumnBindingInfo": {
+                                  "TableName": "T_OvernightNotification",
+                                  "ColumnName": "notifier_z_code"
+                                },
+                                "Value": {
+                                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                  "SerializeProperty": "=届出一覧!N12"
+                                }
+                              }
+                            },
+                            "Condition2": {
+                              "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                              "CompareType": 1,
+                              "ColumnBindingInfo": {
+                                "TableName": "T_OvernightNotification",
+                                "ColumnName": "delete_flg"
+                              },
+                              "Value": "1"
+                            }
+                          },
+                          "Condition2": {
+                            "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                            "CompareType": 1,
+                            "ColumnBindingInfo": {
+                              "TableName": "T_OvernightNotification",
+                              "ColumnName": "overnight_registration_id",
+                              "RelationBinding": {
+                                "RelatedTable": "T_OvernightRegistration",
+                                "RelatedColumn": "overnight_registration_id",
+                                "DisplayColumn": "delete_flg"
+                              }
+                            },
+                            "Value": "1"
+                          }
+                        },
+                        "Condition2": {
+                          "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+                          "Condition1": {
+                            "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                            "CompareType": 5,
+                            "ColumnBindingInfo": {
+                              "TableName": "T_OvernightNotification",
+                              "ColumnName": "overnight_start_dete"
+                            },
+                            "Value": {
+                              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                              "SerializeProperty": "=TODAY()"
+                            },
+                            "LeftBracket": 1
+                          },
+                          "Condition2": {
+                            "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                            "CompareType": 2,
+                            "ColumnBindingInfo": {
+                              "TableName": "T_OvernightNotification",
+                              "ColumnName": "overnight_end_date"
+                            },
+                            "Value": {
+                              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                              "SerializeProperty": "=TODAY()"
+                            },
+                            "RightBracket": 1
+                          }
+                        }
+                      },
+                      "Condition2": {
+                        "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                        "CompareType": 1,
+                        "ColumnBindingInfo": {
+                          "TableName": "T_OvernightNotification",
+                          "ColumnName": "FGC_State"
+                        },
+                        "Value": "取下"
+                      }
+                    },
+                    "Params": [
+                      "=B9",
+                      "=N9",
+                      "=Z9",
+                      "=AL9",
+                      "=B12",
+                      "=N12"
+                    ],
+                    "ID": "2d5b9e8596c146dc80476d1600ff20a0"
+                  }
+                ],
+                "ID": "6a51bf13-ad35-474b-a2ee-801c9000dec1"
+              }
+            ]
+          }
+        ],
+        "Text": "検索用SQLクエリ",
+        "TemplateKey": "_RS_Normal_Style7"
+      }
+    },
+    "1,48": {
+      "CellType": {
+        "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
+            "ConditionAndCommandPairList": [
+              {
+                "Condition": {
+                  "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                  "param": {
+                    "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
+                    "cellLocations": [
+                      {
+                        "SerializeProperty": "=届出一覧!BC4"
+                      }
+                    ]
+                  },
+                  "value": "1"
+                },
+                "CommandList": [
+                  {
+                    "$type": "Forguncy.Model.ShowPopupCommand, ServerDesignerCommon",
+                    "PageName": "現場表示印刷画面_長期",
+                    "PassValues": [
+                      {
+                        "Source": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=届出一覧!BC3"
+                        },
+                        "TargetCell": {
+                          "SerializeProperty": "=現場表示印刷画面_長期!notification_id"
+                        }
+                      }
+                    ],
+                    "DeleteCachedQuery": true
+                  }
+                ],
+                "ID": "0982830c-c9d3-4ba0-a751-bf512d8ad00c"
+              },
+              {
+                "CommandList": [
+                  {
+                    "$type": "Forguncy.Model.ShowPopupCommand, ServerDesignerCommon",
+                    "PageName": "現場表示印刷画面_通常",
+                    "PassValues": [
+                      {
+                        "Source": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=届出一覧!BC3"
+                        },
+                        "TargetCell": {
+                          "SerializeProperty": "=現場表示印刷画面_通常!notification_id"
+                        }
+                      }
+                    ],
+                    "DeleteCachedQuery": true
+                  }
+                ],
+                "ID": "e0243d44-59ba-45d7-b145-06c1183f78ae"
+              }
+            ]
+          }
+        ],
+        "Text": "URLから遷移→印刷画面",
+        "TemplateKey": "_RS_Normal_Style7"
+      }
+    },
+    "8,1": {
+      "CellType": {
+        "$type": "Forguncy.TextCellType, ServerDesignerCommon",
+        "SavedValidators": [
+          {
+            "$type": "Forguncy.CellTypes.Models.UniqueValidadator, ServerDesignerCommon"
+          }
+        ],
+        "TemplateKey": "_RS_LightLine_Translucent_SmallRoundCorner_Normal1",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.OperateCellTypeCommand, ServerDesignerCommon",
+            "TargetPageElement": {
+              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+              "SerializeProperty": "=届出一覧!B2"
+            },
+            "TargetType": "Forguncy.ButtonCellType, ServerDesignerCommon, Version=8.0.20.0, Culture=neutral, PublicKeyToken=967100671921c115",
+            "MethodName": "ExecuteCommand",
+            "ParameterValues": {},
+            "RetrunParamNames": {}
+          }
+        ]
+      }
+    },
+    "8,13": {
+      "CellType": {
+        "$type": "Forguncy.DropDownListCellType, ServerDesignerCommon",
+        "SelectOnly": false,
+        "ValidateItem": true,
+        "TemplateKey": "_RS_LightLine_Translucent_SmallRoundCorner_Normal1",
+        "IsBounding": true,
+        "Items": [
+          {
+            "Value": "項目1",
+            "DisplayValue": "項目1"
+          },
+          {
+            "Value": "項目2",
+            "DisplayValue": "項目2"
+          },
+          {
+            "Value": "項目3",
+            "DisplayValue": "項目3"
+          }
+        ],
+        "DataSource": "V_BasicRoomInformation",
+        "ValueColumnBindingInfo": {
+          "TableName": "V_BasicRoomInformation",
+          "ColumnName": "First_Classification_Code"
+        },
+        "DisplayColumnBindingInfo": {
+          "TableName": "V_BasicRoomInformation",
+          "ColumnName": "First_Classification_Name"
+        },
+        "ItemsQuery": {
+          "$type": "ForguncyDataAccess.TextCESqlCondition, ForguncyDataAccess",
+          "CompareType": 2,
+          "ColumnBindingInfo": {
+            "TableName": "V_BasicRoomInformation",
+            "ColumnName": "First_Classification_Code"
+          },
+          "Value": "LL"
+        },
+        "AddNullItemWhenBinding": true,
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.OperateCellTypeCommand, ServerDesignerCommon",
+            "TargetPageElement": {
+              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+              "SerializeProperty": "=届出一覧!B2"
+            },
+            "TargetType": "Forguncy.ButtonCellType, ServerDesignerCommon, Version=8.0.20.0, Culture=neutral, PublicKeyToken=967100671921c115",
+            "MethodName": "ExecuteCommand",
+            "ParameterValues": {},
+            "RetrunParamNames": {}
+          }
+        ]
+      }
+    },
+    "8,25": {
+      "CellType": {
+        "$type": "Forguncy.DropDownListCellType, ServerDesignerCommon",
+        "SelectOnly": false,
+        "ValidateItem": true,
+        "TemplateKey": "_RS_LightLine_Translucent_SmallRoundCorner_Normal1",
+        "IsBounding": true,
+        "Items": [
+          {
+            "Value": "項目1",
+            "DisplayValue": "項目1"
+          },
+          {
+            "Value": "項目2",
+            "DisplayValue": "項目2"
+          },
+          {
+            "Value": "項目3",
+            "DisplayValue": "項目3"
+          }
+        ],
+        "DataSource": "V_BasicRoomInformation",
+        "ValueColumnBindingInfo": {
+          "TableName": "V_BasicRoomInformation",
+          "ColumnName": "Second_Classification_Code"
+        },
+        "DisplayColumnBindingInfo": {
+          "TableName": "V_BasicRoomInformation",
+          "ColumnName": "Second_Classification_Name"
+        },
+        "ItemsQuery": {
+          "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+          "Condition1": {
+            "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+            "ColumnBindingInfo": {
+              "TableName": "V_BasicRoomInformation",
+              "ColumnName": "First_Classification_Code"
+            },
+            "Value": {
+              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+              "SerializeProperty": "=届出一覧!N9"
+            }
+          },
+          "Condition2": {
+            "$type": "ForguncyDataAccess.TextCESqlCondition, ForguncyDataAccess",
+            "CompareType": 2,
+            "ColumnBindingInfo": {
+              "TableName": "V_BasicRoomInformation",
+              "ColumnName": "First_Classification_Code"
+            },
+            "Value": {
+              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+              "SerializeProperty": "=届出一覧!K3"
+            }
+          },
+          "RelationType": 1
+        },
+        "AddNullItemWhenBinding": true,
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.OperateCellTypeCommand, ServerDesignerCommon",
+            "TargetPageElement": {
+              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+              "SerializeProperty": "=届出一覧!B2"
+            },
+            "TargetType": "Forguncy.ButtonCellType, ServerDesignerCommon, Version=8.0.20.0, Culture=neutral, PublicKeyToken=967100671921c115",
+            "MethodName": "ExecuteCommand",
+            "ParameterValues": {},
+            "RetrunParamNames": {}
+          }
+        ]
+      }
+    },
+    "8,37": {
+      "CellType": {
+        "$type": "Forguncy.DropDownListCellType, ServerDesignerCommon",
+        "SelectOnly": false,
+        "ValidateItem": true,
+        "TemplateKey": "_RS_LightLine_Translucent_SmallRoundCorner_Normal1",
+        "IsBounding": true,
+        "Items": [
+          {
+            "Value": "項目1",
+            "DisplayValue": "項目1"
+          },
+          {
+            "Value": "項目2",
+            "DisplayValue": "項目2"
+          },
+          {
+            "Value": "項目3",
+            "DisplayValue": "項目3"
+          }
+        ],
+        "DataSource": "V_BasicRoomInformation",
+        "ValueColumnBindingInfo": {
+          "TableName": "V_BasicRoomInformation",
+          "ColumnName": "basic_room_Information_id"
+        },
+        "DisplayColumnBindingInfo": {
+          "TableName": "V_BasicRoomInformation",
+          "ColumnName": "basic_room_Information_Name"
+        },
+        "ItemsQuery": {
+          "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+          "Condition1": {
+            "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+            "Condition1": {
+              "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+              "ColumnBindingInfo": {
+                "TableName": "V_BasicRoomInformation",
+                "ColumnName": "First_Classification_Code"
+              },
+              "Value": {
+                "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                "SerializeProperty": "=届出一覧!N9"
+              },
+              "LeftBracket": 1
+            },
+            "Condition2": {
+              "$type": "ForguncyDataAccess.TextCESqlCondition, ForguncyDataAccess",
+              "CompareType": 2,
+              "ColumnBindingInfo": {
+                "TableName": "V_BasicRoomInformation",
+                "ColumnName": "First_Classification_Code"
+              },
+              "Value": {
+                "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                "SerializeProperty": "=届出一覧!K3"
+              },
+              "RightBracket": 1
+            },
+            "RelationType": 1
+          },
+          "Condition2": {
+            "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+            "Condition1": {
+              "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+              "ColumnBindingInfo": {
+                "TableName": "V_BasicRoomInformation",
+                "ColumnName": "Second_Classification_Code"
+              },
+              "Value": {
+                "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                "SerializeProperty": "=届出一覧!Z9"
+              },
+              "LeftBracket": 1
+            },
+            "Condition2": {
+              "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+              "CompareType": 3,
+              "ColumnBindingInfo": {
+                "TableName": "V_BasicRoomInformation",
+                "ColumnName": "Second_Classification_Code"
+              },
+              "Value": {
+                "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                "SerializeProperty": "=届出一覧!K4"
+              },
+              "RightBracket": 1
+            },
+            "RelationType": 1
+          }
+        },
+        "AddNullItemWhenBinding": true,
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.OperateCellTypeCommand, ServerDesignerCommon",
+            "TargetPageElement": {
+              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+              "SerializeProperty": "=届出一覧!B2"
+            },
+            "TargetType": "Forguncy.ButtonCellType, ServerDesignerCommon, Version=8.0.20.0, Culture=neutral, PublicKeyToken=967100671921c115",
+            "MethodName": "ExecuteCommand",
+            "ParameterValues": {},
+            "RetrunParamNames": {}
+          }
+        ]
+      }
+    },
+    "11,1": {
+      "CellType": {
+        "$type": "Forguncy.DropDownListCellType, ServerDesignerCommon",
+        "SelectOnly": false,
+        "ValidateItem": true,
+        "TemplateKey": "_RS_LightLine_Translucent_SmallRoundCorner_Normal1",
+        "IsBounding": true,
+        "Items": [
+          {
+            "Value": "項目1",
+            "DisplayValue": "項目1"
+          },
+          {
+            "Value": "項目2",
+            "DisplayValue": "項目2"
+          },
+          {
+            "Value": "項目3",
+            "DisplayValue": "項目3"
+          }
+        ],
+        "DataSource": "lum_view_employee_department_relations_duplicated",
+        "ValueColumnBindingInfo": {
+          "TableName": "lum_view_employee_department_relations_duplicated",
+          "ColumnName": "department_code_lvl04"
+        },
+        "DisplayColumnBindingInfo": {
+          "TableName": "lum_view_employee_department_relations_duplicated",
+          "ColumnName": "department_name_lvl04"
+        },
+        "ItemsSort": {
+          "OrderByColumns": [
+            {
+              "ColumnBindingInfo": {
+                "TableName": "lum_view_employee_department_relations_duplicated",
+                "ColumnName": "department_name_lvl04"
+              },
+              "Order": 0
+            }
+          ]
+        },
+        "AddNullItemWhenBinding": true,
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.OperateCellTypeCommand, ServerDesignerCommon",
+            "TargetPageElement": {
+              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+              "SerializeProperty": "=届出一覧!B2"
+            },
+            "TargetType": "Forguncy.ButtonCellType, ServerDesignerCommon, Version=8.0.20.0, Culture=neutral, PublicKeyToken=967100671921c115",
+            "MethodName": "ExecuteCommand",
+            "ParameterValues": {},
+            "RetrunParamNames": {}
+          }
+        ]
+      }
+    },
+    "11,13": {
+      "CellType": {
+        "$type": "Forguncy.DropDownListCellType, ServerDesignerCommon",
+        "SelectOnly": false,
+        "ValidateItem": true,
+        "TemplateKey": "_RS_LightLine_Translucent_SmallRoundCorner_Normal1",
+        "IsBounding": true,
+        "Items": [
+          {
+            "Value": "項目1",
+            "DisplayValue": "項目1"
+          },
+          {
+            "Value": "項目2",
+            "DisplayValue": "項目2"
+          },
+          {
+            "Value": "項目3",
+            "DisplayValue": "項目3"
+          }
+        ],
+        "DataSource": "lum_view_employee_department_relations_duplicated",
+        "ValueColumnBindingInfo": {
+          "TableName": "lum_view_employee_department_relations_duplicated",
+          "ColumnName": "employee_z_code"
+        },
+        "DisplayColumnBindingInfo": {
+          "TableName": "lum_view_employee_department_relations_duplicated",
+          "ColumnName": "employee_name"
+        },
+        "ItemsQuery": {
+          "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+          "Condition1": {
+            "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+            "ColumnBindingInfo": {
+              "TableName": "lum_view_employee_department_relations_duplicated",
+              "ColumnName": "department_code_lvl04"
+            },
+            "Value": {
+              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+              "SerializeProperty": "=届出一覧!B12"
+            }
+          },
+          "Condition2": {
+            "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+            "CompareType": 4,
+            "ColumnBindingInfo": {
+              "TableName": "lum_view_employee_department_relations_duplicated",
+              "ColumnName": "department_code_lvl04"
+            },
+            "Value": {
+              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+              "SerializeProperty": "=届出一覧!AC3"
+            }
+          },
+          "RelationType": 1
+        },
+        "AddNullItemWhenBinding": true,
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.OperateCellTypeCommand, ServerDesignerCommon",
+            "TargetPageElement": {
+              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+              "SerializeProperty": "=届出一覧!B2"
+            },
+            "TargetType": "Forguncy.ButtonCellType, ServerDesignerCommon, Version=8.0.20.0, Culture=neutral, PublicKeyToken=967100671921c115",
+            "MethodName": "ExecuteCommand",
+            "ParameterValues": {},
+            "RetrunParamNames": {}
+          }
+        ]
+      }
+    },
+    "11,25": {
+      "CellType": {
+        "$type": "Forguncy.CheckBoxCellType, ServerDesignerCommon",
+        "Style": 1,
+        "PrimaryColor": "Accent 6 0",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
+            "ConditionAndCommandPairList": [
+              {
+                "Condition": {
+                  "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                  "param": {
+                    "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
+                    "cellLocations": [
+                      {
+                        "SerializeProperty": "=届出一覧!Z12"
+                      }
+                    ]
+                  },
+                  "value": "1"
+                },
+                "CommandList": [
+                  {
+                    "$type": "Forguncy.Model.SetCellPropertyCommand, ServerDesignerCommon",
+                    "PropertyItemsList": [
+                      {
+                        "TargetCells": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=届出一覧!AI12"
+                        }
+                      }
+                    ]
+                  }
+                ],
+                "ID": "5c9a3afc-bda1-416a-be5a-eb37d1f010bb"
+              }
+            ]
+          },
+          {
+            "$type": "Forguncy.Model.OperateCellTypeCommand, ServerDesignerCommon",
+            "TargetPageElement": {
+              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+              "SerializeProperty": "=届出一覧!B2"
+            },
+            "TargetType": "Forguncy.ButtonCellType, ServerDesignerCommon, Version=8.0.20.0, Culture=neutral, PublicKeyToken=967100671921c115",
+            "MethodName": "ExecuteCommand",
+            "ParameterValues": {},
+            "RetrunParamNames": {}
+          }
+        ]
+      }
+    },
+    "11,34": {
+      "CellType": {
+        "$type": "Forguncy.CheckBoxCellType, ServerDesignerCommon",
+        "Style": 1,
+        "PrimaryColor": "Accent 6 0",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
+            "ConditionAndCommandPairList": [
+              {
+                "Condition": {
+                  "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                  "param": {
+                    "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
+                    "cellLocations": [
+                      {
+                        "SerializeProperty": "=届出一覧!AI12"
+                      }
+                    ]
+                  },
+                  "value": "1"
+                },
+                "CommandList": [
+                  {
+                    "$type": "Forguncy.Model.SetCellPropertyCommand, ServerDesignerCommon",
+                    "PropertyItemsList": [
+                      {
+                        "TargetCells": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=届出一覧!Z12"
+                        }
+                      }
+                    ]
+                  }
+                ],
+                "ID": "d731b6fb-5780-4358-861e-f6ad252d4422"
+              }
+            ]
+          },
+          {
+            "$type": "Forguncy.Model.OperateCellTypeCommand, ServerDesignerCommon",
+            "TargetPageElement": {
+              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+              "SerializeProperty": "=届出一覧!B2"
+            },
+            "TargetType": "Forguncy.ButtonCellType, ServerDesignerCommon, Version=8.0.20.0, Culture=neutral, PublicKeyToken=967100671921c115",
+            "MethodName": "ExecuteCommand",
+            "ParameterValues": {},
+            "RetrunParamNames": {}
+          }
+        ]
+      }
+    },
+    "11,43": {
+      "CellType": {
+        "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.SetCellPropertyCommand, ServerDesignerCommon",
+            "PropertyItemsList": [
+              {
+                "TargetCells": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=届出一覧!B9"
+                }
+              },
+              {
+                "TargetCells": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=届出一覧!N9"
+                }
+              },
+              {
+                "TargetCells": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=届出一覧!Z9"
+                }
+              },
+              {
+                "TargetCells": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=届出一覧!AL9"
+                }
+              },
+              {
+                "TargetCells": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=届出一覧!B12"
+                }
+              },
+              {
+                "TargetCells": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=届出一覧!N12"
+                }
+              },
+              {
+                "TargetCells": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=届出一覧!Z12"
+                }
+              },
+              {
+                "TargetCells": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=届出一覧!AI12"
+                }
+              }
+            ]
+          },
+          {
+            "$type": "Forguncy.Model.OperateCellTypeCommand, ServerDesignerCommon",
+            "TargetPageElement": {
+              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+              "SerializeProperty": "=届出一覧!B2"
+            },
+            "TargetType": "Forguncy.ButtonCellType, ServerDesignerCommon, Version=8.0.20.0, Culture=neutral, PublicKeyToken=967100671921c115",
+            "MethodName": "ExecuteCommand",
+            "ParameterValues": {},
+            "RetrunParamNames": {}
+          }
+        ],
+        "Text": "条件クリア",
+        "TemplateKey": "_RS_Outline_Style7"
+      }
+    },
+    "13,1": {
+      "CellType": {
+        "$type": "Forguncy.PageNavigateCellType, ServerDesignerCommon",
+        "PageingListviewName": "届出WF一覧",
+        "PageLimitRowCount": 9,
+        "FirstImage": {
+          "Name": "Arrow/347_move_first.svg",
+          "BuiltIn": true,
+          "Color": "Accent 6 0"
+        },
+        "PreviousImage": {
+          "Name": "Arrow/349_left_arrow.svg",
+          "BuiltIn": true,
+          "Color": "Accent 6 0"
+        },
+        "NextImage": {
+          "Name": "Arrow/350_right_arrow.svg",
+          "BuiltIn": true,
+          "Color": "Accent 6 0"
+        },
+        "LastImage": {
+          "Name": "Arrow/348_move_last.svg",
+          "BuiltIn": true,
+          "Color": "Accent 6 0"
+        }
+      }
+    },
+    "15,1": {
+      "ListViewInfo": {
+        "ShowColumnHeaderInDesigner": true,
+        "TableName": "T_OvernightNotification",
+        "RowIndex": 15,
+        "ColumnIndex": 1,
+        "ColumnCount": 74,
+        "RowCount": 20,
+        "ColumnHeaderRowCount": 2,
+        "ColumnOperation": 1,
+        "ShowEditStatusIcon": true,
+        "UseSimpleBar": true,
+        "Name": "届出WF一覧",
+        "TopCondition": null,
+        "OrderByCondition": {
+          "OrderByColumns": [
+            {
+              "ColumnBindingInfo": {
+                "TableName": "T_OvernightNotification",
+                "ColumnName": "overnight_start_dete"
+              },
+              "Order": 0
+            }
+          ]
+        },
+        "ListViewStyleName": "_RS_Medium7"
+      }
+    },
+    "17,1": {
+      "CellType": {
+        "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
+            "ConditionAndCommandPairList": [
+              {
+                "Condition": {
+                  "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                  "param": {
+                    "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
+                    "cellLocations": [
+                      {
+                        "SerializeProperty": "=届出一覧!BS18"
+                      }
+                    ]
+                  },
+                  "value": "1"
+                },
+                "CommandList": [
+                  {
+                    "$type": "Forguncy.Model.ShowPopupCommand, ServerDesignerCommon",
+                    "PageName": "現場表示印刷画面_長期",
+                    "PassValues": [],
+                    "DeleteCachedQuery": true,
+                    "LoadBindingDataOption": 1
+                  }
+                ],
+                "ID": "dcafcf4f-a948-483f-87fd-cd0dd095d3dc"
+              },
+              {
+                "CommandList": [
+                  {
+                    "$type": "Forguncy.Model.ShowPopupCommand, ServerDesignerCommon",
+                    "PageName": "現場表示印刷画面_通常",
+                    "PassValues": [],
+                    "DeleteCachedQuery": true,
+                    "LoadBindingDataOption": 1
+                  }
+                ],
+                "ID": "70446b22-613c-4a56-b700-75dd3fa9b9a4"
+              }
+            ]
+          }
+        ],
+        "Text": "印刷",
+        "TemplateKey": "_RS_Normal_Style7"
+      }
+    },
+    "17,3": {
+      "CellType": {
+        "$type": "Forguncy.HyperlinkCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.ShowPopupCommand, ServerDesignerCommon",
+            "PageName": "終夜運転届出",
+            "PassValues": [],
+            "DeleteCachedQuery": true,
+            "LoadBindingDataOption": 1
+          }
+        ],
+        "ClickMode": 1
+      },
+      "ConditionFormatRulesCollection": {
+        "Rules": [
+          {
+            "$type": "Forguncy.ConditionFormat.CellValueRule, ServerDesignerCommon",
+            "Operator": 3,
+            "Value1": {
+              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+              "SerializeProperty": "=\"長期\""
+            },
+            "StyleInfo": {
+              "Foreground": "#FFFF0000",
+              "Underline": null,
+              "Strikethrough": null
+            }
+          }
+        ]
+      }
+    },
+    "17,7": {
+      "BindingInfo": {
+        "TableName": "T_OvernightNotification",
+        "ColumnName": "overnight_registration_id",
+        "RelationBinding": {
+          "RelatedTable": "T_OvernightRegistration",
+          "RelatedColumn": "overnight_registration_id",
+          "DisplayColumn": "basic_room_Information_id",
+          "NextRelationBinding": {
+            "RelatedTable": "V_BasicRoomInformation",
+            "RelatedColumn": "basic_room_Information_id",
+            "DisplayColumn": "basic_room_Information_Name"
+          }
+        }
+      }
+    },
+    "17,15": {
+      "BindingInfo": {
+        "TableName": "T_OvernightNotification",
+        "ColumnName": "overnight_registration_id",
+        "RelationBinding": {
+          "RelatedTable": "T_OvernightRegistration",
+          "RelatedColumn": "overnight_registration_id",
+          "DisplayColumn": "overnight_epuipment_name"
+        }
+      }
+    },
+    "17,25": {
+      "BindingInfo": {
+        "TableName": "T_OvernightNotification",
+        "ColumnName": "overnight_start_dete"
+      }
+    },
+    "17,30": {
+      "BindingInfo": {
+        "TableName": "T_OvernightNotification",
+        "ColumnName": "overnight_end_date"
+      }
+    },
+    "17,35": {
+      "BindingInfo": {
+        "TableName": "T_OvernightNotification",
+        "ColumnName": "notifier_dept_name"
+      }
+    },
+    "17,43": {
+      "BindingInfo": {
+        "TableName": "T_OvernightNotification",
+        "ColumnName": "notifier_name"
+      }
+    },
+    "17,49": {
+      "BindingInfo": {
+        "TableName": "T_OvernightNotification",
+        "ColumnName": "external_tel"
+      }
+    },
+    "17,56": {
+      "CellType": {
+        "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
+            "ConditionAndCommandPairList": [
+              {
+                "Condition": {
+                  "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                  "param": {
+                    "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
+                    "cellLocations": [
+                      {
+                        "SerializeProperty": "=届出一覧!BT18"
+                      }
+                    ]
+                  },
+                  "value": {
+                    "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                    "SerializeProperty": "=届出一覧!AO3"
+                  }
+                },
+                "CommandList": [
+                  {
+                    "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
+                    "ConditionAndCommandPairList": [
+                      {
+                        "ConfirmDialogSettings": {
+                          "Title": "確認",
+                          "FormulaText": "届出を取り下げます。よろしいですか？",
+                          "YesButtonText": "はい",
+                          "NoButtonText": "いいえ",
+                          "ConfirmIcon": 1
+                        },
+                        "CommandList": [
+                          {
+                            "$type": "WorkflowCommand.WorkflowCommand, WorkflowCommand",
+                            "TableName": "T_OvernightNotification",
+                            "NextState": "取下",
+                            "ActionName": "取下"
+                          }
+                        ],
+                        "ID": "ff901fd6-5401-4976-85a3-6116e7845a7b"
+                      }
+                    ]
+                  }
+                ],
+                "ID": "486faf10-0fd8-402e-a14a-6edf50476955"
+              }
+            ]
+          }
+        ],
+        "Text": "届出取下",
+        "TemplateKey": "_RS_Normal_Style7"
+      },
+      "ConditionFormatRulesCollection": {
+        "Rules": [
+          {
+            "$type": "Forguncy.ConditionFormat.FormulaRule, ServerDesignerCommon",
+            "Formula": {
+              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+              "SerializeProperty": "=届出一覧!BT18<>届出一覧!$AO$3"
+            },
+            "StyleInfo": {
+              "Background": "Background 1 -25",
+              "Underline": null,
+              "Strikethrough": null
+            }
+          }
+        ]
+      }
+    },
+    "17,58": {
+      "IsCellIgnoreHideInListview": true,
+      "BindingInfo": {
+        "TableName": "T_OvernightNotification",
+        "ColumnName": "overnight_registration_id"
+      }
+    },
+    "17,64": {
+      "IsCellIgnoreHideInListview": true,
+      "BindingInfo": {
+        "TableName": "T_OvernightNotification",
+        "ColumnName": "overnight_notification_id"
+      }
+    },
+    "17,70": {
+      "BindingInfo": {
+        "TableName": "T_OvernightNotification",
+        "ColumnName": "longterm_overnight_flag"
+      }
+    },
+    "17,71": {
+      "BindingInfo": {
+        "TableName": "T_OvernightNotification",
+        "ColumnName": "notifier_z_code"
+      }
+    },
+    "17,72": {
+      "BindingInfo": {
+        "TableName": "T_OvernightNotification",
+        "ColumnName": "FGC_State"
+      }
+    }
+  },
+  "StyleDatas": {
+    "Styles": [
+      {
+        "Background": 0
+      },
+      {
+        "FontFamily": 1,
+        "Formatter": 2
+      },
+      {
+        "FontFamily": 1
+      },
+      {
+        "Background": 3,
+        "FontFamily": 1
+      },
+      {
+        "FontFamily": 1,
+        "Foreground": 4,
+        "Formatter": 2
+      },
+      {
+        "Formatter": 2
+      },
+      {
+        "FontFamily": 1,
+        "FontSize": 16.0,
+        "FontWeight": 5
+      },
+      {
+        "FontFamily": 1,
+        "Formatter": 6
+      },
+      {
+        "FontFamily": 1,
+        "FontSize": 16.0,
+        "FontWeight": 5,
+        "Formatter": 2
+      },
+      {
+        "FontSize": 16.0,
+        "FontWeight": 5
+      },
+      {
+        "FontFamily": 1,
+        "FontSize": 14.666666666666666,
+        "Foreground": 7,
+        "HorizontalAlignment": 8,
+        "Underline": true
+      },
+      {
+        "FontFamily": 1,
+        "WordWrap": true
+      },
+      {
+        "FontFamily": 1,
+        "FontSize": 14.666666666666666,
+        "Formatter": 9,
+        "Underline": false,
+        "Strikethrough": false
+      },
+      {
+        "FontFamily": 1,
+        "FontSize": 14.666666666666666,
+        "Formatter": 9,
+        "Strikethrough": false
+      },
+      {
+        "WordWrap": true
+      },
+      {
+        "FontSize": 12.0
+      }
+    ],
+    "Types": {
+      "Strs": [
+        "Background 1 -15",
+        "Body",
+        "[AUTO]General",
+        "#FFFFFF00",
+        "#FFFF0000",
+        "Bold",
+        "@",
+        "#FF000000",
+        "Center",
+        "yyyy/m/d"
+      ]
+    },
+    "CellStyles": {
+      "0,0": 0,
+      "0,70": 0,
+      "0,71": 0,
+      "0,72": 0,
+      "0,73": 0,
+      "0,76": 0,
+      "1,0": 0,
+      "1,1": 1,
+      "1,2": 2,
+      "1,3": 2,
+      "1,4": 2,
+      "1,5": 2,
+      "1,6": 2,
+      "1,7": 2,
+      "1,8": 2,
+      "1,9": 2,
+      "1,10": 2,
+      "1,48": 2,
+      "1,49": 2,
+      "1,50": 2,
+      "1,51": 2,
+      "1,52": 2,
+      "1,53": 2,
+      "1,54": 2,
+      "1,55": 2,
+      "1,56": 2,
+      "1,57": 2,
+      "1,58": 2,
+      "2,0": 0,
+      "2,1": 1,
+      "2,2": 2,
+      "2,3": 2,
+      "2,4": 2,
+      "2,5": 2,
+      "2,6": 2,
+      "2,7": 2,
+      "2,8": 2,
+      "2,9": 2,
+      "2,10": 3,
+      "2,11": 2,
+      "2,12": 2,
+      "2,13": 2,
+      "2,14": 2,
+      "2,15": 2,
+      "2,16": 2,
+      "2,17": 1,
+      "2,18": 2,
+      "2,19": 2,
+      "2,20": 2,
+      "2,21": 2,
+      "2,22": 2,
+      "2,23": 2,
+      "2,24": 2,
+      "2,25": 2,
+      "2,26": 2,
+      "2,27": 2,
+      "2,28": 3,
+      "2,29": 2,
+      "2,30": 2,
+      "2,31": 2,
+      "2,32": 2,
+      "2,33": 2,
+      "2,34": 2,
+      "2,35": 2,
+      "2,36": 2,
+      "2,37": 2,
+      "2,38": 2,
+      "2,39": 2,
+      "2,40": 3,
+      "2,41": 2,
+      "2,42": 2,
+      "2,43": 2,
+      "2,44": 2,
+      "2,45": 2,
+      "2,48": 2,
+      "2,49": 2,
+      "2,50": 2,
+      "2,51": 2,
+      "2,52": 2,
+      "2,53": 2,
+      "2,54": 3,
+      "2,55": 2,
+      "2,56": 2,
+      "2,57": 2,
+      "2,58": 2,
+      "3,0": 0,
+      "3,1": 2,
+      "3,2": 2,
+      "3,3": 2,
+      "3,4": 2,
+      "3,5": 2,
+      "3,6": 2,
+      "3,7": 2,
+      "3,8": 2,
+      "3,9": 2,
+      "3,10": 3,
+      "3,11": 2,
+      "3,12": 2,
+      "3,13": 2,
+      "3,14": 2,
+      "3,48": 1,
+      "3,49": 2,
+      "3,50": 2,
+      "3,51": 2,
+      "3,52": 2,
+      "3,53": 2,
+      "3,54": 3,
+      "3,55": 2,
+      "3,56": 2,
+      "3,57": 2,
+      "3,58": 2,
+      "4,0": 0,
+      "5,0": 0,
+      "5,2": 4,
+      "5,12": 5,
+      "6,44": 2,
+      "6,45": 2,
+      "6,46": 2,
+      "6,47": 2,
+      "6,48": 2,
+      "6,49": 2,
+      "6,50": 2,
+      "6,51": 2,
+      "6,52": 2,
+      "6,53": 2,
+      "6,54": 2,
+      "6,55": 2,
+      "6,56": 2,
+      "6,57": 2,
+      "6,58": 2,
+      "6,59": 2,
+      "6,60": 2,
+      "6,61": 2,
+      "6,62": 2,
+      "6,63": 2,
+      "6,64": 2,
+      "6,65": 2,
+      "6,66": 2,
+      "6,67": 2,
+      "6,68": 2,
+      "6,69": 2,
+      "6,70": 2,
+      "6,71": 2,
+      "7,1": 6,
+      "7,2": 2,
+      "7,3": 2,
+      "7,4": 2,
+      "7,5": 2,
+      "7,6": 2,
+      "7,7": 2,
+      "7,8": 2,
+      "7,9": 2,
+      "7,10": 2,
+      "7,11": 2,
+      "7,12": 2,
+      "7,13": 6,
+      "7,14": 2,
+      "7,15": 2,
+      "7,16": 2,
+      "7,17": 2,
+      "7,18": 2,
+      "7,19": 2,
+      "7,20": 2,
+      "7,21": 2,
+      "7,22": 2,
+      "7,23": 2,
+      "7,25": 6,
+      "7,26": 2,
+      "7,27": 2,
+      "7,28": 2,
+      "7,29": 2,
+      "7,30": 2,
+      "7,31": 2,
+      "7,32": 2,
+      "7,33": 2,
+      "7,34": 2,
+      "7,35": 2,
+      "7,36": 2,
+      "7,37": 6,
+      "7,38": 2,
+      "7,39": 2,
+      "7,40": 2,
+      "7,41": 2,
+      "7,42": 2,
+      "7,43": 2,
+      "7,44": 2,
+      "7,45": 2,
+      "7,46": 2,
+      "7,47": 2,
+      "8,1": 7,
+      "8,13": 2,
+      "8,14": 2,
+      "8,15": 2,
+      "8,16": 2,
+      "8,17": 2,
+      "8,18": 2,
+      "8,19": 2,
+      "8,20": 2,
+      "8,21": 2,
+      "8,22": 2,
+      "8,23": 2,
+      "8,25": 2,
+      "8,26": 2,
+      "8,27": 2,
+      "8,28": 2,
+      "8,29": 2,
+      "8,30": 2,
+      "8,31": 2,
+      "8,32": 2,
+      "8,33": 2,
+      "8,34": 2,
+      "8,35": 2,
+      "8,36": 2,
+      "8,37": 2,
+      "8,38": 2,
+      "8,39": 2,
+      "8,40": 2,
+      "8,41": 2,
+      "8,42": 2,
+      "8,43": 2,
+      "8,44": 2,
+      "8,45": 2,
+      "8,46": 2,
+      "8,47": 2,
+      "9,1": 7,
+      "9,2": 7,
+      "9,3": 7,
+      "9,4": 7,
+      "9,5": 7,
+      "9,6": 7,
+      "9,7": 7,
+      "9,8": 7,
+      "9,9": 7,
+      "9,10": 7,
+      "9,11": 7,
+      "9,13": 2,
+      "9,14": 2,
+      "9,15": 2,
+      "9,16": 2,
+      "9,17": 2,
+      "9,18": 2,
+      "9,19": 2,
+      "9,20": 2,
+      "9,21": 2,
+      "9,22": 2,
+      "9,23": 2,
+      "9,25": 2,
+      "9,26": 2,
+      "9,27": 2,
+      "9,28": 2,
+      "9,29": 2,
+      "9,30": 2,
+      "9,31": 2,
+      "9,32": 2,
+      "9,33": 2,
+      "9,34": 2,
+      "9,35": 2,
+      "9,36": 2,
+      "9,37": 2,
+      "9,38": 2,
+      "9,39": 2,
+      "9,40": 2,
+      "9,41": 2,
+      "9,42": 2,
+      "9,43": 2,
+      "9,44": 2,
+      "9,45": 2,
+      "9,46": 2,
+      "9,47": 2,
+      "10,0": 2,
+      "10,1": 8,
+      "10,2": 2,
+      "10,3": 2,
+      "10,4": 2,
+      "10,5": 2,
+      "10,6": 2,
+      "10,7": 2,
+      "10,8": 2,
+      "10,9": 2,
+      "10,10": 2,
+      "10,11": 2,
+      "10,12": 2,
+      "10,13": 8,
+      "10,14": 2,
+      "10,15": 2,
+      "10,16": 2,
+      "10,17": 2,
+      "10,18": 2,
+      "10,19": 2,
+      "10,20": 2,
+      "10,21": 2,
+      "10,22": 2,
+      "10,23": 2,
+      "10,24": 2,
+      "10,25": 9,
+      "10,34": 9,
+      "10,36": 2,
+      "10,37": 8,
+      "10,38": 2,
+      "10,39": 2,
+      "10,40": 2,
+      "10,41": 2,
+      "10,42": 2,
+      "10,43": 2,
+      "10,44": 2,
+      "10,45": 2,
+      "10,46": 2,
+      "10,47": 2,
+      "10,48": 2,
+      "10,49": 2,
+      "10,50": 2,
+      "10,51": 2,
+      "10,52": 2,
+      "10,53": 2,
+      "10,54": 2,
+      "10,55": 2,
+      "10,56": 2,
+      "10,57": 2,
+      "10,58": 2,
+      "10,59": 2,
+      "10,60": 2,
+      "10,61": 2,
+      "10,62": 2,
+      "10,63": 2,
+      "10,64": 2,
+      "10,65": 2,
+      "10,66": 2,
+      "10,67": 2,
+      "10,68": 2,
+      "10,69": 2,
+      "10,70": 2,
+      "10,71": 2,
+      "10,72": 2,
+      "10,73": 2,
+      "10,74": 2,
+      "10,75": 2,
+      "10,76": 2,
+      "11,0": 2,
+      "11,1": 2,
+      "11,2": 2,
+      "11,3": 2,
+      "11,4": 2,
+      "11,5": 2,
+      "11,6": 2,
+      "11,7": 2,
+      "11,8": 2,
+      "11,9": 2,
+      "11,10": 2,
+      "11,11": 2,
+      "11,12": 2,
+      "11,13": 2,
+      "11,14": 2,
+      "11,15": 2,
+      "11,16": 2,
+      "11,17": 2,
+      "11,18": 2,
+      "11,19": 2,
+      "11,20": 2,
+      "11,21": 2,
+      "11,22": 2,
+      "11,23": 2,
+      "11,24": 2,
+      "11,34": 2,
+      "11,36": 2,
+      "11,37": 2,
+      "11,38": 2,
+      "11,39": 2,
+      "11,40": 2,
+      "11,41": 2,
+      "11,42": 2,
+      "11,43": 1,
+      "11,44": 2,
+      "11,45": 2,
+      "11,46": 2,
+      "11,47": 2,
+      "11,48": 2,
+      "11,49": 2,
+      "11,50": 2,
+      "11,51": 2,
+      "11,52": 2,
+      "11,53": 2,
+      "11,54": 2,
+      "11,55": 2,
+      "11,56": 2,
+      "11,57": 2,
+      "11,58": 2,
+      "11,59": 2,
+      "11,60": 2,
+      "11,61": 2,
+      "11,62": 2,
+      "11,63": 2,
+      "11,64": 2,
+      "11,65": 2,
+      "11,66": 2,
+      "11,67": 2,
+      "11,68": 2,
+      "11,69": 2,
+      "11,70": 2,
+      "11,71": 2,
+      "11,72": 2,
+      "11,73": 2,
+      "11,74": 2,
+      "11,75": 2,
+      "11,76": 2,
+      "12,44": 2,
+      "12,45": 2,
+      "12,46": 2,
+      "12,47": 2,
+      "12,48": 2,
+      "12,49": 2,
+      "12,50": 2,
+      "12,51": 2,
+      "12,52": 2,
+      "12,53": 2,
+      "12,54": 2,
+      "12,55": 2,
+      "12,56": 2,
+      "12,57": 2,
+      "12,58": 2,
+      "12,59": 2,
+      "12,60": 2,
+      "12,61": 2,
+      "12,62": 2,
+      "12,63": 2,
+      "12,64": 2,
+      "12,65": 2,
+      "12,66": 2,
+      "12,67": 2,
+      "12,68": 2,
+      "12,69": 2,
+      "12,70": 2,
+      "12,71": 2,
+      "13,44": 2,
+      "13,45": 2,
+      "13,46": 2,
+      "13,47": 2,
+      "13,48": 2,
+      "13,49": 2,
+      "13,50": 2,
+      "13,51": 2,
+      "13,52": 2,
+      "13,53": 2,
+      "13,54": 2,
+      "13,55": 2,
+      "13,56": 2,
+      "13,57": 2,
+      "13,58": 2,
+      "13,59": 2,
+      "13,60": 2,
+      "13,61": 2,
+      "13,62": 2,
+      "13,63": 2,
+      "13,64": 2,
+      "13,65": 2,
+      "13,66": 2,
+      "13,67": 2,
+      "13,68": 2,
+      "13,69": 2,
+      "13,70": 2,
+      "13,71": 2,
+      "15,25": 1,
+      "15,35": 1,
+      "15,36": 2,
+      "15,37": 2,
+      "15,38": 2,
+      "15,39": 2,
+      "15,40": 2,
+      "15,41": 2,
+      "15,42": 2,
+      "15,43": 1,
+      "15,44": 2,
+      "15,45": 2,
+      "15,46": 2,
+      "15,47": 2,
+      "15,48": 2,
+      "15,49": 1,
+      "16,35": 2,
+      "16,36": 2,
+      "16,37": 2,
+      "16,38": 2,
+      "16,39": 2,
+      "16,40": 2,
+      "16,41": 2,
+      "16,42": 2,
+      "16,43": 2,
+      "16,44": 2,
+      "16,45": 2,
+      "16,46": 2,
+      "16,47": 2,
+      "16,48": 2,
+      "17,3": 10,
+      "17,7": 11,
+      "17,15": 11,
+      "17,25": 12,
+      "17,30": 13,
+      "17,35": 11,
+      "17,36": 2,
+      "17,37": 2,
+      "17,38": 2,
+      "17,39": 2,
+      "17,40": 2,
+      "17,41": 2,
+      "17,42": 2,
+      "17,43": 11,
+      "17,44": 2,
+      "17,45": 2,
+      "17,46": 2,
+      "17,47": 2,
+      "17,48": 2,
+      "17,49": 11,
+      "17,56": 14,
+      "17,58": 15,
+      "17,64": 15,
+      "37,0": 0,
+      "38,0": 0,
+      "39,0": 0,
+      "40,0": 0
+    },
+    "SheetStyle": {
+      "FontFamily": 1
+    }
+  },
+  "Spans": [
+    "1,1,1,10",
+    "2,28,1,5",
+    "8,1,1,11",
+    "8,13,1,11",
+    "8,25,1,11",
+    "8,37,1,11",
+    "11,1,1,11",
+    "11,13,1,11",
+    "11,43,1,5",
+    "13,1,1,10",
+    "15,1,2,2",
+    "15,3,2,4",
+    "15,7,2,8",
+    "15,15,2,10",
+    "15,25,1,10",
+    "15,35,2,8",
+    "15,43,2,6",
+    "15,56,2,2",
+    "15,58,2,6",
+    "15,64,2,6",
+    "15,70,2,1",
+    "15,71,2,1",
+    "16,25,1,5",
+    "16,30,1,5",
+    "17,1,1,2",
+    "17,3,1,4",
+    "17,15,1,10",
+    "17,25,1,5",
+    "17,30,1,5",
+    "17,35,1,8",
+    "17,43,1,6",
+    "17,56,1,2",
+    "17,58,1,6",
+    "17,64,1,6",
+    "2,40,1,6",
+    "2,10,1,5",
+    "3,10,1,5",
+    "17,7,1,8",
+    "17,49,1,7",
+    "15,49,2,7",
+    "2,54,1,5",
+    "3,54,1,5",
+    "1,48,1,11",
+    "18,1,17,74",
+    "15,72,2,1"
+  ],
+  "PageInfo": {
+    "$type": "Forguncy.Model.Pages.NormalPage, ServerDesignerCommon",
+    "MasterPageName": "終夜運転マスタページ",
+    "PageLoadedCommandList": [
+      {
+        "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
+        "ConditionAndCommandPairList": [
+          {
+            "Condition": {
+              "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+              "param": {
+                "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
+                "cellLocations": [
+                  {
+                    "SerializeProperty": "=届出一覧!BC3"
+                  }
+                ]
+              },
+              "compareType": 1
+            },
+            "CommandList": [
+              {
+                "$type": "Forguncy.Model.SetCellPropertyCommand, ServerDesignerCommon",
+                "PropertyItemsList": [
+                  {
+                    "TargetCells": {
+                      "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                      "SerializeProperty": "=届出一覧!Z12"
+                    },
+                    "Value": "1"
+                  }
+                ]
+              }
+            ],
+            "Comments": "URLから遷移した時は届出が「許可」された時なので、明日以降の届出を表示",
+            "ID": "0f12a2f1-a04b-4902-a905-676b5a5f257d"
+          }
+        ]
+      },
+      {
+        "$type": "Forguncy.Model.OperateCellTypeCommand, ServerDesignerCommon",
+        "TargetPageElement": {
+          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+          "SerializeProperty": "=届出一覧!B2"
+        },
+        "TargetType": "Forguncy.ButtonCellType, ServerDesignerCommon, Version=8.0.20.0, Culture=neutral, PublicKeyToken=967100671921c115",
+        "MethodName": "ExecuteCommand",
+        "ParameterValues": {},
+        "RetrunParamNames": {}
+      },
+      {
+        "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
+        "ConditionAndCommandPairList": [
+          {
+            "Condition": {
+              "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+              "param": {
+                "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
+                "cellLocations": [
+                  {
+                    "SerializeProperty": "=届出一覧!BC3"
+                  }
+                ]
+              },
+              "compareType": 1
+            },
+            "CommandList": [
+              {
+                "$type": "Forguncy.Model.OperateCellTypeCommand, ServerDesignerCommon",
+                "TargetPageElement": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=届出一覧!AW2"
+                },
+                "TargetType": "Forguncy.ButtonCellType, ServerDesignerCommon, Version=8.0.20.0, Culture=neutral, PublicKeyToken=967100671921c115",
+                "MethodName": "ExecuteCommand",
+                "ParameterValues": {},
+                "RetrunParamNames": {},
+                "Comments": ""
+              }
+            ],
+            "Comments": "URLから遷移した時は、印刷画面を開く",
+            "ID": "987c6d51-19f4-481b-9c1f-6a92d25c5a71"
+          }
+        ]
+      }
+    ],
+    "AuthorizeInfo": {
+      "VisitMode": 2
+    },
+    "RowBreakLines": [],
+    "RepeatRangeSettings": [],
+    "RelatedDataTableName": "T_OvernightNotification"
+  },
+  "PrintInfo": {
+    "Margin": {},
+    "PaperSize": {}
+  }
+}//yQvtw1vwVtRpWwF5e+O1XFSyi9t1nykqIcDLjbzmkQzARua+fBcYt0uuVEBnPfzZHizFVVQZk8riR3+v9V4W2vi2dwAaCv7VaKXdIdwsDKE+4f1yXTV1PDOksPk6M7/dfXF6k+4dPGrhJHDDvazrE7EumA3ZUkOgkyD/qC1OEdpUCmSUwzNtGrE6cdvXhbnKuaJ8L+A9dr5rz5SV1hhPPnD2knoAlNVSSflzQKzXeZQuXIw4pc8GTlV6JJFob/cosTOycUQjKNX3lkx0T/TPrnWVq95Yag9/CzkRsudJalzULt6RuOrlkBsHOJZ2I8pJXEHidGW3dr2ZRlwXcD0q8dlWwyNrSimYdjS7DV19jsbGFfvmTbvh9j68/hrRqUCX3qzmDWBxTmqzmd1NB1IDjybjSNpPhZjVmQavTnEUueWEReuNLFCn/boyGR7B0cZ4B4sF63rqnz8Td7LHkqFmo7XsUUGJhsBE6W9ABOmHte8EM+f9bEgUKNEbq53xy37k950HTa3N0/laFVS8LSD69Bcu0vJksH9j9Zo9Y8luaKEIEGavGwetGV0Ej8kVvp04jyXi0vUIjYiNqtYGRD4k3qdCybIBWjR/o6Z7cEJOH0ueH3T0Mu7w46AaCG1F1fvyz6jnIufH9I1Q16vr/tbkybRd77FXdU3e6sECTJZ70rm2/fz0I6SRyp0t83+aHLU5Vq5dfY8nl9xLCHyrfHnhB4lqWnaSa0H1fpSsrM7ZvHB0PVJX6vk7kyD9mUmRCsVmQj2Vk/2atsUry5uLEiADeQ78+QvS7gRtWcoEoAgi1CRCAGE3WM1DT7dIWfB4zxTQfHJ07g32VtD5QW2bJK3tZLEM80wl8XU1KKAYYrbNsKm0tNjkb8PDZU+xh/AgGGBMP/h4pSiq7MZC8td+zSC3dg==|920

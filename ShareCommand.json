@@ -1,0 +1,1699 @@
+[
+  {
+    "ID": "ad30d38c-907e-41f8-8499-69587bfa91cc",
+    "Name": "管理者判定",
+    "Returns": [
+      {
+        "ID": "85fd5724-2b59-44fd-855a-054a1e561057",
+        "Name": "管理者判定"
+      }
+    ],
+    "Commands": [
+      {
+        "$type": "Forguncy.Model.Commands.SetParameterCommand, ServerDesignerCommon",
+        "ParameterName": "AccountCode",
+        "TableValue": {
+          "TableName": "M_SystemAdministrator",
+          "TableValueType": 3,
+          "SqlCondition": {
+            "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+            "Condition1": {
+              "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+              "Condition1": {
+                "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+                "Condition1": {
+                  "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                  "ColumnBindingInfo": {
+                    "TableName": "M_SystemAdministrator",
+                    "ColumnName": "active"
+                  },
+                  "Value": "1"
+                },
+                "Condition2": {
+                  "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                  "ColumnBindingInfo": {
+                    "TableName": "M_SystemAdministrator",
+                    "ColumnName": "system_classification"
+                  },
+                  "Value": "Overnight"
+                }
+              },
+              "Condition2": {
+                "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                "ColumnBindingInfo": {
+                  "TableName": "M_SystemAdministrator",
+                  "ColumnName": "employee_z_code"
+                },
+                "Value": "%CurrentUser%"
+              }
+            },
+            "Condition2": {
+              "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+              "CompareType": 1,
+              "ColumnBindingInfo": {
+                "TableName": "M_SystemAdministrator",
+                "ColumnName": "employee_z_code"
+              },
+              "Value": "%Null%"
+            }
+          }
+        },
+        "ID": "d070932757674187966122af0275463f"
+      },
+      {
+        "$type": "Forguncy.Model.Commands.SetParameterCommand, ServerDesignerCommon",
+        "ParameterName": "Role",
+        "TableValue": {
+          "TableName": "M_SystemAdministrator",
+          "TableValueType": 3,
+          "SqlCondition": {
+            "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+            "Condition1": {
+              "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+              "Condition1": {
+                "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+                "Condition1": {
+                  "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                  "ColumnBindingInfo": {
+                    "TableName": "M_SystemAdministrator",
+                    "ColumnName": "active"
+                  },
+                  "Value": "1"
+                },
+                "Condition2": {
+                  "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                  "ColumnBindingInfo": {
+                    "TableName": "M_SystemAdministrator",
+                    "ColumnName": "system_classification"
+                  },
+                  "Value": "Overnight"
+                }
+              },
+              "Condition2": {
+                "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                "ColumnBindingInfo": {
+                  "TableName": "M_SystemAdministrator",
+                  "ColumnName": "role"
+                },
+                "Value": "%CurrentUser.Role%"
+              }
+            },
+            "Condition2": {
+              "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+              "CompareType": 1,
+              "ColumnBindingInfo": {
+                "TableName": "M_SystemAdministrator",
+                "ColumnName": "role"
+              },
+              "Value": "%Null%"
+            }
+          }
+        },
+        "ID": "02e705a33a284d788c8a775bd35c51f5"
+      },
+      {
+        "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
+        "ConditionAndCommandPairList": [
+          {
+            "Condition": {
+              "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+              "Condition1": {
+                "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+                "Condition1": {
+                  "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                  "param": {
+                    "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
+                    "cellLocations": [
+                      {
+                        "SerializeProperty": "=AccountCode"
+                      }
+                    ]
+                  },
+                  "value": "1",
+                  "compareType": 3
+                },
+                "Condition2": {
+                  "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                  "param": {
+                    "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
+                    "cellLocations": [
+                      {
+                        "SerializeProperty": "=Role"
+                      }
+                    ]
+                  },
+                  "value": "1",
+                  "compareType": 3
+                },
+                "RelationType": 1
+              },
+              "Condition2": {
+                "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                "param": {
+                  "$type": "Forguncy.Model.IfConditionCurrentUserInfoParam, ServerDesignerCommon",
+                  "currentUserProperty": {
+                    "UserProperty": "ロール",
+                    "PropertyType": 3
+                  }
+                },
+                "value": "Administrator",
+                "compareType": 10
+              },
+              "RelationType": 1
+            },
+            "CommandList": [
+              {
+                "$type": "Forguncy.Model.ReturnCommand, ServerDesignerCommon",
+                "CustomReturns": [
+                  {
+                    "ReturnPropertyName": "管理者判定",
+                    "Value": "1"
+                  }
+                ]
+              }
+            ],
+            "ID": "517ea934-061d-42b6-8edb-d4c959169af8"
+          },
+          {
+            "CommandList": [
+              {
+                "$type": "Forguncy.Model.ReturnCommand, ServerDesignerCommon",
+                "CustomReturns": [
+                  {
+                    "ReturnPropertyName": "管理者判定",
+                    "Value": "0"
+                  }
+                ]
+              }
+            ],
+            "ID": "78fac76f-bfd1-436f-8476-4c97c34b0fe9"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "ID": "d1657221-264f-4c03-b9e0-9124708cb42a",
+    "Name": "終夜運転機器申請メール",
+    "Params": [
+      {
+        "ID": "1870f850-19d8-4da4-8e0d-764d73b69757",
+        "Name": "registration_id"
+      },
+      {
+        "ID": "f742b279-8f09-496d-8eb2-f19c86e3e44d",
+        "Name": "Status"
+      },
+      {
+        "ID": "139025b4-c3ff-4895-a838-0a4e6497e9f8",
+        "Name": "Action"
+      },
+      {
+        "ID": "b41b655b-ed87-4ec4-adee-db9f961d9aae",
+        "Name": "From"
+      },
+      {
+        "ID": "ea114a1c-1e4e-4f8c-8e9c-d558ea6ff3f2",
+        "Name": "To"
+      },
+      {
+        "ID": "3c78baf0-2eeb-45be-9c57-7c84991be514",
+        "Name": "ログイン者名"
+      },
+      {
+        "ID": "026fed63-f772-4974-8781-99be65195560",
+        "Name": "InputComment"
+      }
+    ],
+    "Commands": [
+      {
+        "$type": "Forguncy.Model.Commands.SetParameterCommand, ServerDesignerCommon",
+        "ParameterName": "Registration",
+        "TableValue": {
+          "TableName": "T_OvernightRegistration",
+          "TableValueType": 1,
+          "BindingInfos": [
+            {
+              "BindingInfo": {
+                "TableName": "T_OvernightRegistration",
+                "ColumnName": "overnight_registration_id"
+              },
+              "ColumnName": "overnight_registration_id"
+            },
+            {
+              "BindingInfo": {
+                "TableName": "T_OvernightRegistration",
+                "ColumnName": "overnight_epuipment_name"
+              },
+              "ColumnName": "overnight_epuipment_name"
+            },
+            {
+              "BindingInfo": {
+                "TableName": "T_OvernightRegistration",
+                "ColumnName": "basic_room_Information_id",
+                "RelationBinding": {
+                  "RelatedTable": "V_BasicRoomInformation",
+                  "RelatedColumn": "basic_room_Information_id",
+                  "DisplayColumn": "basic_room_Information_Name"
+                }
+              },
+              "ColumnName": "Unite_Classification_Name"
+            },
+            {
+              "BindingInfo": {
+                "TableName": "T_OvernightRegistration",
+                "ColumnName": "applicant_dept_name"
+              },
+              "ColumnName": "applicant_dept_name"
+            },
+            {
+              "BindingInfo": {
+                "TableName": "T_OvernightRegistration",
+                "ColumnName": "equipment_classification"
+              },
+              "ColumnName": "equipment_classification"
+            },
+            {
+              "BindingInfo": {
+                "TableName": "T_OvernightRegistration",
+                "ColumnName": "registration_elements"
+              },
+              "ColumnName": "registration_elements"
+            },
+            {
+              "BindingInfo": {
+                "TableName": "T_OvernightRegistration",
+                "ColumnName": "applicant_name"
+              },
+              "ColumnName": "applicant_name"
+            }
+          ],
+          "SqlCondition": {
+            "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+            "ColumnBindingInfo": {
+              "TableName": "T_OvernightRegistration",
+              "ColumnName": "overnight_registration_id"
+            },
+            "Value": {
+              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+              "SerializeProperty": "=registration_id"
+            }
+          },
+          "TopCount": "1"
+        },
+        "ID": "e9865423f814446cbe682dda26360ead"
+      },
+      {
+        "$type": "Forguncy.Model.Commands.SetParameterCommand, ServerDesignerCommon",
+        "ParameterName": "Comment",
+        "TableValue": {
+          "TableName": "V_OvernightRegistration_FGC_WHT",
+          "OnlyGetValue": true,
+          "TableValueType": 0,
+          "BindingInfos": [
+            {
+              "BindingInfo": {
+                "TableName": "V_OvernightRegistration_FGC_WHT",
+                "ColumnName": "Comments"
+              },
+              "ColumnName": "Comments"
+            }
+          ],
+          "SqlCondition": {
+            "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+            "Condition1": {
+              "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+              "Condition1": {
+                "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                "ColumnBindingInfo": {
+                  "TableName": "V_OvernightRegistration_FGC_WHT",
+                  "ColumnName": "RecordId"
+                },
+                "Value": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=registration_id"
+                }
+              },
+              "Condition2": {
+                "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                "ColumnBindingInfo": {
+                  "TableName": "V_OvernightRegistration_FGC_WHT",
+                  "ColumnName": "FGC_State"
+                },
+                "Value": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=Status"
+                }
+              }
+            },
+            "Condition2": {
+              "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+              "ColumnBindingInfo": {
+                "TableName": "V_OvernightRegistration_FGC_WHT",
+                "ColumnName": "ActionName"
+              },
+              "Value": {
+                "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                "SerializeProperty": "=Action"
+              }
+            }
+          },
+          "TopCount": "1"
+        },
+        "ID": "627b4d45b4204f32b36cbea513d9dac2"
+      },
+      {
+        "$type": "Forguncy.Model.Commands.SetParameterCommand, ServerDesignerCommon",
+        "ParameterName": "Comment",
+        "ParameterValue": {
+          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+          "SerializeProperty": "=IFERROR(Comment,\"\")"
+        },
+        "ID": "f3462ed7b98345c7a873787471d53130"
+      },
+      {
+        "$type": "Forguncy.Model.Commands.SetParameterCommand, ServerDesignerCommon",
+        "ParameterName": "Subject",
+        "ParameterValue": {
+          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+          "SerializeProperty": "=\"【終夜運転申請】\"&\" \"&Registration.Unite_Classification_Name&\"_\"&Registration.overnight_epuipment_name"
+        },
+        "ID": "0a636e724e7b47e486000a2cc3075fc1"
+      },
+      {
+        "$type": "Forguncy.Model.ShareCommand, ServerDesignerCommon",
+        "ShareCommandContainerRefer": {
+          "ShareCommandContainerID": "0831db5e-449c-458e-9b24-ccaa1238002a"
+        },
+        "ReturnPropertiesTo": [
+          {
+            "ReturnPropertyReferObject": {
+              "ParamID": "fc895043-469a-4a69-b00b-93cbdf4f509b",
+              "ShareCommandContainerReferObject": {
+                "ShareCommandContainerID": "0831db5e-449c-458e-9b24-ccaa1238002a"
+              }
+            },
+            "ResultTo": {
+              "SerializeProperty": "rootURL"
+            }
+          }
+        ]
+      },
+      {
+        "$type": "Forguncy.Model.Commands.SetParameterCommand, ServerDesignerCommon",
+        "ParameterName": "URL",
+        "ParameterValue": {
+          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+          "SerializeProperty": "=rootURL&ENCODEURL(\"新規申請WF一覧\")&\"/?registration_id=\"&registration_id"
+        },
+        "ID": "f5934258a6bc4bd9b009d7d90a368855"
+      },
+      {
+        "$type": "Forguncy.Model.Commands.SetParameterCommand, ServerDesignerCommon",
+        "ParameterName": "To",
+        "ParameterValue": "m-okabe@connectill.jp",
+        "ID": "48a9208d3880406c935bdf077fd2b22e",
+        "Comments": "仮設定",
+        "Disabled": true
+      },
+      {
+        "$type": "Forguncy.Model.Commands.SetParameterCommand, ServerDesignerCommon",
+        "ParameterName": "From",
+        "ParameterValue": {
+          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+          "SerializeProperty": "=IF(From=\"\",\"m-okabe@connectill.jp\",From)"
+        },
+        "ID": "f97d4384c98a47efa8213733b71a7736",
+        "Comments": "仮設定",
+        "Disabled": true
+      },
+      {
+        "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
+        "ConditionAndCommandPairList": [
+          {
+            "Condition": {
+              "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+              "Condition1": {
+                "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                "param": {
+                  "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
+                  "cellLocations": [
+                    {
+                      "SerializeProperty": "=From"
+                    }
+                  ]
+                }
+              },
+              "Condition2": {
+                "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                "param": {
+                  "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
+                  "cellLocations": [
+                    {
+                      "SerializeProperty": "=To"
+                    }
+                  ]
+                }
+              },
+              "RelationType": 1
+            },
+            "CommandList": [
+              {
+                "$type": "Forguncy.Model.ReturnCommand, ServerDesignerCommon"
+              }
+            ],
+            "ID": "61189753-3aa9-4e25-b72e-d62bb27acf5f"
+          }
+        ]
+      },
+      {
+        "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
+        "ConditionAndCommandPairList": [
+          {
+            "Condition": {
+              "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+              "param": {
+                "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
+                "cellLocations": [
+                  {
+                    "SerializeProperty": "=Action"
+                  }
+                ]
+              },
+              "value": "差戻"
+            },
+            "CommandList": [
+              {
+                "$type": "Forguncy.Model.SendMailCommand, ServerDesignerCommon",
+                "From": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=From"
+                },
+                "Subject": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=\"差戻_\"&Subject"
+                },
+                "Content": "[件名]\r\n　差戻_[=Subject]\r\n\r\n[申請ID]\r\n　[=Registration.overnight_registration_id]\r\n\r\n[差戻し元]\r\n　[=ログイン者名]\r\n\r\n[差戻し先]\r\n　[=Registration.applicant_name]\r\n\r\n[コメント]\r\n　[=Comment]\r\n\r\n[ステータス]\r\n　[=Status]\r\n\r\n[URL]\r\n　[=URL]\r\n",
+                "EnhancedRecipient": {
+                  "CommonValue": {
+                    "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                    "SerializeProperty": "=To"
+                  }
+                },
+                "ID": "13edbd024f30497eaa9ce15d7648537b"
+              }
+            ],
+            "ID": "65f9c554-1e1c-43b6-9f78-5da29722bc8a"
+          },
+          {
+            "Condition": {
+              "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+              "param": {
+                "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
+                "cellLocations": [
+                  {
+                    "SerializeProperty": "=Status"
+                  }
+                ]
+              },
+              "value": "申請部署長承認待ち"
+            },
+            "CommandList": [
+              {
+                "$type": "Forguncy.Model.SendMailCommand, ServerDesignerCommon",
+                "From": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=From"
+                },
+                "Subject": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=\"回送_\"&Subject"
+                },
+                "Content": "[件名]\r\n　回送_[=Subject]\r\n\r\n[申請ID]\r\n　[=Registration.overnight_registration_id]\r\n\r\n[申請者]\r\n　[=ログイン者名]\r\n\r\n[ステータス]\r\n　[=Status]\r\n\r\n[URL]\r\n　[=URL]\r\n",
+                "EnhancedRecipient": {
+                  "CommonValue": {
+                    "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                    "SerializeProperty": "=To"
+                  }
+                },
+                "ID": "1ec0648b708a4ac59a839d5e6db81d54"
+              }
+            ],
+            "ID": "655776f2-e958-4cc8-bfcb-fea334766a57"
+          },
+          {
+            "Condition": {
+              "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+              "Condition1": {
+                "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                "param": {
+                  "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
+                  "cellLocations": [
+                    {
+                      "SerializeProperty": "=Status"
+                    }
+                  ]
+                },
+                "value": "環境安全室長許可待ち"
+              },
+              "Condition2": {
+                "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                "param": {
+                  "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
+                  "cellLocations": [
+                    {
+                      "SerializeProperty": "=Status"
+                    }
+                  ]
+                },
+                "value": "実験室管理部署長承認待ち"
+              },
+              "RelationType": 1
+            },
+            "CommandList": [
+              {
+                "$type": "Forguncy.Model.SendMailCommand, ServerDesignerCommon",
+                "From": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=From"
+                },
+                "Subject": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=\"回送_\"&Subject"
+                },
+                "Content": "[件名]\r\n　回送_[=Subject]\r\n\r\n[申請ID]\r\n　[=Registration.overnight_registration_id]\r\n\r\n[承認者]\r\n　[=ログイン者名]\r\n\r\n[コメント]\r\n　[=Comment]\r\n\r\n[ステータス]\r\n　[=Status]\r\n\r\n[URL]\r\n　[=URL]\r\n",
+                "EnhancedRecipient": {
+                  "CommonValue": {
+                    "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                    "SerializeProperty": "=To"
+                  }
+                },
+                "ID": "792d59d6d40948ca9172a40899427192"
+              }
+            ],
+            "ID": "6a46a1a4-21c8-40e9-93b4-3b3ee33f701b"
+          },
+          {
+            "Condition": {
+              "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+              "param": {
+                "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
+                "cellLocations": [
+                  {
+                    "SerializeProperty": "=Status"
+                  }
+                ]
+              },
+              "value": "許可"
+            },
+            "CommandList": [
+              {
+                "$type": "Forguncy.Model.SendMailCommand, ServerDesignerCommon",
+                "From": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=From"
+                },
+                "Subject": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=\"許可_\"&Subject"
+                },
+                "Content": "[件名]\r\n　許可_[=Subject]\r\n\r\n[申請ID]\r\n　[=Registration.overnight_registration_id]\r\n\r\n[許可者]\r\n　[=ログイン者名]\r\n\r\n[機器区分]\r\n　[=機器区分]\r\n\r\n[許可日]\r\n　[=TEXT(TODAY(), \"yyyy/M/D\")]\r\n\r\n[許可要件]\r\n　[=許可要件]\r\n\r\n[コメント]\r\n　[=Comment]\r\n\r\n[ステータス]\r\n　[=Status]\r\n\r\n[URL]\r\n　[=URL]\r\n",
+                "EnhancedRecipient": {
+                  "CommonValue": {
+                    "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                    "SerializeProperty": "=To"
+                  }
+                },
+                "ID": "35371b7d8a714718b36918be9cc38ead"
+              }
+            ],
+            "ID": "1d3aa153-359f-42f9-a877-ed4e9e0f8dce"
+          },
+          {
+            "Condition": {
+              "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+              "param": {
+                "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
+                "cellLocations": [
+                  {
+                    "SerializeProperty": "=Status"
+                  }
+                ]
+              },
+              "value": "現場確認"
+            },
+            "CommandList": [
+              {
+                "$type": "Forguncy.Model.Commands.SetParameterCommand, ServerDesignerCommon",
+                "ParameterName": "現場確認チェックシート",
+                "TableValue": {
+                  "TableName": "M_SystemSettingItem",
+                  "OnlyGetValue": true,
+                  "TableValueType": 0,
+                  "BindingInfos": [
+                    {
+                      "BindingInfo": {
+                        "TableName": "M_SystemSettingItem",
+                        "ColumnName": "item"
+                      },
+                      "ColumnName": "item"
+                    }
+                  ],
+                  "SqlCondition": {
+                    "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+                    "Condition1": {
+                      "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                      "ColumnBindingInfo": {
+                        "TableName": "M_SystemSettingItem",
+                        "ColumnName": "system_classification"
+                      },
+                      "Value": "Overnight"
+                    },
+                    "Condition2": {
+                      "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                      "ColumnBindingInfo": {
+                        "TableName": "M_SystemSettingItem",
+                        "ColumnName": "item_name"
+                      },
+                      "Value": "現場確認チェックシート"
+                    }
+                  }
+                },
+                "ID": "cb54e0071fec40fd90b12f22220d1f6d"
+              },
+              {
+                "$type": "Forguncy.Model.SendMailCommand, ServerDesignerCommon",
+                "From": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=From"
+                },
+                "Subject": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=\"日程調整_\"&Subject"
+                },
+                "Content": "下記の終夜運転機器申請に対して現場確認を行いますので、\r\n日程調整をお願い致します。\r\n\r\n環境安全室長と担当室員(佐藤)のOutlook予定を確認して、\r\n空いているところに現場確認の予定を設定ください。\r\n現場確認は２０～３０分ほどを見込んでいます。\r\n\r\n現場確認は添付のチェックシートに沿って進めますので、\r\n事前に確認・対応をお願い致します。\r\n\r\n[件名]\r\n　日程調整_[=Subject]\r\n\r\n[申請ID]\r\n　[=Registration.overnight_registration_id]\r\n\r\n[コメント]\r\n  [=InputComment]\r\n\r\n[ステータス]\r\n　[=Status]\r\n\r\n[URL]\r\n　[=URL]\r\n",
+                "EnhancedRecipient": {
+                  "CommonValue": {
+                    "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                    "SerializeProperty": "=To"
+                  }
+                },
+                "Attachments": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=現場確認チェックシート"
+                },
+                "ID": "3c02262cc50a44b8b4312938bb751d5d"
+              }
+            ],
+            "ID": "9030eb19-5253-4cb6-9f47-270d957a45d9"
+          },
+          {
+            "Condition": {
+              "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+              "param": {
+                "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
+                "cellLocations": [
+                  {
+                    "SerializeProperty": "=Status"
+                  }
+                ]
+              },
+              "value": "廃止"
+            },
+            "CommandList": [
+              {
+                "$type": "Forguncy.Model.SendMailCommand, ServerDesignerCommon",
+                "From": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=From"
+                },
+                "Subject": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=\"廃止通知_\"&Subject"
+                },
+                "Content": "下記の終夜運転名称が[=ログイン者名] さんによって廃止されました。\r\n\r\n[件名]\r\n　廃止通知_[=Subject]\r\n\r\n[申請ID]\r\n　[=Registration.overnight_registration_id]\r\n\r\n[ステータス]\r\n　[=Status]\r\n\r\n[URL]\r\n　[=URL]",
+                "EnhancedRecipient": {
+                  "CommonValue": {
+                    "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                    "SerializeProperty": "=To"
+                  }
+                },
+                "ID": "3493bca2287c41be8da334d68e7c8b50"
+              }
+            ],
+            "ID": "58da86d1-829c-4e49-b88b-792232295bf3"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "ID": "64a4d563-b720-490e-85d1-dd93d42f2392",
+    "Name": "終夜運転機器申請完了処理",
+    "Params": [
+      {
+        "ID": "23ed90e5-6626-49ba-901e-7563a5030f26",
+        "Name": "registration_id"
+      }
+    ],
+    "Commands": [
+      {
+        "$type": "Forguncy.Model.UpdateDataTableCommand, ServerDesignerCommon",
+        "TableName": "T_OvernightRegistration",
+        "ShowConfirm": false,
+        "ConfirmText": "本当に更新してもよろしいですか？",
+        "RowsToUpdate": 1,
+        "RowsToUpdateCondition": {
+          "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+          "ColumnBindingInfo": {
+            "TableName": "T_OvernightRegistration",
+            "ColumnName": "overnight_registration_id"
+          },
+          "Value": {
+            "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+            "SerializeProperty": "=registration_id"
+          }
+        },
+        "UpdateValues": [
+          {
+            "ColumnName": "permit_date",
+            "Value": {
+              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+              "SerializeProperty": "=NOW()"
+            }
+          }
+        ]
+      },
+      {
+        "$type": "Forguncy.Model.Commands.SetParameterCommand, ServerDesignerCommon",
+        "ParameterName": "OrvernightGroup",
+        "TableValue": {
+          "TableName": "V_OvernightGroup",
+          "TableValueType": 1,
+          "BindingInfos": [
+            {
+              "BindingInfo": {
+                "TableName": "V_OvernightGroup",
+                "ColumnName": "main_equipment_id"
+              },
+              "ColumnName": "main_equipment_id"
+            },
+            {
+              "BindingInfo": {
+                "TableName": "V_OvernightGroup",
+                "ColumnName": "sub_equipment_id"
+              },
+              "ColumnName": "sub_equipment_id"
+            }
+          ],
+          "SqlCondition": {
+            "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+            "ColumnBindingInfo": {
+              "TableName": "V_OvernightGroup",
+              "ColumnName": "overnight_registration_id"
+            },
+            "Value": {
+              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+              "SerializeProperty": "=registration_id"
+            }
+          }
+        },
+        "ID": "78e364fe76e3403e8b3d9fe1a7e41c47"
+      },
+      {
+        "$type": "Forguncy.Model.UpdateDataTableCommand, ServerDesignerCommon",
+        "TableName": "T_InstrumentBasicInformation",
+        "ShowConfirm": false,
+        "ConfirmText": "本当に更新してもよろしいですか？",
+        "RowsToUpdate": 1,
+        "RowsToUpdateCondition": {
+          "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+          "Condition1": {
+            "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+            "ColumnBindingInfo": {
+              "TableName": "T_InstrumentBasicInformation",
+              "ColumnName": "EquipmentId"
+            },
+            "Value": {
+              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+              "SerializeProperty": "=OrvernightGroup.main_equipment_id"
+            }
+          },
+          "Condition2": {
+            "$type": "ForguncyDataAccess.TextCESqlCondition, ForguncyDataAccess",
+            "CompareType": 8,
+            "ColumnBindingInfo": {
+              "TableName": "T_InstrumentBasicInformation",
+              "ColumnName": "EquipmentId"
+            },
+            "Value": {
+              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+              "SerializeProperty": "=OrvernightGroup.sub_equipment_id"
+            }
+          },
+          "RelationType": 1
+        },
+        "UpdateValues": [
+          {
+            "ColumnName": "overnight_epuipment_flg",
+            "Value": "1"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "ID": "ff482220-5cbd-4674-be7b-f76da8a4d74e",
+    "Name": "終夜運転届出メール",
+    "Params": [
+      {
+        "ID": "89ea1fe1-72f1-4ef0-82a0-c1b13a58bb87",
+        "Name": "notification_id"
+      },
+      {
+        "ID": "0c04d529-c57a-42d8-b7e4-d393e03bc89f",
+        "Name": "Status"
+      },
+      {
+        "ID": "329f661d-40e9-4e2a-988a-4b3b6f694d30",
+        "Name": "Action"
+      },
+      {
+        "ID": "841050d0-44dc-4966-9e4f-90f85ae2a0aa",
+        "Name": "From"
+      },
+      {
+        "ID": "e8a5f1c4-7dca-46db-94bc-91eed9d18ed7",
+        "Name": "To"
+      },
+      {
+        "ID": "85646e77-9986-45db-9dd0-60f4cae853f8",
+        "Name": "ログイン者名"
+      }
+    ],
+    "Commands": [
+      {
+        "$type": "Forguncy.Model.Commands.SetParameterCommand, ServerDesignerCommon",
+        "ParameterName": "Notification",
+        "TableValue": {
+          "TableName": "T_OvernightNotification",
+          "TableValueType": 1,
+          "BindingInfos": [
+            {
+              "BindingInfo": {
+                "TableName": "T_OvernightNotification",
+                "ColumnName": "overnight_notification_id"
+              },
+              "ColumnName": "overnight_notification_id"
+            },
+            {
+              "BindingInfo": {
+                "TableName": "T_OvernightNotification",
+                "ColumnName": "overnight_registration_id"
+              },
+              "ColumnName": "overnight_registration_id"
+            },
+            {
+              "BindingInfo": {
+                "TableName": "T_OvernightNotification",
+                "ColumnName": "longterm_overnight_flag"
+              },
+              "ColumnName": "longterm_overnight_flag"
+            },
+            {
+              "BindingInfo": {
+                "TableName": "T_OvernightNotification",
+                "ColumnName": "notifier_name"
+              },
+              "ColumnName": "notifier_name"
+            },
+            {
+              "BindingInfo": {
+                "TableName": "T_OvernightNotification",
+                "ColumnName": "overnight_start_dete"
+              },
+              "ColumnName": "overnight_start_dete"
+            },
+            {
+              "BindingInfo": {
+                "TableName": "T_OvernightNotification",
+                "ColumnName": "overnight_end_date"
+              },
+              "ColumnName": "overnight_end_date"
+            }
+          ],
+          "SqlCondition": {
+            "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+            "ColumnBindingInfo": {
+              "TableName": "T_OvernightNotification",
+              "ColumnName": "overnight_notification_id"
+            },
+            "Value": {
+              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+              "SerializeProperty": "=notification_id"
+            }
+          }
+        },
+        "ID": "8ce78cdd81ae456fabdf22e45e91a5a5"
+      },
+      {
+        "$type": "Forguncy.Model.Commands.SetParameterCommand, ServerDesignerCommon",
+        "ParameterName": "Registration",
+        "TableValue": {
+          "TableName": "T_OvernightRegistration",
+          "TableValueType": 1,
+          "BindingInfos": [
+            {
+              "BindingInfo": {
+                "TableName": "T_OvernightRegistration",
+                "ColumnName": "overnight_registration_id"
+              },
+              "ColumnName": "overnight_registration_id"
+            },
+            {
+              "BindingInfo": {
+                "TableName": "T_OvernightRegistration",
+                "ColumnName": "overnight_epuipment_name"
+              },
+              "ColumnName": "overnight_epuipment_name"
+            },
+            {
+              "BindingInfo": {
+                "TableName": "T_OvernightRegistration",
+                "ColumnName": "basic_room_Information_id",
+                "RelationBinding": {
+                  "RelatedTable": "V_BasicRoomInformation",
+                  "RelatedColumn": "basic_room_Information_id",
+                  "DisplayColumn": "basic_room_Information_Name"
+                }
+              },
+              "ColumnName": "Unite_Classification_Name"
+            }
+          ],
+          "SqlCondition": {
+            "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+            "ColumnBindingInfo": {
+              "TableName": "T_OvernightRegistration",
+              "ColumnName": "overnight_registration_id"
+            },
+            "Value": {
+              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+              "SerializeProperty": "=Notification.overnight_registration_id"
+            }
+          }
+        },
+        "ID": "4e8eb15aa2ff45e99489cded49e51314"
+      },
+      {
+        "$type": "Forguncy.Model.Commands.SetParameterCommand, ServerDesignerCommon",
+        "ParameterName": "Comment",
+        "TableValue": {
+          "TableName": "V_OvernightNotification_FGC_WHT",
+          "OnlyGetValue": true,
+          "TableValueType": 0,
+          "BindingInfos": [
+            {
+              "BindingInfo": {
+                "TableName": "V_OvernightNotification_FGC_WHT",
+                "ColumnName": "Comments"
+              },
+              "ColumnName": "Comments"
+            }
+          ],
+          "SqlCondition": {
+            "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+            "Condition1": {
+              "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+              "Condition1": {
+                "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                "ColumnBindingInfo": {
+                  "TableName": "V_OvernightNotification_FGC_WHT",
+                  "ColumnName": "RecordId"
+                },
+                "Value": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=notification_id"
+                }
+              },
+              "Condition2": {
+                "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                "ColumnBindingInfo": {
+                  "TableName": "V_OvernightNotification_FGC_WHT",
+                  "ColumnName": "FGC_State"
+                },
+                "Value": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=Status"
+                }
+              }
+            },
+            "Condition2": {
+              "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+              "ColumnBindingInfo": {
+                "TableName": "V_OvernightNotification_FGC_WHT",
+                "ColumnName": "ActionName"
+              },
+              "Value": {
+                "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                "SerializeProperty": "=Action"
+              }
+            }
+          },
+          "TopCount": "1"
+        },
+        "ID": "06712a7204674bdca973efed638ce28b"
+      },
+      {
+        "$type": "Forguncy.Model.Commands.SetParameterCommand, ServerDesignerCommon",
+        "ParameterName": "Comment",
+        "ParameterValue": {
+          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+          "SerializeProperty": "=IFERROR(Comment,\"\")"
+        },
+        "ID": "62169f958c654241b464310f85334a87"
+      },
+      {
+        "$type": "Forguncy.Model.Commands.SetParameterCommand, ServerDesignerCommon",
+        "ParameterName": "届出種類",
+        "ParameterValue": {
+          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+          "SerializeProperty": "=IF(Notification.longterm_overnight_flag=\"1\",\"長期終夜運転届出\",\"終夜運転届出\")"
+        },
+        "ID": "22a7db02d39a4072887044fa55432652"
+      },
+      {
+        "$type": "Forguncy.Model.Commands.SetParameterCommand, ServerDesignerCommon",
+        "ParameterName": "Subject",
+        "ParameterValue": {
+          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+          "SerializeProperty": "=\"【\"&届出種類&\"】\"&\" \"&Registration.Unite_Classification_Name&\"_\"&Registration.overnight_epuipment_name"
+        },
+        "ID": "122cb279e0a54675ab4d5e41e95f5bbc"
+      },
+      {
+        "$type": "Forguncy.Model.ShareCommand, ServerDesignerCommon",
+        "ShareCommandContainerRefer": {
+          "ShareCommandContainerID": "0831db5e-449c-458e-9b24-ccaa1238002a"
+        },
+        "ReturnPropertiesTo": [
+          {
+            "ReturnPropertyReferObject": {
+              "ParamID": "fc895043-469a-4a69-b00b-93cbdf4f509b",
+              "ShareCommandContainerReferObject": {
+                "ShareCommandContainerID": "0831db5e-449c-458e-9b24-ccaa1238002a"
+              }
+            },
+            "ResultTo": {
+              "SerializeProperty": "rootURL"
+            }
+          }
+        ]
+      },
+      {
+        "$type": "Forguncy.Model.Commands.SetParameterCommand, ServerDesignerCommon",
+        "ParameterName": "URL",
+        "ParameterValue": {
+          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+          "SerializeProperty": "=rootURL&ENCODEURL(\"届出WF一覧\")&\"/?notification_id=\"&notification_id"
+        },
+        "ID": "d23b380254ab4121944e6237a76bb2db"
+      },
+      {
+        "$type": "Forguncy.Model.Commands.SetParameterCommand, ServerDesignerCommon",
+        "ParameterName": "URL_print",
+        "ParameterValue": {
+          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+          "SerializeProperty": "=rootURL&ENCODEURL(\"届出一覧\")&\"/?notification_id=\"&notification_id&\"&longterm=\"&Notification.longterm_overnight_flag"
+        },
+        "ID": "f5d0d0a923de4a22b69a590000b3c095"
+      },
+      {
+        "$type": "Forguncy.Model.Commands.SetParameterCommand, ServerDesignerCommon",
+        "ParameterName": "To",
+        "ParameterValue": "m-okabe@connectill.jp",
+        "ID": "219d44c3b3924baeb3fa9e47e2673768",
+        "Comments": "仮設定",
+        "Disabled": true
+      },
+      {
+        "$type": "Forguncy.Model.Commands.SetParameterCommand, ServerDesignerCommon",
+        "ParameterName": "From",
+        "ParameterValue": {
+          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+          "SerializeProperty": "=IF(From=\"\",\"m-okabe@connectill.jp\",From)"
+        },
+        "ID": "8add4f9adb9f4d4882b0941c623aff8a",
+        "Comments": "仮設定",
+        "Disabled": true
+      },
+      {
+        "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
+        "ConditionAndCommandPairList": [
+          {
+            "Condition": {
+              "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+              "Condition1": {
+                "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                "param": {
+                  "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
+                  "cellLocations": [
+                    {
+                      "SerializeProperty": "=From"
+                    }
+                  ]
+                }
+              },
+              "Condition2": {
+                "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                "param": {
+                  "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
+                  "cellLocations": [
+                    {
+                      "SerializeProperty": "=To"
+                    }
+                  ]
+                }
+              },
+              "RelationType": 1
+            },
+            "CommandList": [
+              {
+                "$type": "Forguncy.Model.ReturnCommand, ServerDesignerCommon"
+              }
+            ],
+            "ID": "b35609a8-ff52-479c-a0c7-f0199da1734e"
+          }
+        ]
+      },
+      {
+        "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
+        "ConditionAndCommandPairList": [
+          {
+            "Condition": {
+              "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+              "param": {
+                "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
+                "cellLocations": [
+                  {
+                    "SerializeProperty": "=Action"
+                  }
+                ]
+              },
+              "value": "差戻"
+            },
+            "CommandList": [
+              {
+                "$type": "Forguncy.Model.SendMailCommand, ServerDesignerCommon",
+                "From": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=From"
+                },
+                "Subject": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=\"差戻_\"&Subject"
+                },
+                "Content": "[件名]\r\n　差戻_[=Subject]\r\n\r\n[届出ID]\r\n　[=Notification.overnight_notification_id]\r\n\r\n[差戻し元]\r\n　[=ログイン者名]\r\n\r\n[差戻し先]\r\n　[=Notification.notifier_name]\r\n\r\n[コメント]\r\n　[=Comment]\r\n\r\n[ステータス]\r\n　[=Status]\r\n\r\n[URL]\r\n　[=URL]\r\n",
+                "EnhancedRecipient": {
+                  "CommonValue": {
+                    "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                    "SerializeProperty": "=To"
+                  }
+                },
+                "ID": "a5583e3559c1463892a3f1bde43adc9d"
+              }
+            ],
+            "ID": "dd48c612-67b0-4b32-b554-66055e30e878"
+          },
+          {
+            "Condition": {
+              "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+              "param": {
+                "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
+                "cellLocations": [
+                  {
+                    "SerializeProperty": "=Status"
+                  }
+                ]
+              },
+              "value": "届出取消"
+            },
+            "CommandList": [
+              {
+                "$type": "Forguncy.Model.SendMailCommand, ServerDesignerCommon",
+                "From": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=From"
+                },
+                "Subject": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=\"取消通知_\"&Subject"
+                },
+                "Content": "下記の終夜運転届が[=ログイン者名] さんによって取消されました。\r\n\r\n[件名]\r\n　取消通知_[=Subject]\r\n\r\n[届出ID]\r\n　[=Notification.overnight_notification_id]\r\n\r\n[ステータス]\r\n　[=Status]\r\n\r\n[URL]\r\n　[=URL]",
+                "EnhancedRecipient": {
+                  "CommonValue": {
+                    "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                    "SerializeProperty": "=To"
+                  }
+                },
+                "ID": "747145c1d1164b57a16c6d15db43107f"
+              }
+            ],
+            "ID": "7fbe07ad-0845-42b6-bd56-1d8bfc5b0852"
+          },
+          {
+            "Condition": {
+              "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+              "param": {
+                "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
+                "cellLocations": [
+                  {
+                    "SerializeProperty": "=Status"
+                  }
+                ]
+              },
+              "value": "許可"
+            },
+            "CommandList": [
+              {
+                "$type": "Forguncy.Model.SendMailCommand, ServerDesignerCommon",
+                "From": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=From"
+                },
+                "Subject": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=\"許可_\"&Subject"
+                },
+                "Content": "[件名]\r\n　許可_[=Subject]\r\n\r\n[届出ID]\r\n　[=Notification.overnight_notification_id]\r\n\r\n[許可者]\r\n　[=ログイン者名]\r\n\r\n[コメント]\r\n　[=Comment]\r\n\r\n[ステータス]\r\n　[=Status]\r\n\r\n[URL]\r\n　[=URL_print]",
+                "EnhancedRecipient": {
+                  "CommonValue": {
+                    "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                    "SerializeProperty": "=To"
+                  }
+                },
+                "ID": "d332e370daa049838cfc26a4481a23d9"
+              }
+            ],
+            "ID": "2753c62c-07f0-4ec8-a513-0838dee0ee5e"
+          },
+          {
+            "Condition": {
+              "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+              "param": {
+                "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
+                "cellLocations": [
+                  {
+                    "SerializeProperty": "=Status"
+                  }
+                ]
+              },
+              "value": "許可",
+              "compareType": 1
+            },
+            "CommandList": [
+              {
+                "$type": "Forguncy.Model.SendMailCommand, ServerDesignerCommon",
+                "From": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=From"
+                },
+                "Subject": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=Subject"
+                },
+                "Content": "[件名]\r\n　[=Subject]\r\n\r\n[届出ID]\r\n　[=Notification.overnight_notification_id]\r\n\r\n[届出者]\r\n　[=ログイン者名]\r\n\r\n[運転期間]\r\n　[=TEXT(Notification.overnight_start_dete, \"yyyy/M/d (aaa)\")] ～ [=TEXT(Notification.overnight_end_date, \"yyyy/M/d (aaa)\")]\r\n\r\n[コメント]\r\n　[=Comment]\r\n\r\n[ステータス]\r\n　[=Status]\r\n\r\n[URL]\r\n　[=URL]\r\n",
+                "EnhancedRecipient": {
+                  "CommonValue": {
+                    "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                    "SerializeProperty": "=To"
+                  }
+                },
+                "ID": "6b8460c232b54ae38c3d940e84694a78"
+              }
+            ],
+            "ID": "a7b40917-7f14-4e2f-8500-ac501b40f72a"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "ID": "ffa657fd-fc54-486f-b3ad-7e7dcc052242",
+    "Name": "終夜運転届出完了処理",
+    "Params": [
+      {
+        "ID": "fb68dcca-a7a7-4442-b80c-a71e754e7cde",
+        "Name": "notification_id"
+      },
+      {
+        "ID": "84cf988c-89f8-4e32-909c-9b25fe3889ad",
+        "Name": "registration_id"
+      },
+      {
+        "ID": "0a25b011-513a-4d6f-a362-3092ffd63b64",
+        "Name": "長期終夜区分"
+      }
+    ],
+    "Commands": [
+      {
+        "$type": "Forguncy.Model.UpdateDataTableCommand, ServerDesignerCommon",
+        "TableName": "T_OvernightNotification",
+        "ShowConfirm": false,
+        "ConfirmText": "本当に更新してもよろしいですか？",
+        "UpdateValues": [
+          {
+            "ColumnName": "notified_date",
+            "Value": {
+              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+              "SerializeProperty": "=NOW()"
+            }
+          }
+        ]
+      },
+      {
+        "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
+        "ConditionAndCommandPairList": [
+          {
+            "Condition": {
+              "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+              "param": {
+                "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
+                "cellLocations": [
+                  {
+                    "SerializeProperty": "=長期終夜区分"
+                  }
+                ]
+              },
+              "value": "1"
+            },
+            "CommandList": [
+              {
+                "$type": "Forguncy.Model.UpdateDataTableCommand, ServerDesignerCommon",
+                "TableName": "T_OvernightRegistration",
+                "ShowConfirm": false,
+                "ConfirmText": "本当に更新してもよろしいですか？",
+                "RowsToUpdate": 1,
+                "RowsToUpdateCondition": {
+                  "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+                  "Condition1": {
+                    "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                    "ColumnBindingInfo": {
+                      "TableName": "T_OvernightRegistration",
+                      "ColumnName": "overnight_registration_id"
+                    },
+                    "Value": {
+                      "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                      "SerializeProperty": "=registration_id"
+                    }
+                  },
+                  "Condition2": {
+                    "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                    "CompareType": 1,
+                    "ColumnBindingInfo": {
+                      "TableName": "T_OvernightRegistration",
+                      "ColumnName": "delete_flg"
+                    },
+                    "Value": "1"
+                  }
+                },
+                "UpdateValues": [
+                  {
+                    "ColumnName": "longterm_overnight_registration_flag",
+                    "Value": "1"
+                  }
+                ]
+              }
+            ],
+            "ID": "a7b8f76b-a42c-496c-a6fe-6ee25ad6bf51"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "ID": "8df8aad6-8310-477a-a619-a3bd32fd19bd",
+    "Name": "担当者セット",
+    "Params": [
+      {
+        "ID": "1b7cbf27-a185-47c3-a0a0-e81df52d3258",
+        "Name": "対象"
+      },
+      {
+        "ID": "654b91b8-b3da-4e93-9c9b-5430cb29cc02",
+        "Name": "対象ID"
+      },
+      {
+        "ID": "1129feee-9cc9-485a-973b-1d2107de27de",
+        "Name": "承認者"
+      }
+    ],
+    "Commands": [
+      {
+        "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
+        "ConditionAndCommandPairList": [
+          {
+            "Condition": {
+              "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+              "param": {
+                "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
+                "cellLocations": [
+                  {
+                    "SerializeProperty": "=対象"
+                  }
+                ]
+              },
+              "value": "申請"
+            },
+            "CommandList": [
+              {
+                "$type": "Forguncy.Model.Commands.SetParameterCommand, ServerDesignerCommon",
+                "ParameterName": "申請WF履歴",
+                "TableValue": {
+                  "TableName": "V_OvernightRegistration_FGC_WHT",
+                  "TableValueType": 1,
+                  "BindingInfos": [
+                    {
+                      "BindingInfo": {
+                        "TableName": "V_OvernightRegistration_FGC_WHT",
+                        "ColumnName": "FGC_State"
+                      },
+                      "ColumnName": "状態"
+                    },
+                    {
+                      "BindingInfo": {
+                        "TableName": "V_OvernightRegistration_FGC_WHT",
+                        "ColumnName": "ActionName"
+                      },
+                      "ColumnName": "ActionName"
+                    },
+                    {
+                      "BindingInfo": {
+                        "TableName": "V_OvernightRegistration_FGC_WHT",
+                        "ColumnName": "Comments"
+                      },
+                      "ColumnName": "Comments"
+                    }
+                  ],
+                  "SqlCondition": {
+                    "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                    "ColumnBindingInfo": {
+                      "TableName": "V_OvernightRegistration_FGC_WHT",
+                      "ColumnName": "RecordId"
+                    },
+                    "Value": {
+                      "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                      "SerializeProperty": "=対象ID"
+                    }
+                  },
+                  "TopCount": "1",
+                  "OrderBySqlCondition": {
+                    "OrderByColumns": [
+                      {
+                        "ColumnBindingInfo": {
+                          "TableName": "V_OvernightRegistration_FGC_WHT",
+                          "ColumnName": "ID"
+                        },
+                        "Order": 1
+                      }
+                    ]
+                  }
+                },
+                "ID": "dff5a21cc6174588a893cd1208993f07"
+              },
+              {
+                "$type": "SetCurrentRowCommand.SetCurrentRowCommand, SetCurrentRowCommand",
+                "CurrentRowInfo": {
+                  "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                  "ColumnBindingInfo": {
+                    "TableName": "T_OvernightRegistration",
+                    "ColumnName": "overnight_registration_id"
+                  },
+                  "Value": {
+                    "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                    "SerializeProperty": "=対象ID"
+                  }
+                }
+              },
+              {
+                "$type": "WorkflowCommand.WorkflowCommand, WorkflowCommand",
+                "TableName": "T_OvernightRegistration",
+                "NextState": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=申請WF履歴.状態"
+                },
+                "AssignTo": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=承認者"
+                },
+                "ActionName": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=申請WF履歴.ActionName"
+                },
+                "WorkflowComments": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=申請WF履歴.Comments"
+                }
+              }
+            ],
+            "ID": "4510b26d-0822-4a81-8f13-89386aeb6ca4"
+          },
+          {
+            "Condition": {
+              "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+              "param": {
+                "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
+                "cellLocations": [
+                  {
+                    "SerializeProperty": "=対象"
+                  }
+                ]
+              },
+              "value": "届出"
+            },
+            "CommandList": [
+              {
+                "$type": "Forguncy.Model.Commands.SetParameterCommand, ServerDesignerCommon",
+                "ParameterName": "届出WF履歴",
+                "TableValue": {
+                  "TableName": "V_OvernightNotification_FGC_WHT",
+                  "TableValueType": 1,
+                  "BindingInfos": [
+                    {
+                      "BindingInfo": {
+                        "TableName": "V_OvernightNotification_FGC_WHT",
+                        "ColumnName": "FGC_State"
+                      },
+                      "ColumnName": "状態"
+                    },
+                    {
+                      "BindingInfo": {
+                        "TableName": "V_OvernightNotification_FGC_WHT",
+                        "ColumnName": "ActionName"
+                      },
+                      "ColumnName": "ActionName"
+                    },
+                    {
+                      "BindingInfo": {
+                        "TableName": "V_OvernightNotification_FGC_WHT",
+                        "ColumnName": "Comments"
+                      },
+                      "ColumnName": "Comments"
+                    }
+                  ],
+                  "SqlCondition": {
+                    "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                    "ColumnBindingInfo": {
+                      "TableName": "V_OvernightNotification_FGC_WHT",
+                      "ColumnName": "RecordId"
+                    },
+                    "Value": {
+                      "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                      "SerializeProperty": "=対象ID"
+                    }
+                  },
+                  "TopCount": "1",
+                  "OrderBySqlCondition": {
+                    "OrderByColumns": [
+                      {
+                        "ColumnBindingInfo": {
+                          "TableName": "V_OvernightNotification_FGC_WHT",
+                          "ColumnName": "ID"
+                        },
+                        "Order": 1
+                      }
+                    ]
+                  }
+                },
+                "ID": "4e5634bcd3d54d259e5ceb5ab44a919b"
+              },
+              {
+                "$type": "SetCurrentRowCommand.SetCurrentRowCommand, SetCurrentRowCommand",
+                "CurrentRowInfo": {
+                  "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                  "ColumnBindingInfo": {
+                    "TableName": "T_OvernightNotification",
+                    "ColumnName": "overnight_notification_id"
+                  },
+                  "Value": {
+                    "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                    "SerializeProperty": "=対象ID"
+                  }
+                }
+              },
+              {
+                "$type": "WorkflowCommand.WorkflowCommand, WorkflowCommand",
+                "TableName": "T_OvernightNotification",
+                "NextState": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=届出WF履歴.状態"
+                },
+                "AssignTo": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=承認者"
+                },
+                "ActionName": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=届出WF履歴.ActionName"
+                },
+                "WorkflowComments": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=届出WF履歴.Comments"
+                }
+              }
+            ],
+            "ID": "a78732fc-df40-4ad9-977d-762d9f5d946c"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "ID": "0831db5e-449c-458e-9b24-ccaa1238002a",
+    "Name": "アプリルートURL取得",
+    "Returns": [
+      {
+        "ID": "fc895043-469a-4a69-b00b-93cbdf4f509b",
+        "Name": "rootURL"
+      }
+    ],
+    "Commands": [
+      {
+        "$type": "Forguncy.Model.RunJavaScriptCommand, ServerDesignerCommon",
+        "JavaScript": "var helper = Forguncy.Helper;\r\n\r\n// アプリケーションのルートURLを取得する。\r\nvar root = helper.SpecialPath.getBaseUrl();\r\n\r\nvar origin = window.location.origin;\r\n\r\nvar url = origin + root;\r\n\r\n//Forguncy.Page.getCell(\"rootURL\").setValue(url);\r\n\r\nForguncy.CommandHelper.setVariableValue(\"rootURL\", url);\r\n",
+        "ID": "cbb40efda3af47eb9647011fd225f938"
+      },
+      {
+        "$type": "Forguncy.Model.ReturnCommand, ServerDesignerCommon",
+        "CustomReturns": [
+          {
+            "ReturnPropertyName": "rootURL",
+            "Value": {
+              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+              "SerializeProperty": "=rootURL"
+            }
+          }
+        ]
+      }
+    ]
+  }
+]

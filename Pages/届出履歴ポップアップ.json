@@ -1,0 +1,349 @@
+{
+  "Rows": {
+    "RowColumnAttachedInfos": {
+      "5": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 30.0
+        }
+      },
+      "6": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 10.0
+        }
+      },
+      "7": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 40.0
+        }
+      },
+      "8": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 40.0
+        }
+      },
+      "9": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 40.0
+        }
+      }
+    },
+    "InLogicalVisibleIndexes": [
+      0,
+      1,
+      2,
+      3,
+      31,
+      32,
+      33,
+      34
+    ],
+    "Count": 35
+  },
+  "Cols": {
+    "RowColumnAttachedInfos": {
+      "46": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 20.0,
+          "IsHidden": true
+        }
+      }
+    },
+    "InLogicalVisibleIndexes": [
+      45,
+      46,
+      49
+    ],
+    "Count": 50
+  },
+  "Values": {
+    "1,1": "終夜申請ID",
+    "7,1": "申請ID",
+    "7,7": "届出日",
+    "7,13": "届出者",
+    "7,21": "終夜運転許可日",
+    "7,27": "開始日",
+    "7,33": "終了日",
+    "7,39": "運転日数"
+  },
+  "Formulas": {
+    "8,39": "DATEDIF(AB9,AH9,\"D\")",
+    "8,21": "IFERROR(ODATA(\"V_OvernightRegistration_FGC_WHT?$select=When&$filter=RecordId eq \"&IF(ISBLANK(B9),\"null\",\"'\"&B9&\"'\")&\" and ActionName eq '許可'&$top=1\"),\"\")"
+  },
+  "AttachInfos": {
+    "5,1": {
+      "CellType": {
+        "$type": "Forguncy.PageNavigateCellType, ServerDesignerCommon",
+        "PageingListviewName": "届出WF一覧",
+        "PageLimitRowCount": 12,
+        "FirstImage": {
+          "Name": "Arrow/347_move_first.svg",
+          "BuiltIn": true,
+          "Color": "Accent 6 0"
+        },
+        "PreviousImage": {
+          "Name": "Arrow/349_left_arrow.svg",
+          "BuiltIn": true,
+          "Color": "Accent 6 0"
+        },
+        "NextImage": {
+          "Name": "Arrow/350_right_arrow.svg",
+          "BuiltIn": true,
+          "Color": "Accent 6 0"
+        },
+        "LastImage": {
+          "Name": "Arrow/348_move_last.svg",
+          "BuiltIn": true,
+          "Color": "Accent 6 0"
+        }
+      }
+    },
+    "7,1": {
+      "ListViewInfo": {
+        "ShowColumnHeaderInDesigner": true,
+        "TableName": "V_OvernightRegistrationHistory",
+        "RowIndex": 7,
+        "ColumnIndex": 1,
+        "ColumnCount": 47,
+        "RowCount": 23,
+        "ColumnOperation": 2,
+        "ShowEditStatusIcon": true,
+        "UseSimpleBar": true,
+        "Name": "届出WF一覧",
+        "SqlCondition": {
+          "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+          "Condition1": {
+            "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+            "Condition1": {
+              "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+              "Condition1": {
+                "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                "ColumnBindingInfo": {
+                  "TableName": "V_OvernightRegistrationHistory",
+                  "ColumnName": "overnight_registration_id"
+                },
+                "Value": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=届出履歴ポップアップ!registration_id"
+                }
+              },
+              "Condition2": {
+                "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                "ColumnBindingInfo": {
+                  "TableName": "V_OvernightRegistrationHistory",
+                  "ColumnName": "FGC_State"
+                },
+                "Value": "許可"
+              }
+            },
+            "Condition2": {
+              "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+              "CompareType": 5,
+              "ColumnBindingInfo": {
+                "TableName": "V_OvernightRegistrationHistory",
+                "ColumnName": "overnight_end_date"
+              },
+              "Value": {
+                "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                "SerializeProperty": "=TODAY()"
+              }
+            }
+          },
+          "Condition2": {
+            "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+            "CompareType": 1,
+            "ColumnBindingInfo": {
+              "TableName": "V_OvernightRegistrationHistory",
+              "ColumnName": "delete_flg"
+            },
+            "Value": "1"
+          }
+        },
+        "TopCondition": null,
+        "ListViewStyleName": "_RS_Medium7"
+      }
+    },
+    "8,1": {
+      "BindingInfo": {
+        "TableName": "V_OvernightRegistrationHistory",
+        "ColumnName": "overnight_registration_id"
+      }
+    },
+    "8,7": {
+      "BindingInfo": {
+        "TableName": "V_OvernightRegistrationHistory",
+        "ColumnName": "notified_date"
+      }
+    },
+    "8,13": {
+      "BindingInfo": {
+        "TableName": "V_OvernightRegistrationHistory",
+        "ColumnName": "notifier_name"
+      }
+    },
+    "8,27": {
+      "BindingInfo": {
+        "TableName": "V_OvernightRegistrationHistory",
+        "ColumnName": "overnight_start_dete"
+      }
+    },
+    "8,33": {
+      "BindingInfo": {
+        "TableName": "V_OvernightRegistrationHistory",
+        "ColumnName": "overnight_end_date"
+      }
+    },
+    "8,45": {
+      "BindingInfo": {
+        "TableName": "V_OvernightRegistrationHistory",
+        "ColumnName": "overnight_notification_id"
+      }
+    }
+  },
+  "StyleDatas": {
+    "Styles": [
+      {
+        "Background": 0
+      },
+      {
+        "FontFamily": 1
+      },
+      {
+        "Background": 2,
+        "FontFamily": 1
+      },
+      {
+        "Foreground": 3
+      },
+      {
+        "Formatter": 4
+      },
+      {
+        "FontFamily": 1,
+        "Formatter": 4
+      },
+      {
+        "FontFamily": 1,
+        "FontSize": 12.0,
+        "Formatter": 5,
+        "HorizontalAlignment": 6,
+        "Underline": false
+      },
+      {
+        "FontFamily": 1,
+        "Formatter": 5,
+        "HorizontalAlignment": 6
+      },
+      {
+        "FontFamily": 1,
+        "HorizontalAlignment": 6
+      },
+      {
+        "FontFamily": 1,
+        "Formatter": 7,
+        "HorizontalAlignment": 6,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderRight": null
+      },
+      {
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderRight": null
+      }
+    ],
+    "Types": {
+      "Strs": [
+        "Background 1 -15",
+        "Body",
+        "#FFFFFF00",
+        "#FFFF0000",
+        "[AUTO]General",
+        "yyyy/m/d",
+        "Center",
+        "0_);[Red](0)"
+      ]
+    },
+    "CellStyles": {
+      "0,0": 0,
+      "0,45": 0,
+      "0,46": 0,
+      "0,49": 0,
+      "1,0": 0,
+      "1,1": 1,
+      "1,2": 1,
+      "1,3": 1,
+      "1,4": 1,
+      "1,5": 1,
+      "1,6": 2,
+      "2,0": 0,
+      "2,2": 3,
+      "2,31": 4,
+      "3,0": 0,
+      "3,14": 4,
+      "5,1": 1,
+      "7,7": 1,
+      "7,13": 5,
+      "7,21": 5,
+      "7,27": 5,
+      "7,33": 5,
+      "7,39": 1,
+      "8,1": 6,
+      "8,7": 7,
+      "8,13": 8,
+      "8,21": 7,
+      "8,27": 7,
+      "8,33": 7,
+      "8,39": 9,
+      "8,40": 10,
+      "8,41": 10,
+      "8,42": 10,
+      "8,43": 10,
+      "8,44": 10,
+      "31,0": 0,
+      "32,0": 0,
+      "33,0": 0,
+      "34,0": 0
+    },
+    "SheetStyle": {
+      "FontFamily": 1
+    }
+  },
+  "Spans": [
+    "5,1,1,10",
+    "1,6,1,5",
+    "8,21,1,6",
+    "8,39,1,6",
+    "9,1,21,47",
+    "8,1,1,6",
+    "8,7,1,6",
+    "8,13,1,8",
+    "8,27,1,6",
+    "8,33,1,6",
+    "7,1,1,6",
+    "7,7,1,6",
+    "7,13,1,8",
+    "7,21,1,6",
+    "7,27,1,6",
+    "7,33,1,6",
+    "7,39,1,6"
+  ],
+  "PageInfo": {
+    "$type": "Forguncy.Model.Pages.NormalPage, ServerDesignerCommon",
+    "AuthorizeInfo": {
+      "VisitMode": 2
+    },
+    "RowBreakLines": [],
+    "RepeatRangeSettings": [],
+    "RelatedDataTableName": "T_OvernightNotification"
+  },
+  "PrintInfo": {
+    "Margin": {},
+    "PaperSize": {}
+  },
+  "CustomNames": [
+    {
+      "Name": "registration_id",
+      "Formula": "届出履歴ポップアップ!$G$2"
+    }
+  ]
+}//88/rScPj4CSGPlyQzWFzUfhE8AkKTxZdRoaREpSzrvnzQxie125X4ZYe2gtO6RypfKv80SFPzn/jU8QZ934AHL8nddN/FucUuM1nRvN7ZoEAHpzTIXYe/E9An7TonVtGIoc26qqbM3ggSNOje59PSFTmmGQ47VPlx1IV7h/IVUzi0X6nfDTmneqwI2ztJhJehUDJ2Ye4DUW1nqGINGNsbB5HgR+1RvjVtOThKbjGFTwUwrk9Bj4i3QoQSGktTHAEHPQD00pWUUsZ6u/98Goy6RR4mN2AAyloDJu/++4QnTetgMhvsYtokt73OJnuQ61Jj/P0sY1dFIivBYjPysrmmuCXlkjD1juUpW6fsCxLcn6SLtLinIclL/eDXfJBKuuQWIzggYSS91ntswfEO9cy2iBL+gjUkBFvdf9JVkRbgO8Q5JVZPMn6uB8e9dQn0X1LRx54/0IFyFYXBNYig+91vicSc6cDvBuDSsAjc0YsTBV5/YmooHU68qYlx9j38n0InuZSBgZdKlHwjcpoI4IznWHMIm+yo2Y35RFlTINJw9KlRtgLDm7GUX4Ehttx99kSJXke0ol10nZIhXl8aXqJXhI/Kpt3sLVN0exKjrri71wXudOweLv1x3r0vvJOWRhj0fRGhXqbvZadDdZHZjRTWiZkflMgNppEv+CyEjDEznxFw2lNvi1lMcAgE3jo3J+RKiyRCUFw/nvo11HjEutn8rJq2AfLgkTWYnTqz4ZmTmwUoOYKjhG5OgyQCjaOFbwMLsWrQYFuaH6cYJlesM2yUrOhQ43R+Hefw0YOhsBy7ecmVdFyQieqA2px8I54pun0mSrnMZ0F6F9bxofmq3GajE/7psJtskZ2AXLwLNREBZn/pmmWHQAtok7axtIKwBThF2uS8u4v8+CHE+TZQ6e/vQ==|920

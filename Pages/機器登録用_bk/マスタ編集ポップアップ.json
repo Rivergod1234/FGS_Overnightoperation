@@ -1,0 +1,536 @@
+{
+  "Rows": {
+    "RowColumnAttachedInfos": {
+      "6": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 30.0
+        }
+      },
+      "7": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 10.0
+        }
+      },
+      "8": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 30.0
+        }
+      }
+    },
+    "InLogicalVisibleIndexes": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "Count": 15
+  },
+  "Cols": {
+    "Count": 38
+  },
+  "Values": {
+    "1,2": "※マスタテーブルの型・桁について問合せ中のため、点検項目マスタの追加処理をコメントアウトしています。",
+    "3,2": "編集対象マスタ名",
+    "6,2": "並び順",
+    "8,2": "点検項目",
+    "11,31": "新規登録"
+  },
+  "Formulas": {
+    "8,2": "IF(C5=\"実験内容マスタ\",\"実験内容\",\"点検項目\")"
+  },
+  "AttachInfos": {
+    "6,6": {
+      "CellType": {
+        "$type": "Forguncy.TextCellType, ServerDesignerCommon",
+        "SavedValidators": [
+          {
+            "$type": "Forguncy.CellTypes.Models.UniqueValidadator, ServerDesignerCommon"
+          }
+        ],
+        "TemplateKey": "_RS_LightLine_Translucent_SmallRoundCorner_Normal1"
+      }
+    },
+    "8,6": {
+      "CellType": {
+        "$type": "Forguncy.TextCellType, ServerDesignerCommon",
+        "SavedValidators": [
+          {
+            "$type": "Forguncy.CellTypes.Models.UniqueValidadator, ServerDesignerCommon"
+          }
+        ],
+        "TemplateKey": "_RS_LightLine_Translucent_SmallRoundCorner_Normal1"
+      }
+    },
+    "11,31": {
+      "CellType": {
+        "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
+            "ConditionAndCommandPairList": [
+              {
+                "ConfirmDialogSettings": {
+                  "Title": "確認",
+                  "FormulaText": "新規登録してもよろしいですか？",
+                  "YesButtonText": "はい",
+                  "NoButtonText": "いいえ",
+                  "ConfirmIcon": 1
+                },
+                "CommandList": [
+                  {
+                    "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
+                    "ConditionAndCommandPairList": [
+                      {
+                        "Condition": {
+                          "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                          "param": {
+                            "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
+                            "cellLocations": [
+                              {
+                                "SerializeProperty": "=マスタ編集ポップアップ!G7"
+                              }
+                            ]
+                          }
+                        },
+                        "CommandList": [
+                          {
+                            "$type": "Forguncy.Model.ShowMessageCommand, ServerDesignerCommon",
+                            "MessageFormula": "並び順が未入力です。"
+                          },
+                          {
+                            "$type": "SetFocusCommand.SetFocusCommand, SetFocusCommand",
+                            "TargetCell": {
+                              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                              "SerializeProperty": "=マスタ編集ポップアップ!G7"
+                            }
+                          },
+                          {
+                            "$type": "Forguncy.Model.StopCommand, ServerDesignerCommon"
+                          }
+                        ],
+                        "ID": "c7b4caaa-50d0-4470-8d3b-f9c8e1637e61"
+                      },
+                      {
+                        "Condition": {
+                          "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                          "param": {
+                            "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
+                            "cellLocations": [
+                              {
+                                "SerializeProperty": "=マスタ編集ポップアップ!G9"
+                              }
+                            ]
+                          }
+                        },
+                        "CommandList": [
+                          {
+                            "$type": "Forguncy.Model.ShowMessageCommand, ServerDesignerCommon",
+                            "MessageFormula": {
+                              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                              "SerializeProperty": "=マスタ編集ポップアップ!C9&\"が未入力です。\""
+                            }
+                          },
+                          {
+                            "$type": "SetFocusCommand.SetFocusCommand, SetFocusCommand",
+                            "TargetCell": {
+                              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                              "SerializeProperty": "=マスタ編集ポップアップ!G9"
+                            }
+                          },
+                          {
+                            "$type": "Forguncy.Model.StopCommand, ServerDesignerCommon"
+                          }
+                        ],
+                        "ID": "5e957507-986a-4c46-b8fb-4bcb4ea05836"
+                      }
+                    ],
+                    "Comments": "未入力チェック（マスタ共通）"
+                  },
+                  {
+                    "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
+                    "ConditionAndCommandPairList": [
+                      {
+                        "Condition": {
+                          "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                          "param": {
+                            "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
+                            "cellLocations": [
+                              {
+                                "SerializeProperty": "=マスタ編集ポップアップ!C5"
+                              }
+                            ]
+                          },
+                          "value": "実験内容マスタ"
+                        },
+                        "CommandList": [
+                          {
+                            "$type": "Forguncy.Model.Commands.SetParameterCommand, ServerDesignerCommon",
+                            "ParameterName": "duplicate_count",
+                            "TableValue": {
+                              "TableName": "M_Operation",
+                              "TableValueType": 3,
+                              "SqlCondition": {
+                                "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                                "ColumnBindingInfo": {
+                                  "TableName": "M_Operation",
+                                  "ColumnName": "action_id"
+                                },
+                                "Value": {
+                                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                  "SerializeProperty": "=マスタ編集ポップアップ!G7"
+                                }
+                              }
+                            },
+                            "ID": "715acd15b2cc48fb9c0317b8636f1c9f",
+                            "Comments": ""
+                          }
+                        ],
+                        "ID": "648ea648-9e51-4bb7-a05d-8a38c67daff4"
+                      },
+                      {
+                        "Condition": {
+                          "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                          "param": {
+                            "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
+                            "cellLocations": [
+                              {
+                                "SerializeProperty": "=マスタ編集ポップアップ!C5"
+                              }
+                            ]
+                          },
+                          "value": "点検項目マスタ"
+                        },
+                        "CommandList": [
+                          {
+                            "$type": "Forguncy.Model.Commands.SetParameterCommand, ServerDesignerCommon",
+                            "ParameterName": "duplicate_count",
+                            "TableValue": {
+                              "TableName": "M_OvernightInspectionList",
+                              "TableValueType": 3,
+                              "SqlCondition": {
+                                "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+                                "Condition1": {
+                                  "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                                  "ColumnBindingInfo": {
+                                    "TableName": "M_OvernightInspectionList",
+                                    "ColumnName": "display_order"
+                                  },
+                                  "Value": {
+                                    "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                    "SerializeProperty": "=マスタ編集ポップアップ!G7"
+                                  }
+                                },
+                                "Condition2": {
+                                  "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                                  "CompareType": 1,
+                                  "ColumnBindingInfo": {
+                                    "TableName": "M_OvernightInspectionList",
+                                    "ColumnName": "delete_flg"
+                                  },
+                                  "Value": "1"
+                                }
+                              }
+                            },
+                            "ID": "164fe03d165c4396ab07d6a1c06fde75",
+                            "Comments": ""
+                          }
+                        ],
+                        "ID": "ce12283c-8341-461f-81ba-e3fa0592350a"
+                      }
+                    ],
+                    "Comments": "並び順の重複件数を取得（マスタ別）",
+                    "Disabled": true
+                  },
+                  {
+                    "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
+                    "ConditionAndCommandPairList": [
+                      {
+                        "Condition": {
+                          "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                          "param": {
+                            "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
+                            "cellLocations": [
+                              {
+                                "SerializeProperty": "=マスタ編集ポップアップ!duplicate_count"
+                              }
+                            ]
+                          },
+                          "value": "0",
+                          "compareType": 1
+                        },
+                        "CommandList": [
+                          {
+                            "$type": "Forguncy.Model.ShowMessageCommand, ServerDesignerCommon",
+                            "MessageFormula": "すでに登録されている並び順です。"
+                          },
+                          {
+                            "$type": "SetFocusCommand.SetFocusCommand, SetFocusCommand",
+                            "TargetCell": {
+                              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                              "SerializeProperty": "=マスタ編集ポップアップ!G7"
+                            }
+                          },
+                          {
+                            "$type": "Forguncy.Model.StopCommand, ServerDesignerCommon"
+                          }
+                        ],
+                        "Comments": "重複チェック",
+                        "ID": "7ef80d13-da85-493e-8202-5149567948ec"
+                      }
+                    ],
+                    "Comments": "重複チェック（マスタ共通）",
+                    "Disabled": true
+                  },
+                  {
+                    "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
+                    "ConditionAndCommandPairList": [
+                      {
+                        "Condition": {
+                          "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                          "param": {
+                            "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
+                            "cellLocations": [
+                              {
+                                "SerializeProperty": "=マスタ編集ポップアップ!C5"
+                              }
+                            ]
+                          },
+                          "value": "実験内容マスタ"
+                        },
+                        "CommandList": [
+                          {
+                            "$type": "Forguncy.Model.UpdateDataTableCommand, ServerDesignerCommon",
+                            "TableName": "M_Operation",
+                            "UpdateType": "add",
+                            "ShowConfirm": false,
+                            "ConfirmText": "本当に追加してもよろしいですか？",
+                            "UpdateValues": [
+                              {
+                                "ColumnName": "action_id",
+                                "Value": {
+                                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                  "SerializeProperty": "=マスタ編集ポップアップ!G7"
+                                }
+                              },
+                              {
+                                "ColumnName": "action_name",
+                                "Value": {
+                                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                  "SerializeProperty": "=マスタ編集ポップアップ!G9"
+                                }
+                              }
+                            ]
+                          }
+                        ],
+                        "ID": "de88312a-b1bc-47ad-8009-b25b68c012c9"
+                      },
+                      {
+                        "Condition": {
+                          "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                          "param": {
+                            "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
+                            "cellLocations": [
+                              {
+                                "SerializeProperty": "=マスタ編集ポップアップ!C5"
+                              }
+                            ]
+                          },
+                          "value": "点検項目マスタ"
+                        },
+                        "CommandList": [
+                          {
+                            "$type": "Forguncy.Model.Commands.SetParameterCommand, ServerDesignerCommon",
+                            "ParameterName": "max_checklist_cd",
+                            "TableValue": {
+                              "TableName": "M_OvernightInspectionList",
+                              "OnlyGetValue": true,
+                              "TableValueType": 0,
+                              "BindingInfos": [
+                                {
+                                  "BindingInfo": {
+                                    "TableName": "M_OvernightInspectionList",
+                                    "ColumnName": "checklist_cd"
+                                  },
+                                  "ColumnName": "checklist_cd"
+                                }
+                              ],
+                              "TopCount": "1",
+                              "OrderBySqlCondition": {
+                                "OrderByColumns": [
+                                  {
+                                    "ColumnBindingInfo": {
+                                      "TableName": "M_OvernightInspectionList",
+                                      "ColumnName": "checklist_cd"
+                                    },
+                                    "Order": 1
+                                  }
+                                ]
+                              }
+                            },
+                            "ID": "a674b9f444f54b68ba2fadfe71e07467",
+                            "Disabled": true
+                          },
+                          {
+                            "$type": "Forguncy.Model.UpdateDataTableCommand, ServerDesignerCommon",
+                            "TableName": "M_OvernightInspectionList",
+                            "UpdateType": "add",
+                            "ShowConfirm": false,
+                            "ConfirmText": "本当に追加してもよろしいですか？",
+                            "UpdateValues": [
+                              {
+                                "ColumnName": "checklist_cd",
+                                "Value": {
+                                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                  "SerializeProperty": "=マスタ編集ポップアップ!max_checklist_cd+1"
+                                }
+                              },
+                              {
+                                "ColumnName": "checklist_name",
+                                "Value": {
+                                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                  "SerializeProperty": "=マスタ編集ポップアップ!G9"
+                                }
+                              },
+                              {
+                                "ColumnName": "display_order",
+                                "Value": {
+                                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                  "SerializeProperty": "=マスタ編集ポップアップ!G7"
+                                }
+                              },
+                              {
+                                "ColumnName": "delete_flg"
+                              }
+                            ],
+                            "Disabled": true
+                          }
+                        ],
+                        "ID": "ee453cd1-cfb6-4be4-8af2-e55eeb41a618"
+                      }
+                    ],
+                    "Comments": "追加処理（マスタ別）"
+                  },
+                  {
+                    "$type": "Forguncy.Model.ShowMessageCommand, ServerDesignerCommon",
+                    "MessageFormula": {
+                      "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                      "SerializeProperty": "=マスタ編集ポップアップ!AF12&\"しました。\""
+                    }
+                  },
+                  {
+                    "$type": "Forguncy.Model.ClosePopupCommand, ServerDesignerCommon",
+                    "ReloadData": true
+                  }
+                ],
+                "ID": "7778b3f8-96d7-4fb7-b2d7-f3319cbcdc95"
+              }
+            ]
+          }
+        ],
+        "Text": "新規登録",
+        "TemplateKey": "_RS_Normal_Style7"
+      }
+    }
+  },
+  "StyleDatas": {
+    "Styles": [
+      {
+        "Background": 0
+      },
+      {
+        "Foreground": 1
+      },
+      {
+        "FontFamily": 2
+      },
+      {
+        "Formatter": 3
+      },
+      {
+        "Background": 4,
+        "FontFamily": 2
+      },
+      {
+        "Formatter": 5
+      }
+    ],
+    "Types": {
+      "Strs": [
+        "Background 1 -15",
+        "#FFFF0000",
+        "Body",
+        "General",
+        "#FFFFFF00",
+        "0_);[Red](0)"
+      ]
+    },
+    "CellStyles": {
+      "0,0": 0,
+      "1,0": 0,
+      "1,2": 1,
+      "2,0": 0,
+      "3,0": 0,
+      "3,2": 2,
+      "3,3": 2,
+      "3,4": 2,
+      "3,5": 2,
+      "3,6": 2,
+      "3,7": 2,
+      "3,8": 2,
+      "3,9": 2,
+      "3,10": 2,
+      "3,11": 2,
+      "3,12": 2,
+      "3,19": 2,
+      "3,20": 2,
+      "3,21": 2,
+      "3,22": 2,
+      "3,23": 2,
+      "3,24": 2,
+      "4,0": 0,
+      "4,1": 3,
+      "4,2": 4,
+      "4,3": 2,
+      "4,4": 2,
+      "4,5": 2,
+      "4,6": 2,
+      "4,7": 2,
+      "4,8": 2,
+      "4,9": 2,
+      "4,10": 2,
+      "4,11": 2,
+      "4,12": 2,
+      "4,19": 2,
+      "4,20": 2,
+      "4,21": 2,
+      "4,22": 2,
+      "4,23": 2,
+      "4,24": 2,
+      "6,6": 5,
+      "8,6": 3
+    },
+    "SheetStyle": {
+      "FontFamily": 2
+    }
+  },
+  "Spans": [
+    "6,6,1,5",
+    "8,6,1,30",
+    "11,31,2,5",
+    "8,2,1,4",
+    "4,2,1,6"
+  ],
+  "PageInfo": {
+    "$type": "Forguncy.Model.Pages.NormalPage, ServerDesignerCommon",
+    "AuthorizeInfo": {
+      "VisitMode": 2
+    },
+    "RowBreakLines": [],
+    "RepeatRangeSettings": []
+  },
+  "PrintInfo": {
+    "Margin": {},
+    "PaperSize": {}
+  }
+}//AllRMdiBa5fl9tp7C6D/Rul4TDR3gBk8SXYdXxQSL5Ozt1939ujmwkUIhpIN7NJziOKpi5HVUVGFdtzC8X+SQWI07oQ59lsC51cxRfTCOO5mSFPGo6dvObyZzqH5N2hWWgB6U1WLJlh2Sp1/0nJG/aNx9WW682/2AXaUMy/Cm3Wb4UDeWxb9vZlx6YivKAbCEqUTz856IdboO9EhERElShyJUl4Dsto3QaqNSUxv9TN9Vi/tYzuc+ylmdKcn6bWPTAvZpH+J9gwgImVxrdyTfPN+tnHedZ6OLTGhP9x0enSKBGiVpe8dpIf4mOmS5DR71C6vUqig1I7CtkpXXqGVv+FJXIbetK3V5evJ9ZbvsVpXnBPn+Y5SyscIdSS+2+s+xTlpA6nADrCanUlwfH8mb6hAt6TcpO7t9trj0LbJwd5AxAKl41kH8a0pLxUMhvDnuwArCLxvD4NB91CLFzDVc36zLtAXEfG8KOK6joDnuauY26qGycbi9D2PT7HIj68bmpJidYmQ8LSs5EXE0J0masJHR8L7FIIz+CBmn+rSmrGCAlIGZ/obFDOCf4VD3mkx/o/3aSOb56KQJoszj2slTV01sTI/NKGNqd/xCsxdvSbQkk3fORqZNe+FIl4DDf7h3LEj8tul/TFls7eGgU/7+F09glfJbbPHRjyu/Y9Z32ETkFSYDhHT8hdaZgV3QQ+AepdmBPyR81K3hTEOKueH/gVO0WUnYZM1E25ffgPhCsnfHQ9rb2leAflk1Sd+dw/41bGxdSFTAAPGeV7nfo9gfIykWYDvPc8zL865AyEpGYTGauf1hmw+XWYMfuP3xw/hDliFAObg8s1wqlqBUyISspdS2g+PbIR7xzugvMJNehIZBYMhvP1WrL7zb6e80wXDI3jzBXA9D2hoyB9epgsKvA==|920

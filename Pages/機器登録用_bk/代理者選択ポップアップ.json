@@ -1,0 +1,492 @@
+{
+  "Rows": {
+    "RowColumnAttachedInfos": {
+      "9": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 30.0
+        }
+      },
+      "11": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 30.0
+        }
+      },
+      "13": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 30.0
+        }
+      }
+    },
+    "InLogicalVisibleIndexes": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+    ],
+    "Count": 15
+  },
+  "Cols": {
+    "InLogicalVisibleIndexes": [
+      20,
+      21,
+      22,
+      23,
+      24,
+      25,
+      26
+    ],
+    "Count": 27
+  },
+  "Values": {
+    "1,2": "届出者G長コード",
+    "1,15": "【遷移元へ戻す値】",
+    "2,2": "届出者部署コード",
+    "2,15": "代理者コード",
+    "3,2": "届出者所属コード",
+    "3,15": "代理者名",
+    "5,2": "所長コード",
+    "6,2": "所長名",
+    "13,10": "戻る",
+    "13,15": "OK"
+  },
+  "Formulas": {
+    "11,5": "所長名"
+  },
+  "AttachInfos": {
+    "9,1": {
+      "CellType": {
+        "$type": "Forguncy.RadioGroupCellType, ServerDesignerCommon",
+        "NoneItemText": "＜なし＞",
+        "Style": 1,
+        "PrimaryColor": "Accent 6 0",
+        "LayoutMode": 1,
+        "ItemSpace": 35,
+        "Items": [
+          {
+            "Value": "代理者",
+            "DisplayValue": "代理者"
+          },
+          {
+            "Value": "部署長",
+            "DisplayValue": "部署長"
+          }
+        ]
+      }
+    },
+    "9,5": {
+      "CellType": {
+        "$type": "Forguncy.DropDownListCellType, ServerDesignerCommon",
+        "TemplateKey": "_RS_LightLine_Translucent_SmallRoundCorner_Normal1",
+        "IsBounding": true,
+        "Items": [
+          {
+            "Value": "項目1",
+            "DisplayValue": "項目1"
+          },
+          {
+            "Value": "項目2",
+            "DisplayValue": "項目2"
+          },
+          {
+            "Value": "項目3",
+            "DisplayValue": "項目3"
+          }
+        ],
+        "DataSource": "M_ApprovalAgent",
+        "ValueColumnBindingInfo": {
+          "TableName": "M_ApprovalAgent",
+          "ColumnName": "agent_code"
+        },
+        "DisplayColumnBindingInfo": {
+          "TableName": "M_ApprovalAgent",
+          "ColumnName": "agent_code",
+          "RelationBinding": {
+            "RelatedTable": "NAC_Acc_Account",
+            "RelatedColumn": "account_code",
+            "DisplayColumn": "account_display_name"
+          }
+        },
+        "ItemsQuery": {
+          "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+          "Condition1": {
+            "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+            "Condition1": {
+              "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+              "ColumnBindingInfo": {
+                "TableName": "M_ApprovalAgent",
+                "ColumnName": "notifier_dept_consenter_1_code"
+              },
+              "Value": {
+                "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                "SerializeProperty": "=代理者選択ポップアップ!I2"
+              }
+            },
+            "Condition2": {
+              "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+              "ColumnBindingInfo": {
+                "TableName": "M_ApprovalAgent",
+                "ColumnName": "department_code_lvl04"
+              },
+              "Value": {
+                "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                "SerializeProperty": "=代理者選択ポップアップ!I3"
+              }
+            }
+          },
+          "Condition2": {
+            "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+            "ColumnBindingInfo": {
+              "TableName": "M_ApprovalAgent",
+              "ColumnName": "department_code_lvl05"
+            },
+            "Value": {
+              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+              "SerializeProperty": "=代理者選択ポップアップ!I4"
+            }
+          }
+        }
+      }
+    },
+    "13,10": {
+      "CellType": {
+        "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.ClosePopupCommand, ServerDesignerCommon"
+          }
+        ],
+        "Text": "戻る",
+        "TemplateKey": "_RS_Outline_Style7"
+      }
+    },
+    "13,15": {
+      "CellType": {
+        "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
+            "ConditionAndCommandPairList": [
+              {
+                "Condition": {
+                  "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                  "param": {
+                    "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
+                    "cellLocations": [
+                      {
+                        "SerializeProperty": "=代理者選択ポップアップ!B10"
+                      }
+                    ]
+                  }
+                },
+                "CommandList": [
+                  {
+                    "$type": "Forguncy.Model.ShowMessageCommand, ServerDesignerCommon",
+                    "MessageFormula": "代理者または部署長のいずれかを選択してください。"
+                  },
+                  {
+                    "$type": "Forguncy.Model.StopCommand, ServerDesignerCommon"
+                  }
+                ],
+                "ID": "48186435-cd00-4220-b8c5-c7a486caeb5d"
+              }
+            ]
+          },
+          {
+            "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
+            "ConditionAndCommandPairList": [
+              {
+                "Condition": {
+                  "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+                  "Condition1": {
+                    "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                    "param": {
+                      "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
+                      "cellLocations": [
+                        {
+                          "SerializeProperty": "=代理者選択ポップアップ!B10"
+                        }
+                      ]
+                    },
+                    "value": "代理者"
+                  },
+                  "Condition2": {
+                    "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                    "param": {
+                      "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
+                      "cellLocations": [
+                        {
+                          "SerializeProperty": "=代理者選択ポップアップ!F10"
+                        }
+                      ]
+                    }
+                  }
+                },
+                "CommandList": [
+                  {
+                    "$type": "Forguncy.Model.ShowMessageCommand, ServerDesignerCommon",
+                    "MessageFormula": "代理者を選択してください。"
+                  },
+                  {
+                    "$type": "Forguncy.Model.StopCommand, ServerDesignerCommon"
+                  }
+                ],
+                "ID": "726ab550-4c3f-4207-bb52-79a66b330e37"
+              }
+            ]
+          },
+          {
+            "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
+            "ConditionAndCommandPairList": [
+              {
+                "Condition": {
+                  "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                  "param": {
+                    "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
+                    "cellLocations": [
+                      {
+                        "SerializeProperty": "=代理者選択ポップアップ!B10"
+                      }
+                    ]
+                  },
+                  "value": "代理者"
+                },
+                "CommandList": [
+                  {
+                    "$type": "Forguncy.Model.SetCellPropertyCommand, ServerDesignerCommon",
+                    "PropertyItemsList": [
+                      {
+                        "TargetCells": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=代理者選択ポップアップ!代理者コード"
+                        },
+                        "Value": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=代理者選択ポップアップ!F10"
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "$type": "Forguncy.Model.OperateCellTypeCommand, ServerDesignerCommon",
+                    "TargetPageElement": {
+                      "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                      "SerializeProperty": "=代理者選択ポップアップ!F10"
+                    },
+                    "TargetType": "Forguncy.DropDownListCellType, ServerDesignerCommon, Version=8.0.20.0, Culture=neutral, PublicKeyToken=967100671921c115",
+                    "MethodName": "GetDisplayTextForCommand",
+                    "ParameterValues": {},
+                    "RetrunParamNames": {
+                      "DisplayText": {
+                        "SerializeProperty": "=代理者選択ポップアップ!代理者名"
+                      }
+                    }
+                  }
+                ],
+                "ID": "3165b782-c7e0-4f37-a762-27e828529765"
+              },
+              {
+                "CommandList": [
+                  {
+                    "$type": "Forguncy.Model.SetCellPropertyCommand, ServerDesignerCommon",
+                    "PropertyItemsList": [
+                      {
+                        "TargetCells": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=代理者選択ポップアップ!代理者コード"
+                        },
+                        "Value": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=代理者選択ポップアップ!所長コード"
+                        }
+                      },
+                      {
+                        "TargetCells": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=代理者選択ポップアップ!代理者名"
+                        },
+                        "Value": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=代理者選択ポップアップ!所長名"
+                        }
+                      }
+                    ]
+                  }
+                ],
+                "ID": "1a1c0652-2b31-46f4-bf54-9b4a5204734d"
+              }
+            ]
+          },
+          {
+            "$type": "Forguncy.Model.ClosePopupCommand, ServerDesignerCommon",
+            "PassValueBack": true
+          }
+        ],
+        "Text": "OK",
+        "TemplateKey": "_RS_Normal_Style7"
+      }
+    }
+  },
+  "StyleDatas": {
+    "Styles": [
+      {
+        "Background": 0
+      },
+      {
+        "Background": 1
+      },
+      {
+        "FontFamily": 2,
+        "Formatter": 3
+      },
+      {
+        "FontFamily": 2
+      },
+      {
+        "Background": 1,
+        "FontFamily": 2
+      },
+      {
+        "Background": 4
+      }
+    ],
+    "Types": {
+      "Strs": [
+        "Background 1 -15",
+        "#FFFFFF00",
+        "Body",
+        "[AUTO]General",
+        "Background 1 -5"
+      ]
+    },
+    "CellStyles": {
+      "0,0": 0,
+      "0,20": 0,
+      "0,21": 0,
+      "0,22": 0,
+      "0,23": 0,
+      "0,24": 0,
+      "0,25": 0,
+      "0,26": 0,
+      "1,0": 0,
+      "1,8": 1,
+      "2,0": 0,
+      "2,8": 1,
+      "2,15": 2,
+      "2,16": 3,
+      "2,17": 3,
+      "2,18": 3,
+      "2,19": 4,
+      "2,20": 3,
+      "2,21": 3,
+      "2,22": 3,
+      "2,23": 3,
+      "3,0": 0,
+      "3,8": 1,
+      "3,15": 2,
+      "3,16": 3,
+      "3,17": 3,
+      "3,18": 3,
+      "3,19": 4,
+      "3,20": 3,
+      "3,21": 3,
+      "3,22": 3,
+      "3,23": 3,
+      "4,0": 0,
+      "5,0": 0,
+      "5,2": 2,
+      "5,3": 3,
+      "5,4": 3,
+      "5,5": 3,
+      "5,6": 4,
+      "5,7": 3,
+      "5,8": 3,
+      "5,9": 3,
+      "5,10": 3,
+      "5,15": 2,
+      "5,16": 3,
+      "5,17": 3,
+      "5,18": 3,
+      "5,19": 3,
+      "5,20": 3,
+      "5,21": 3,
+      "5,22": 3,
+      "5,23": 3,
+      "6,0": 0,
+      "6,2": 3,
+      "6,3": 3,
+      "6,4": 3,
+      "6,5": 3,
+      "6,6": 4,
+      "6,7": 3,
+      "6,8": 3,
+      "6,9": 3,
+      "6,10": 3,
+      "7,0": 0,
+      "11,5": 5,
+      "13,10": 2
+    },
+    "SheetStyle": {
+      "FontFamily": 2
+    }
+  },
+  "Spans": [
+    "9,5,1,14",
+    "11,5,1,14",
+    "1,8,1,5",
+    "2,8,1,5",
+    "3,8,1,5",
+    "5,6,1,5",
+    "6,6,1,5",
+    "9,1,3,4",
+    "2,19,1,5",
+    "3,19,1,5",
+    "13,10,1,4",
+    "13,15,1,4"
+  ],
+  "PageInfo": {
+    "$type": "Forguncy.Model.Pages.NormalPage, ServerDesignerCommon",
+    "AuthorizeInfo": {
+      "VisitMode": 2
+    },
+    "RowBreakLines": [],
+    "RepeatRangeSettings": []
+  },
+  "PrintInfo": {
+    "Margin": {},
+    "PaperSize": {}
+  },
+  "CustomNames": [
+    {
+      "Name": "所長コード",
+      "Formula": "代理者選択ポップアップ!$G$6"
+    },
+    {
+      "Name": "所長名",
+      "Formula": "代理者選択ポップアップ!$G$7"
+    },
+    {
+      "Name": "代理者コード",
+      "Formula": "代理者選択ポップアップ!$T$3"
+    },
+    {
+      "Name": "代理者名",
+      "Formula": "代理者選択ポップアップ!$T$4"
+    },
+    {
+      "Name": "届出者G長コード",
+      "Formula": "代理者選択ポップアップ!$I$2"
+    },
+    {
+      "Name": "届出者部署コード",
+      "Formula": "代理者選択ポップアップ!$I$3"
+    },
+    {
+      "Name": "届出者所属コード",
+      "Formula": "代理者選択ポップアップ!$I$4"
+    }
+  ]
+}//b02gbbGAjWKHTRDKrJWSuXZXFvjdsUn4qgzgUstgaq23pC7IFCbODWml49KuayE/QJjbXgJW9Vgj5aveOt5/LFfSxk+MW0pxcTw+j0kBxFn9qNLjKQF9/drBj4R2ZrS4z4dNCEuwR5elpXzJX0+VdFKGUWqPoSONyP7T3GZbT7ThDHSBLB20gG0T6KlAascmVLEEbzQ9S3MmHz01gqdAa1RUPhM1b5IMHcriOJUkbduMj2/96mzyNpbRoS0ZMmkOEupH9vTv+uogxlL3oUOXuSXXUusGRHAl/cUFIRrKrfxSdqMyJp8earvSPtcCd+8q83obA4ZwY4Spq5TlOd5ea5fexgl+XWDLeDt9OMCZyL5KqDaRcpUA+NKYBteG+S0WqjRsfqIm/BN3NW5gTDOnIbb8UWa2bsZe/dWpaDQv0rxFdVjTTLQZqe/beJkxtFy5EyGjJ7ZFR7L/Cicg2DZLiHXVWqNeJ6wXz1EdyS9klare9W4WkD8wKSRds/lsxKGSyoM3UnfZqv9jWuha+u70Paglnp+BLSykJ1Z4gK3h/TsEuBkJ8TXT4T1kh4lT/CgxtPMTqb19A8GdOO0kY9GS55OObsqYE6JorHA1/5wtNl17HKrx9eE8H6iXd+e5kSncLvrRI498kJzs1HrRbsBETBBABvhf/a99aBSw63JdLdQtyCe2vIDMAt8Di8FiFfsCay8Eifh/oZH3WhZ9vr4H428eh3aLxycZ7aIbbifwh5LJA09lOgq3aqJ/88ioum1bysh1vqkeBdgbVKhups9iMJ8NXH7I3s2QJGaQ15uYFknyCNiJiuT6AckYzHsUOX+7Q+GE9uGSF7XKgSkjA4/LmkMHLsNa4c6rtApFAUmw84gD7s8KjgskDbAW7WcGCIE3Tv32dG1XLQ5E7N2XOIenCg==|920

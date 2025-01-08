@@ -1,0 +1,256 @@
+{
+  "Rows": {
+    "RowColumnAttachedInfos": {
+      "4": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 30.0
+        }
+      },
+      "5": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 30.0
+        }
+      },
+      "6": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 10.0
+        }
+      },
+      "7": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 40.0
+        }
+      },
+      "8": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 40.0
+        }
+      }
+    },
+    "InLogicalVisibleIndexes": [
+      0,
+      1,
+      2,
+      29,
+      30,
+      31,
+      32
+    ],
+    "Count": 33
+  },
+  "Cols": {
+    "InLogicalVisibleIndexes": [
+      39
+    ],
+    "Count": 40
+  },
+  "Values": {
+    "4,1": "点検項目マスタ",
+    "5,32": "更新確定",
+    "7,3": "並び順",
+    "7,7": "点検項目",
+    "8,1": "削除"
+  },
+  "AttachInfos": {
+    "5,32": {
+      "CellType": {
+        "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.UpdateListviewCommand, ServerDesignerCommon",
+            "UpdateType": 3,
+            "ListviewName": "点検項目マスタ一覧"
+          }
+        ],
+        "Text": "更新確定",
+        "TemplateKey": "_RS_Normal_Style7"
+      }
+    },
+    "7,1": {
+      "ListViewInfo": {
+        "ShowColumnHeaderInDesigner": true,
+        "TableName": "M_OvernightInspectionList",
+        "RowIndex": 7,
+        "ColumnIndex": 1,
+        "ColumnCount": 37,
+        "RowCount": 20,
+        "AllowEditInListview": true,
+        "AllowAddNewRow": true,
+        "IsSingleSelection": true,
+        "ColumnOperation": 1,
+        "ShowEditStatusIcon": true,
+        "UseSimpleBar": true,
+        "Name": "点検項目マスタ一覧",
+        "SqlCondition": {
+          "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+          "CompareType": 1,
+          "ColumnBindingInfo": {
+            "TableName": "M_OvernightInspectionList",
+            "ColumnName": "delete_flg"
+          },
+          "Value": "1"
+        },
+        "TopCondition": null,
+        "OrderByCondition": {
+          "OrderByColumns": [
+            {
+              "ColumnBindingInfo": {
+                "TableName": "M_OvernightInspectionList",
+                "ColumnName": "display_order"
+              },
+              "Order": 0
+            }
+          ]
+        },
+        "CommitType": 1,
+        "ListViewStyleName": "_RS_Medium7"
+      }
+    },
+    "8,1": {
+      "CellType": {
+        "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
+            "ConditionAndCommandPairList": [
+              {
+                "ConfirmDialogSettings": {
+                  "Title": "確認",
+                  "FormulaText": "削除してもよろしいですか？",
+                  "YesButtonText": "はい",
+                  "NoButtonText": "いいえ",
+                  "ConfirmIcon": 4
+                },
+                "CommandList": [
+                  {
+                    "$type": "Forguncy.Model.UpdateDataTableCommand, ServerDesignerCommon",
+                    "TableName": "M_OvernightInspectionList",
+                    "ShowConfirm": false,
+                    "ConfirmText": "本当に更新してもよろしいですか？",
+                    "UpdateValues": [
+                      {
+                        "ColumnName": "delete_flg",
+                        "Value": "1"
+                      }
+                    ]
+                  },
+                  {
+                    "$type": "Forguncy.Model.ShowMessageCommand, ServerDesignerCommon",
+                    "MessageFormula": "削除しました。"
+                  }
+                ],
+                "ID": "8a48b94d-7f23-4451-9d2a-3c6a26135ff3"
+              }
+            ]
+          }
+        ],
+        "Text": "削除",
+        "TemplateKey": "_RS_Normal_Style7"
+      }
+    },
+    "8,3": {
+      "CellType": {
+        "$type": "Forguncy.TextCellType, ServerDesignerCommon",
+        "SavedValidators": [
+          {
+            "$type": "Forguncy.CellTypes.Models.UniqueValidadator, ServerDesignerCommon"
+          }
+        ],
+        "InputCharOption": {
+          "Format": "9"
+        }
+      },
+      "BindingInfo": {
+        "TableName": "M_OvernightInspectionList",
+        "ColumnName": "display_order"
+      }
+    },
+    "8,7": {
+      "BindingInfo": {
+        "TableName": "M_OvernightInspectionList",
+        "ColumnName": "checklist_name"
+      }
+    }
+  },
+  "StyleDatas": {
+    "Styles": [
+      {
+        "Background": 0
+      },
+      {
+        "FontFamily": 1
+      },
+      {
+        "Background": 0,
+        "FontFamily": 1
+      },
+      {
+        "FontSize": 18.666666666666664,
+        "FontWeight": 2,
+        "Formatter": 3
+      },
+      {
+        "Formatter": 4,
+        "HorizontalAlignment": 5
+      }
+    ],
+    "Types": {
+      "Strs": [
+        "Background 1 -15",
+        "Body",
+        "Bold",
+        "[AUTO]General",
+        "@",
+        "Center"
+      ]
+    },
+    "CellStyles": {
+      "0,0": 0,
+      "0,37": 1,
+      "0,38": 1,
+      "0,39": 2,
+      "1,0": 0,
+      "2,0": 0,
+      "4,1": 3,
+      "5,31": 1,
+      "5,32": 1,
+      "5,33": 1,
+      "5,34": 1,
+      "5,35": 1,
+      "5,36": 1,
+      "8,3": 4,
+      "29,0": 0,
+      "30,0": 0,
+      "31,0": 0,
+      "32,0": 0
+    },
+    "SheetStyle": {
+      "FontFamily": 1
+    }
+  },
+  "Spans": [
+    "4,1,1,7",
+    "8,1,1,2",
+    "8,7,1,30",
+    "9,1,18,37",
+    "5,32,1,5",
+    "8,3,1,4",
+    "7,1,1,2",
+    "7,3,1,4",
+    "7,7,1,30"
+  ],
+  "PageInfo": {
+    "$type": "Forguncy.Model.Pages.NormalPage, ServerDesignerCommon",
+    "MasterPageName": "終夜運転マスタページ",
+    "AuthorizeInfo": {
+      "VisitMode": 2
+    },
+    "RowBreakLines": [],
+    "RepeatRangeSettings": [],
+    "RelatedDataTableName": "M_OvernightInspectionList"
+  },
+  "PrintInfo": {
+    "Margin": {},
+    "PaperSize": {}
+  }
+}//38YB04A96+oJO2L8xkjNPearQlosiXt0coE3jH3ojSDJyqNcxe3Av7Zy2pq3P+YsdByy3Eh78C9OZAEDJpKsUKykvok/+xj/NcuVCr3Az/su5I5NnlM9rPR4YXeY/dZ7IbMdZMEjcefiR7grVuMZ8Rls84D6in5/0dOp8QLFSf9nSCR5Uos3tXRHbGgYpzGIIOO6mXXV0oSh1BzuR+RMoDDgpL1yasj4bH2kZvf8RZld19p36NYpOFlwtKVQdrzy7lIdJR/d5J6no3HteT2gcwGP4n37c03vyPZ8oYNsaDMp/0Fl1Pu1odvS4ek/Jgtm3pKCW8vlQ8r398k5b8cMlT2QT9t3DvJwPqG2hiHWpBJdR/r99HQF3+GFVan6LkUBPFVTaIBeJCT7WrksCULXRS5qXpVJyjhJ/ry191WAVbumkZ+eqhMrMgDw1i2H7VHkk4MUKPQhd7CgS7yjNH3i+BGnREJvP7Xstu43qzYM0IH47lUtBP6obkBCSVVa3sajmQu9LxbCgMv0gy785OeOoqPE54ppRUl1FC88zWacBYkvxgEKYwoa3vdi5CliDAoNZRpVrl9NPy29/9auvkbbUUb7uHQCar99KZUALLC5quH0xBDgZlHBzAF/+NrbsBeI7s8U6S8YLwNWXjjfuSsTgV5oqJu/cyXh/gx/pYNVI3QhH3iHm8JoTAS0bMoxMs08J4DqEMyvN1GzQComq/qS3K6W0KtF4+Auv9tqw5DCa9/pAVhhkCb8FchJX+KdIqskWlbqiMuaplUT4Tcg4VOzfT8bRZgL5O4z2pY6ux9v0Nt3yKRYneGmHDHm40SPtpHGPFiY4eow5htRXcdx0phIRFtYgxAR4UR/7AbTb3MIONIXNUeoI9V1Im9CcgAKCOQh+ijBjPFVys0StiGw1Ld5XA==|920

@@ -1,0 +1,478 @@
+{
+  "Rows": {
+    "RowColumnAttachedInfos": {
+      "1": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 45.0
+        }
+      }
+    },
+    "Count": 36
+  },
+  "Cols": {
+    "Count": 64
+  },
+  "Values": {
+    "1,4": "終夜運転機器管理アプリ",
+    "1,46": "問合せはこちらへ"
+  },
+  "AttachInfos": {
+    "1,1": {
+      "CellType": {
+        "$type": "Forguncy.ImageCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.NavigateCommand, ServerDesignerCommon",
+            "PageName": "ホーム",
+            "PassValues": []
+          }
+        ],
+        "ImagePath": "Navigation/165_home_3.svg",
+        "BuiltIn": true,
+        "Color": "Background 1 0"
+      }
+    },
+    "1,4": {
+      "CellType": {
+        "$type": "Forguncy.HyperlinkCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.NavigateCommand, ServerDesignerCommon",
+            "PageName": "ホーム",
+            "PassValues": [],
+            "DeleteCachedQuery": true
+          }
+        ],
+        "Text": "終夜運転機器管理アプリ",
+        "ClickMode": 1
+      }
+    },
+    "1,45": {
+      "CellType": {
+        "$type": "Forguncy.ImageCellType, ServerDesignerCommon",
+        "ImagePath": "Application/121_send_1.svg",
+        "BuiltIn": true,
+        "Color": "Background 1 0"
+      }
+    },
+    "1,46": {
+      "CellType": {
+        "$type": "Forguncy.HyperlinkCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.NavigateCommand, ServerDesignerCommon",
+            "URL": "http://ntvmd10060/InquiryManagement/",
+            "PassValues": [],
+            "IsOpenInNewTab": true
+          }
+        ],
+        "Text": "問合せはこちらへ",
+        "ClickMode": 1
+      }
+    },
+    "1,53": {
+      "CellType": {
+        "$type": "Forguncy.CurrentUserCellType, ServerDesignerCommon",
+        "CellCustomValue": "%CurrentUser%",
+        "ShowCircleUserPicture": true,
+        "NavigateSettingWhenLogout": {
+          "NavigateWhenLogoutMode": 1
+        }
+      }
+    },
+    "3,0": {
+      "CellType": {
+        "$type": "Forguncy.CustomMenu.ForguncyMenuCellType, Forguncy.CustomMenu",
+        "TemplateKey": "_RS_Dark_ThemeStyle7",
+        "Items": [
+          {
+            "Text": "終夜運転新規登録・届出",
+            "SelectedIconColor": "Background 1",
+            "SelectedIconColorUseItemColor": true,
+            "IconColorUseItemColor": true,
+            "IsOldMenuPath": false,
+            "CommandList": [
+              {
+                "$type": "Forguncy.Model.NavigateCommand, ServerDesignerCommon",
+                "PageName": "終夜運転機器一覧",
+                "PassValues": [],
+                "DeleteCachedQuery": true
+              }
+            ],
+            "CanVisitRoleList": [
+              "FGC_LoginUser"
+            ]
+          },
+          {
+            "Text": "届出一覧",
+            "SelectedIconColor": "Background 1",
+            "SelectedIconColorUseItemColor": true,
+            "IconColorUseItemColor": true,
+            "IsOldMenuPath": false,
+            "CommandList": [
+              {
+                "$type": "Forguncy.Model.NavigateCommand, ServerDesignerCommon",
+                "PageName": "届出一覧",
+                "PassValues": [],
+                "DeleteCachedQuery": true
+              }
+            ],
+            "CanVisitRoleList": [
+              "FGC_LoginUser"
+            ]
+          },
+          {
+            "Value": "点検",
+            "Text": "点検",
+            "SelectedIconColor": "Background 1",
+            "SelectedIconColorUseItemColor": true,
+            "IconColorUseItemColor": true,
+            "IsOldMenuPath": false,
+            "CommandList": [
+              {
+                "$type": "Forguncy.Model.NavigateCommand, ServerDesignerCommon",
+                "PageName": "点検依頼・結果",
+                "PassValues": [
+                  {
+                    "Source": "点検",
+                    "TargetCell": {
+                      "SerializeProperty": "=点検依頼・結果!AL3"
+                    }
+                  }
+                ],
+                "DeleteCachedQuery": true
+              }
+            ],
+            "CanVisitRoleList": [
+              "FGC_LoginUser"
+            ]
+          },
+          {
+            "Value": "WF一覧",
+            "Text": "WF一覧",
+            "SelectedIconColor": "Background 1",
+            "SelectedIconColorUseItemColor": true,
+            "IconColorUseItemColor": true,
+            "IsOldMenuPath": false,
+            "CanVisitRoleList": [
+              "FGC_LoginUser"
+            ],
+            "SubItems": [
+              {
+                "Value": "届出WF一覧",
+                "Text": "届出WF一覧",
+                "SelectedIconColor": "Background 1",
+                "SelectedIconColorUseItemColor": true,
+                "IconColorUseItemColor": true,
+                "IsOldMenuPath": false,
+                "CommandList": [
+                  {
+                    "$type": "Forguncy.Model.NavigateCommand, ServerDesignerCommon",
+                    "PageName": "届出WF一覧",
+                    "PassValues": [],
+                    "DeleteCachedQuery": true
+                  }
+                ],
+                "CanVisitRoleList": [
+                  "FGC_LoginUser"
+                ]
+              },
+              {
+                "Value": "新規登録WF一覧",
+                "Text": "新規登録WF一覧",
+                "SelectedIconColor": "Background 1",
+                "SelectedIconColorUseItemColor": true,
+                "IconColorUseItemColor": true,
+                "IsOldMenuPath": false,
+                "CommandList": [
+                  {
+                    "$type": "Forguncy.Model.NavigateCommand, ServerDesignerCommon",
+                    "PageName": "新規申請WF一覧",
+                    "PassValues": [],
+                    "DeleteCachedQuery": true
+                  }
+                ],
+                "CanVisitRoleList": [
+                  "FGC_LoginUser"
+                ]
+              }
+            ]
+          },
+          {
+            "Value": "管理者",
+            "Text": "管理者",
+            "SelectedIconColor": "Background 1",
+            "SelectedIconColorUseItemColor": true,
+            "IconColorUseItemColor": true,
+            "IsOldMenuPath": false,
+            "CanVisitRoleList": [
+              "FGC_LoginUser"
+            ],
+            "SubItems": [
+              {
+                "Value": "管理者設定",
+                "Text": "管理者設定",
+                "SelectedIconColor": "Background 1",
+                "SelectedIconColorUseItemColor": true,
+                "IconColorUseItemColor": true,
+                "IsOldMenuPath": false,
+                "CommandList": [
+                  {
+                    "$type": "Forguncy.Model.NavigateCommand, ServerDesignerCommon",
+                    "PageName": "管理者設定",
+                    "PassValues": [],
+                    "DeleteCachedQuery": true
+                  }
+                ],
+                "CanVisitRoleList": [
+                  "FGC_LoginUser"
+                ]
+              },
+              {
+                "Value": "点検依頼・結果",
+                "Text": "点検依頼・結果",
+                "SelectedIconColor": "Background 1",
+                "SelectedIconColorUseItemColor": true,
+                "IconColorUseItemColor": true,
+                "IsOldMenuPath": false,
+                "CommandList": [
+                  {
+                    "$type": "Forguncy.Model.NavigateCommand, ServerDesignerCommon",
+                    "PageName": "点検依頼・結果",
+                    "PassValues": [
+                      {
+                        "Source": "点検依頼",
+                        "TargetCell": {
+                          "SerializeProperty": "=点検依頼・結果!AL3"
+                        }
+                      }
+                    ],
+                    "DeleteCachedQuery": true
+                  }
+                ],
+                "CanVisitRoleList": [
+                  "FGC_LoginUser"
+                ]
+              },
+              {
+                "Value": "点検項目マスタ",
+                "Text": "点検項目マスタ",
+                "SelectedIconColor": "Background 1",
+                "SelectedIconColorUseItemColor": true,
+                "IconColorUseItemColor": true,
+                "IsOldMenuPath": false,
+                "CommandList": [
+                  {
+                    "$type": "Forguncy.Model.NavigateCommand, ServerDesignerCommon",
+                    "PageName": "点検項目マスタ編集",
+                    "PassValues": [],
+                    "DeleteCachedQuery": true
+                  }
+                ],
+                "CanVisitRoleList": [
+                  "FGC_LoginUser"
+                ]
+              },
+              {
+                "Value": "実験内容マスタ",
+                "Text": "実験内容マスタ",
+                "SelectedIconColor": "Background 1",
+                "SelectedIconColorUseItemColor": true,
+                "IconColorUseItemColor": true,
+                "IsOldMenuPath": false,
+                "CommandList": [
+                  {
+                    "$type": "Forguncy.Model.NavigateCommand, ServerDesignerCommon",
+                    "PageName": "実験内容マスタ編集",
+                    "PassValues": [],
+                    "DeleteCachedQuery": true
+                  }
+                ],
+                "CanVisitRoleList": [
+                  "FGC_LoginUser"
+                ]
+              },
+              {
+                "Value": "終夜運転事由マスタ",
+                "Text": "終夜運転事由マスタ",
+                "SelectedIconColor": "Background 1",
+                "SelectedIconColorUseItemColor": true,
+                "IconColorUseItemColor": true,
+                "IsOldMenuPath": false,
+                "CommandList": [
+                  {
+                    "$type": "Forguncy.Model.NavigateCommand, ServerDesignerCommon",
+                    "PageName": "終夜運転事由マスタ編集",
+                    "PassValues": [],
+                    "DeleteCachedQuery": true
+                  }
+                ],
+                "CanVisitRoleList": [
+                  "FGC_Anonymous"
+                ]
+              }
+            ]
+          }
+        ],
+        "Orientation": 0,
+        "MenuLevelsStyle": [
+          {
+            "FontSize": 17.333333333333332,
+            "Height": 45.0,
+            "Width": 230.0,
+            "IconHeight": 24.0,
+            "IconWidth": 24.0
+          },
+          {
+            "FontSize": 16.0,
+            "Height": 32.0,
+            "Width": 230.0,
+            "IconHeight": 24.0,
+            "IconWidth": 24.0
+          }
+        ]
+      }
+    },
+    "5,0": {
+      "IsPlaceHolderCell": true
+    }
+  },
+  "StyleDatas": {
+    "Styles": [
+      {
+        "Foreground": 0
+      },
+      {
+        "FontSize": 32.0,
+        "Foreground": 0,
+        "Underline": false
+      },
+      {
+        "Foreground": 0,
+        "Formatter": 1,
+        "Underline": true
+      },
+      {
+        "Background": null
+      },
+      {
+        "Background": 2
+      }
+    ],
+    "Types": {
+      "Strs": [
+        "Background 1 0",
+        "[AUTO]General",
+        "Accent 6 -25",
+        "Body"
+      ]
+    },
+    "CellStyles": {
+      "1,1": 0,
+      "1,4": 1,
+      "1,46": 2,
+      "3,0": 3
+    },
+    "RowStyles": {
+      "3": 4,
+      "4": 4
+    },
+    "SheetStyle": {
+      "FontFamily": 3
+    }
+  },
+  "Spans": [
+    "3,0,2,64",
+    "1,1,1,2",
+    "5,0,31,64",
+    "1,53,1,10",
+    "1,46,1,6"
+  ],
+  "BackgroundPictures": [
+    {
+      "FitToBrowserWidth": true,
+      "DisplayName": "背景画像1",
+      "ForguncyPictureName": "Banner/Sources/03.png",
+      "ForguncyPictureSourceType": 3,
+      "StyleInfo": {
+        "Fill": null
+      },
+      "IsAutomaticFill": false,
+      "Name": "b132fcfb-9d42-4b3a-a8f8-5ba2518d0192.png",
+      "Size": "1200,85"
+    },
+    {
+      "FitToBrowserWidth": true,
+      "DisplayName": "背景画像2",
+      "StyleInfo": {
+        "Fill": "linear-gradient(90deg, #FF7E00C5 0.00%, Background_1 100.00%)"
+      },
+      "IsAutomaticFill": false,
+      "Name": "7c4f8214-036c-4f9a-a271-e8789cff3a7c.png",
+      "Size": "1280,85"
+    }
+  ],
+  "PageInfo": {
+    "$type": "Forguncy.Model.Pages.MasterPage, ServerDesignerCommon",
+    "PageLoadedCommandList": [
+      {
+        "$type": "Forguncy.Model.ShareCommand, ServerDesignerCommon",
+        "ShareCommandContainerRefer": {
+          "ShareCommandContainerID": "ad30d38c-907e-41f8-8499-69587bfa91cc"
+        },
+        "ReturnPropertiesTo": [
+          {
+            "ReturnPropertyReferObject": {
+              "ParamID": "85fd5724-2b59-44fd-855a-054a1e561057",
+              "ShareCommandContainerReferObject": {
+                "ShareCommandContainerID": "ad30d38c-907e-41f8-8499-69587bfa91cc"
+              }
+            },
+            "ResultTo": {
+              "SerializeProperty": "Admin"
+            }
+          }
+        ]
+      },
+      {
+        "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
+        "ConditionAndCommandPairList": [
+          {
+            "Condition": {
+              "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+              "param": {
+                "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
+                "cellLocations": [
+                  {
+                    "SerializeProperty": "=終夜運転マスタページ!Admin"
+                  }
+                ]
+              },
+              "value": "0"
+            },
+            "CommandList": [
+              {
+                "$type": "Forguncy.Model.OperateCellTypeCommand, ServerDesignerCommon",
+                "TargetPageElement": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=終夜運転マスタページ!A4"
+                },
+                "TargetType": "Forguncy.CustomMenu.ForguncyMenuCellType, Forguncy.CustomMenu, Version=1.0.1.1, Culture=neutral, PublicKeyToken=null",
+                "MethodName": "HideItems",
+                "ParameterValues": {
+                  "items": "管理者"
+                },
+                "RetrunParamNames": {}
+              }
+            ],
+            "ID": "3b815f52-3226-4521-a0e6-7cc1953f4f58"
+          }
+        ]
+      }
+    ]
+  },
+  "PrintInfo": {
+    "Margin": {},
+    "PaperSize": {}
+  }
+}//nmHku0gIJe/0DxTk6dEjE/T5yRYJc1F64lOJf6A5+TEpdm541OrC1gXflJ+5R1gFn/PLPeoVuMNy6JTDJ3T/k54A33ZNW/FvUqSv1JZ+61J4gAPFTZgvCqjZUVHwaL7jIohXttwTpiqfcD0xtUxZyr433VOSeqEZb4MImVAXeeGm4CCgLkXlEfd4rJ7VrspP2ouZJpMYQ+OUHiJ0r5Gt3Olgz85bUBIPILxMQege5QI5lWXS1nIMpFzx+Gd7jGoEbOsf1iQw0yTX8ej5nfiO1oSN/+DTjbNhyifjk4lsw9arqqR/k1sM/GPk1VHzpObdzNg6AQkPBKdOwJYZDFN44KzX9VP6Bzy13BFfD1hsNxayw21jz0qwtdQsusd9FVXD44qEFR5YGFpCa75b4uqu+yg5rtAnDSDBPKRQJZ/XXydlKgKHfYCkdspYmWdWeWaHd/lBeuscRHWEm8eEe6rGnU9b5CRASKThSoekRA+lzK8+daIR10GnZ5VulPZ4LvxMIhtc/qM8pAhRa8Mmk0dw7ARaWwmx9igGngVA8Z7sMGm2SYjCo4JGdqWNAW1MsxiBaGthymZEjO3WTT9XFmCgQA64l0cA5i8z6ETGgllaIEsyhgGUIJsCAsD+iYAja9jFyiO+0eyNMqrRaLk0VuNgpdjDZUNz4eDO1dW0dPMRD2ZdxSzevbXpkJc3GxnnHGZ4xEBDkN8kfjeGZJzFq4oGYrYr6pNiWi4xBcFQpoXTvmY/Y09Ds2AaoArFS+vkjuE+R9RNHZe7ruw1zhvfU4jCq+L8b9Au5wLIU2FMxA09Fc+lQCoT7GgFz8mmD7Qbcg0TPVurG1T4gSc3vCfI2dF5/QlgRKu2pusl79om+DFEnWOmYSoOjbiojM/DtUHk5bKliK38J7Lb0WFdeKhuTTgyAg==|920

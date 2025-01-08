@@ -1,0 +1,674 @@
+{
+  "Rows": {
+    "RowColumnAttachedInfos": {
+      "10": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 10.0
+        }
+      },
+      "11": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 30.0
+        }
+      },
+      "12": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 10.0
+        }
+      },
+      "13": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 40.0
+        }
+      },
+      "14": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 40.0
+        }
+      },
+      "15": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 40.0
+        }
+      },
+      "37": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 30.0
+        }
+      }
+    },
+    "InLogicalVisibleIndexes": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      39,
+      40,
+      41,
+      42
+    ],
+    "Count": 43
+  },
+  "Cols": {
+    "RowColumnAttachedInfos": {
+      "63": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 20.0,
+          "IsHidden": true
+        }
+      }
+    },
+    "InLogicalVisibleIndexes": [
+      62,
+      63,
+      66
+    ],
+    "Count": 67
+  },
+  "Values": {
+    "1,2": "選択した機器",
+    "1,14": "本体機器",
+    "1,16": "機器名称",
+    "2,2": "運転部屋コード",
+    "3,2": "建屋",
+    "4,2": "階",
+    "7,1": "選択した機器で既に登録されている申請を表示しています。\u000b表示がない場合、および実験条件が異なる等の理由で新たに申請する場合は「続行」を選択してください。\u000b新規申請が不要な場合は「中止」と選択してください。",
+    "13,1": "終夜申請ID",
+    "13,7": "終夜機器名称",
+    "13,19": "運転部屋",
+    "13,31": "本体機器",
+    "13,43": "付属機器",
+    "37,1": "中止",
+    "37,7": "続行"
+  },
+  "AttachInfos": {
+    "1,14": {
+      "ListViewInfo": {
+        "ShowColumnHeaderInDesigner": true,
+        "TableName": "T_OvernightGroup",
+        "RowIndex": 1,
+        "ColumnIndex": 14,
+        "ColumnCount": 18,
+        "RowCount": 4,
+        "ShowEditStatusIcon": true,
+        "UseSimpleBar": true,
+        "Name": "リストビュー2",
+        "DetailListViewInfo": {
+          "MasterTable": "T_OvernightRegistration",
+          "ColumnOfMasterTable": "overnight_registration_id",
+          "ColumnOfDetailTable": "overnight_registration_id",
+          "DataCommitType": 2
+        },
+        "TopCondition": null,
+        "OrderByCondition": {
+          "OrderByColumns": [
+            {
+              "ColumnBindingInfo": {
+                "TableName": "T_OvernightGroup",
+                "ColumnName": "main_equipment_flag"
+              },
+              "Order": 1
+            }
+          ]
+        },
+        "CommitType": 1,
+        "DoNotLoadDataWhenLoadPage": true,
+        "ListViewStyleName": "_RS_Light14"
+      }
+    },
+    "2,14": {
+      "BindingInfo": {
+        "TableName": "T_OvernightGroup",
+        "ColumnName": "main_equipment_flag"
+      }
+    },
+    "2,16": {
+      "BindingInfo": {
+        "TableName": "T_OvernightGroup",
+        "ColumnName": "equipment_id",
+        "RelationBinding": {
+          "RelatedTable": "T_InstrumentBasicInformation",
+          "RelatedColumn": "EquipmentId",
+          "DisplayColumn": "InstrumentName"
+        }
+      }
+    },
+    "2,29": {
+      "BindingInfo": {
+        "TableName": "T_OvernightGroup",
+        "ColumnName": "equipment_id"
+      }
+    },
+    "11,1": {
+      "CellType": {
+        "$type": "Forguncy.PageNavigateCellType, ServerDesignerCommon",
+        "PageingListviewName": "リストビュー1",
+        "PageLimitRowCount": 12,
+        "FirstImage": {
+          "Name": "Arrow/347_move_first.svg",
+          "BuiltIn": true,
+          "Color": "Accent 6 0"
+        },
+        "PreviousImage": {
+          "Name": "Arrow/349_left_arrow.svg",
+          "BuiltIn": true,
+          "Color": "Accent 6 0"
+        },
+        "NextImage": {
+          "Name": "Arrow/350_right_arrow.svg",
+          "BuiltIn": true,
+          "Color": "Accent 6 0"
+        },
+        "LastImage": {
+          "Name": "Arrow/348_move_last.svg",
+          "BuiltIn": true,
+          "Color": "Accent 6 0"
+        }
+      }
+    },
+    "13,1": {
+      "ListViewInfo": {
+        "ShowColumnHeaderInDesigner": true,
+        "TableName": "T_OvernightRegistration",
+        "RowIndex": 13,
+        "ColumnIndex": 1,
+        "ColumnCount": 64,
+        "RowCount": 23,
+        "ColumnOperation": 2,
+        "ShowEditStatusIcon": true,
+        "UseSimpleBar": true,
+        "Name": "リストビュー1",
+        "SqlCondition": {
+          "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+          "Condition1": {
+            "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+            "CompareType": 1,
+            "ColumnBindingInfo": {
+              "TableName": "T_OvernightRegistration",
+              "ColumnName": "delete_flg"
+            },
+            "Value": "1"
+          },
+          "Condition2": {
+            "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+            "Condition1": {
+              "$type": "ForguncyDataAccess.TextCESqlCondition, ForguncyDataAccess",
+              "CompareType": 8,
+              "ColumnBindingInfo": {
+                "TableName": "T_OvernightRegistration",
+                "ColumnName": "overnight_registration_id",
+                "RelationBinding": {
+                  "RelatedTable": "V_OvernightGroup",
+                  "RelatedColumn": "overnight_registration_id",
+                  "DisplayColumn": "main_equipment_id"
+                }
+              },
+              "Value": {
+                "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                "SerializeProperty": "=重複確認画面!H2"
+              },
+              "LeftBracket": 1
+            },
+            "Condition2": {
+              "$type": "ForguncyDataAccess.TextCESqlCondition, ForguncyDataAccess",
+              "CompareType": 8,
+              "ColumnBindingInfo": {
+                "TableName": "T_OvernightRegistration",
+                "ColumnName": "overnight_registration_id",
+                "RelationBinding": {
+                  "RelatedTable": "V_OvernightGroup",
+                  "RelatedColumn": "overnight_registration_id",
+                  "DisplayColumn": "sub_equipment_id"
+                }
+              },
+              "Value": {
+                "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                "SerializeProperty": "=重複確認画面!H2"
+              },
+              "RightBracket": 1
+            },
+            "RelationType": 1
+          }
+        },
+        "TopCondition": null,
+        "CommitType": 1,
+        "ListViewStyleName": "_RS_Medium7"
+      }
+    },
+    "14,1": {
+      "BindingInfo": {
+        "TableName": "T_OvernightRegistration",
+        "ColumnName": "overnight_registration_id"
+      }
+    },
+    "14,7": {
+      "BindingInfo": {
+        "TableName": "T_OvernightRegistration",
+        "ColumnName": "overnight_epuipment_name"
+      }
+    },
+    "14,19": {
+      "BindingInfo": {
+        "TableName": "T_OvernightRegistration",
+        "ColumnName": "basic_room_Information_Name"
+      }
+    },
+    "14,31": {
+      "BindingInfo": {
+        "TableName": "T_OvernightRegistration",
+        "ColumnName": "overnight_registration_id",
+        "RelationBinding": {
+          "RelatedTable": "V_OvernightGroup",
+          "RelatedColumn": "overnight_registration_id",
+          "DisplayColumn": "main_instrument_name"
+        }
+      }
+    },
+    "14,43": {
+      "BindingInfo": {
+        "TableName": "T_OvernightRegistration",
+        "ColumnName": "overnight_registration_id",
+        "RelationBinding": {
+          "RelatedTable": "V_OvernightGroup",
+          "RelatedColumn": "overnight_registration_id",
+          "DisplayColumn": "sub_instrument_name"
+        }
+      }
+    },
+    "14,62": {
+      "BindingInfo": {
+        "TableName": "T_OvernightRegistration",
+        "ColumnName": "overnight_registration_id",
+        "RelationBinding": {
+          "RelatedTable": "V_OvernightGroup",
+          "RelatedColumn": "overnight_registration_id",
+          "DisplayColumn": "main_equipment_id"
+        }
+      }
+    },
+    "14,63": {
+      "BindingInfo": {
+        "TableName": "T_OvernightRegistration",
+        "ColumnName": "overnight_registration_id",
+        "RelationBinding": {
+          "RelatedTable": "V_OvernightGroup",
+          "RelatedColumn": "overnight_registration_id",
+          "DisplayColumn": "sub_equipment_id"
+        }
+      }
+    },
+    "37,1": {
+      "CellType": {
+        "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.NavigateCommand, ServerDesignerCommon",
+            "PageName": "終夜運転機器一覧",
+            "PassValues": []
+          }
+        ],
+        "Text": "中止",
+        "TemplateKey": "_RS_Normal_Style7"
+      }
+    },
+    "37,7": {
+      "CellType": {
+        "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "PassListviewDataCommand.PassListviewDataCommand, PassListviewDataCommand",
+            "ImportMode": 2,
+            "PassValueItems": [
+              {
+                "SourceCell": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=重複確認画面!AD3"
+                },
+                "TargetCell": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=終夜運転機器申請!BA3"
+                },
+                "IsPrimaryKey": true
+              },
+              {
+                "SourceCell": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=重複確認画面!O3"
+                },
+                "TargetCell": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=終夜運転機器申請!AL3"
+                }
+              },
+              {
+                "SourceCell": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=重複確認画面!Q3"
+                },
+                "TargetCell": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=終夜運転機器申請!AN3"
+                }
+              }
+            ]
+          },
+          {
+            "$type": "Forguncy.Model.ShowPopupCommand, ServerDesignerCommon",
+            "PageName": "終夜運転機器申請",
+            "PassValues": [
+              {
+                "Source": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=重複確認画面!H3"
+                },
+                "TargetCell": {
+                  "SerializeProperty": "=終夜運転機器申請!AE5"
+                }
+              },
+              {
+                "Source": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=重複確認画面!H4"
+                },
+                "TargetCell": {
+                  "SerializeProperty": "=終夜運転機器申請!AE6"
+                }
+              },
+              {
+                "Source": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=重複確認画面!H5"
+                },
+                "TargetCell": {
+                  "SerializeProperty": "=終夜運転機器申請!AE7"
+                }
+              }
+            ],
+            "DeleteCachedQuery": true
+          }
+        ],
+        "Text": "続行",
+        "TemplateKey": "_RS_Normal_Style7"
+      }
+    }
+  },
+  "StyleDatas": {
+    "Styles": [
+      {
+        "Background": 0
+      },
+      {
+        "FontFamily": 1
+      },
+      {
+        "Background": 2,
+        "FontFamily": 1
+      },
+      {
+        "FontFamily": 1,
+        "BorderBottom": 0,
+        "BorderTop": 0,
+        "BorderLeft": 0
+      },
+      {
+        "FontFamily": 1,
+        "BorderBottom": 0,
+        "BorderTop": 0,
+        "BorderRight": 0
+      },
+      {
+        "FontFamily": 1,
+        "BorderBottom": 0,
+        "BorderTop": 0
+      },
+      {
+        "FontFamily": 1,
+        "HorizontalAlignment": 3,
+        "BorderLeft": 0
+      },
+      {
+        "Formatter": 4
+      },
+      {
+        "FontFamily": 1,
+        "BorderLeft": 0
+      },
+      {
+        "FontFamily": 1,
+        "BorderBottom": 0,
+        "BorderTop": 0,
+        "BorderLeft": 0,
+        "BorderRight": 0
+      },
+      {
+        "FontFamily": 1,
+        "Formatter": 4
+      },
+      {
+        "FontFamily": 1,
+        "FontSize": 12.0,
+        "Formatter": 5,
+        "HorizontalAlignment": 3,
+        "Underline": false
+      },
+      {
+        "FontFamily": 1,
+        "Formatter": 5,
+        "HorizontalAlignment": 6,
+        "WordWrap": true
+      },
+      {
+        "FontFamily": 1,
+        "HorizontalAlignment": 6,
+        "WordWrap": true
+      }
+    ],
+    "Types": {
+      "Strs": [
+        "Background 1 -15",
+        "Body",
+        "#FFFFFF00",
+        "Center",
+        "[AUTO]General",
+        "yyyy/m/d",
+        "Left"
+      ],
+      "Borders": [
+        {
+          "Color": 0
+        }
+      ]
+    },
+    "CellStyles": {
+      "0,0": 0,
+      "0,62": 0,
+      "0,63": 0,
+      "0,66": 0,
+      "1,0": 0,
+      "1,1": 1,
+      "1,7": 2,
+      "1,8": 1,
+      "1,9": 1,
+      "1,10": 1,
+      "1,11": 1,
+      "1,14": 3,
+      "1,15": 4,
+      "1,16": 3,
+      "1,17": 5,
+      "1,18": 5,
+      "1,19": 5,
+      "1,20": 5,
+      "1,21": 5,
+      "1,22": 5,
+      "1,23": 5,
+      "1,24": 5,
+      "1,25": 5,
+      "1,26": 5,
+      "1,27": 5,
+      "1,28": 4,
+      "1,29": 3,
+      "1,30": 4,
+      "1,31": 1,
+      "2,0": 0,
+      "2,2": 1,
+      "2,3": 1,
+      "2,4": 1,
+      "2,5": 1,
+      "2,6": 1,
+      "2,7": 2,
+      "2,8": 1,
+      "2,9": 1,
+      "2,10": 1,
+      "2,11": 1,
+      "2,14": 6,
+      "2,15": 1,
+      "2,16": 1,
+      "2,17": 1,
+      "2,18": 1,
+      "2,19": 1,
+      "2,20": 1,
+      "2,21": 1,
+      "2,22": 1,
+      "2,23": 1,
+      "2,24": 1,
+      "2,25": 1,
+      "2,26": 1,
+      "2,27": 1,
+      "2,28": 1,
+      "2,29": 1,
+      "2,30": 1,
+      "2,31": 1,
+      "2,32": 7,
+      "3,0": 0,
+      "3,2": 1,
+      "3,3": 1,
+      "3,4": 1,
+      "3,5": 1,
+      "3,6": 1,
+      "3,7": 2,
+      "3,8": 1,
+      "3,9": 1,
+      "3,10": 1,
+      "3,11": 1,
+      "3,14": 8,
+      "3,15": 1,
+      "3,16": 1,
+      "3,17": 1,
+      "3,18": 1,
+      "3,19": 1,
+      "3,20": 1,
+      "3,21": 1,
+      "3,22": 1,
+      "3,23": 1,
+      "3,24": 1,
+      "3,25": 1,
+      "3,26": 1,
+      "3,27": 1,
+      "3,28": 1,
+      "3,29": 1,
+      "3,30": 1,
+      "3,31": 1,
+      "4,0": 0,
+      "4,2": 1,
+      "4,3": 1,
+      "4,4": 1,
+      "4,5": 1,
+      "4,6": 1,
+      "4,7": 2,
+      "4,8": 1,
+      "4,9": 1,
+      "4,10": 1,
+      "4,11": 1,
+      "4,14": 9,
+      "4,15": 9,
+      "4,16": 9,
+      "4,17": 9,
+      "4,18": 9,
+      "4,19": 9,
+      "4,20": 9,
+      "4,21": 9,
+      "4,22": 9,
+      "4,23": 9,
+      "4,24": 9,
+      "4,25": 9,
+      "4,26": 9,
+      "4,27": 9,
+      "4,28": 9,
+      "4,29": 9,
+      "4,30": 9,
+      "4,31": 9,
+      "5,0": 0,
+      "6,14": 7,
+      "11,1": 1,
+      "13,7": 1,
+      "13,19": 10,
+      "13,31": 10,
+      "13,43": 10,
+      "14,1": 11,
+      "14,7": 12,
+      "14,19": 13,
+      "14,31": 12,
+      "14,43": 12,
+      "37,7": 1,
+      "37,8": 1,
+      "37,9": 1,
+      "37,10": 1,
+      "37,11": 1,
+      "39,0": 0,
+      "40,0": 0,
+      "41,0": 0,
+      "42,0": 0
+    },
+    "SheetStyle": {
+      "FontFamily": 1
+    }
+  },
+  "Spans": [
+    "11,1,1,10",
+    "37,1,1,5",
+    "37,7,1,5",
+    "14,1,1,6",
+    "14,7,1,12",
+    "14,19,1,12",
+    "14,31,1,12",
+    "14,43,1,19",
+    "15,1,21,64",
+    "7,1,3,35",
+    "2,14,1,2",
+    "2,16,1,13",
+    "2,29,1,2",
+    "3,14,2,18",
+    "2,7,1,5",
+    "3,7,1,5",
+    "4,7,1,5",
+    "1,7,1,5",
+    "1,14,1,2",
+    "1,16,1,13",
+    "1,29,1,2",
+    "13,1,1,6",
+    "13,7,1,12",
+    "13,19,1,12",
+    "13,31,1,12",
+    "13,43,1,19"
+  ],
+  "PageInfo": {
+    "$type": "Forguncy.Model.Pages.NormalPage, ServerDesignerCommon",
+    "MasterPageName": "終夜運転マスタページ",
+    "AuthorizeInfo": {
+      "VisitMode": 2
+    },
+    "RowBreakLines": [],
+    "RepeatRangeSettings": [],
+    "RelatedDataTableName": "T_OvernightRegistration"
+  },
+  "PrintInfo": {
+    "Margin": {},
+    "PaperSize": {}
+  }
+}//vCvXgF+ms30ZXq7/Ry8JxFIfuOFfXZLDbQmzbG40f7p8d8rsdeTPPSahM1rY9G/lNLs0d/uTveIT+OI/1Xv9Kboa4bR87HdvZm44+3/+KhaksHmzK9ehI303pUenKJwTLqN94ngMlcLl6gjOGYVh3IrKhYGn9PuhbsJ/+Z2Ki7S98zlf7t9uQ0OvTZ579cL4NdaNfmfsGUu/SsrWyvDX05Ubaspehj2eqSveFkG3RA6CyPZ6T1oaF654FmVPEQ3S+CEtlva9pm+WnLXHbGN4zs0ZUwvkU7gnDu1AAGPh3XoN+tUA+pWdFjoZRAlW4McRthZtdZhz3U/iNZGZKf/P9PPBlKg+xU9RUYzt2lEmbJjgvVXsUwOpaFX3WxKW6th3vNdN548E97py8gHUXduyRWC2Zeyzx1M8dqT0kGmkYJuy1v44Mj5SeggFLHKtOJKqTqM/D/oJHGB86KAJFGPr+3/uB1bqiMyiGAKlXCX3seKOPxUyCPLS9xU9A6DNdRG25k4ULazFTjTCWJbTsunrHOIs1kOYCJKNg+oy8M6Y+tXHW/TVfiCcKrzaoNDxRrkVuP18HpdAM8g2kqaHo2tot4HbEPp9EWEM3flZShusX/R4ut35zj7EUb3TAxjqEmzOBavwY9dJtG3ZBxeZGEt4uLrDn+xcbjKdnMpnjveHIOMf0BcpWwByYCk820w2foCzVn110FArMSbyX7tQ+V/+DXAEgFPAW7duC9nlFFKiWXIepZNndkbB6CNSS2S4Di0rYpO0+GJaso9F0TGE/jQnNajfqyMEniIHtjbFOI73tGyK2kctImEf0+a95Sb0+uc3smq6VSjDHydLvCeLQ+N64rfpLWPUtArxSdK1oH6k4zOTfBsxgARlqH+TbGe3DDopTHQ1FUFjy6+u+Fh9Yk4GYw==|920

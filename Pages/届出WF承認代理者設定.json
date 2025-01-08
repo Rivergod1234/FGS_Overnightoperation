@@ -1,0 +1,958 @@
+{
+  "Rows": {
+    "RowColumnAttachedInfos": {
+      "9": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 30.0
+        }
+      },
+      "11": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 30.0
+        }
+      },
+      "12": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 20.0
+        }
+      },
+      "14": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 30.0
+        }
+      },
+      "16": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 40.0
+        }
+      },
+      "17": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 40.0
+        }
+      },
+      "18": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 20.0
+        }
+      },
+      "19": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 20.0
+        }
+      },
+      "20": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 20.0
+        }
+      },
+      "21": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 20.0
+        }
+      }
+    },
+    "InLogicalVisibleIndexes": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+    ],
+    "Count": 23
+  },
+  "Cols": {
+    "RowColumnAttachedInfos": {
+      "40": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 1.0
+        }
+      },
+      "41": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 20.0
+        }
+      }
+    },
+    "InLogicalVisibleIndexes": [
+      39,
+      42,
+      43,
+      44,
+      45,
+      46
+    ],
+    "Count": 47
+  },
+  "Values": {
+    "1,1": "検索用SQLクエリ",
+    "1,16": "ログインG長情報(主)",
+    "1,30": "代理者の人数",
+    "3,1": "ログインアカウント",
+    "3,9": "%CurrentUser.UserName%",
+    "3,30": "追加時のアカウント重複カウント",
+    "4,1": "ログイン者部署コード(主)",
+    "5,1": "ログイン者所属コード(主)",
+    "5,30": "選択された承認者部署コード",
+    "9,1": "承認者",
+    "11,1": "承認者部署・所属",
+    "14,1": "代理者選択",
+    "14,24": "追加",
+    "16,1": "承認代理者一覧",
+    "16,7": "役職",
+    "16,12": "氏名",
+    "17,35": "削除"
+  },
+  "Formulas": {
+    "5,9": "TEXTJOIN(\",\",TRUE,W4)",
+    "4,30": "COUNTIF(AN18,H15)",
+    "4,9": "TEXTJOIN(\",\",TRUE,S4)",
+    "2,30": "COUNTA(H18)",
+    "9,7": "TEXTJOIN(\",\",TRUE,Q4)",
+    "17,7": "\"代理者\"&ROW()",
+    "11,24": "IFERROR(ODATA(\"lum_view_employee_department_relations_duplicated?$select=department_name_lvl05&$filter=employee_z_code eq \"&IF(ISBLANK(J4),\"null\",\"'\"&J4&\"'\")&\" and department_code_lvl05 eq \"&IF(ISBLANK(H12),\"null\",H12)),\"\")",
+    "6,30": "IFERROR(ODATA(\"lum_view_employee_department_relations_duplicated?$select=department_code_lvl04&$filter=employee_z_code eq \"&IF(ISBLANK(J4),\"null\",\"'\"&J4&\"'\")&\" and department_code_lvl05 eq \"&IF(ISBLANK(H12),\"null\",H12)),\"\")"
+  },
+  "AttachInfos": {
+    "1,1": {
+      "CellType": {
+        "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
+            "ConditionAndCommandPairList": [
+              {
+                "Condition": {
+                  "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                  "param": {
+                    "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
+                    "cellLocations": [
+                      {
+                        "SerializeProperty": "=届出WF承認代理者設定!H12"
+                      }
+                    ]
+                  }
+                },
+                "CommandList": [
+                  {
+                    "$type": "Forguncy.Model.QueryCommand, ServerDesignerCommon",
+                    "TargetTableName": "M_ApprovalAgent",
+                    "SqlCondition": {
+                      "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                      "ColumnBindingInfo": {
+                        "TableName": "M_ApprovalAgent",
+                        "ColumnName": "notification_approval_code"
+                      },
+                      "Value": "%Null%"
+                    },
+                    "Params": [],
+                    "ID": "005c2c5dd37249b4bf5ab0eaf87fc158"
+                  },
+                  {
+                    "$type": "Forguncy.Model.SetCellPropertyCommand, ServerDesignerCommon",
+                    "PropertyItemsList": [
+                      {
+                        "TargetCells": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=届出WF承認代理者設定!H15"
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "$type": "Forguncy.Model.StopCommand, ServerDesignerCommon"
+                  }
+                ],
+                "ID": "69cb20f1-c1f8-4ab8-9190-4029f139d2da"
+              }
+            ]
+          },
+          {
+            "$type": "Forguncy.Model.QueryCommand, ServerDesignerCommon",
+            "TargetTableName": "M_ApprovalAgent",
+            "SqlCondition": {
+              "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+              "Condition1": {
+                "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+                "Condition1": {
+                  "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                  "ColumnBindingInfo": {
+                    "TableName": "M_ApprovalAgent",
+                    "ColumnName": "notifier_dept_consenter_1_code"
+                  },
+                  "Value": {
+                    "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                    "SerializeProperty": "=届出WF承認代理者設定!J4"
+                  }
+                },
+                "Condition2": {
+                  "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                  "ColumnBindingInfo": {
+                    "TableName": "M_ApprovalAgent",
+                    "ColumnName": "department_code_lvl04"
+                  },
+                  "Value": {
+                    "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                    "SerializeProperty": "=届出WF承認代理者設定!AE7"
+                  }
+                }
+              },
+              "Condition2": {
+                "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                "ColumnBindingInfo": {
+                  "TableName": "M_ApprovalAgent",
+                  "ColumnName": "department_code_lvl05"
+                },
+                "Value": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=届出WF承認代理者設定!H12"
+                }
+              }
+            },
+            "Params": [
+              "=J4",
+              "=AE7",
+              "=H12"
+            ],
+            "ID": "efc468561ce14dd59d118aa7dcee5660"
+          }
+        ],
+        "Text": "検索用SQLクエリ",
+        "TemplateKey": "_RS_Normal_Style7"
+      }
+    },
+    "2,16": {
+      "ListViewInfo": {
+        "ShowColumnHeaderInDesigner": true,
+        "TableName": "lum_view_employee_department_relations_duplicated",
+        "RowIndex": 2,
+        "ColumnIndex": 16,
+        "ColumnCount": 12,
+        "RowCount": 3,
+        "ColumnOperation": 2,
+        "ShowEditStatusIcon": true,
+        "UseSimpleBar": true,
+        "Name": "リストビュー1",
+        "SqlCondition": {
+          "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+          "Condition1": {
+            "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+            "ColumnBindingInfo": {
+              "TableName": "lum_view_employee_department_relations_duplicated",
+              "ColumnName": "employee_z_code"
+            },
+            "Value": {
+              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+              "SerializeProperty": "=届出WF承認代理者設定!J4"
+            }
+          },
+          "Condition2": {
+            "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+            "ColumnBindingInfo": {
+              "TableName": "lum_view_employee_department_relations_duplicated",
+              "ColumnName": "count_belonging_department"
+            },
+            "Value": "1"
+          }
+        },
+        "TopCondition": null,
+        "ListViewStyleName": "_RS_Medium2"
+      }
+    },
+    "3,16": {
+      "BindingInfo": {
+        "TableName": "lum_view_employee_department_relations_duplicated",
+        "ColumnName": "employee_name"
+      }
+    },
+    "3,18": {
+      "BindingInfo": {
+        "TableName": "lum_view_employee_department_relations_duplicated",
+        "ColumnName": "department_code_lvl04"
+      }
+    },
+    "3,20": {
+      "BindingInfo": {
+        "TableName": "lum_view_employee_department_relations_duplicated",
+        "ColumnName": "department_name_lvl04"
+      }
+    },
+    "3,22": {
+      "BindingInfo": {
+        "TableName": "lum_view_employee_department_relations_duplicated",
+        "ColumnName": "department_code_lvl05"
+      }
+    },
+    "11,7": {
+      "CellType": {
+        "$type": "Forguncy.DropDownListCellType, ServerDesignerCommon",
+        "SelectOnly": false,
+        "ValidateItem": true,
+        "TemplateKey": "_RS_LightLine_Translucent_SmallRoundCorner_Normal1",
+        "IsBounding": true,
+        "Items": [
+          {
+            "Value": "項目1",
+            "DisplayValue": "項目1"
+          },
+          {
+            "Value": "項目2",
+            "DisplayValue": "項目2"
+          },
+          {
+            "Value": "項目3",
+            "DisplayValue": "項目3"
+          }
+        ],
+        "DataSource": "lum_view_employee_department_relations_duplicated",
+        "ValueColumnBindingInfo": {
+          "TableName": "lum_view_employee_department_relations_duplicated",
+          "ColumnName": "department_code_lvl05"
+        },
+        "DisplayColumnBindingInfo": {
+          "TableName": "lum_view_employee_department_relations_duplicated",
+          "ColumnName": "department_name_lvl04"
+        },
+        "ItemsQuery": {
+          "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+          "ColumnBindingInfo": {
+            "TableName": "lum_view_employee_department_relations_duplicated",
+            "ColumnName": "employee_z_code"
+          },
+          "Value": {
+            "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+            "SerializeProperty": "=届出WF承認代理者設定!J4"
+          }
+        },
+        "ItemsSort": {
+          "OrderByColumns": [
+            {
+              "ColumnBindingInfo": {
+                "TableName": "lum_view_employee_department_relations_duplicated",
+                "ColumnName": "count_belonging_department"
+              },
+              "Order": 0
+            }
+          ]
+        },
+        "DropDownSubItems": [
+          {
+            "GUID": "3c74385f3bec42aa8c3756b3ca401962",
+            "ColumnName": "部署",
+            "BindingInfo": {
+              "TableName": "lum_view_employee_department_relations_duplicated",
+              "ColumnName": "department_name_lvl04"
+            },
+            "BindingColumnDataType": 5
+          },
+          {
+            "GUID": "daaf03f341e146979ab1ecab82fbb40e",
+            "ColumnName": "所属",
+            "BindingInfo": {
+              "TableName": "lum_view_employee_department_relations_duplicated",
+              "ColumnName": "department_name_lvl05"
+            },
+            "BindingColumnDataType": 5
+          }
+        ],
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.OperateCellTypeCommand, ServerDesignerCommon",
+            "TargetPageElement": {
+              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+              "SerializeProperty": "=届出WF承認代理者設定!B2"
+            },
+            "TargetType": "Forguncy.ButtonCellType, ServerDesignerCommon, Version=8.0.20.0, Culture=neutral, PublicKeyToken=967100671921c115",
+            "MethodName": "ExecuteCommand",
+            "ParameterValues": {},
+            "RetrunParamNames": {}
+          }
+        ],
+        "CellDefaultValue": {
+          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+          "SerializeProperty": "=届出WF承認代理者設定!J6"
+        }
+      }
+    },
+    "14,7": {
+      "CellType": {
+        "$type": "Forguncy.DropDownListCellType, ServerDesignerCommon",
+        "SelectOnly": false,
+        "ValidateItem": true,
+        "TemplateKey": "_RS_LightLine_Translucent_SmallRoundCorner_Normal1",
+        "IsBounding": true,
+        "Items": [
+          {
+            "Value": "項目1",
+            "DisplayValue": "項目1"
+          },
+          {
+            "Value": "項目2",
+            "DisplayValue": "項目2"
+          },
+          {
+            "Value": "項目3",
+            "DisplayValue": "項目3"
+          }
+        ],
+        "DataSource": "lum_view_employee_department_relations_duplicated",
+        "ValueColumnBindingInfo": {
+          "TableName": "lum_view_employee_department_relations_duplicated",
+          "ColumnName": "employee_z_code"
+        },
+        "DisplayColumnBindingInfo": {
+          "TableName": "lum_view_employee_department_relations_duplicated",
+          "ColumnName": "employee_name"
+        },
+        "ItemsQuery": {
+          "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+          "Condition1": {
+            "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+            "Condition1": {
+              "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+              "ColumnBindingInfo": {
+                "TableName": "lum_view_employee_department_relations_duplicated",
+                "ColumnName": "department_code_lvl04"
+              },
+              "Value": {
+                "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                "SerializeProperty": "=届出WF承認代理者設定!AE7"
+              }
+            },
+            "Condition2": {
+              "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+              "ColumnBindingInfo": {
+                "TableName": "lum_view_employee_department_relations_duplicated",
+                "ColumnName": "department_code_lvl05"
+              },
+              "Value": {
+                "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                "SerializeProperty": "=届出WF承認代理者設定!H12"
+              }
+            }
+          },
+          "Condition2": {
+            "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+            "CompareType": 1,
+            "ColumnBindingInfo": {
+              "TableName": "lum_view_employee_department_relations_duplicated",
+              "ColumnName": "employee_z_code"
+            },
+            "Value": {
+              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+              "SerializeProperty": "=届出WF承認代理者設定!J4"
+            }
+          }
+        }
+      }
+    },
+    "14,24": {
+      "CellType": {
+        "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
+            "ConditionAndCommandPairList": [
+              {
+                "Condition": {
+                  "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                  "param": {
+                    "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
+                    "cellLocations": [
+                      {
+                        "SerializeProperty": "=届出WF承認代理者設定!H12"
+                      }
+                    ]
+                  }
+                },
+                "CommandList": [
+                  {
+                    "$type": "Forguncy.Model.ShowMessageCommand, ServerDesignerCommon",
+                    "MessageFormula": "承認者部署・所属を選択してください。"
+                  },
+                  {
+                    "$type": "Forguncy.Model.StopCommand, ServerDesignerCommon"
+                  }
+                ],
+                "ID": "134378c6-8ab1-4d95-82f7-076b682f68fa"
+              }
+            ]
+          },
+          {
+            "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
+            "ConditionAndCommandPairList": [
+              {
+                "Condition": {
+                  "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                  "param": {
+                    "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
+                    "cellLocations": [
+                      {
+                        "SerializeProperty": "=届出WF承認代理者設定!H15"
+                      }
+                    ]
+                  }
+                },
+                "CommandList": [
+                  {
+                    "$type": "Forguncy.Model.ShowMessageCommand, ServerDesignerCommon",
+                    "MessageFormula": "代理者を選択してください。"
+                  },
+                  {
+                    "$type": "Forguncy.Model.StopCommand, ServerDesignerCommon"
+                  }
+                ],
+                "ID": "878e755b-c30b-4b71-91c0-b352d9ebd9c6"
+              }
+            ]
+          },
+          {
+            "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
+            "ConditionAndCommandPairList": [
+              {
+                "Condition": {
+                  "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                  "param": {
+                    "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
+                    "cellLocations": [
+                      {
+                        "SerializeProperty": "=届出WF承認代理者設定!AE3"
+                      }
+                    ]
+                  },
+                  "value": "3"
+                },
+                "CommandList": [
+                  {
+                    "$type": "Forguncy.Model.ShowMessageCommand, ServerDesignerCommon",
+                    "MessageFormula": "代理者は3名までとしてください。"
+                  },
+                  {
+                    "$type": "Forguncy.Model.StopCommand, ServerDesignerCommon"
+                  }
+                ],
+                "ID": "ad76be52-b068-40ef-ab4e-df8459919822"
+              }
+            ]
+          },
+          {
+            "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
+            "ConditionAndCommandPairList": [
+              {
+                "Condition": {
+                  "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                  "param": {
+                    "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
+                    "cellLocations": [
+                      {
+                        "SerializeProperty": "=届出WF承認代理者設定!AE5"
+                      }
+                    ]
+                  },
+                  "value": "0",
+                  "compareType": 2
+                },
+                "CommandList": [
+                  {
+                    "$type": "Forguncy.Model.ShowMessageCommand, ServerDesignerCommon",
+                    "MessageFormula": "すでに代理者として登録されています。"
+                  },
+                  {
+                    "$type": "Forguncy.Model.StopCommand, ServerDesignerCommon"
+                  }
+                ],
+                "ID": "c700254b-e936-4dde-82ee-a9e075f7e891"
+              }
+            ]
+          },
+          {
+            "$type": "Forguncy.Model.UpdateDataTableCommand, ServerDesignerCommon",
+            "TableName": "M_ApprovalAgent",
+            "UpdateType": "add",
+            "ShowConfirm": false,
+            "ConfirmText": "本当に追加してもよろしいですか？",
+            "UpdateValues": [
+              {
+                "ColumnName": "notifier_dept_consenter_1_code",
+                "Value": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=届出WF承認代理者設定!J4"
+                }
+              },
+              {
+                "ColumnName": "department_code_lvl04",
+                "Value": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=届出WF承認代理者設定!AE7"
+                }
+              },
+              {
+                "ColumnName": "department_code_lvl05",
+                "Value": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=届出WF承認代理者設定!H12"
+                }
+              },
+              {
+                "ColumnName": "agent_code",
+                "Value": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=届出WF承認代理者設定!H15"
+                }
+              }
+            ]
+          },
+          {
+            "$type": "Forguncy.Model.SetCellPropertyCommand, ServerDesignerCommon",
+            "PropertyItemsList": [
+              {
+                "TargetCells": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=届出WF承認代理者設定!H15"
+                }
+              }
+            ]
+          }
+        ],
+        "Text": "追加",
+        "TemplateKey": "_RS_Normal_Style7"
+      }
+    },
+    "16,7": {
+      "ListViewInfo": {
+        "ShowColumnHeaderInDesigner": true,
+        "TableName": "M_ApprovalAgent",
+        "RowIndex": 16,
+        "ColumnIndex": 7,
+        "ColumnCount": 34,
+        "RowCount": 6,
+        "ColumnOperation": 1,
+        "ShowEditStatusIcon": true,
+        "UseSimpleBar": true,
+        "Name": "承認代理者一覧",
+        "TopCondition": null,
+        "CommitType": 1,
+        "ListViewStyleName": "_RS_Medium7"
+      }
+    },
+    "17,12": {
+      "BindingInfo": {
+        "TableName": "M_ApprovalAgent",
+        "ColumnName": "agent_code",
+        "RelationBinding": {
+          "RelatedTable": "lum_view_employee_department_relations_duplicated",
+          "RelatedColumn": "employee_z_code",
+          "DisplayColumn": "employee_name"
+        }
+      }
+    },
+    "17,35": {
+      "CellType": {
+        "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.UpdateDataTableCommand, ServerDesignerCommon",
+            "TableName": "M_ApprovalAgent",
+            "UpdateType": "delete",
+            "ShowConfirm": true,
+            "ConfirmText": "削除してもよろしいですか？",
+            "UpdateValues": []
+          }
+        ],
+        "Text": "削除",
+        "TemplateKey": "_RS_Normal_Style7"
+      }
+    },
+    "17,39": {
+      "BindingInfo": {
+        "TableName": "M_ApprovalAgent",
+        "ColumnName": "agent_code"
+      }
+    }
+  },
+  "StyleDatas": {
+    "Styles": [
+      {
+        "Background": 0
+      },
+      {
+        "FontFamily": 1,
+        "Formatter": 2
+      },
+      {
+        "FontFamily": 1
+      },
+      {
+        "Background": 3,
+        "FontFamily": 1
+      },
+      {
+        "Foreground": 4
+      },
+      {
+        "FontFamily": 1,
+        "FontWeight": 5
+      },
+      {
+        "Background": 6,
+        "FontFamily": 1
+      },
+      {
+        "FontWeight": 5
+      },
+      {
+        "FontFamily": 1,
+        "BorderBottom": 0
+      },
+      {
+        "Foreground": 4,
+        "HorizontalAlignment": 8
+      },
+      {
+        "FontWeight": 5,
+        "HorizontalAlignment": 8
+      },
+      {
+        "HorizontalAlignment": 8
+      }
+    ],
+    "Types": {
+      "Strs": [
+        "Background 1 -15",
+        "Body",
+        "[AUTO]General",
+        "#FFFFFF00",
+        "Background 1 0",
+        "Bold",
+        "Background 1 -5",
+        "Background 1 -35",
+        "Center"
+      ],
+      "Borders": [
+        {
+          "Color": 7
+        }
+      ]
+    },
+    "CellStyles": {
+      "0,0": 0,
+      "0,39": 0,
+      "0,42": 0,
+      "0,43": 0,
+      "0,44": 0,
+      "0,45": 0,
+      "0,46": 0,
+      "1,0": 0,
+      "1,16": 1,
+      "1,17": 2,
+      "1,18": 2,
+      "1,19": 2,
+      "1,20": 2,
+      "1,21": 2,
+      "1,22": 2,
+      "1,23": 2,
+      "1,24": 2,
+      "1,25": 2,
+      "1,26": 2,
+      "1,27": 2,
+      "1,30": 1,
+      "1,31": 2,
+      "1,32": 2,
+      "1,33": 2,
+      "1,34": 2,
+      "2,0": 0,
+      "2,16": 2,
+      "2,17": 2,
+      "2,18": 2,
+      "2,19": 2,
+      "2,20": 2,
+      "2,21": 2,
+      "2,22": 2,
+      "2,23": 2,
+      "2,24": 2,
+      "2,25": 2,
+      "2,26": 2,
+      "2,27": 2,
+      "2,30": 3,
+      "2,31": 2,
+      "2,32": 2,
+      "2,33": 2,
+      "2,34": 2,
+      "3,0": 0,
+      "3,1": 2,
+      "3,2": 2,
+      "3,3": 2,
+      "3,4": 2,
+      "3,5": 2,
+      "3,6": 2,
+      "3,7": 2,
+      "3,8": 2,
+      "3,9": 3,
+      "3,10": 2,
+      "3,11": 2,
+      "3,12": 2,
+      "3,13": 2,
+      "3,15": 4,
+      "3,16": 2,
+      "3,17": 2,
+      "3,18": 2,
+      "3,19": 2,
+      "3,20": 2,
+      "3,21": 2,
+      "3,22": 2,
+      "3,23": 2,
+      "3,24": 2,
+      "3,25": 2,
+      "3,26": 2,
+      "3,27": 2,
+      "3,30": 1,
+      "3,31": 2,
+      "3,32": 2,
+      "3,33": 2,
+      "3,34": 2,
+      "4,0": 0,
+      "4,1": 1,
+      "4,2": 2,
+      "4,3": 2,
+      "4,4": 2,
+      "4,5": 2,
+      "4,6": 2,
+      "4,7": 2,
+      "4,8": 2,
+      "4,9": 3,
+      "4,10": 2,
+      "4,11": 2,
+      "4,12": 2,
+      "4,13": 2,
+      "4,15": 4,
+      "4,16": 2,
+      "4,17": 2,
+      "4,18": 2,
+      "4,19": 2,
+      "4,20": 2,
+      "4,21": 2,
+      "4,22": 2,
+      "4,23": 2,
+      "4,24": 2,
+      "4,25": 2,
+      "4,26": 2,
+      "4,27": 2,
+      "4,30": 3,
+      "4,31": 2,
+      "4,32": 2,
+      "4,33": 2,
+      "4,34": 2,
+      "5,0": 0,
+      "5,1": 1,
+      "5,2": 2,
+      "5,3": 2,
+      "5,4": 2,
+      "5,5": 2,
+      "5,6": 2,
+      "5,7": 2,
+      "5,8": 2,
+      "5,9": 3,
+      "5,10": 2,
+      "5,11": 2,
+      "5,12": 2,
+      "5,13": 2,
+      "5,15": 4,
+      "6,0": 0,
+      "6,29": 2,
+      "6,30": 3,
+      "6,35": 2,
+      "6,36": 2,
+      "6,37": 2,
+      "6,38": 2,
+      "7,0": 0,
+      "9,1": 5,
+      "9,3": 2,
+      "9,4": 2,
+      "9,7": 6,
+      "11,1": 7,
+      "11,7": 2,
+      "11,24": 8,
+      "11,25": 8,
+      "11,26": 8,
+      "11,27": 8,
+      "11,28": 8,
+      "11,29": 8,
+      "11,30": 8,
+      "11,31": 8,
+      "11,32": 8,
+      "11,33": 8,
+      "11,34": 8,
+      "11,35": 8,
+      "11,36": 8,
+      "11,37": 8,
+      "11,38": 8,
+      "12,1": 7,
+      "12,23": 7,
+      "14,1": 7,
+      "14,7": 2,
+      "14,24": 2,
+      "14,25": 2,
+      "14,26": 2,
+      "14,27": 2,
+      "16,1": 7,
+      "16,6": 9,
+      "16,39": 0,
+      "17,6": 10,
+      "17,7": 11,
+      "18,6": 10,
+      "19,6": 10,
+      "20,6": 10,
+      "21,6": 10
+    },
+    "SheetStyle": {
+      "FontFamily": 1
+    }
+  },
+  "Spans": [
+    "3,16,1,2",
+    "3,18,1,2",
+    "3,20,1,2",
+    "3,22,1,2",
+    "3,9,1,5",
+    "4,9,1,5",
+    "5,9,1,5",
+    "1,1,1,8",
+    "17,7,1,5",
+    "17,35,1,4",
+    "17,12,1,23",
+    "2,30,1,5",
+    "4,30,1,5",
+    "4,16,1,12",
+    "18,7,4,34",
+    "6,30,1,5",
+    "14,24,1,4",
+    "9,7,1,16",
+    "11,7,1,16",
+    "14,7,1,16",
+    "11,24,1,15",
+    "2,16,1,2",
+    "2,18,1,2",
+    "2,20,1,2",
+    "2,22,1,2",
+    "16,7,1,5",
+    "16,12,1,23",
+    "16,35,1,4"
+  ],
+  "PageInfo": {
+    "$type": "Forguncy.Model.Pages.NormalPage, ServerDesignerCommon",
+    "MasterPageName": "終夜運転マスタページ",
+    "AuthorizeInfo": {
+      "VisitMode": 2
+    },
+    "RowBreakLines": [],
+    "RepeatRangeSettings": [],
+    "RelatedDataTableName": "M_ApprovalAgent"
+  },
+  "PrintInfo": {
+    "Margin": {},
+    "PaperSize": {}
+  }
+}//H5epcU6ZyyzV0tKDdbd4EaDZCXxoMyj8j5WF5YbW5OtOfkX/vHIsZ8OfDJjjqO4ZSxEHrdi8TxZO1UZ+JBGul2WVAXcuh3iFJZimYpG8Ay4TwicKKD1Sb2MVanVfECL/FUE16wrJcIUb6uyDvBqI61Rs5SG9eJy2KpBoyCHhhVURh66QtzsLBdqfMkaZfNuhDdRbpwENDVwbJD7/+/9WEBTOHHZo0v9ZvSpZoYwLrPu44FG0Sv5FR1DHXr43+8OXYX+Xo7WyhVFMjYl1l4EIAf90XlmgodAC7SoeiFTnumWiYICqc3nXxAnXTG+iPsCcFu/G4XdAk97mY94jtx1+9i3fhAjN+uinCpFFxbrMc+AkESJKIopuOtPQvzphMQwVUR6XShhfbu8oe2qrv2k8Io79hWW2OFfKJC2uARm69g3pPb6dLZiiXRHEeJjtqp/RpbNt9Avh5ujrbIw/jY8kUKZu+qJ5D96I3dtbNzdf5h07sef5VXDVqPicIQPmxr99ourjrRR8+ogtEwHBXAEfD3e1n7kqAR3COY+NRUtYRVdtT8tBBu2PY5eUS0D3Yug9a+l0YTWi1z5Mol7g1ABTVqDDUNMNCam7QYLoqupS6N/7pKlpO9nGIa7Z1YlFIkA/gk3WrP1Ac6OgNslv//1e/6xZ8xBjGJ6CbUElw/SwKLJvIWaozsDO3d0f/CckqKnKYjZX4Vxny44qCWixgoh63Mq6Aa/VxEhpqnxUklDPdUGNgx+Rtivi9O8/FB10ubRZijUaJrye/FQWsyObh94aHSiEn3mR+Rz/K3eUlPPjj0zP4j7ykUf6NziSADnEsBiNHaJmrG6WbaD0LmrIO4b2HUGDpzRTqplBHlx3PGJ/dIY26FYrSte3y+M/z3Btcn5dP3jP8dROOTL768NVLT0sfg==|920

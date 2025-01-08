@@ -1,0 +1,10 @@
+{
+  "IntegrateWithOtherApplication": {
+    "Password": "6eYIu325Hcwn"
+  },
+  "WebSitePort": 40772,
+  "UserServicePort": 43815,
+  "StartPage": "ホーム",
+  "AuthenticationMode": 1,
+  "StartDateFiscalYear": 4
+}

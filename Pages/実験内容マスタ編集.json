@@ -1,0 +1,227 @@
+{
+  "Rows": {
+    "RowColumnAttachedInfos": {
+      "4": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 30.0
+        }
+      },
+      "5": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 30.0
+        }
+      },
+      "6": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 10.0
+        }
+      },
+      "7": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 40.0
+        }
+      },
+      "8": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 40.0
+        }
+      }
+    },
+    "InLogicalVisibleIndexes": [
+      0,
+      1,
+      2,
+      29,
+      30,
+      31,
+      32
+    ],
+    "Count": 33
+  },
+  "Cols": {
+    "InLogicalVisibleIndexes": [
+      31
+    ],
+    "Count": 32
+  },
+  "Values": {
+    "4,1": "実験内容マスタ",
+    "5,24": "更新確定",
+    "7,3": "並び順",
+    "7,7": "実験内容",
+    "8,1": "削除"
+  },
+  "AttachInfos": {
+    "5,24": {
+      "CellType": {
+        "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.UpdateListviewCommand, ServerDesignerCommon",
+            "UpdateType": 3,
+            "ListviewName": "実験内容マスタ一覧"
+          }
+        ],
+        "Text": "更新確定",
+        "TemplateKey": "_RS_Normal_Style7"
+      }
+    },
+    "7,1": {
+      "ListViewInfo": {
+        "ShowColumnHeaderInDesigner": true,
+        "TableName": "M_Operation",
+        "RowIndex": 7,
+        "ColumnIndex": 1,
+        "ColumnCount": 29,
+        "RowCount": 20,
+        "AllowEditInListview": true,
+        "AllowAddNewRow": true,
+        "IsSingleSelection": true,
+        "ColumnOperation": 1,
+        "ShowEditStatusIcon": true,
+        "UseSimpleBar": true,
+        "Name": "実験内容マスタ一覧",
+        "TopCondition": null,
+        "OrderByCondition": {
+          "OrderByColumns": [
+            {
+              "ColumnBindingInfo": {
+                "TableName": "M_Operation",
+                "ColumnName": "display_order"
+              },
+              "Order": 0
+            }
+          ]
+        },
+        "CommitType": 1,
+        "ListViewStyleName": "_RS_Medium7"
+      }
+    },
+    "8,1": {
+      "CellType": {
+        "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
+            "ConditionAndCommandPairList": [
+              {
+                "ConfirmDialogSettings": {
+                  "Title": "確認",
+                  "FormulaText": "削除してもよろしいですか？",
+                  "YesButtonText": "はい",
+                  "NoButtonText": "いいえ",
+                  "ConfirmIcon": 4
+                },
+                "CommandList": [
+                  {
+                    "$type": "Forguncy.Model.UpdateDataTableCommand, ServerDesignerCommon",
+                    "TableName": "M_Operation",
+                    "UpdateType": "delete",
+                    "ShowConfirm": false,
+                    "ConfirmText": "本当に削除してもよろしいですか？",
+                    "UpdateValues": []
+                  },
+                  {
+                    "$type": "Forguncy.Model.ShowMessageCommand, ServerDesignerCommon",
+                    "MessageFormula": "削除しました。"
+                  }
+                ],
+                "ID": "07d31b4a-0550-4ff7-a298-77f39e47a1f2"
+              }
+            ]
+          }
+        ],
+        "Text": "削除",
+        "TemplateKey": "_RS_Normal_Style7"
+      }
+    },
+    "8,3": {
+      "CellType": {
+        "$type": "Forguncy.TextCellType, ServerDesignerCommon",
+        "SavedValidators": [
+          {
+            "$type": "Forguncy.CellTypes.Models.UniqueValidadator, ServerDesignerCommon"
+          }
+        ],
+        "InputCharOption": {
+          "Format": "9"
+        }
+      },
+      "BindingInfo": {
+        "TableName": "M_Operation",
+        "ColumnName": "display_order"
+      },
+      "DataValidationInfo": {}
+    },
+    "8,7": {
+      "BindingInfo": {
+        "TableName": "M_Operation",
+        "ColumnName": "action_name"
+      }
+    }
+  },
+  "StyleDatas": {
+    "Styles": [
+      {
+        "Background": 0
+      },
+      {
+        "FontSize": 18.666666666666664,
+        "FontWeight": 1
+      },
+      {
+        "Formatter": 2,
+        "HorizontalAlignment": 3
+      }
+    ],
+    "Types": {
+      "Strs": [
+        "Background 1 -15",
+        "Bold",
+        "@",
+        "Center",
+        "Body"
+      ]
+    },
+    "CellStyles": {
+      "0,0": 0,
+      "0,31": 0,
+      "1,0": 0,
+      "2,0": 0,
+      "4,1": 1,
+      "8,3": 2,
+      "29,0": 0,
+      "30,0": 0,
+      "31,0": 0,
+      "32,0": 0
+    },
+    "SheetStyle": {
+      "FontFamily": 4
+    }
+  },
+  "Spans": [
+    "8,1,1,2",
+    "8,7,1,22",
+    "4,1,1,7",
+    "9,1,18,29",
+    "5,24,1,5",
+    "8,3,1,4",
+    "7,1,1,2",
+    "7,3,1,4",
+    "7,7,1,22"
+  ],
+  "PageInfo": {
+    "$type": "Forguncy.Model.Pages.NormalPage, ServerDesignerCommon",
+    "MasterPageName": "終夜運転マスタページ",
+    "AuthorizeInfo": {
+      "VisitMode": 2
+    },
+    "RowBreakLines": [],
+    "RepeatRangeSettings": [],
+    "RelatedDataTableName": "M_Operation"
+  },
+  "PrintInfo": {
+    "Margin": {},
+    "PaperSize": {}
+  }
+}//2aucapwzrHaDyIRGJrA6GDaNicQERoxqFJjFuJHH3TNAHm02FXHPU8JeQKvgkFFiy/9XiUf4TCwsADELwqW4Fm8l5eGhhUI7JM9NiKom7T7jNtc/ayBENVTDiLhbLKA1/JQyoqfe1NwqmM3cwRLE5BJEEHMGVMhQFc0ZopzRIfpwHQX79AKplz+8LNqegxWCH0kU6t9LxlAC7wF/9gUexCcu3HPfrMc3gmgrC4zv4MsDp1JpDJuOKCLPNZNyi9TwSfb77cxNJuQ7loo29OXVKyRsbb5LWvCFnWgT5KaEbthv7Zd68vVmCzWmPDOOc7TXu0DBhVyeLN0DTUhh9dW7R4bjGIIelcFCfCNxnV9syf84dCZEDOw+Rek0kImshxYHNcOyVONQ0e+4pycrwtjo+JfCDzqA3zBaMT+pV+lNxAZXq7PA4OfBpEqBX9XAi/eoCINvMqvt1LNtdamxNfi+O+Bx4eoAqX6lJf+c6QEYu4T8UWysldp8vHlZd1EW4upMmApPwQ5ENd6xW0rFyNufkfpvVQ4QFAbnzVmOw7+Q9qqhq08sf0p8TN0SAb3kZMwsFFFF1xnjSF4T+27T0Z/p/rPI+z/vzWb/iG3OiQi+3BKPS28g5vsNXQvmY5sH9m7yPYbhRYwUYgpYSNTAHQV9/LG6RCoaa1v1fofo44kZz/jYNgUxUlLulfizc1w8FWXwJGs+w8c2WOUGTCw5u/DpDXDJ25YgoFIpDrXMK7FuZcfDAqRwlaZrFDnS77uxPrAKQvhlWXWZWZexjHat30yZhkPCd+tuNxU3M4acv1bJkzqB7icmsHwlDzFzIE9T1dqrP3HUy+brOLlSUODA5MBlZWOg99w5QLj8Ekf8MEJzZz71JM0pAvtCl4zm7bPuQfRZ0v3jDCr9R2tFKMSmE24Ohg==|920

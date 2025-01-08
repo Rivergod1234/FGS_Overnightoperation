@@ -1,0 +1,339 @@
+{
+  "Rows": {
+    "RowColumnAttachedInfos": {
+      "0": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 30.0
+        }
+      },
+      "1": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 30.0
+        }
+      },
+      "2": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 30.0
+        }
+      },
+      "3": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 30.0
+        }
+      },
+      "4": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 30.0
+        }
+      },
+      "5": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 30.0
+        }
+      },
+      "6": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 30.0
+        }
+      },
+      "7": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 30.0
+        }
+      },
+      "8": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 20.0,
+          "IsHidden": true
+        }
+      },
+      "9": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 20.0,
+          "IsHidden": true
+        }
+      },
+      "10": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 20.0,
+          "IsHidden": true
+        }
+      },
+      "11": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 20.0,
+          "IsHidden": true
+        }
+      }
+    },
+    "InLogicalVisibleIndexes": [
+      8,
+      9,
+      10,
+      11
+    ],
+    "Count": 12,
+    "DefaultSize": 30.0
+  },
+  "Cols": {
+    "InLogicalVisibleIndexes": [
+      25,
+      26,
+      27,
+      29,
+      30
+    ],
+    "Count": 31
+  },
+  "Values": {
+    "0,2": "対象機器",
+    "0,7": "機器選択",
+    "1,2": "本体機器",
+    "1,4": "機器名称",
+    "9,1": "本体機器ID",
+    "9,14": "ログインID",
+    "9,18": "%CurrentUser.UserName%",
+    "10,1": "本体機器部署",
+    "10,14": "選択中機器一覧"
+  },
+  "Formulas": {
+    "9,6": "ODATA(\"T_OvernightGroup?$select=equipment_id&$filter=main_equipment_flag eq '1' and 作成者 eq \"&IF(ISBLANK(S10),\"null\",\"'\"&S10&\"'\")&\"&$top=1\")",
+    "10,6": "ODATA(\"T_InstrumentBasicInformation?$select=結合キー&$filter=EquipmentId eq \"&IF(ISBLANK(G10),\"null\",\"'\"&G10&\"'\"))",
+    "2,4": "ODATA(\"T_InstrumentBasicInformation?$select=InstrumentName&$filter=EquipmentId eq \"&IF(ISBLANK(Z3),\"null\",\"'\"&Z3&\"'\"))",
+    "10,18": "TEXTJOIN(\",\",TRUE,Z3)"
+  },
+  "AttachInfos": {
+    "0,7": {
+      "CellType": {
+        "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.ShowPopupCommand, ServerDesignerCommon",
+            "PageName": "機器選択ポップアップ",
+            "PassValues": [
+              {
+                "Source": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=対象機器_登録用コンテナ!S11"
+                },
+                "TargetCell": {
+                  "SerializeProperty": "=機器選択ポップアップ!AD4"
+                }
+              }
+            ],
+            "DeleteCachedQuery": true
+          }
+        ],
+        "Text": "機器選択",
+        "TemplateKey": "_RS_Normal_Style5"
+      }
+    },
+    "1,2": {
+      "ListViewInfo": {
+        "ShowColumnHeaderInDesigner": true,
+        "TableName": "T_OvernightGroup",
+        "RowIndex": 1,
+        "ColumnIndex": 2,
+        "ColumnCount": 27,
+        "RowCount": 7,
+        "AllowEditInListview": true,
+        "ShowDeleteButton": true,
+        "ShowEditStatusIcon": true,
+        "UseSimpleBar": true,
+        "Name": "リストビュー1",
+        "DetailListViewInfo": {
+          "MasterTable": "T_OvernightRegistration",
+          "ColumnOfMasterTable": "overnight_registration_id",
+          "ColumnOfDetailTable": "overnight_registration_id",
+          "DataCommitType": 2
+        },
+        "SqlCondition": {
+          "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+          "ColumnBindingInfo": {
+            "TableName": "T_OvernightGroup",
+            "ColumnName": "FGC_Creator"
+          },
+          "Value": {
+            "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+            "SerializeProperty": "=対象機器_登録用コンテナ!S10"
+          }
+        },
+        "TopCondition": null,
+        "CommitType": 1,
+        "ListViewStyleName": "_RS_Medium7"
+      }
+    },
+    "2,2": {
+      "CellType": {
+        "$type": "Forguncy.CheckBoxCellType, ServerDesignerCommon",
+        "ShowOnlyEdit": false
+      },
+      "BindingInfo": {
+        "TableName": "T_OvernightGroup",
+        "ColumnName": "main_equipment_flag"
+      }
+    },
+    "2,25": {
+      "BindingInfo": {
+        "TableName": "T_OvernightGroup",
+        "ColumnName": "equipment_id"
+      }
+    }
+  },
+  "StyleDatas": {
+    "Styles": [
+      {
+        "FontFamily": 0,
+        "FontWeight": 1,
+        "Formatter": 2
+      },
+      {
+        "FontFamily": 0
+      },
+      {
+        "Background": 3,
+        "FontFamily": 0
+      },
+      {
+        "FontFamily": 0,
+        "FontSize": 12.0,
+        "WordWrap": true
+      },
+      {
+        "FontFamily": 0,
+        "Formatter": 2
+      },
+      {
+        "FontFamily": 0,
+        "HorizontalAlignment": 4
+      },
+      {
+        "FontFamily": 0,
+        "Formatter": 5
+      },
+      {
+        "Background": 3
+      },
+      {
+        "Background": 6
+      },
+      {
+        "Background": 6,
+        "FontFamily": 0
+      }
+    ],
+    "Types": {
+      "Strs": [
+        "Body",
+        "Bold",
+        "[AUTO]General",
+        "Background 1 -15",
+        "Center",
+        "@",
+        "#FFFFFF00"
+      ]
+    },
+    "CellStyles": {
+      "0,2": 0,
+      "0,3": 1,
+      "0,4": 1,
+      "0,5": 1,
+      "0,6": 1,
+      "0,7": 1,
+      "0,8": 1,
+      "0,9": 1,
+      "0,10": 1,
+      "0,11": 1,
+      "0,12": 1,
+      "0,13": 1,
+      "0,14": 1,
+      "0,15": 1,
+      "0,16": 1,
+      "0,17": 1,
+      "0,18": 1,
+      "0,19": 1,
+      "0,21": 1,
+      "0,22": 1,
+      "0,23": 1,
+      "0,24": 1,
+      "0,25": 2,
+      "0,26": 2,
+      "0,27": 2,
+      "0,28": 1,
+      "0,29": 1,
+      "0,30": 1,
+      "1,2": 3,
+      "1,4": 4,
+      "1,25": 1,
+      "1,26": 1,
+      "1,27": 1,
+      "1,28": 1,
+      "2,2": 5,
+      "2,4": 1,
+      "2,25": 6,
+      "2,26": 1,
+      "2,27": 1,
+      "2,28": 1,
+      "8,29": 7,
+      "8,30": 7,
+      "9,6": 8,
+      "9,18": 9,
+      "9,19": 2,
+      "9,20": 2,
+      "9,21": 2,
+      "9,22": 2,
+      "9,23": 2,
+      "9,29": 7,
+      "9,30": 7,
+      "10,6": 8,
+      "10,18": 8,
+      "10,29": 7,
+      "10,30": 7,
+      "11,29": 7,
+      "11,30": 7
+    },
+    "RowStyles": {
+      "8": 7,
+      "9": 7,
+      "10": 7,
+      "11": 7
+    },
+    "ColStyles": {
+      "29": 7,
+      "30": 7
+    },
+    "SheetStyle": {
+      "FontFamily": 0
+    }
+  },
+  "Spans": [
+    "0,7,1,6",
+    "9,6,1,6",
+    "10,6,1,6",
+    "9,18,1,6",
+    "2,4,1,21",
+    "3,2,5,27",
+    "2,2,1,2",
+    "10,18,1,6",
+    "1,2,1,2",
+    "1,4,1,21"
+  ],
+  "PageInfo": {
+    "$type": "Forguncy.Model.Pages.NormalPage, ServerDesignerCommon",
+    "AuthorizeInfo": {
+      "VisitMode": 2
+    },
+    "RowBreakLines": [],
+    "RepeatRangeSettings": []
+  },
+  "PrintInfo": {
+    "Margin": {},
+    "PaperSize": {}
+  },
+  "CustomNames": [
+    {
+      "Name": "部署結合キー",
+      "Formula": "対象機器_登録用コンテナ!$G$11"
+    }
+  ]
+}//n5pn5Ni3+XxBGrYC77s/oFVXHSsCvK4YAcT2/qkONVWTMCMHyw3cgCpfK266WaLt98EvIFbCt2r/woRWyxRwl04oK1a2rMXmRT742ApLqz/F5b6MgKtaTiSjkLK1qH4bezyArDe7fJPohOxv4qY4eA3xUILdVV672KWqUQeR/23Vssf+90Eah2tyEfcznpXHv3AVBUy3q1w9YcfnEzbDO236klpeLtQTarlIdcdLD9bjOQVgMkFwmsMKnuOQudw6ePw3TF1EvmBXMnTcpG88B6keOkUSw7vJfKIrQtkeJt+dG7T2dEteGYnTPPVbn/cJsaq3PlaC8q1DiI07kDmWwR7LIcLhoURbOFa/7/HrN8mO3/qgf7P3WD2I+9ED9Df8I6KJG3MeTBGhqiCPivlWTsGW0aeAGrsTXD6LBSMhJDEbvzrt7aZL2JHWdgkQSxq5WdEQhTYn7Rq4+kTXo7rAOd3ueDTwfjijzah2kDfQ3DFLH/SJHGBk595m5uY161gbmcss5kEq7qgT4+/jA0iSvVwURvC/03eabHM5OqtKm+nYW6OXBWR0yMdgkXDNzNeLVZntH4Gt4vMhZ4PQnfKi4g+CpPr9AMLg2KvMQSd347lp3mwXh+SgMfteFNGs+LocG1OFm9TnhWia1mjFl4Gb7wcJHsAePJwEIvcukvAxdP1Wp4lVgJ2TfUjrPtOTUGLs0p6ATZheX9zMwT+/Ln/En2i1wgSbD1brwITpSLNVTX612ERe2aV/ZrWpwEPughk6nCzWu2rYMjWs1VEOOc3a0BlTEZxJwMERl8rV7pS4+vp56iPG03BkLCX5eZmZgRKhfDCgoS58xyOMGIrGrEgf/7slMyrcBaQGJf+QVqjmthwJMKc3bSQTI9Aik6qqmF9twXd/NB51xLEE9LCkeeeW5A==|920

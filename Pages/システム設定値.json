@@ -1,0 +1,325 @@
+{
+  "Rows": {
+    "RowColumnAttachedInfos": {
+      "1": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 30.0
+        }
+      }
+    },
+    "Count": 9
+  },
+  "Cols": {
+    "RowColumnAttachedInfos": {
+      "0": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 10.0
+        }
+      }
+    },
+    "Count": 35
+  },
+  "Values": {
+    "1,1": "現場確認チェックシート",
+    "2,25": "登録"
+  },
+  "AttachInfos": {
+    "1,1": {
+      "BindingInfo": {
+        "TableName": "M_SystemSettingItem",
+        "ColumnName": "item_name"
+      }
+    },
+    "2,1": {
+      "CellType": {
+        "$type": "Forguncy.AttachmentCelltype, ServerDesignerCommon",
+        "UploadLimit": {
+          "ExtensionFilter": ".jpg, .jpeg, .png, .gif, .bmp, .xlsx, .docx, .doc, .xls, .pdf",
+          "ReplaceWhenOneFile": true
+        },
+        "TemplateKey": "_RS_Normal_Style7"
+      },
+      "BindingInfo": {
+        "TableName": "M_SystemSettingItem",
+        "ColumnName": "item"
+      }
+    },
+    "2,25": {
+      "CellType": {
+        "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.Commands.SetParameterCommand, ServerDesignerCommon",
+            "ParameterName": "ItemID",
+            "TableValue": {
+              "TableName": "M_SystemSettingItem",
+              "OnlyGetValue": true,
+              "TableValueType": 0,
+              "BindingInfos": [
+                {
+                  "BindingInfo": {
+                    "TableName": "M_SystemSettingItem",
+                    "ColumnName": "id"
+                  },
+                  "ColumnName": "id"
+                }
+              ],
+              "SqlCondition": {
+                "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+                "Condition1": {
+                  "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                  "ColumnBindingInfo": {
+                    "TableName": "M_SystemSettingItem",
+                    "ColumnName": "system_classification"
+                  },
+                  "Value": "Overnight"
+                },
+                "Condition2": {
+                  "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                  "ColumnBindingInfo": {
+                    "TableName": "M_SystemSettingItem",
+                    "ColumnName": "item_name"
+                  },
+                  "Value": "現場確認チェックシート"
+                }
+              }
+            },
+            "ID": "d814beae345448499c8f2e284b33a32e"
+          },
+          {
+            "$type": "Forguncy.Model.Commands.SetParameterCommand, ServerDesignerCommon",
+            "ParameterName": "ItemID",
+            "ParameterValue": {
+              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+              "SerializeProperty": "=IFERROR(システム設定値!ItemID,\"\")"
+            },
+            "ID": "ae34d23f13474a41b7001f6b08d4bd9e"
+          },
+          {
+            "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
+            "ConditionAndCommandPairList": [
+              {
+                "Condition": {
+                  "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                  "param": {
+                    "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
+                    "cellLocations": [
+                      {
+                        "SerializeProperty": "=システム設定値!ItemID"
+                      }
+                    ]
+                  },
+                  "compareType": 1
+                },
+                "CommandList": [
+                  {
+                    "$type": "Forguncy.Model.UpdateDataTableCommand, ServerDesignerCommon",
+                    "TableName": "M_SystemSettingItem",
+                    "ShowConfirm": true,
+                    "ConfirmText": "本当に更新してもよろしいですか？",
+                    "RowsToUpdate": 1,
+                    "RowsToUpdateCondition": {
+                      "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                      "ColumnBindingInfo": {
+                        "TableName": "M_SystemSettingItem",
+                        "ColumnName": "id"
+                      },
+                      "Value": {
+                        "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                        "SerializeProperty": "=システム設定値!ItemID"
+                      }
+                    },
+                    "UpdateValues": [
+                      {
+                        "ColumnName": "item",
+                        "Value": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=システム設定値!B3"
+                        }
+                      }
+                    ]
+                  }
+                ],
+                "ID": "b778a2fa-79ee-4843-9fea-86d931ef734a"
+              },
+              {
+                "CommandList": [
+                  {
+                    "$type": "Forguncy.Model.UpdateDataTableCommand, ServerDesignerCommon",
+                    "TableName": "M_SystemSettingItem",
+                    "UpdateType": "add",
+                    "ShowConfirm": true,
+                    "ConfirmText": "本当に追加してもよろしいですか？",
+                    "UpdateValues": [
+                      {
+                        "ColumnName": "system_classification",
+                        "Value": "Overnight"
+                      },
+                      {
+                        "ColumnName": "item_name",
+                        "Value": "現場確認チェックシート"
+                      },
+                      {
+                        "ColumnName": "item",
+                        "Value": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=システム設定値!B3"
+                        }
+                      }
+                    ]
+                  }
+                ],
+                "ID": "65431db7-7593-434b-aa13-be4b5732fb03"
+              }
+            ]
+          }
+        ],
+        "Text": "登録",
+        "TemplateKey": "_RS_Normal_Style7"
+      }
+    }
+  },
+  "StyleDatas": {
+    "Styles": [
+      {
+        "Background": 0
+      },
+      {
+        "FontWeight": 1
+      },
+      {
+        "Underline": true,
+        "BorderTop": 0,
+        "BorderLeft": 0
+      },
+      {
+        "BorderTop": 0
+      },
+      {
+        "BorderTop": 0,
+        "BorderRight": 0
+      },
+      {
+        "BorderBottom": 0,
+        "BorderLeft": 0
+      },
+      {
+        "BorderBottom": 0
+      },
+      {
+        "BorderBottom": 0,
+        "BorderRight": 0
+      }
+    ],
+    "Types": {
+      "Strs": [
+        "Accent 6 -25",
+        "Bold",
+        "Background 1 -25",
+        "Body"
+      ],
+      "Borders": [
+        {
+          "Color": 2
+        }
+      ]
+    },
+    "CellStyles": {
+      "1,0": 0,
+      "1,1": 1,
+      "2,1": 2,
+      "2,2": 3,
+      "2,3": 3,
+      "2,4": 3,
+      "2,5": 3,
+      "2,6": 3,
+      "2,7": 3,
+      "2,8": 3,
+      "2,9": 3,
+      "2,10": 3,
+      "2,11": 3,
+      "2,12": 3,
+      "2,13": 3,
+      "2,14": 3,
+      "2,15": 3,
+      "2,16": 3,
+      "2,17": 3,
+      "2,18": 3,
+      "2,19": 3,
+      "2,20": 3,
+      "2,21": 3,
+      "2,22": 3,
+      "2,23": 4,
+      "3,1": 5,
+      "3,2": 6,
+      "3,3": 6,
+      "3,4": 6,
+      "3,5": 6,
+      "3,6": 6,
+      "3,7": 6,
+      "3,8": 6,
+      "3,9": 6,
+      "3,10": 6,
+      "3,11": 6,
+      "3,12": 6,
+      "3,13": 6,
+      "3,14": 6,
+      "3,15": 6,
+      "3,16": 6,
+      "3,17": 6,
+      "3,18": 6,
+      "3,19": 6,
+      "3,20": 6,
+      "3,21": 6,
+      "3,22": 6,
+      "3,23": 7
+    },
+    "SheetStyle": {
+      "FontFamily": 3
+    }
+  },
+  "Spans": [
+    "2,25,2,3",
+    "2,1,2,23",
+    "1,1,1,9"
+  ],
+  "PageInfo": {
+    "$type": "Forguncy.Model.Pages.NormalPage, ServerDesignerCommon",
+    "PageLoadedCommandList": [
+      {
+        "$type": "SetCurrentRowCommand.SetCurrentRowCommand, SetCurrentRowCommand",
+        "CurrentRowInfo": {
+          "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+          "Condition1": {
+            "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+            "ColumnBindingInfo": {
+              "TableName": "M_SystemSettingItem",
+              "ColumnName": "system_classification"
+            },
+            "Value": "Overnight"
+          },
+          "Condition2": {
+            "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+            "ColumnBindingInfo": {
+              "TableName": "M_SystemSettingItem",
+              "ColumnName": "item_name"
+            },
+            "Value": {
+              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+              "SerializeProperty": "=システム設定値!B2"
+            }
+          }
+        }
+      }
+    ],
+    "AuthorizeInfo": {
+      "VisitMode": 2
+    },
+    "RowBreakLines": [],
+    "RepeatRangeSettings": []
+  },
+  "PrintInfo": {
+    "Margin": {},
+    "PaperSize": {}
+  }
+}//MMSBxe//+r5GMY3tfmIv0Dy3r3QW4HcSdhMLlw7LAvWA7wIuAkG9D1finwk+sLC1T4QRbukwvUUVDKWz46mrGfRWp+HfR56LqD0vxZ40uA7ymW1oNo3zr7syvTdMI+M3i/TDyODD5f/A6TZMRIWu0vEg3FLUfIMkm8HpALfcI/oABytBkaw+fnWi7phcQnSzaBUseX5uavbPWUISMOWydxrEFU1K9bNOdVUNo5wuQO7UUk2haXPOnDhWDrrQwRyS0tMfcQrTR+qfmYsiOcqDraZEtIzrk6uk7vgLsaXI1e3I4vt3/tybB4tf945mHboR7/Vx7000MI9nmdxEPKd9FTR3dLF5Py7GvKszV5Lr4ZwNzfO0OwlxzNcPLInxIk7DnSnuuGiwjN90hU1szN+SYoJz7PaNgqIPEJ05dOEza7Q8lXumKRDkXKGWnbzszH5rKdsNg1+z1uNnihr1YF8BzQY4TSqugDGRb6yAtzYO0Y0RR/I626ddZXpETWth/p4QqzO09btqnb9NXo1EjDEATIRbS8Ycx2nvLfajK0yklikqqMi6lmSQKrdiTveJi1jluPrIWEarh+6oyS0/9tFpWG3i7sEzeZUNCtWKJW2XhYhcf+NNkq6ydfzFImFx9xt0FAt7Z/cCzyC4RE3ZQhmkoip9z+WIgcLzIFHrSxEoPuhK2aSiTNf71WlQSh1gVuWYsS033482omx6vYGtG2GzR1vaoFNYPBHep8zd7W+WY+X7uLmOtGtPTHqfLkmtWazwyaqnxvM32OeV41+gcBwCJRNPvTkoP4dUyFKAMNSiUZR8OWHfdGHhKUYEiXOI2irnGzF8SVRhluFdu+f8dEzyth7w4Zof7xsIDjjvP1FRzhary+7ExCN7bBrCVM9d6khR4I+DevathDwWAlBpmcvIqg==|920

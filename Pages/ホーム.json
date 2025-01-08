@@ -1,0 +1,770 @@
+{
+  "Rows": {
+    "Count": 31
+  },
+  "Cols": {
+    "RowColumnAttachedInfos": {
+      "0": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 20.0,
+          "Mode": 2,
+          "MinLength": {
+            "Unit": 1
+          },
+          "MaxLength": {
+            "Value": 1.0
+          }
+        }
+      },
+      "49": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 20.0,
+          "Mode": 2,
+          "MinLength": {
+            "Unit": 1
+          },
+          "MaxLength": {
+            "Value": 1.0
+          }
+        }
+      }
+    },
+    "InLogicalVisibleIndexes": [
+      24,
+      25,
+      26,
+      27,
+      28,
+      29,
+      30,
+      31,
+      32,
+      33,
+      34,
+      35,
+      36,
+      37,
+      38,
+      39
+    ],
+    "Count": 50
+  },
+  "Values": {
+    "4,10": "終夜運転新規登録・届出",
+    "4,26": "管理者設定",
+    "8,10": "届出一覧",
+    "8,26": "終夜機器点検依頼・結果一覧",
+    "12,10": "終夜運転機器点検",
+    "12,26": "点検項目マスタ編集",
+    "16,10": "承認代理者設定",
+    "16,26": "実験内容マスタ編集",
+    "20,26": "終夜運転事由マスタ編集"
+  },
+  "AttachInfos": {
+    "4,10": {
+      "CellType": {
+        "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.NavigateCommand, ServerDesignerCommon",
+            "PageName": "終夜運転機器一覧",
+            "PassValues": [],
+            "DeleteCachedQuery": true
+          }
+        ],
+        "Text": "終夜運転新規登録・届出",
+        "TemplateKey": "_RS_Outline_Style7"
+      }
+    },
+    "4,26": {
+      "CellType": {
+        "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.NavigateCommand, ServerDesignerCommon",
+            "PageName": "管理者設定",
+            "PassValues": [],
+            "DeleteCachedQuery": true
+          }
+        ],
+        "Text": "管理者設定",
+        "TemplateKey": "_RS_Normal_Style7"
+      }
+    },
+    "8,10": {
+      "CellType": {
+        "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.NavigateCommand, ServerDesignerCommon",
+            "PageName": "届出一覧",
+            "PassValues": [],
+            "DeleteCachedQuery": true
+          }
+        ],
+        "Text": "届出一覧",
+        "TemplateKey": "_RS_Outline_Style7"
+      }
+    },
+    "8,26": {
+      "CellType": {
+        "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.NavigateCommand, ServerDesignerCommon",
+            "PageName": "点検依頼・結果",
+            "PassValues": [
+              {
+                "Source": "点検依頼",
+                "TargetCell": {
+                  "SerializeProperty": "=点検依頼・結果!AL3"
+                }
+              }
+            ],
+            "DeleteCachedQuery": true
+          }
+        ],
+        "Text": "終夜機器点検依頼・結果一覧",
+        "TemplateKey": "_RS_Normal_Style7"
+      }
+    },
+    "12,10": {
+      "CellType": {
+        "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.NavigateCommand, ServerDesignerCommon",
+            "PageName": "点検依頼・結果",
+            "PassValues": [
+              {
+                "Source": "点検",
+                "TargetCell": {
+                  "SerializeProperty": "=点検依頼・結果!AL3"
+                }
+              }
+            ],
+            "DeleteCachedQuery": true
+          }
+        ],
+        "Text": "終夜運転機器点検",
+        "TemplateKey": "_RS_Outline_Style7"
+      }
+    },
+    "12,26": {
+      "CellType": {
+        "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.NavigateCommand, ServerDesignerCommon",
+            "PageName": "点検項目マスタ編集",
+            "PassValues": [],
+            "DeleteCachedQuery": true
+          }
+        ],
+        "Text": "点検項目マスタ編集",
+        "TemplateKey": "_RS_Normal_Style7"
+      }
+    },
+    "16,10": {
+      "CellType": {
+        "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.NavigateCommand, ServerDesignerCommon",
+            "PageName": "届出WF承認代理者設定",
+            "PassValues": [],
+            "DeleteCachedQuery": true
+          }
+        ],
+        "Text": "承認代理者設定",
+        "IsInvisible": true,
+        "TemplateKey": "_RS_Outline_Style7"
+      }
+    },
+    "16,26": {
+      "CellType": {
+        "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.NavigateCommand, ServerDesignerCommon",
+            "PageName": "実験内容マスタ編集",
+            "PassValues": [],
+            "DeleteCachedQuery": true
+          }
+        ],
+        "Text": "実験内容マスタ編集",
+        "TemplateKey": "_RS_Normal_Style7"
+      }
+    },
+    "20,26": {
+      "CellType": {
+        "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.NavigateCommand, ServerDesignerCommon",
+            "PageName": "終夜運転事由マスタ編集",
+            "PassValues": [],
+            "DeleteCachedQuery": true
+          }
+        ],
+        "Text": "終夜運転事由マスタ編集",
+        "TemplateKey": "_RS_Normal_Style7"
+      }
+    }
+  },
+  "StyleDatas": {
+    "Styles": [
+      {
+        "FontFamily": 0
+      },
+      {
+        "FontFamily": 0,
+        "FontSize": 18.666666666666664,
+        "Formatter": 1
+      },
+      {
+        "FontFamily": 0,
+        "FontSize": 18.666666666666664
+      },
+      {
+        "FontFamily": 0,
+        "FontSize": 17.333333333333332
+      },
+      {
+        "FontSize": 14.666666666666666
+      }
+    ],
+    "Types": {
+      "Strs": [
+        "Body",
+        "[AUTO]General"
+      ]
+    },
+    "CellStyles": {
+      "2,10": 0,
+      "2,11": 0,
+      "2,12": 0,
+      "2,13": 0,
+      "2,14": 0,
+      "2,15": 0,
+      "2,16": 0,
+      "2,17": 0,
+      "2,18": 0,
+      "2,19": 0,
+      "2,20": 0,
+      "2,21": 0,
+      "3,10": 0,
+      "3,11": 0,
+      "3,12": 0,
+      "3,13": 0,
+      "3,14": 0,
+      "3,15": 0,
+      "3,16": 0,
+      "3,17": 0,
+      "3,18": 0,
+      "3,19": 0,
+      "3,20": 0,
+      "3,21": 0,
+      "4,10": 1,
+      "4,26": 2,
+      "4,27": 0,
+      "4,28": 0,
+      "4,29": 0,
+      "4,30": 0,
+      "4,31": 0,
+      "4,34": 0,
+      "4,35": 0,
+      "4,36": 0,
+      "4,37": 0,
+      "4,38": 0,
+      "4,39": 0,
+      "5,26": 0,
+      "5,27": 0,
+      "5,28": 0,
+      "5,29": 0,
+      "5,30": 0,
+      "5,31": 0,
+      "5,34": 0,
+      "5,35": 0,
+      "5,36": 0,
+      "5,37": 0,
+      "5,38": 0,
+      "5,39": 0,
+      "8,10": 1,
+      "8,11": 0,
+      "8,12": 0,
+      "8,13": 0,
+      "8,14": 0,
+      "8,15": 0,
+      "8,16": 0,
+      "8,17": 0,
+      "8,18": 0,
+      "8,19": 0,
+      "8,20": 0,
+      "8,21": 0,
+      "8,22": 0,
+      "8,23": 0,
+      "8,26": 3,
+      "8,27": 0,
+      "8,28": 0,
+      "8,29": 0,
+      "8,30": 0,
+      "8,31": 0,
+      "8,34": 0,
+      "8,35": 0,
+      "8,36": 0,
+      "8,37": 0,
+      "8,38": 0,
+      "8,39": 0,
+      "9,10": 0,
+      "9,11": 0,
+      "9,12": 0,
+      "9,13": 0,
+      "9,14": 0,
+      "9,15": 0,
+      "9,16": 0,
+      "9,17": 0,
+      "9,18": 0,
+      "9,19": 0,
+      "9,20": 0,
+      "9,21": 0,
+      "9,22": 0,
+      "9,23": 0,
+      "9,26": 0,
+      "9,27": 0,
+      "9,28": 0,
+      "9,29": 0,
+      "9,30": 0,
+      "9,31": 0,
+      "9,34": 0,
+      "9,35": 0,
+      "9,36": 0,
+      "9,37": 0,
+      "9,38": 0,
+      "9,39": 0,
+      "10,10": 0,
+      "10,11": 0,
+      "10,12": 0,
+      "10,13": 0,
+      "10,14": 0,
+      "10,15": 0,
+      "10,16": 0,
+      "10,17": 0,
+      "10,18": 0,
+      "10,19": 0,
+      "10,20": 0,
+      "10,21": 0,
+      "10,22": 0,
+      "10,23": 0,
+      "11,10": 0,
+      "11,11": 0,
+      "11,12": 0,
+      "11,13": 0,
+      "11,14": 0,
+      "11,15": 0,
+      "11,16": 0,
+      "11,17": 0,
+      "11,18": 0,
+      "11,19": 0,
+      "11,20": 0,
+      "11,21": 0,
+      "11,22": 0,
+      "11,23": 0,
+      "12,10": 2,
+      "12,11": 0,
+      "12,12": 0,
+      "12,13": 0,
+      "12,14": 0,
+      "12,15": 0,
+      "12,16": 0,
+      "12,17": 0,
+      "12,18": 0,
+      "12,19": 0,
+      "12,20": 0,
+      "12,21": 0,
+      "12,22": 0,
+      "12,23": 0,
+      "12,26": 2,
+      "12,27": 0,
+      "12,28": 0,
+      "12,29": 0,
+      "12,30": 0,
+      "12,31": 0,
+      "12,34": 0,
+      "12,35": 0,
+      "12,36": 0,
+      "12,37": 0,
+      "12,38": 0,
+      "12,39": 0,
+      "13,10": 0,
+      "13,11": 0,
+      "13,12": 0,
+      "13,13": 0,
+      "13,14": 0,
+      "13,15": 0,
+      "13,16": 0,
+      "13,17": 0,
+      "13,18": 0,
+      "13,19": 0,
+      "13,20": 0,
+      "13,21": 0,
+      "13,22": 0,
+      "13,23": 0,
+      "13,26": 0,
+      "13,27": 0,
+      "13,28": 0,
+      "13,29": 0,
+      "13,30": 0,
+      "13,31": 0,
+      "13,34": 0,
+      "13,35": 0,
+      "13,36": 0,
+      "13,37": 0,
+      "13,38": 0,
+      "13,39": 0,
+      "14,10": 0,
+      "14,11": 0,
+      "14,12": 0,
+      "14,13": 0,
+      "14,14": 0,
+      "14,15": 0,
+      "14,16": 0,
+      "14,17": 0,
+      "14,18": 0,
+      "14,19": 0,
+      "14,20": 0,
+      "14,21": 0,
+      "14,22": 0,
+      "14,23": 0,
+      "15,10": 0,
+      "15,11": 0,
+      "15,12": 0,
+      "15,13": 0,
+      "15,14": 0,
+      "15,15": 0,
+      "15,16": 0,
+      "15,17": 0,
+      "15,18": 0,
+      "15,19": 0,
+      "15,20": 0,
+      "15,21": 0,
+      "15,22": 0,
+      "15,23": 0,
+      "16,10": 2,
+      "16,11": 0,
+      "16,12": 0,
+      "16,13": 0,
+      "16,14": 0,
+      "16,15": 0,
+      "16,16": 0,
+      "16,17": 0,
+      "16,18": 0,
+      "16,19": 0,
+      "16,20": 0,
+      "16,21": 0,
+      "16,22": 0,
+      "16,23": 0,
+      "16,26": 2,
+      "16,27": 0,
+      "16,28": 0,
+      "16,29": 0,
+      "16,30": 0,
+      "16,31": 0,
+      "16,34": 0,
+      "16,35": 0,
+      "16,36": 0,
+      "16,37": 0,
+      "16,38": 0,
+      "16,39": 0,
+      "17,10": 0,
+      "17,11": 0,
+      "17,12": 0,
+      "17,13": 0,
+      "17,14": 0,
+      "17,15": 0,
+      "17,16": 0,
+      "17,17": 0,
+      "17,18": 0,
+      "17,19": 0,
+      "17,20": 0,
+      "17,21": 0,
+      "17,22": 0,
+      "17,23": 0,
+      "17,26": 0,
+      "17,27": 0,
+      "17,28": 0,
+      "17,29": 0,
+      "17,30": 0,
+      "17,31": 0,
+      "17,34": 0,
+      "17,35": 0,
+      "17,36": 0,
+      "17,37": 0,
+      "17,38": 0,
+      "17,39": 0,
+      "20,4": 0,
+      "20,5": 0,
+      "20,6": 0,
+      "20,7": 0,
+      "20,8": 0,
+      "20,9": 0,
+      "20,10": 0,
+      "20,11": 0,
+      "20,12": 0,
+      "20,13": 0,
+      "20,14": 0,
+      "20,24": 4,
+      "20,26": 2,
+      "20,27": 0,
+      "20,28": 0,
+      "20,29": 0,
+      "20,30": 0,
+      "20,31": 0,
+      "20,32": 0,
+      "20,33": 0,
+      "20,34": 0,
+      "20,35": 0,
+      "20,36": 0,
+      "20,37": 0,
+      "20,38": 0,
+      "20,39": 0,
+      "21,26": 0,
+      "21,27": 0,
+      "21,28": 0,
+      "21,29": 0,
+      "21,30": 0,
+      "21,31": 0,
+      "21,32": 0,
+      "21,33": 0,
+      "21,34": 0,
+      "21,35": 0,
+      "21,36": 0,
+      "21,37": 0,
+      "21,38": 0,
+      "21,39": 0,
+      "22,10": 2,
+      "22,11": 0,
+      "22,14": 0,
+      "22,15": 0,
+      "22,16": 0,
+      "22,17": 0,
+      "22,18": 0,
+      "22,19": 0,
+      "22,20": 0,
+      "22,21": 0,
+      "22,22": 0,
+      "22,23": 0,
+      "23,10": 0,
+      "23,11": 0,
+      "23,14": 0,
+      "23,15": 0,
+      "23,16": 0,
+      "23,17": 0,
+      "23,18": 0,
+      "23,19": 0,
+      "23,20": 0,
+      "23,21": 0,
+      "23,22": 0,
+      "23,23": 0,
+      "26,10": 0,
+      "26,11": 0,
+      "26,12": 0,
+      "26,13": 0,
+      "26,14": 0,
+      "26,15": 0,
+      "26,16": 0,
+      "26,17": 0,
+      "26,18": 0,
+      "26,19": 0,
+      "26,20": 0,
+      "26,21": 0,
+      "26,25": 2,
+      "26,26": 0,
+      "26,27": 0,
+      "26,28": 0,
+      "26,29": 0,
+      "26,30": 0,
+      "26,31": 0,
+      "26,32": 0,
+      "26,33": 0,
+      "26,34": 0,
+      "26,35": 0,
+      "26,36": 0,
+      "26,37": 0,
+      "26,38": 0,
+      "27,10": 0,
+      "27,11": 0,
+      "27,12": 0,
+      "27,13": 0,
+      "27,14": 0,
+      "27,15": 0,
+      "27,16": 0,
+      "27,17": 0,
+      "27,18": 0,
+      "27,19": 0,
+      "27,20": 0,
+      "27,21": 0,
+      "27,25": 0,
+      "27,26": 0,
+      "27,27": 0,
+      "27,28": 0,
+      "27,29": 0,
+      "27,30": 0,
+      "27,31": 0,
+      "27,32": 0,
+      "27,33": 0,
+      "27,34": 0,
+      "27,35": 0,
+      "27,36": 0,
+      "27,37": 0,
+      "27,38": 0
+    },
+    "SheetStyle": {
+      "FontFamily": 0
+    }
+  },
+  "Spans": [
+    "4,26,2,14",
+    "8,26,2,14",
+    "12,26,2,14",
+    "16,26,2,14",
+    "4,10,2,14",
+    "8,10,2,14",
+    "12,10,2,14",
+    "16,10,2,14",
+    "20,26,2,14"
+  ],
+  "PageInfo": {
+    "$type": "Forguncy.Model.Pages.NormalPage, ServerDesignerCommon",
+    "MasterPageName": "終夜運転マスタページ",
+    "PageLoadedCommandList": [
+      {
+        "$type": "Forguncy.Model.ShareCommand, ServerDesignerCommon",
+        "ShareCommandContainerRefer": {
+          "ShareCommandContainerID": "ad30d38c-907e-41f8-8499-69587bfa91cc"
+        },
+        "ReturnPropertiesTo": [
+          {
+            "ReturnPropertyReferObject": {
+              "ParamID": "85fd5724-2b59-44fd-855a-054a1e561057",
+              "ShareCommandContainerReferObject": {
+                "ShareCommandContainerID": "ad30d38c-907e-41f8-8499-69587bfa91cc"
+              }
+            },
+            "ResultTo": {
+              "SerializeProperty": "Admin"
+            }
+          }
+        ]
+      },
+      {
+        "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
+        "ConditionAndCommandPairList": [
+          {
+            "Condition": {
+              "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+              "param": {
+                "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
+                "cellLocations": [
+                  {
+                    "SerializeProperty": "=ホーム!Admin"
+                  }
+                ]
+              },
+              "value": "1"
+            },
+            "CommandList": [
+              {
+                "$type": "Forguncy.Model.SetRowColumnLayoutCommand, ServerDesignerCommon",
+                "PropertyItemsList": [
+                  {
+                    "Location": {
+                      "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                      "SerializeProperty": "=ホーム!Y:AN"
+                    },
+                    "Value": true
+                  }
+                ]
+              }
+            ],
+            "ID": "a2df7fa2-08df-4770-9503-d57bf81f7480"
+          }
+        ]
+      },
+      {
+        "$type": "Forguncy.Model.Commands.SetParameterCommand, ServerDesignerCommon",
+        "ParameterName": "is_g_leader",
+        "TableValue": {
+          "TableName": "lum_view_depertment_consener_relations_nac_based_duplicated",
+          "TableValueType": 3,
+          "SqlCondition": {
+            "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+            "Condition1": {
+              "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+              "ColumnBindingInfo": {
+                "TableName": "lum_view_depertment_consener_relations_nac_based_duplicated",
+                "ColumnName": "consenter_code"
+              },
+              "Value": "%CurrentUser.UserName%"
+            },
+            "Condition2": {
+              "$type": "ForguncyDataAccess.TextCESqlCondition, ForguncyDataAccess",
+              "CompareType": 8,
+              "ColumnBindingInfo": {
+                "TableName": "lum_view_depertment_consener_relations_nac_based_duplicated",
+                "ColumnName": "level_no"
+              },
+              "Value": "4,5"
+            }
+          }
+        },
+        "ID": "e12ca906143340bdb20030079e982530"
+      },
+      {
+        "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
+        "ConditionAndCommandPairList": [
+          {
+            "Condition": {
+              "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+              "param": {
+                "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
+                "cellLocations": [
+                  {
+                    "SerializeProperty": "=ホーム!is_g_leader"
+                  }
+                ]
+              },
+              "value": "0",
+              "compareType": 2
+            },
+            "CommandList": [
+              {
+                "$type": "Forguncy.Model.SetCellPropertyCommand, ServerDesignerCommon",
+                "PropertyItemsList": [
+                  {
+                    "TargetCells": {
+                      "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                      "SerializeProperty": "=ホーム!K17"
+                    },
+                    "PropertyType": 1,
+                    "Value": true
+                  }
+                ]
+              }
+            ],
+            "ID": "85d7a825-3d7d-4d33-8aa8-00654608364e"
+          }
+        ]
+      }
+    ],
+    "AuthorizeInfo": {
+      "VisitMode": 2
+    },
+    "RowBreakLines": [],
+    "RepeatRangeSettings": []
+  },
+  "PrintInfo": {
+    "Margin": {},
+    "PaperSize": {}
+  }
+}//HzUv7AKw13WWLMFuhoMNPXdVba9qQhx0Pc9a8+Qv7qdk6/cdvfUKfVjsLfdOauBi/B3dJg2E0mlfAcBf5FAtZUodg3qgQsEeQYbNyJAndzkziSYeQ/iTI4ZVPek7BIlGc3kwGrXrKa/ErCzsJE+xB6NwMQmSGNruDeJF9iBYtTbOc6ssQAgk6au95jNfgDsmvtNznA1umeWv02rjT0Ksr2S9azXonfh3Abb+VuM+ZmAb4Mh8IIWQyZ6C8nIcSU9CGoVaktIrks12TD0Kz7ffbS6v/WRN2WIurGjM2bL5xnMPkp2i054wRlcI2ARzJtFxvgRUiuGVZZNjUsRC2f2g9ejiQbN0pXJoSH91EdziyULymhaMD0h5fm9Y4fF+C9NrPstIJSmB/XQecC4mj4sGP6PCNJaipSjyeXm8aJroIyas8umr4wEBEBpGlWpd6jNvOn1mbVxXqCWZOJ6OqU4QvBDQXurSBmqoUXkzX82q/DWQq5LK7o3ixMAr3C85fSinbAT6D3Ts+GPMqBcrGM8Z2Oqm2OdzddvaBhELdYOmWLAlLjhmcIvjhqqM5GTwd044LlfQDfTG9z+SFKXG5LsdGF98KhHiHNZMlDAtI9zAn/vBKMDm0Npbak5awlPYhBwweeuZ5l5RQhx462kePB1sp4IQkmR+OSMvvAwXfsQx3s3lGMlILaykYQdkysoF6H9XTIgpJddfze/cVdls30MZEM0Ua0/d49Ivl2GV7ermDAwi9eVUOa5/z4X/K9dcSjdIMOeol6/u876k4vBt1xBARv8YAJYlXVOudpwpdH3l3/OtGCYkbg4kVrPT2JnWM0nuQY2SxBZnGZslm1dsuZPzkzpDaJqqtQAj1q8HsQJdKPk66QP+hlF6ZMwQEObPMoO178jsYq2HdUKRR52lOcUuBA==|920

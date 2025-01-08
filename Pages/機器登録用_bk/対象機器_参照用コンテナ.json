@@ -1,0 +1,436 @@
+{
+  "Rows": {
+    "RowColumnAttachedInfos": {
+      "0": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 30.0
+        }
+      },
+      "1": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 30.0
+        }
+      },
+      "2": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 30.0
+        }
+      },
+      "3": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 30.0
+        }
+      },
+      "4": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 30.0
+        }
+      },
+      "5": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 30.0
+        }
+      },
+      "6": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 30.0
+        }
+      },
+      "7": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 30.0
+        }
+      },
+      "8": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 20.0,
+          "IsHidden": true
+        }
+      },
+      "9": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 20.0,
+          "IsHidden": true
+        }
+      },
+      "10": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 20.0,
+          "IsHidden": true
+        }
+      },
+      "11": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 20.0,
+          "IsHidden": true
+        }
+      }
+    },
+    "InLogicalVisibleIndexes": [
+      8,
+      9,
+      10,
+      11
+    ],
+    "Count": 12,
+    "DefaultSize": 30.0
+  },
+  "Cols": {
+    "InLogicalVisibleIndexes": [
+      25,
+      26,
+      27,
+      29,
+      30
+    ],
+    "Count": 31
+  },
+  "Values": {
+    "0,2": "対象機器",
+    "1,2": "本体機器",
+    "1,4": "機器名称",
+    "9,1": "本体機器ID",
+    "10,1": "本体機器部署"
+  },
+  "Formulas": {
+    "9,6": "ODATA(\"T_OvernightGroup?$select=equipment_id&$filter=overnight_registration_id eq \"&IF(ISBLANK(registration_id),\"null\",\"'\"&registration_id&\"'\")&\" and main_equipment_flag eq '1'&$top=1\")",
+    "10,6": "ODATA(\"T_InstrumentBasicInformation?$select=結合キー&$filter=EquipmentId eq \"&IF(ISBLANK(G10),\"null\",\"'\"&G10&\"'\"))"
+  },
+  "AttachInfos": {
+    "1,2": {
+      "ListViewInfo": {
+        "ShowColumnHeaderInDesigner": true,
+        "TableName": "T_OvernightGroup",
+        "RowIndex": 1,
+        "ColumnIndex": 2,
+        "ColumnCount": 27,
+        "RowCount": 7,
+        "ShowEditStatusIcon": true,
+        "UseSimpleBar": true,
+        "Name": "リストビュー1",
+        "DetailListViewInfo": {
+          "MasterTable": "T_OvernightRegistration",
+          "ColumnOfMasterTable": "overnight_registration_id",
+          "ColumnOfDetailTable": "overnight_registration_id",
+          "DataCommitType": 2
+        },
+        "TopCondition": null,
+        "OrderByCondition": {
+          "OrderByColumns": [
+            {
+              "ColumnBindingInfo": {
+                "TableName": "T_OvernightGroup",
+                "ColumnName": "main_equipment_flag"
+              },
+              "Order": 1
+            }
+          ]
+        },
+        "CommitType": 1,
+        "ListViewStyleName": "_RS_Medium7"
+      }
+    },
+    "2,2": {
+      "CellType": {
+        "$type": "Forguncy.CheckBoxCellType, ServerDesignerCommon",
+        "ShowOnlyEdit": false
+      },
+      "BindingInfo": {
+        "TableName": "T_OvernightGroup",
+        "ColumnName": "main_equipment_flag"
+      }
+    },
+    "2,4": {
+      "BindingInfo": {
+        "TableName": "T_OvernightGroup",
+        "ColumnName": "equipment_id",
+        "RelationBinding": {
+          "RelatedTable": "T_InstrumentBasicInformation",
+          "RelatedColumn": "EquipmentId",
+          "DisplayColumn": "InstrumentName"
+        }
+      }
+    }
+  },
+  "StyleDatas": {
+    "Styles": [
+      {
+        "FontFamily": 0
+      },
+      {
+        "FontFamily": 0,
+        "FontWeight": 1,
+        "Formatter": 2
+      },
+      {
+        "Background": 3,
+        "FontFamily": 0
+      },
+      {
+        "FontFamily": 0,
+        "FontSize": 12.0,
+        "WordWrap": true
+      },
+      {
+        "FontFamily": 0,
+        "Formatter": 2
+      },
+      {
+        "FontFamily": 0,
+        "HorizontalAlignment": 4
+      },
+      {
+        "FontFamily": 0,
+        "Formatter": 5
+      },
+      {
+        "Background": 3,
+        "FontFamily": 0,
+        "Formatter": 2
+      },
+      {
+        "Background": 6,
+        "FontFamily": 0
+      }
+    ],
+    "Types": {
+      "Strs": [
+        "Body",
+        "Bold",
+        "[AUTO]General",
+        "Background 1 -15",
+        "Center",
+        "@",
+        "#FFFFFF00"
+      ]
+    },
+    "CellStyles": {
+      "0,0": 0,
+      "0,1": 0,
+      "0,2": 1,
+      "0,3": 0,
+      "0,4": 0,
+      "0,5": 0,
+      "0,6": 0,
+      "0,7": 0,
+      "0,8": 0,
+      "0,9": 0,
+      "0,10": 0,
+      "0,11": 0,
+      "0,12": 0,
+      "0,13": 0,
+      "0,14": 0,
+      "0,15": 0,
+      "0,16": 0,
+      "0,17": 0,
+      "0,18": 0,
+      "0,19": 0,
+      "0,20": 0,
+      "0,21": 0,
+      "0,22": 0,
+      "0,23": 0,
+      "0,24": 0,
+      "0,25": 2,
+      "0,26": 2,
+      "0,27": 2,
+      "0,28": 0,
+      "0,29": 2,
+      "0,30": 2,
+      "1,0": 0,
+      "1,1": 0,
+      "1,2": 3,
+      "1,4": 4,
+      "1,25": 0,
+      "1,26": 0,
+      "1,27": 0,
+      "1,28": 0,
+      "1,29": 2,
+      "1,30": 2,
+      "2,0": 0,
+      "2,1": 0,
+      "2,2": 5,
+      "2,4": 0,
+      "2,25": 6,
+      "2,26": 0,
+      "2,27": 0,
+      "2,28": 0,
+      "2,29": 2,
+      "2,30": 2,
+      "3,0": 0,
+      "3,1": 0,
+      "3,29": 2,
+      "3,30": 2,
+      "4,0": 0,
+      "4,1": 0,
+      "4,29": 2,
+      "4,30": 2,
+      "5,0": 0,
+      "5,1": 0,
+      "5,29": 2,
+      "5,30": 2,
+      "6,0": 0,
+      "6,1": 0,
+      "6,29": 2,
+      "6,30": 2,
+      "7,0": 0,
+      "7,1": 0,
+      "7,29": 2,
+      "7,30": 2,
+      "8,0": 2,
+      "8,1": 2,
+      "8,2": 2,
+      "8,3": 2,
+      "8,4": 2,
+      "8,5": 2,
+      "8,6": 2,
+      "8,7": 2,
+      "8,8": 2,
+      "8,9": 2,
+      "8,10": 2,
+      "8,11": 2,
+      "8,12": 2,
+      "8,13": 2,
+      "8,14": 2,
+      "8,15": 2,
+      "8,16": 2,
+      "8,17": 2,
+      "8,18": 2,
+      "8,19": 2,
+      "8,20": 2,
+      "8,21": 2,
+      "8,22": 2,
+      "8,23": 2,
+      "8,24": 2,
+      "8,25": 2,
+      "8,26": 2,
+      "8,27": 2,
+      "8,28": 2,
+      "8,29": 2,
+      "8,30": 2,
+      "9,0": 2,
+      "9,1": 7,
+      "9,2": 2,
+      "9,3": 2,
+      "9,4": 2,
+      "9,5": 2,
+      "9,6": 8,
+      "9,7": 2,
+      "9,8": 2,
+      "9,9": 2,
+      "9,10": 2,
+      "9,11": 2,
+      "9,12": 2,
+      "9,13": 2,
+      "9,14": 2,
+      "9,15": 2,
+      "9,16": 2,
+      "9,17": 2,
+      "9,18": 2,
+      "9,19": 2,
+      "9,20": 2,
+      "9,21": 2,
+      "9,22": 2,
+      "9,23": 2,
+      "9,24": 2,
+      "9,25": 2,
+      "9,26": 2,
+      "9,27": 2,
+      "9,28": 2,
+      "9,29": 2,
+      "9,30": 2,
+      "10,0": 2,
+      "10,1": 7,
+      "10,2": 2,
+      "10,3": 2,
+      "10,4": 2,
+      "10,5": 2,
+      "10,6": 8,
+      "10,7": 2,
+      "10,8": 2,
+      "10,9": 2,
+      "10,10": 2,
+      "10,11": 2,
+      "10,12": 2,
+      "10,13": 2,
+      "10,14": 2,
+      "10,15": 2,
+      "10,16": 2,
+      "10,17": 2,
+      "10,18": 2,
+      "10,19": 2,
+      "10,20": 2,
+      "10,21": 2,
+      "10,22": 2,
+      "10,23": 2,
+      "10,24": 2,
+      "10,25": 2,
+      "10,26": 2,
+      "10,27": 2,
+      "10,28": 2,
+      "10,29": 2,
+      "10,30": 2,
+      "11,0": 2,
+      "11,1": 2,
+      "11,2": 2,
+      "11,3": 2,
+      "11,4": 2,
+      "11,5": 2,
+      "11,6": 2,
+      "11,7": 2,
+      "11,8": 2,
+      "11,9": 2,
+      "11,10": 2,
+      "11,11": 2,
+      "11,12": 2,
+      "11,13": 2,
+      "11,14": 2,
+      "11,15": 2,
+      "11,16": 2,
+      "11,17": 2,
+      "11,18": 2,
+      "11,19": 2,
+      "11,20": 2,
+      "11,21": 2,
+      "11,22": 2,
+      "11,23": 2,
+      "11,24": 2,
+      "11,25": 2,
+      "11,26": 2,
+      "11,27": 2,
+      "11,28": 2,
+      "11,29": 2,
+      "11,30": 2
+    },
+    "SheetStyle": {
+      "FontFamily": 0
+    }
+  },
+  "Spans": [
+    "2,2,1,2",
+    "2,4,1,21",
+    "3,2,5,27",
+    "9,6,1,6",
+    "10,6,1,6",
+    "1,2,1,2",
+    "1,4,1,21"
+  ],
+  "PageInfo": {
+    "$type": "Forguncy.Model.Pages.NormalPage, ServerDesignerCommon",
+    "AuthorizeInfo": {
+      "VisitMode": 2
+    },
+    "RowBreakLines": [],
+    "RepeatRangeSettings": [],
+    "RelatedDataTableName": "T_OvernightGroup"
+  },
+  "PrintInfo": {
+    "Margin": {},
+    "PaperSize": {}
+  },
+  "CustomNames": [
+    {
+      "Name": "部署結合キー",
+      "Formula": "対象機器_参照用コンテナ!$G$11"
+    }
+  ]
+}//G0qLI/6rN+Km4N6EG2p3+vokAkLtR1ymtlziB0Sj0XV/MF2caNWxh58wmcdxPzj0ivbjm8wAeNOvHNs/A1iaMtDaKtlN5VvgFPF3fBw4/YCjo6QIB3kFB5Eo56UxzGdJRv4L+jZO1fClqbDwrYeIHg1FJzOBou+BdDv1NLuNdMUUWU68JPMe1XIfFhA43SWh/R6SkPigUlw4iz6fkP2ER6qC5Qq0LXDyxlKMMmAfmet4Q/CYbzNzfnJUYoD6fwqMnGtsHLVz8w8xGHZJGEaxfvCwJkoOu5vcp4s25kh//X7Jehr7ChdP0QbNMTxBT3trBK2G2bbVDAfvvsH2Ks5RNOqkqom1Y52gI6jwWOGJKTyGB5hhy0mjVJHuVxQ15eVgXskTteTQRh/oBWWewBhmX7Qoq9gyspsLZWKw4gGSC+gXUomaKXttK4tFiHRYBVzgKnl13Fr9MV9+e1QDqoIst7JsmJ2J/B9n7Sow8nhNkJI0CaPyB1Xk9kttl8tefsgChhK98PeYLJJaOwIBWsf+uCW5FUsKNRYfPKI48kc3KS3kKbmQFVqJN0qEbl1sDAKAuSC/7Hvz451RI/gLu9yxUolw8dnFIqfMZm7ZkEy8qQqKILwn3cKCAOVuxYQhdG8Vt60C/Xg2HFZk52CLM4IOjdK50PJvWwvoloHeHAIG318YVCD1IdK4EWtD8qR7xLmJk4/yqq/ZicEQtjtK4zrgrbK0pS+12bIYH/qphHYrp1ZElEphWCVGt5CssolRfiTYU2BtoGBSOD0YHoM1Gyt8J1wxAUYNqKZMgmexAELyF1hNiVRy6P16R6jaXuEFtYCPRPajuryG7g1NV6BoWGrVUi7b+04lIR0aqlEGuhM3+8ouxbsENKVc9X4zq+CE15ZDd91F78XO3qqqGjCZeg5s9g==|920

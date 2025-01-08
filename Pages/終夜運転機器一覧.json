@@ -1,0 +1,1398 @@
+{
+  "Rows": {
+    "RowColumnAttachedInfos": {
+      "5": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 30.0
+        }
+      },
+      "7": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 30.0
+        }
+      },
+      "9": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 20.0
+        }
+      },
+      "10": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 20.0
+        }
+      },
+      "11": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 40.0
+        }
+      },
+      "12": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 30.0
+        }
+      },
+      "13": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 30.0
+        }
+      },
+      "14": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 30.0
+        }
+      },
+      "15": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 30.0
+        }
+      },
+      "16": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 30.0
+        }
+      },
+      "17": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 30.0
+        }
+      },
+      "18": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 30.0
+        }
+      },
+      "19": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 30.0
+        }
+      },
+      "20": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 30.0
+        }
+      },
+      "21": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 30.0
+        }
+      },
+      "22": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 30.0
+        }
+      },
+      "23": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 30.0
+        }
+      },
+      "24": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 6.0
+        }
+      }
+    },
+    "InLogicalVisibleIndexes": [
+      0,
+      1,
+      2,
+      25,
+      26,
+      27,
+      28,
+      29,
+      30,
+      31,
+      32,
+      33,
+      34,
+      35,
+      36,
+      37,
+      38,
+      39,
+      40
+    ],
+    "Count": 41
+  },
+  "Cols": {
+    "RowColumnAttachedInfos": {
+      "32": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 20.0
+        }
+      }
+    },
+    "InLogicalVisibleIndexes": [
+      62
+    ],
+    "Count": 65
+  },
+  "Values": {
+    "1,1": "検索用SQLクエリ",
+    "1,14": "建屋の値で階を絞り込む",
+    "2,14": "階の値で基本部屋を絞り込む",
+    "2,23": "IF(N6=\"\",\"0\",\"aaaa\")",
+    "4,1": "建屋",
+    "4,13": "階",
+    "4,25": "運転部屋",
+    "4,37": "終夜運転機器名称",
+    "5,54": "条件クリア",
+    "7,49": "終夜運転新規登録",
+    "9,1": "届出",
+    "9,7": "終夜申請\r\nID",
+    "9,12": "終夜機器名称",
+    "9,24": "運転部屋",
+    "9,34": "本体機器",
+    "9,43": "付属機器",
+    "9,62": "申請の状態",
+    "11,1": "通常",
+    "11,4": "長期"
+  },
+  "Formulas": {
+    "2,23": "IF(N6=\"\",\"0\",\"aaaa\")",
+    "1,23": "IF(B6=\"\",\"LL\",\"\")"
+  },
+  "AttachInfos": {
+    "1,1": {
+      "CellType": {
+        "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.Commands.SetParameterCommand, ServerDesignerCommon",
+            "ParameterName": "delete_flg",
+            "ParameterValue": "1",
+            "ID": "55de2c6b9c4248d3a6cd8ad7c3a8c25d"
+          },
+          {
+            "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
+            "ConditionAndCommandPairList": [
+              {
+                "Condition": {
+                  "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                  "param": {
+                    "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
+                    "cellLocations": [
+                      {
+                        "SerializeProperty": "=終夜運転機器一覧!AW6"
+                      }
+                    ]
+                  },
+                  "compareType": 1
+                },
+                "CommandList": [
+                  {
+                    "$type": "Forguncy.Model.Commands.SetParameterCommand, ServerDesignerCommon",
+                    "ParameterName": "delete_flg",
+                    "ID": "9a5b975fd0a3425cbe62f985cd3eb5bb"
+                  }
+                ],
+                "ID": "cb6d3249-d120-4dda-b425-1461d425de8a"
+              }
+            ]
+          },
+          {
+            "$type": "Forguncy.Model.QueryCommand, ServerDesignerCommon",
+            "TargetTableName": "T_OvernightRegistration",
+            "SqlCondition": {
+              "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+              "Condition1": {
+                "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+                "Condition1": {
+                  "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+                  "Condition1": {
+                    "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+                    "Condition1": {
+                      "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+                      "Condition1": {
+                        "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                        "CompareType": 1,
+                        "ColumnBindingInfo": {
+                          "TableName": "T_OvernightRegistration",
+                          "ColumnName": "delete_flg"
+                        },
+                        "Value": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=終夜運転機器一覧!delete_flg"
+                        }
+                      },
+                      "Condition2": {
+                        "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                        "ColumnBindingInfo": {
+                          "TableName": "T_OvernightRegistration",
+                          "ColumnName": "First_Classification_Code"
+                        },
+                        "Value": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=終夜運転機器一覧!B6"
+                        }
+                      }
+                    },
+                    "Condition2": {
+                      "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                      "ColumnBindingInfo": {
+                        "TableName": "T_OvernightRegistration",
+                        "ColumnName": "Second_Classification_Code"
+                      },
+                      "Value": {
+                        "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                        "SerializeProperty": "=終夜運転機器一覧!N6"
+                      }
+                    }
+                  },
+                  "Condition2": {
+                    "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                    "ColumnBindingInfo": {
+                      "TableName": "T_OvernightRegistration",
+                      "ColumnName": "basic_room_Information_id"
+                    },
+                    "Value": {
+                      "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                      "SerializeProperty": "=終夜運転機器一覧!Z6"
+                    }
+                  }
+                },
+                "Condition2": {
+                  "$type": "ForguncyDataAccess.TextCESqlCondition, ForguncyDataAccess",
+                  "CompareType": 6,
+                  "ColumnBindingInfo": {
+                    "TableName": "T_OvernightRegistration",
+                    "ColumnName": "overnight_epuipment_name"
+                  },
+                  "Value": {
+                    "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                    "SerializeProperty": "=終夜運転機器一覧!AL6"
+                  }
+                }
+              },
+              "Condition2": {
+                "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                "CompareType": 1,
+                "ColumnBindingInfo": {
+                  "TableName": "T_OvernightRegistration",
+                  "ColumnName": "FGC_State"
+                },
+                "Value": "取下"
+              }
+            },
+            "Params": [
+              "=delete_flg",
+              "=B6",
+              "=N6",
+              "=Z6",
+              "=AL6"
+            ],
+            "ID": "b43de636f8f04a77aeb27e59a9570866"
+          }
+        ],
+        "Text": "検索用SQLクエリ",
+        "TemplateKey": "_RS_Normal_Style6"
+      }
+    },
+    "5,1": {
+      "CellType": {
+        "$type": "Forguncy.DropDownListCellType, ServerDesignerCommon",
+        "SelectOnly": false,
+        "ValidateItem": true,
+        "TemplateKey": "_RS_LightLine_Translucent_SmallRoundCorner_Normal1",
+        "IsBounding": true,
+        "Items": [
+          {
+            "Value": "項目1",
+            "DisplayValue": "項目1"
+          },
+          {
+            "Value": "項目2",
+            "DisplayValue": "項目2"
+          },
+          {
+            "Value": "項目3",
+            "DisplayValue": "項目3"
+          }
+        ],
+        "DataSource": "V_BasicRoomInformation",
+        "ValueColumnBindingInfo": {
+          "TableName": "V_BasicRoomInformation",
+          "ColumnName": "First_Classification_Code"
+        },
+        "DisplayColumnBindingInfo": {
+          "TableName": "V_BasicRoomInformation",
+          "ColumnName": "First_Classification_Name"
+        },
+        "ItemsQuery": {
+          "$type": "ForguncyDataAccess.TextCESqlCondition, ForguncyDataAccess",
+          "CompareType": 2,
+          "ColumnBindingInfo": {
+            "TableName": "V_BasicRoomInformation",
+            "ColumnName": "First_Classification_Code"
+          },
+          "Value": "LL"
+        },
+        "ItemsSort": {
+          "OrderByColumns": [
+            {
+              "ColumnBindingInfo": {
+                "TableName": "V_BasicRoomInformation",
+                "ColumnName": "First_Classification_Code",
+                "RelationBinding": {
+                  "RelatedTable": "M01_First_Classification",
+                  "RelatedColumn": "First_Classification_Code",
+                  "DisplayColumn": "First_Classification_Name"
+                }
+              },
+              "Order": 0
+            }
+          ]
+        },
+        "AddNullItemWhenBinding": true,
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.OperateCellTypeCommand, ServerDesignerCommon",
+            "TargetPageElement": {
+              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+              "SerializeProperty": "=終夜運転機器一覧!B2"
+            },
+            "TargetType": "Forguncy.ButtonCellType, ServerDesignerCommon, Version=8.0.20.0, Culture=neutral, PublicKeyToken=967100671921c115",
+            "MethodName": "ExecuteCommand",
+            "ParameterValues": {},
+            "RetrunParamNames": {}
+          }
+        ]
+      }
+    },
+    "5,13": {
+      "CellType": {
+        "$type": "Forguncy.DropDownListCellType, ServerDesignerCommon",
+        "SelectOnly": false,
+        "ValidateItem": true,
+        "TemplateKey": "_RS_LightLine_Translucent_SmallRoundCorner_Normal1",
+        "IsBounding": true,
+        "Items": [
+          {
+            "Value": "項目1",
+            "DisplayValue": "項目1"
+          },
+          {
+            "Value": "項目2",
+            "DisplayValue": "項目2"
+          },
+          {
+            "Value": "項目3",
+            "DisplayValue": "項目3"
+          }
+        ],
+        "DataSource": "V_BasicRoomInformation",
+        "ValueColumnBindingInfo": {
+          "TableName": "V_BasicRoomInformation",
+          "ColumnName": "Second_Classification_Code"
+        },
+        "DisplayColumnBindingInfo": {
+          "TableName": "V_BasicRoomInformation",
+          "ColumnName": "Second_Classification_Name"
+        },
+        "ItemsQuery": {
+          "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+          "Condition1": {
+            "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+            "ColumnBindingInfo": {
+              "TableName": "V_BasicRoomInformation",
+              "ColumnName": "First_Classification_Code"
+            },
+            "Value": {
+              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+              "SerializeProperty": "=終夜運転機器一覧!B6"
+            }
+          },
+          "Condition2": {
+            "$type": "ForguncyDataAccess.TextCESqlCondition, ForguncyDataAccess",
+            "CompareType": 2,
+            "ColumnBindingInfo": {
+              "TableName": "V_BasicRoomInformation",
+              "ColumnName": "First_Classification_Code"
+            },
+            "Value": {
+              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+              "SerializeProperty": "=終夜運転機器一覧!X2"
+            }
+          },
+          "RelationType": 1
+        },
+        "ItemsSort": {
+          "OrderByColumns": [
+            {
+              "ColumnBindingInfo": {
+                "TableName": "V_BasicRoomInformation",
+                "ColumnName": "First_Classification_Code",
+                "RelationBinding": {
+                  "RelatedTable": "M01_First_Classification",
+                  "RelatedColumn": "First_Classification_Code",
+                  "DisplayColumn": "First_Classification_Name"
+                }
+              },
+              "Order": 0
+            },
+            {
+              "ColumnBindingInfo": {
+                "TableName": "V_BasicRoomInformation",
+                "ColumnName": "Second_Classification_Name"
+              },
+              "Order": 0
+            }
+          ]
+        },
+        "DropDownSubItems": [
+          {
+            "GUID": "afdc734b9fce4819ade9d2d94689d3b0",
+            "ColumnName": "建屋",
+            "BindingInfo": {
+              "TableName": "V_BasicRoomInformation",
+              "ColumnName": "First_Classification_Code",
+              "RelationBinding": {
+                "RelatedTable": "M01_First_Classification",
+                "RelatedColumn": "First_Classification_Code",
+                "DisplayColumn": "First_Classification_Name"
+              }
+            },
+            "BindingColumnDataType": 5
+          },
+          {
+            "GUID": "84d63abc91934ff588e10050612585a6",
+            "ColumnName": "階",
+            "BindingInfo": {
+              "TableName": "V_BasicRoomInformation",
+              "ColumnName": "Second_Classification_Name"
+            },
+            "BindingColumnDataType": 5
+          }
+        ],
+        "AddNullItemWhenBinding": true,
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.OperateCellTypeCommand, ServerDesignerCommon",
+            "TargetPageElement": {
+              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+              "SerializeProperty": "=終夜運転機器一覧!B2"
+            },
+            "TargetType": "Forguncy.ButtonCellType, ServerDesignerCommon, Version=8.0.20.0, Culture=neutral, PublicKeyToken=967100671921c115",
+            "MethodName": "ExecuteCommand",
+            "ParameterValues": {},
+            "RetrunParamNames": {}
+          }
+        ]
+      }
+    },
+    "5,25": {
+      "CellType": {
+        "$type": "Forguncy.DropDownListCellType, ServerDesignerCommon",
+        "SelectOnly": false,
+        "ValidateItem": true,
+        "TemplateKey": "_RS_LightLine_Translucent_SmallRoundCorner_Normal1",
+        "IsBounding": true,
+        "Items": [
+          {
+            "Value": "項目1",
+            "DisplayValue": "項目1"
+          },
+          {
+            "Value": "項目2",
+            "DisplayValue": "項目2"
+          },
+          {
+            "Value": "項目3",
+            "DisplayValue": "項目3"
+          }
+        ],
+        "DataSource": "V_BasicRoomInformation",
+        "ValueColumnBindingInfo": {
+          "TableName": "V_BasicRoomInformation",
+          "ColumnName": "basic_room_Information_id"
+        },
+        "DisplayColumnBindingInfo": {
+          "TableName": "V_BasicRoomInformation",
+          "ColumnName": "basic_room_Information_Name"
+        },
+        "ItemsQuery": {
+          "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+          "Condition1": {
+            "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+            "Condition1": {
+              "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+              "ColumnBindingInfo": {
+                "TableName": "V_BasicRoomInformation",
+                "ColumnName": "First_Classification_Code"
+              },
+              "Value": {
+                "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                "SerializeProperty": "=終夜運転機器一覧!B6"
+              },
+              "LeftBracket": 1
+            },
+            "Condition2": {
+              "$type": "ForguncyDataAccess.TextCESqlCondition, ForguncyDataAccess",
+              "CompareType": 2,
+              "ColumnBindingInfo": {
+                "TableName": "V_BasicRoomInformation",
+                "ColumnName": "First_Classification_Code"
+              },
+              "Value": {
+                "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                "SerializeProperty": "=終夜運転機器一覧!X2"
+              },
+              "RightBracket": 1
+            },
+            "RelationType": 1
+          },
+          "Condition2": {
+            "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+            "Condition1": {
+              "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+              "ColumnBindingInfo": {
+                "TableName": "V_BasicRoomInformation",
+                "ColumnName": "Second_Classification_Code"
+              },
+              "Value": {
+                "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                "SerializeProperty": "=終夜運転機器一覧!N6"
+              },
+              "LeftBracket": 1
+            },
+            "Condition2": {
+              "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+              "CompareType": 3,
+              "ColumnBindingInfo": {
+                "TableName": "V_BasicRoomInformation",
+                "ColumnName": "Second_Classification_Code"
+              },
+              "Value": {
+                "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                "SerializeProperty": "=終夜運転機器一覧!X3"
+              },
+              "RightBracket": 1
+            },
+            "RelationType": 1
+          }
+        },
+        "AddNullItemWhenBinding": true,
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.OperateCellTypeCommand, ServerDesignerCommon",
+            "TargetPageElement": {
+              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+              "SerializeProperty": "=終夜運転機器一覧!B2"
+            },
+            "TargetType": "Forguncy.ButtonCellType, ServerDesignerCommon, Version=8.0.20.0, Culture=neutral, PublicKeyToken=967100671921c115",
+            "MethodName": "ExecuteCommand",
+            "ParameterValues": {},
+            "RetrunParamNames": {}
+          }
+        ]
+      }
+    },
+    "5,37": {
+      "CellType": {
+        "$type": "Forguncy.TextCellType, ServerDesignerCommon",
+        "SavedValidators": [
+          {
+            "$type": "Forguncy.CellTypes.Models.UniqueValidadator, ServerDesignerCommon"
+          }
+        ],
+        "TemplateKey": "_RS_LightLine_Translucent_SmallRoundCorner_Normal1",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.OperateCellTypeCommand, ServerDesignerCommon",
+            "TargetPageElement": {
+              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+              "SerializeProperty": "=終夜運転機器一覧!B2"
+            },
+            "TargetType": "Forguncy.ButtonCellType, ServerDesignerCommon, Version=8.0.20.0, Culture=neutral, PublicKeyToken=967100671921c115",
+            "MethodName": "ExecuteCommand",
+            "ParameterValues": {},
+            "RetrunParamNames": {}
+          }
+        ]
+      }
+    },
+    "5,48": {
+      "CellType": {
+        "$type": "Forguncy.CheckBoxCellType, ServerDesignerCommon",
+        "Caption": "廃止を含む",
+        "Style": 1,
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.OperateCellTypeCommand, ServerDesignerCommon",
+            "TargetPageElement": {
+              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+              "SerializeProperty": "=終夜運転機器一覧!B2"
+            },
+            "TargetType": "Forguncy.ButtonCellType, ServerDesignerCommon, Version=8.0.20.0, Culture=neutral, PublicKeyToken=967100671921c115",
+            "MethodName": "ExecuteCommand",
+            "ParameterValues": {},
+            "RetrunParamNames": {}
+          }
+        ]
+      }
+    },
+    "5,54": {
+      "CellType": {
+        "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.SetCellPropertyCommand, ServerDesignerCommon",
+            "PropertyItemsList": [
+              {
+                "TargetCells": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=終夜運転機器一覧!B6"
+                }
+              },
+              {
+                "TargetCells": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=終夜運転機器一覧!N6"
+                }
+              },
+              {
+                "TargetCells": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=終夜運転機器一覧!Z6"
+                }
+              },
+              {
+                "TargetCells": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=終夜運転機器一覧!AL6"
+                }
+              },
+              {
+                "TargetCells": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=終夜運転機器一覧!AW6"
+                }
+              }
+            ]
+          },
+          {
+            "$type": "Forguncy.Model.OperateCellTypeCommand, ServerDesignerCommon",
+            "TargetPageElement": {
+              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+              "SerializeProperty": "=終夜運転機器一覧!B2"
+            },
+            "TargetType": "Forguncy.ButtonCellType, ServerDesignerCommon, Version=8.0.20.0, Culture=neutral, PublicKeyToken=967100671921c115",
+            "MethodName": "ExecuteCommand",
+            "ParameterValues": {},
+            "RetrunParamNames": {}
+          }
+        ],
+        "Text": "条件クリア",
+        "TemplateKey": "_RS_Outline_Style7"
+      }
+    },
+    "7,1": {
+      "CellType": {
+        "$type": "Forguncy.PageNavigateCellType, ServerDesignerCommon",
+        "PageingListviewName": "リストビュー1",
+        "FirstImage": {
+          "Name": "Arrow/347_move_first.svg",
+          "BuiltIn": true,
+          "Color": "Accent 6 0"
+        },
+        "PreviousImage": {
+          "Name": "Arrow/349_left_arrow.svg",
+          "BuiltIn": true,
+          "Color": "Accent 6 0"
+        },
+        "NextImage": {
+          "Name": "Arrow/350_right_arrow.svg",
+          "BuiltIn": true,
+          "Color": "Accent 6 0"
+        },
+        "LastImage": {
+          "Name": "Arrow/348_move_last.svg",
+          "BuiltIn": true,
+          "Color": "Accent 6 0"
+        }
+      }
+    },
+    "7,49": {
+      "CellType": {
+        "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.ShowPopupCommand, ServerDesignerCommon",
+            "DialogLocation": "25%",
+            "PageName": "終夜運転機器申請",
+            "PassValues": [
+              {
+                "Source": "1",
+                "TargetCell": {
+                  "SerializeProperty": "=終夜運転機器申請!AE3"
+                }
+              }
+            ],
+            "DeleteCachedQuery": true,
+            "Comments": "機器選択を初期表示時にポップアップ表示"
+          }
+        ],
+        "Text": "終夜運転新規登録",
+        "TemplateKey": "_RS_Normal_Style7"
+      }
+    },
+    "9,1": {
+      "ListViewInfo": {
+        "ShowColumnHeaderInDesigner": true,
+        "TableName": "T_OvernightRegistration",
+        "RowIndex": 9,
+        "ColumnIndex": 1,
+        "ColumnCount": 63,
+        "RowCount": 15,
+        "ColumnHeaderRowCount": 2,
+        "ColumnOperation": 1,
+        "ShowEditStatusIcon": true,
+        "UseSimpleBar": true,
+        "Name": "リストビュー1",
+        "TopCondition": null,
+        "OrderByCondition": {
+          "OrderByColumns": [
+            {
+              "ColumnBindingInfo": {
+                "TableName": "T_OvernightRegistration",
+                "ColumnName": "overnight_registration_id"
+              },
+              "Order": 1
+            }
+          ]
+        },
+        "ListViewStyleName": "_RS_Medium7"
+      }
+    },
+    "11,1": {
+      "CellType": {
+        "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
+            "ConditionAndCommandPairList": [
+              {
+                "Condition": {
+                  "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                  "param": {
+                    "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
+                    "cellLocations": [
+                      {
+                        "SerializeProperty": "=終夜運転機器一覧!BK12"
+                      }
+                    ]
+                  },
+                  "value": "許可"
+                },
+                "CommandList": [
+                  {
+                    "$type": "Forguncy.Model.ShowPopupCommand, ServerDesignerCommon",
+                    "PageName": "終夜運転届出",
+                    "PassValues": [
+                      {
+                        "Source": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=終夜運転機器一覧!H12"
+                        },
+                        "TargetCell": {
+                          "SerializeProperty": "=終夜運転届出!G3"
+                        }
+                      }
+                    ],
+                    "DeleteCachedQuery": true,
+                    "LoadBindingDataOption": 1
+                  }
+                ],
+                "ID": "37d54fb9-a438-46c0-b83f-0ad6a80b0152"
+              }
+            ]
+          }
+        ],
+        "Text": "通常",
+        "TemplateKey": "_RS_Normal_Style7"
+      },
+      "ConditionFormatRulesCollection": {
+        "Rules": [
+          {
+            "$type": "Forguncy.ConditionFormat.FormulaRule, ServerDesignerCommon",
+            "Formula": {
+              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+              "SerializeProperty": "=終夜運転機器一覧!$BK12<>\"許可\""
+            },
+            "StyleInfo": {
+              "Background": "Background 1 -15",
+              "Foreground": "Accent 6 -25",
+              "Underline": null,
+              "Strikethrough": null
+            }
+          }
+        ]
+      }
+    },
+    "11,4": {
+      "CellType": {
+        "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
+            "ConditionAndCommandPairList": [
+              {
+                "Condition": {
+                  "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                  "param": {
+                    "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
+                    "cellLocations": [
+                      {
+                        "SerializeProperty": "=終夜運転機器一覧!BK12"
+                      }
+                    ]
+                  },
+                  "value": "許可"
+                },
+                "CommandList": [
+                  {
+                    "$type": "Forguncy.Model.ShowPopupCommand, ServerDesignerCommon",
+                    "PageName": "終夜運転届出",
+                    "PassValues": [
+                      {
+                        "Source": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=終夜運転機器一覧!H12"
+                        },
+                        "TargetCell": {
+                          "SerializeProperty": "=終夜運転届出!G3"
+                        }
+                      },
+                      {
+                        "Source": "1",
+                        "TargetCell": {
+                          "SerializeProperty": "=終夜運転届出!G4"
+                        }
+                      }
+                    ],
+                    "DeleteCachedQuery": true,
+                    "LoadBindingDataOption": 1
+                  }
+                ],
+                "ID": "df9c9559-e431-4ff4-84fe-b7c113ad85ad"
+              }
+            ]
+          }
+        ],
+        "Text": "長期",
+        "TemplateKey": "_RS_Normal_Style7"
+      },
+      "ConditionFormatRulesCollection": {
+        "Rules": [
+          {
+            "$type": "Forguncy.ConditionFormat.FormulaRule, ServerDesignerCommon",
+            "Formula": {
+              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+              "SerializeProperty": "=終夜運転機器一覧!$BK12<>\"許可\""
+            },
+            "StyleInfo": {
+              "Background": "Background 1 -15",
+              "Foreground": "Accent 6 -25",
+              "Underline": null,
+              "Strikethrough": null
+            }
+          }
+        ]
+      }
+    },
+    "11,7": {
+      "CellType": {
+        "$type": "Forguncy.HyperlinkCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.ShowPopupCommand, ServerDesignerCommon",
+            "PageName": "終夜運転機器申請",
+            "PassValues": [],
+            "DeleteCachedQuery": true,
+            "LoadBindingDataOption": 1
+          }
+        ],
+        "ClickMode": 1
+      },
+      "BindingInfo": {
+        "TableName": "T_OvernightRegistration",
+        "ColumnName": "overnight_registration_id"
+      }
+    },
+    "11,12": {
+      "BindingInfo": {
+        "TableName": "T_OvernightRegistration",
+        "ColumnName": "overnight_epuipment_name"
+      }
+    },
+    "11,24": {
+      "BindingInfo": {
+        "TableName": "T_OvernightRegistration",
+        "ColumnName": "basic_room_Information_id",
+        "RelationBinding": {
+          "RelatedTable": "V_BasicRoomInformation",
+          "RelatedColumn": "basic_room_Information_id",
+          "DisplayColumn": "basic_room_Information_Name"
+        }
+      }
+    },
+    "11,34": {
+      "BindingInfo": {
+        "TableName": "T_OvernightRegistration",
+        "ColumnName": "overnight_registration_id",
+        "RelationBinding": {
+          "RelatedTable": "V_OvernightGroup",
+          "RelatedColumn": "overnight_registration_id",
+          "DisplayColumn": "main_instrument_name"
+        }
+      }
+    },
+    "11,43": {
+      "BindingInfo": {
+        "TableName": "T_OvernightRegistration",
+        "ColumnName": "overnight_registration_id",
+        "RelationBinding": {
+          "RelatedTable": "V_OvernightGroup",
+          "RelatedColumn": "overnight_registration_id",
+          "DisplayColumn": "sub_instrument_name"
+        }
+      }
+    },
+    "11,62": {
+      "BindingInfo": {
+        "TableName": "T_OvernightRegistration",
+        "ColumnName": "FGC_State"
+      }
+    }
+  },
+  "StyleDatas": {
+    "Styles": [
+      {
+        "FontFamily": 0,
+        "Formatter": 1
+      },
+      {
+        "FontFamily": 0
+      },
+      {
+        "Background": 2,
+        "FontFamily": 0
+      },
+      {
+        "FontFamily": 0,
+        "FontSize": 16.0,
+        "FontWeight": 3
+      },
+      {
+        "FontFamily": 0,
+        "FontSize": 16.0,
+        "FontWeight": 3,
+        "Formatter": 1
+      },
+      {
+        "FontFamily": 0,
+        "Formatter": 4
+      },
+      {
+        "FontFamily": 0,
+        "WordWrap": true
+      },
+      {
+        "Background": 5,
+        "FontSize": 14.666666666666666,
+        "HorizontalAlignment": 6,
+        "WordWrap": true
+      },
+      {
+        "FontFamily": 0,
+        "FontSize": 12.0,
+        "Formatter": 1,
+        "WordWrap": true
+      },
+      {
+        "Background": 7,
+        "FontFamily": 0,
+        "Formatter": 1
+      },
+      {
+        "FontFamily": 0,
+        "FontSize": 12.0,
+        "Foreground": 8,
+        "Underline": true
+      }
+    ],
+    "Types": {
+      "Strs": [
+        "Body",
+        "[AUTO]General",
+        "#FFFFFF00",
+        "Bold",
+        "@",
+        "Accent 6",
+        "Center",
+        "Background 1 -35",
+        "Blue"
+      ]
+    },
+    "CellStyles": {
+      "1,1": 0,
+      "1,2": 1,
+      "1,3": 1,
+      "1,4": 1,
+      "1,5": 1,
+      "1,7": 1,
+      "1,8": 1,
+      "1,9": 1,
+      "1,10": 1,
+      "1,11": 1,
+      "1,14": 0,
+      "1,15": 1,
+      "1,16": 1,
+      "1,17": 1,
+      "1,18": 1,
+      "1,19": 1,
+      "1,20": 1,
+      "1,21": 1,
+      "1,22": 1,
+      "1,23": 2,
+      "1,24": 1,
+      "1,25": 1,
+      "1,26": 1,
+      "1,27": 1,
+      "2,14": 1,
+      "2,15": 1,
+      "2,16": 1,
+      "2,17": 1,
+      "2,18": 1,
+      "2,19": 1,
+      "2,20": 1,
+      "2,21": 1,
+      "2,22": 1,
+      "2,23": 2,
+      "2,24": 1,
+      "2,25": 1,
+      "2,26": 1,
+      "2,27": 1,
+      "3,13": 1,
+      "3,14": 1,
+      "3,15": 1,
+      "3,16": 1,
+      "3,17": 1,
+      "3,18": 1,
+      "3,19": 1,
+      "3,20": 1,
+      "3,21": 1,
+      "3,22": 1,
+      "3,23": 1,
+      "3,24": 1,
+      "3,25": 1,
+      "3,26": 1,
+      "3,27": 1,
+      "3,28": 1,
+      "3,29": 1,
+      "3,30": 1,
+      "3,31": 1,
+      "3,32": 1,
+      "3,33": 1,
+      "3,34": 1,
+      "3,35": 1,
+      "3,36": 1,
+      "3,37": 1,
+      "3,38": 1,
+      "3,39": 1,
+      "3,40": 1,
+      "3,41": 1,
+      "3,42": 1,
+      "3,43": 1,
+      "3,44": 1,
+      "3,45": 1,
+      "3,46": 1,
+      "3,47": 1,
+      "3,48": 1,
+      "3,49": 1,
+      "3,50": 1,
+      "3,51": 1,
+      "3,52": 1,
+      "3,53": 1,
+      "3,54": 1,
+      "3,55": 1,
+      "3,56": 1,
+      "3,57": 1,
+      "3,58": 1,
+      "4,1": 3,
+      "4,2": 1,
+      "4,3": 1,
+      "4,4": 1,
+      "4,5": 1,
+      "4,6": 1,
+      "4,7": 1,
+      "4,8": 1,
+      "4,9": 1,
+      "4,10": 1,
+      "4,11": 1,
+      "4,12": 1,
+      "4,13": 3,
+      "4,14": 1,
+      "4,15": 1,
+      "4,16": 1,
+      "4,17": 1,
+      "4,18": 1,
+      "4,19": 1,
+      "4,20": 1,
+      "4,21": 1,
+      "4,22": 1,
+      "4,23": 1,
+      "4,24": 1,
+      "4,25": 3,
+      "4,26": 1,
+      "4,27": 1,
+      "4,28": 1,
+      "4,29": 1,
+      "4,30": 1,
+      "4,31": 1,
+      "4,32": 1,
+      "4,33": 1,
+      "4,34": 1,
+      "4,35": 1,
+      "4,36": 1,
+      "4,37": 3,
+      "4,38": 1,
+      "4,39": 1,
+      "4,40": 1,
+      "4,41": 1,
+      "4,42": 1,
+      "4,43": 1,
+      "4,44": 1,
+      "4,45": 1,
+      "4,46": 1,
+      "4,47": 1,
+      "4,48": 4,
+      "4,49": 1,
+      "4,50": 1,
+      "4,51": 1,
+      "4,52": 1,
+      "4,53": 1,
+      "4,54": 1,
+      "4,55": 1,
+      "4,56": 1,
+      "4,57": 1,
+      "4,58": 1,
+      "4,60": 1,
+      "4,61": 1,
+      "4,62": 1,
+      "4,63": 1,
+      "4,64": 1,
+      "5,1": 1,
+      "5,12": 1,
+      "5,13": 1,
+      "5,14": 1,
+      "5,15": 1,
+      "5,16": 1,
+      "5,17": 1,
+      "5,18": 1,
+      "5,19": 1,
+      "5,20": 1,
+      "5,21": 1,
+      "5,22": 1,
+      "5,23": 1,
+      "5,24": 1,
+      "5,25": 1,
+      "5,26": 1,
+      "5,27": 1,
+      "5,28": 1,
+      "5,29": 1,
+      "5,30": 1,
+      "5,31": 1,
+      "5,32": 1,
+      "5,33": 1,
+      "5,34": 1,
+      "5,35": 1,
+      "5,36": 1,
+      "5,37": 5,
+      "5,38": 1,
+      "5,39": 1,
+      "5,40": 1,
+      "5,41": 1,
+      "5,42": 1,
+      "5,43": 1,
+      "5,44": 1,
+      "5,45": 1,
+      "5,46": 1,
+      "5,47": 1,
+      "5,48": 6,
+      "5,49": 1,
+      "5,50": 1,
+      "5,51": 1,
+      "5,52": 1,
+      "5,53": 1,
+      "5,54": 1,
+      "5,55": 1,
+      "5,56": 1,
+      "5,57": 1,
+      "5,58": 1,
+      "5,60": 1,
+      "5,61": 1,
+      "5,62": 1,
+      "5,63": 1,
+      "5,64": 1,
+      "6,12": 1,
+      "6,13": 1,
+      "6,14": 1,
+      "6,15": 1,
+      "6,16": 1,
+      "6,17": 1,
+      "6,18": 1,
+      "6,19": 1,
+      "6,20": 1,
+      "6,21": 1,
+      "6,22": 1,
+      "6,23": 1,
+      "6,24": 1,
+      "6,25": 1,
+      "6,26": 1,
+      "6,27": 1,
+      "6,28": 1,
+      "6,29": 1,
+      "6,30": 1,
+      "6,31": 1,
+      "6,32": 1,
+      "6,33": 1,
+      "6,34": 1,
+      "6,35": 1,
+      "6,36": 1,
+      "6,37": 1,
+      "6,38": 1,
+      "6,39": 1,
+      "6,40": 1,
+      "6,41": 1,
+      "6,42": 1,
+      "6,43": 1,
+      "6,44": 1,
+      "6,45": 1,
+      "6,46": 1,
+      "6,47": 1,
+      "6,48": 1,
+      "6,49": 1,
+      "6,50": 1,
+      "6,51": 1,
+      "6,52": 1,
+      "6,53": 1,
+      "6,54": 1,
+      "6,55": 1,
+      "6,56": 1,
+      "6,57": 1,
+      "6,58": 1,
+      "7,49": 0,
+      "9,1": 7,
+      "9,7": 8,
+      "9,12": 0,
+      "9,24": 1,
+      "9,34": 1,
+      "9,43": 1,
+      "9,62": 9,
+      "10,62": 9,
+      "11,4": 0,
+      "11,7": 10,
+      "11,12": 6,
+      "11,13": 1,
+      "11,14": 1,
+      "11,15": 1,
+      "11,16": 1,
+      "11,17": 1,
+      "11,18": 1,
+      "11,19": 1,
+      "11,20": 1,
+      "11,21": 1,
+      "11,22": 1,
+      "11,23": 1,
+      "11,24": 6,
+      "11,34": 6,
+      "11,35": 1,
+      "11,36": 1,
+      "11,37": 1,
+      "11,38": 1,
+      "11,39": 1,
+      "11,40": 1,
+      "11,41": 1,
+      "11,42": 1,
+      "11,43": 6,
+      "11,44": 1,
+      "11,45": 1,
+      "11,46": 1,
+      "11,47": 1,
+      "11,48": 1,
+      "11,49": 1,
+      "11,50": 1,
+      "11,51": 1,
+      "11,52": 1,
+      "11,53": 1,
+      "11,54": 1,
+      "11,55": 1,
+      "11,56": 1,
+      "11,57": 1,
+      "11,58": 1,
+      "11,59": 1,
+      "11,60": 1,
+      "11,61": 1,
+      "11,62": 1
+    },
+    "SheetStyle": {
+      "FontFamily": 0
+    }
+  },
+  "Spans": [
+    "1,1,1,11",
+    "5,1,1,11",
+    "7,1,1,13",
+    "5,13,1,11",
+    "5,37,1,10",
+    "5,54,1,5",
+    "5,48,1,5",
+    "7,49,1,10",
+    "1,23,1,5",
+    "2,23,1,5",
+    "5,25,1,11",
+    "11,1,1,3",
+    "11,4,1,3",
+    "11,7,1,5",
+    "11,12,1,12",
+    "11,24,1,10",
+    "11,34,1,9",
+    "11,43,1,19",
+    "12,1,12,63",
+    "9,1,2,6",
+    "9,7,2,5",
+    "9,12,2,12",
+    "9,24,2,10",
+    "9,34,2,9",
+    "9,43,2,19"
+  ],
+  "PageInfo": {
+    "$type": "Forguncy.Model.Pages.NormalPage, ServerDesignerCommon",
+    "MasterPageName": "終夜運転マスタページ",
+    "PageLoadedCommandList": [
+      {
+        "$type": "Forguncy.Model.OperateCellTypeCommand, ServerDesignerCommon",
+        "TargetPageElement": {
+          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+          "SerializeProperty": "=終夜運転機器一覧!B2"
+        },
+        "TargetType": "Forguncy.ButtonCellType, ServerDesignerCommon, Version=8.0.20.0, Culture=neutral, PublicKeyToken=967100671921c115",
+        "MethodName": "ExecuteCommand",
+        "ParameterValues": {},
+        "RetrunParamNames": {}
+      }
+    ],
+    "AuthorizeInfo": {
+      "VisitMode": 2
+    },
+    "RowBreakLines": [],
+    "RepeatRangeSettings": [],
+    "RelatedDataTableName": "T_OvernightRegistration"
+  },
+  "PrintInfo": {
+    "Margin": {},
+    "PaperSize": {}
+  }
+}//epI7pS8il9ACvM4lZ4vJ5cNYiG1imDA0buyilWDbwZUr+PQhKVswNqAeYi46pXEYwWWFOJ17HeZ+QAtDKcgMyyc5uc6OQjOIEUNe16rOr3vYElBCK/BrF9YJ84WIyS1tK9+bUcrnMVsxZvxdcUOMcmpiVj4YGh0CBO0x7q8MCg1tSESXhct6A5jkL4j5uQR96F4NGf/m7Wn6fK0qu61AYE3Cgse0l0yfrmiz+oRZ0nGijmA4MWylsGgW2JXsxJ78o6oh6o4GbgeMcyZKd0yl64S9ZSNKIPRIBugLZo+KNJS1EEnSGv5phIs/rC4NzFQAcIuh4WsOIlKYA/bZ16+mTjjmud3HudtwWhgSuCibYnr8tksBGZzkChMYS4/nd7tX2muxWanQXZsf3lUs1LlUTGMgQWtqhkp/rFsadZO0fN2BbGTw0fkyoFYm1H+CFMwB49I8sUOB+LHVtt2DkBaATakw0mpPWHtQuMfH3f/rlbyUhninkrBFD2bULuqIU5x6PkHtPKJRETPHDgtrUqdIlZ8WGQ3Nf0d4JjAlOR7VD6Z2IGAfbNjLTxmLUh0jmB2ZeiUnw9Pi31ZHLDilAAYQlWrKqngLNUFS0TfO2dgoqGzm33a5sCFZdOTzACGobMOHOwWYGk6TnRm3pl4cANPUf2GjEi3BMRmo5UAcIja8eqhgyXEELW/jxJrBO7AxZwRtXKgx/rKqDLrXUNtFxYm3kd0a3CAisTYF/prBpNGzxXd3ks9QVt5OiWNYUL6vw6UczCVCx64M9OItzGft1keYKzsTT4FCH9BLycNRDdsmpeKnVOQ3iBNNJ75SCxF69af7HLkP2EOhBFEACH/0Si2kmnaRfkRk3PDZUeJgRHcrAYR4t8/SK/r3Z3JKCB6Cv3Tu8HjB7rOiF53A85Xz2teMAw==|920
