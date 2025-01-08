@@ -82,24 +82,44 @@
     "Styles": [
       {
         "FontSize": 37.333332061767578,
-        "Foreground": 0
+        "Foreground": 0,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
       },
       {
-        "Foreground": 0
+        "Foreground": 0,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
       },
       {
         "FontSize": 13.333333015441895,
-        "WordWrap": true
+        "WordWrap": true,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
       },
       {
         "FontSize": 14.0,
-        "FontWeight": 1
+        "FontWeight": 1,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
       },
       {
         "FontSize": 14.0,
         "FontWeight": 1,
         "Foreground": 2,
-        "HorizontalAlignment": 3
+        "HorizontalAlignment": 3,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
       }
     ],
     "Types": {
@@ -121,7 +141,11 @@
     "SheetStyle": {
       "FontFamily": 4,
       "Underline": false,
-      "Strikethrough": false
+      "Strikethrough": false,
+      "BorderBottom": null,
+      "BorderTop": null,
+      "BorderLeft": null,
+      "BorderRight": null
     }
   },
   "Spans": [
@@ -140,7 +164,7 @@
       },
       "IsAutomaticStroke": false,
       "IsAutomaticFill": false,
-      "Name": "ceb28d52-85eb-4188-a272-9c46f964710c.png",
+      "Name": "c7967d48-9108-40b5-a73c-aeea78ca8ab0",
       "Location": "200,80",
       "Size": "540,360"
     }
@@ -148,8 +172,10 @@
   "PageInfo": {
     "$type": "Forguncy.Model.Pages.NormalPage, ServerDesignerCommon",
     "MasterPageName": "FGC_ユーザーマスターページ",
-    "MobilePageName": "FGC_メールサブスクリプション_モバイル",
     "Title": "メールサブスクリプション",
+    "AuthorizeInfo": {
+      "VisitMode": 2
+    },
     "RowBreakLines": [],
     "RepeatRangeSettings": [],
     "IsBuiltInPage": true
@@ -158,4 +184,4 @@
     "Margin": {},
     "PaperSize": {}
   }
-}//PnuGDViMwiLgdc9E6jpCdeyhzgRSumdTcjuUKKd9Yf+fIfcTDNlcQuix+cQFn3B5QQyn+R4Wkn88CEYOEeT7zun3B61+yFW5uXi7/SdcYgg4HPP3uI6KR7JBIRmFZPyHBC116p7rJCbzYgfeMl8rSG96O4E0NsEqxBzR6ejuEWI24kOYv+63nwkRkYiFqOjmPZTO27wcQ77d8dyhAUqg8YOmsKFg7PLIwrQVQ1VBJI+S7w3CwkD8PSLz9gosO3QLgg2sYM1ReEWkMishXP02ztRbhKFSOBJ+/+IyaX4CsESjavbgfygW0c4YxGf52zueZntvhlaVPr6P7FLXLoILj+er5+eochFL9gSqPin5AmcGd9NyRea8dastHCnHQhDmjgqNOFaCrt7d/9vH4rGAFYopRpEKV9x5n2gDmmBc2bf14BuhbdK+RqggEbLXnaLRH/QXQ4S/LEH1DN2/0RirhEU77ZqE63KEWWjokpKoHWW2D7CLbuqUlp15unaaYP0flN9YGHmp8CqdBstFSJXI2TyGe2CdEJfYcLKQoltVUYLls79xUoV1GnanDuESN8MBib1O3freppDUpYBS7K7jSsQ+jaywtoL32fxFsRjmu/Iplk5pFD6vme+JsM4ZxJAE2QDiXU6P2WVeVU/bfnK70Cd7OdbUh/7lwgF2edbHttp7dI5Z9WHrF9hTun9QFLfeEFVQs9cp7ZvZLgqtFrjLJl3ahbUfFnSRxVDZb6jgUddKpxV8X3wG8bybTDP2iO+rQ6vcki3yFdaq0r39Ek17A4jvbKboZabyoh+SUENJbyLIRadsJLJsF7AjW+/2xyCQrjd52Aixdy97I+RxN3tzJb3ctQd7Yqg5LxG0MjSY2EBHtdiUV8CjMNLaxcyBigrsKb9QD2S+JFZBN4bpFXGcIQ==|920
+}//3oryPvODeyk7R51XgdlkTJp9dIqPxqPd+8iVV86FgrSR7Dn1oadlPjfOwzCt8WYqLJ6fMOvLQIu7a5qef9UrKJAkXzzdKuwl+prfPNSXFH3jNsXIwVkZCHDwhEMSh6C8H/gnibH9wFu8bEKb8+V0CXM6p46PCd8Ba3uRTBBJCFm1OgWrn8yOfe5dEjbxSBCQZwPmOVD8QfWHdJBhQ8w9N4IRdZA/tr7PINtO5Ejwi8l/JwFjoVVNP7zXcuEewDmiTaud6LIygo6ZGqUuWhBtqt76rimq9RAUqY4q0h/KGItOUCW0orDvOHasNk7atL93bY7NFuhQc0IUrV5etsXFvkNa5n2RNsvwoCeJQZzTAvOv3XubYIJgAEITg3/+FhGXvn4eEencSK4LLUHx8jvWEngey0NwcAI9sytGNfr3UyGKZPwP5ebaJeMtiA0O8AO8Awv2swnYeX5iW6DGcMq2cd02ZhzkUqafN95zp+ud9kgN1pW7t3TJJ2q92gXs5SE/6GZdmE7hyndg94Hz4fw9ZAE0rDqR8eqrRTC6ktDa2SZg5KtpNF4z7K5rq4wixUS+qXT1QC3eBkHmWwiUiMd41bCpBlepSNkpmiRo9cL1PHOsKJJTfFQcZy2pkqSTCSPFqBKIg5jYiSMHHF4XqYwT1MBYLTwg75d0l9wqlfQs5IN8DEY3pTfCA6VVni327sXJR2POsyL8ythi011idoWHqqGWNWNfohuJCvDvddMYiBhkS9K+mCIV1zgeG3qhA7rXMRoPSkJcikAVHHvbUAM+ldBebApHlalweykiwFzDKQgaMupdA/zgN8N41ABJWMWp1Wvs40PYjpNKLlh8NSiRMKXx8gw4n8HVIbrNcVQraQOIV2fb92W2UTHidwH6v7O44xkO4BRxKSwPMKRAsgI+cA==|920

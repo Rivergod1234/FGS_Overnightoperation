@@ -176,31 +176,59 @@
   "StyleDatas": {
     "Styles": [
       {
-        "Background": 0
+        "Background": 0,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
       },
       {
-        "FontFamily": 1
+        "FontFamily": 1,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
       },
       {
         "Background": 2,
         "FontFamily": 1,
-        "Formatter": 3
+        "Formatter": 3,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
       },
       {
-        "FontWeight": 4
+        "FontWeight": 4,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
       },
       {
-        "Formatter": 3
+        "Formatter": 3,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
       },
       {
         "Background": null,
         "FontFamily": 1,
         "Formatter": 5,
         "VerticalAlignment": 6,
-        "WordWrap": true
+        "WordWrap": true,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
       },
       {
-        "Background": null
+        "Background": null,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
       }
     ],
     "Types": {
@@ -266,14 +294,18 @@
       "18": 6
     },
     "SheetStyle": {
-      "FontFamily": 1
+      "FontFamily": 1,
+      "BorderBottom": null,
+      "BorderTop": null,
+      "BorderLeft": null,
+      "BorderRight": null
     }
   },
   "Spans": [
-    "17,12,1,3",
-    "17,16,1,4",
+    "1,7,1,4",
     "10,1,6,19",
-    "1,7,1,4"
+    "17,12,1,3",
+    "17,16,1,4"
   ],
   "PageInfo": {
     "$type": "Forguncy.Model.Pages.NormalPage, ServerDesignerCommon",
@@ -287,4 +319,4 @@
     "Margin": {},
     "PaperSize": {}
   }
-}//n0dUzlNOSVzi0RVbfEcSUHNwp+0NAKgdwbxw9oeBx1EEcwtGx0azekar7dq/ya1M3FswWFD/7MLTE6iLvFXMDIsmnGKonWLjmyNMpzUPZbieoIesNfT1I87s0LOpN72I+4TLqkDRs70XG0GJ8zhe2dEVr9JgZSvxDtpNTdSc7D1fltKTgzBxzLvJQXEr5BzDjEmJtQS4LhZjt/RS5XaoyewdQmtgleUoJWOBW+xFMKyKqcqVPmVlgbxq6p+GeYdw2CXROjqb+b3pUCzeivYYVvPfVYwpvaS33soe7CQH0Iqbgvc3LeJ3zwGUoXtma5FYgw+zyGkjSdTCNhtmx80bu3QD9FulnhVJHWf+iLdCQCFZiF/mERihd98juVb4tzKTeLjFMPtq00mviE8XO4HDxU29SCQ1AWBkN3WntfNnKfGG3lEuh0PFSOufXYG/GFVA7x6tolwqOgU27Eep84y1zzssRhii/HHcI/Hr7eUmc2IQgYwSEnBGDVlyedA+0rYW7g6JNb6R+L7XnNfERDHEzx6EYbu8zVJKh+0554byfJQbZTU1sKZH28rJlT0UosLHmPAQdsJmD+NffODY9IaiyNC/iOdt58dkBgeT057bCvVzBN91Axz4361AlR+mXcDNn5/LpUtMla+63VxhAuEAhXoVKSvCbsKXCt3sQhWkLhiL3FI0E/9/6JrFlU4t+ZXatOKGrsuCVwvbuO1f3vVnsrKcLk2dwS+3QlxsMnpgAu+51Dlpt//KplejocjfMAF4DqCv/JaXXWo60iNZvy+EHC2xIuCgJkx5u24fAvRWUjuCyCDSxwnPSYg4odwgBkF8WWYZQPWk3Agm4mOuJrhy3/SYV4HLd8E24rl5BVHT9fzPofx7YSW1QG/wqe8KaLKDhhx67yiq/WDOiPbxIxNNQw==|920
+}//Xe2Nd29j/nOomxvPF+gFS9aNLIT5MfjOWs8IxbomJBb3sIzhNm8euxuN9R1dmYcGfsCb+sbtAzKitE9gkoFhxngRqIM/EykoJmnsfvgf4edoLnmkKbq2T4q8OztXskdtEHmqM2ySh6YcVhbojftRg80wzBuUlXTOuWYWg3tzBkD+XbTqCasC8iw3+X70VT8BVgv0Ycgg45MBBxwYfVaL58r6IkxFezYMCt804I6zvlJBlFqgygOZxBodfhFOdI/km7Sx2s/B5u0fOnLtvXD0HoRweY/yt4ekkG0/6MqVr3l9PkvOcg7Se3DgdO86BZv8SQHd+Ytf6NPwW6aYpJEwFXIQAT6Yir77QFyJVw91SE78yfrf9081s6NjcGews0Sxn/ydLeGLNrdttfPYfp7yZ/CAZv9QvGOWvPHmdcDx0kucxbsYqOcf8V4R9xdrZSn2II5hMFe92HZAnCgpikglclO9vNHluA9+gbqNAKs1xvLd2Du8ILkvHFhF/KXhL/G0lfOWhzR4zlYVZmMenl0MZ2E+5JY9FkgiQ0huvHSLZfugylm5jaHdEwTuYqiNfAdjW9+On195IKHe5oCp+UY9wxhe0l/jkHVYGPbd8+GOfL08nLmOK56wWRbqbyILFy/L3cOHY7MpROR6BOnuc7eLWVDOPBzfJn6D7SFVRcqcUVV2qqwC6YvLVQzJ0YMTMDjbAZQcC+rYIl/c0qWI8BM++5WoREZmAUGHe3DM5aQETOnIcjY2lUjc8ZvTdF7VqytXbnTSoeETtMcOAYM3wkMAI7j/QBFg1NlKPUGUDISKilMXJOX2+RyaReGJ+K+Rc1eL+9mBXLmN6hNUop+aVLmPSPcMsTqD9qjvOxA+y/wPI+3/dKmjW3GADYAwfSi+NXnqSnIeE2QkCqMAW3vGlJ5JIw==|920

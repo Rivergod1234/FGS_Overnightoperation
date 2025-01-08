@@ -147,12 +147,12 @@
     "18,1": "点検"
   },
   "Formulas": {
-    "3,10": "IF(OR(G11=\"\",S11=\"\"),\"99999999\",0)",
     "2,10": "IF(G11=\"\",\"99999999\",0)",
+    "2,25": "YEAR(TODAY())&TEXT(MONTH(TODAY()),\"00\")",
+    "3,10": "IF(OR(G11=\"\",S11=\"\"),\"99999999\",0)",
     "4,13": "IF(S14=\"\",\"99999999\",0)",
     "7,5": "IF(AL3=\"点検\",TODAY(),\"\")",
-    "18,21": "ODATA(\"V_LOCATION_ForAsset?$select=Third_Classification_Name&$filter=First_Classification_Code eq \"&IF(ISBLANK(BA19),\"null\",\"'\"&BA19&\"'\")&\" and Second_Classification_Code eq \"&IF(ISBLANK(BB19),\"null\",\"'\"&BB19&\"'\")&\" and Third_Classification_Code eq \"&IF(ISBLANK(BC19),\"null\",\"'\"&BC19&\"'\"))",
-    "2,25": "YEAR(TODAY())&TEXT(MONTH(TODAY()),\"00\")"
+    "18,21": "ODATA(\"V_LOCATION_ForAsset?$select=Third_Classification_Name&$filter=First_Classification_Code eq \"&IF(ISBLANK(BA19),\"null\",\"'\"&BA19&\"'\")&\" and Second_Classification_Code eq \"&IF(ISBLANK(BB19),\"null\",\"'\"&BB19&\"'\")&\" and Third_Classification_Code eq \"&IF(ISBLANK(BC19),\"null\",\"'\"&BC19&\"'\"))"
   },
   "AttachInfos": {
     "1,1": {
@@ -283,7 +283,7 @@
               "=AE14",
               "=IF(AL3=\"点検\",Z3,\"\")"
             ],
-            "ID": "1a643781a1c84b2ca3dbb6b99936b624"
+            "ID": "2393a6cacb99453887877ae3105f89bd"
           }
         ],
         "Text": "検索用SQLクエリ",
@@ -816,7 +816,7 @@
                   "ConfirmIcon": 1
                 },
                 "CommandList": [],
-                "ID": "a5ae2142-5592-4245-ad8c-12472921d463"
+                "ID": "1c4fba2f-60aa-4963-a7ee-f488813abf00"
               },
               {
                 "CommandList": [
@@ -824,14 +824,14 @@
                     "$type": "Forguncy.Model.StopCommand, ServerDesignerCommon"
                   }
                 ],
-                "ID": "878b8f4c-109f-4b59-aa7c-a251277d4499"
+                "ID": "7932c047-01f9-484f-b4f9-4a192d69c951"
               }
             ]
           },
           {
             "$type": "Forguncy.Model.Commands.SetParameterCommand, ServerDesignerCommon",
             "ParameterName": "previous_item",
-            "ID": "400edda455984672aa1d3b51f32d3223",
+            "ID": "32581bdc268944ad992e839c26463a3c",
             "Comments": ""
           },
           {
@@ -860,7 +860,7 @@
                 ]
               }
             },
-            "ID": "0c83de21e5994f4f8e757c27c17ec9e8",
+            "ID": "a6f544877b0b4385a808f16491627a97",
             "Comments": "点検対象となる機器IDの配列"
           },
           {
@@ -898,7 +898,7 @@
                 ]
               }
             },
-            "ID": "8621c4006495451fa48c3c36bfc23999",
+            "ID": "107d282dfda2408d88e38d495bc3b221",
             "Comments": "点検項目マスタのチェック項目CDの配列"
           },
           {
@@ -1011,7 +1011,7 @@
                             ]
                           }
                         },
-                        "ID": "b33f0d5669a94c39ad6c5fe4e47f8ec2",
+                        "ID": "81da3ee375534b02882fd0f00863cd7b",
                         "Comments": "レコード追加時に自動採番された終夜点検IDを取得"
                       },
                       {
@@ -1058,12 +1058,12 @@
                           "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
                           "SerializeProperty": "=点検依頼・結果!Item.equipment_id"
                         },
-                        "ID": "5c219c9da0fd461389ea08b34e062a31",
+                        "ID": "ba5c39be3ce241dca7100e681c01fa40",
                         "Comments": ""
                       }
                     ],
                     "Comments": "機器IDが重複している場合は処理をスキップ",
-                    "ID": "506f7f0e-4c41-45a7-84ff-3cba3d98c68f"
+                    "ID": "6f18b173-a8f6-4a12-ad6f-76efd4a4c278"
                   }
                 ]
               }
@@ -1141,7 +1141,7 @@
                     "DeleteCachedQuery": true
                   }
                 ],
-                "ID": "fbd3b467-1ed4-4401-a3a7-a56fbd6ca6fa"
+                "ID": "a1b5a86f-ca9c-4338-9d67-7cb4eb65c883"
               },
               {
                 "CommandList": [
@@ -1182,7 +1182,7 @@
                             "$type": "Forguncy.Model.StopCommand, ServerDesignerCommon"
                           }
                         ],
-                        "ID": "6a71f255-3ab7-4f58-80d2-b60d98993ca7"
+                        "ID": "39965480-a5ce-425c-a5c6-fd284193efa6"
                       }
                     ]
                   },
@@ -1198,7 +1198,7 @@
                           "ConfirmIcon": 1
                         },
                         "CommandList": [],
-                        "ID": "d7e9e465-ba1f-457c-909c-97fbace3f124"
+                        "ID": "995f4f10-b4d2-4efd-a56e-4c5a1f70fac2"
                       },
                       {
                         "CommandList": [
@@ -1206,7 +1206,7 @@
                             "$type": "Forguncy.Model.StopCommand, ServerDesignerCommon"
                           }
                         ],
-                        "ID": "1cea68e1-0b28-4740-b391-a4eecb514eec"
+                        "ID": "9214578a-b07b-41e8-8dc5-177111988ed0"
                       }
                     ]
                   },
@@ -1245,7 +1245,7 @@
                         ]
                       }
                     },
-                    "ID": "1d9cc58125f944529848820b1881fd7e",
+                    "ID": "5f2e02645589460f8ff01a048d2ff586",
                     "Comments": "点検項目マスタのチェック項目CDの配列"
                   },
                   {
@@ -1314,7 +1314,7 @@
                         }
                       }
                     },
-                    "ID": "b95b524da89946f1a40372f8c0e6b1e4",
+                    "ID": "39576efbc07a4836aba09d823e428ab4",
                     "Comments": "レコード追加時に自動採番された終夜点検IDを取得"
                   },
                   {
@@ -1359,7 +1359,7 @@
                     "MessageFormula": "処理が完了しました。"
                   }
                 ],
-                "ID": "c51db5c1-e7c6-4e04-9199-d0510968fbcd"
+                "ID": "b51a6b2e-37d3-4e23-9a0f-462c0c9c04c4"
               }
             ]
           }
@@ -1494,68 +1494,122 @@
   "StyleDatas": {
     "Styles": [
       {
-        "Background": 0
+        "Background": 0,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
       },
       {
         "FontFamily": 1,
-        "Formatter": 2
+        "Formatter": 2,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
       },
       {
-        "FontFamily": 1
+        "FontFamily": 1,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
       },
       {
         "Background": 3,
-        "FontFamily": 1
+        "FontFamily": 1,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
       },
       {
-        "Background": 3
+        "Background": 3,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
       },
       {
-        "Foreground": 4
+        "Foreground": 4,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
       },
       {
-        "Formatter": 2
+        "Formatter": 2,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
       },
       {
         "Background": 0,
         "FontWeight": 5,
         "Formatter": 6,
-        "HorizontalAlignment": 7
-      },
-      {
-        "FontFamily": 1,
-        "FontSize": 16.0,
-        "FontWeight": 8
-      },
-      {
-        "FontSize": 16.0,
-        "FontWeight": 8
+        "HorizontalAlignment": 7,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
       },
       {
         "FontFamily": 1,
         "FontSize": 16.0,
         "FontWeight": 8,
-        "Formatter": 2
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
       },
       {
-        "Formatter": 9
+        "FontSize": 16.0,
+        "FontWeight": 8,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
+      },
+      {
+        "FontFamily": 1,
+        "FontSize": 16.0,
+        "FontWeight": 8,
+        "Formatter": 2,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
+      },
+      {
+        "Formatter": 9,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
       },
       {
         "HorizontalAlignment": 7,
         "Underline": false,
         "BorderBottom": 0,
         "BorderTop": 0,
-        "BorderLeft": 0
+        "BorderLeft": 0,
+        "BorderRight": null
       },
       {
         "BorderBottom": 0,
         "BorderTop": 0,
+        "BorderLeft": null,
         "BorderRight": 0
       },
       {
         "FontSize": 12.0,
         "Foreground": 10,
-        "Underline": true
+        "Underline": true,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
       }
     ],
     "Types": {
@@ -1858,34 +1912,38 @@
       "7": 9
     },
     "SheetStyle": {
-      "FontFamily": 1
+      "FontFamily": 1,
+      "BorderBottom": null,
+      "BorderTop": null,
+      "BorderLeft": null,
+      "BorderRight": null
     }
   },
   "Spans": [
     "1,1,1,10",
-    "10,1,1,4",
-    "15,1,1,10",
     "2,10,1,5",
+    "2,25,1,5",
+    "2,37,1,5",
     "3,10,1,5",
+    "4,13,1,5",
+    "7,5,1,8",
+    "10,1,1,4",
     "10,6,1,11",
     "10,18,1,11",
-    "13,18,1,11",
-    "13,1,1,16",
     "10,30,1,11",
+    "13,1,1,16",
+    "13,18,1,11",
     "13,30,1,11",
-    "15,41,1,9",
     "13,45,1,5",
+    "15,1,1,10",
+    "15,41,1,9",
+    "18,1,1,2",
+    "18,3,1,6",
     "18,9,1,12",
     "18,21,1,10",
     "18,31,1,10",
     "18,41,1,10",
-    "18,1,1,2",
-    "18,3,1,6",
-    "7,5,1,8",
-    "2,37,1,5",
     "19,1,17,59",
-    "4,13,1,5",
-    "2,25,1,5",
     "17,1,1,2",
     "17,3,1,6",
     "17,9,1,12",
@@ -1936,7 +1994,7 @@
                 ]
               }
             ],
-            "ID": "01344eb7-956e-4893-a6d8-929f5683f6ee"
+            "ID": "c860d681-89b1-45b2-a01c-091248503684"
           },
           {
             "CommandList": [
@@ -1953,7 +2011,7 @@
                 ]
               }
             ],
-            "ID": "43a015e7-4455-4bef-9ff9-b24a92b8fd76"
+            "ID": "e5d560c3-8f0f-435e-9f7d-0bf10be0177b"
           }
         ]
       },
@@ -1973,11 +2031,10 @@
       "VisitMode": 2
     },
     "RowBreakLines": [],
-    "RepeatRangeSettings": [],
-    "RelatedDataTableName": "V_OvernightGroup_Inspection"
+    "RepeatRangeSettings": []
   },
   "PrintInfo": {
     "Margin": {},
     "PaperSize": {}
   }
-}//Py7vglOrcqk3YRPO+9RHIJSGUqBvL39O5uG4XWPXETrS6BZ2CHAqrW7CaWOVFUKsx/oZo+T0G3W3EAz2nS62ce2ZZt1Pb1NVig6+uuf3JPimw7+N42a1mr77I5eQYkV4g5nz94ZKf/AxU/I64einDpJ4xKghu5XWyMHg1JJss3yBKYXiFpJWIsdtYI2NCPaF69pZA7wokv6FCwIk70AQGW2eiPAG8DIucOFNLUf+e4fHgIO5VghlBiROfCBSRm5RQ4AqrPLSM4hQUHVJUwAvLd7881p8q0yhR0ou9pt9+FtIxriI9hpRHvsZ0BUrp42+cFKIzR76EuQvf1nl8vPe02LtEzUETMHLZIwM6QXfaoBeeWiAE7xJUakBsfG0P6gN/2idbZmUvFEGbNLHjEF36C8pbfTv8Rs8XoVApTPm80TagB0Ath3Lq2QlJ8jXiXSZW406zaKhwVuDLxrUr3lBeOUcgNgsjV6NOpTMSHeC7gBIrzdIrNRmh/vIIV3YvKKA2hZIvr3swbtJH4oH2iW0eVZ4SqzYYyjjVnwXz+xuWv5RzaBjSOiIpRazjuGAz5CNaWuUNw1oQ9aZDmhPjm/7xEPJgzcA37XAitdVSfClnN+EbUIElCkYeSCuiw809U+K4QuTCF8AAiv1dmuuE2HaMLMdoepo1I/n6BP3y6Ba6Uql+7qDVdEGa2mw5TV8DjeIN88LVKmXfMajL+vqa8GwiPn0wdmRSw+j21CUSIB7AY+SOyMmC3IuO8g5tgK931EH6Ctw1gygmVneK3J/lZsQZz/Y4SAsv35Qfu7HAoD3K4opquDKzAIyAn2YPXPMpDWiaWUG5QE1IeMg6P0E9slzjeVWB8qUfg6O0nepIP+UsK+5PtIdmGLtcYAv9kdPVZw2hfmHO6S3G4VBUwp0N6aRFQ==|920
+}//BDVpkk5QWrZPmgKia0ADYKnXQCTF1q2hLjRim4Y8WxAfKpuZaTMaDiG/EIDS8Cfa/c6ggU/rtZglJwrrKnigqMhBPAZdNlz3ufC9914QELsrKfNfRhIEWs42h8rnt7MVwqP6hl7HVFkR1A/a5pqG1usjr2nHLNQJ+WZgKHAZYcZjd4lAQUlF88muC2ieS8qQHThCRHP9gBPLXv9crqXWm2G9fli1r8yiJ9an7NUNM8lC74UsTuduyeIg8JRzp2i3zgj9Aqv8nUa9Ctw+nhGmPKUkppZl3EThEO0FpQiOO2LHj8jATVQuicdS6RpFZOzIFuswvpG5BiqNx3R+QtjTzeaY65/GRLldQUdoH6n0n2xfq+LvvvSI/9MyAqhvGF+MkXR4Rcg+8ZAXetQjvOwNlkBNQEVqwHtiOksPKk/It5LtihpOiySPq63q6HDdADqh3Isu5nn1M4mDTW2QOYMv1WLD94Qwrrv+1QwI+4AKdxPxWam0bWMUemZcjiYFJVGvCKHPl4RhbFqOYk8PZ/NDHZu0OJzCgaN19Szmm46kveh89ofwIb3kHHsVWZdmcasVl9p94R0kfAWAyh6puzxdfD2i0G3tyOgWALV5h9ruz47d3m6rKzjMf/PP9/tIIoBpg73YLPtwyH66/pKXCXlo+XIdsJCq5LUPI94YQSJ0JDXm/xPNLrLk+/pQmy0bPqQIq07xHmo/wtI/GvWAEPAQXLA67IEJeKe9FOEv7Lqjjg3Bu4OXW9O+wjssqQF5R5k1Zz46II3PhXIgv0aVt+C5Ig+BfG4NNUuwAwlLt6Y5kkWc8C7cxHZZw421EW+FzPuIhyMUO8OmFSZqE6rtV8JzgS6PLcv9GrKj1xiTgFkaB6+KFeOoPrffNW1ayESu/Txz8q6jak34Qc+bLSOVj5RBqQ==|920

@@ -132,7 +132,6 @@
     "1,1": "検索用SQLクエリ",
     "1,14": "建屋の値で階を絞り込む",
     "2,14": "階の値で基本部屋を絞り込む",
-    "2,23": "IF(N6=\"\",\"0\",\"aaaa\")",
     "4,1": "建屋",
     "4,13": "階",
     "4,25": "運転部屋",
@@ -150,8 +149,8 @@
     "11,4": "長期"
   },
   "Formulas": {
-    "2,23": "IF(N6=\"\",\"0\",\"aaaa\")",
-    "1,23": "IF(B6=\"\",\"LL\",\"\")"
+    "1,23": "IF(B6=\"\",\"LL\",\"\")",
+    "2,23": "IF(N6=\"\",\"0\",\"aaaa\")"
   },
   "AttachInfos": {
     "1,1": {
@@ -162,7 +161,7 @@
             "$type": "Forguncy.Model.Commands.SetParameterCommand, ServerDesignerCommon",
             "ParameterName": "delete_flg",
             "ParameterValue": "1",
-            "ID": "79128da92b8241e096ce287743abbf51"
+            "ID": "93740d7c3b5846fea1ee4e3521c43aa3"
           },
           {
             "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
@@ -184,10 +183,10 @@
                   {
                     "$type": "Forguncy.Model.Commands.SetParameterCommand, ServerDesignerCommon",
                     "ParameterName": "delete_flg",
-                    "ID": "30828e3bc4ae435bb576cc6a908e71b7"
+                    "ID": "4fafe66fb1a24beab839d8f818490558"
                   }
                 ],
-                "ID": "fce940d8-77ea-44ea-852c-8fd9c377328f"
+                "ID": "4fdf5b77-f638-44d0-9675-cc1d245d0e03"
               }
             ]
           },
@@ -282,7 +281,7 @@
               "=Z6",
               "=AL6"
             ],
-            "ID": "381108412b974762ad516891a7db16c6"
+            "ID": "07860fcd6606498d84e82bead865f6da"
           }
         ],
         "Text": "検索用SQLクエリ",
@@ -804,7 +803,7 @@
                     "LoadBindingDataOption": 1
                   }
                 ],
-                "ID": "10628d1e-e0e0-47af-9521-2e2bbf80d6cf"
+                "ID": "17b6b923-f5ec-46c2-a72b-841e176b9697"
               }
             ]
           }
@@ -875,7 +874,7 @@
                     "LoadBindingDataOption": 1
                   }
                 ],
-                "ID": "9bc992da-d333-44e9-98c5-539e840e5fcf"
+                "ID": "79dfb18f-367f-4b62-83a7-60f29b941a76"
               }
             ]
           }
@@ -970,56 +969,100 @@
     "Styles": [
       {
         "FontFamily": 0,
-        "Formatter": 1
-      },
-      {
-        "FontFamily": 0
-      },
-      {
-        "Background": 2,
-        "FontFamily": 0
+        "Formatter": 1,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
       },
       {
         "FontFamily": 0,
-        "FontSize": 16.0,
-        "FontWeight": 3
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
+      },
+      {
+        "Background": 2,
+        "FontFamily": 0,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
       },
       {
         "FontFamily": 0,
         "FontSize": 16.0,
         "FontWeight": 3,
-        "Formatter": 1
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
       },
       {
         "FontFamily": 0,
-        "Formatter": 4
+        "FontSize": 16.0,
+        "FontWeight": 3,
+        "Formatter": 1,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
       },
       {
         "FontFamily": 0,
-        "WordWrap": true
+        "Formatter": 4,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
+      },
+      {
+        "FontFamily": 0,
+        "WordWrap": true,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
       },
       {
         "Background": 5,
         "FontSize": 14.666666666666666,
         "HorizontalAlignment": 6,
-        "WordWrap": true
+        "WordWrap": true,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
       },
       {
         "FontFamily": 0,
         "FontSize": 12.0,
         "Formatter": 1,
-        "WordWrap": true
+        "WordWrap": true,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
       },
       {
         "Background": 7,
         "FontFamily": 0,
-        "Formatter": 1
+        "Formatter": 1,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
       },
       {
         "FontFamily": 0,
         "FontSize": 12.0,
         "Foreground": 8,
-        "Underline": true
+        "Underline": true,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
       }
     ],
     "Types": {
@@ -1338,21 +1381,31 @@
       "11,62": 1
     },
     "SheetStyle": {
-      "FontFamily": 0
+      "FontFamily": 0,
+      "BorderBottom": null,
+      "BorderTop": null,
+      "BorderLeft": null,
+      "BorderRight": null
     }
   },
   "Spans": [
     "1,1,1,11",
-    "5,1,1,11",
-    "7,1,1,13",
-    "5,13,1,11",
-    "5,37,1,10",
-    "5,54,1,5",
-    "5,48,1,5",
-    "7,49,1,10",
     "1,23,1,5",
     "2,23,1,5",
+    "5,1,1,11",
+    "5,13,1,11",
     "5,25,1,11",
+    "5,37,1,10",
+    "5,48,1,5",
+    "5,54,1,5",
+    "7,1,1,13",
+    "7,49,1,10",
+    "9,1,2,6",
+    "9,7,2,5",
+    "9,12,2,12",
+    "9,24,2,10",
+    "9,34,2,9",
+    "9,43,2,19",
     "11,1,1,3",
     "11,4,1,3",
     "11,7,1,5",
@@ -1360,13 +1413,7 @@
     "11,24,1,10",
     "11,34,1,9",
     "11,43,1,19",
-    "12,1,12,63",
-    "9,1,2,6",
-    "9,7,2,5",
-    "9,12,2,12",
-    "9,24,2,10",
-    "9,34,2,9",
-    "9,43,2,19"
+    "12,1,12,63"
   ],
   "PageInfo": {
     "$type": "Forguncy.Model.Pages.NormalPage, ServerDesignerCommon",
@@ -1388,11 +1435,10 @@
       "VisitMode": 2
     },
     "RowBreakLines": [],
-    "RepeatRangeSettings": [],
-    "RelatedDataTableName": "T_OvernightRegistration"
+    "RepeatRangeSettings": []
   },
   "PrintInfo": {
     "Margin": {},
     "PaperSize": {}
   }
-}//5iBLFZTANziYsw0iOTAgU0hSxHlJ5P4h+SyQlO67IgC9K66zdJB2y9ePqqJ7lpgRLz3ognwLsY/tY6Z9Ny+VCAbAI20S+pc6l+9UihEko9tmAzhOSuKaKqGEjHeTgF3KdtZOLmcwGtd+fjaplroFVHU3ahbjgqkMZz5ugob/SrPCFH6TRCOP4j2Gk/PvS/8YmcTaOBHb1KBLiFB4sJuuRLtiiWAUtWlKEVc1ID9RCdr+WdUD4ZEKNjiFUxOcJQZ/crnklRQzo6gH6D7VSNKUDgK+mdsJCfem0fd0MYeYoF0duuwf4hIkSxds7X63gf8Q9zFuhiZk5rzaQVBcK+88HgIS2lxuRFfOnv07UHT6o4/UdloFxR3rA9Jr/djUT8bQwfc8bk1a3Gilhx3z0/qKYiXzvBX2bgy38bmlLQFvNpA6FB7e/85xRsywnWqLX82aO4dpT7sg3LQQ9gLjcPu9Xf4fjfkjHQf4l6LTc+/AHyoNhAhhjVUheC4/sAHDJjqTgIE1APIp2jDx6WN0UT9fYX768WozBS/7LQuWRMCNbp9NNszzZ2ehgoDWmT0+y+XX7qlGVErOxf2X/xLQlVBu1LaVmbATf13u/dx8CjSfT+qShlzzyhe291ZATeoNGiPTB5UMgr7kHa6PuhuiEtp6yYlHoG53LowthuNzZtpaMWd+PC7TVRzbTB17tdLwi3I73YAtLGz45XJStlVNQGdLDGH1qEGqFj8ppqZkej5jgcRln7Z0sYPz9NZJtmVrCUTD9U6vIsGRJ9X1s+Ai5+gLCsVknrZq4UtT/bYMIKqq2QmSMUoPguP9VkrTKcw8ZC5jlXy86zdKpbiJHKHpRWHbOm2aCxeVMz4S7Jsu2IsN/YnP++7x8j4604ouVq1lUy8Pn8XDkHIDI8r0lBvZ4k+AJw==|920
+}//diTCucRxPkhEsa9x5+6MO+cWKLtT+yBE9/cJSm9iM33Vum1jkNlCptVde4Lz8D7rWRrhm1UojhH3iQzFTB4+ye18gbXKawyekHhPjZsyY0ccXdPji254gaLJtE0iTHf60IZtpRKAW0H9m1YOxazXJYOE9KhTlv3YQblW8MwJhBG3gU3XlxfwUn2cot9sq2MnJPtX4DfOCOt8eqN0na7Fkt8hW1ZmEGZpyR262uUTdYp//SKtLmCBYNX1aJ+bTNmAKoeDXEqUbLd/4JI38S+pM4pgKlEwVS8TVknytb9aE/+QAt/SuujJJHPmiIFxsf1+QsCJipjp2dYRgD37Z0OHwktMGwYPOsrX7jrzgYsDRfUM/eFeqxIZ7mK7XT6Zy0wJ70wVyxvrgJFCZU/+ZhzOA+rr4C3HX7A2JoGrFpn2AAQ3Btle6zmAyVkP0W3tz2hMx0z+5ILYLIPuzbvhz5bXmoAGRRnn0nFOVqzxOGhANhKbu0OJ/YDWO51nP98hMPouEr5pKEGR8kVxPnAWYxRgi3ViP91hyJcOm+vDWIbqXbWsWekdajHpHWQShbgApOC0RSvZbxI44irvURBgyntjv9/VRpHiPJYNV2hVQk0mezmHagwEgbmR2M0+C3/fOqTTD+XfE22R3yq1qZbuieZRCmbeaYX1iYRteJjEBUv3CGWuauCdx/8F29ihuWUcuJnrKsm+Au/W5OI519At9sLTMBJfORlM9rhp1ro3zxcokAOlPViZSCVRyMmld9TuswIkHV8vdAHvQi14Q/MsYomlTFe5RmYL2P0v1SG2/g60kgcoNu09dsZhhYMcfvqX6lHPOr8zjAZ9N97RpaKk3EwlMqjIlPb+9f6nQt3DAPZsGxaOLVP1ZhYyHjX+xyRinFHugDvfqxj4MWSvpquOgr5x9Q==|920

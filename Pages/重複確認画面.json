@@ -401,43 +401,69 @@
   "StyleDatas": {
     "Styles": [
       {
-        "Background": 0
+        "Background": 0,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
       },
       {
-        "FontFamily": 1
+        "FontFamily": 1,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
       },
       {
         "Background": 2,
-        "FontFamily": 1
+        "FontFamily": 1,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
       },
       {
         "FontFamily": 1,
         "BorderBottom": 0,
         "BorderTop": 0,
-        "BorderLeft": 0
+        "BorderLeft": 0,
+        "BorderRight": null
       },
       {
         "FontFamily": 1,
         "BorderBottom": 0,
         "BorderTop": 0,
+        "BorderLeft": null,
         "BorderRight": 0
       },
       {
         "FontFamily": 1,
         "BorderBottom": 0,
-        "BorderTop": 0
+        "BorderTop": 0,
+        "BorderLeft": null,
+        "BorderRight": null
       },
       {
         "FontFamily": 1,
         "HorizontalAlignment": 3,
-        "BorderLeft": 0
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": 0,
+        "BorderRight": null
       },
       {
-        "Formatter": 4
+        "Formatter": 4,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
       },
       {
         "FontFamily": 1,
-        "BorderLeft": 0
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": 0,
+        "BorderRight": null
       },
       {
         "FontFamily": 1,
@@ -448,25 +474,41 @@
       },
       {
         "FontFamily": 1,
-        "Formatter": 4
+        "Formatter": 4,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
       },
       {
         "FontFamily": 1,
         "FontSize": 12.0,
         "Formatter": 5,
         "HorizontalAlignment": 3,
-        "Underline": false
+        "Underline": false,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
       },
       {
         "FontFamily": 1,
         "Formatter": 5,
         "HorizontalAlignment": 6,
-        "WordWrap": true
+        "WordWrap": true,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
       },
       {
         "FontFamily": 1,
         "HorizontalAlignment": 6,
-        "WordWrap": true
+        "WordWrap": true,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
       }
     ],
     "Types": {
@@ -626,28 +668,32 @@
       "42,0": 0
     },
     "SheetStyle": {
-      "FontFamily": 1
+      "FontFamily": 1,
+      "BorderBottom": null,
+      "BorderTop": null,
+      "BorderLeft": null,
+      "BorderRight": null
     }
   },
   "Spans": [
+    "1,7,1,5",
+    "2,7,1,5",
+    "2,14,1,2",
+    "2,16,1,13",
+    "2,29,1,2",
+    "3,7,1,5",
+    "3,14,2,18",
+    "4,7,1,5",
+    "7,1,3,35",
     "11,1,1,10",
-    "37,1,1,5",
-    "37,7,1,5",
     "14,1,1,6",
     "14,7,1,12",
     "14,19,1,12",
     "14,31,1,12",
     "14,43,1,19",
     "15,1,21,64",
-    "7,1,3,35",
-    "2,14,1,2",
-    "2,16,1,13",
-    "2,29,1,2",
-    "3,14,2,18",
-    "2,7,1,5",
-    "3,7,1,5",
-    "4,7,1,5",
-    "1,7,1,5",
+    "37,1,1,5",
+    "37,7,1,5",
     "1,14,1,2",
     "1,16,1,13",
     "1,29,1,2",
@@ -664,11 +710,10 @@
       "VisitMode": 2
     },
     "RowBreakLines": [],
-    "RepeatRangeSettings": [],
-    "RelatedDataTableName": "T_OvernightRegistration"
+    "RepeatRangeSettings": []
   },
   "PrintInfo": {
     "Margin": {},
     "PaperSize": {}
   }
-}//vCvXgF+ms30ZXq7/Ry8JxFIfuOFfXZLDbQmzbG40f7p8d8rsdeTPPSahM1rY9G/lNLs0d/uTveIT+OI/1Xv9Kboa4bR87HdvZm44+3/+KhaksHmzK9ehI303pUenKJwTLqN94ngMlcLl6gjOGYVh3IrKhYGn9PuhbsJ/+Z2Ki7S98zlf7t9uQ0OvTZ579cL4NdaNfmfsGUu/SsrWyvDX05Ubaspehj2eqSveFkG3RA6CyPZ6T1oaF654FmVPEQ3S+CEtlva9pm+WnLXHbGN4zs0ZUwvkU7gnDu1AAGPh3XoN+tUA+pWdFjoZRAlW4McRthZtdZhz3U/iNZGZKf/P9PPBlKg+xU9RUYzt2lEmbJjgvVXsUwOpaFX3WxKW6th3vNdN548E97py8gHUXduyRWC2Zeyzx1M8dqT0kGmkYJuy1v44Mj5SeggFLHKtOJKqTqM/D/oJHGB86KAJFGPr+3/uB1bqiMyiGAKlXCX3seKOPxUyCPLS9xU9A6DNdRG25k4ULazFTjTCWJbTsunrHOIs1kOYCJKNg+oy8M6Y+tXHW/TVfiCcKrzaoNDxRrkVuP18HpdAM8g2kqaHo2tot4HbEPp9EWEM3flZShusX/R4ut35zj7EUb3TAxjqEmzOBavwY9dJtG3ZBxeZGEt4uLrDn+xcbjKdnMpnjveHIOMf0BcpWwByYCk820w2foCzVn110FArMSbyX7tQ+V/+DXAEgFPAW7duC9nlFFKiWXIepZNndkbB6CNSS2S4Di0rYpO0+GJaso9F0TGE/jQnNajfqyMEniIHtjbFOI73tGyK2kctImEf0+a95Sb0+uc3smq6VSjDHydLvCeLQ+N64rfpLWPUtArxSdK1oH6k4zOTfBsxgARlqH+TbGe3DDopTHQ1FUFjy6+u+Fh9Yk4GYw==|920
+}//PvhAVuWvpaN5Orb8U5B2xblcdwxJ7iK0OodkMjijMGUQHr1ABlMw9f0JkX1OGxro3G9nMc8AmQQwEcuZ46miQm2mh2BVhZjw6EZLqeSt7O5wfK39pnf2sFVrBmQxBUgzAgsDnQbrNiUnK58ZZ9BDWeN/1ANUEgAN3WLDd4VCh0XW0FCq46ZpYPPaxhLR0ja8KSGcpY6ME8s9dNUbr6tuquUBJSUkEUgrB3DvBiEAntvafhjx4e45s9e1zDEAgqx3GxFXRSCFkPG6mtvnVNqw/UXvX2pTpowWcTmX14BKJ1eanKmVkZpPAzIotoeL/2rSUZ0cGCC6HRZZ7lclp7887o9bzoqqU3bL0jEblQxr1PFGFxNZY6W0t5JMeZOK6WXGdJrDYLt0f+5GxbV2XH5eRs8GSgIWbB9ZOUF8CnKfWyicqYp1Mu2DBV/+ViDwk2FfaQok+9J0ocNZrFV4nQfiODjAdWNCc2CoESHSvcBO5Ccpw+ZzHrZQBN8iLsIWVX3w75QvO5PZhk5sDlL4OWEwuMNBrPcVJrE559WjMnrS8dfpRdOYfMNgsIAGHybjC1GKDimXkZT3CnsYUrQ/VGSFsBGNToqsl//cSPfBdYuwPexOrgnq/BE/BdyI5zDi1TnRdYJXkIz0E4f+Cn2MzoWHyk/sZN5N0zv182q/DD8QOkTOkCrrjylo56gPjAjz9r8QR9jkY9lH2TEmTAZeUmK4MoVKSWo+mgFGcCid/Cy5/PWwP7dT+O37HJoNdhzRUPxTjaE85jtojpVSKkp7n7cvwPEwEabbUDUks4sFReNxcuTX/rD+PEY0u+9q7AaXKEpKm/LIQLMbsWk2oteOBeXQdgRhhkhGt/bQ/RRvvtbfaUE+RFnOzuCp5rLpRRghi3eRTQanCLpgUJGsinemuRDz+g==|920

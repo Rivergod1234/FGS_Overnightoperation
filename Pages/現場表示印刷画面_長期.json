@@ -541,20 +541,20 @@
     "26,37": "※運転状態を毎日確認すること"
   },
   "Formulas": {
-    "23,21": "IF(IFERROR(ODATA(\"T_OvernightRegistration?$select=emergency_treatment_elc_water_cutoff&$filter=overnight_registration_id eq \"&IF(ISBLANK($H$3),\"null\",\"'\"&$H$3&\"'\")&\" and emergency_treatment_elc_water_cutoff ne null\"),\"\")=\"1\",\"不要\",\"\")",
-    "23,66": "IF(IFERROR(ODATA(\"T_OvernightRegistration?$select=emergency_treatment_restor_elc&$filter=overnight_registration_id eq \"&IF(ISBLANK($H$3),\"null\",\"'\"&$H$3&\"'\")&\" and emergency_treatment_restor_elc ne null\"),\"\")=\"1\",\"可\",\"\")",
-    "23,58": "IF(IFERROR(ODATA(\"T_OvernightRegistration?$select=emergency_treatment_elc_water_cutoff&$filter=overnight_registration_id eq \"&IF(ISBLANK($H$3),\"null\",\"'\"&$H$3&\"'\")&\" and emergency_treatment_elc_water_cutoff ne null\"),\"\")=\"1\",\"不要\",\"\")",
-    "23,49": "IF(IFERROR(ODATA(\"T_OvernightRegistration?$select=emergency_treatment_poweroff&$filter=overnight_registration_id eq \"&IF(ISBLANK($H$3),\"null\",\"'\"&$H$3&\"'\")&\" and emergency_treatment_poweroff ne null\"),\"\")=\"1\",\"可\",\"\")",
-    "21,51": "IFERROR(ODATA(\"T_OvernightRegistration?$select=circuit_breaker_no&$filter=overnight_registration_id eq \"&IF(ISBLANK($H$3),\"null\",\"'\"&$H$3&\"'\")&\" and circuit_breaker_no ne null\"),\"\")",
-    "20,45": "IFERROR(ODATA(\"V_OvernightGroup?$select=sub_instrument_name&$filter=overnight_registration_id eq \"&IF(ISBLANK($H$3),\"null\",\"'\"&$H$3&\"'\")&\" and sub_instrument_name ne null\"),\"\")",
-    "19,45": "IFERROR(ODATA(\"V_OvernightGroup?$select=main_instrument_name&$filter=overnight_registration_id eq \"&IF(ISBLANK($H$3),\"null\",\"'\"&$H$3&\"'\")&\" and main_instrument_name ne null\"),\"\")",
-    "19,8": "IFERROR(ODATA(\"V_OvernightGroup?$select=main_instrument_name&$filter=overnight_registration_id eq \"&IF(ISBLANK($H$3),\"null\",\"'\"&$H$3&\"'\")&\" and main_instrument_name ne null\"),\"\")",
     "18,8": "IFERROR(ODATA(\"V_BasicRoomInformation?$select=basic_room_Information_Name&$filter=basic_room_Information_id eq \"&IF(ISBLANK($H$5),\"null\",\"'\"&$H$5&\"'\")),\"\")",
-    "20,8": "IFERROR(ODATA(\"V_OvernightGroup?$select=sub_instrument_name&$filter=overnight_registration_id eq \"&IF(ISBLANK($H$3),\"null\",\"'\"&$H$3&\"'\")&\" and sub_instrument_name ne null\"),\"\")",
-    "21,14": "IFERROR(ODATA(\"T_OvernightRegistration?$select=circuit_breaker_no&$filter=overnight_registration_id eq \"&IF(ISBLANK($H$3),\"null\",\"'\"&$H$3&\"'\")&\" and circuit_breaker_no ne null\"),\"\")",
     "18,45": "IFERROR(ODATA(\"V_BasicRoomInformation?$select=basic_room_Information_Name&$filter=basic_room_Information_id eq \"&IF(ISBLANK($H$5),\"null\",\"'\"&$H$5&\"'\")),\"\")",
+    "19,8": "IFERROR(ODATA(\"V_OvernightGroup?$select=main_instrument_name&$filter=overnight_registration_id eq \"&IF(ISBLANK($H$3),\"null\",\"'\"&$H$3&\"'\")&\" and main_instrument_name ne null\"),\"\")",
+    "19,45": "IFERROR(ODATA(\"V_OvernightGroup?$select=main_instrument_name&$filter=overnight_registration_id eq \"&IF(ISBLANK($H$3),\"null\",\"'\"&$H$3&\"'\")&\" and main_instrument_name ne null\"),\"\")",
+    "20,8": "IFERROR(ODATA(\"V_OvernightGroup?$select=sub_instrument_name&$filter=overnight_registration_id eq \"&IF(ISBLANK($H$3),\"null\",\"'\"&$H$3&\"'\")&\" and sub_instrument_name ne null\"),\"\")",
+    "20,45": "IFERROR(ODATA(\"V_OvernightGroup?$select=sub_instrument_name&$filter=overnight_registration_id eq \"&IF(ISBLANK($H$3),\"null\",\"'\"&$H$3&\"'\")&\" and sub_instrument_name ne null\"),\"\")",
+    "21,14": "IFERROR(ODATA(\"T_OvernightRegistration?$select=circuit_breaker_no&$filter=overnight_registration_id eq \"&IF(ISBLANK($H$3),\"null\",\"'\"&$H$3&\"'\")&\" and circuit_breaker_no ne null\"),\"\")",
+    "21,51": "IFERROR(ODATA(\"T_OvernightRegistration?$select=circuit_breaker_no&$filter=overnight_registration_id eq \"&IF(ISBLANK($H$3),\"null\",\"'\"&$H$3&\"'\")&\" and circuit_breaker_no ne null\"),\"\")",
     "23,12": "IF(IFERROR(ODATA(\"T_OvernightRegistration?$select=emergency_treatment_poweroff&$filter=overnight_registration_id eq \"&IF(ISBLANK($H$3),\"null\",\"'\"&$H$3&\"'\")&\" and emergency_treatment_poweroff ne null\"),\"\")=\"1\",\"可\",\"\")",
-    "23,29": "IF(IFERROR(ODATA(\"T_OvernightRegistration?$select=emergency_treatment_restor_elc&$filter=overnight_registration_id eq \"&IF(ISBLANK($H$3),\"null\",\"'\"&$H$3&\"'\")&\" and emergency_treatment_restor_elc ne null\"),\"\")=\"1\",\"可\",\"\")"
+    "23,21": "IF(IFERROR(ODATA(\"T_OvernightRegistration?$select=emergency_treatment_elc_water_cutoff&$filter=overnight_registration_id eq \"&IF(ISBLANK($H$3),\"null\",\"'\"&$H$3&\"'\")&\" and emergency_treatment_elc_water_cutoff ne null\"),\"\")=\"1\",\"不要\",\"\")",
+    "23,29": "IF(IFERROR(ODATA(\"T_OvernightRegistration?$select=emergency_treatment_restor_elc&$filter=overnight_registration_id eq \"&IF(ISBLANK($H$3),\"null\",\"'\"&$H$3&\"'\")&\" and emergency_treatment_restor_elc ne null\"),\"\")=\"1\",\"可\",\"\")",
+    "23,49": "IF(IFERROR(ODATA(\"T_OvernightRegistration?$select=emergency_treatment_poweroff&$filter=overnight_registration_id eq \"&IF(ISBLANK($H$3),\"null\",\"'\"&$H$3&\"'\")&\" and emergency_treatment_poweroff ne null\"),\"\")=\"1\",\"可\",\"\")",
+    "23,58": "IF(IFERROR(ODATA(\"T_OvernightRegistration?$select=emergency_treatment_elc_water_cutoff&$filter=overnight_registration_id eq \"&IF(ISBLANK($H$3),\"null\",\"'\"&$H$3&\"'\")&\" and emergency_treatment_elc_water_cutoff ne null\"),\"\")=\"1\",\"不要\",\"\")",
+    "23,66": "IF(IFERROR(ODATA(\"T_OvernightRegistration?$select=emergency_treatment_restor_elc&$filter=overnight_registration_id eq \"&IF(ISBLANK($H$3),\"null\",\"'\"&$H$3&\"'\")&\" and emergency_treatment_restor_elc ne null\"),\"\")=\"1\",\"可\",\"\")"
   },
   "AttachInfos": {
     "1,7": {
@@ -801,42 +801,82 @@
     "Styles": [
       {
         "Background": 0,
-        "FontFamily": 1
-      },
-      {
-        "FontFamily": 1
+        "FontFamily": 1,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
       },
       {
         "FontFamily": 1,
-        "Formatter": 2
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
+      },
+      {
+        "FontFamily": 1,
+        "Formatter": 2,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
       },
       {
         "Background": 3,
-        "FontFamily": 1
+        "FontFamily": 1,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
       },
       {
         "Background": 3,
         "FontFamily": 1,
-        "Formatter": 2
+        "Formatter": 2,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
       },
       {
         "FontFamily": 1,
-        "Formatter": 4
+        "Formatter": 4,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
       },
       {
-        "Foreground": 5
+        "Foreground": 5,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
       },
       {
-        "Background": null
+        "Background": null,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
       },
       {
         "Background": 5,
         "FontFamily": 1,
-        "Foreground": 5
+        "Foreground": 5,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
       },
       {
         "Background": 5,
-        "FontFamily": 1
+        "FontFamily": 1,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
       },
       {
         "FontSize": 29.333333333333332,
@@ -845,22 +885,30 @@
         "HorizontalAlignment": 7,
         "BorderBottom": 0,
         "BorderTop": 0,
-        "BorderLeft": 0
-      },
-      {
-        "BorderBottom": 0,
-        "BorderTop": 0
+        "BorderLeft": 0,
+        "BorderRight": null
       },
       {
         "BorderBottom": 0,
         "BorderTop": 0,
+        "BorderLeft": null,
+        "BorderRight": null
+      },
+      {
+        "BorderBottom": 0,
+        "BorderTop": 0,
+        "BorderLeft": null,
         "BorderRight": 0
       },
       {
         "FontSize": 32.0,
         "Foreground": 5,
         "Formatter": 6,
-        "HorizontalAlignment": 7
+        "HorizontalAlignment": 7,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
       },
       {
         "FontFamily": 1,
@@ -870,17 +918,21 @@
         "HorizontalAlignment": 7,
         "BorderBottom": 0,
         "BorderTop": 0,
-        "BorderLeft": 0
-      },
-      {
-        "FontFamily": 1,
-        "BorderBottom": 0,
-        "BorderTop": 0
+        "BorderLeft": 0,
+        "BorderRight": null
       },
       {
         "FontFamily": 1,
         "BorderBottom": 0,
         "BorderTop": 0,
+        "BorderLeft": null,
+        "BorderRight": null
+      },
+      {
+        "FontFamily": 1,
+        "BorderBottom": 0,
+        "BorderTop": 0,
+        "BorderLeft": null,
         "BorderRight": 0
       },
       {
@@ -888,29 +940,53 @@
         "FontSize": 32.0,
         "Foreground": 5,
         "Formatter": 6,
-        "HorizontalAlignment": 7
+        "HorizontalAlignment": 7,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
       },
       {
         "FontFamily": 1,
         "FontWeight": 8,
-        "Formatter": 2
+        "Formatter": 2,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
       },
       {
-        "Formatter": 9
+        "Formatter": 9,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
       },
       {
         "FontFamily": 1,
         "FontSize": 12.0,
         "FontWeight": 8,
-        "Formatter": 2
+        "Formatter": 2,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
       },
       {
         "FontFamily": 1,
-        "HorizontalAlignment": 7
+        "HorizontalAlignment": 7,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
       },
       {
         "FontFamily": 1,
-        "Formatter": 9
+        "Formatter": 9,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
       },
       {
         "FontFamily": 1,
@@ -956,10 +1032,18 @@
       },
       {
         "FontFamily": 1,
-        "HorizontalAlignment": 10
+        "HorizontalAlignment": 10,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
       },
       {
-        "HorizontalAlignment": 10
+        "HorizontalAlignment": 10,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
       },
       {
         "FontFamily": 1,
@@ -980,7 +1064,11 @@
       },
       {
         "FontFamily": 1,
-        "WordWrap": true
+        "WordWrap": true,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
       },
       {
         "WordWrap": true,
@@ -990,7 +1078,11 @@
         "BorderRight": 1
       },
       {
-        "WordWrap": true
+        "WordWrap": true,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
       },
       {
         "FontWeight": 8,
@@ -1005,30 +1097,41 @@
         "Formatter": 2,
         "BorderBottom": 1,
         "BorderTop": 1,
-        "BorderLeft": 1
-      },
-      {
-        "BorderBottom": 1,
-        "BorderTop": 1
+        "BorderLeft": 1,
+        "BorderRight": null
       },
       {
         "BorderBottom": 1,
         "BorderTop": 1,
+        "BorderLeft": null,
+        "BorderRight": null
+      },
+      {
+        "BorderBottom": 1,
+        "BorderTop": 1,
+        "BorderLeft": null,
         "BorderRight": 1
       },
       {
         "FontFamily": 1,
-        "FontWeight": 8
-      },
-      {
-        "FontFamily": 1,
-        "BorderBottom": 1,
-        "BorderTop": 1
+        "FontWeight": 8,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
       },
       {
         "FontFamily": 1,
         "BorderBottom": 1,
         "BorderTop": 1,
+        "BorderLeft": null,
+        "BorderRight": null
+      },
+      {
+        "FontFamily": 1,
+        "BorderBottom": 1,
+        "BorderTop": 1,
+        "BorderLeft": null,
         "BorderRight": 1
       },
       {
@@ -1043,7 +1146,11 @@
       {
         "FontFamily": 1,
         "Formatter": 4,
-        "WordWrap": true
+        "WordWrap": true,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
       },
       {
         "FontFamily": 1,
@@ -1072,7 +1179,8 @@
         "HorizontalAlignment": 7,
         "BorderBottom": 1,
         "BorderTop": 1,
-        "BorderLeft": 1
+        "BorderLeft": 1,
+        "BorderRight": null
       },
       {
         "FontFamily": 1,
@@ -1091,7 +1199,8 @@
         "Formatter": 4,
         "BorderBottom": 1,
         "BorderTop": 1,
-        "BorderLeft": 1
+        "BorderLeft": 1,
+        "BorderRight": null
       },
       {
         "FontFamily": 1,
@@ -1111,64 +1220,87 @@
         "BorderRight": null
       },
       {
-        "BorderBottom": 1,
-        "BorderTop": 1,
-        "BorderLeft": null,
-        "BorderRight": 1
-      },
-      {
         "FontFamily": 1,
         "Formatter": 4,
         "BorderBottom": 1,
-        "BorderLeft": 1
-      },
-      {
-        "BorderBottom": 1
+        "BorderTop": null,
+        "BorderLeft": 1,
+        "BorderRight": null
       },
       {
         "BorderBottom": 1,
-        "BorderRight": 1
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
       },
       {
-        "FontFamily": 1,
         "BorderBottom": 1,
-        "BorderTop": 1,
+        "BorderTop": null,
         "BorderLeft": null,
         "BorderRight": 1
       },
       {
         "FontFamily": 1,
-        "BorderBottom": 1
+        "BorderBottom": 1,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
       },
       {
         "FontFamily": 1,
         "BorderBottom": 1,
+        "BorderTop": null,
+        "BorderLeft": null,
         "BorderRight": 1
       },
       {
         "FontFamily": 1,
         "FontSize": 13.333333333333332,
         "VerticalAlignment": 13,
-        "WordWrap": true
+        "WordWrap": true,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
       },
       {
         "FontFamily": 1,
         "Foreground": 5,
-        "HorizontalAlignment": 7
+        "HorizontalAlignment": 7,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
       },
       {
-        "Background": 5
+        "Background": 5,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
       },
       {
-        "FontSize": 12.0
+        "FontSize": 12.0,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
       },
       {
-        "FontSize": 13.333333333333332
+        "FontSize": 13.333333333333332,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
       },
       {
         "FontSize": 26.666666666666664,
         "Foreground": 5,
-        "HorizontalAlignment": 7
+        "HorizontalAlignment": 7,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
       }
     ],
     "Types": {
@@ -2339,15 +2471,15 @@
       "24,20": 38,
       "24,21": 49,
       "24,22": 50,
-      "24,23": 51,
-      "24,24": 52,
-      "24,25": 53,
-      "24,26": 53,
-      "24,27": 53,
-      "24,28": 53,
-      "24,29": 53,
-      "24,30": 53,
-      "24,31": 54,
+      "24,23": 38,
+      "24,24": 51,
+      "24,25": 52,
+      "24,26": 52,
+      "24,27": 52,
+      "24,28": 52,
+      "24,29": 52,
+      "24,30": 52,
+      "24,31": 53,
       "24,32": 5,
       "24,33": 5,
       "24,34": 5,
@@ -2376,15 +2508,15 @@
       "24,57": 41,
       "24,58": 49,
       "24,59": 50,
-      "24,60": 55,
-      "24,61": 52,
-      "24,62": 56,
-      "24,63": 56,
-      "24,64": 56,
-      "24,65": 56,
-      "24,66": 56,
-      "24,67": 56,
-      "24,68": 57,
+      "24,60": 41,
+      "24,61": 51,
+      "24,62": 54,
+      "24,63": 54,
+      "24,64": 54,
+      "24,65": 54,
+      "24,66": 54,
+      "24,67": 54,
+      "24,68": 55,
       "24,69": 5,
       "25,1": 1,
       "25,2": 1,
@@ -2392,7 +2524,7 @@
       "25,4": 1,
       "25,5": 1,
       "25,6": 1,
-      "25,27": 58,
+      "25,27": 56,
       "25,37": 1,
       "25,38": 1,
       "25,39": 1,
@@ -2420,45 +2552,45 @@
       "25,61": 1,
       "25,62": 1,
       "25,63": 1,
-      "25,64": 58,
+      "25,64": 56,
       "25,65": 1,
       "25,66": 1,
       "25,67": 1,
       "25,68": 1,
       "25,69": 1,
-      "26,37": 59,
-      "26,38": 59,
-      "26,39": 59,
-      "26,40": 59,
-      "26,41": 59,
-      "26,42": 59,
-      "26,43": 59,
-      "26,44": 59,
-      "26,45": 59,
-      "26,46": 59,
-      "26,47": 59,
-      "26,48": 59,
-      "26,49": 59,
-      "26,50": 59,
-      "26,51": 59,
-      "26,52": 59,
-      "26,53": 59,
-      "26,54": 59,
-      "26,55": 59,
-      "26,56": 59,
-      "26,57": 59,
-      "26,58": 59,
-      "26,59": 59,
-      "26,60": 59,
-      "26,61": 59,
-      "26,62": 59,
-      "26,63": 59,
-      "26,64": 59,
-      "26,65": 59,
-      "26,66": 59,
-      "26,67": 59,
-      "26,68": 59,
-      "26,69": 59,
+      "26,37": 57,
+      "26,38": 57,
+      "26,39": 57,
+      "26,40": 57,
+      "26,41": 57,
+      "26,42": 57,
+      "26,43": 57,
+      "26,44": 57,
+      "26,45": 57,
+      "26,46": 57,
+      "26,47": 57,
+      "26,48": 57,
+      "26,49": 57,
+      "26,50": 57,
+      "26,51": 57,
+      "26,52": 57,
+      "26,53": 57,
+      "26,54": 57,
+      "26,55": 57,
+      "26,56": 57,
+      "26,57": 57,
+      "26,58": 57,
+      "26,59": 57,
+      "26,60": 57,
+      "26,61": 57,
+      "26,62": 57,
+      "26,63": 57,
+      "26,64": 57,
+      "26,65": 57,
+      "26,66": 57,
+      "26,67": 57,
+      "26,68": 57,
+      "26,69": 57,
       "27,37": 1,
       "27,38": 1,
       "27,39": 1,
@@ -2531,107 +2663,111 @@
       "28,69": 9
     },
     "RowStyles": {
-      "8": 60,
-      "12": 61,
-      "13": 62,
-      "14": 62,
-      "15": 62,
-      "16": 62,
-      "17": 62,
-      "18": 62,
-      "19": 62,
-      "20": 62,
-      "21": 62,
-      "22": 62,
-      "23": 62,
-      "24": 62,
-      "26": 63,
-      "28": 60
+      "8": 58,
+      "12": 59,
+      "13": 60,
+      "14": 60,
+      "15": 60,
+      "16": 60,
+      "17": 60,
+      "18": 60,
+      "19": 60,
+      "20": 60,
+      "21": 60,
+      "22": 60,
+      "23": 60,
+      "24": 60,
+      "26": 61,
+      "28": 58
     },
     "SheetStyle": {
-      "FontFamily": 1
+      "FontFamily": 1,
+      "BorderBottom": null,
+      "BorderTop": null,
+      "BorderLeft": null,
+      "BorderRight": null
     }
   },
   "Spans": [
-    "10,1,1,31",
-    "14,8,1,3",
-    "15,8,1,3",
-    "17,8,1,11",
-    "17,19,1,2",
-    "17,21,1,11",
-    "21,8,1,6",
-    "22,8,1,24",
-    "23,8,1,4",
-    "23,15,1,6",
-    "23,24,1,5",
-    "24,8,1,4",
-    "20,8,1,24",
-    "19,8,1,24",
-    "14,11,1,21",
-    "21,14,1,18",
-    "23,12,1,3",
-    "23,21,1,3",
-    "23,29,1,3",
-    "26,0,1,33",
-    "28,0,1,33",
-    "8,0,1,33",
-    "14,1,2,7",
-    "17,1,1,7",
-    "18,1,1,7",
-    "19,1,3,7",
-    "22,1,1,7",
-    "23,1,1,7",
-    "24,1,1,7",
-    "12,4,1,10",
-    "24,12,1,9",
-    "24,24,1,8",
-    "15,11,1,11",
-    "15,22,1,3",
-    "15,25,1,7",
-    "10,38,1,31",
-    "14,45,1,3",
-    "15,45,1,3",
-    "17,45,1,11",
-    "17,56,1,2",
-    "17,58,1,11",
-    "21,45,1,6",
-    "22,45,1,24",
-    "23,45,1,4",
-    "23,52,1,6",
-    "23,61,1,5",
-    "24,45,1,4",
-    "20,45,1,24",
-    "19,45,1,24",
-    "14,48,1,21",
-    "21,51,1,18",
-    "23,49,1,3",
-    "23,58,1,3",
-    "23,66,1,3",
-    "26,37,1,33",
-    "28,37,1,33",
-    "8,37,1,33",
-    "14,38,2,7",
-    "17,38,1,7",
-    "18,38,1,7",
-    "19,38,3,7",
-    "22,38,1,7",
-    "23,38,1,7",
-    "24,38,1,7",
-    "12,41,1,10",
-    "24,49,1,9",
-    "24,61,1,8",
-    "15,48,1,11",
-    "15,59,1,3",
-    "15,62,1,7",
-    "12,25,1,7",
-    "12,62,1,7",
-    "18,8,1,24",
-    "18,45,1,24",
-    "6,63,1,6",
     "1,7,1,5",
     "2,7,1,5",
     "3,7,1,5",
-    "4,7,1,5"
+    "4,7,1,5",
+    "6,63,1,6",
+    "8,0,1,33",
+    "8,37,1,33",
+    "10,1,1,31",
+    "10,38,1,31",
+    "12,4,1,10",
+    "12,25,1,7",
+    "12,41,1,10",
+    "12,62,1,7",
+    "14,1,2,7",
+    "14,8,1,3",
+    "14,11,1,21",
+    "14,38,2,7",
+    "14,45,1,3",
+    "14,48,1,21",
+    "15,8,1,3",
+    "15,11,1,11",
+    "15,22,1,3",
+    "15,25,1,7",
+    "15,45,1,3",
+    "15,48,1,11",
+    "15,59,1,3",
+    "15,62,1,7",
+    "17,1,1,7",
+    "17,8,1,11",
+    "17,19,1,2",
+    "17,21,1,11",
+    "17,38,1,7",
+    "17,45,1,11",
+    "17,56,1,2",
+    "17,58,1,11",
+    "18,1,1,7",
+    "18,8,1,24",
+    "18,38,1,7",
+    "18,45,1,24",
+    "19,1,3,7",
+    "19,8,1,24",
+    "19,38,3,7",
+    "19,45,1,24",
+    "20,8,1,24",
+    "20,45,1,24",
+    "21,8,1,6",
+    "21,14,1,18",
+    "21,45,1,6",
+    "21,51,1,18",
+    "22,1,1,7",
+    "22,8,1,24",
+    "22,38,1,7",
+    "22,45,1,24",
+    "23,1,1,7",
+    "23,8,1,4",
+    "23,12,1,3",
+    "23,15,1,6",
+    "23,21,1,3",
+    "23,24,1,5",
+    "23,29,1,3",
+    "23,38,1,7",
+    "23,45,1,4",
+    "23,49,1,3",
+    "23,52,1,6",
+    "23,58,1,3",
+    "23,61,1,5",
+    "23,66,1,3",
+    "24,1,1,7",
+    "24,8,1,4",
+    "24,12,1,9",
+    "24,24,1,8",
+    "24,38,1,7",
+    "24,45,1,4",
+    "24,49,1,9",
+    "24,61,1,8",
+    "26,0,1,33",
+    "26,37,1,33",
+    "28,0,1,33",
+    "28,37,1,33"
   ],
   "PageInfo": {
     "$type": "Forguncy.Model.Pages.NormalPage, ServerDesignerCommon",
@@ -2655,8 +2791,7 @@
       "VisitMode": 2
     },
     "RowBreakLines": [],
-    "RepeatRangeSettings": [],
-    "RelatedDataTableName": "T_OvernightRegistration"
+    "RepeatRangeSettings": []
   },
   "PrintInfo": {
     "ColumnStart": 0,
@@ -2682,4 +2817,4 @@
       "Formula": "現場表示印刷画面_長期!$H$2"
     }
   ]
-}//w7kxMZsGFW3xhND1msf2SY4GQYHpTFira/sXyZbmOTijdEdot7cy3Se8O27BYKJOXDl5QcuU/un8U8b/GDXaXL/MlyLPiry/QdfyVh2XhelGkEFV5xr6RKT3q6rFYA/porIobCUxnqtDPdKiwm+CE9nNv5pwz3haaKl4IJmlee4CJfRbnzhy+4GWJSe74VA/X093+V89HNJ0cI8K7FXgbZgNKWHO5nPrUJ7EKpdHjZZBxY8owB4JdDJ7UjWnGQoaPtWIA38FIIGZ68bX7MweB2bMWle4xdboUpeSF57L1APv+TWgKe22l/prSOcXS+xoL6w4wJAMGDofZg5WJDelGept9Drd9donckHLn1Jga2fLmnOJ7xBKaf8Fpq2F47MFC1h0pHelUn6XDCW/B4Q1kRlP9FttJfM7ZV4wFyXY9OWTTF7TBmhnD2z5OkStRzvqY469qHDpsPm+BRtqC5vLFTBqB8PmWpE35PxxrcxLzOBhs0u4IkdyZIPfcKPd4pcy0NDDmtxk4D0KdMFVXT57DUW5QB1MWw5hg51HE+KkLqn2W+lI0gff5ONZ7XGeO/YQR3W0FL0fm7tCBXc7cEcDmr+8of2WLcu0sreTGr/uHp2FkRUwPalHwWeIhqe8mX42z1eoAqdPEscD42UXV71ttQeq9d+fG7d3LONVj2VEWs+aEBYOOpZfYXbeT21881hW7CAKMrbLGYZt3tCl9syF+tjS4McG3SSHS9GxTJzoCAfC+6n2pFGrgL8T2GZEiLik2N23Qgv1HgWiriJtncK8SP7/YNyrP/FvTDfpPHUpuKcyLE6IJKfmOZfhtEtx2DZE3pa8MvGx52+APyQ7yVsGHWNJW3WeCb3jZ98ygRB2U/SL0B9JYdowwh6mM4oValDJyGHq52DbUPjZrqdvibN1lw==|920
+}//tfcJ+fsSs9SaTlMPwRQ8wxcnXwRGEBeFIy/oK66v1tyh2KA/dxu1SfG+vrH09aFPJeA38GInJqRu25lwqp3aOJ0JtLuHKayDzF06GMM0uKYmEgL6LCikcDNIjKMDJsBpK0VlXVtObrB7ITjpbN/Xvlq7FkzfSNpFY8EPD8MhsvusNcQGmx6If3TyPaRq+4noiY9gIuq3Av+zFFXtCTZP0Cyc5DxsFe+WA39a2N8zAqah+wuZskwrI9e1ZhEn7kAkibqA3JUTWmEcTQzmtgkGwMhU1ZODasGBXYF3ewQcdT4wq3IvMTv0IR8ZVhrfSeG3xce/ForX9KZeWeD0VA23fDtRob51kq2z6Aepzkc3+H6McvZsrKGftq3QXj9Y62HX18LPprJtXU+kQSTWyiLzAOJvPHhHONUSBZ7AvqFXvqpJTdqzBIKIzaOZwYwX56mZhIJzJCfVwioigyHuhFk86Yh1LXFydcBtvJn3Xkzekd8uZEERPFf6u59xpT4IlI5Scz2vp0qDYMSKbjuOZQEos2/5nHUOG4goJq1Raui6eLfBcDUo0weO3w2VEhRhzIf8VuT0cpO0gott4Y8R1n474sMMRq67w4BpqKRfKZ5q9crUllWH0sEeWpXPyxsrWkF1VIK0FyQMSCmyNureIuW2p3wzx2rkti3JEMy1AU8GUGCwlgR9OEX0jpJCvXEpPfddODpstmRl4cMtc/BLGuKJ1y5mJoUCvSERJViJr2nUaR/YRQMFIgAY5Ta0vuVgojFfP9JsqkTAD7dJZOYHfxC0M4gkiWzrFbdpM9JCF59iafZHAIvhIHEF87m2ZpdeS6S4ZVcA+xi24iz6yb5htUWJnr37VFaCZne13/zPuZWu+wDl8g2Ex1WqEAJdBB6zm5AOs0YJQsL64gXn3Q8BQt7PYA==|920

@@ -75,22 +75,38 @@
         "Foreground": 0,
         "Formatter": 1,
         "HorizontalAlignment": 2,
-        "VerticalAlignment": 3
+        "VerticalAlignment": 3,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
       },
       {
         "FontSize": 14.666666984558105,
         "Foreground": 4,
-        "Formatter": 1
+        "Formatter": 1,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
       },
       {
         "VerticalAlignment": 5,
-        "WordWrap": true
+        "WordWrap": true,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
       },
       {
         "FontSize": 16.0,
         "FontWeight": 6,
         "Foreground": null,
-        "Formatter": 1
+        "Formatter": 1,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
       }
     ],
     "Types": {
@@ -116,7 +132,11 @@
     "SheetStyle": {
       "FontFamily": 7,
       "FontSize": 13.333333015441895,
-      "Foreground": 8
+      "Foreground": 8,
+      "BorderBottom": null,
+      "BorderTop": null,
+      "BorderLeft": null,
+      "BorderRight": null
     }
   },
   "Spans": [
@@ -128,6 +148,9 @@
   "PageInfo": {
     "$type": "Forguncy.Model.Pages.NormalPage, ServerDesignerCommon",
     "Title": "メールサブスクリプション",
+    "AuthorizeInfo": {
+      "VisitMode": 2
+    },
     "RowBreakLines": [],
     "RepeatRangeSettings": [],
     "IsBuiltInPage": true,
@@ -137,4 +160,4 @@
     "Margin": {},
     "PaperSize": {}
   }
-}//5nSglz2taGM0xY/oT4AAUptownE6NPlfUAuzGwiz7BfrVXz5PFyDtoiQBt61flpA17JMrZh/5Lg3tJUlnKFEEr07HzWUao41bmO4DklEpIvCjBs4HBE15SCyRGnRM6cdPJJ7IMKnq+ZnBDNf3h47FmTVYRHdMZY6NBI/fqizotbb23KrkriDO8AUDD7KK1YRpUPxpQFgsHXg+Mj1V5gVPQ3dGJJE3ElDdBcMsgG1xjWy5rrlHoEbqFyplLYYqm8za6OJC1DEZoe/eb/yGgW8c1qx45ZdErClzgrI4HCjss3ByN8uUWBb0A4yLr209YkuEZiczjW3c1qX9VSZpQvvOs9D5Lfye+DYhXaDP6gY05tB0h/VVMUJImAWVtpVNUCpR9PAgw5fvkvFvlMlZbgkAdaGarfqhq0QRXW97LAoySoxixfJr+K1+atcJI3ihejcIdTp56jJNzJU70uKS986JpcZPvY1+R889Cjx2VYdNRPjW9328jHtFOaBTeRABcxXB6+vtQmD0MDcVC7iTw1CFKtyqujKOiGbqu4cwgdwHiCHgKhBYZU4UDKH/8XhApduqNvqV7lnqsofJLhhR6ar+qnyfflYax4fJ1udjSGv3436BgSQminRiqRBEASlgNNpv7oimx76ocsr1m2Gwh9NdW5fFBDxG5SbB6Dr5gw/h6Qq9rueCiULxRDoEsYjHjOXR8dYRm/VVJSFss8xNq/CaFHkkia8jiOPoPb7f1WNfPYxqc/GOdDdvikel9o1dfFPQQzTSWbfonyVBweVoIOHT6BB6wBvZbJ87mAOUBZgka6lJlsngnssfpFqGG9hrCFie6SXuP6ydpaEYw9rTMZZ0n6+63Y+QwT79FAy29ZASw10bBcV8bqpw8QyUs19CHcYzk3cCfeIxA1XTxK4cWpWVQ==|920
+}//TKd4gTLNn7yYapV4kJw+HFk7FmA/7Q7aROTm7G1kciJmrcn8QNOtnk6+Vx6IE3BPSONatXjp882ltdd0prf/+o8OIRAjSUzoN3PGvQLz8JSKrlac4CfOricEWx2booMudZXFOy+Jt5d/gbT1ibrmnnsMrth7TuGVyHOie38NBtM3aZKlsd9YwKzv8Gn+U1D88YWiB7oGD5C6HUmttyT8y8NcF+hmdjrglRuE3Y6uUKSJQggqFXGVZ3a767g8qsxrQtBdo7rTc0vdaBC/16S6ZohJEjon9+iWOjAiQt9aspssUCmeTPo5GyqtWMVhmrDKftA+q+GyGdnn8r4NSYfWZA3QObjGAoL9BaKIQKp4KO53twAZhskuLkvjhMBrCC6009navdgTamzhjURdfpehhwFEEhuioWDR72Lg0olz0G+Ge9nHMxfUXY17Fpr6niAi4v3h4+7a98XRm/vlNGx0KkDhxp0cVr8h4EbdDTd6rJT+3bKS5wYmGPASrE/oL3Hhz8qbVY6t45Z6AR+UroDTPwOTbGrUzrTALiccpGpRSZ1Qt4fjjBE2GrPDDSpGt6+kw8Iqcr9gwp9ZD4XmDdvwsMk0cNbZb010JK8zrUztC3JY8CM5Y0LckyiOFKB4/WsZRBIxp1B3ZrBCRsiER9qc3GqoSUUHstkSx71jBcjHYFIdnPTtJAybCW5Xo4TDTuDtiMXzxyNJF6geiPw/xbZv474h4fUtBtzZcCl4AbIjQBquqFtIo0ZjMgj/dWqrCMzfHjgblvUWBc2CFceZtmqXeRvh19mSjY8Ph0M1QtFTEeoxd2UDEM0myZ4McTGE+HQ2KmRoJEOBTyOc6gBJGEKsy10rJvXFrwitLwV902eJnIJH0nMxfeS0vlT8WObJ1/rcth6XNhKi3cmjKXKoVyj8+A==|920

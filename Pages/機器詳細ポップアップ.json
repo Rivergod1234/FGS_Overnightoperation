@@ -790,7 +790,7 @@
                     ]
                   }
                 ],
-                "ID": "28b33679-0742-4325-8adb-dc3e684d57c8"
+                "ID": "8d87001e-accb-464c-999b-b2ac099bab27"
               },
               {
                 "CommandList": [
@@ -806,7 +806,7 @@
                     ]
                   }
                 ],
-                "ID": "975ab2e6-028e-41c4-9466-f9c3fc027d3a"
+                "ID": "9f384fd9-83a5-4ba1-a4af-7c83fa9ca8f0"
               }
             ]
           }
@@ -1047,10 +1047,6 @@
       },
       {
         "Background": 1,
-        "FontFamily": 2
-      },
-      {
-        "Background": 1,
         "BorderBottom": null,
         "BorderTop": null,
         "BorderLeft": null,
@@ -1261,9 +1257,9 @@
       "2,26": 2,
       "3,0": 0,
       "3,1": 2,
-      "3,7": 5,
+      "3,7": 1,
       "3,15": 3,
-      "3,21": 6,
+      "3,21": 5,
       "3,30": 3,
       "3,31": 2,
       "3,32": 2,
@@ -1283,14 +1279,14 @@
       "4,4": 2,
       "4,5": 2,
       "4,6": 2,
-      "4,7": 5,
+      "4,7": 1,
       "4,15": 3,
       "4,16": 2,
       "4,17": 2,
       "4,18": 2,
       "4,19": 2,
       "4,20": 2,
-      "4,21": 5,
+      "4,21": 1,
       "4,30": 3,
       "4,31": 2,
       "4,32": 2,
@@ -1322,13 +1318,13 @@
       "5,24": 2,
       "5,25": 2,
       "5,26": 2,
-      "7,1": 7,
-      "7,37": 8,
-      "7,38": 9,
-      "7,39": 9,
-      "7,40": 9,
-      "9,1": 10,
-      "9,5": 11,
+      "7,1": 6,
+      "7,37": 7,
+      "7,38": 8,
+      "7,39": 8,
+      "7,40": 8,
+      "9,1": 9,
+      "9,5": 10,
       "9,6": 2,
       "9,7": 2,
       "9,8": 2,
@@ -1342,8 +1338,8 @@
       "9,16": 2,
       "9,17": 2,
       "9,18": 2,
-      "9,19": 12,
-      "9,24": 13,
+      "9,19": 11,
+      "9,24": 12,
       "9,25": 2,
       "9,26": 2,
       "9,27": 2,
@@ -1394,8 +1390,8 @@
       "10,38": 2,
       "10,39": 2,
       "10,40": 2,
-      "11,1": 14,
-      "11,5": 13,
+      "11,1": 13,
+      "11,5": 12,
       "11,6": 2,
       "11,7": 2,
       "11,8": 2,
@@ -1464,7 +1460,7 @@
       "12,38": 2,
       "12,39": 2,
       "12,40": 2,
-      "13,1": 15,
+      "13,1": 14,
       "13,6": 2,
       "13,7": 2,
       "13,8": 2,
@@ -1534,12 +1530,12 @@
       "14,39": 2,
       "14,40": 2,
       "15,0": 2,
-      "15,1": 12,
+      "15,1": 11,
       "15,2": 2,
       "15,3": 2,
       "15,4": 2,
-      "15,5": 13,
-      "15,6": 16,
+      "15,5": 12,
+      "15,6": 15,
       "15,17": 2,
       "15,18": 2,
       "15,19": 2,
@@ -1619,9 +1615,9 @@
       "16,38": 2,
       "16,39": 2,
       "16,40": 2,
-      "17,1": 10,
-      "17,5": 13,
-      "17,6": 16,
+      "17,1": 9,
+      "17,5": 12,
+      "17,6": 15,
       "17,7": 2,
       "17,8": 2,
       "17,9": 2,
@@ -1634,9 +1630,9 @@
       "17,16": 2,
       "17,17": 2,
       "17,18": 2,
-      "17,19": 12,
-      "17,24": 13,
-      "17,25": 16,
+      "17,19": 11,
+      "17,24": 12,
+      "17,25": 15,
       "17,26": 2,
       "17,27": 2,
       "17,28": 2,
@@ -1686,9 +1682,9 @@
       "18,38": 2,
       "18,39": 2,
       "18,40": 2,
-      "19,1": 10,
-      "19,5": 17,
-      "19,6": 16,
+      "19,1": 9,
+      "19,5": 16,
+      "19,6": 15,
       "19,7": 2,
       "19,8": 2,
       "19,9": 2,
@@ -1701,8 +1697,8 @@
       "19,16": 2,
       "19,17": 2,
       "19,18": 2,
-      "19,19": 12,
-      "19,25": 16,
+      "19,19": 11,
+      "19,25": 15,
       "19,26": 2,
       "19,27": 2,
       "19,28": 2,
@@ -1753,8 +1749,8 @@
       "20,38": 2,
       "20,39": 2,
       "20,40": 2,
-      "21,1": 10,
-      "21,5": 13,
+      "21,1": 9,
+      "21,5": 12,
       "21,6": 2,
       "21,7": 2,
       "21,8": 2,
@@ -1825,8 +1821,8 @@
       "22,38": 2,
       "22,39": 2,
       "22,40": 2,
-      "23,1": 10,
-      "23,5": 13,
+      "23,1": 9,
+      "23,5": 12,
       "23,6": 2,
       "23,7": 2,
       "23,8": 2,
@@ -1840,12 +1836,12 @@
       "23,16": 2,
       "23,17": 2,
       "23,18": 2,
-      "23,19": 18,
+      "23,19": 17,
       "23,20": 2,
       "23,21": 2,
       "23,22": 2,
       "23,23": 2,
-      "23,24": 13,
+      "23,24": 12,
       "23,25": 2,
       "23,26": 2,
       "23,27": 2,
@@ -1897,7 +1893,7 @@
       "24,38": 2,
       "24,39": 2,
       "24,40": 2,
-      "25,1": 15,
+      "25,1": 14,
       "25,6": 2,
       "25,7": 2,
       "25,8": 2,
@@ -1937,7 +1933,7 @@
       "25,44": 2,
       "25,45": 2,
       "25,46": 2,
-      "25,47": 19,
+      "25,47": 18,
       "25,48": 2,
       "25,49": 2,
       "25,50": 2,
@@ -1977,8 +1973,8 @@
       "26,38": 2,
       "26,39": 2,
       "26,40": 2,
-      "27,1": 10,
-      "27,5": 13,
+      "27,1": 9,
+      "27,5": 12,
       "27,6": 2,
       "27,7": 2,
       "27,8": 2,
@@ -1992,8 +1988,8 @@
       "27,16": 2,
       "27,17": 2,
       "27,18": 2,
-      "27,19": 12,
-      "27,24": 13,
+      "27,19": 11,
+      "27,24": 12,
       "27,25": 2,
       "27,26": 2,
       "27,27": 2,
@@ -2014,7 +2010,7 @@
       "27,44": 2,
       "27,45": 2,
       "27,46": 2,
-      "27,47": 19,
+      "27,47": 18,
       "27,48": 2,
       "27,49": 2,
       "27,50": 2,
@@ -2034,7 +2030,7 @@
       "30,19": 2,
       "30,20": 2,
       "30,21": 2,
-      "31,1": 20
+      "31,1": 19
     },
     "SheetStyle": {
       "FontFamily": 2,
@@ -2050,8 +2046,11 @@
     "1,34,1,5",
     "2,7,1,5",
     "2,21,1,6",
+    "3,7,1,5",
     "3,21,1,6",
     "3,36,1,6",
+    "4,7,1,5",
+    "4,21,1,6",
     "4,36,1,6",
     "5,7,1,5",
     "5,21,1,6",
@@ -2089,10 +2088,7 @@
     "30,1,1,7",
     "30,8,1,7",
     "30,15,1,7",
-    "31,1,3,41",
-    "3,7,1,5",
-    "4,7,1,5",
-    "4,21,1,6"
+    "31,1,3,41"
   ],
   "PageInfo": {
     "$type": "Forguncy.Model.Pages.NormalPage, ServerDesignerCommon",
@@ -2130,7 +2126,7 @@
                 }
               }
             ],
-            "ID": "ffbc172f-b29e-4662-a382-0a12b2e56606"
+            "ID": "1678c3d8-b88d-413e-9656-e452926fac55"
           }
         ]
       },
@@ -2251,12 +2247,12 @@
                         "$type": "Forguncy.Model.StopCommand, ServerDesignerCommon"
                       }
                     ],
-                    "ID": "1d3b551a-821c-4df8-86c8-23c0f5fcdefe"
+                    "ID": "afc99532-2c32-44bc-b8bf-afca7826b1f8"
                   }
                 ]
               }
             ],
-            "ID": "c4f3e80c-8b8e-4b7d-9693-954625531c3a"
+            "ID": "96d1e818-7070-4259-bb36-22c9452394ec"
           }
         ]
       },
@@ -2319,7 +2315,7 @@
                     }
                   }
                 },
-                "ID": "f6e3ed013dc348bda66a5625c5ebeb6e"
+                "ID": "f853ea6100d04c8f90186dcd6999bffd"
               },
               {
                 "$type": "Forguncy.Model.Commands.SetParameterCommand, ServerDesignerCommon",
@@ -2369,7 +2365,7 @@
                     }
                   }
                 },
-                "ID": "6b5a59811aab4b6e82864ec2a80a0a54"
+                "ID": "ca8bca55a1914cfcb6345453fad9fb2a"
               },
               {
                 "$type": "Forguncy.Model.Commands.SetParameterCommand, ServerDesignerCommon",
@@ -2405,7 +2401,7 @@
                     }
                   }
                 },
-                "ID": "ff54c462850147aab6cbebc8b5278a14"
+                "ID": "3c162990f3e84d81a902e9722cabe400"
               },
               {
                 "$type": "Forguncy.Model.SetCellPropertyCommand, ServerDesignerCommon",
@@ -2543,7 +2539,7 @@
                 ]
               }
             ],
-            "ID": "a422f023-ed26-4282-93d7-dfa008418882"
+            "ID": "57b28279-b820-4286-8c8f-078c2cc59696"
           }
         ],
         "Disabled": true
@@ -2670,7 +2666,7 @@
                 ]
               }
             ],
-            "ID": "1f7357e2-9346-4f40-8827-da83fc7812f1"
+            "ID": "19baef17-469e-4870-9213-67bd3fdea9ab"
           }
         ]
       }
@@ -2679,11 +2675,10 @@
       "VisitMode": 2
     },
     "RowBreakLines": [],
-    "RepeatRangeSettings": [],
-    "RelatedDataTableName": "T_InstrumentBasicInformation"
+    "RepeatRangeSettings": []
   },
   "PrintInfo": {
     "Margin": {},
     "PaperSize": {}
   }
-}//USIjf6ushsxF4wZwyLR6ShB09Gl9W33AcrVrihNwOOhhMH9UnOfzAswfgKYFI3/MRHHyFAT+h4zttDwE+VdyiyFsvLT5b56z9DSlozkjwQ3lqr/lIyaKp09nCFUfpEl81CISva1I1jIA66CyOMhiFaBZxdEKf0uYQIMCy45YrbQz/i/BV/jwAYBZ9FcJDVwf7SAqvJ684gZ8d7oZ6r9S0nBMzKQo7XkD39nyVdreYhObN5ACGGNxciqSX9oGQcRoHQcw5eYIMQaOvxvKevjUeo9n1kpWMlKBrhbhcJ6G/oIoMD6b40UtlvrmXfIquf13UxuB2H7MevhA26igRjl1Gqk2aTMZIsC/O9AQEuLwUUuJbLXITITWphqAhzboz0SeqnQWKLw14bTSyd1vp5m+9qXHqdwtaCIrVIwre1mf1Z806v+1a6tKbuUF1wsyj3XUBLwEcPXRThx6qW+U4DxMZ6RCk8+6Z8CcN9pu36a0Cem/5JJXFR/MPySmbym3hF1oP58WoLG/LjbvvFi7Se26UmQcKJvRIHcf5UxN103seNjmscg6ZD0F7ZWlazioH8YiRVHzCv/Qdp4Ez4gSf5Q37CF3AgKuLb3cqNx1rA49Cwac1pJ8laZ9e4uxKLLIIh2CJ+VgBoUiZY6e5F/EwW3zes0RM8zNUBukvNsyibk7lm8nrUXcGSwADymaKmEN4jNfaaBnE6/C8fo9RNhJ1cPXYgcf61yR/FbtIxkEgZQTK3bjU532TZbcRAi5ThB3uxqvP04I1rLEPxfF1zybEheAYuMQrlkEQFCJQggUIcqT/3uKijcntO/wHpTSQN6NIA7fia5fE5a/Scl74zqqcoZSdc8KYFRrz4RvCEBLDeC2gg4ISsfB3X5N+yWENZT4hsv42m4ijDIge/91/Nt7YJsvQA==|920
+}//RPbdvc2TrWNdpH4O1aHXOy0fEU7GQn6Sw+ELb/CQU6yPL2edipHEtT1YRLMuDm5v5+O7RBFqpgBtASVCxTIK/zjTcZTePDX27RT8pNT59GhRmE5P/TVFOuyyYHGR3x3VP5cfU/EKxfZdZO5PNcNacXW/kaonqP+nxKcKu0pd9B5+TGj1jnG6BxmvfV/bwtpiI0f2TF2/xo6iqV8tdCT0iMkYqw6YPli0SyXD+Wfn8TwNJI01e+3WPbsBiPqAV9+Uk0Q93n5sUprno5Ur8PMxl4Oq4vxONrtAbOy9f0gpS/JV7HgDN0rP5bL153LjQbFwBSa0q63EvxmHUH0AjIGOHqqBcbCqeOWzZSGk6XauqL8QGJ+pPvcv018tpnUBZ0zqslvAaK+L6Uu6zENiqH/0GW8olIslvG9A7yvsEkBZTNrbQx/K3xZeRGZaCYbgmCQIHk5OCxa1MTeqZEtZNPdnri7bvMzuunW5AwDBviBStrQQqKpH642pgWUx1Af2seCWDRwU9yEJPfsszkkpvSKoqmSRoABiAdgGJ7z3peCHWb+akBezQAOd3c5CLImmczLpNcVuDxuMor5PwP9xaES0csvSI2cFOGsTYeTi1t6IINwcPU+xEouEVwKDX0zmkJ++LRPLknQulI1FaX3bXX3kyRhGamWfq1dzH9kAA0n6CxD/bdLcMXoU+lxK161In0rShEfScmPnaV2dPpEAs/KxyCDDMgYG0YOIzKa9cvpcFl5MXnElqoOKRLFMkE8bJW+JGOlPaxxZaAwSAzvexBVOZw/3o5q79zqHpZTmgHCIZK3gs4hYyrTk2d5t3TaDkKLs/1oWi+GuI1ITvvFrU5UOE2K08ssiOG5iX1RKP19qNlg3ofnIuTgy4V5k4iovf3zpt2H06yg0I96FX/YP1bsWfg==|920

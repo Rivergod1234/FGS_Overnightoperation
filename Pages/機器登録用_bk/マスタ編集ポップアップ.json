@@ -33,7 +33,6 @@
     "1,2": "※マスタテーブルの型・桁について問合せ中のため、点検項目マスタの追加処理をコメントアウトしています。",
     "3,2": "編集対象マスタ名",
     "6,2": "並び順",
-    "8,2": "点検項目",
     "11,31": "新規登録"
   },
   "Formulas": {
@@ -109,7 +108,7 @@
                             "$type": "Forguncy.Model.StopCommand, ServerDesignerCommon"
                           }
                         ],
-                        "ID": "4d6460f9-5989-41da-857e-7900896c0f95"
+                        "ID": "34be124c-cfc5-458d-a972-e21b42672ad9"
                       },
                       {
                         "Condition": {
@@ -142,7 +141,7 @@
                             "$type": "Forguncy.Model.StopCommand, ServerDesignerCommon"
                           }
                         ],
-                        "ID": "9d0039bb-57a5-45f9-9ed3-10d95f4d53dd"
+                        "ID": "503ec962-1a72-45b6-9d2b-2c412af93374"
                       }
                     ],
                     "Comments": "未入力チェック（マスタ共通）"
@@ -182,11 +181,11 @@
                                 }
                               }
                             },
-                            "ID": "2670deb48fec49dc9be2732cd2591f60",
+                            "ID": "68c1faf32c7b42f5bb69a9f38cd08538",
                             "Comments": ""
                           }
                         ],
-                        "ID": "0fd84d18-42e6-4428-9138-e6ccdb9be1a5"
+                        "ID": "84d7dafc-5f1a-4602-847d-9a0882df3367"
                       },
                       {
                         "Condition": {
@@ -232,11 +231,11 @@
                                 }
                               }
                             },
-                            "ID": "00375ab8ce314f448e5c93caf22a19fb",
+                            "ID": "e5f908173aa04bd1977dbf224f32472a",
                             "Comments": ""
                           }
                         ],
-                        "ID": "21e5f521-c7b1-40f7-8bb6-d82d6fbc3f5b"
+                        "ID": "f50272f3-c8b4-4bce-aa7c-983c9a00c19b"
                       }
                     ],
                     "Comments": "並び順の重複件数を取得（マスタ別）",
@@ -276,7 +275,7 @@
                           }
                         ],
                         "Comments": "重複チェック",
-                        "ID": "c13b0855-0e8b-402b-847f-cc42547a8478"
+                        "ID": "4d360388-6af4-45c2-888c-b91b5dab278e"
                       }
                     ],
                     "Comments": "重複チェック（マスタ共通）",
@@ -323,7 +322,7 @@
                             ]
                           }
                         ],
-                        "ID": "8c27ff38-6a9d-4dda-b240-aba1b2a220cc"
+                        "ID": "7a017a27-0713-42fa-a76f-ab28a34e1e24"
                       },
                       {
                         "Condition": {
@@ -368,7 +367,7 @@
                                 ]
                               }
                             },
-                            "ID": "7e4a459b67454228ad778daa43bdb627",
+                            "ID": "39a7f6f78acd4d3da42f8a004252a11f",
                             "Disabled": true
                           },
                           {
@@ -406,7 +405,7 @@
                             "Disabled": true
                           }
                         ],
-                        "ID": "ec4222aa-6211-4f44-881f-53683573ecd5"
+                        "ID": "30be1dd9-d73b-4a17-ae09-951e24bac5e1"
                       }
                     ],
                     "Comments": "追加処理（マスタ別）"
@@ -423,7 +422,7 @@
                     "ReloadData": true
                   }
                 ],
-                "ID": "a65b961d-24d2-4fb8-be0f-b06cb7070143"
+                "ID": "5fe737ab-7d16-40b0-a474-d929b2f8e985"
               }
             ]
           }
@@ -436,23 +435,47 @@
   "StyleDatas": {
     "Styles": [
       {
-        "Background": 0
+        "Background": 0,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
       },
       {
-        "Foreground": 1
+        "Foreground": 1,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
       },
       {
-        "FontFamily": 2
+        "FontFamily": 2,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
       },
       {
-        "Formatter": 3
+        "Formatter": 3,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
       },
       {
         "Background": 4,
-        "FontFamily": 2
+        "FontFamily": 2,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
       },
       {
-        "Formatter": 5
+        "Formatter": 5,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
       }
     ],
     "Types": {
@@ -511,15 +534,19 @@
       "8,6": 3
     },
     "SheetStyle": {
-      "FontFamily": 2
+      "FontFamily": 2,
+      "BorderBottom": null,
+      "BorderTop": null,
+      "BorderLeft": null,
+      "BorderRight": null
     }
   },
   "Spans": [
+    "4,2,1,6",
     "6,6,1,5",
-    "8,6,1,30",
-    "11,31,2,5",
     "8,2,1,4",
-    "4,2,1,6"
+    "8,6,1,30",
+    "11,31,2,5"
   ],
   "PageInfo": {
     "$type": "Forguncy.Model.Pages.NormalPage, ServerDesignerCommon",
@@ -533,4 +560,4 @@
     "Margin": {},
     "PaperSize": {}
   }
-}//K79kTS/DTiPVoGP6C5kQbXnLShVlsyILaqDV/cs9bAlYc5xN9m73E+GKDOlErkbPi9JpsCLp25mDQC8bmXrTTiuBCN7uYjRA8UwxXp4Zu0K/rdm8ybRAM2l8nMMJHdXgKzTR01BoKQ3Qs9lrgKm6U8qNTqrxxFrkFmajtxkwLBMUP5ljQ1wAom1wDAZr6VlsBEdXZB5aUaFemCG3iQnyFrlLxC0A//9xYHs0wRgBYP63GKQ1b0XEmBAwUpiuiEtDQM5nDJUpsVmyXFw8+x11R8cECTws/fs18rSy3hGfeBtXKIcrs58t4K09EJcfMlWWvc+Q9GG8psjjuDQWA+bMUN/3klvTr7Aem1KkeiyJeVQf3Lv9PtZOblu8AgXW/Kc5SHDW6ge1BfKq7SbZuropyAnLTM2dzEkvaTYVtBVHEbwJ4EhOSf2jxiJA64qTz42rPjbp/kI9HmyvrDDCMEW1Au7X2k3EgrWf4IkO8/hFMpUtuFoaRKBsWDes1oyNeT61ZhTPkZ3Upowt0fczengPjyFtUoI85P7h9rlcG1jDVDmCRQpWN6noDTiTPnLTzI6doG00ij7edCYE7nWHABtg6DqoQvVjeQwhNOQlWH2tw59QJ3beepgf/ElpzrUQCLFb+oUaAA62pOMVRvsZ68mAelrifAzMOla+JmOHqoBHSd2LAboeQ3fif5pL8V1Mp492+fUujVKcuDBPNRpyYDsRnZ40mEn3bHW4Elf0WLWNLSZvhNS35o6sc7rGQhJsE1BBd3Ym1xnidOf9xzswI+iSi/eUlJNX3Q8XFpzm9fsrHhI41FA4HfcWCrx7QO/ssSF3UagWN3WloZZ0s9DwztJHPIMWbi8Af6FpLUGben78OeH7wxcXa33B+PgHSthRagoGavmum/Umir4lIiCimXvCIA==|920
+}//SlTxTFdkv+dx5VQJnMg/HwrRpWyGf5hYJ/apYaLFFoug+98LVNVfqLFW/6vXFGKB604VD6TZTfIX7+toXwwGpEkE3B8h5SbnmXjawyoAqbPysfHbpIsRxXpO1bkNfx+2VILYKSu4a94qL5Us/gCjlsCnCucSxTqZn5Fgy17n/XAMliI2C1Z7XsvevU3eRW0kxPa45B4OgqQ8mHlzqMp3A6k//MAMaa3DAgEoIabf213UvyONhHvHml3+7McAvq4EBkgEBlklvwJUdDR99p9eDlVBbGO6gJY0xfgIsQX7jGCSdJtKat4DSfhbeI48j1THSInf4nPHNdlZU9jKkI6gIUhGZQJ5tIB+Guq7PBW7t4dDj4zgtN/vQepKlpB1/NYMTLRWetonwe8/bFpXruK62+kSLPP7apTpSGH/vOo0FtS6a4NRFYkXsu8BQEMHpQaZ7SnXB+Zf36pRDVXA4KPH8MUF+F5MSVlvVpgBaioGIaQG8N7GeY2SP15ngyiRbuCuHWeMLZjF6vQ8238UmN6qwOMCaozPB1y50/LUBaHWH6eFS/ESCsEFQpos47nzPr3iK+ywLN70JQAnyxqay4UkTTkk8AnlJUUFZA90ErVUOL/41gX217AtyQKCEZvGWrqHgk796sTo7APVDpoSrlcycXD2EzaukZ7eFVHfdSbGd35BJr1HJ8HSIso4bIHygXSPpnu1zC0BmfCU+KS9isJta/jOU/kZFLTNhq88XYiFWAn9nnT9ixv6Krd/xLzls4v2J/KDTsNDT8mFrXcAz8LIkKQK5i7Fg2Bj4jc99yL2PMP01D08Wtdl4hfG6qH6DQ6iCga6sN4+kus+oRzWoHQb40JELrg7ipEHr/sekreaIbYIsJU/6KjPfHIL6EcyrZEYu2xd3ugEa2VkeKtLitSZ4w==|920

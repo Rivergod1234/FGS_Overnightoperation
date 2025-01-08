@@ -101,7 +101,6 @@
     "2,40": "%CurrentUser%",
     "2,48": "URL_届出ID",
     "3,1": "階の値で部屋番号を絞り込む",
-    "3,10": "IF(N6=\"\",\"0\",\"aaaa\")",
     "3,48": "URL_終夜フラグ",
     "7,1": "終夜運転機器名称",
     "7,13": "建屋",
@@ -127,12 +126,12 @@
     "17,56": "届出取下"
   },
   "Formulas": {
-    "2,28": "IF(B12=\"\",\"99999999\",0)",
     "2,10": "IF(N9=\"\",\"LL\",\"\")",
-    "3,10": "IF(Z9=\"\",\"0\",\"aaaa\")",
-    "17,3": "IF(OR(BS18=\"0\",BS18=\"\"),\"通常\",\"長期\")",
+    "2,28": "IF(B12=\"\",\"99999999\",0)",
     "2,54": "IFERROR(GETURLQUERYVALUE(\"notification_id\"),\"\")",
-    "3,54": "IFERROR(GETURLQUERYVALUE(\"longterm\"),\"\")"
+    "3,10": "IF(Z9=\"\",\"0\",\"aaaa\")",
+    "3,54": "IFERROR(GETURLQUERYVALUE(\"longterm\"),\"\")",
+    "17,3": "IF(OR(BS18=\"0\",BS18=\"\"),\"通常\",\"長期\")"
   },
   "AttachInfos": {
     "1,1": {
@@ -325,11 +324,11 @@
                       "=B12",
                       "=N12"
                     ],
-                    "ID": "07b8fdcec58a4a63859584f6394dea40"
+                    "ID": "6fff0cd240a14deabd2e6dbf3c504d3a"
                   }
                 ],
                 "Comments": "明日以降に開始",
-                "ID": "cc5042f8-cecf-47e7-a6f7-9fb934cc8967"
+                "ID": "e6db5b97-636a-4e74-abd2-7089e1f7f5de"
               },
               {
                 "Condition": {
@@ -514,11 +513,11 @@
                       "=B12",
                       "=N12"
                     ],
-                    "ID": "abb0d94eda3e4821bc4942de0329b5ba"
+                    "ID": "baf97fc70d3b4ea98ae4e318e777386f"
                   }
                 ],
                 "Comments": "前日までに終了",
-                "ID": "d3ffc3ba-c362-4aec-ab0c-ab0a18c1e805"
+                "ID": "435eb042-02a9-4bcc-b92e-9d840f135613"
               },
               {
                 "CommandList": [
@@ -708,10 +707,10 @@
                       "=B12",
                       "=N12"
                     ],
-                    "ID": "24567a0ad08c4eab9090f77dc48fa7b6"
+                    "ID": "be79f23a87964cf39706483989f16deb"
                   }
                 ],
-                "ID": "0149f622-8be9-4a3b-b012-e108c9dd84a9"
+                "ID": "788be5d1-a0fe-4f9d-8328-e7c7d7a77cf3"
               }
             ]
           }
@@ -758,7 +757,7 @@
                     "DeleteCachedQuery": true
                   }
                 ],
-                "ID": "59d1dd09-ddea-4763-bf03-e60c2fdf1632"
+                "ID": "5e7185d2-4867-4818-8d24-37bffc40243e"
               },
               {
                 "CommandList": [
@@ -779,7 +778,7 @@
                     "DeleteCachedQuery": true
                   }
                 ],
-                "ID": "4c35bc4e-6e59-4203-b465-8ab91055a71f"
+                "ID": "4a514d95-afa7-4586-979c-731d651c2688"
               }
             ]
           }
@@ -1212,7 +1211,7 @@
                     ]
                   }
                 ],
-                "ID": "51b9ea3f-fc35-46de-a94b-570fce5040ed"
+                "ID": "8a5d541a-ce29-4e27-9d98-46fb8a7d9122"
               }
             ]
           },
@@ -1265,7 +1264,7 @@
                     ]
                   }
                 ],
-                "ID": "3fe09a1d-47f3-4f3e-ae52-cf08cb29179f"
+                "ID": "41fd107a-81c3-42af-8394-f00adf5170f6"
               }
             ]
           },
@@ -1440,7 +1439,7 @@
                     "LoadBindingDataOption": 1
                   }
                 ],
-                "ID": "732f4301-7991-4fa9-a448-e6cb4740dc6c"
+                "ID": "1d31b780-78da-426b-b1a8-7753b185abd1"
               },
               {
                 "CommandList": [
@@ -1452,7 +1451,7 @@
                     "LoadBindingDataOption": 1
                   }
                 ],
-                "ID": "ec46a7dd-c835-470d-bb3c-47e9d65b9614"
+                "ID": "e2919912-c277-4b39-9e33-f7f198fe3f68"
               }
             ]
           }
@@ -1593,12 +1592,12 @@
                             "ActionName": "取下"
                           }
                         ],
-                        "ID": "bcb7ea0d-7305-4515-917d-e6183084362e"
+                        "ID": "412093e2-560b-4385-974f-b42c150fef56"
                       }
                     ]
                   }
                 ],
-                "ID": "56b0a721-a87b-4402-a64f-c86c9ab70a65"
+                "ID": "497f450b-6dd8-4a4e-8635-6bc14eaf4cda"
               }
             ]
           }
@@ -1659,75 +1658,139 @@
   "StyleDatas": {
     "Styles": [
       {
-        "Background": 0
+        "Background": 0,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
       },
       {
         "FontFamily": 1,
-        "Formatter": 2
+        "Formatter": 2,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
       },
       {
-        "FontFamily": 1
+        "FontFamily": 1,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
       },
       {
         "Background": 3,
-        "FontFamily": 1
+        "FontFamily": 1,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
       },
       {
         "FontFamily": 1,
         "Foreground": 4,
-        "Formatter": 2
+        "Formatter": 2,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
       },
       {
-        "Formatter": 2
-      },
-      {
-        "FontFamily": 1,
-        "FontSize": 16.0,
-        "FontWeight": 5
-      },
-      {
-        "FontFamily": 1,
-        "Formatter": 6
+        "Formatter": 2,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
       },
       {
         "FontFamily": 1,
         "FontSize": 16.0,
         "FontWeight": 5,
-        "Formatter": 2
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
+      },
+      {
+        "FontFamily": 1,
+        "Formatter": 6,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
+      },
+      {
+        "FontFamily": 1,
+        "FontSize": 16.0,
+        "FontWeight": 5,
+        "Formatter": 2,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
       },
       {
         "FontSize": 16.0,
-        "FontWeight": 5
+        "FontWeight": 5,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
       },
       {
         "FontFamily": 1,
         "FontSize": 14.666666666666666,
         "Foreground": 7,
         "HorizontalAlignment": 8,
-        "Underline": true
+        "Underline": true,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
       },
       {
         "FontFamily": 1,
-        "WordWrap": true
+        "WordWrap": true,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
       },
       {
         "FontFamily": 1,
         "FontSize": 14.666666666666666,
         "Formatter": 9,
         "Underline": false,
-        "Strikethrough": false
+        "Strikethrough": false,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
       },
       {
         "FontFamily": 1,
         "FontSize": 14.666666666666666,
         "Formatter": 9,
-        "Strikethrough": false
+        "Strikethrough": false,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
       },
       {
-        "WordWrap": true
+        "WordWrap": true,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
       },
       {
-        "FontSize": 12.0
+        "FontSize": 12.0,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
       }
     ],
     "Types": {
@@ -2264,12 +2327,22 @@
       "40,0": 0
     },
     "SheetStyle": {
-      "FontFamily": 1
+      "FontFamily": 1,
+      "BorderBottom": null,
+      "BorderTop": null,
+      "BorderLeft": null,
+      "BorderRight": null
     }
   },
   "Spans": [
     "1,1,1,10",
+    "1,48,1,11",
+    "2,10,1,5",
     "2,28,1,5",
+    "2,40,1,6",
+    "2,54,1,5",
+    "3,10,1,5",
+    "3,54,1,5",
     "8,1,1,11",
     "8,13,1,11",
     "8,25,1,11",
@@ -2285,34 +2358,28 @@
     "15,25,1,10",
     "15,35,2,8",
     "15,43,2,6",
+    "15,49,2,7",
     "15,56,2,2",
     "15,58,2,6",
     "15,64,2,6",
     "15,70,2,1",
     "15,71,2,1",
+    "15,72,2,1",
     "16,25,1,5",
     "16,30,1,5",
     "17,1,1,2",
     "17,3,1,4",
+    "17,7,1,8",
     "17,15,1,10",
     "17,25,1,5",
     "17,30,1,5",
     "17,35,1,8",
     "17,43,1,6",
+    "17,49,1,7",
     "17,56,1,2",
     "17,58,1,6",
     "17,64,1,6",
-    "2,40,1,6",
-    "2,10,1,5",
-    "3,10,1,5",
-    "17,7,1,8",
-    "17,49,1,7",
-    "15,49,2,7",
-    "2,54,1,5",
-    "3,54,1,5",
-    "1,48,1,11",
-    "18,1,17,74",
-    "15,72,2,1"
+    "18,1,17,74"
   ],
   "PageInfo": {
     "$type": "Forguncy.Model.Pages.NormalPage, ServerDesignerCommon",
@@ -2349,7 +2416,7 @@
               }
             ],
             "Comments": "URLから遷移した時は届出が「許可」された時なので、明日以降の届出を表示",
-            "ID": "8ef4eb70-c4cd-446d-bb9a-53f7c148582d"
+            "ID": "26d0c6e4-41e8-4cdb-a62e-f978222cb003"
           }
         ]
       },
@@ -2395,7 +2462,7 @@
               }
             ],
             "Comments": "URLから遷移した時は、印刷画面を開く",
-            "ID": "eaa981d2-2815-45e1-ad88-b7ff985ff42e"
+            "ID": "1b7c391b-e17f-42b5-9217-3ce5194cd6d2"
           }
         ]
       }
@@ -2404,11 +2471,10 @@
       "VisitMode": 2
     },
     "RowBreakLines": [],
-    "RepeatRangeSettings": [],
-    "RelatedDataTableName": "T_OvernightNotification"
+    "RepeatRangeSettings": []
   },
   "PrintInfo": {
     "Margin": {},
     "PaperSize": {}
   }
-}//xdBjHmLkGvNr2x2CiBxmLDvDPkAN6PW7hDxGhr78WPIT0Ff5I+lda1pDiLiaCdg2K2K9e+siY96S2dcvgA10w7buMlzI83UVwBaXZcFkrYpjAfbl5/IQ45/myXunJseqb11fxGv44FsNdqRipIhWV0kXQK+4r2RB7Q1LCbi1v7cwP9UuLW+CtAzg6CDtFlpWF1ow60NXnOh1iDFPZgmA8KoRSQpeEBP0K4biDQiPRQ9rhv4xouD/AG5DCwyfC0pw4HzkfwQtD9u6Ntpv37Azq3X9miK/8bPgz/wvwb7FGeLVgUR9wcxomlxzOhT+SOH6E2qgHUSB9/iLRVF4NfBPfy1iVQeMweIbhobG/HP/FzqvIfJjRr2BfRfUpOOQdFKDcUTOYPNKIdTVukPuHb4/PD6ataxmvTu5EAk/J0rP68WVQpz4LwTy4i4CdslaRKVs7BX05dfqsEFeVoETYtQA5ICBSBo+Xy4vUwYhkNs+utx4xL9udeNz22zqM0AxCFXfHB0RsYYPF7T7/Umurq5VmbpEeFzrY0jb79pG2yoAHpRwf1NgDtSCIUqdJ2gD0VggnfOq+G7XO7Rs6v6YjfCSdrihaEzXWGMtxfieUF/QpJEvF1JeWicDDo89XvnzXIneVP+sDlt4zDa6xbqFdjlrptj410tgiRPXDgk4xoehicyvjkWfBWOdUZXK7oHTkaELJjTZrQVaj+N+ejxGR91SsRY5nI2S4bKvZQn1gJG9I3mQrc+/3nstGP/XLeUtQtNOcZPXJeVzNiprW5+hGdyls93xfyzqVCFWSUUC+VtOXTMHzP6FxMsZhxGNS+XD5hkfirdCQOD0B6aBxFF0/po0MlZQstKQmpkYRw+y8xFPXneiItK4IFIG9Leq+IBDFXnmnBkgyV7nXnAIqUyPi1fI/g==|920
+}//kzwMgJvoHG3VDes84KQzcirJeOsz1cps34VtAbZ8LKqybGaHTNGEKtgFlOKY9743v6cTb28m7T4odxA3iUO6Q5m2gRv3+1uX2tABwA8Re22LSVwQ5WCx0huf5sp/0gqnJwppYxt2rJG61vjXhnmBZQgYgUgE4C/hL1l517A4TSGEcvwfwxbKsFKvTIaapxvEOz9rPU1cYawUZkzFwWiYM31FlKKcsAj7dl3Jc6k8sEeDokUxPM/ZrQBXuIV4OVJ7atBJILUhDH8SR7hmffOUreiSexTQr7BQi4MI6Kl4u+62qGB5wXKXnFZyhW6gGQ1yjpbMJJr0tKuiXB/Juijlnyu/gVbDJOXhgtSvh2TUmRRipQWw/KdPxP0lt0rjqLadk9NEQgy2JhBK9VOO5gtC7UUnuikhCFYabO25O7wz2JjO4KB7b0RV9fet8sxGJf6ZEfh1tDVyZIxxpgwLn3uup2XWcmZNuG2dB52q81oShbDy3doy26SI45+sYgD2nMhazSPR9XJvNILHZRSTX33w1NdavhENUv4t+pi/MrBmUFQSWxSl3AthsYWqFyUiVf+TYQuz+I54+xd1RXBnHmr5Koo62iYY8RI+C74qRVGaMqfJsV+ysohWs9Cm0wC5kl97fcmHPRQMes4M6WcyDk+1MACiqaOT5RajyUhw4MxQX6FBhKWC6Ms8JlyCQgrJjIQ5fRwa6DXJX39IedM/5O1gZkkjXsj3MniK0J8nY24lcrWWUYnQBmn8ChhGVx4WpjyF5pf3i9Zi+4xZTM7CoZcVtWx2GStWcaVZKiUEFRriizM0oiG2jlISk4LoKpEgLcHwmuFY1o0A8NIR1lvgqKMJUq9XSuO5xg0F9kgswo6NmwdWN20a4z44yN7ZRokScPKsMXY7TwL0OmLASAFkAdRo0g==|920

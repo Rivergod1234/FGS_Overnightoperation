@@ -215,23 +215,43 @@
   "StyleDatas": {
     "Styles": [
       {
-        "FontFamily": 0
+        "FontFamily": 0,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
       },
       {
         "FontFamily": 0,
         "FontSize": 18.666666666666664,
-        "Formatter": 1
+        "Formatter": 1,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
       },
       {
         "FontFamily": 0,
-        "FontSize": 18.666666666666664
+        "FontSize": 18.666666666666664,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
       },
       {
         "FontFamily": 0,
-        "FontSize": 17.333333333333332
+        "FontSize": 17.333333333333332,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
       },
       {
-        "FontSize": 14.666666666666666
+        "FontSize": 14.666666666666666,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
       }
     ],
     "Types": {
@@ -620,18 +640,22 @@
       "27,38": 0
     },
     "SheetStyle": {
-      "FontFamily": 0
+      "FontFamily": 0,
+      "BorderBottom": null,
+      "BorderTop": null,
+      "BorderLeft": null,
+      "BorderRight": null
     }
   },
   "Spans": [
-    "4,26,2,14",
-    "8,26,2,14",
-    "12,26,2,14",
-    "16,26,2,14",
     "4,10,2,14",
+    "4,26,2,14",
     "8,10,2,14",
+    "8,26,2,14",
     "12,10,2,14",
+    "12,26,2,14",
     "16,10,2,14",
+    "16,26,2,14",
     "20,26,2,14"
   ],
   "PageInfo": {
@@ -687,7 +711,7 @@
                 ]
               }
             ],
-            "ID": "912d3a5e-ace7-401f-aa06-2adbb3d458d9"
+            "ID": "248cfbe3-9c40-488e-a9a2-5121853cb927"
           }
         ]
       },
@@ -718,7 +742,7 @@
             }
           }
         },
-        "ID": "fa313ec44f3a453081e193df430c2d29"
+        "ID": "5d793377dba1445cb5190c2d89c65289"
       },
       {
         "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
@@ -752,7 +776,7 @@
                 ]
               }
             ],
-            "ID": "dc8808db-c2b2-4884-8640-c09e87035366"
+            "ID": "c9249537-ad8b-4ffc-b09d-bf1e990793e2"
           }
         ]
       }
@@ -767,4 +791,4 @@
     "Margin": {},
     "PaperSize": {}
   }
-}//jBNaU51EOBNhf9/s+08GcADyd3SQTZCwEztmou6xCDRlCEqg5024FzRqtAwQ3+i9Dp8mhLmB/B5FakgaPzFNMCYtb5R82aY65P+RTc/9XIo8kk4IkJ0YloviX0YuMH46uwUK+XvHGYaefkp3rx4Ds4QKvoCJydGgZlHEI8Hv0FkrvTdwzB/Nl17RgK8KoTlKJfecxEMe5JOreZiW/OSvxwJ+X3Ljgr3S6NCmPdLnjVYu8LRuO99XmH99lrECLpVwinQJd1TKG96zbE27zOBlx082R8sgZl4m+cTduLSYH/asBi4AYPzuiYx6umeFvc/PPUN2IzqRqn6NbX0TNGum8VvW/nZBH57pxu/XQ2AIOzD7TFWujJphw3HOsvQ4jtO+L/qoHpzrBWDVtfr2Tv8D/oupK9GGXIlph10Nzxrkczbh3z7WnrP++AtEHPNz2YJAWxvOxfQuP0nUOxynlFwb2Uwgygztgp7ON8dwJvxCpe0gSaZTppws1CXiIhcVrtofMMIfi8IdjqrzsqFD7Wbj5MuFwZmcjnpv+keJW79cvP8jKwEvL4hWmXRW22BxRkVGF4yFB9oXhIeaLpj/6RQfEE1j0/aKcgcouHvsQBN2F3BsiKYqTgXhHbGe8SwlxXmjr3jhULE7Il58FjVV21ScAupMejIqz28ZYTpNYFwWZmOMYUt4cO2lxrmF0bEcansXuLS/Em8POnWsHyjX4TyXrWHdKqk+wX06R+Jj3OoZSjgK1mDDif2O3k0G4R5ZA/f/H1HS6lDOR0Y4x7OYQjqq4pL2nK46J1dG5fOSn2GBZvQZh0Yu1m0CeYYDBK1ZoQDXXbsNwJWGu8Awakha4+/1FqcMUA4FBC62TP9klN3wW+2MAoBdWlYpP677DbvYqp60N7+hMp+exDJeu3rpoAjSkQ==|920
+}//BJ/STDq/ExYfFfUrSEztrgAy40cWJGweTgqIZE1phVZE2L7D9vTxTqGmY/IqG5ORZufRHTRvWMB2HYTkRAwndiz1lD4/RDvRX28VVYS6UXK9G+0sIJVe2fFkFHru8/0HZauXOh+XtXWQaCGN7Sv+fB/g6sgEogSvBkHp/riwzuxJC+vzOKWDFaku3/0+lBaP6f+H+IJsu05rLzu6ia+6xA2cvZbr7An7kr3SOSnZ8Z6h3VbkFwSUKkb2Viku6m0PO1PriDjldnbW29X+5uoZupVReXkaC4UlGSXiDXQMfqYjsKTMfrXIwjYtdFgCHD7rTnOlJbMmbVnovdXHGI6JrCWJ2ZM0I4KjYKQfCfWbI/xB2/2z3iZ18KAjH8gm8gOqQTmQfYoDdGowQvE1FpUJw9esK+ieDa/pLSfEcyj4ZCQh/Izq/bNAnMUKcPmU0+8rXbe+b1XG6C4WlWADMC5F+WBcKdX4ApY8y/Fq9rt9B6QpwM0AvHyqHWNZV/N6Plt/3T+CsGAT8kuraVyvLlH20x0lQSi2q3WtwMj7DzH/KaITT6/i7nlajexiguS3VTXOpM2u73Cluc2SsiU4E4MnytNC5rvaoBQW9L7it7qURqMm2NO8K18KmUXmsOmvPp1a8auWCL0jW75CdWfgOf2KcE8/KGYQ4cqjmwWCgm9TxMq0Tz8gCSycom2EvwtonLA6KbiGR2Hes34zvwCAudI2ObQWGwxPkFkDtwRe/nxzxxIz9Fd6JXA28KbSBK72gAM/HjLzjMgVIVpSbehTMkdgQLV0i35VlmGanLQEjxEvGD7BHkQX7mE3QevUsRMqu+pxmt9nFDrYVGtnthwxB1lGNzyan+qUU6OAg7mVmkpQRdhVTFyI4RRlp8grZY65rYj+l+HeNyYnbk+rvcYZLN3EQw==|920

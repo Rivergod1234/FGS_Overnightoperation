@@ -107,14 +107,14 @@
     "17,35": "削除"
   },
   "Formulas": {
-    "5,9": "TEXTJOIN(\",\",TRUE,W4)",
-    "4,30": "COUNTIF(AN18,H15)",
-    "4,9": "TEXTJOIN(\",\",TRUE,S4)",
     "2,30": "COUNTA(H18)",
+    "4,9": "TEXTJOIN(\",\",TRUE,S4)",
+    "4,30": "COUNTIF(AN18,H15)",
+    "5,9": "TEXTJOIN(\",\",TRUE,W4)",
+    "6,30": "IFERROR(ODATA(\"lum_view_employee_department_relations_duplicated?$select=department_code_lvl04&$filter=employee_z_code eq \"&IF(ISBLANK(J4),\"null\",\"'\"&J4&\"'\")&\" and department_code_lvl05 eq \"&IF(ISBLANK(H12),\"null\",H12)),\"\")",
     "9,7": "TEXTJOIN(\",\",TRUE,Q4)",
-    "17,7": "\"代理者\"&ROW()",
     "11,24": "IFERROR(ODATA(\"lum_view_employee_department_relations_duplicated?$select=department_name_lvl05&$filter=employee_z_code eq \"&IF(ISBLANK(J4),\"null\",\"'\"&J4&\"'\")&\" and department_code_lvl05 eq \"&IF(ISBLANK(H12),\"null\",H12)),\"\")",
-    "6,30": "IFERROR(ODATA(\"lum_view_employee_department_relations_duplicated?$select=department_code_lvl04&$filter=employee_z_code eq \"&IF(ISBLANK(J4),\"null\",\"'\"&J4&\"'\")&\" and department_code_lvl05 eq \"&IF(ISBLANK(H12),\"null\",H12)),\"\")"
+    "17,7": "\"代理者\"&ROW()"
   },
   "AttachInfos": {
     "1,1": {
@@ -149,7 +149,7 @@
                       "Value": "%Null%"
                     },
                     "Params": [],
-                    "ID": "b1636137997244c184213bf79766ef67"
+                    "ID": "5233b90ba354490ebbc580cb1a0d1627"
                   },
                   {
                     "$type": "Forguncy.Model.SetCellPropertyCommand, ServerDesignerCommon",
@@ -166,7 +166,7 @@
                     "$type": "Forguncy.Model.StopCommand, ServerDesignerCommon"
                   }
                 ],
-                "ID": "44657708-7475-4e9e-aefc-1c7e6b727675"
+                "ID": "88883de4-e097-433e-b8ab-19c39491d1c9"
               }
             ]
           },
@@ -217,7 +217,7 @@
               "=AE7",
               "=H12"
             ],
-            "ID": "44d65f470bf043d6be052928a376dfe0"
+            "ID": "5fa2f10076b74038a38c1351b752645b"
           }
         ],
         "Text": "検索用SQLクエリ",
@@ -477,7 +477,7 @@
                     "$type": "Forguncy.Model.StopCommand, ServerDesignerCommon"
                   }
                 ],
-                "ID": "3e45fef6-a850-4b6c-be63-5f5e690272f7"
+                "ID": "2df5fed9-68d2-4267-a6e8-3bc4e6ace09e"
               }
             ]
           },
@@ -505,7 +505,7 @@
                     "$type": "Forguncy.Model.StopCommand, ServerDesignerCommon"
                   }
                 ],
-                "ID": "e27c2f58-e124-474e-a6a9-67124b0ee22e"
+                "ID": "42b89b81-78cd-4612-ac3e-d8d25d08e44b"
               }
             ]
           },
@@ -534,7 +534,7 @@
                     "$type": "Forguncy.Model.StopCommand, ServerDesignerCommon"
                   }
                 ],
-                "ID": "a6f46ce9-44bf-475c-a03f-b3c186c3aa7b"
+                "ID": "bed6c818-5b42-4aec-ad4c-afbf501d6ee4"
               }
             ]
           },
@@ -564,7 +564,7 @@
                     "$type": "Forguncy.Model.StopCommand, ServerDesignerCommon"
                   }
                 ],
-                "ID": "40ecc40e-329c-4e04-ac85-ac87add7d248"
+                "ID": "9a06ece0-9723-40f4-9479-394f39bdd4a7"
               }
             ]
           },
@@ -676,47 +676,94 @@
   "StyleDatas": {
     "Styles": [
       {
-        "Background": 0
+        "Background": 0,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
       },
       {
         "FontFamily": 1,
-        "Formatter": 2
+        "Formatter": 2,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
       },
       {
-        "FontFamily": 1
+        "FontFamily": 1,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
       },
       {
         "Background": 3,
-        "FontFamily": 1
-      },
-      {
-        "Foreground": 4
-      },
-      {
         "FontFamily": 1,
-        "FontWeight": 5
-      },
-      {
-        "Background": 6,
-        "FontFamily": 1
-      },
-      {
-        "FontWeight": 5
-      },
-      {
-        "FontFamily": 1,
-        "BorderBottom": 0
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
       },
       {
         "Foreground": 4,
-        "HorizontalAlignment": 8
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
+      },
+      {
+        "FontFamily": 1,
+        "FontWeight": 5,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
+      },
+      {
+        "Background": 6,
+        "FontFamily": 1,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
       },
       {
         "FontWeight": 5,
-        "HorizontalAlignment": 8
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
       },
       {
-        "HorizontalAlignment": 8
+        "FontFamily": 1,
+        "BorderBottom": 0,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
+      },
+      {
+        "Foreground": 4,
+        "HorizontalAlignment": 8,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
+      },
+      {
+        "FontWeight": 5,
+        "HorizontalAlignment": 8,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
+      },
+      {
+        "HorizontalAlignment": 8,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
       }
     ],
     "Types": {
@@ -908,31 +955,35 @@
       "21,6": 10
     },
     "SheetStyle": {
-      "FontFamily": 1
+      "FontFamily": 1,
+      "BorderBottom": null,
+      "BorderTop": null,
+      "BorderLeft": null,
+      "BorderRight": null
     }
   },
   "Spans": [
+    "1,1,1,8",
+    "2,30,1,5",
+    "3,9,1,5",
     "3,16,1,2",
     "3,18,1,2",
     "3,20,1,2",
     "3,22,1,2",
-    "3,9,1,5",
     "4,9,1,5",
-    "5,9,1,5",
-    "1,1,1,8",
-    "17,7,1,5",
-    "17,35,1,4",
-    "17,12,1,23",
-    "2,30,1,5",
-    "4,30,1,5",
     "4,16,1,12",
-    "18,7,4,34",
+    "4,30,1,5",
+    "5,9,1,5",
     "6,30,1,5",
-    "14,24,1,4",
     "9,7,1,16",
     "11,7,1,16",
-    "14,7,1,16",
     "11,24,1,15",
+    "14,7,1,16",
+    "14,24,1,4",
+    "17,7,1,5",
+    "17,12,1,23",
+    "17,35,1,4",
+    "18,7,4,34",
     "2,16,1,2",
     "2,18,1,2",
     "2,20,1,2",
@@ -948,11 +999,10 @@
       "VisitMode": 2
     },
     "RowBreakLines": [],
-    "RepeatRangeSettings": [],
-    "RelatedDataTableName": "M_ApprovalAgent"
+    "RepeatRangeSettings": []
   },
   "PrintInfo": {
     "Margin": {},
     "PaperSize": {}
   }
-}//MKqSItqQ9DqoZTRnmZdUFjkj/gNulJ8JABJlgxLcUWZ4+QuJSbblnwu6WsB0Mx6tlyKc5DNMaoYghYiwgnxyAZix9h8k8E9ZdlztOLysfp1YO6GQ5iZmLZveqdb9EbjqdXvZ3v7AfwGiWynm3Dd7pHm5UyrGhCvnmcAnQ9xFcQ+l+0y77QXjsdOeOM+BaYktdIcyZACzqpD9CvSVxCPNjft+SNJVU7oPcO4zMs+bTS/K7/LefK+Vm+IvWCU5UR37Q1l1oAQHpbe/VkOkhn85XIAOdrqPrFCNEHP1ldUKLJSPVfIjv4PYdlAXxAt+nue73RV/2wfiq5sCJymJF+oqaOftxZKMdVZRWWbFA/zebKCkQ57yhbh0QcCgCRtn2FcvVL60I5An9FmN/H/mXNtAw7LgYc1OQHOvFT5fHaFhaKCUmF4tQwmES7axSdxxy+0JeXihiaexEE/C8CSH6ws6ovEiurKJCbNMiOLY6UDzlejOQIFJdMmCtRhIMCxQ32OTkKiskQ9rQXk+2agQkGoit2l1dp0a3vEvoaytXMAtK2bD5rKSdH1FlLKoE9XS4s0YWepeZWEePbhYFGutkIt4a7FzIRhEwfjeiohskZFJpowapSHQ59vuKzPoPUSHJGEltQG0LIziXH940l8+8Ff6LPnYlwFKyAtfABYaFAJ47QEUvxGi0LYghWOFFWYUf2RhPcTuV56gUXje1ewJqHaH6bn4g8MZbgL4pxTH9TUqjmClGH5uX23V3et/lYGxI+j2fQB6W5msaYB5fMwUhgUqhzZbo9sxmoUG8ux9FyiqSPXayJ9MisGmesIrpfsnbtTEmjUDOTfBb4sHEIVnT2SJmEvBx9nRk7/f8yPAp1iMC+URuLwdVtcKp/Ls1Lj/0URYWOqZU/uxYm1oswuPiTFWcw==|920
+}//rH/REQoEhXxEuYesFG+xf3VT6Vgoqy/UQ2CFtdZsANFgDEDlcCdSMt/p/+p+syx6ixKZYpxOt7mDdYrAuFJhzna54sRdMe6js90ah6Upt3Wcj8Co/MaaioxDtVJJMgcMX2K4ls7NFvyGhzX63yS5QZh+a4h31BupLtBRzatchoN+RL443r91zS6rdZtX5IORIm8AromPqBb64uotrmd/XcSxWMiDy9it4dA8rAwaLyBllgeSvwatF7NrqevYcj4+GVFQp+U4PnEZqro8w9wyfUJtc0t5NsoAlBdyv8DsBDTEG1uq65ezZ42+gC+3Vd2OEh7b2FPiUIdnUTg6lo1thZnEfoudnD9uYzBDtgBgfpd6Bs7E9oWhHv1BfjvD8Pc3t8PfoqJNjkB+9k+QJa18Nu6/KyxH9XT7S9h82Nu9P016DqAUV9s9qdV/v00mHABFbEty5tXUwAuw1/JSIu7MnFR3owD0rpoaLy9WWrTleFf2X78k9QyN8D6E7+8/SDGZ3rHlj+jMqEyUCz0nZLFvU7Eu2r/5Mq2lAqI66DhsTvo3unxiec0FaVXtccALa0OUbgXMNul+wfP1bY5ynwqkj/sAn0ty8qHeAVu4/oicivjKBKu+un2flF2W5BmgXUyeIm8F2Ztov9xnNleRaJXgX0ktNuUbcQA01cy6nvsrGs46lagExLCMqv6bP7+qAA4/hdvm/61cr5dv13c9+Dh2kKOaPmWRx23H6veMyTkmuWmHqXWLrV/xDWKBYWE/sMn4fL08ZfB4w1JH0nn5mcwEG3x9K0e3heDBQGRTsde4LSpiwhkE6meAGIh7WjRQESeNN/5rSzVnsClb+GdmRkGuq4lZzA87oHX0vXCkcdoQG1lS3ix0X4HBm/qTfLUsQqoZwm8dPbbbRNX327gHyoxA2w==|920

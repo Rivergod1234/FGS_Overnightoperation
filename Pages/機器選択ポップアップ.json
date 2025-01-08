@@ -208,8 +208,8 @@
     "4,62": "IFERROR(ODATA(\"V_BasicRoomInformation?$select=Second_Classification_Code&$filter=basic_room_Information_id eq \"&IF(ISBLANK(BK3),\"null\",\"'\"&BK3&\"'\")),\"\")",
     "5,7": "O8",
     "6,7": "IF(O8=\"\",\"LL\",\"\")",
-    "18,63": "ODATA(\"T_InstrumentBasicInformation?$select=InstrumentName&$filter=EquipmentId eq \"&IF(ISBLANK(BG19),\"null\",\"'\"&BG19&\"'\"))",
     "6,62": "TEXTJOIN(\",\",TRUE,BG19)",
+    "18,63": "ODATA(\"T_InstrumentBasicInformation?$select=InstrumentName&$filter=EquipmentId eq \"&IF(ISBLANK(BG19),\"null\",\"'\"&BG19&\"'\"))",
     "34,15": "重複ID"
   },
   "AttachInfos": {
@@ -245,7 +245,7 @@
                 }
               }
             },
-            "ID": "8c359d514480496ab792fb063415cf25"
+            "ID": "0043265dcfdd4685a46f2b42fa0b81d0"
           },
           {
             "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
@@ -275,11 +275,11 @@
                       "Value": "0"
                     },
                     "Params": [],
-                    "ID": "8734288c3579463a87819ecf02c437a4"
+                    "ID": "82f9e17ff16e49e9b6edeb3d653200b5"
                   }
                 ],
                 "Comments": "検索条件クリア時はデータを空にする",
-                "ID": "ef831eab-413d-4fea-9fb9-dbd783da05dd"
+                "ID": "cbe7d840-5a96-4a95-b1c7-c123f7523f95"
               },
               {
                 "CommandList": [
@@ -374,10 +374,10 @@
                       "=AB11",
                       "=Unite_Classification_Codes"
                     ],
-                    "ID": "f66b5483191646e089d0a7d6ffe54d7a"
+                    "ID": "cf320cf442214768bb8ff25e83f8d017"
                   }
                 ],
-                "ID": "770e99f1-0c35-48b2-88b6-9071ee119414"
+                "ID": "87a9eea5-0a08-4d47-b7c4-7213406d228d"
               }
             ]
           }
@@ -910,7 +910,7 @@
                     "$type": "Forguncy.Model.StopCommand, ServerDesignerCommon"
                   }
                 ],
-                "ID": "9141ee5f-fb0f-4804-9aeb-b2ca3e82dc27"
+                "ID": "6995da5e-56a5-4cba-8bdb-f29da6842581"
               }
             ]
           },
@@ -940,7 +940,7 @@
                     "$type": "Forguncy.Model.StopCommand, ServerDesignerCommon"
                   }
                 ],
-                "ID": "7ed356d0-0c8b-45b8-9ca5-637056a13744"
+                "ID": "af537491-104d-4889-854d-4e80141ad932"
               }
             ]
           },
@@ -1047,7 +1047,7 @@
                     ]
                   }
                 ],
-                "ID": "472d463e-355c-43b4-943a-7221ffbb36cc"
+                "ID": "088a6f7d-34e8-4641-8527-8ae2e470c800"
               },
               {
                 "CommandList": [
@@ -1056,7 +1056,7 @@
                     "PassValueBack": true
                   }
                 ],
-                "ID": "294f7852-dcbb-4df8-b702-83301175fbdb"
+                "ID": "09753175-bf25-4129-a356-29ee3c9b5984"
               }
             ]
           }
@@ -1135,7 +1135,7 @@
                     "$type": "Forguncy.Model.StopCommand, ServerDesignerCommon"
                   }
                 ],
-                "ID": "7715958d-3f17-4971-bcbe-2e7a8abe4a12"
+                "ID": "0856a87e-366b-4158-bc71-b889d468df9d"
               }
             ]
           },
@@ -1215,12 +1215,12 @@
                             "UpdateRowType": 2
                           }
                         ],
-                        "ID": "a5e560fd-1b90-4986-a9ef-1d6770011319"
+                        "ID": "74fe84bd-7f72-4e60-856c-bfcdecd45706"
                       }
                     ]
                   }
                 ],
-                "ID": "04de7cde-10be-41c1-b776-2dc7130af3ff"
+                "ID": "25813738-3354-41b5-a093-4aea20be4220"
               },
               {
                 "CommandList": [
@@ -1260,7 +1260,7 @@
                     ]
                   }
                 ],
-                "ID": "0c99562a-3128-49ac-8338-dc922fdb7443"
+                "ID": "3338c2c7-45d1-4f58-b761-a5572d697fa5"
               }
             ]
           },
@@ -1479,7 +1479,7 @@
                     "$type": "Forguncy.Model.StopCommand, ServerDesignerCommon"
                   }
                 ],
-                "ID": "8bb5e413-a317-4b23-bcc4-de90f8f04ba6"
+                "ID": "fa2b1078-0499-4bec-aaae-e2a5b54f029b"
               }
             ]
           },
@@ -1739,7 +1739,7 @@
                     "DeleteCachedQuery": true
                   }
                 ],
-                "ID": "054290ac-a3eb-450d-b633-df38e201e0f5"
+                "ID": "53f3b233-6efa-41a7-828a-4275f72e74b1"
               }
             ]
           }
@@ -1927,7 +1927,11 @@
         "BorderRight": null
       },
       {
-        "Background": 5
+        "Background": 5,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
       },
       {
         "FontFamily": 2,
@@ -3550,6 +3554,7 @@
     "4,62,1,4",
     "5,7,1,5",
     "6,7,1,5",
+    "6,62,1,4",
     "7,14,1,12",
     "7,27,1,12",
     "9,56,5,14",
@@ -3582,6 +3587,10 @@
     "18,26,1,6",
     "18,32,1,6",
     "18,38,1,6",
+    "18,56,1,2",
+    "18,58,1,5",
+    "18,63,1,9",
+    "18,72,1,2",
     "19,1,1,2",
     "19,3,1,5",
     "19,8,1,8",
@@ -3591,17 +3600,12 @@
     "19,32,1,6",
     "19,38,1,6",
     "19,52,6,4",
+    "19,56,12,19",
+    "20,1,12,51",
     "34,6,1,5",
+    "40,1,15,74",
     "57,1,1,4",
     "57,8,1,4",
-    "40,1,15,74",
-    "18,56,1,2",
-    "18,58,1,5",
-    "18,63,1,9",
-    "18,72,1,2",
-    "20,1,12,51",
-    "19,56,12,19",
-    "6,62,1,4",
     "17,56,1,2",
     "17,58,1,5",
     "17,63,1,9",
@@ -3639,4 +3643,4 @@
       "Formula": "機器選択ポップアップ!$G$35"
     }
   ]
-}//dosVYSK9Jd3iBc1ngSg+sMXi1xkwraxpzuvB4ruPNLrBWHs12mkP4fyae8a4jxE+tp/TDR3t0bYUSjRWFfG8fw7b5Xc7HmjgKlT9+ZvdEdGYkbxGabm+mfWtaFs19wS98CLLTytbJ/hmeHBeg+eY6qiFKY0H9bMeTJmMBDP7mARHmdnpoXkPmrcqiMHA65MyCDij89ib/JpE5CbGOxY0exUe+jIaKXK6gXPqsP31p0yJ4MZL+45sxJLtUnGdwRJf0zBaYg9g4ZQZ88igrMM8jNI76gBVHPtmuLrjJFWvEETQd7U4reU7MOT+VGihZQuqusyCOEYP9rwZyDC/UZ8Y2V9IoC0TjA7u0eTeQIx0auCeP43ZLv8kVkJS60oVAvKegp0dXY4wv2kysSjBllnY2oID78VwbQrbf1G/PAOnEYxudcrkYILMY/PVpHpW3nlfr83MBp2tIZoSGC6ejSXzZl1eka3wFNd2JJ7GNvRFy0cquEoGAB8KKVBYNotoNA7WUJk45wW0fzUcyPSGRddjlQXM0isidOpKEvTCRTr9OHBqPdtoq57NzOpV3RfEe9UC7Doh7eccUOICGV7ZodCR8BZV/DQUveQUqVnxyUAcPwsYRkFHU9Bc3TC6vTyrjFon5pftJwi11IEAWFCDiazpkC+yN45IhUkRf3YwnlLItPMelNyxdv63qAPf9cPTn2U1k5zOPQWVZTZZ4ddbOIqfW7CMmY9cORYtAaCZ+CcN+2fsy0apUdMmb938Dyq3sM3GYTooVZDZ+kQrZ7v0JCcEZ675K/BUWPLceinyhcKSCEhk24twB1Na5YjNGpre1XnSyWzpSi3fHeGDPsw16IrbFMneeS6vzor0U5f+MDYMDZt6rEobugqbYu+LNKtjjOAG1z3d9qtAoIHZK/vPlMCoJA==|920
+}//cAQBtElIjsaO9+8RUTTzP0q1jQJZ1b0mdfPa8jp8V0nbRlUAIoBmjhsKDTKhf4ZATH+rRoshlWDljk1sKQGLRN0GQUpuhtNe3VJi8JaWHkpCREOoPgOWJQqj2T+3JbWWDjpgiG++uP4EQf3SbUFh7mdHf284Kd0POOz5L4o8e7qTg8fH208Jx0txiSuDKpwVECZcDofulcZNzQebXw1pOTEdoMu2Jvh/pi/SFmsRNS8dMtEe45AwFToYdEZFLRXsItELcHcmz9mwvqFQbkBmr7kTqzrq1JBU+yQb+/8sZT7BNvdoBREQtESy7NTfFUH2iFA9SHH1cNTrCqeieAjWT4HUD8zT/2RQNQ5eUszIZbhbWePNfJ7aIgauK0p7lU0lH0ATJBpiagJsEPuaMJ3hGRc4ZuXeZZaBlW2ZlJe3hdxFYC2g0NgYCB0h9pX1BNG6W9f4EECg5oJv6xDn/FojlxaiYayTe1F37dXIPLkr5+ReX7YGqcpQAZp384OruGZEYGucBWS8S9wni1Wjt8vuXQ+v3iqFc3OIV+aW++dSxb6H1cwiT53ZzOX6f4HlaALmuUP09lUXqgUsl186ANET30M/oOpqWn6MXZTPnPxkAOSg4B9cJBzTfyKZTAx8zfxjAl/7esmfAFjMxv2lAY5uBqyllOuj0jRNWd/8ParZg8qfniygmG892ZHNw3iHvm3r/cfH/aXbcdoqJkrkf59VKQHg4wIqjhpDR621gazFOxbky2xI2TUohQRCdv6ZZleMeOJOaPptmqg2Kew8reAlAgiItxUmZj3w6hgllVFkR8ivc5CpQLVG38serbmmLlFuz/m+LH7aEvveCtKX9N3A+xM8JNfaMAXgpqFxVGEfHMC/81gsDNuK8s0dGvVjndea9LqKWsG0ybMrZuQeamD+Cg==|920

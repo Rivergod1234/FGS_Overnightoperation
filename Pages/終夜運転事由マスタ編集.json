@@ -126,7 +126,7 @@
                     "MessageFormula": "削除しました。"
                   }
                 ],
-                "ID": "83d21c1a-243a-4aff-ba32-b6991e3794b7"
+                "ID": "184b3053-1531-49db-9cac-66dd25197fed"
               }
             ]
           }
@@ -163,15 +163,27 @@
   "StyleDatas": {
     "Styles": [
       {
-        "Background": 0
+        "Background": 0,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
       },
       {
         "FontSize": 18.666666666666664,
-        "FontWeight": 1
+        "FontWeight": 1,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
       },
       {
         "Formatter": 2,
-        "HorizontalAlignment": 3
+        "HorizontalAlignment": 3,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
       }
     ],
     "Types": {
@@ -196,16 +208,20 @@
       "32,0": 0
     },
     "SheetStyle": {
-      "FontFamily": 4
+      "FontFamily": 4,
+      "BorderBottom": null,
+      "BorderTop": null,
+      "BorderLeft": null,
+      "BorderRight": null
     }
   },
   "Spans": [
-    "5,24,1,5",
     "4,1,1,9",
-    "9,1,18,29",
+    "5,24,1,5",
     "8,1,1,2",
-    "8,7,1,22",
     "8,3,1,4",
+    "8,7,1,22",
+    "9,1,18,29",
     "7,1,1,2",
     "7,3,1,4",
     "7,7,1,22"
@@ -217,11 +233,10 @@
       "VisitMode": 2
     },
     "RowBreakLines": [],
-    "RepeatRangeSettings": [],
-    "RelatedDataTableName": "M_Operation"
+    "RepeatRangeSettings": []
   },
   "PrintInfo": {
     "Margin": {},
     "PaperSize": {}
   }
-}//FsV6fM1fmTxhM8yKqYic027XCcm98yjXAesHSJduBv/8X5B+kk/gszczdCi65MXOmgogVt+fpw4MdiUjcxUupw45dKdmMupyK8pOPR09HZB3iW4AWfEHa3eeMxwEfjmx3KxxhTrSaDv35nFqXUu4ifQJdBQaMSJ7y0FZGKltLkEjh2pw/7U3O76jddOECQnfTNLYUsDdk0J/Q0lsGF1cWos2KoTgGaUPwJeHE7oig/nsERMnK3CFZVxXxtK3XmJ73M7vbrvnZFu05MJvgYlhR2Bo6ecwhirvvt74/uhZwUe7sW11tEuBwIBry9gD999bT3y4KdWc0rPtRR8GbcCvPfTalu4gaYb7GrOwtrjzwoAsxjIpTkwRNlRPcizEGWUu4jynrYIHcwkJ/e5lrRCeHzYELjqn8lnV0xXQJF7c8RLLzPLLbSuPE6hWAFoyd3iQMgQd32YgHt+WD0qkIie/Nkq3CnSIj/CTdua3KXN1QYSk7mExIrmaMkv9YMjj5sG3Y5tyV62d3CmDTWMjiyzkZCwa+97hpbwY1KY0E8msJgzSs4nyGRwWLXJOkTWmaFm1J4nVvoGy70fENxCa0amU++hxU4N2jHedhpeEKYcjtcYwahhBnZBasC4B7dLR1NJgKLxO3nuJ2lub5s613gt07b+BRes0o+hfF5dLkdBM8NK/zdPnORxsCxDMpHmATb2eByNTj02pGL7yYvhYmnuqXieifNDbD0Ix2uUTYmCF/DUvt94SIJ+HMCdtdOqhANKYEaqBLqr9oXge+455wRhPgIQUq9U4aOxyOuQ7m6OJ0r1Xtfa2ivK7GmLrvlMStpoml/b+tquSzpmlmXeisiLhFotzXWQEmxQtPeetV6wxzqL5h3ylRiCJ0NgxL/k6uignVrDHGZbPgRo/iyU8WfqzJQ==|920
+}//02WAViaCWcJ79tDDXstl/gqOyvCOTbf/Djgk89/Emq7IPhSXA/KLgdx+Vdv7vsSGQNYZf1mFECMqDS4MAPkCZ1KW20YKWihcgqp1HzVzS5D1oLDHx1UtDpfHAwQMGy/AoAsuMWsWGhuduKQMaDF8lpr4vhEEKQJwcJb9ygodzAas00hC2yS+OSX6k8/4QUA+GH85gD3QPcPSRHTlL8t0Appj7SelChxk6G3dGlRZqbkJTUlDkG1OoOouaLNAa4bHsScKlyQMSY5arN89mRvkFATHPQFtXYDGxJkhHC9MtEoflJALq6yZV/ciPG9uvo4wrqJX5tsYDQAspGdbYvCthaWIRlUSHpCFt+oElrtq63WjVBAkbvvJNSwa08WxbFGEqlru1s5weMAMzQUViOrh8kwWyUYrTBb0H38J8IaxSV9RNL5Gyd0dlMoKP5LlD83Cnm89FhjVfAoLNxET5PZj7Jvv610jWLsVvUkhI5FzddrhF0iB+NxRRU39d19u0tAwIGPQN1pyaTDid0NGJyq+tw7oan6jp3mOOzqFhZVdoGEaxc9MYsRFKyAw6t9w+jCutlU2zftUfLWf5EdRVtQ1DFcMFoBmYIz56S0dP+ma3+sy1Uk3tzJHKK3aT8K6Te7Zg68N8Nc6o7tPNAjrvhdVcZT6oQypHqpkGdf7Q24829Scl5GsMMTrtT71NHCfOdYY9ZbYFe+7wwYD0LlfReFkZ2nThsd0OYduF7XdqDGIifv9CXJUV78C0WGP5RV8zkp3mhpMRXCFXqFcOrJJICyeBRlQlirxgN6VjAVTVS6nqMjmvRgD4eyEqeB+RqRCSK0zdAHSWPr04xWZLCOQ0Po9OQ29fSqz4zPrx2YgbwAjgpHiPNXLlpzaxPWJgKcHykG1tv3mo0VBGVNAGV5fdewk3g==|920

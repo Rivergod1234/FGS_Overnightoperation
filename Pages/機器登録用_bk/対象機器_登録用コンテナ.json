@@ -97,9 +97,9 @@
     "10,14": "選択中機器一覧"
   },
   "Formulas": {
+    "2,4": "ODATA(\"T_InstrumentBasicInformation?$select=InstrumentName&$filter=EquipmentId eq \"&IF(ISBLANK(Z3),\"null\",\"'\"&Z3&\"'\"))",
     "9,6": "ODATA(\"T_OvernightGroup?$select=equipment_id&$filter=main_equipment_flag eq '1' and 作成者 eq \"&IF(ISBLANK(S10),\"null\",\"'\"&S10&\"'\")&\"&$top=1\")",
     "10,6": "ODATA(\"T_InstrumentBasicInformation?$select=結合キー&$filter=EquipmentId eq \"&IF(ISBLANK(G10),\"null\",\"'\"&G10&\"'\"))",
-    "2,4": "ODATA(\"T_InstrumentBasicInformation?$select=InstrumentName&$filter=EquipmentId eq \"&IF(ISBLANK(Z3),\"null\",\"'\"&Z3&\"'\"))",
     "10,18": "TEXTJOIN(\",\",TRUE,Z3)"
   },
   "AttachInfos": {
@@ -185,41 +185,81 @@
       {
         "FontFamily": 0,
         "FontWeight": 1,
-        "Formatter": 2
+        "Formatter": 2,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
       },
       {
-        "FontFamily": 0
+        "FontFamily": 0,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
       },
       {
         "Background": 3,
-        "FontFamily": 0
+        "FontFamily": 0,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
       },
       {
         "FontFamily": 0,
         "FontSize": 12.0,
-        "WordWrap": true
+        "WordWrap": true,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
       },
       {
         "FontFamily": 0,
-        "Formatter": 2
+        "Formatter": 2,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
       },
       {
         "FontFamily": 0,
-        "HorizontalAlignment": 4
+        "HorizontalAlignment": 4,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
       },
       {
         "FontFamily": 0,
-        "Formatter": 5
+        "Formatter": 5,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
       },
       {
-        "Background": 3
-      },
-      {
-        "Background": 6
+        "Background": 3,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
       },
       {
         "Background": 6,
-        "FontFamily": 0
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
+      },
+      {
+        "Background": 6,
+        "FontFamily": 0,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
       }
     ],
     "Types": {
@@ -303,17 +343,21 @@
       "30": 7
     },
     "SheetStyle": {
-      "FontFamily": 0
+      "FontFamily": 0,
+      "BorderBottom": null,
+      "BorderTop": null,
+      "BorderLeft": null,
+      "BorderRight": null
     }
   },
   "Spans": [
     "0,7,1,6",
-    "9,6,1,6",
-    "10,6,1,6",
-    "9,18,1,6",
+    "2,2,1,2",
     "2,4,1,21",
     "3,2,5,27",
-    "2,2,1,2",
+    "9,6,1,6",
+    "9,18,1,6",
+    "10,6,1,6",
     "10,18,1,6",
     "1,2,1,2",
     "1,4,1,21"
@@ -336,4 +380,4 @@
       "Formula": "対象機器_登録用コンテナ!$G$11"
     }
   ]
-}//n5pn5Ni3+XxBGrYC77s/oFVXHSsCvK4YAcT2/qkONVWTMCMHyw3cgCpfK266WaLt98EvIFbCt2r/woRWyxRwl04oK1a2rMXmRT742ApLqz/F5b6MgKtaTiSjkLK1qH4bezyArDe7fJPohOxv4qY4eA3xUILdVV672KWqUQeR/23Vssf+90Eah2tyEfcznpXHv3AVBUy3q1w9YcfnEzbDO236klpeLtQTarlIdcdLD9bjOQVgMkFwmsMKnuOQudw6ePw3TF1EvmBXMnTcpG88B6keOkUSw7vJfKIrQtkeJt+dG7T2dEteGYnTPPVbn/cJsaq3PlaC8q1DiI07kDmWwR7LIcLhoURbOFa/7/HrN8mO3/qgf7P3WD2I+9ED9Df8I6KJG3MeTBGhqiCPivlWTsGW0aeAGrsTXD6LBSMhJDEbvzrt7aZL2JHWdgkQSxq5WdEQhTYn7Rq4+kTXo7rAOd3ueDTwfjijzah2kDfQ3DFLH/SJHGBk595m5uY161gbmcss5kEq7qgT4+/jA0iSvVwURvC/03eabHM5OqtKm+nYW6OXBWR0yMdgkXDNzNeLVZntH4Gt4vMhZ4PQnfKi4g+CpPr9AMLg2KvMQSd347lp3mwXh+SgMfteFNGs+LocG1OFm9TnhWia1mjFl4Gb7wcJHsAePJwEIvcukvAxdP1Wp4lVgJ2TfUjrPtOTUGLs0p6ATZheX9zMwT+/Ln/En2i1wgSbD1brwITpSLNVTX612ERe2aV/ZrWpwEPughk6nCzWu2rYMjWs1VEOOc3a0BlTEZxJwMERl8rV7pS4+vp56iPG03BkLCX5eZmZgRKhfDCgoS58xyOMGIrGrEgf/7slMyrcBaQGJf+QVqjmthwJMKc3bSQTI9Aik6qqmF9twXd/NB51xLEE9LCkeeeW5A==|920
+}//SZF9GfTGXwMSYE2w6p56pEszEFfuD4gFSr3IF4i2hn7hQu32z7krsvzAhpHPf+/kiNk5eO5M4DLR0+Ewj+g2UCcCHTRDSAlOg4nMSQGav70WOla/HqTO1Y0PvDYKTiYg0iNFfYTy/iK3Cw1eyZVZcvuK32jC7t/EG6KzPIYUZkgzqaM1IK6Q+f6oCSKadOWhh4z98ngBrXJY/3Iefg1YVRCm/7pTTiYNl4/rlgi3L03IC0uCFxc/cFkk99NT2krmz3V6OuUVvoBhlg0gD7mt0QL13Umt+JoVrY+T12bqiyOrBb+mKLaMr5aXg3ZmGwP7q63GbZlDohox1KMWFWe33NsMRLolZ9jjr/qAjdZoVeJ7r4kkTwg4beMUc5RsGfdTSpSIwtGEravxaHIpfSM9eBeSdNeFidHe0x23ohgCxwRHL9XT5tFTBG37kn1L7gfx1YT9QQj4CBzA9s7fAL2NIAj9G9AiIyNhnZaZ4DzvrRN9OwWNvW2QncTRq2M+rrddQWlGJWpcLyJW6W1AIZ70aO5uwVARQ2CIrKkVMUWh3L1SYl0YuDkSBkvWa34E7iv8oGXDuNcv/RPp/KID+ExnxRJcg5ZevOobRoS/cjeou3a8nQslO5U60s9I0eMGO7C8fosv6BfC+VZ67Lm3qR+Zkl3oGgwdfCVrYEqIzdT/C+FgXFU5TJxBXbGttkA0QCp+xIMwgOYhpFfcRcn5A0VYFiC7i1Rr26BYEWfEWN2AzWcNSG9db6vPNPXnZU5PIVKrmjPODIEjveuxF87hqcRPPWt41BKRJamipouaxPE2dWVC/p1P7tsdq3FB8hLNh2N9O3921wcl84/p44Ia/M8BrTJoINPB66yeMgI4D7gyJao5xY7EYmACfLL4H16cfimleJFT3jxLi3L7Flgc4CjThg==|920

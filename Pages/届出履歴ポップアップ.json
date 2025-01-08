@@ -66,8 +66,8 @@
     "7,39": "運転日数"
   },
   "Formulas": {
-    "8,39": "DATEDIF(AB9,AH9,\"D\")",
-    "8,21": "IFERROR(ODATA(\"V_OvernightRegistration_FGC_WHT?$select=When&$filter=RecordId eq \"&IF(ISBLANK(B9),\"null\",\"'\"&B9&\"'\")&\" and ActionName eq '許可'&$top=1\"),\"\")"
+    "8,21": "IFERROR(ODATA(\"V_OvernightRegistration_FGC_WHT?$select=When&$filter=RecordId eq \"&IF(ISBLANK(B9),\"null\",\"'\"&B9&\"'\")&\" and ActionName eq '許可'&$top=1\"),\"\")",
+    "8,39": "DATEDIF(AB9,AH9,\"D\")"
   },
   "AttachInfos": {
     "5,1": {
@@ -202,40 +202,76 @@
   "StyleDatas": {
     "Styles": [
       {
-        "Background": 0
-      },
-      {
-        "FontFamily": 1
-      },
-      {
-        "Background": 2,
-        "FontFamily": 1
-      },
-      {
-        "Foreground": 3
-      },
-      {
-        "Formatter": 4
+        "Background": 0,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
       },
       {
         "FontFamily": 1,
-        "Formatter": 4
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
+      },
+      {
+        "Background": 2,
+        "FontFamily": 1,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
+      },
+      {
+        "Foreground": 3,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
+      },
+      {
+        "Formatter": 4,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
+      },
+      {
+        "FontFamily": 1,
+        "Formatter": 4,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
       },
       {
         "FontFamily": 1,
         "FontSize": 12.0,
         "Formatter": 5,
         "HorizontalAlignment": 6,
-        "Underline": false
+        "Underline": false,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
       },
       {
         "FontFamily": 1,
         "Formatter": 5,
-        "HorizontalAlignment": 6
+        "HorizontalAlignment": 6,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
       },
       {
         "FontFamily": 1,
-        "HorizontalAlignment": 6
+        "HorizontalAlignment": 6,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
       },
       {
         "FontFamily": 1,
@@ -243,11 +279,13 @@
         "HorizontalAlignment": 6,
         "BorderBottom": null,
         "BorderTop": null,
+        "BorderLeft": null,
         "BorderRight": null
       },
       {
         "BorderBottom": null,
         "BorderTop": null,
+        "BorderLeft": null,
         "BorderRight": null
       }
     ],
@@ -305,20 +343,24 @@
       "34,0": 0
     },
     "SheetStyle": {
-      "FontFamily": 1
+      "FontFamily": 1,
+      "BorderBottom": null,
+      "BorderTop": null,
+      "BorderLeft": null,
+      "BorderRight": null
     }
   },
   "Spans": [
-    "5,1,1,10",
     "1,6,1,5",
-    "8,21,1,6",
-    "8,39,1,6",
-    "9,1,21,47",
+    "5,1,1,10",
     "8,1,1,6",
     "8,7,1,6",
     "8,13,1,8",
+    "8,21,1,6",
     "8,27,1,6",
     "8,33,1,6",
+    "8,39,1,6",
+    "9,1,21,47",
     "7,1,1,6",
     "7,7,1,6",
     "7,13,1,8",
@@ -333,8 +375,7 @@
       "VisitMode": 2
     },
     "RowBreakLines": [],
-    "RepeatRangeSettings": [],
-    "RelatedDataTableName": "T_OvernightNotification"
+    "RepeatRangeSettings": []
   },
   "PrintInfo": {
     "Margin": {},
@@ -346,4 +387,4 @@
       "Formula": "届出履歴ポップアップ!$G$2"
     }
   ]
-}//88/rScPj4CSGPlyQzWFzUfhE8AkKTxZdRoaREpSzrvnzQxie125X4ZYe2gtO6RypfKv80SFPzn/jU8QZ934AHL8nddN/FucUuM1nRvN7ZoEAHpzTIXYe/E9An7TonVtGIoc26qqbM3ggSNOje59PSFTmmGQ47VPlx1IV7h/IVUzi0X6nfDTmneqwI2ztJhJehUDJ2Ye4DUW1nqGINGNsbB5HgR+1RvjVtOThKbjGFTwUwrk9Bj4i3QoQSGktTHAEHPQD00pWUUsZ6u/98Goy6RR4mN2AAyloDJu/++4QnTetgMhvsYtokt73OJnuQ61Jj/P0sY1dFIivBYjPysrmmuCXlkjD1juUpW6fsCxLcn6SLtLinIclL/eDXfJBKuuQWIzggYSS91ntswfEO9cy2iBL+gjUkBFvdf9JVkRbgO8Q5JVZPMn6uB8e9dQn0X1LRx54/0IFyFYXBNYig+91vicSc6cDvBuDSsAjc0YsTBV5/YmooHU68qYlx9j38n0InuZSBgZdKlHwjcpoI4IznWHMIm+yo2Y35RFlTINJw9KlRtgLDm7GUX4Ehttx99kSJXke0ol10nZIhXl8aXqJXhI/Kpt3sLVN0exKjrri71wXudOweLv1x3r0vvJOWRhj0fRGhXqbvZadDdZHZjRTWiZkflMgNppEv+CyEjDEznxFw2lNvi1lMcAgE3jo3J+RKiyRCUFw/nvo11HjEutn8rJq2AfLgkTWYnTqz4ZmTmwUoOYKjhG5OgyQCjaOFbwMLsWrQYFuaH6cYJlesM2yUrOhQ43R+Hefw0YOhsBy7ecmVdFyQieqA2px8I54pun0mSrnMZ0F6F9bxofmq3GajE/7psJtskZ2AXLwLNREBZn/pmmWHQAtok7axtIKwBThF2uS8u4v8+CHE+TZQ6e/vQ==|920
+}//+YXD4pJNaedHFvSiDq7H9JB2ZEYifTWHvLMh3+6e97zatis3PD1YuKu1tTEFAcLUUofNgcjVJ+cLsYhNB3BclnyWtttbgpvShqEuKLmBOUoxR0nlkqOn8D3cy2BH3aPsdLuVbGG394aBlN4ufcyZugVbXQuaBoPc6d/bWB9c/7iOgOTMQ2JRCxy8y6VMOsd31dFOKaCaEGKTdov3rNbbSdNXRTNNd1u1MY3XbNicPoxquVqqzRWOhPs8r5vIj7kvAI1MUkaKo2V7Js16lnVnWS2ukC6MS5qxs8TuW9r6hpd/iYdkjzPbKpZEOS3JMevMGzCnhFsAkaUMd3kejoqXD281SyTW9zy39fkxZiC4xv2P9aHZi7dV3uncWO34roKUG/lA52PTDaSYMO11nmq4wL2ee7UAso3n1EzL3n+qfXPnsO5yy6lmS2QjfvWxWjPMFs9yrMmvsHJOMQML4TctHDq6oGpctdBktp7wfgcVEdTesvUwBjCgq42W5kvrw2MjX52fOnRCy+v7IaOM944pyoup8zyzzO6NyuC+OVzFpr92xi8H8yEb+gwyP63JpKBkAxrZEgHvjVTI9NGD6tlcidppQipHyurNdBGkJPjtA4SVbFG8vknoHQ/ilgAv5wyXVd9f71Va5X3KONyDWInKkjFIJkcDO/i7fsypao3qsKczoHso1UK6x2C8OvSkUYvVUXISYVt9SyYPL1uem9FRQAYjBAPdoNhtcQqVdRIuyUtkRFsWIeZ2Xm9ms8Wwp5EUMh1FXD19ec1EckwFHIGDhEeXEJH0M18zCpuFo2Jcdvq5DdC/dFJDvnsBTkjdDBc/We3Adag5b3UIu8rOhzqbAJCIsV1assi/se4EV+FVBRcV5au8C+Do6VEAwIRnRwXh92TqXTXsLNaKYTmlX1fTHw==|920
