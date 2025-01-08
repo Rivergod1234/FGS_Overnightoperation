@@ -5,6 +5,6 @@
   "WebSitePort": 40772,
   "UserServicePort": 43815,
   "StartPage": "ホーム",
-  "AuthenticationMode": 1,
+  "AuthenticationMode": 4,
   "StartDateFiscalYear": 4
 }
