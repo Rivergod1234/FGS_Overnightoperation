@@ -249,16 +249,7 @@
   },
   {
     "ModuleName": "PCPage/ホーム",
-    "State": 1,
-    "LockedBy": {
-      "UserName": "ZEON_H01\\Z001374",
-      "Email": "S3.murakami@zeon.co.jp"
-    },
-    "LockDateTime": "2025-01-09T11:24:32.3372002+09:00",
-    "ModuleType": 1,
-    "ToRemoveFiles": [
-      "Pages\\ホーム.json"
-    ]
+    "ModuleType": 1
   },
   {
     "ModuleName": "PCPage/終夜運転機器一覧",
