@@ -97,29 +97,53 @@
     "Styles": [
       {
         "FontSize": 37.333332061767578,
-        "Foreground": 0
+        "Foreground": 0,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
       },
       {
         "FontSize": 14.0,
         "Foreground": 1,
         "HorizontalAlignment": 2,
         "Underline": false,
-        "Strikethrough": false
+        "Strikethrough": false,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
       },
       {
         "Foreground": 3,
-        "VerticalAlignment": 4
+        "VerticalAlignment": 4,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
       },
       {
-        "Formatter": 5
+        "Formatter": 5,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
       },
       {
-        "FontWeight": 6
+        "FontWeight": 6,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
       },
       {
         "FontWeight": 6,
         "Foreground": 7,
-        "HorizontalAlignment": 8
+        "HorizontalAlignment": 8,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
       }
     ],
     "Types": {
@@ -151,7 +175,11 @@
     "SheetStyle": {
       "FontFamily": 9,
       "Underline": false,
-      "Strikethrough": false
+      "Strikethrough": false,
+      "BorderBottom": null,
+      "BorderTop": null,
+      "BorderLeft": null,
+      "BorderRight": null
     }
   },
   "Spans": [
@@ -171,7 +199,7 @@
       },
       "IsAutomaticStroke": false,
       "IsAutomaticFill": false,
-      "Name": "5eb739c3-15b6-4d8f-9c34-066f9a907711.png",
+      "Name": "2e345cd5-9b88-4388-a9ed-112d0f79ad2f",
       "Location": "200,80",
       "Size": "540,440"
     }
@@ -179,8 +207,10 @@
   "PageInfo": {
     "$type": "Forguncy.Model.Pages.NormalPage, ServerDesignerCommon",
     "MasterPageName": "FGC_ユーザーマスターページ",
-    "MobilePageName": "FGC_プロファイルの編集_モバイル",
     "Title": "ユーザー情報の編集",
+    "AuthorizeInfo": {
+      "VisitMode": 2
+    },
     "RowBreakLines": [],
     "RepeatRangeSettings": [],
     "IsBuiltInPage": true
@@ -189,4 +219,4 @@
     "Margin": {},
     "PaperSize": {}
   }
-}//KdB8s+s3kG0L60r8KpJ1jywggRmKQ1eswS56kdUwtYW1IO08K0ljg4QbyizKLR5+E+W7IYxtddhFDlPF5NZv8ATTcUgsevkSxW40DT6EOxBrWHEQORAp9vQmxRSx9/gQ/OitDV6d8u4eJ5YJrrlcl/oZGX1ygH8zso7jLT0FlhxtI5LhbrVv1IW58urfLzNf5N/GClyxhe52FPWmdcgAYxfQpTuWzCzu4bZXGllsObn7aAFZb/uwx83NAYSIPS6yWJooH22L4YOl4QGJLFwOq2ecVwh5ZKtLSMHFQVlPnRD4d965oEoGcNaCZeBz7mqy5NSftKt0guPpE4WAFvpxWOKMvYyf1jaS6FuvplFzsByPqjdlI49mXhTvSrgfBI/0olmOpRH6Wi5piaYS4+2VSij++fBmA7zrTemA/wKBz/QO3LchfjPkqnk+BV+cu1tmdZWhmmUeghsivYKWZJa5Ipst++Fl6Ne6KvFYQlUgMabv0Dc6gQh4UDogiENQGNE9bQftp7j7fmaNRtmrTQ9OC1TmswZD0uP87No8VYFZ+Z0ks9ncRqeebUoE5iE/h1J/HVqILl5+DgBYGLO3PaPbJJ8Jh0SIz6BdmVnLhcTbArEW502HPzbfYjZVMGMueERHDAmCazmp4mUvqy3seCZ6qv2ucTUxyPv9BnGaC9DZpyypZiQyJM8BA23a3JJ1R5jMY4Ft4Mzm9MFGNbZBdSh8kPiUKIKYI00gE/b4uMOqALBK3nYVtyfqgZwkj+6kkNdwZHaVDCVW1DrficFWWqC6Szen6BeQxWbPpAQRqi/EJggXij1uRRqERLyufKYQBVXX7clWIqs0yDVHZNGWcR6wElqAbunWdYmaXghdQG/qLBVR1lEX7OSE0VfIwFsAmQkv7nDzZopdd9Yc6cFlx+46yQ==|920
+}//5pP9e8paHr+d2rCUvmhImRVkuqQuiySfQ7CaV/dr+xu0jLDBKF0hnwEpWwrU15OcnY5ry34AmDaWCu9eTj9kGPGhfNdRGZ97Ca8s8U/8Aq9ivTUZ3efKJ+nZ7uyn2YdcHZMF5LmB18el0nGA24/ga6asYCAUJsK88BeELdD9aE6glQPhytlaJorNvct3rFT78K/TfO19AOTDhm+yg9TpDrBklzdpJ6tHxL5f3ugmRylZ5/yraqL0e0vCBwx5ixvOiAnz2iDs0dOSZSVWIUGnkL3eHX9jIgpiFryQG0jYmifVD7/i0E+x6CJVCR+ymZWDWxVvoW8MjTAFFVsLFz2bYGG28Cex3a0q/GJr3FDtZ/8/VfHuNbx4ULr0b01gE9bHzXZCv/9IUeR3zI4GONv9ArbtHgeKGbiZTMoWKzwjhldG0oHYUxc2sZLNB9vYjOpIrK3dVynrnNEU40Sp/g8cvCejKAML0DFk7dVNytzo1LpM4qN+iVlKHY10SiHnN2NR1vnJO5nLsDn3uprhELReMMhV2ZcKyUnNbeZmR08W8QnB2CJh24CIXUXcLg5sLgwh5eJ/wkCvy+LllRdE8rR8CcpK4P78RAduFP338KNM7MCE07utVkm4zK3RcfNwKf3vyFpGI/9EqOm6G6F5hn5CMAxEDRh28icUl7LzZ+JPaQfIrAjPAsvtJEmOAPwc56Lknbm38nAAmUmsAFhmxZqoD1kY5o4Z4bihlxq5JZdU4VHNssfI0zRSKYmprq3wQlq3MFp8+KhobxFPRTg2vJOZNyPyT2e6GB5A/44ss8YOVW5R+n8Ffb+E2VxPa11/rGvM3BCetSvQuXEde05jkug/2FBAaRgpT6nZl83sqEszDoM62a8xIBGYKD11EYdb4nWl85G5iYjpdAPZp827Do1OVA==|920

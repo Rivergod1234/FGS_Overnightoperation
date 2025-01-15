@@ -283,7 +283,7 @@
               "=AE14",
               "=IF(AL3=\"点検\",Z3,\"\")"
             ],
-            "ID": "2bf51a8e740642e8a50cb0b9fab45b2e"
+            "ID": "87680883f3f44bb18a3502bdeb7ecdd5"
           }
         ],
         "Text": "検索用SQLクエリ",
@@ -816,7 +816,7 @@
                   "ConfirmIcon": 1
                 },
                 "CommandList": [],
-                "ID": "a1098947-86ee-4865-8dda-b33f4abc89cc"
+                "ID": "1bbb4750-c296-4287-8ebc-b4965f73d5d5"
               },
               {
                 "CommandList": [
@@ -824,14 +824,14 @@
                     "$type": "Forguncy.Model.StopCommand, ServerDesignerCommon"
                   }
                 ],
-                "ID": "b15649be-af1d-4093-959d-00e6baec834f"
+                "ID": "7f9dd423-49a6-46be-a31d-485660d05935"
               }
             ]
           },
           {
             "$type": "Forguncy.Model.Commands.SetParameterCommand, ServerDesignerCommon",
             "ParameterName": "previous_item",
-            "ID": "203178b50b6b4a7b9b3ffc85def72284",
+            "ID": "bee0d126a02648cca01bdc9858171f83",
             "Comments": ""
           },
           {
@@ -860,7 +860,7 @@
                 ]
               }
             },
-            "ID": "ad82f25894564faf8f16e90a9d5169d5",
+            "ID": "c6fc662fea8549c1a7012a1c2b906aa7",
             "Comments": "点検対象となる機器IDの配列"
           },
           {
@@ -898,7 +898,7 @@
                 ]
               }
             },
-            "ID": "91c6d275cad84cc98e7893b65df7f5cc",
+            "ID": "aa0f03dd5072411c8ea9fd1d2176e22e",
             "Comments": "点検項目マスタのチェック項目CDの配列"
           },
           {
@@ -1011,7 +1011,7 @@
                             ]
                           }
                         },
-                        "ID": "a0aed82e3e58484ab03c477644c72bc2",
+                        "ID": "55b772e1c91840f7835fdbe2417c28a3",
                         "Comments": "レコード追加時に自動採番された終夜点検IDを取得"
                       },
                       {
@@ -1058,12 +1058,12 @@
                           "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
                           "SerializeProperty": "=点検依頼・結果!Item.equipment_id"
                         },
-                        "ID": "d72f2ab9c02d40a2b102c141df0ef800",
+                        "ID": "e3a536f050724f9897f10ceb03c7e220",
                         "Comments": ""
                       }
                     ],
                     "Comments": "機器IDが重複している場合は処理をスキップ",
-                    "ID": "76fab9f7-19d7-45d2-ae53-750ddcfd0d82"
+                    "ID": "6904416a-02f7-4e9a-8ca4-d717dcaa21af"
                   }
                 ]
               }
@@ -1141,7 +1141,7 @@
                     "DeleteCachedQuery": true
                   }
                 ],
-                "ID": "2bb4656a-1207-444b-ae69-39c45929e67e"
+                "ID": "2b17dd0e-e978-4672-a911-540f9b6d9eea"
               },
               {
                 "CommandList": [
@@ -1182,7 +1182,7 @@
                             "$type": "Forguncy.Model.StopCommand, ServerDesignerCommon"
                           }
                         ],
-                        "ID": "dcaa0d3f-753f-4744-b18b-aaeb5c84aaed"
+                        "ID": "6e96cdf4-bb94-41f8-a55f-873ba4d2fbee"
                       }
                     ]
                   },
@@ -1198,7 +1198,7 @@
                           "ConfirmIcon": 1
                         },
                         "CommandList": [],
-                        "ID": "60503093-4615-4d04-be9f-d252229fe29f"
+                        "ID": "266ba1d6-0bf3-4625-ac98-d62d80be199f"
                       },
                       {
                         "CommandList": [
@@ -1206,7 +1206,7 @@
                             "$type": "Forguncy.Model.StopCommand, ServerDesignerCommon"
                           }
                         ],
-                        "ID": "66f2e8c2-3cee-4049-95a0-4c0db18ee760"
+                        "ID": "90ad6a71-f8dd-4f81-b350-f1e09fd128aa"
                       }
                     ]
                   },
@@ -1245,7 +1245,7 @@
                         ]
                       }
                     },
-                    "ID": "62465ca74e934ebc9716ced692395373",
+                    "ID": "a36e4f7fab49495fb3ecd18eff9432eb",
                     "Comments": "点検項目マスタのチェック項目CDの配列"
                   },
                   {
@@ -1314,7 +1314,7 @@
                         }
                       }
                     },
-                    "ID": "53fc2861d88d468da28e41ed02dfcf86",
+                    "ID": "36ac96c9c91c4af3a06bb03004692d8a",
                     "Comments": "レコード追加時に自動採番された終夜点検IDを取得"
                   },
                   {
@@ -1359,7 +1359,7 @@
                     "MessageFormula": "処理が完了しました。"
                   }
                 ],
-                "ID": "0cb688c2-4a2c-48ac-a871-3cb63c74d842"
+                "ID": "daa1d66c-9c6f-4350-98aa-3d95dc0b3846"
               }
             ]
           }
@@ -1994,7 +1994,7 @@
                 ]
               }
             ],
-            "ID": "6b277210-21ec-48d5-adcb-6525a9f21df8"
+            "ID": "641d37a1-2c5a-41d4-914a-4d7518a86e46"
           },
           {
             "CommandList": [
@@ -2011,7 +2011,7 @@
                 ]
               }
             ],
-            "ID": "916aa555-443e-4bfd-a66a-eb82b89b14be"
+            "ID": "89232a21-1407-4ea5-b34b-8ff6467209c4"
           }
         ]
       },
@@ -2037,4 +2037,4 @@
     "Margin": {},
     "PaperSize": {}
   }
-}//FIIrVkyWUUu673QX4/831RK1NRqYIJ3QPP3jH4MRE+mjYURkEcNUcGDVGeJXHaJUnDDCyduhO0lJgzvP5ZdC5Cfj+HJM9F68XSib5AcOiRgctKQr7jt9AOHf3GYzjNOdPGwygBvZhV2DCW0T4iitNVDMg+663PPI1D7ltcSFhHdOMDHR41MBhNfYW/FmNbHC2jzdcdZKaodTOqXPAV+QARSbN1B68ZUx5C/S3tJ7afLC6Fk9Oc1mwmI06Ra9+0Y80rpbTAeNbQWdPiuHARRjorRuEf3LgT/rJ4cZlpJM69RZcMPP//q+TIcMObdts+CkEFdYh5LDLIG1gwbmPDyUl8+Za8pfdfjvRA4pkXOLmPdSi3CYppVbe5YwLv8/Hoy/vB7gntc05hcktO+CoKQ+MGqszI4MN95cxb3ayxhjyU7oYQPtJxZ1UEPWOrZcPkoU+h1N6KFrYmd4xSLlqRTUHUTyYBFebBHdroOcUG2EAaJxeLSIZZz0DffyCv/0ON/yqndEC0VwysGNzfbdMykRK4D+Cs+JQBUDwGdpg2T48LH+2if60iXuiwFv9GSo0nD0gY8JuInzZF8t3//LzxRYwTNPMjCpv0gtu0xUmLn5wXLqI6fm0i9SxLqFpGyTMqWtNzcqKkphfZdiILKUJSQ55qYYfV1LY4pmTrJyNWHd3o2nfVQg1qeMu5ykPIMiXZR1Gp1KJtiJtGmMe+qiHtZNLF5+JqkH35QHNApyklWMat3mzvaOkhhgDQkKqKVKvAI0LYJdcvQ5y055ZqImTWQZ5Tqc66iuhy4hUrSCWX0MrcZIZVDz4xoHduaxzgfT9kEj49i//3umncgDANPXr9XPkWRWHBSGLmZQ5vVZwL229Mh1PcPUkqU5aYa0C5m/3cU4B5rNmFG0KBcAexA3kljeeQ==|920
+}//XmWCA3rCMXxG83WUrwOmMvbRaDSXCe5bCYKmreNVwbKlA9Z3f3tlTDLaVgLaUSUh3p+VzvO1QxToVPwG1gy05JDP8rdQ4oP0FzYyz6C9U1uxnPFMKwvF/SGWoK28RWbHHFNJsU2k/NRivhwlyQTgQToor1zs4xtDLq7yOm9/qu2YoHFR3opZrBpbuoFjAm+byMz66xwsMTsi2doINtAtYMtbIqu1d1TuHSeHNo/FxZPRsyxNHQwHOAehZ/tqkLhPshjCmsFzuyazVp6bWXz0mqonHJIf6aU+GP6Vu9gyOQLEzm6dK0oCDxSoVaKgCh7N8vFCTP22ftMVwqTxSWhqwxtxIouixHy0jLIPUtBjIjRoedPCs+yhe2rcY0NkjEhw8LrWlXS0giyN1zwYCOMyR5k78U2fwSWWBPdKrcn/oYGZMzHeFRZ+AJ1weoBGj+wxGXnuEnTfL7dH0qwszUmep/G61Q7kSeKvjfK6s2f/vz8jVS9jj/pfliICJy7/Lzb3p7XUPcRKEYJaX9CvEMGidzewxG5WpDgfqF8RGFwUx55+lhVzjRCxbWMVZ4IqvJc82ujnlKo2G0BdnbROjf+s4sDD3KK0DannPz0PljoTvPvHFjWUwGVy7NXUKb+d1h67asYp8EoG/mjp7nYcWVI6mpRXx7d4Nw/rQssfkQBGTuzgWi8wNkErzFf9mbj4aHFdQCXoFJd6SjPHC0AGgpSxOicN7xDZHwZAVE7YI/PhmeoJdaMFJvZjZbgk0UKgk/7WECNsyUVrrNhT65q82jXKbw5LL5bT4LiuxCopWar9c0u1yl/dVDYht7+6nTntRP1nKDSJLgG5imGN4oromVIcGK9aJDbYF8RfLAOWS2BE7rgmHXlAvns6woUAf9NOwst3C37vy7lsHhT0cekQby+zWg==|920

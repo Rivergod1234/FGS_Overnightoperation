@@ -136,37 +136,69 @@
   "StyleDatas": {
     "Styles": [
       {
-        "Formatter": 0
+        "Formatter": 0,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
       },
       {
         "Foreground": 1,
-        "Formatter": 0
+        "Formatter": 0,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
       },
       {
-        "Formatter": 2
+        "Formatter": 2,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
       },
       {
         "Foreground": 1,
-        "HorizontalAlignment": 3
+        "HorizontalAlignment": 3,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
       },
       {
         "Foreground": 4,
         "HorizontalAlignment": 5,
-        "Underline": true
+        "Underline": true,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
       },
       {
         "FontSize": 13.333333015441895,
         "Foreground": 1,
-        "HorizontalAlignment": 6
-      },
-      {
-        "FontSize": 13.333333015441895,
-        "Foreground": 1
+        "HorizontalAlignment": 6,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
       },
       {
         "FontSize": 13.333333015441895,
         "Foreground": 1,
-        "HorizontalAlignment": 3
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
+      },
+      {
+        "FontSize": 13.333333015441895,
+        "Foreground": 1,
+        "HorizontalAlignment": 3,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
       }
     ],
     "Types": {
@@ -195,20 +227,24 @@
       "30,29": 7
     },
     "SheetStyle": {
-      "FontFamily": 7
+      "FontFamily": 7,
+      "BorderBottom": null,
+      "BorderTop": null,
+      "BorderLeft": null,
+      "BorderRight": null
     }
   },
   "Spans": [
     "5,21,4,14",
     "14,21,2,14",
     "18,21,2,14",
+    "21,21,1,14",
     "23,21,2,14",
-    "28,29,2,6",
-    "30,29,2,6",
-    "28,19,2,9",
-    "30,21,2,7",
     "26,21,1,14",
-    "21,21,1,14"
+    "28,19,2,9",
+    "28,29,2,6",
+    "30,21,2,7",
+    "30,29,2,6"
   ],
   "BackgroundPictures": [
     {
@@ -217,7 +253,7 @@
       "ForguncyPictureName": "PCLoginBackground",
       "Stretch": 3,
       "ForguncyPictureSourceType": 2,
-      "Name": "d7c41f6d-8542-49f9-a003-8fb0bd9de009.png",
+      "Name": "66273319-d1ad-4a95-9270-e386b4bf97a1",
       "Size": "1120,685"
     },
     {
@@ -226,14 +262,13 @@
         "Fill": "#FFFFFFFF"
       },
       "IsAutomaticFill": false,
-      "Name": "BackgroundPicture0",
+      "Name": "89585e15-cae5-4262-aa2c-820e84adb5ce",
       "Location": "380,220",
       "Size": "360,385"
     }
   ],
   "PageInfo": {
     "$type": "Forguncy.Model.Pages.NormalPage, ServerDesignerCommon",
-    "MobilePageName": "FGC_ログイン_モバイル",
     "Title": "ログイン",
     "AuthorizeInfo": {
       "VisitMode": 2
@@ -246,4 +281,4 @@
     "Margin": {},
     "PaperSize": {}
   }
-}//WY0DX3tqwFLoV9zIin5mboSIbtmDlg1y68QWpo6eb6zBsvHs97EZsxNhHETyWRs/k5Xus4cpBQwdhMDTmFYB7m8gW81z4VW6rLcQBjDMd1zTS2f/mZKdt3xndD/fsOcrwbgHE8YOo8lHMnrm6jkfLYUwcPUdUdtBlLTrKEu4dSZF5dNBsLp+5MwYnv7R+SLNW5nwOYpKHTBbFwli2Hk6fXkbhlLOC7b4t2QtPXLSAzCGTYd4gj25R36CYyzwuVCr8sNkbUMd4XC2K9M1qni2qXtKnPyrkswxzAmGkCDHJx04qpFJH5Trc86YNtaaTMZm5ayNe0wox4C0KyTRtpbnhSM4Yinh4TICZMbnvyQ3fy2KbzwsW8cLDeetdWtii3JOw0yhmM2wn2RV622ERovo5jyUvEQC3kazvxItEChziV+UH8eoYxP5twHqdX+ir7d6cSeb46D06vsFoGmfP75L+Bh7vupBmEYQU7kay6nVe79YHxnxPp1GiBdPq/Ah94VY2srKrXzSBADyEvFLC0lyX7ddGk5/uMl6DmBJrIFGpynsGLZWBEKPfhKHiFKDv+XMIi9MUdxQOaDiY8u+bVONJc0kojoxlXOrABWjZg9/vUYEGGnVWQ2TzcaSvww09L2bhmjvTCqnY7Vws9WadREE7JssoLdJON8Zn9TeaRLK3fJJZCPkcxRxefGkF3Wpi94cwSTb0XMMHZHfD8rKOuw21YzKtbpa1OH/QhmEcrNCGd1uRTxwQTSG7c2C250THgBPtWffbdqApxVEPV9nhPdp50o1YXit21MJbyvbEBISrqqFx6FoIduZo/nrP6GZqayDZu/yXcHy3KZ4AqJzb4vgHr73+XSiDbBhlfgUppdFNqTFt9JZYBBfv+/amHCiAc9qIJQ8IIOffsfhx0MN7BwJmw==|920
+}//iUARPP3UDK9khqPeSVS2ww/JFXVlgJm8ubB+EfJPApSNPxKzFn871zgHba7bRVJOD0Ahr+VsMQqjec1CR2SG2mM1KSotagOP0QW1B6yguAlLWXuHYeQzqTu4l+kvKRnlaqyL5SR0cBlqZ1f2/1z5B0mQUxkKZ/OEzSqwn+niyE3nm5CnlThfrOpnDRSelP3Mc40qshWvaLv47lKhgsiy8RzVZhvLe8+FkZS+lspVmsOT7jCHYehS5dw/4HxyElDLqVYfhn6Wri1kiixk0pJUCPSM8BF0ZUyVYDClw03ZDilEt7ZVO6gzUsW9SuO4D+KBbLTZ3OXFiPGvlsde0bLWK56emcx7knN+ph7vEdw5rN1LFCItTlLAkaa1ov0fREQYZ0qz03yxuWEotMOh+jAmxuWSdmwaZrvN3KL1XLBdhCaKiWdgoxPPATyLZr1NIGDm6ewiiItBPrs7bIJa2IleJqFT6XwJ/BoTHyllS5kFt6cepajF2nIbr1UU7zzne6f9lxw3bjlm1pmPvU1aA1e1RAMp170pCXDuzFngfJUDKfMYrAdsOnFRxeGVeLoX3pCU9uW+CBC4nq1yviUXPk9QQWMXSI71PEymh8rfl7mmHsjb99gvsIrIATlDOi3t2kM4+PJfrmyIfDhL50NPSknmdfqLiNCz2nrV9rh552vfYIBEixI/Yhk3twn3MzdADGXGNAyNQV10a0GkXwQWlws3yPI1oQs8OhymiF7FuBSn6esVKvr7JAUX4oLbxtU3gPFflbk1zkVINxxtYVuo2fByP9oewZqryb1lP+0efnMEQe0RqiAgkODy6jSF3H71DHsNkfCp2pAir5I6JZqDFK3bh5irUaAFFBAZiC5CyYXgcHb9gkekA/pK+ITahZBHbvmxmYI9yRLxAXOUqem6mrxiBA==|920
