@@ -305,16 +305,7 @@
   },
   {
     "ModuleName": "PCPage/点検依頼・結果",
-    "State": 1,
-    "LockedBy": {
-      "UserName": "ZEON川神",
-      "Email": "makoto.kawakami@zeon.co.jp"
-    },
-    "LockDateTime": "2025-01-23T14:47:02.3968492+09:00",
-    "ModuleType": 1,
-    "ToRemoveFiles": [
-      "Pages\\点検依頼・結果.json"
-    ]
+    "ModuleType": 1
   },
   {
     "ModuleName": "PCPage/終夜機器点検",
