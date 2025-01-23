@@ -13,8 +13,7 @@
     "Count": 64
   },
   "Values": {
-    "1,4": "終夜運転機器管理アプリ",
-    "1,46": "問合せはこちらへ"
+    "1,4": "終夜運転機器管理アプリ"
   },
   "AttachInfos": {
     "1,1": {
@@ -44,29 +43,6 @@
           }
         ],
         "Text": "終夜運転機器管理アプリ",
-        "ClickMode": 1
-      }
-    },
-    "1,45": {
-      "CellType": {
-        "$type": "Forguncy.ImageCellType, ServerDesignerCommon",
-        "ImagePath": "Application/121_send_1.svg",
-        "BuiltIn": true,
-        "Color": "Background 1 0"
-      }
-    },
-    "1,46": {
-      "CellType": {
-        "$type": "Forguncy.HyperlinkCellType, ServerDesignerCommon",
-        "CommandList": [
-          {
-            "$type": "Forguncy.Model.NavigateCommand, ServerDesignerCommon",
-            "URL": "http://ntvmd10060/InquiryManagement/",
-            "PassValues": [],
-            "IsOpenInNewTab": true
-          }
-        ],
-        "Text": "問合せはこちらへ",
         "ClickMode": 1
       }
     },
@@ -137,7 +113,7 @@
                   {
                     "Source": "点検",
                     "TargetCell": {
-                      "SerializeProperty": "=点検依頼・結果!AL3"
+                      "SerializeProperty": "=点検依頼・結果!G9"
                     }
                   }
                 ],
@@ -244,7 +220,7 @@
                       {
                         "Source": "点検依頼",
                         "TargetCell": {
-                          "SerializeProperty": "=点検依頼・結果!AL3"
+                          "SerializeProperty": "=点検依頼・結果!G9"
                         }
                       }
                     ],
@@ -341,29 +317,39 @@
   "StyleDatas": {
     "Styles": [
       {
-        "Foreground": 0
+        "Foreground": 0,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
       },
       {
         "FontSize": 32.0,
         "Foreground": 0,
-        "Underline": false
+        "Underline": false,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
       },
       {
-        "Foreground": 0,
-        "Formatter": 1,
-        "Underline": true
+        "Background": null,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
       },
       {
-        "Background": null
-      },
-      {
-        "Background": 2
+        "Background": 1,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
       }
     ],
     "Types": {
       "Strs": [
         "Background 1 0",
-        "[AUTO]General",
         "Accent 6 -25",
         "Body"
       ]
@@ -371,23 +357,25 @@
     "CellStyles": {
       "1,1": 0,
       "1,4": 1,
-      "1,46": 2,
-      "3,0": 3
+      "3,0": 2
     },
     "RowStyles": {
-      "3": 4,
-      "4": 4
+      "3": 3,
+      "4": 3
     },
     "SheetStyle": {
-      "FontFamily": 3
+      "FontFamily": 2,
+      "BorderBottom": null,
+      "BorderTop": null,
+      "BorderLeft": null,
+      "BorderRight": null
     }
   },
   "Spans": [
-    "3,0,2,64",
     "1,1,1,2",
-    "5,0,31,64",
     "1,53,1,10",
-    "1,46,1,6"
+    "3,0,2,64",
+    "5,0,31,64"
   ],
   "BackgroundPictures": [
     {
@@ -399,7 +387,7 @@
         "Fill": null
       },
       "IsAutomaticFill": false,
-      "Name": "b132fcfb-9d42-4b3a-a8f8-5ba2518d0192.png",
+      "Name": "ea920775-d5b2-48ba-ab19-b3d3f693e8c9",
       "Size": "1200,85"
     },
     {
@@ -409,7 +397,7 @@
         "Fill": "linear-gradient(90deg, #FF7E00C5 0.00%, Background_1 100.00%)"
       },
       "IsAutomaticFill": false,
-      "Name": "7c4f8214-036c-4f9a-a271-e8789cff3a7c.png",
+      "Name": "c20bb5eb-92d3-4278-b6e9-f3ab668b3132",
       "Size": "1280,85"
     }
   ],
@@ -466,7 +454,7 @@
                 "RetrunParamNames": {}
               }
             ],
-            "ID": "fce168ef-2cdf-4484-aa12-2cd3478b813c"
+            "ID": "8c983ff9-1f69-4fdb-84cf-8966104b4fc1"
           }
         ]
       }
@@ -476,4 +464,4 @@
     "Margin": {},
     "PaperSize": {}
   }
-}//Z99U0UA50OzaD3V6gqZHLP25eoXF+3DO8/qJOCxvccMzetpfHXqxrWwsctxr7YFJ/2Qk0HSmVrFN5eHD+KguFmm3E7OfrH4zmDUiOTtReCCLz7FUQhzn/oR7ajsk/8khOk1Ire8yeNWCn40/mQe/rVbbTJLDNUZBxwF9xRNr6DaMM3WL+7m5FTNQ1bCAsoXRRx7Durwo+YJeURiOJYp2f3aIGbQU6/Q5BULEBoIf1lOZ6R/qoVv63H26FTMZXC0lJjHURIaudnVWPx4T4C1h43BaYT7bbvwytaPehHjHmMPWFWru8zYi+2c9DpAzNYv3Sq5et3DsDvja6RIZdo6a0RU3ZhDm7XIYWtxe0IwqeTu1rWoL7YrNnvRzo+eIV9A7pClBy7dkpzIEqFIt2+hI634pzYC1EsfYmXBTgu2tfHXGhDuVK7hAAveFwzz2I4mCQx2g6j+goHkJoYrOPLHdvE+q04jbkmwGpgbeIe6LhZkRae0LMPtS1StAuPwIw/BXXQm9/QksXB1pPQgGrZS04csfd4WO/29/HUWvRinXGDcCmY4mYnw36XtFWmkTiIRX2FEAo3+pkqsjm9cMalpKUEU03bTKdT7s+lvv6zcHTX2ED3lIc3c6axNOixJyfn7G+yetbTUysQfa6MtQbpH9lkDVaHXeFEGdyIGPUDpElipbIKXKFbk6uKZXYlzeeyIBIclbjimZ+6UA7OGXGezJCbY7zwy3ctKCFRcxFQR5w5s3nsgW8oN/jtDjXWuA9DCfsFLUfDLyNXA5le9tOyYRAt4Lg2h1+3ULLyOV99UiKCmx7NMCNWfp3lonDgPzZjqhz220WySt+KJ8ptWwjRFAJF4KKRzg6OGA09+2zE7TG4rOxUWrnrTFlPocTDtbGqLFdMAqDb9xAWbvRUPAYYr0Qw==|920
+}//wTj5YsIK/1sU2vTNxckr6KnkfasRBZSogXP9cEarjCF9qZDDjROMDIugQHUBaRkA2AG5C55Tp7+dP1EW0U5XHteVBvep0tOWX73KVBu3+q0VRKCniQrwlc+AlYPlkL7hQwkshX4GEePUhugHaJHglaIglw0eQASR3VJaglUuY2l0i+3YVT58N0fSYcDY5gl7Zqjt7Gyy2ossyHBvUts5JNyT4+4+s1gMXcgUT2btDCcxm4COT8+I5UOTPO05ZSJQZnaw+Y8iBYVMFmveewKezTt11Zk+skYqMdcUzCiSaEXbkB3ap/xkkLgaSY00lKBzV/cQjezriRqIcv2uRE0b4wzJoLp9yn/voFfHMLqDsFfdzXHFVgfJoLJreV7l/DIUskdn+LuxMmTw4uLf9WspmxlrIYILUkS9SoZtEXS5F9D77SYotj7jH1L530CbXa9a6BwzOLm6QVSiaI4t6Uwx/HV/EkmP+GzR5DYwn5mmp9OB/7pXmR7ZQWy8OQSIV9wf5TTzqKibIl7x4NmjcVZERCIcJIlha/jlMDcicdgLeaUTmc/STdYpcFcjbEvvlgSZITzQnjiBscxRGTVzOPEVD2MpHkkZjA73dbqz1IsZFYR7ZCHxEgBk4IuoRyoyRaZhQNmZTIQY9Eot4t29zmyT/TflbEGR+Kg6fOwHTKS/dt7fUjSCvOLMf37hSViOyRX5IdocogG/v8aa2a+N8kJ+QnFf/vUyxV0TyxrVdr3f3Yb3RwOPzDttfQj/MO0keX1OBvZFQrrbHwirQ3D5vmPbi8+i/Yc0aMQHnjWErcBcG927dR8DHuDyw3zw37HBDqnxZVFrfD14obJ3wjRyzkgdYF6jxfdRJLoEfk/7CgzbkV2Kj2uOB6xsQanoUtMFIW2jwQJTrI3f/Vo96Om/2yrx5w==|920

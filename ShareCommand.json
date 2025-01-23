@@ -1695,5 +1695,236 @@
         ]
       }
     ]
+  },
+  {
+    "ID": "acefac59-04d3-4987-9cfd-86fb2bdc23d8",
+    "Name": "終夜運転機器点検メール",
+    "Params": [
+      {
+        "ID": "db888992-e50b-4c42-b23d-07aa2b3f6e5f",
+        "Name": "equipment_id"
+      },
+      {
+        "ID": "c0192ef9-1338-4eca-9d37-4fb4b4caa695",
+        "Name": "Target"
+      },
+      {
+        "ID": "7138ad2a-4f9c-42a5-93fc-4bb8bc0d1599",
+        "Name": "From"
+      },
+      {
+        "ID": "a29073f7-96cb-40d6-95ff-188011f26342",
+        "Name": "To"
+      },
+      {
+        "ID": "28599e76-9750-4fd4-bbb3-ecf27db3e81d",
+        "Name": "Cc"
+      }
+    ],
+    "Commands": [
+      {
+        "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
+        "ConditionAndCommandPairList": [
+          {
+            "Condition": {
+              "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+              "param": {
+                "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
+                "cellLocations": [
+                  {
+                    "SerializeProperty": "=Target"
+                  }
+                ]
+              },
+              "value": "All"
+            },
+            "CommandList": [
+              {
+                "$type": "Forguncy.Model.Commands.SetParameterCommand, ServerDesignerCommon",
+                "ParameterName": "Subject",
+                "ParameterValue": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=\"【終夜運転】 一斉点検依頼\""
+                },
+                "ID": "f36739cc131640a58c533de6375af693"
+              }
+            ],
+            "ID": "7fd3ea6b-bb20-4e11-acfd-88a08d019436"
+          },
+          {
+            "CommandList": [
+              {
+                "$type": "Forguncy.Model.Commands.SetParameterCommand, ServerDesignerCommon",
+                "ParameterName": "Equipment",
+                "TableValue": {
+                  "TableName": "V_OvernightGroup_Inspection",
+                  "OnlyGetValue": true,
+                  "TableValueType": 0,
+                  "BindingInfos": [
+                    {
+                      "BindingInfo": {
+                        "TableName": "V_OvernightGroup_Inspection",
+                        "ColumnName": "InstrumentName"
+                      },
+                      "ColumnName": "InstrumentName"
+                    }
+                  ],
+                  "SqlCondition": {
+                    "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                    "ColumnBindingInfo": {
+                      "TableName": "V_OvernightGroup_Inspection",
+                      "ColumnName": "EquipmentId"
+                    },
+                    "Value": {
+                      "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                      "SerializeProperty": "=equipment_id"
+                    }
+                  },
+                  "TopCount": "1",
+                  "OrderBySqlCondition": {
+                    "OrderByColumns": [
+                      {
+                        "ColumnBindingInfo": {
+                          "TableName": "V_OvernightGroup_Inspection",
+                          "ColumnName": "Inspection_mass_request_date"
+                        },
+                        "Order": 1
+                      }
+                    ]
+                  }
+                },
+                "ID": "d53f03ff5d2d40d79cf03c8b8716acf2"
+              },
+              {
+                "$type": "Forguncy.Model.Commands.SetParameterCommand, ServerDesignerCommon",
+                "ParameterName": "Subject",
+                "ParameterValue": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=\"【終夜運転】 点検依頼_\"&Equipment"
+                },
+                "ID": "6c97f58d61444337ad1e1476aa15e934"
+              }
+            ],
+            "ID": "cc2c757b-3f05-4198-8723-b0d5a30d63f4"
+          }
+        ]
+      },
+      {
+        "$type": "Forguncy.Model.Commands.SetParameterCommand, ServerDesignerCommon",
+        "ParameterName": "Comment",
+        "ParameterValue": {
+          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+          "SerializeProperty": "=\"点検を開始してください\""
+        },
+        "ID": "ac42adf05b804bc6bcd678c527728363"
+      },
+      {
+        "$type": "Forguncy.Model.ShareCommand, ServerDesignerCommon",
+        "ShareCommandContainerRefer": {
+          "ShareCommandContainerID": "0831db5e-449c-458e-9b24-ccaa1238002a"
+        },
+        "ReturnPropertiesTo": [
+          {
+            "ReturnPropertyReferObject": {
+              "ParamID": "fc895043-469a-4a69-b00b-93cbdf4f509b",
+              "ShareCommandContainerReferObject": {
+                "ShareCommandContainerID": "0831db5e-449c-458e-9b24-ccaa1238002a"
+              }
+            },
+            "ResultTo": {
+              "SerializeProperty": "rootURL"
+            }
+          }
+        ]
+      },
+      {
+        "$type": "Forguncy.Model.Commands.SetParameterCommand, ServerDesignerCommon",
+        "ParameterName": "URL",
+        "ParameterValue": {
+          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+          "SerializeProperty": "=rootURL&ENCODEURL(\"点検依頼・結果\")"
+        },
+        "ID": "07b0208ca3d346f78efdc5c369d97b43"
+      },
+      {
+        "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
+        "ConditionAndCommandPairList": [
+          {
+            "Condition": {
+              "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+              "Condition1": {
+                "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+                "Condition1": {
+                  "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                  "param": {
+                    "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
+                    "cellLocations": [
+                      {
+                        "SerializeProperty": "=From"
+                      }
+                    ]
+                  }
+                },
+                "Condition2": {
+                  "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                  "param": {
+                    "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
+                    "cellLocations": [
+                      {
+                        "SerializeProperty": "=To"
+                      }
+                    ]
+                  }
+                },
+                "RelationType": 1
+              },
+              "Condition2": {
+                "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                "param": {
+                  "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
+                  "cellLocations": [
+                    {
+                      "SerializeProperty": "=Cc"
+                    }
+                  ]
+                }
+              },
+              "RelationType": 1
+            },
+            "CommandList": [
+              {
+                "$type": "Forguncy.Model.ReturnCommand, ServerDesignerCommon"
+              }
+            ],
+            "ID": "0ee94664-5629-4ea7-b301-77b1a7f848b7"
+          }
+        ]
+      },
+      {
+        "$type": "Forguncy.Model.SendMailCommand, ServerDesignerCommon",
+        "From": {
+          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+          "SerializeProperty": "=From"
+        },
+        "Subject": {
+          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+          "SerializeProperty": "=Subject"
+        },
+        "Content": "[件名]\r\n　[=Subject]\r\n\r\n[コメント]\r\n　[=Comment]\r\n\r\n[URL]\r\n　[=URL]",
+        "EnhancedRecipient": {
+          "CommonValue": {
+            "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+            "SerializeProperty": "=To"
+          }
+        },
+        "EnhancedCC": {
+          "CommonValue": {
+            "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+            "SerializeProperty": "=Cc"
+          }
+        },
+        "ID": "2c044d6aebac4735a427809e26ae0980"
+      }
+    ]
   }
 ]

@@ -1,34 +1,9 @@
 {
   "Rows": {
     "RowColumnAttachedInfos": {
-      "7": {
-        "GridRowColumnDefinition": {
-          "DesignLengthInPixel": 30.0
-        }
-      },
-      "10": {
-        "GridRowColumnDefinition": {
-          "DesignLengthInPixel": 30.0
-        }
-      },
-      "11": {
-        "GridRowColumnDefinition": {
-          "DesignLengthInPixel": 10.0
-        }
-      },
       "12": {
         "GridRowColumnDefinition": {
-          "DesignLengthInPixel": 20.0
-        }
-      },
-      "13": {
-        "GridRowColumnDefinition": {
           "DesignLengthInPixel": 30.0
-        }
-      },
-      "14": {
-        "GridRowColumnDefinition": {
-          "DesignLengthInPixel": 10.0
         }
       },
       "15": {
@@ -43,15 +18,40 @@
       },
       "17": {
         "GridRowColumnDefinition": {
-          "DesignLengthInPixel": 40.0
+          "DesignLengthInPixel": 20.0
         }
       },
       "18": {
         "GridRowColumnDefinition": {
-          "DesignLengthInPixel": 40.0
+          "DesignLengthInPixel": 30.0
         }
       },
       "19": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 10.0
+        }
+      },
+      "20": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 30.0
+        }
+      },
+      "21": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 10.0
+        }
+      },
+      "22": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 40.0
+        }
+      },
+      "23": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 40.0
+        }
+      },
+      "24": {
         "GridRowColumnDefinition": {
           "DesignLengthInPixel": 40.0
         }
@@ -64,27 +64,20 @@
       3,
       4,
       5,
-      38,
-      39,
-      40,
-      41
+      6,
+      7,
+      8,
+      9,
+      10,
+      43,
+      44,
+      45,
+      46
     ],
-    "Count": 42
+    "Count": 47
   },
   "Cols": {
     "RowColumnAttachedInfos": {
-      "51": {
-        "GridRowColumnDefinition": {
-          "DesignLengthInPixel": 50.0,
-          "IsHidden": true
-        }
-      },
-      "52": {
-        "GridRowColumnDefinition": {
-          "DesignLengthInPixel": 50.0,
-          "IsHidden": true
-        }
-      },
       "53": {
         "GridRowColumnDefinition": {
           "DesignLengthInPixel": 50.0,
@@ -97,7 +90,43 @@
           "IsHidden": true
         }
       },
+      "55": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 50.0,
+          "IsHidden": true
+        }
+      },
+      "56": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 50.0,
+          "IsHidden": true
+        }
+      },
+      "57": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 50.0,
+          "IsHidden": true
+        }
+      },
       "58": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 50.0,
+          "IsHidden": true
+        }
+      },
+      "59": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 50.0,
+          "IsHidden": true
+        }
+      },
+      "60": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 50.0,
+          "IsHidden": true
+        }
+      },
+      "62": {
         "GridRowColumnDefinition": {
           "DesignLengthInPixel": 20.0,
           "IsHidden": true
@@ -105,54 +134,67 @@
       }
     },
     "InLogicalVisibleIndexes": [
-      51,
-      52,
       53,
       54,
       55,
       56,
       57,
       58,
-      61
+      59,
+      60,
+      61,
+      62,
+      65
     ],
-    "Count": 62
+    "Count": 66
   },
   "Values": {
     "1,1": "検索用SQLクエリ",
+    "1,20": "送信元アドレス",
+    "1,26": "forguncy@zeon.co.jp",
     "2,1": "建屋の値で階を絞り込む",
-    "2,20": "点検依頼年月",
-    "2,34": "遷移元",
-    "2,37": "点検",
-    "2,42": "（点検/点検依頼）",
+    "2,20": "管理者アドレス",
     "3,1": "階の値で部屋番号を絞り込む",
-    "3,34": "※デフォルト値：点検",
+    "3,20": "機器管理者アドレス",
     "4,1": "管理部署の値で機器責任者を絞り込む",
-    "4,35": "機器点検画面へ遷移して戻る際に必要",
-    "7,1": "点検依頼",
-    "9,1": "点検済/未",
-    "9,6": "建屋",
-    "9,18": "階",
-    "9,30": "部屋番号",
-    "10,1": 0,
-    "12,1": "機器名称",
-    "12,18": "管理部署",
-    "12,30": "機器責任者",
-    "13,45": "条件クリア",
-    "15,41": "終夜機器点検　一斉依頼",
-    "17,3": "機器ID",
-    "17,9": "機器名称",
-    "17,21": "部屋番号",
-    "17,31": "管理部署",
-    "17,41": "機器責任者",
-    "18,1": "点検"
+    "6,1": "直近の点検一斉依頼日",
+    "6,39": "重複カウント",
+    "6,42": "email_重複除去",
+    "8,1": "遷移元",
+    "8,6": "点検",
+    "8,11": "(点検/点検依頼)",
+    "9,1": "※デフォルト値：点検(URLから遷移する際に必要)",
+    "12,1": "点検一斉依頼日",
+    "14,1": "点検済/未",
+    "14,6": "建屋",
+    "14,18": "階",
+    "14,30": "部屋番号",
+    "15,1": 0,
+    "17,1": "機器名称",
+    "17,18": "管理部署",
+    "17,30": "機器責任者",
+    "18,45": "条件クリア",
+    "20,41": "終夜機器点検　一斉依頼",
+    "22,3": "機器ID",
+    "22,9": "機器名称",
+    "22,21": "部屋番号",
+    "22,31": "管理部署",
+    "22,41": "機器責任者",
+    "22,59": "点検編集可",
+    "23,1": "点検",
+    "23,51": "点検\n依頼"
   },
   "Formulas": {
-    "2,10": "IF(G11=\"\",\"99999999\",0)",
-    "2,25": "YEAR(TODAY())&TEXT(MONTH(TODAY()),\"00\")",
-    "3,10": "IF(OR(G11=\"\",S11=\"\"),\"99999999\",0)",
-    "4,13": "IF(S14=\"\",\"99999999\",0)",
-    "7,5": "IF(AL3=\"点検\",TODAY(),\"\")",
-    "18,21": "ODATA(\"V_LOCATION_ForAsset?$select=Third_Classification_Name&$filter=First_Classification_Code eq \"&IF(ISBLANK(BA19),\"null\",\"'\"&BA19&\"'\")&\" and Second_Classification_Code eq \"&IF(ISBLANK(BB19),\"null\",\"'\"&BB19&\"'\")&\" and Third_Classification_Code eq \"&IF(ISBLANK(BC19),\"null\",\"'\"&BC19&\"'\"))"
+    "2,10": "IF(G16=\"\",\"99999999\",0)",
+    "2,26": "IFERROR(TEXTJOIN(\",\",TRUE,AK3),\"\")",
+    "3,10": "IF(OR(G16=\"\",S16=\"\"),\"99999999\",0)",
+    "3,26": "IFERROR(TEXTJOIN(\",\",TRUE,AQ8),\"\")",
+    "4,13": "IF(S19=\"\",\"99999999\",0)",
+    "6,9": "IFERROR(ODATA(\"T_OvernightInspection?$select=Inspection_mass_request_date&$top=1&$orderby=Inspection_mass_request_date desc\"),\"\")",
+    "7,39": "COUNTIF($AK$8:$AM8,$AK8)",
+    "7,42": "IFERROR(IF(AN8=1,AK8,\"\"),\"\")",
+    "23,21": "ODATA(\"V_LOCATION_ForAsset?$select=Third_Classification_Name&$filter=First_Classification_Code eq \"&IF(ISBLANK(BC24),\"null\",\"'\"&BC24&\"'\")&\" and Second_Classification_Code eq \"&IF(ISBLANK(BD24),\"null\",\"'\"&BD24&\"'\")&\" and Third_Classification_Code eq \"&IF(ISBLANK(BE24),\"null\",\"'\"&BE24&\"'\"))",
+    "23,59": "IF(AND($G$9=\"点検\",BG24=$J$7,BB24=\"0\"),1,0)"
   },
   "AttachInfos": {
     "1,1": {
@@ -160,43 +202,109 @@
         "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
         "CommandList": [
           {
-            "$type": "Forguncy.Model.QueryCommand, ServerDesignerCommon",
-            "TargetTableName": "V_OvernightGroup_Inspection",
-            "SqlCondition": {
-              "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
-              "Condition1": {
-                "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
-                "Condition1": {
-                  "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
-                  "Condition1": {
-                    "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
-                    "Condition1": {
+            "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
+            "ConditionAndCommandPairList": [
+              {
+                "Condition": {
+                  "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                  "param": {
+                    "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
+                    "cellLocations": [
+                      {
+                        "SerializeProperty": "=点検依頼・結果!G9"
+                      }
+                    ]
+                  },
+                  "value": "点検"
+                },
+                "CommandList": [
+                  {
+                    "$type": "Forguncy.Model.QueryCommand, ServerDesignerCommon",
+                    "TargetTableName": "V_OvernightGroup_Inspection",
+                    "SqlCondition": {
                       "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
                       "Condition1": {
                         "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
                         "Condition1": {
                           "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
                           "Condition1": {
-                            "$type": "ForguncyDataAccess.TextCESqlCondition, ForguncyDataAccess",
-                            "CompareType": 8,
-                            "ColumnBindingInfo": {
-                              "TableName": "V_OvernightGroup_Inspection",
-                              "ColumnName": "status"
+                            "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+                            "Condition1": {
+                              "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+                              "Condition1": {
+                                "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+                                "Condition1": {
+                                  "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+                                  "Condition1": {
+                                    "$type": "ForguncyDataAccess.TextCESqlCondition, ForguncyDataAccess",
+                                    "CompareType": 8,
+                                    "ColumnBindingInfo": {
+                                      "TableName": "V_OvernightGroup_Inspection",
+                                      "ColumnName": "status"
+                                    },
+                                    "Value": {
+                                      "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                      "SerializeProperty": "=IFERROR(IFS(点検依頼・結果!B16=0,\"%Null%,0\",点検依頼・結果!B16=1,1,点検依頼・結果!B16=\"Null\",\"%Null%\",TRUE,\"\"),0)"
+                                    }
+                                  },
+                                  "Condition2": {
+                                    "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                                    "ColumnBindingInfo": {
+                                      "TableName": "V_OvernightGroup_Inspection",
+                                      "ColumnName": "First_Classification_Code"
+                                    },
+                                    "Value": {
+                                      "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                      "SerializeProperty": "=点検依頼・結果!G16"
+                                    }
+                                  }
+                                },
+                                "Condition2": {
+                                  "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                                  "ColumnBindingInfo": {
+                                    "TableName": "V_OvernightGroup_Inspection",
+                                    "ColumnName": "Second_Classification_Code"
+                                  },
+                                  "Value": {
+                                    "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                    "SerializeProperty": "=点検依頼・結果!S16"
+                                  }
+                                }
+                              },
+                              "Condition2": {
+                                "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                                "ColumnBindingInfo": {
+                                  "TableName": "V_OvernightGroup_Inspection",
+                                  "ColumnName": "Third_Classification_Code"
+                                },
+                                "Value": {
+                                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                  "SerializeProperty": "=点検依頼・結果!AE16"
+                                }
+                              }
                             },
-                            "Value": {
-                              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                              "SerializeProperty": "=IF(点検依頼・結果!B11=0,\"%Null%,0\",点検依頼・結果!B11)"
+                            "Condition2": {
+                              "$type": "ForguncyDataAccess.TextCESqlCondition, ForguncyDataAccess",
+                              "CompareType": 6,
+                              "ColumnBindingInfo": {
+                                "TableName": "V_OvernightGroup_Inspection",
+                                "ColumnName": "InstrumentName"
+                              },
+                              "Value": {
+                                "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                "SerializeProperty": "=点検依頼・結果!B19"
+                              }
                             }
                           },
                           "Condition2": {
                             "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
                             "ColumnBindingInfo": {
                               "TableName": "V_OvernightGroup_Inspection",
-                              "ColumnName": "First_Classification_Code"
+                              "ColumnName": "dept_code"
                             },
                             "Value": {
                               "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                              "SerializeProperty": "=点検依頼・結果!G11"
+                              "SerializeProperty": "=点検依頼・結果!S19"
                             }
                           }
                         },
@@ -204,11 +312,11 @@
                           "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
                           "ColumnBindingInfo": {
                             "TableName": "V_OvernightGroup_Inspection",
-                            "ColumnName": "Second_Classification_Code"
+                            "ColumnName": "employee_z_code"
                           },
                           "Value": {
                             "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                            "SerializeProperty": "=点検依頼・結果!S11"
+                            "SerializeProperty": "=点検依頼・結果!AE19"
                           }
                         }
                       },
@@ -216,81 +324,490 @@
                         "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
                         "ColumnBindingInfo": {
                           "TableName": "V_OvernightGroup_Inspection",
-                          "ColumnName": "Third_Classification_Code"
+                          "ColumnName": "Inspection_mass_request_date"
                         },
                         "Value": {
                           "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                          "SerializeProperty": "=点検依頼・結果!AE11"
+                          "SerializeProperty": "=点検依頼・結果!I13"
                         }
                       }
                     },
-                    "Condition2": {
-                      "$type": "ForguncyDataAccess.TextCESqlCondition, ForguncyDataAccess",
-                      "CompareType": 6,
-                      "ColumnBindingInfo": {
-                        "TableName": "V_OvernightGroup_Inspection",
-                        "ColumnName": "InstrumentName"
-                      },
-                      "Value": {
-                        "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                        "SerializeProperty": "=点検依頼・結果!B14"
-                      }
-                    }
+                    "Params": [
+                      "=IFERROR(IFS(B16=0,\"%Null%,0\",B16=1,1,B16=\"Null\",\"%Null%\",TRUE,\"\"),0)",
+                      "=G16",
+                      "=S16",
+                      "=AE16",
+                      "=B19",
+                      "=S19",
+                      "=AE19",
+                      "=I13"
+                    ],
+                    "ID": "068cfc4d6ccb494dbdebeff0d836e7fb"
+                  }
+                ],
+                "Comments": "ユーザーが点検する画面の場合",
+                "ID": "e84a9f95-c21a-436b-b688-af68df65f384"
+              },
+              {
+                "Condition": {
+                  "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+                  "Condition1": {
+                    "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                    "param": {
+                      "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
+                      "cellLocations": [
+                        {
+                          "SerializeProperty": "=点検依頼・結果!G9"
+                        }
+                      ]
+                    },
+                    "value": "点検依頼"
                   },
                   "Condition2": {
-                    "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
-                    "ColumnBindingInfo": {
-                      "TableName": "V_OvernightGroup_Inspection",
-                      "ColumnName": "dept_code"
+                    "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                    "param": {
+                      "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
+                      "cellLocations": [
+                        {
+                          "SerializeProperty": "=点検依頼・結果!J7"
+                        }
+                      ]
                     },
-                    "Value": {
+                    "value": {
                       "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                      "SerializeProperty": "=点検依頼・結果!S14"
+                      "SerializeProperty": "=点検依頼・結果!I13"
                     }
                   }
                 },
-                "Condition2": {
-                  "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
-                  "ColumnBindingInfo": {
-                    "TableName": "V_OvernightGroup_Inspection",
-                    "ColumnName": "employee_z_code"
-                  },
-                  "Value": {
-                    "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                    "SerializeProperty": "=点検依頼・結果!AE14"
+                "CommandList": [
+                  {
+                    "$type": "Forguncy.Model.QueryCommand, ServerDesignerCommon",
+                    "TargetTableName": "V_OvernightGroup_Inspection",
+                    "SqlCondition": {
+                      "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+                      "Condition1": {
+                        "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+                        "Condition1": {
+                          "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+                          "Condition1": {
+                            "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+                            "Condition1": {
+                              "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+                              "Condition1": {
+                                "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+                                "Condition1": {
+                                  "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+                                  "Condition1": {
+                                    "$type": "ForguncyDataAccess.TextCESqlCondition, ForguncyDataAccess",
+                                    "CompareType": 8,
+                                    "ColumnBindingInfo": {
+                                      "TableName": "V_OvernightGroup_Inspection",
+                                      "ColumnName": "status"
+                                    },
+                                    "Value": {
+                                      "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                      "SerializeProperty": "=IFERROR(IFS(点検依頼・結果!B16=0,\"%Null%,0\",点検依頼・結果!B16=1,1,点検依頼・結果!B16=\"Null\",\"%Null%\",TRUE,\"\"),0)"
+                                    }
+                                  },
+                                  "Condition2": {
+                                    "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                                    "ColumnBindingInfo": {
+                                      "TableName": "V_OvernightGroup_Inspection",
+                                      "ColumnName": "First_Classification_Code"
+                                    },
+                                    "Value": {
+                                      "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                      "SerializeProperty": "=点検依頼・結果!G16"
+                                    }
+                                  }
+                                },
+                                "Condition2": {
+                                  "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                                  "ColumnBindingInfo": {
+                                    "TableName": "V_OvernightGroup_Inspection",
+                                    "ColumnName": "Second_Classification_Code"
+                                  },
+                                  "Value": {
+                                    "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                    "SerializeProperty": "=点検依頼・結果!S16"
+                                  }
+                                }
+                              },
+                              "Condition2": {
+                                "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                                "ColumnBindingInfo": {
+                                  "TableName": "V_OvernightGroup_Inspection",
+                                  "ColumnName": "Third_Classification_Code"
+                                },
+                                "Value": {
+                                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                  "SerializeProperty": "=点検依頼・結果!AE16"
+                                }
+                              }
+                            },
+                            "Condition2": {
+                              "$type": "ForguncyDataAccess.TextCESqlCondition, ForguncyDataAccess",
+                              "CompareType": 6,
+                              "ColumnBindingInfo": {
+                                "TableName": "V_OvernightGroup_Inspection",
+                                "ColumnName": "InstrumentName"
+                              },
+                              "Value": {
+                                "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                "SerializeProperty": "=点検依頼・結果!B19"
+                              }
+                            }
+                          },
+                          "Condition2": {
+                            "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                            "ColumnBindingInfo": {
+                              "TableName": "V_OvernightGroup_Inspection",
+                              "ColumnName": "dept_code"
+                            },
+                            "Value": {
+                              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                              "SerializeProperty": "=点検依頼・結果!S19"
+                            }
+                          }
+                        },
+                        "Condition2": {
+                          "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                          "ColumnBindingInfo": {
+                            "TableName": "V_OvernightGroup_Inspection",
+                            "ColumnName": "employee_z_code"
+                          },
+                          "Value": {
+                            "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                            "SerializeProperty": "=点検依頼・結果!AE19"
+                          }
+                        }
+                      },
+                      "Condition2": {
+                        "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+                        "Condition1": {
+                          "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                          "ColumnBindingInfo": {
+                            "TableName": "V_OvernightGroup_Inspection",
+                            "ColumnName": "Inspection_mass_request_date"
+                          },
+                          "Value": {
+                            "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                            "SerializeProperty": "=点検依頼・結果!I13"
+                          },
+                          "LeftBracket": 1
+                        },
+                        "Condition2": {
+                          "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                          "ColumnBindingInfo": {
+                            "TableName": "V_OvernightGroup_Inspection",
+                            "ColumnName": "Inspection_mass_request_date"
+                          },
+                          "Value": "%Null%",
+                          "RightBracket": 1
+                        },
+                        "RelationType": 1
+                      }
+                    },
+                    "Params": [
+                      "=IFERROR(IFS(B16=0,\"%Null%,0\",B16=1,1,B16=\"Null\",\"%Null%\",TRUE,\"\"),0)",
+                      "=G16",
+                      "=S16",
+                      "=AE16",
+                      "=B19",
+                      "=S19",
+                      "=AE19",
+                      "=I13"
+                    ],
+                    "ID": "99accaa1cc67413eac4e462090e7e9cb"
                   }
-                }
+                ],
+                "Comments": "管理者が点検を依頼する画面　かつ直近の点検一斉依頼日をコンボで選択した場合",
+                "ID": "89597fc4-55d0-497a-a0ab-214732c00b95"
               },
-              "Condition2": {
-                "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
-                "ColumnBindingInfo": {
-                  "TableName": "V_OvernightGroup_Inspection",
-                  "ColumnName": "Inspection_request_ym"
-                },
-                "Value": {
-                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                  "SerializeProperty": "=IF(点検依頼・結果!AL3=\"点検\",点検依頼・結果!Z3,\"\")"
-                }
+              {
+                "CommandList": [
+                  {
+                    "$type": "Forguncy.Model.QueryCommand, ServerDesignerCommon",
+                    "TargetTableName": "V_OvernightGroup_Inspection",
+                    "SqlCondition": {
+                      "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+                      "Condition1": {
+                        "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+                        "Condition1": {
+                          "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+                          "Condition1": {
+                            "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+                            "Condition1": {
+                              "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+                              "Condition1": {
+                                "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+                                "Condition1": {
+                                  "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+                                  "Condition1": {
+                                    "$type": "ForguncyDataAccess.TextCESqlCondition, ForguncyDataAccess",
+                                    "CompareType": 8,
+                                    "ColumnBindingInfo": {
+                                      "TableName": "V_OvernightGroup_Inspection",
+                                      "ColumnName": "status"
+                                    },
+                                    "Value": {
+                                      "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                      "SerializeProperty": "=IFERROR(IFS(点検依頼・結果!B16=0,\"%Null%,0\",点検依頼・結果!B16=1,1,点検依頼・結果!B16=\"Null\",\"%Null%\",TRUE,\"\"),0)"
+                                    }
+                                  },
+                                  "Condition2": {
+                                    "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                                    "ColumnBindingInfo": {
+                                      "TableName": "V_OvernightGroup_Inspection",
+                                      "ColumnName": "First_Classification_Code"
+                                    },
+                                    "Value": {
+                                      "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                      "SerializeProperty": "=点検依頼・結果!G16"
+                                    }
+                                  }
+                                },
+                                "Condition2": {
+                                  "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                                  "ColumnBindingInfo": {
+                                    "TableName": "V_OvernightGroup_Inspection",
+                                    "ColumnName": "Second_Classification_Code"
+                                  },
+                                  "Value": {
+                                    "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                    "SerializeProperty": "=点検依頼・結果!S16"
+                                  }
+                                }
+                              },
+                              "Condition2": {
+                                "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                                "ColumnBindingInfo": {
+                                  "TableName": "V_OvernightGroup_Inspection",
+                                  "ColumnName": "Third_Classification_Code"
+                                },
+                                "Value": {
+                                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                  "SerializeProperty": "=点検依頼・結果!AE16"
+                                }
+                              }
+                            },
+                            "Condition2": {
+                              "$type": "ForguncyDataAccess.TextCESqlCondition, ForguncyDataAccess",
+                              "CompareType": 6,
+                              "ColumnBindingInfo": {
+                                "TableName": "V_OvernightGroup_Inspection",
+                                "ColumnName": "InstrumentName"
+                              },
+                              "Value": {
+                                "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                "SerializeProperty": "=点検依頼・結果!B19"
+                              }
+                            }
+                          },
+                          "Condition2": {
+                            "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                            "ColumnBindingInfo": {
+                              "TableName": "V_OvernightGroup_Inspection",
+                              "ColumnName": "dept_code"
+                            },
+                            "Value": {
+                              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                              "SerializeProperty": "=点検依頼・結果!S19"
+                            }
+                          }
+                        },
+                        "Condition2": {
+                          "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                          "ColumnBindingInfo": {
+                            "TableName": "V_OvernightGroup_Inspection",
+                            "ColumnName": "employee_z_code"
+                          },
+                          "Value": {
+                            "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                            "SerializeProperty": "=点検依頼・結果!AE19"
+                          }
+                        }
+                      },
+                      "Condition2": {
+                        "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                        "ColumnBindingInfo": {
+                          "TableName": "V_OvernightGroup_Inspection",
+                          "ColumnName": "Inspection_mass_request_date"
+                        },
+                        "Value": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=点検依頼・結果!I13"
+                        }
+                      }
+                    },
+                    "Params": [
+                      "=IFERROR(IFS(B16=0,\"%Null%,0\",B16=1,1,B16=\"Null\",\"%Null%\",TRUE,\"\"),0)",
+                      "=G16",
+                      "=S16",
+                      "=AE16",
+                      "=B19",
+                      "=S19",
+                      "=AE19",
+                      "=I13"
+                    ],
+                    "ID": "1217a74131834700951b9cc472a9e067"
+                  }
+                ],
+                "Comments": "管理者が点検を依頼する画面　かつ直近の点検一斉依頼日ではない日付をコンボで選択した場合",
+                "ID": "1e02267d-697f-45ae-93ce-87f79b371b52"
               }
-            },
-            "Params": [
-              "=IF(B11=0,\"%Null%,0\",B11)",
-              "=G11",
-              "=S11",
-              "=AE11",
-              "=B14",
-              "=S14",
-              "=AE14",
-              "=IF(AL3=\"点検\",Z3,\"\")"
-            ],
-            "ID": "87680883f3f44bb18a3502bdeb7ecdd5"
+            ]
           }
         ],
         "Text": "検索用SQLクエリ",
         "TemplateKey": "_RS_Normal_Style7"
       }
     },
-    "10,1": {
+    "1,33": {
+      "ListViewInfo": {
+        "ShowColumnHeaderInDesigner": true,
+        "TableName": "M_SystemAdministrator",
+        "RowIndex": 1,
+        "ColumnIndex": 33,
+        "ColumnCount": 9,
+        "RowCount": 4,
+        "ColumnOperation": 2,
+        "ShowEditStatusIcon": true,
+        "UseSimpleBar": true,
+        "Name": "リストビュー1",
+        "TopCondition": null,
+        "ListViewStyleName": "_RS_Medium7"
+      }
+    },
+    "2,33": {
+      "BindingInfo": {
+        "TableName": "M_SystemAdministrator",
+        "ColumnName": "employee_z_code"
+      }
+    },
+    "2,36": {
+      "BindingInfo": {
+        "TableName": "M_SystemAdministrator",
+        "ColumnName": "employee_z_code",
+        "RelationBinding": {
+          "RelatedTable": "lum_view_employee_department_relations_duplicated",
+          "RelatedColumn": "employee_z_code",
+          "DisplayColumn": "primary_exmail_address"
+        }
+      }
+    },
+    "6,33": {
+      "ListViewInfo": {
+        "ShowColumnHeaderInDesigner": true,
+        "TableName": "T_InstrumentBasicInformation",
+        "RowIndex": 6,
+        "ColumnIndex": 33,
+        "ColumnCount": 12,
+        "RowCount": 4,
+        "ColumnOperation": 2,
+        "ShowEditStatusIcon": true,
+        "UseSimpleBar": true,
+        "Name": "リストビュー2",
+        "SqlCondition": {
+          "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+          "Condition1": {
+            "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+            "ColumnBindingInfo": {
+              "TableName": "T_InstrumentBasicInformation",
+              "ColumnName": "overnight_epuipment_flg"
+            },
+            "Value": "1"
+          },
+          "Condition2": {
+            "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+            "CompareType": 1,
+            "ColumnBindingInfo": {
+              "TableName": "T_InstrumentBasicInformation",
+              "ColumnName": "DeleteFlag"
+            },
+            "Value": "1"
+          }
+        },
+        "TopCondition": null,
+        "ListViewStyleName": "_RS_Medium7"
+      }
+    },
+    "7,33": {
+      "BindingInfo": {
+        "TableName": "T_InstrumentBasicInformation",
+        "ColumnName": "employee_z_code"
+      }
+    },
+    "7,36": {
+      "BindingInfo": {
+        "TableName": "T_InstrumentBasicInformation",
+        "ColumnName": "employee_z_code",
+        "RelationBinding": {
+          "RelatedTable": "lum_view_employee_department_relations_duplicated",
+          "RelatedColumn": "employee_z_code",
+          "DisplayColumn": "primary_exmail_address"
+        }
+      }
+    },
+    "12,8": {
+      "CellType": {
+        "$type": "Forguncy.DropDownListCellType, ServerDesignerCommon",
+        "TemplateKey": "_RS_LightLine_Translucent_SmallRoundCorner_Normal1",
+        "IsBounding": true,
+        "Items": [
+          {
+            "Value": "項目1",
+            "DisplayValue": "項目1"
+          },
+          {
+            "Value": "項目2",
+            "DisplayValue": "項目2"
+          },
+          {
+            "Value": "項目3",
+            "DisplayValue": "項目3"
+          }
+        ],
+        "DataSource": "T_OvernightInspection",
+        "ValueColumnBindingInfo": {
+          "TableName": "T_OvernightInspection",
+          "ColumnName": "Inspection_mass_request_date"
+        },
+        "DisplayColumnBindingInfo": {
+          "TableName": "T_OvernightInspection",
+          "ColumnName": "Inspection_mass_request_date"
+        },
+        "ItemsSort": {
+          "OrderByColumns": [
+            {
+              "ColumnBindingInfo": {
+                "TableName": "T_OvernightInspection",
+                "ColumnName": "Inspection_mass_request_date"
+              },
+              "Order": 1
+            }
+          ]
+        },
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.OperateCellTypeCommand, ServerDesignerCommon",
+            "TargetPageElement": {
+              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+              "SerializeProperty": "=点検依頼・結果!B2"
+            },
+            "TargetType": "Forguncy.ButtonCellType, ServerDesignerCommon, Version=8.0.20.0, Culture=neutral, PublicKeyToken=967100671921c115",
+            "MethodName": "ExecuteCommand",
+            "ParameterValues": {},
+            "RetrunParamNames": {}
+          }
+        ],
+        "CellDefaultValue": {
+          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+          "SerializeProperty": "=点検依頼・結果!J7"
+        }
+      }
+    },
+    "15,1": {
       "CellType": {
         "$type": "Forguncy.DropDownListCellType, ServerDesignerCommon",
         "SelectOnly": false,
@@ -306,10 +823,11 @@
             "DisplayValue": "点検済"
           },
           {
-            "Value": "%Null%",
+            "Value": "Null",
             "DisplayValue": "未通知"
           }
         ],
+        "AddNullItemWhenBinding": true,
         "CommandList": [
           {
             "$type": "Forguncy.Model.OperateCellTypeCommand, ServerDesignerCommon",
@@ -326,7 +844,7 @@
         "CellDefaultValue": 0
       }
     },
-    "10,6": {
+    "15,6": {
       "CellType": {
         "$type": "Forguncy.DropDownListCellType, ServerDesignerCommon",
         "SelectOnly": false,
@@ -372,7 +890,7 @@
         ]
       }
     },
-    "10,18": {
+    "15,18": {
       "CellType": {
         "$type": "Forguncy.DropDownListCellType, ServerDesignerCommon",
         "SelectOnly": false,
@@ -412,7 +930,7 @@
             },
             "Value": {
               "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-              "SerializeProperty": "=点検依頼・結果!G11"
+              "SerializeProperty": "=点検依頼・結果!G16"
             }
           },
           "Condition2": {
@@ -445,7 +963,7 @@
         ]
       }
     },
-    "10,30": {
+    "15,30": {
       "CellType": {
         "$type": "Forguncy.DropDownListCellType, ServerDesignerCommon",
         "SelectOnly": false,
@@ -487,7 +1005,7 @@
               },
               "Value": {
                 "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                "SerializeProperty": "=点検依頼・結果!G11"
+                "SerializeProperty": "=点検依頼・結果!G16"
               },
               "LeftBracket": 1
             },
@@ -516,7 +1034,7 @@
               },
               "Value": {
                 "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                "SerializeProperty": "=点検依頼・結果!S11"
+                "SerializeProperty": "=点検依頼・結果!S16"
               },
               "LeftBracket": 1
             },
@@ -552,7 +1070,7 @@
         ]
       }
     },
-    "13,1": {
+    "18,1": {
       "CellType": {
         "$type": "Forguncy.TextCellType, ServerDesignerCommon",
         "SavedValidators": [
@@ -576,7 +1094,7 @@
         ]
       }
     },
-    "13,18": {
+    "18,18": {
       "CellType": {
         "$type": "Forguncy.DropDownListCellType, ServerDesignerCommon",
         "SelectOnly": false,
@@ -633,7 +1151,7 @@
         ]
       }
     },
-    "13,30": {
+    "18,30": {
       "CellType": {
         "$type": "Forguncy.DropDownListCellType, ServerDesignerCommon",
         "SelectOnly": false,
@@ -673,7 +1191,7 @@
             },
             "Value": {
               "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-              "SerializeProperty": "=点検依頼・結果!S14"
+              "SerializeProperty": "=点検依頼・結果!S19"
             }
           },
           "Condition2": {
@@ -706,7 +1224,7 @@
         ]
       }
     },
-    "13,45": {
+    "18,45": {
       "CellType": {
         "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
         "CommandList": [
@@ -716,44 +1234,44 @@
               {
                 "TargetCells": {
                   "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                  "SerializeProperty": "=点検依頼・結果!B11"
+                  "SerializeProperty": "=点検依頼・結果!B16"
                 },
                 "Value": "0"
               },
               {
                 "TargetCells": {
                   "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                  "SerializeProperty": "=点検依頼・結果!G11"
+                  "SerializeProperty": "=点検依頼・結果!G16"
                 }
               },
               {
                 "TargetCells": {
                   "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                  "SerializeProperty": "=点検依頼・結果!S11"
+                  "SerializeProperty": "=点検依頼・結果!S16"
                 }
               },
               {
                 "TargetCells": {
                   "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                  "SerializeProperty": "=点検依頼・結果!AE11"
+                  "SerializeProperty": "=点検依頼・結果!AE16"
                 }
               },
               {
                 "TargetCells": {
                   "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                  "SerializeProperty": "=点検依頼・結果!B14"
+                  "SerializeProperty": "=点検依頼・結果!B19"
                 }
               },
               {
                 "TargetCells": {
                   "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                  "SerializeProperty": "=点検依頼・結果!S14"
+                  "SerializeProperty": "=点検依頼・結果!S19"
                 }
               },
               {
                 "TargetCells": {
                   "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                  "SerializeProperty": "=点検依頼・結果!AE14"
+                  "SerializeProperty": "=点検依頼・結果!AE19"
                 }
               }
             ]
@@ -774,7 +1292,7 @@
         "TemplateKey": "_RS_Outline_Style7"
       }
     },
-    "15,1": {
+    "20,1": {
       "CellType": {
         "$type": "Forguncy.PageNavigateCellType, ServerDesignerCommon",
         "PageingListviewName": "点検依頼_結果一覧",
@@ -800,7 +1318,7 @@
         }
       }
     },
-    "15,41": {
+    "20,41": {
       "CellType": {
         "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
         "CommandList": [
@@ -815,400 +1333,54 @@
                   "NoButtonText": "いいえ",
                   "ConfirmIcon": 1
                 },
-                "CommandList": [],
-                "ID": "1bbb4750-c296-4287-8ebc-b4965f73d5d5"
-              },
-              {
                 "CommandList": [
                   {
-                    "$type": "Forguncy.Model.StopCommand, ServerDesignerCommon"
-                  }
-                ],
-                "ID": "7f9dd423-49a6-46be-a31d-485660d05935"
-              }
-            ]
-          },
-          {
-            "$type": "Forguncy.Model.Commands.SetParameterCommand, ServerDesignerCommon",
-            "ParameterName": "previous_item",
-            "ID": "bee0d126a02648cca01bdc9858171f83",
-            "Comments": ""
-          },
-          {
-            "$type": "Forguncy.Model.Commands.SetParameterCommand, ServerDesignerCommon",
-            "ParameterName": "target_equipment_array",
-            "TableValue": {
-              "TableName": "V_OvernightGroup_Inspection",
-              "BindingInfos": [
-                {
-                  "BindingInfo": {
-                    "TableName": "V_OvernightGroup_Inspection",
-                    "ColumnName": "equipment_id"
+                    "$type": "LoadingCommand.StartLoadingCommand, LoadingCommand",
+                    "LoadingTextColor": "Background 1 0"
                   },
-                  "ColumnName": "equipment_id"
-                }
-              ],
-              "OrderBySqlCondition": {
-                "OrderByColumns": [
                   {
-                    "ColumnBindingInfo": {
+                    "$type": "Forguncy.Model.Commands.SetParameterCommand, ServerDesignerCommon",
+                    "ParameterName": "mass_request_date",
+                    "ParameterValue": {
+                      "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                      "SerializeProperty": "=TODAY()"
+                    },
+                    "ID": "a93c4a31001644a98538baf0ff24702c"
+                  },
+                  {
+                    "$type": "Forguncy.Model.Commands.SetParameterCommand, ServerDesignerCommon",
+                    "ParameterName": "previous_item",
+                    "ID": "864594b3d420428ba4509a9bf71c3144",
+                    "Comments": ""
+                  },
+                  {
+                    "$type": "Forguncy.Model.Commands.SetParameterCommand, ServerDesignerCommon",
+                    "ParameterName": "target_equipment_array",
+                    "TableValue": {
                       "TableName": "V_OvernightGroup_Inspection",
-                      "ColumnName": "equipment_id"
-                    },
-                    "Order": 0
-                  }
-                ]
-              }
-            },
-            "ID": "c6fc662fea8549c1a7012a1c2b906aa7",
-            "Comments": "点検対象となる機器IDの配列"
-          },
-          {
-            "$type": "Forguncy.Model.Commands.SetParameterCommand, ServerDesignerCommon",
-            "ParameterName": "checklist_cd_array",
-            "TableValue": {
-              "TableName": "M_OvernightInspectionList",
-              "BindingInfos": [
-                {
-                  "BindingInfo": {
-                    "TableName": "M_OvernightInspectionList",
-                    "ColumnName": "checklist_cd"
-                  },
-                  "ColumnName": "checklist_cd"
-                }
-              ],
-              "SqlCondition": {
-                "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
-                "CompareType": 1,
-                "ColumnBindingInfo": {
-                  "TableName": "M_OvernightInspectionList",
-                  "ColumnName": "delete_flg"
-                },
-                "Value": "1"
-              },
-              "OrderBySqlCondition": {
-                "OrderByColumns": [
-                  {
-                    "ColumnBindingInfo": {
-                      "TableName": "M_OvernightInspectionList",
-                      "ColumnName": "display_order"
-                    },
-                    "Order": 0
-                  }
-                ]
-              }
-            },
-            "ID": "aa0f03dd5072411c8ea9fd1d2176e22e",
-            "Comments": "点検項目マスタのチェック項目CDの配列"
-          },
-          {
-            "$type": "Forguncy.Model.LoopCommand, ServerDesignerCommon",
-            "LoopInfo": {
-              "$type": "Forguncy.Model.CountLoopInfo, ServerDesignerCommon",
-              "LoopCount": {
-                "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                "SerializeProperty": "=点検依頼・結果!target_equipment_array"
-              },
-              "LoopItemParamName": "Item"
-            },
-            "CommandList": [
-              {
-                "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
-                "ConditionAndCommandPairList": [
-                  {
-                    "Condition": {
-                      "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
-                      "param": {
-                        "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
-                        "cellLocations": [
+                      "BindingInfos": [
+                        {
+                          "BindingInfo": {
+                            "TableName": "V_OvernightGroup_Inspection",
+                            "ColumnName": "EquipmentId"
+                          },
+                          "ColumnName": "EquipmentId"
+                        }
+                      ],
+                      "OrderBySqlCondition": {
+                        "OrderByColumns": [
                           {
-                            "SerializeProperty": "=点検依頼・結果!previous_item"
+                            "ColumnBindingInfo": {
+                              "TableName": "V_OvernightGroup_Inspection",
+                              "ColumnName": "EquipmentId"
+                            },
+                            "Order": 0
                           }
                         ]
-                      },
-                      "value": {
-                        "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                        "SerializeProperty": "=点検依頼・結果!Item.equipment_id"
-                      },
-                      "compareType": 1
+                      }
                     },
-                    "CommandList": [
-                      {
-                        "$type": "Forguncy.Model.UpdateDataTableCommand, ServerDesignerCommon",
-                        "TableName": "T_OvernightInspection",
-                        "UpdateType": "add",
-                        "ShowConfirm": false,
-                        "ConfirmText": "本当に追加してもよろしいですか？",
-                        "UpdateValues": [
-                          {
-                            "ColumnName": "Inspection_request_ym",
-                            "Value": {
-                              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                              "SerializeProperty": "=点検依頼・結果!Z3"
-                            }
-                          },
-                          {
-                            "ColumnName": "equipment_id",
-                            "Value": {
-                              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                              "SerializeProperty": "=点検依頼・結果!Item.equipment_id"
-                            }
-                          }
-                        ],
-                        "Comments": "点検テーブルにレコード追加"
-                      },
-                      {
-                        "$type": "Forguncy.Model.Commands.SetParameterCommand, ServerDesignerCommon",
-                        "ParameterName": "v_overnight_inspection_id",
-                        "TableValue": {
-                          "TableName": "T_OvernightInspection",
-                          "OnlyGetValue": true,
-                          "TableValueType": 0,
-                          "BindingInfos": [
-                            {
-                              "BindingInfo": {
-                                "TableName": "T_OvernightInspection",
-                                "ColumnName": "overnight_inspection_id"
-                              },
-                              "ColumnName": "overnight_inspection_id"
-                            }
-                          ],
-                          "SqlCondition": {
-                            "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
-                            "Condition1": {
-                              "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
-                              "ColumnBindingInfo": {
-                                "TableName": "T_OvernightInspection",
-                                "ColumnName": "Inspection_request_ym"
-                              },
-                              "Value": {
-                                "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                                "SerializeProperty": "=点検依頼・結果!Z3"
-                              }
-                            },
-                            "Condition2": {
-                              "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
-                              "ColumnBindingInfo": {
-                                "TableName": "T_OvernightInspection",
-                                "ColumnName": "equipment_id"
-                              },
-                              "Value": {
-                                "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                                "SerializeProperty": "=点検依頼・結果!Item.equipment_id"
-                              }
-                            }
-                          },
-                          "TopCount": "1",
-                          "OrderBySqlCondition": {
-                            "OrderByColumns": [
-                              {
-                                "ColumnBindingInfo": {
-                                  "TableName": "T_OvernightInspection",
-                                  "ColumnName": "overnight_inspection_id"
-                                },
-                                "Order": 1
-                              }
-                            ]
-                          }
-                        },
-                        "ID": "55b772e1c91840f7835fdbe2417c28a3",
-                        "Comments": "レコード追加時に自動採番された終夜点検IDを取得"
-                      },
-                      {
-                        "$type": "Forguncy.Model.LoopCommand, ServerDesignerCommon",
-                        "LoopInfo": {
-                          "$type": "Forguncy.Model.CountLoopInfo, ServerDesignerCommon",
-                          "LoopCount": {
-                            "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                            "SerializeProperty": "=点検依頼・結果!checklist_cd_array"
-                          },
-                          "LoopItemParamName": "ItemCk"
-                        },
-                        "CommandList": [
-                          {
-                            "$type": "Forguncy.Model.UpdateDataTableCommand, ServerDesignerCommon",
-                            "TableName": "T_OvernightInspectionItem",
-                            "UpdateType": "add",
-                            "ShowConfirm": false,
-                            "ConfirmText": "本当に追加してもよろしいですか？",
-                            "UpdateValues": [
-                              {
-                                "ColumnName": "overnight_inspection_id",
-                                "Value": {
-                                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                                  "SerializeProperty": "=点検依頼・結果!v_overnight_inspection_id"
-                                }
-                              },
-                              {
-                                "ColumnName": "checklist_cd",
-                                "Value": {
-                                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                                  "SerializeProperty": "=点検依頼・結果!ItemCk.checklist_cd"
-                                }
-                              }
-                            ],
-                            "Comments": "点検明細テーブルにレコード追加"
-                          }
-                        ]
-                      },
-                      {
-                        "$type": "Forguncy.Model.Commands.SetParameterCommand, ServerDesignerCommon",
-                        "ParameterName": "previous_item",
-                        "ParameterValue": {
-                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                          "SerializeProperty": "=点検依頼・結果!Item.equipment_id"
-                        },
-                        "ID": "e3a536f050724f9897f10ceb03c7e220",
-                        "Comments": ""
-                      }
-                    ],
-                    "Comments": "機器IDが重複している場合は処理をスキップ",
-                    "ID": "6904416a-02f7-4e9a-8ca4-d717dcaa21af"
-                  }
-                ]
-              }
-            ]
-          },
-          {
-            "$type": "Forguncy.Model.ShowMessageCommand, ServerDesignerCommon",
-            "MessageFormula": "処理が完了しました。"
-          }
-        ],
-        "Text": "終夜機器点検　一斉依頼",
-        "TemplateKey": "_RS_Normal_Style7"
-      }
-    },
-    "17,1": {
-      "ListViewInfo": {
-        "ShowColumnHeaderInDesigner": true,
-        "TableName": "V_OvernightGroup_Inspection",
-        "RowIndex": 17,
-        "ColumnIndex": 1,
-        "ColumnCount": 59,
-        "RowCount": 19,
-        "ColumnOperation": 2,
-        "ShowEditStatusIcon": true,
-        "UseSimpleBar": true,
-        "Name": "点検依頼_結果一覧",
-        "TopCondition": null,
-        "ListViewStyleName": "_RS_Medium7"
-      }
-    },
-    "18,1": {
-      "CellType": {
-        "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
-        "CommandList": [
-          {
-            "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
-            "ConditionAndCommandPairList": [
-              {
-                "Condition": {
-                  "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
-                  "param": {
-                    "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
-                    "cellLocations": [
-                      {
-                        "SerializeProperty": "=点検依頼・結果!AL3"
-                      }
-                    ]
-                  },
-                  "value": "点検"
-                },
-                "CommandList": [
-                  {
-                    "$type": "Forguncy.Model.NavigateCommand, ServerDesignerCommon",
-                    "PageName": "終夜機器点検",
-                    "PassValues": [
-                      {
-                        "Source": {
-                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                          "SerializeProperty": "=点検依頼・結果!BD19"
-                        },
-                        "TargetCell": {
-                          "SerializeProperty": "=終夜機器点検!H2"
-                        }
-                      },
-                      {
-                        "Source": {
-                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                          "SerializeProperty": "=点検依頼・結果!V19"
-                        },
-                        "TargetCell": {
-                          "SerializeProperty": "=終夜機器点検!F6"
-                        }
-                      }
-                    ],
-                    "DeleteCachedQuery": true
-                  }
-                ],
-                "ID": "2b17dd0e-e978-4672-a911-540f9b6d9eea"
-              },
-              {
-                "CommandList": [
-                  {
-                    "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
-                    "ConditionAndCommandPairList": [
-                      {
-                        "Condition": {
-                          "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
-                          "Condition1": {
-                            "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
-                            "param": {
-                              "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
-                              "cellLocations": [
-                                {
-                                  "SerializeProperty": "=点検依頼・結果!AZ19"
-                                }
-                              ]
-                            },
-                            "value": "1"
-                          },
-                          "Condition2": {
-                            "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
-                            "param": {
-                              "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
-                              "cellLocations": [
-                                {
-                                  "SerializeProperty": "=点検依頼・結果!AZ19"
-                                }
-                              ]
-                            },
-                            "value": "0"
-                          },
-                          "RelationType": 1
-                        },
-                        "CommandList": [
-                          {
-                            "$type": "Forguncy.Model.StopCommand, ServerDesignerCommon"
-                          }
-                        ],
-                        "ID": "6e96cdf4-bb94-41f8-a55f-873ba4d2fbee"
-                      }
-                    ]
-                  },
-                  {
-                    "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
-                    "ConditionAndCommandPairList": [
-                      {
-                        "ConfirmDialogSettings": {
-                          "Title": "確認",
-                          "FormulaText": "選択した終夜運転機器に対して点検を依頼します。よろしいですか？",
-                          "YesButtonText": "はい",
-                          "NoButtonText": "いいえ",
-                          "ConfirmIcon": 1
-                        },
-                        "CommandList": [],
-                        "ID": "266ba1d6-0bf3-4625-ac98-d62d80be199f"
-                      },
-                      {
-                        "CommandList": [
-                          {
-                            "$type": "Forguncy.Model.StopCommand, ServerDesignerCommon"
-                          }
-                        ],
-                        "ID": "90ad6a71-f8dd-4f81-b350-f1e09fd128aa"
-                      }
-                    ]
+                    "ID": "88c3b01e0b6f4e6b98d3734f8b8fb141",
+                    "Comments": "点検対象となる機器IDの配列"
                   },
                   {
                     "$type": "Forguncy.Model.Commands.SetParameterCommand, ServerDesignerCommon",
@@ -1245,7 +1417,655 @@
                         ]
                       }
                     },
-                    "ID": "a36e4f7fab49495fb3ecd18eff9432eb",
+                    "ID": "3a604baa3db04b37b5e4d72794b46b4f",
+                    "Comments": "点検項目マスタのチェック項目CDの配列"
+                  },
+                  {
+                    "$type": "Forguncy.Model.LoopCommand, ServerDesignerCommon",
+                    "LoopInfo": {
+                      "$type": "Forguncy.Model.CountLoopInfo, ServerDesignerCommon",
+                      "LoopCount": {
+                        "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                        "SerializeProperty": "=点検依頼・結果!target_equipment_array"
+                      },
+                      "LoopItemParamName": "Item"
+                    },
+                    "CommandList": [
+                      {
+                        "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
+                        "ConditionAndCommandPairList": [
+                          {
+                            "Condition": {
+                              "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                              "param": {
+                                "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
+                                "cellLocations": [
+                                  {
+                                    "SerializeProperty": "=点検依頼・結果!previous_item"
+                                  }
+                                ]
+                              },
+                              "value": {
+                                "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                "SerializeProperty": "=点検依頼・結果!Item.EquipmentId"
+                              },
+                              "compareType": 1
+                            },
+                            "CommandList": [
+                              {
+                                "$type": "Forguncy.Model.UpdateDataTableCommand, ServerDesignerCommon",
+                                "TableName": "T_OvernightInspection",
+                                "UpdateType": "add",
+                                "ShowConfirm": false,
+                                "ReloadAfterSucceed": false,
+                                "ConfirmText": "本当に追加してもよろしいですか？",
+                                "UpdateValues": [
+                                  {
+                                    "ColumnName": "equipment_id",
+                                    "Value": {
+                                      "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                      "SerializeProperty": "=点検依頼・結果!Item.EquipmentId"
+                                    }
+                                  },
+                                  {
+                                    "ColumnName": "Inspection_mass_request_date",
+                                    "Value": {
+                                      "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                      "SerializeProperty": "=点検依頼・結果!mass_request_date"
+                                    }
+                                  }
+                                ],
+                                "Comments": "点検テーブルにレコード追加"
+                              },
+                              {
+                                "$type": "Forguncy.Model.Commands.SetParameterCommand, ServerDesignerCommon",
+                                "ParameterName": "v_overnight_inspection_id",
+                                "TableValue": {
+                                  "TableName": "T_OvernightInspection",
+                                  "OnlyGetValue": true,
+                                  "TableValueType": 0,
+                                  "BindingInfos": [
+                                    {
+                                      "BindingInfo": {
+                                        "TableName": "T_OvernightInspection",
+                                        "ColumnName": "overnight_inspection_id"
+                                      },
+                                      "ColumnName": "overnight_inspection_id"
+                                    }
+                                  ],
+                                  "SqlCondition": {
+                                    "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+                                    "Condition1": {
+                                      "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                                      "ColumnBindingInfo": {
+                                        "TableName": "T_OvernightInspection",
+                                        "ColumnName": "equipment_id"
+                                      },
+                                      "Value": {
+                                        "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                        "SerializeProperty": "=点検依頼・結果!Item.EquipmentId"
+                                      }
+                                    },
+                                    "Condition2": {
+                                      "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                                      "ColumnBindingInfo": {
+                                        "TableName": "T_OvernightInspection",
+                                        "ColumnName": "Inspection_mass_request_date"
+                                      },
+                                      "Value": {
+                                        "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                        "SerializeProperty": "=点検依頼・結果!mass_request_date"
+                                      }
+                                    }
+                                  },
+                                  "TopCount": "1",
+                                  "OrderBySqlCondition": {
+                                    "OrderByColumns": [
+                                      {
+                                        "ColumnBindingInfo": {
+                                          "TableName": "T_OvernightInspection",
+                                          "ColumnName": "overnight_inspection_id"
+                                        },
+                                        "Order": 1
+                                      }
+                                    ]
+                                  }
+                                },
+                                "ID": "04dd8886cfc947e9a6b10e288f3b6c61",
+                                "Comments": "レコード追加時に自動採番された終夜点検IDを取得"
+                              },
+                              {
+                                "$type": "Forguncy.Model.LoopCommand, ServerDesignerCommon",
+                                "LoopInfo": {
+                                  "$type": "Forguncy.Model.CountLoopInfo, ServerDesignerCommon",
+                                  "LoopCount": {
+                                    "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                    "SerializeProperty": "=点検依頼・結果!checklist_cd_array"
+                                  },
+                                  "LoopItemParamName": "ItemCk"
+                                },
+                                "CommandList": [
+                                  {
+                                    "$type": "Forguncy.Model.UpdateDataTableCommand, ServerDesignerCommon",
+                                    "TableName": "T_OvernightInspectionItem",
+                                    "UpdateType": "add",
+                                    "ShowConfirm": false,
+                                    "ReloadAfterSucceed": false,
+                                    "ConfirmText": "本当に追加してもよろしいですか？",
+                                    "UpdateValues": [
+                                      {
+                                        "ColumnName": "overnight_inspection_id",
+                                        "Value": {
+                                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                          "SerializeProperty": "=点検依頼・結果!v_overnight_inspection_id"
+                                        }
+                                      },
+                                      {
+                                        "ColumnName": "checklist_cd",
+                                        "Value": {
+                                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                          "SerializeProperty": "=点検依頼・結果!ItemCk.checklist_cd"
+                                        }
+                                      }
+                                    ],
+                                    "Comments": "点検明細テーブルにレコード追加"
+                                  }
+                                ]
+                              },
+                              {
+                                "$type": "Forguncy.Model.Commands.SetParameterCommand, ServerDesignerCommon",
+                                "ParameterName": "previous_item",
+                                "ParameterValue": {
+                                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                  "SerializeProperty": "=点検依頼・結果!Item.EquipmentId"
+                                },
+                                "ID": "2026d49f477c4f41895ccf99b734e9d9",
+                                "Comments": ""
+                              }
+                            ],
+                            "Comments": "機器IDが重複している場合は処理をスキップ",
+                            "ID": "eab0bc24-79ea-4bc0-965f-58fa7c6b64a2"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "$type": "Forguncy.Model.ShareCommand, ServerDesignerCommon",
+                    "ShareCommandContainerRefer": {
+                      "ShareCommandContainerID": "acefac59-04d3-4987-9cfd-86fb2bdc23d8"
+                    },
+                    "Params": [
+                      {
+                        "ParamReferObject": {
+                          "ParamID": "db888992-e50b-4c42-b23d-07aa2b3f6e5f",
+                          "ShareCommandContainerReferObject": {
+                            "ShareCommandContainerID": "acefac59-04d3-4987-9cfd-86fb2bdc23d8"
+                          }
+                        }
+                      },
+                      {
+                        "ParamReferObject": {
+                          "ParamID": "c0192ef9-1338-4eca-9d37-4fb4b4caa695",
+                          "ShareCommandContainerReferObject": {
+                            "ShareCommandContainerID": "acefac59-04d3-4987-9cfd-86fb2bdc23d8"
+                          }
+                        },
+                        "Value": "All"
+                      },
+                      {
+                        "ParamReferObject": {
+                          "ParamID": "7138ad2a-4f9c-42a5-93fc-4bb8bc0d1599",
+                          "ShareCommandContainerReferObject": {
+                            "ShareCommandContainerID": "acefac59-04d3-4987-9cfd-86fb2bdc23d8"
+                          }
+                        },
+                        "Value": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=点検依頼・結果!$AA$2"
+                        }
+                      },
+                      {
+                        "ParamReferObject": {
+                          "ParamID": "a29073f7-96cb-40d6-95ff-188011f26342",
+                          "ShareCommandContainerReferObject": {
+                            "ShareCommandContainerID": "acefac59-04d3-4987-9cfd-86fb2bdc23d8"
+                          }
+                        },
+                        "Value": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=点検依頼・結果!$AA$4"
+                        }
+                      },
+                      {
+                        "ParamReferObject": {
+                          "ParamID": "28599e76-9750-4fd4-bbb3-ecf27db3e81d",
+                          "ShareCommandContainerReferObject": {
+                            "ShareCommandContainerID": "acefac59-04d3-4987-9cfd-86fb2bdc23d8"
+                          }
+                        },
+                        "Value": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=点検依頼・結果!$AA$3"
+                        }
+                      }
+                    ],
+                    "ReturnPropertiesTo": []
+                  },
+                  {
+                    "$type": "LoadingCommand.EndLoadingCommand, LoadingCommand"
+                  },
+                  {
+                    "$type": "Forguncy.Model.OperateCellTypeCommand, ServerDesignerCommon",
+                    "TargetPageElement": {
+                      "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                      "SerializeProperty": "=点検依頼・結果!I13"
+                    },
+                    "TargetType": "Forguncy.DropDownListCellType, ServerDesignerCommon, Version=8.0.20.0, Culture=neutral, PublicKeyToken=967100671921c115",
+                    "MethodName": "ReloadForCommand",
+                    "ParameterValues": {},
+                    "RetrunParamNames": {}
+                  },
+                  {
+                    "$type": "Forguncy.Model.SetCellPropertyCommand, ServerDesignerCommon",
+                    "PropertyItemsList": [
+                      {
+                        "TargetCells": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=点検依頼・結果!J7"
+                        },
+                        "Value": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=点検依頼・結果!mass_request_date"
+                        }
+                      },
+                      {
+                        "TargetCells": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=点検依頼・結果!I13"
+                        },
+                        "Value": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=点検依頼・結果!mass_request_date"
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "$type": "Forguncy.Model.ShowMessageCommand, ServerDesignerCommon",
+                    "MessageFormula": "処理が完了しました"
+                  }
+                ],
+                "ID": "eec80814-4122-42a4-acf9-af6d73bbad40"
+              },
+              {
+                "CommandList": [
+                  {
+                    "$type": "Forguncy.Model.StopCommand, ServerDesignerCommon"
+                  }
+                ],
+                "ID": "2df6b14a-e9a6-491e-9862-f0b83d54276a"
+              }
+            ]
+          }
+        ],
+        "Text": "終夜機器点検　一斉依頼",
+        "TemplateKey": "_RS_Normal_Style7"
+      }
+    },
+    "22,1": {
+      "ListViewInfo": {
+        "ShowColumnHeaderInDesigner": true,
+        "TableName": "V_OvernightGroup_Inspection",
+        "RowIndex": 22,
+        "ColumnIndex": 1,
+        "ColumnCount": 63,
+        "RowCount": 19,
+        "ColumnOperation": 1,
+        "ShowEditStatusIcon": true,
+        "UseSimpleBar": true,
+        "Name": "点検依頼_結果一覧",
+        "TopCondition": null,
+        "CommitType": 1,
+        "ListViewStyleName": "_RS_Medium7"
+      }
+    },
+    "23,1": {
+      "CellType": {
+        "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
+            "ConditionAndCommandPairList": [
+              {
+                "Condition": {
+                  "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+                  "Condition1": {
+                    "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                    "param": {
+                      "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
+                      "cellLocations": [
+                        {
+                          "SerializeProperty": "=点検依頼・結果!BB24"
+                        }
+                      ]
+                    },
+                    "value": "0"
+                  },
+                  "Condition2": {
+                    "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                    "param": {
+                      "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
+                      "cellLocations": [
+                        {
+                          "SerializeProperty": "=点検依頼・結果!BG24"
+                        }
+                      ]
+                    },
+                    "value": {
+                      "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                      "SerializeProperty": "=点検依頼・結果!$J$7"
+                    },
+                    "compareType": 4
+                  }
+                },
+                "CommandList": [
+                  {
+                    "$type": "Forguncy.Model.ShowMessageCommand, ServerDesignerCommon",
+                    "MessageFormula": "過去の期の未点検データは編集できません"
+                  },
+                  {
+                    "$type": "Forguncy.Model.StopCommand, ServerDesignerCommon"
+                  }
+                ],
+                "ID": "0caedbe4-d4f1-4118-95d9-352e79c2d723"
+              }
+            ]
+          },
+          {
+            "$type": "Forguncy.Model.NavigateCommand, ServerDesignerCommon",
+            "PageName": "終夜機器点検",
+            "PassValues": [
+              {
+                "Source": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=点検依頼・結果!BF24"
+                },
+                "TargetCell": {
+                  "SerializeProperty": "=終夜機器点検!H2"
+                }
+              },
+              {
+                "Source": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=点検依頼・結果!V24"
+                },
+                "TargetCell": {
+                  "SerializeProperty": "=終夜機器点検!F8"
+                }
+              },
+              {
+                "Source": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=点検依頼・結果!J7"
+                },
+                "TargetCell": {
+                  "SerializeProperty": "=終夜機器点検!W2"
+                }
+              },
+              {
+                "Source": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=点検依頼・結果!BH24"
+                },
+                "TargetCell": {
+                  "SerializeProperty": "=終夜機器点検!W2"
+                }
+              }
+            ],
+            "DeleteCachedQuery": true,
+            "LoadBindingDataOption": 1,
+            "Disabled": true
+          },
+          {
+            "$type": "Forguncy.Model.ShowPopupCommand, ServerDesignerCommon",
+            "PageName": "終夜機器点検",
+            "PassValues": [
+              {
+                "Source": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=点検依頼・結果!BF24"
+                },
+                "TargetCell": {
+                  "SerializeProperty": "=終夜機器点検!H2"
+                }
+              },
+              {
+                "Source": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=点検依頼・結果!V24"
+                },
+                "TargetCell": {
+                  "SerializeProperty": "=終夜機器点検!F8"
+                }
+              },
+              {
+                "Source": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=点検依頼・結果!BH24"
+                },
+                "TargetCell": {
+                  "SerializeProperty": "=終夜機器点検!W2"
+                }
+              }
+            ],
+            "DeleteCachedQuery": true,
+            "LoadBindingDataOption": 1
+          }
+        ],
+        "Text": "点検",
+        "TemplateKey": "_RS_Normal_Style7"
+      },
+      "ConditionFormatRulesCollection": {
+        "Rules": [
+          {
+            "$type": "Forguncy.ConditionFormat.FormulaRule, ServerDesignerCommon",
+            "Formula": {
+              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+              "SerializeProperty": "=点検依頼・結果!$BB24=\"0\""
+            },
+            "StyleInfo": {
+              "Background": "#FFFF0000",
+              "Foreground": "Background 1 0",
+              "Underline": null,
+              "Strikethrough": null
+            },
+            "StopIfTrue": true
+          },
+          {
+            "$type": "Forguncy.ConditionFormat.FormulaRule, ServerDesignerCommon",
+            "Formula": {
+              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+              "SerializeProperty": "=点検依頼・結果!$BB24=\"1\""
+            },
+            "StyleInfo": {
+              "Background": "Background 1 -35",
+              "Foreground": "Background 1 0",
+              "Underline": null,
+              "Strikethrough": null
+            },
+            "StopIfTrue": true
+          },
+          {
+            "$type": "Forguncy.ConditionFormat.FormulaRule, ServerDesignerCommon",
+            "Formula": {
+              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+              "SerializeProperty": "=点検依頼・結果!$BB24=\"\""
+            },
+            "StyleInfo": {
+              "Background": "Background 1 -35",
+              "Foreground": "Background 1 0",
+              "Underline": null,
+              "Strikethrough": null
+            }
+          }
+        ]
+      },
+      "NameUsedInJavaScript": "点検"
+    },
+    "23,3": {
+      "CellType": {
+        "$type": "Forguncy.HyperlinkCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.ShowPopupCommand, ServerDesignerCommon",
+            "PageName": "機器詳細ポップアップ",
+            "PassValues": [
+              {
+                "Source": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=点検依頼・結果!D24"
+                },
+                "TargetCell": {
+                  "SerializeProperty": "=機器詳細ポップアップ!H2"
+                }
+              }
+            ],
+            "DeleteCachedQuery": true
+          }
+        ],
+        "ClickMode": 1
+      },
+      "BindingInfo": {
+        "TableName": "V_OvernightGroup_Inspection",
+        "ColumnName": "EquipmentId"
+      }
+    },
+    "23,9": {
+      "BindingInfo": {
+        "TableName": "V_OvernightGroup_Inspection",
+        "ColumnName": "InstrumentName"
+      }
+    },
+    "23,31": {
+      "BindingInfo": {
+        "TableName": "V_OvernightGroup_Inspection",
+        "ColumnName": "dept_code",
+        "RelationBinding": {
+          "RelatedTable": "lum_view_employee_department_relations_duplicated",
+          "RelatedColumn": "department_code_lvl04",
+          "DisplayColumn": "department_name_lvl04"
+        }
+      }
+    },
+    "23,41": {
+      "BindingInfo": {
+        "TableName": "V_OvernightGroup_Inspection",
+        "ColumnName": "employee_z_code",
+        "RelationBinding": {
+          "RelatedTable": "lum_view_employee_department_relations_duplicated",
+          "RelatedColumn": "employee_z_code",
+          "DisplayColumn": "employee_name"
+        }
+      }
+    },
+    "23,51": {
+      "CellType": {
+        "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
+            "ConditionAndCommandPairList": [
+              {
+                "Condition": {
+                  "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+                  "Condition1": {
+                    "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                    "param": {
+                      "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
+                      "cellLocations": [
+                        {
+                          "SerializeProperty": "=点検依頼・結果!BB24"
+                        }
+                      ]
+                    },
+                    "value": "1"
+                  },
+                  "Condition2": {
+                    "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                    "param": {
+                      "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
+                      "cellLocations": [
+                        {
+                          "SerializeProperty": "=点検依頼・結果!BB24"
+                        }
+                      ]
+                    },
+                    "value": "0"
+                  },
+                  "RelationType": 1
+                },
+                "CommandList": [
+                  {
+                    "$type": "Forguncy.Model.StopCommand, ServerDesignerCommon"
+                  }
+                ],
+                "ID": "b56c5e8c-6830-4543-bf31-ddcbece65e81"
+              }
+            ]
+          },
+          {
+            "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
+            "ConditionAndCommandPairList": [
+              {
+                "ConfirmDialogSettings": {
+                  "Title": "確認",
+                  "FormulaText": "選択した終夜運転機器に対して点検を依頼します。よろしいですか？",
+                  "YesButtonText": "はい",
+                  "NoButtonText": "いいえ",
+                  "ConfirmIcon": 1
+                },
+                "CommandList": [
+                  {
+                    "$type": "LoadingCommand.StartLoadingCommand, LoadingCommand",
+                    "LoadingTextColor": "Background 1 0"
+                  },
+                  {
+                    "$type": "Forguncy.Model.Commands.SetParameterCommand, ServerDesignerCommon",
+                    "ParameterName": "checklist_cd_array",
+                    "TableValue": {
+                      "TableName": "M_OvernightInspectionList",
+                      "BindingInfos": [
+                        {
+                          "BindingInfo": {
+                            "TableName": "M_OvernightInspectionList",
+                            "ColumnName": "checklist_cd"
+                          },
+                          "ColumnName": "checklist_cd"
+                        }
+                      ],
+                      "SqlCondition": {
+                        "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                        "CompareType": 1,
+                        "ColumnBindingInfo": {
+                          "TableName": "M_OvernightInspectionList",
+                          "ColumnName": "delete_flg"
+                        },
+                        "Value": "1"
+                      },
+                      "OrderBySqlCondition": {
+                        "OrderByColumns": [
+                          {
+                            "ColumnBindingInfo": {
+                              "TableName": "M_OvernightInspectionList",
+                              "ColumnName": "display_order"
+                            },
+                            "Order": 0
+                          }
+                        ]
+                      }
+                    },
+                    "ID": "0a2f22446d594b6fb7ab93cd3eb6de13",
                     "Comments": "点検項目マスタのチェック項目CDの配列"
                   },
                   {
@@ -1253,20 +2073,21 @@
                     "TableName": "T_OvernightInspection",
                     "UpdateType": "add",
                     "ShowConfirm": false,
+                    "ReloadAfterSucceed": false,
                     "ConfirmText": "本当に追加してもよろしいですか？",
                     "UpdateValues": [
-                      {
-                        "ColumnName": "Inspection_request_ym",
-                        "Value": {
-                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                          "SerializeProperty": "=点検依頼・結果!Z3"
-                        }
-                      },
                       {
                         "ColumnName": "equipment_id",
                         "Value": {
                           "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                          "SerializeProperty": "=点検依頼・結果!D19"
+                          "SerializeProperty": "=点検依頼・結果!D24"
+                        }
+                      },
+                      {
+                        "ColumnName": "Inspection_mass_request_date",
+                        "Value": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=点検依頼・結果!$J$7"
                         }
                       }
                     ],
@@ -1294,27 +2115,39 @@
                           "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
                           "ColumnBindingInfo": {
                             "TableName": "T_OvernightInspection",
-                            "ColumnName": "Inspection_request_ym"
+                            "ColumnName": "equipment_id"
                           },
                           "Value": {
                             "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                            "SerializeProperty": "=点検依頼・結果!Z3"
+                            "SerializeProperty": "=点検依頼・結果!D24"
                           }
                         },
                         "Condition2": {
                           "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
                           "ColumnBindingInfo": {
                             "TableName": "T_OvernightInspection",
-                            "ColumnName": "equipment_id"
+                            "ColumnName": "Inspection_mass_request_date"
                           },
                           "Value": {
                             "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                            "SerializeProperty": "=点検依頼・結果!D19"
+                            "SerializeProperty": "=点検依頼・結果!$J$7"
                           }
                         }
+                      },
+                      "TopCount": "1",
+                      "OrderBySqlCondition": {
+                        "OrderByColumns": [
+                          {
+                            "ColumnBindingInfo": {
+                              "TableName": "T_OvernightInspection",
+                              "ColumnName": "overnight_inspection_id"
+                            },
+                            "Order": 1
+                          }
+                        ]
                       }
                     },
-                    "ID": "36ac96c9c91c4af3a06bb03004692d8a",
+                    "ID": "3f4f612534324590a2cc2cbc79de5a45",
                     "Comments": "レコード追加時に自動採番された終夜点検IDを取得"
                   },
                   {
@@ -1333,6 +2166,7 @@
                         "TableName": "T_OvernightInspectionItem",
                         "UpdateType": "add",
                         "ShowConfirm": false,
+                        "ReloadAfterSucceed": false,
                         "ConfirmText": "本当に追加してもよろしいですか？",
                         "UpdateValues": [
                           {
@@ -1355,16 +2189,105 @@
                     ]
                   },
                   {
+                    "$type": "Forguncy.Model.ShareCommand, ServerDesignerCommon",
+                    "ShareCommandContainerRefer": {
+                      "ShareCommandContainerID": "acefac59-04d3-4987-9cfd-86fb2bdc23d8"
+                    },
+                    "Params": [
+                      {
+                        "ParamReferObject": {
+                          "ParamID": "db888992-e50b-4c42-b23d-07aa2b3f6e5f",
+                          "ShareCommandContainerReferObject": {
+                            "ShareCommandContainerID": "acefac59-04d3-4987-9cfd-86fb2bdc23d8"
+                          }
+                        },
+                        "Value": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=点検依頼・結果!D24"
+                        }
+                      },
+                      {
+                        "ParamReferObject": {
+                          "ParamID": "c0192ef9-1338-4eca-9d37-4fb4b4caa695",
+                          "ShareCommandContainerReferObject": {
+                            "ShareCommandContainerID": "acefac59-04d3-4987-9cfd-86fb2bdc23d8"
+                          }
+                        }
+                      },
+                      {
+                        "ParamReferObject": {
+                          "ParamID": "7138ad2a-4f9c-42a5-93fc-4bb8bc0d1599",
+                          "ShareCommandContainerReferObject": {
+                            "ShareCommandContainerID": "acefac59-04d3-4987-9cfd-86fb2bdc23d8"
+                          }
+                        },
+                        "Value": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=点検依頼・結果!$AA$2"
+                        }
+                      },
+                      {
+                        "ParamReferObject": {
+                          "ParamID": "a29073f7-96cb-40d6-95ff-188011f26342",
+                          "ShareCommandContainerReferObject": {
+                            "ShareCommandContainerID": "acefac59-04d3-4987-9cfd-86fb2bdc23d8"
+                          }
+                        },
+                        "Value": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=点検依頼・結果!BI24"
+                        }
+                      },
+                      {
+                        "ParamReferObject": {
+                          "ParamID": "28599e76-9750-4fd4-bbb3-ecf27db3e81d",
+                          "ShareCommandContainerReferObject": {
+                            "ShareCommandContainerID": "acefac59-04d3-4987-9cfd-86fb2bdc23d8"
+                          }
+                        },
+                        "Value": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=点検依頼・結果!$AA$3"
+                        }
+                      }
+                    ],
+                    "ReturnPropertiesTo": []
+                  },
+                  {
+                    "$type": "Forguncy.Model.UpdateListviewCommand, ServerDesignerCommon",
+                    "UpdateType": 6,
+                    "ListviewName": "点検依頼_結果一覧",
+                    "UpdateListviewCommandRunTimeMethodSetting": {
+                      "MethodName": "Reload",
+                      "ParameterValues": {
+                        "clearFilter": false,
+                        "clearSort": false
+                      },
+                      "RetrunParamNames": {}
+                    }
+                  },
+                  {
+                    "$type": "LoadingCommand.EndLoadingCommand, LoadingCommand"
+                  },
+                  {
                     "$type": "Forguncy.Model.ShowMessageCommand, ServerDesignerCommon",
-                    "MessageFormula": "処理が完了しました。"
+                    "MessageFormula": "処理が完了しました"
                   }
                 ],
-                "ID": "daa1d66c-9c6f-4350-98aa-3d95dc0b3846"
+                "ID": "7d08f95a-f0a3-4c21-a198-ec6ca31f6546"
+              },
+              {
+                "CommandList": [
+                  {
+                    "$type": "Forguncy.Model.StopCommand, ServerDesignerCommon"
+                  }
+                ],
+                "ID": "b392425d-54e4-4787-ab77-469c5f92c057"
               }
             ]
           }
         ],
-        "Text": "点検",
+        "Text": "点検\n依頼",
         "TemplateKey": "_RS_Normal_Style7"
       },
       "ConditionFormatRulesCollection": {
@@ -1373,20 +2296,49 @@
             "$type": "Forguncy.ConditionFormat.FormulaRule, ServerDesignerCommon",
             "Formula": {
               "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-              "SerializeProperty": "=点検依頼・結果!AZ19=\"\""
+              "SerializeProperty": "=点検依頼・結果!$BB24=\"\""
             },
             "StyleInfo": {
               "Background": "#FFFF0000",
               "Foreground": "Background 1 0",
               "Underline": null,
               "Strikethrough": null
-            }
+            },
+            "StopIfTrue": true
           },
           {
             "$type": "Forguncy.ConditionFormat.FormulaRule, ServerDesignerCommon",
             "Formula": {
               "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-              "SerializeProperty": "=点検依頼・結果!AZ19=\"1\""
+              "SerializeProperty": "=点検依頼・結果!$BG24<点検依頼・結果!$J$7"
+            },
+            "StyleInfo": {
+              "Background": "Background 1 -35",
+              "Foreground": "Background 1 0",
+              "Underline": null,
+              "Strikethrough": null
+            },
+            "StopIfTrue": true
+          },
+          {
+            "$type": "Forguncy.ConditionFormat.FormulaRule, ServerDesignerCommon",
+            "Formula": {
+              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+              "SerializeProperty": "=点検依頼・結果!$BB24=\"0\""
+            },
+            "StyleInfo": {
+              "Background": "Background 1 -35",
+              "Foreground": "Background 1 0",
+              "Underline": null,
+              "Strikethrough": null
+            },
+            "StopIfTrue": true
+          },
+          {
+            "$type": "Forguncy.ConditionFormat.FormulaRule, ServerDesignerCommon",
+            "Formula": {
+              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+              "SerializeProperty": "=点検依頼・結果!$BB24=\"1\""
             },
             "StyleInfo": {
               "Background": "Background 1 -35",
@@ -1396,98 +2348,54 @@
             }
           }
         ]
-      }
-    },
-    "18,3": {
-      "CellType": {
-        "$type": "Forguncy.HyperlinkCellType, ServerDesignerCommon",
-        "CommandList": [
-          {
-            "$type": "Forguncy.Model.ShowPopupCommand, ServerDesignerCommon",
-            "PageName": "機器詳細ポップアップ",
-            "PassValues": [
-              {
-                "Source": {
-                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                  "SerializeProperty": "=点検依頼・結果!D19"
-                },
-                "TargetCell": {
-                  "SerializeProperty": "=機器詳細ポップアップ!H2"
-                }
-              }
-            ],
-            "DeleteCachedQuery": true
-          }
-        ],
-        "ClickMode": 1
       },
+      "NameUsedInJavaScript": "点検依頼"
+    },
+    "23,53": {
       "BindingInfo": {
         "TableName": "V_OvernightGroup_Inspection",
-        "ColumnName": "equipment_id"
+        "ColumnName": "status"
       }
     },
-    "18,9": {
+    "23,54": {
       "BindingInfo": {
         "TableName": "V_OvernightGroup_Inspection",
-        "ColumnName": "InstrumentName"
+        "ColumnName": "First_Classification_Code"
       }
     },
-    "18,31": {
+    "23,55": {
       "BindingInfo": {
         "TableName": "V_OvernightGroup_Inspection",
-        "ColumnName": "dept_code",
-        "RelationBinding": {
-          "RelatedTable": "lum_view_employee_department_relations_duplicated",
-          "RelatedColumn": "department_code_lvl04",
-          "DisplayColumn": "department_name_lvl04"
-        }
+        "ColumnName": "Second_Classification_Code"
       }
     },
-    "18,41": {
+    "23,56": {
+      "BindingInfo": {
+        "TableName": "V_OvernightGroup_Inspection",
+        "ColumnName": "Third_Classification_Code"
+      }
+    },
+    "23,57": {
+      "BindingInfo": {
+        "TableName": "V_OvernightGroup_Inspection",
+        "ColumnName": "overnight_inspection_id"
+      }
+    },
+    "23,58": {
+      "BindingInfo": {
+        "TableName": "V_OvernightGroup_Inspection",
+        "ColumnName": "Inspection_mass_request_date"
+      }
+    },
+    "23,60": {
       "BindingInfo": {
         "TableName": "V_OvernightGroup_Inspection",
         "ColumnName": "employee_z_code",
         "RelationBinding": {
           "RelatedTable": "lum_view_employee_department_relations_duplicated",
           "RelatedColumn": "employee_z_code",
-          "DisplayColumn": "employee_name"
+          "DisplayColumn": "primary_exmail_address"
         }
-      }
-    },
-    "18,51": {
-      "BindingInfo": {
-        "TableName": "V_OvernightGroup_Inspection",
-        "ColumnName": "status"
-      }
-    },
-    "18,52": {
-      "BindingInfo": {
-        "TableName": "V_OvernightGroup_Inspection",
-        "ColumnName": "First_Classification_Code"
-      }
-    },
-    "18,53": {
-      "BindingInfo": {
-        "TableName": "V_OvernightGroup_Inspection",
-        "ColumnName": "Second_Classification_Code"
-      }
-    },
-    "18,54": {
-      "BindingInfo": {
-        "TableName": "V_OvernightGroup_Inspection",
-        "ColumnName": "Third_Classification_Code"
-      }
-    },
-    "18,55": {
-      "BindingInfo": {
-        "TableName": "V_OvernightGroup_Inspection",
-        "ColumnName": "overnight_inspection_id"
-      }
-    },
-    "18,56": {
-      "BindingInfo": {
-        "TableName": "V_OvernightGroup_Inspection",
-        "ColumnName": "Inspection_request_ym"
       }
     }
   },
@@ -1517,6 +2425,13 @@
       },
       {
         "Background": 3,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
+      },
+      {
+        "Background": 3,
         "FontFamily": 1,
         "BorderBottom": null,
         "BorderTop": null,
@@ -1525,13 +2440,8 @@
       },
       {
         "Background": 3,
-        "BorderBottom": null,
-        "BorderTop": null,
-        "BorderLeft": null,
-        "BorderRight": null
-      },
-      {
-        "Foreground": 4,
+        "FontFamily": 1,
+        "Formatter": 4,
         "BorderBottom": null,
         "BorderTop": null,
         "BorderLeft": null,
@@ -1545,10 +2455,24 @@
         "BorderRight": null
       },
       {
-        "Background": 0,
+        "FontFamily": 1,
+        "FontSize": 16.0,
         "FontWeight": 5,
-        "Formatter": 6,
-        "HorizontalAlignment": 7,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
+      },
+      {
+        "Foreground": 6,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
+      },
+      {
+        "FontWeight": 7,
+        "Formatter": 4,
         "BorderBottom": null,
         "BorderTop": null,
         "BorderLeft": null,
@@ -1557,7 +2481,6 @@
       {
         "FontFamily": 1,
         "FontSize": 16.0,
-        "FontWeight": 8,
         "BorderBottom": null,
         "BorderTop": null,
         "BorderLeft": null,
@@ -1565,7 +2488,7 @@
       },
       {
         "FontSize": 16.0,
-        "FontWeight": 8,
+        "FontWeight": 5,
         "BorderBottom": null,
         "BorderTop": null,
         "BorderLeft": null,
@@ -1574,7 +2497,7 @@
       {
         "FontFamily": 1,
         "FontSize": 16.0,
-        "FontWeight": 8,
+        "FontWeight": 5,
         "Formatter": 2,
         "BorderBottom": null,
         "BorderTop": null,
@@ -1582,14 +2505,30 @@
         "BorderRight": null
       },
       {
-        "Formatter": 9,
+        "Formatter": 8,
         "BorderBottom": null,
         "BorderTop": null,
         "BorderLeft": null,
         "BorderRight": null
       },
       {
-        "HorizontalAlignment": 7,
+        "WordWrap": true,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
+      },
+      {
+        "FontFamily": 1,
+        "Formatter": 2,
+        "WordWrap": true,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
+      },
+      {
+        "HorizontalAlignment": 9,
         "Underline": false,
         "BorderBottom": 0,
         "BorderTop": 0,
@@ -1610,6 +2549,14 @@
         "BorderTop": null,
         "BorderLeft": null,
         "BorderRight": null
+      },
+      {
+        "FontFamily": 1,
+        "Formatter": 4,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
       }
     ],
     "Types": {
@@ -1618,12 +2565,12 @@
         "Body",
         "[AUTO]General",
         "#FFFFFF00",
+        "yyyy/m/d",
+        "Bold",
         "#FFFF0000",
         "Normal",
-        "yyyy\"年\"m\"月\"",
-        "Center",
-        "Bold",
         "@",
+        "Center",
         "Blue"
       ],
       "Borders": [
@@ -1634,15 +2581,17 @@
     },
     "CellStyles": {
       "0,0": 0,
-      "0,51": 0,
-      "0,52": 0,
       "0,53": 0,
       "0,54": 0,
       "0,55": 0,
       "0,56": 0,
       "0,57": 0,
       "0,58": 0,
+      "0,59": 0,
+      "0,60": 0,
       "0,61": 0,
+      "0,62": 0,
+      "0,65": 0,
       "1,0": 0,
       "1,1": 1,
       "1,2": 2,
@@ -1654,9 +2603,19 @@
       "1,8": 2,
       "1,9": 2,
       "1,10": 2,
+      "1,26": 3,
+      "1,33": 2,
+      "1,34": 2,
+      "1,35": 2,
+      "1,36": 2,
+      "1,37": 2,
+      "1,38": 2,
+      "1,39": 2,
+      "1,40": 2,
+      "1,41": 2,
       "2,0": 0,
       "2,1": 1,
-      "2,10": 3,
+      "2,10": 4,
       "2,11": 2,
       "2,12": 2,
       "2,13": 2,
@@ -1666,19 +2625,49 @@
       "2,22": 2,
       "2,23": 2,
       "2,24": 2,
-      "2,25": 3,
-      "2,26": 2,
+      "2,25": 2,
+      "2,26": 4,
       "2,27": 2,
       "2,28": 2,
       "2,29": 2,
+      "2,30": 2,
+      "2,31": 2,
       "2,33": 2,
-      "2,37": 4,
+      "2,34": 2,
+      "2,35": 2,
+      "2,36": 2,
+      "2,37": 2,
+      "2,38": 2,
+      "2,39": 2,
+      "2,40": 2,
+      "2,41": 2,
       "3,0": 0,
-      "3,10": 3,
+      "3,10": 4,
       "3,11": 2,
       "3,12": 2,
       "3,13": 2,
       "3,14": 2,
+      "3,20": 1,
+      "3,21": 2,
+      "3,22": 2,
+      "3,23": 2,
+      "3,24": 2,
+      "3,25": 2,
+      "3,26": 4,
+      "3,27": 2,
+      "3,28": 2,
+      "3,29": 2,
+      "3,30": 2,
+      "3,31": 2,
+      "3,33": 2,
+      "3,34": 2,
+      "3,35": 2,
+      "3,36": 2,
+      "3,37": 2,
+      "3,38": 2,
+      "3,39": 2,
+      "3,40": 2,
+      "3,41": 2,
       "4,0": 0,
       "4,1": 2,
       "4,2": 2,
@@ -1692,27 +2681,123 @@
       "4,10": 2,
       "4,11": 2,
       "4,12": 2,
-      "4,13": 3,
+      "4,13": 4,
       "4,14": 2,
       "4,15": 2,
       "4,16": 2,
       "4,17": 2,
+      "4,20": 2,
+      "4,21": 2,
+      "4,22": 2,
+      "4,23": 2,
+      "4,24": 2,
       "4,25": 2,
+      "4,26": 2,
+      "4,27": 2,
+      "4,28": 2,
+      "4,29": 2,
+      "4,30": 2,
+      "4,31": 2,
+      "4,33": 2,
+      "4,34": 2,
+      "4,35": 2,
+      "4,36": 2,
+      "4,37": 2,
+      "4,38": 2,
+      "4,39": 2,
+      "4,40": 2,
+      "4,41": 2,
       "5,0": 0,
-      "5,2": 5,
-      "5,12": 6,
-      "6,2": 5,
-      "6,12": 6,
-      "7,2": 5,
-      "7,5": 7,
-      "8,13": 5,
-      "8,50": 2,
-      "9,1": 8,
+      "5,14": 2,
+      "5,15": 2,
+      "5,16": 2,
+      "5,17": 2,
+      "6,0": 0,
+      "6,1": 1,
+      "6,2": 2,
+      "6,3": 2,
+      "6,4": 2,
+      "6,5": 2,
+      "6,6": 2,
+      "6,7": 2,
+      "6,8": 2,
+      "6,9": 5,
+      "6,10": 2,
+      "6,11": 2,
+      "6,12": 2,
+      "6,13": 2,
+      "6,14": 2,
+      "6,15": 2,
+      "6,16": 2,
+      "6,17": 2,
+      "6,33": 2,
+      "6,34": 2,
+      "6,35": 2,
+      "6,36": 2,
+      "6,37": 2,
+      "6,38": 2,
+      "6,39": 1,
+      "6,40": 2,
+      "6,41": 2,
+      "6,42": 1,
+      "6,43": 2,
+      "6,44": 2,
+      "7,0": 0,
+      "7,1": 1,
+      "7,2": 2,
+      "7,3": 2,
+      "7,4": 2,
+      "7,5": 2,
+      "7,6": 2,
+      "7,7": 2,
+      "7,8": 2,
+      "7,9": 2,
+      "7,10": 2,
+      "7,17": 2,
+      "7,33": 2,
+      "7,34": 2,
+      "7,35": 2,
+      "7,36": 2,
+      "7,37": 2,
+      "7,38": 2,
+      "7,39": 2,
+      "7,40": 2,
+      "7,41": 2,
+      "7,42": 2,
+      "7,43": 2,
+      "7,44": 2,
+      "8,0": 0,
+      "8,1": 2,
+      "8,2": 2,
+      "8,3": 2,
+      "8,6": 4,
+      "8,7": 2,
+      "8,8": 2,
+      "8,9": 2,
+      "8,10": 2,
+      "8,11": 6,
+      "8,13": 2,
+      "8,14": 2,
+      "8,15": 2,
+      "8,33": 7,
+      "8,34": 7,
+      "8,35": 7,
+      "8,36": 7,
+      "8,37": 7,
+      "8,38": 7,
+      "8,39": 7,
+      "8,40": 7,
+      "8,41": 7,
+      "8,42": 7,
+      "8,43": 7,
+      "8,44": 7,
+      "9,0": 0,
+      "9,1": 2,
       "9,2": 2,
       "9,3": 2,
       "9,4": 2,
       "9,5": 2,
-      "9,6": 8,
+      "9,6": 2,
       "9,7": 2,
       "9,8": 2,
       "9,9": 2,
@@ -1720,129 +2805,61 @@
       "9,11": 2,
       "9,12": 2,
       "9,13": 2,
-      "9,18": 8,
-      "9,19": 2,
-      "9,20": 2,
-      "9,21": 2,
-      "9,22": 2,
-      "9,23": 2,
-      "9,24": 2,
+      "9,14": 2,
+      "9,15": 2,
+      "9,16": 2,
+      "9,17": 2,
       "9,25": 2,
-      "9,26": 2,
-      "9,30": 8,
-      "9,31": 2,
-      "9,32": 2,
-      "9,33": 2,
-      "9,34": 2,
-      "9,35": 2,
-      "9,36": 2,
-      "9,37": 2,
-      "9,38": 2,
-      "9,39": 2,
-      "9,40": 2,
-      "9,41": 2,
-      "9,42": 2,
-      "9,43": 2,
-      "9,44": 2,
-      "9,45": 2,
-      "9,46": 2,
+      "9,33": 7,
+      "9,34": 7,
+      "9,35": 7,
+      "9,36": 7,
+      "9,37": 7,
+      "9,38": 7,
+      "9,39": 7,
+      "9,40": 7,
+      "9,41": 7,
+      "9,42": 7,
+      "9,43": 7,
+      "9,44": 7,
+      "10,0": 0,
       "10,1": 2,
+      "10,2": 2,
+      "10,3": 2,
+      "10,4": 2,
+      "10,5": 2,
       "10,6": 2,
-      "10,18": 2,
-      "10,30": 2,
-      "10,41": 2,
-      "11,1": 2,
-      "11,2": 2,
-      "11,3": 2,
-      "11,4": 2,
-      "11,6": 2,
-      "11,7": 2,
-      "11,8": 2,
-      "11,9": 2,
-      "11,10": 2,
-      "11,11": 2,
-      "11,12": 2,
-      "11,13": 2,
-      "11,18": 2,
-      "11,19": 2,
-      "11,20": 2,
-      "11,21": 2,
-      "11,22": 2,
-      "11,23": 2,
-      "11,24": 2,
-      "11,25": 2,
-      "11,26": 2,
-      "11,30": 2,
-      "11,31": 2,
-      "11,32": 2,
-      "11,33": 2,
-      "11,34": 2,
-      "11,35": 2,
-      "11,36": 2,
-      "11,37": 2,
-      "11,38": 2,
-      "11,39": 2,
-      "11,40": 2,
-      "11,41": 2,
-      "11,42": 2,
-      "11,43": 2,
-      "11,44": 2,
-      "11,45": 2,
-      "11,46": 2,
-      "12,1": 9,
-      "12,18": 10,
-      "12,19": 2,
-      "12,20": 2,
-      "12,21": 2,
-      "12,22": 2,
-      "12,23": 2,
-      "12,24": 2,
-      "12,25": 2,
-      "12,26": 2,
-      "12,30": 10,
-      "12,31": 2,
-      "12,32": 2,
-      "12,33": 2,
-      "12,34": 2,
-      "12,35": 2,
-      "12,36": 2,
-      "12,37": 2,
-      "12,38": 2,
-      "12,39": 2,
-      "12,40": 2,
-      "12,41": 2,
-      "12,42": 2,
-      "12,43": 2,
-      "12,44": 2,
+      "10,7": 2,
+      "10,8": 2,
+      "10,9": 2,
+      "10,10": 2,
+      "10,11": 2,
+      "10,12": 2,
+      "10,13": 2,
+      "10,14": 2,
+      "11,2": 8,
+      "11,12": 6,
+      "12,1": 7,
+      "12,8": 9,
       "12,45": 2,
-      "12,46": 2,
-      "13,1": 11,
-      "13,18": 2,
-      "13,30": 2,
-      "13,41": 2,
-      "13,42": 2,
-      "13,45": 2,
-      "13,46": 2,
-      "13,47": 2,
-      "13,48": 2,
-      "13,49": 2,
-      "14,1": 11,
-      "14,2": 11,
-      "14,3": 11,
-      "14,4": 11,
-      "14,5": 11,
-      "14,6": 11,
-      "14,7": 11,
-      "14,8": 11,
-      "14,9": 11,
-      "14,10": 11,
-      "14,11": 11,
-      "14,12": 11,
-      "14,13": 11,
-      "14,15": 2,
-      "14,16": 2,
-      "14,17": 2,
-      "14,18": 2,
+      "13,13": 8,
+      "13,50": 2,
+      "13,51": 2,
+      "13,52": 2,
+      "14,1": 7,
+      "14,2": 2,
+      "14,3": 2,
+      "14,4": 2,
+      "14,5": 2,
+      "14,6": 7,
+      "14,7": 2,
+      "14,8": 2,
+      "14,9": 2,
+      "14,10": 2,
+      "14,11": 2,
+      "14,12": 2,
+      "14,13": 2,
+      "14,18": 7,
       "14,19": 2,
       "14,20": 2,
       "14,21": 2,
@@ -1851,10 +2868,7 @@
       "14,24": 2,
       "14,25": 2,
       "14,26": 2,
-      "14,27": 2,
-      "14,28": 2,
-      "14,29": 2,
-      "14,30": 2,
+      "14,30": 7,
       "14,31": 2,
       "14,32": 2,
       "14,33": 2,
@@ -1870,46 +2884,179 @@
       "14,43": 2,
       "14,44": 2,
       "14,45": 2,
+      "14,46": 2,
+      "15,1": 10,
+      "15,2": 7,
+      "15,3": 7,
+      "15,4": 7,
+      "15,6": 2,
+      "15,18": 2,
+      "15,30": 2,
       "15,41": 2,
-      "15,42": 2,
-      "15,43": 2,
-      "15,44": 2,
-      "15,45": 2,
-      "15,46": 2,
-      "15,47": 2,
-      "15,48": 2,
-      "15,49": 2,
-      "17,3": 1,
-      "17,9": 1,
+      "16,1": 2,
+      "16,2": 2,
+      "16,3": 2,
+      "16,4": 2,
+      "16,6": 2,
+      "16,7": 2,
+      "16,8": 2,
+      "16,9": 2,
+      "16,10": 2,
+      "16,11": 2,
+      "16,12": 2,
+      "16,13": 2,
+      "16,18": 2,
+      "16,19": 2,
+      "16,20": 2,
+      "16,21": 2,
+      "16,22": 2,
+      "16,23": 2,
+      "16,24": 2,
+      "16,25": 2,
+      "16,26": 2,
+      "16,30": 2,
+      "16,31": 2,
+      "16,32": 2,
+      "16,33": 2,
+      "16,34": 2,
+      "16,35": 2,
+      "16,36": 2,
+      "16,37": 2,
+      "16,38": 2,
+      "16,39": 2,
+      "16,40": 2,
+      "16,41": 2,
+      "16,42": 2,
+      "16,43": 2,
+      "16,44": 2,
+      "16,45": 2,
+      "16,46": 2,
+      "17,1": 11,
+      "17,18": 12,
+      "17,19": 2,
+      "17,20": 2,
       "17,21": 2,
-      "17,31": 1,
-      "17,41": 1,
-      "17,51": 2,
-      "17,52": 2,
-      "17,53": 2,
-      "17,54": 2,
-      "17,55": 2,
-      "17,56": 2,
-      "18,1": 12,
-      "18,2": 13,
-      "18,3": 14,
-      "18,9": 2,
-      "18,21": 2,
-      "18,31": 2,
+      "17,22": 2,
+      "17,23": 2,
+      "17,24": 2,
+      "17,25": 2,
+      "17,26": 2,
+      "17,30": 12,
+      "17,31": 2,
+      "17,32": 2,
+      "17,33": 2,
+      "17,34": 2,
+      "17,35": 2,
+      "17,36": 2,
+      "17,37": 2,
+      "17,38": 2,
+      "17,39": 2,
+      "17,40": 2,
+      "17,41": 2,
+      "17,42": 2,
+      "17,43": 2,
+      "17,44": 2,
+      "17,45": 2,
+      "17,46": 2,
+      "18,1": 13,
+      "18,18": 2,
+      "18,30": 2,
       "18,41": 2,
-      "18,51": 2,
-      "18,52": 2,
-      "18,53": 2,
-      "18,54": 2,
-      "18,55": 2,
-      "18,56": 2,
-      "38,0": 0,
-      "39,0": 0,
-      "40,0": 0,
-      "41,0": 0
+      "18,42": 2,
+      "18,45": 2,
+      "18,46": 2,
+      "18,47": 2,
+      "18,48": 2,
+      "18,49": 2,
+      "19,1": 13,
+      "19,2": 13,
+      "19,3": 13,
+      "19,4": 13,
+      "19,5": 13,
+      "19,6": 13,
+      "19,7": 13,
+      "19,8": 13,
+      "19,9": 13,
+      "19,10": 13,
+      "19,11": 13,
+      "19,12": 13,
+      "19,13": 13,
+      "19,15": 2,
+      "19,16": 2,
+      "19,17": 2,
+      "19,18": 2,
+      "19,19": 2,
+      "19,20": 2,
+      "19,21": 2,
+      "19,22": 2,
+      "19,23": 2,
+      "19,24": 2,
+      "19,25": 2,
+      "19,26": 2,
+      "19,27": 2,
+      "19,28": 2,
+      "19,29": 2,
+      "19,30": 2,
+      "19,31": 2,
+      "19,32": 2,
+      "19,33": 2,
+      "19,34": 2,
+      "19,35": 2,
+      "19,36": 2,
+      "19,37": 2,
+      "19,38": 2,
+      "19,39": 2,
+      "19,40": 2,
+      "19,41": 2,
+      "19,42": 2,
+      "19,43": 2,
+      "19,44": 2,
+      "19,45": 2,
+      "20,41": 2,
+      "20,42": 2,
+      "20,43": 2,
+      "20,44": 2,
+      "20,45": 2,
+      "20,46": 2,
+      "20,47": 2,
+      "20,48": 2,
+      "20,49": 2,
+      "22,3": 1,
+      "22,9": 1,
+      "22,21": 2,
+      "22,31": 1,
+      "22,41": 1,
+      "22,51": 1,
+      "22,53": 2,
+      "22,54": 2,
+      "22,55": 2,
+      "22,56": 2,
+      "22,57": 2,
+      "22,58": 14,
+      "22,59": 15,
+      "23,1": 16,
+      "23,2": 17,
+      "23,3": 18,
+      "23,9": 2,
+      "23,21": 2,
+      "23,31": 2,
+      "23,41": 2,
+      "23,51": 14,
+      "23,53": 2,
+      "23,54": 2,
+      "23,55": 2,
+      "23,56": 2,
+      "23,57": 2,
+      "23,58": 19,
+      "23,59": 2,
+      "23,60": 2,
+      "43,0": 0,
+      "44,0": 0,
+      "45,0": 0,
+      "46,0": 0
     },
     "RowStyles": {
-      "7": 9
+      "12": 11
     },
     "SheetStyle": {
       "FontFamily": 1,
@@ -1921,35 +3068,54 @@
   },
   "Spans": [
     "1,1,1,10",
+    "1,26,1,6",
     "2,10,1,5",
-    "2,25,1,5",
-    "2,37,1,5",
+    "2,26,1,6",
+    "2,33,1,3",
+    "2,36,1,3",
     "3,10,1,5",
+    "3,26,1,6",
+    "3,33,2,9",
     "4,13,1,5",
-    "7,5,1,8",
-    "10,1,1,4",
-    "10,6,1,11",
-    "10,18,1,11",
-    "10,30,1,11",
-    "13,1,1,16",
-    "13,18,1,11",
-    "13,30,1,11",
-    "13,45,1,5",
-    "15,1,1,10",
-    "15,41,1,9",
-    "18,1,1,2",
-    "18,3,1,6",
-    "18,9,1,12",
-    "18,21,1,10",
-    "18,31,1,10",
-    "18,41,1,10",
-    "19,1,17,59",
-    "17,1,1,2",
-    "17,3,1,6",
-    "17,9,1,12",
-    "17,21,1,10",
-    "17,31,1,10",
-    "17,41,1,10"
+    "6,9,1,5",
+    "7,33,1,3",
+    "7,36,1,3",
+    "7,39,1,3",
+    "7,42,1,3",
+    "8,6,1,5",
+    "8,33,2,12",
+    "12,8,1,9",
+    "15,1,1,4",
+    "15,6,1,11",
+    "15,18,1,11",
+    "15,30,1,11",
+    "18,1,1,16",
+    "18,18,1,11",
+    "18,30,1,11",
+    "18,45,1,5",
+    "20,1,1,10",
+    "20,41,1,9",
+    "23,1,1,2",
+    "23,3,1,6",
+    "23,9,1,12",
+    "23,21,1,10",
+    "23,31,1,10",
+    "23,41,1,10",
+    "23,51,1,2",
+    "24,1,17,63",
+    "1,33,1,3",
+    "1,36,1,3",
+    "6,33,1,3",
+    "6,36,1,3",
+    "6,39,1,3",
+    "6,42,1,3",
+    "22,1,1,2",
+    "22,3,1,6",
+    "22,9,1,12",
+    "22,21,1,10",
+    "22,31,1,10",
+    "22,41,1,10",
+    "22,51,1,2"
   ],
   "PageInfo": {
     "$type": "Forguncy.Model.Pages.NormalPage, ServerDesignerCommon",
@@ -1965,7 +3131,7 @@
                 "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
                 "cellLocations": [
                   {
-                    "SerializeProperty": "=点検依頼・結果!AL3"
+                    "SerializeProperty": "=点検依頼・結果!G9"
                   }
                 ]
               },
@@ -1978,40 +3144,44 @@
                   {
                     "TargetCells": {
                       "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                      "SerializeProperty": "=点検依頼・結果!AP16"
+                      "SerializeProperty": "=点検依頼・結果!AP21"
                     },
                     "PropertyType": 1,
                     "Value": false
-                  },
-                  {
-                    "TargetCells": {
-                      "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                      "SerializeProperty": "=点検依頼・結果!B11"
-                    },
-                    "PropertyType": 5,
-                    "Value": true
                   }
                 ]
+              },
+              {
+                "$type": "Forguncy.Model.UpdateListviewCommand, ServerDesignerCommon",
+                "UpdateType": 6,
+                "ListviewName": "点検依頼_結果一覧",
+                "UpdateListviewCommandRunTimeMethodSetting": {
+                  "MethodName": "HideColumn",
+                  "ParameterValues": {
+                    "indexOrName": "点検依頼"
+                  },
+                  "RetrunParamNames": {}
+                }
               }
             ],
-            "ID": "641d37a1-2c5a-41d4-914a-4d7518a86e46"
+            "ID": "54d4b93d-433e-4d8d-8f42-eac9714ea90b"
           },
           {
             "CommandList": [
               {
-                "$type": "Forguncy.Model.SetRowColumnLayoutCommand, ServerDesignerCommon",
-                "PropertyItemsList": [
-                  {
-                    "Location": {
-                      "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                      "SerializeProperty": "=点検依頼・結果!7:8"
-                    },
-                    "Value": false
-                  }
-                ]
+                "$type": "Forguncy.Model.UpdateListviewCommand, ServerDesignerCommon",
+                "UpdateType": 6,
+                "ListviewName": "点検依頼_結果一覧",
+                "UpdateListviewCommandRunTimeMethodSetting": {
+                  "MethodName": "HideColumn",
+                  "ParameterValues": {
+                    "indexOrName": "点検"
+                  },
+                  "RetrunParamNames": {}
+                }
               }
             ],
-            "ID": "89232a21-1407-4ea5-b34b-8ff6467209c4"
+            "ID": "5ca27fdd-138a-4874-9de6-ed66f044f694"
           }
         ]
       },
@@ -2037,4 +3207,4 @@
     "Margin": {},
     "PaperSize": {}
   }
-}//XmWCA3rCMXxG83WUrwOmMvbRaDSXCe5bCYKmreNVwbKlA9Z3f3tlTDLaVgLaUSUh3p+VzvO1QxToVPwG1gy05JDP8rdQ4oP0FzYyz6C9U1uxnPFMKwvF/SGWoK28RWbHHFNJsU2k/NRivhwlyQTgQToor1zs4xtDLq7yOm9/qu2YoHFR3opZrBpbuoFjAm+byMz66xwsMTsi2doINtAtYMtbIqu1d1TuHSeHNo/FxZPRsyxNHQwHOAehZ/tqkLhPshjCmsFzuyazVp6bWXz0mqonHJIf6aU+GP6Vu9gyOQLEzm6dK0oCDxSoVaKgCh7N8vFCTP22ftMVwqTxSWhqwxtxIouixHy0jLIPUtBjIjRoedPCs+yhe2rcY0NkjEhw8LrWlXS0giyN1zwYCOMyR5k78U2fwSWWBPdKrcn/oYGZMzHeFRZ+AJ1weoBGj+wxGXnuEnTfL7dH0qwszUmep/G61Q7kSeKvjfK6s2f/vz8jVS9jj/pfliICJy7/Lzb3p7XUPcRKEYJaX9CvEMGidzewxG5WpDgfqF8RGFwUx55+lhVzjRCxbWMVZ4IqvJc82ujnlKo2G0BdnbROjf+s4sDD3KK0DannPz0PljoTvPvHFjWUwGVy7NXUKb+d1h67asYp8EoG/mjp7nYcWVI6mpRXx7d4Nw/rQssfkQBGTuzgWi8wNkErzFf9mbj4aHFdQCXoFJd6SjPHC0AGgpSxOicN7xDZHwZAVE7YI/PhmeoJdaMFJvZjZbgk0UKgk/7WECNsyUVrrNhT65q82jXKbw5LL5bT4LiuxCopWar9c0u1yl/dVDYht7+6nTntRP1nKDSJLgG5imGN4oromVIcGK9aJDbYF8RfLAOWS2BE7rgmHXlAvns6woUAf9NOwst3C37vy7lsHhT0cekQby+zWg==|920
+}//VxNMR3lVOfKEx14ksqk4NcQge3Pr+h0k0MjQBRK36P6YDdkabBQqBVWjmV/YWTAEQQoBtnrMhR2+ntn/QP0y1SMaENzdpg+bugTYOmcKEipbkgQHkVnxUdojji3eysZ2JZZ5mJmtblF/qNtADjl1CKZUD0NXB6pp+T5GllSexjIk2pzjT+gnbf76w3xg79+FudB8Co+4yEJj/AZE9f0mhYVYWIL+yTZe0Wmj2bR4ioo0F5hyshUwLyYkqZJQ6wgX/bPhtI9nuKx8tDfh52lBwaPmiyVXBwW8sm+4cpFikDxJB4bwpKnRQ5HYoho5uJ57b+iY2UR1UP2nUSjtS3VPSkHY80KR8GE+8JN9waWrnCvXaw55U1k1+a6we//EHRQUPPtmFUo75KitoeyKH4uSE+KXXkBUjMeY9mxSgk87U/W5WWXDzEnZjZ2WX9r/QCcZoCzf0zOAuu2JKHnjC97SvEOLbQibOEC7CMSD1eXaQmSL6BlYiLO63pBohBxD1zI25yTPaJnjlMHzEYUypobJDwwf2ALZUTYthA7IHwpBA9WgGrOrFuWJAXvRWJnpyhJfHYg1mBEFatN4XG/e67j8oSsvTzBpv8RmQxRAHI6clvbaXaQc1LWcCUPyaNhfF0d2cF+9kOu3i6zc/C5QLVA+GdYNqtMf10rI0QeFZ6bGMzAMsA+7F/p41kTxLdk1Nq/PMqzb+BwuPHd9PKJQYPzRHiKbPVghgoXjISBeKwvFAoSr7MwU61JzKlFBYy1uVaqf1ROMyVdy2V4pvXsgrTkKCt7duAIhsYzc5pBioSCKy4CTp4OYSHWoE0I3T1KUHs2Sp67WWAh0MkMdCXiQ2MCxqVWk/PyAQc/JQwVyOoUdqYjcdfu2Jq51HeGFpslPj1B6vUMr4UCqnSrw+/hCG9/rUA==|920

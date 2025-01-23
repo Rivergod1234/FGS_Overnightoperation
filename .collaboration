@@ -5,276 +5,87 @@
   },
   {
     "ModuleName": "Table/M_OvernightReason",
-    "State": 1,
-    "LockedBy": {
-      "UserName": "ZEON村上",
-      "Email": "S3.murakami@zeon.co.jp"
-    },
-    "LockDateTime": "2025-01-23T13:38:59.7326907+09:00",
-    "ModuleType": 7,
-    "ToRemoveFiles": [
-      "Tables\\FixedAssetDB\\M_OvernightReason.json"
-    ]
+    "ModuleType": 7
   },
   {
     "ModuleName": "Table/M_Operation",
-    "State": 1,
-    "LockedBy": {
-      "UserName": "ZEON村上",
-      "Email": "S3.murakami@zeon.co.jp"
-    },
-    "LockDateTime": "2025-01-23T13:38:59.7326907+09:00",
-    "ModuleType": 7,
-    "ToRemoveFiles": [
-      "Tables\\FixedAssetDB\\M_Operation.json"
-    ]
+    "ModuleType": 7
   },
   {
     "ModuleName": "Table/M_OvernightInspectionList",
-    "State": 1,
-    "LockedBy": {
-      "UserName": "ZEON村上",
-      "Email": "S3.murakami@zeon.co.jp"
-    },
-    "LockDateTime": "2025-01-23T13:38:59.7326907+09:00",
-    "ModuleType": 7,
-    "ToRemoveFiles": [
-      "Tables\\FixedAssetDB\\M_OvernightInspectionList.json"
-    ]
+    "ModuleType": 7
   },
   {
     "ModuleName": "Table/T_OvernightGroup",
-    "State": 1,
-    "LockedBy": {
-      "UserName": "ZEON村上",
-      "Email": "S3.murakami@zeon.co.jp"
-    },
-    "LockDateTime": "2025-01-23T13:38:59.7326907+09:00",
-    "ModuleType": 7,
-    "ToRemoveFiles": [
-      "Tables\\FixedAssetDB\\T_OvernightGroup.json"
-    ]
+    "ModuleType": 7
   },
   {
     "ModuleName": "Table/T_OvernightInspection",
-    "State": 1,
-    "LockedBy": {
-      "UserName": "ZEON村上",
-      "Email": "S3.murakami@zeon.co.jp"
-    },
-    "LockDateTime": "2025-01-23T13:38:59.7326907+09:00",
-    "ModuleType": 7,
-    "ToRemoveFiles": [
-      "Tables\\FixedAssetDB\\T_OvernightInspection.json"
-    ]
+    "ModuleType": 7
   },
   {
     "ModuleName": "Table/T_OvernightNotification",
-    "State": 1,
-    "LockedBy": {
-      "UserName": "ZEON村上",
-      "Email": "S3.murakami@zeon.co.jp"
-    },
-    "LockDateTime": "2025-01-23T13:38:59.7326907+09:00",
-    "ModuleType": 7,
-    "ToRemoveFiles": [
-      "Tables\\FixedAssetDB\\T_OvernightNotification.json"
-    ]
+    "ModuleType": 7
   },
   {
     "ModuleName": "Table/T_OvernightRegistration",
-    "State": 1,
-    "LockedBy": {
-      "UserName": "ZEON村上",
-      "Email": "S3.murakami@zeon.co.jp"
-    },
-    "LockDateTime": "2025-01-23T13:38:59.7326907+09:00",
-    "ModuleType": 7,
-    "ToRemoveFiles": [
-      "Tables\\FixedAssetDB\\T_OvernightRegistration.json"
-    ]
+    "ModuleType": 7
   },
   {
     "ModuleName": "Table/T_OvernightInspectionItem",
-    "State": 1,
-    "LockedBy": {
-      "UserName": "ZEON村上",
-      "Email": "S3.murakami@zeon.co.jp"
-    },
-    "LockDateTime": "2025-01-23T13:38:59.7326907+09:00",
-    "ModuleType": 7,
-    "ToRemoveFiles": [
-      "Tables\\FixedAssetDB\\T_OvernightInspectionItem.json"
-    ]
+    "ModuleType": 7
   },
   {
     "ModuleName": "Table/T_InstrumentBasicInformation",
-    "State": 1,
-    "LockedBy": {
-      "UserName": "ZEON村上",
-      "Email": "S3.murakami@zeon.co.jp"
-    },
-    "LockDateTime": "2025-01-23T13:38:59.7326907+09:00",
-    "ModuleType": 7,
-    "ToRemoveFiles": [
-      "Tables\\FixedAssetDB\\T_InstrumentBasicInformation.json"
-    ]
+    "ModuleType": 7
   },
   {
     "ModuleName": "Table/M_EquipmentClassification",
-    "State": 1,
-    "LockedBy": {
-      "UserName": "ZEON村上",
-      "Email": "S3.murakami@zeon.co.jp"
-    },
-    "LockDateTime": "2025-01-23T13:38:59.7326907+09:00",
-    "ModuleType": 7,
-    "ToRemoveFiles": [
-      "Tables\\FixedAssetDB\\M_EquipmentClassification.json"
-    ]
+    "ModuleType": 7
   },
   {
     "ModuleName": "Table/T_WorkFlowHistory",
-    "State": 1,
-    "LockedBy": {
-      "UserName": "ZEON村上",
-      "Email": "S3.murakami@zeon.co.jp"
-    },
-    "LockDateTime": "2025-01-23T13:38:59.730691+09:00",
-    "ModuleType": 7,
-    "ToRemoveFiles": [
-      "Tables\\FixedAssetDB\\T_WorkFlowHistory.json"
-    ]
+    "ModuleType": 7
   },
   {
     "ModuleName": "Table/M_Status",
-    "State": 1,
-    "LockedBy": {
-      "UserName": "ZEON村上",
-      "Email": "S3.murakami@zeon.co.jp"
-    },
-    "LockDateTime": "2025-01-23T13:38:59.7326907+09:00",
-    "ModuleType": 7,
-    "ToRemoveFiles": [
-      "Tables\\FixedAssetDB\\M_Status.json"
-    ]
+    "ModuleType": 7
   },
   {
     "ModuleName": "Table/M_ReservationClassification",
-    "State": 1,
-    "LockedBy": {
-      "UserName": "ZEON村上",
-      "Email": "S3.murakami@zeon.co.jp"
-    },
-    "LockDateTime": "2025-01-23T13:38:59.7326907+09:00",
-    "ModuleType": 7,
-    "ToRemoveFiles": [
-      "Tables\\FixedAssetDB\\M_ReservationClassification.json"
-    ]
+    "ModuleType": 7
   },
   {
     "ModuleName": "Table/M_SystemSettingItem",
-    "State": 1,
-    "LockedBy": {
-      "UserName": "ZEON村上",
-      "Email": "S3.murakami@zeon.co.jp"
-    },
-    "LockDateTime": "2025-01-23T13:38:59.7326907+09:00",
-    "ModuleType": 7,
-    "ToRemoveFiles": [
-      "Tables\\FixedAssetDB\\M_SystemSettingItem.json"
-    ]
+    "ModuleType": 7
   },
   {
     "ModuleName": "Table/M_SystemAdministrator",
-    "State": 1,
-    "LockedBy": {
-      "UserName": "ZEON村上",
-      "Email": "S3.murakami@zeon.co.jp"
-    },
-    "LockDateTime": "2025-01-23T13:38:59.7326907+09:00",
-    "ModuleType": 7,
-    "ToRemoveFiles": [
-      "Tables\\FixedAssetDB\\M_SystemAdministrator.json"
-    ]
+    "ModuleType": 7
   },
   {
     "ModuleName": "TableView/V_OvernightGroup",
-    "State": 1,
-    "LockedBy": {
-      "UserName": "ZEON村上",
-      "Email": "S3.murakami@zeon.co.jp"
-    },
-    "LockDateTime": "2025-01-23T13:38:59.730691+09:00",
-    "ModuleType": 23,
-    "ToRemoveFiles": [
-      "Tables\\FixedAssetDB\\V_OvernightGroup.json"
-    ]
+    "ModuleType": 23
   },
   {
     "ModuleName": "TableView/V_OvernightGroup_Inspection",
-    "State": 1,
-    "LockedBy": {
-      "UserName": "ZEON村上",
-      "Email": "S3.murakami@zeon.co.jp"
-    },
-    "LockDateTime": "2025-01-23T13:38:59.730691+09:00",
-    "ModuleType": 23,
-    "ToRemoveFiles": [
-      "Tables\\FixedAssetDB\\V_OvernightGroup_Inspection.json"
-    ]
+    "ModuleType": 23
   },
   {
     "ModuleName": "TableView/V_OvernightRegistration_FGC_WHT",
-    "State": 1,
-    "LockedBy": {
-      "UserName": "ZEON村上",
-      "Email": "S3.murakami@zeon.co.jp"
-    },
-    "LockDateTime": "2025-01-23T13:38:59.7326907+09:00",
-    "ModuleType": 23,
-    "ToRemoveFiles": [
-      "Tables\\FixedAssetDB\\V_OvernightRegistration_FGC_WHT.json"
-    ]
+    "ModuleType": 23
   },
   {
     "ModuleName": "TableView/V_OvernightNotification_FGC_WHT",
-    "State": 1,
-    "LockedBy": {
-      "UserName": "ZEON村上",
-      "Email": "S3.murakami@zeon.co.jp"
-    },
-    "LockDateTime": "2025-01-23T13:38:59.730691+09:00",
-    "ModuleType": 23,
-    "ToRemoveFiles": [
-      "Tables\\FixedAssetDB\\V_OvernightNotification_FGC_WHT.json"
-    ]
+    "ModuleType": 23
   },
   {
     "ModuleName": "TableView/V_OvernightRegistrationHistory",
-    "State": 1,
-    "LockedBy": {
-      "UserName": "ZEON村上",
-      "Email": "S3.murakami@zeon.co.jp"
-    },
-    "LockDateTime": "2025-01-23T13:38:59.7326907+09:00",
-    "ModuleType": 23,
-    "ToRemoveFiles": [
-      "Tables\\FixedAssetDB\\V_OvernightRegistrationHistory.json"
-    ]
+    "ModuleType": 23
   },
   {
     "ModuleName": "Table/M_ApprovalAgent",
-    "State": 1,
-    "LockedBy": {
-      "UserName": "ZEON村上",
-      "Email": "S3.murakami@zeon.co.jp"
-    },
-    "LockDateTime": "2025-01-23T13:38:59.730691+09:00",
-    "ModuleType": 7,
-    "ToRemoveFiles": [
-      "Tables\\FixedAssetDB\\M_ApprovalAgent.json"
-    ]
+    "ModuleType": 7
   },
   {
     "ModuleName": "Tables/EMP_MST",
@@ -282,16 +93,7 @@
   },
   {
     "ModuleName": "Table/NAC_Acc_Account",
-    "State": 1,
-    "LockedBy": {
-      "UserName": "ZEON村上",
-      "Email": "S3.murakami@zeon.co.jp"
-    },
-    "LockDateTime": "2025-01-23T13:38:59.730691+09:00",
-    "ModuleType": 7,
-    "ToRemoveFiles": [
-      "Tables\\EMP_MST\\NAC_Acc_Account.json"
-    ]
+    "ModuleType": 7
   },
   {
     "ModuleName": "Tables/L_USER_MST",
@@ -299,42 +101,15 @@
   },
   {
     "ModuleName": "Table/lum_view_cost_centers_duplicated",
-    "State": 1,
-    "LockedBy": {
-      "UserName": "ZEON村上",
-      "Email": "S3.murakami@zeon.co.jp"
-    },
-    "LockDateTime": "2025-01-23T13:38:59.7326907+09:00",
-    "ModuleType": 7,
-    "ToRemoveFiles": [
-      "Tables\\L_USER_MST\\lum_view_cost_centers_duplicated.json"
-    ]
+    "ModuleType": 7
   },
   {
     "ModuleName": "Table/lum_view_employee_department_relations_duplicated",
-    "State": 1,
-    "LockedBy": {
-      "UserName": "ZEON村上",
-      "Email": "S3.murakami@zeon.co.jp"
-    },
-    "LockDateTime": "2025-01-23T13:38:59.7326907+09:00",
-    "ModuleType": 7,
-    "ToRemoveFiles": [
-      "Tables\\L_USER_MST\\lum_view_employee_department_relations_duplicated.json"
-    ]
+    "ModuleType": 7
   },
   {
     "ModuleName": "Table/lum_view_depertment_consener_relations_nac_based_duplicated",
-    "State": 1,
-    "LockedBy": {
-      "UserName": "ZEON村上",
-      "Email": "S3.murakami@zeon.co.jp"
-    },
-    "LockDateTime": "2025-01-23T13:38:59.7326907+09:00",
-    "ModuleType": 7,
-    "ToRemoveFiles": [
-      "Tables\\L_USER_MST\\lum_view_depertment_consener_relations_nac_based_duplicated.json"
-    ]
+    "ModuleType": 7
   },
   {
     "ModuleName": "Tables/LOCATION_MST",
@@ -342,120 +117,39 @@
   },
   {
     "ModuleName": "Table/M_Utility",
-    "State": 1,
-    "LockedBy": {
-      "UserName": "ZEON村上",
-      "Email": "S3.murakami@zeon.co.jp"
-    },
-    "LockDateTime": "2025-01-23T13:38:59.7326907+09:00",
-    "ModuleType": 7,
-    "ToRemoveFiles": [
-      "Tables\\LOCATION_MST\\M_Utility.json"
-    ]
+    "ModuleType": 7
   },
   {
     "ModuleName": "Table/M_FireManagement",
-    "State": 1,
-    "LockedBy": {
-      "UserName": "ZEON村上",
-      "Email": "S3.murakami@zeon.co.jp"
-    },
-    "LockDateTime": "2025-01-23T13:38:59.7326907+09:00",
-    "ModuleType": 7,
-    "ToRemoveFiles": [
-      "Tables\\LOCATION_MST\\M_FireManagement.json"
-    ]
+    "ModuleType": 7
   },
   {
     "ModuleName": "Table/M_BasicRoomInformation",
-    "State": 1,
-    "LockedBy": {
-      "UserName": "ZEON村上",
-      "Email": "S3.murakami@zeon.co.jp"
-    },
-    "LockDateTime": "2025-01-23T13:38:59.7326907+09:00",
-    "ModuleType": 7,
-    "ToRemoveFiles": [
-      "Tables\\LOCATION_MST\\M_BasicRoomInformation.json"
-    ]
+    "ModuleType": 7
   },
   {
     "ModuleName": "Table/M01_First_Classification",
-    "State": 1,
-    "LockedBy": {
-      "UserName": "ZEON村上",
-      "Email": "S3.murakami@zeon.co.jp"
-    },
-    "LockDateTime": "2025-01-23T13:38:59.7326907+09:00",
-    "ModuleType": 7,
-    "ToRemoveFiles": [
-      "Tables\\LOCATION_MST\\M01_First_Classification.json"
-    ]
+    "ModuleType": 7
   },
   {
     "ModuleName": "Table/M02_Second_Classification",
-    "State": 1,
-    "LockedBy": {
-      "UserName": "ZEON村上",
-      "Email": "S3.murakami@zeon.co.jp"
-    },
-    "LockDateTime": "2025-01-23T13:38:59.7326907+09:00",
-    "ModuleType": 7,
-    "ToRemoveFiles": [
-      "Tables\\LOCATION_MST\\M02_Second_Classification.json"
-    ]
+    "ModuleType": 7
   },
   {
     "ModuleName": "Table/M03_Third_Classification",
-    "State": 1,
-    "LockedBy": {
-      "UserName": "ZEON村上",
-      "Email": "S3.murakami@zeon.co.jp"
-    },
-    "LockDateTime": "2025-01-23T13:38:59.7326907+09:00",
-    "ModuleType": 7,
-    "ToRemoveFiles": [
-      "Tables\\LOCATION_MST\\M03_Third_Classification.json"
-    ]
+    "ModuleType": 7
   },
   {
     "ModuleName": "TableView/V_BasicRoomInformation",
-    "State": 1,
-    "LockedBy": {
-      "UserName": "ZEON村上",
-      "Email": "S3.murakami@zeon.co.jp"
-    },
-    "LockDateTime": "2025-01-23T13:38:59.7326907+09:00",
-    "ModuleType": 23,
-    "ToRemoveFiles": [
-      "Tables\\LOCATION_MST\\V_BasicRoomInformation.json"
-    ]
+    "ModuleType": 23
   },
   {
     "ModuleName": "TableView/V_LOCATION_ForAsset",
-    "State": 1,
-    "LockedBy": {
-      "UserName": "ZEON村上",
-      "Email": "S3.murakami@zeon.co.jp"
-    },
-    "LockDateTime": "2025-01-23T13:38:59.7326907+09:00",
-    "ModuleType": 23,
-    "ToRemoveFiles": [
-      "Tables\\LOCATION_MST\\V_LOCATION_ForAsset.json"
-    ]
+    "ModuleType": 23
   },
   {
     "ModuleName": "Table/M_RoomGroup",
-    "State": 1,
-    "LockedBy": {
-      "UserName": "ZEON村上",
-      "Email": "S3.murakami@zeon.co.jp"
-    },
-    "LockDateTime": "2025-01-23T13:38:59.7326907+09:00",
-    "ModuleType": 7,
-    "ToRemoveFiles": [
-      "Tables\\LOCATION_MST\\M_RoomGroup.json"
-    ]
+    "ModuleType": 7
   },
   {
     "ModuleName": "Pages/ビルトイン ページ",
@@ -463,146 +157,47 @@
   },
   {
     "ModuleName": "PCPage/FGC_401ページ",
-    "State": 1,
-    "LockedBy": {
-      "UserName": "ZEON村上",
-      "Email": "S3.murakami@zeon.co.jp"
-    },
-    "LockDateTime": "2025-01-23T13:38:59.7045608+09:00",
-    "ModuleType": 1,
-    "ToRemoveFiles": [
-      "Pages\\ビルトイン ページ\\FGC_401ページ.json"
-    ]
+    "ModuleType": 1
   },
   {
     "ModuleName": "PCPage/FGC_メールサブスクリプション",
-    "State": 1,
-    "LockedBy": {
-      "UserName": "ZEON村上",
-      "Email": "S3.murakami@zeon.co.jp"
-    },
-    "LockDateTime": "2025-01-23T13:38:59.7045608+09:00",
-    "ModuleType": 1,
-    "ToRemoveFiles": [
-      "Pages\\ビルトイン ページ\\FGC_メールサブスクリプション.json"
-    ]
+    "ModuleType": 1
   },
   {
     "ModuleName": "PCPage/FGC_ただいまメンテナンス中です",
-    "State": 1,
-    "LockedBy": {
-      "UserName": "ZEON村上",
-      "Email": "S3.murakami@zeon.co.jp"
-    },
-    "LockDateTime": "2025-01-23T13:38:59.7045608+09:00",
-    "ModuleType": 1,
-    "ToRemoveFiles": [
-      "Pages\\ビルトイン ページ\\FGC_ただいまメンテナンス中です.json"
-    ]
+    "ModuleType": 1
   },
   {
     "ModuleName": "PCPage/FGC_パスワードの変更",
-    "State": 1,
-    "LockedBy": {
-      "UserName": "ZEON村上",
-      "Email": "S3.murakami@zeon.co.jp"
-    },
-    "LockDateTime": "2025-01-23T13:38:59.7045608+09:00",
-    "ModuleType": 1,
-    "ToRemoveFiles": [
-      "Pages\\ビルトイン ページ\\FGC_パスワードの変更.json"
-    ]
+    "ModuleType": 1
   },
   {
     "ModuleName": "PCPage/FGC_パスワードを忘れた場合",
-    "State": 1,
-    "LockedBy": {
-      "UserName": "ZEON村上",
-      "Email": "S3.murakami@zeon.co.jp"
-    },
-    "LockDateTime": "2025-01-23T13:38:59.7045608+09:00",
-    "ModuleType": 1,
-    "ToRemoveFiles": [
-      "Pages\\ビルトイン ページ\\FGC_パスワードを忘れた場合.json"
-    ]
+    "ModuleType": 1
   },
   {
     "ModuleName": "PCPage/FGC_プロファイルの編集",
-    "State": 1,
-    "LockedBy": {
-      "UserName": "ZEON村上",
-      "Email": "S3.murakami@zeon.co.jp"
-    },
-    "LockDateTime": "2025-01-23T13:38:59.7045608+09:00",
-    "ModuleType": 1,
-    "ToRemoveFiles": [
-      "Pages\\ビルトイン ページ\\FGC_プロファイルの編集.json"
-    ]
+    "ModuleType": 1
   },
   {
     "ModuleName": "PCPage/FGC_ログイン",
-    "State": 1,
-    "LockedBy": {
-      "UserName": "ZEON村上",
-      "Email": "S3.murakami@zeon.co.jp"
-    },
-    "LockDateTime": "2025-01-23T13:38:59.7045608+09:00",
-    "ModuleType": 1,
-    "ToRemoveFiles": [
-      "Pages\\ビルトイン ページ\\FGC_ログイン.json"
-    ]
+    "ModuleType": 1
   },
   {
     "ModuleName": "PCPage/FGC_パスワードのリセット用リンクの送信",
-    "State": 1,
-    "LockedBy": {
-      "UserName": "ZEON村上",
-      "Email": "S3.murakami@zeon.co.jp"
-    },
-    "LockDateTime": "2025-01-23T13:38:59.7045608+09:00",
-    "ModuleType": 1,
-    "ToRemoveFiles": [
-      "Pages\\ビルトイン ページ\\FGC_パスワードのリセット用リンクの送信.json"
-    ]
+    "ModuleType": 1
   },
   {
     "ModuleName": "PCPage/FGC_パスワードのリセット",
-    "State": 1,
-    "LockedBy": {
-      "UserName": "ZEON村上",
-      "Email": "S3.murakami@zeon.co.jp"
-    },
-    "LockDateTime": "2025-01-23T13:38:59.7045608+09:00",
-    "ModuleType": 1,
-    "ToRemoveFiles": [
-      "Pages\\ビルトイン ページ\\FGC_パスワードのリセット.json"
-    ]
+    "ModuleType": 1
   },
   {
     "ModuleName": "PCPage/FGC_認証アプリの構成",
-    "State": 1,
-    "LockedBy": {
-      "UserName": "ZEON村上",
-      "Email": "S3.murakami@zeon.co.jp"
-    },
-    "LockDateTime": "2025-01-23T13:38:59.7045608+09:00",
-    "ModuleType": 1,
-    "ToRemoveFiles": [
-      "Pages\\ビルトイン ページ\\FGC_認証アプリの構成.json"
-    ]
+    "ModuleType": 1
   },
   {
     "ModuleName": "PCPage/FGC_コードの入力",
-    "State": 1,
-    "LockedBy": {
-      "UserName": "ZEON村上",
-      "Email": "S3.murakami@zeon.co.jp"
-    },
-    "LockDateTime": "2025-01-23T13:38:59.7045608+09:00",
-    "ModuleType": 1,
-    "ToRemoveFiles": [
-      "Pages\\ビルトイン ページ\\FGC_コードの入力.json"
-    ]
+    "ModuleType": 1
   },
   {
     "ModuleName": "Pages/ビルトイン モバイルページ",
@@ -610,393 +205,123 @@
   },
   {
     "ModuleName": "MobilePage/FGC_401ページ_モバイル",
-    "State": 1,
-    "LockedBy": {
-      "UserName": "ZEON村上",
-      "Email": "S3.murakami@zeon.co.jp"
-    },
-    "LockDateTime": "2025-01-23T13:38:59.7045608+09:00",
-    "ModuleType": 2,
-    "ToRemoveFiles": [
-      "Pages\\ビルトイン モバイルページ\\FGC_401ページ_モバイル.json"
-    ]
+    "ModuleType": 2
   },
   {
     "ModuleName": "MobilePage/FGC_メールサブスクリプション_モバイル",
-    "State": 1,
-    "LockedBy": {
-      "UserName": "ZEON村上",
-      "Email": "S3.murakami@zeon.co.jp"
-    },
-    "LockDateTime": "2025-01-23T13:38:59.7055617+09:00",
-    "ModuleType": 2,
-    "ToRemoveFiles": [
-      "Pages\\ビルトイン モバイルページ\\FGC_メールサブスクリプション_モバイル.json"
-    ]
+    "ModuleType": 2
   },
   {
     "ModuleName": "MobilePage/FGC_ただいまメンテナンス中です_モバイル",
-    "State": 1,
-    "LockedBy": {
-      "UserName": "ZEON村上",
-      "Email": "S3.murakami@zeon.co.jp"
-    },
-    "LockDateTime": "2025-01-23T13:38:59.7045608+09:00",
-    "ModuleType": 2,
-    "ToRemoveFiles": [
-      "Pages\\ビルトイン モバイルページ\\FGC_ただいまメンテナンス中です_モバイル.json"
-    ]
+    "ModuleType": 2
   },
   {
     "ModuleName": "MobilePage/FGC_パスワードの変更_モバイル",
-    "State": 1,
-    "LockedBy": {
-      "UserName": "ZEON村上",
-      "Email": "S3.murakami@zeon.co.jp"
-    },
-    "LockDateTime": "2025-01-23T13:38:59.7045608+09:00",
-    "ModuleType": 2,
-    "ToRemoveFiles": [
-      "Pages\\ビルトイン モバイルページ\\FGC_パスワードの変更_モバイル.json"
-    ]
+    "ModuleType": 2
   },
   {
     "ModuleName": "MobilePage/FGC_パスワードを忘れた場合_モバイル",
-    "State": 1,
-    "LockedBy": {
-      "UserName": "ZEON村上",
-      "Email": "S3.murakami@zeon.co.jp"
-    },
-    "LockDateTime": "2025-01-23T13:38:59.7045608+09:00",
-    "ModuleType": 2,
-    "ToRemoveFiles": [
-      "Pages\\ビルトイン モバイルページ\\FGC_パスワードを忘れた場合_モバイル.json"
-    ]
+    "ModuleType": 2
   },
   {
     "ModuleName": "MobilePage/FGC_プロファイルの編集_モバイル",
-    "State": 1,
-    "LockedBy": {
-      "UserName": "ZEON村上",
-      "Email": "S3.murakami@zeon.co.jp"
-    },
-    "LockDateTime": "2025-01-23T13:38:59.7055617+09:00",
-    "ModuleType": 2,
-    "ToRemoveFiles": [
-      "Pages\\ビルトイン モバイルページ\\FGC_プロファイルの編集_モバイル.json"
-    ]
+    "ModuleType": 2
   },
   {
     "ModuleName": "MobilePage/FGC_ログイン_モバイル",
-    "State": 1,
-    "LockedBy": {
-      "UserName": "ZEON村上",
-      "Email": "S3.murakami@zeon.co.jp"
-    },
-    "LockDateTime": "2025-01-23T13:38:59.7055617+09:00",
-    "ModuleType": 2,
-    "ToRemoveFiles": [
-      "Pages\\ビルトイン モバイルページ\\FGC_ログイン_モバイル.json"
-    ]
+    "ModuleType": 2
   },
   {
     "ModuleName": "MobilePage/FGC_パスワードのリセット用リンクの送信_モバイル",
-    "State": 1,
-    "LockedBy": {
-      "UserName": "ZEON村上",
-      "Email": "S3.murakami@zeon.co.jp"
-    },
-    "LockDateTime": "2025-01-23T13:38:59.7045608+09:00",
-    "ModuleType": 2,
-    "ToRemoveFiles": [
-      "Pages\\ビルトイン モバイルページ\\FGC_パスワードのリセット用リンクの送信_モバイル.json"
-    ]
+    "ModuleType": 2
   },
   {
     "ModuleName": "MobilePage/FGC_パスワードのリセット_モバイル",
-    "State": 1,
-    "LockedBy": {
-      "UserName": "ZEON村上",
-      "Email": "S3.murakami@zeon.co.jp"
-    },
-    "LockDateTime": "2025-01-23T13:38:59.7045608+09:00",
-    "ModuleType": 2,
-    "ToRemoveFiles": [
-      "Pages\\ビルトイン モバイルページ\\FGC_パスワードのリセット_モバイル.json"
-    ]
+    "ModuleType": 2
   },
   {
     "ModuleName": "MobilePage/FGC_認証アプリの構成_モバイル",
-    "State": 1,
-    "LockedBy": {
-      "UserName": "ZEON村上",
-      "Email": "S3.murakami@zeon.co.jp"
-    },
-    "LockDateTime": "2025-01-23T13:38:59.7055617+09:00",
-    "ModuleType": 2,
-    "ToRemoveFiles": [
-      "Pages\\ビルトイン モバイルページ\\FGC_認証アプリの構成_モバイル.json"
-    ]
+    "ModuleType": 2
   },
   {
     "ModuleName": "MobilePage/FGC_コードの入力_モバイル",
-    "State": 1,
-    "LockedBy": {
-      "UserName": "ZEON村上",
-      "Email": "S3.murakami@zeon.co.jp"
-    },
-    "LockDateTime": "2025-01-23T13:38:59.7045608+09:00",
-    "ModuleType": 2,
-    "ToRemoveFiles": [
-      "Pages\\ビルトイン モバイルページ\\FGC_コードの入力_モバイル.json"
-    ]
+    "ModuleType": 2
   },
   {
     "ModuleName": "PCPage/ホーム",
-    "State": 1,
-    "LockedBy": {
-      "UserName": "ZEON村上",
-      "Email": "S3.murakami@zeon.co.jp"
-    },
-    "LockDateTime": "2025-01-23T13:38:59.72524+09:00",
-    "ModuleType": 1,
-    "ToRemoveFiles": [
-      "Pages\\ホーム.json"
-    ]
+    "ModuleType": 1
   },
   {
     "ModuleName": "PCPage/終夜運転機器一覧",
-    "State": 1,
-    "LockedBy": {
-      "UserName": "ZEON村上",
-      "Email": "S3.murakami@zeon.co.jp"
-    },
-    "LockDateTime": "2025-01-23T13:38:59.7065598+09:00",
-    "ModuleType": 1,
-    "ToRemoveFiles": [
-      "Pages\\終夜運転機器一覧.json"
-    ]
+    "ModuleType": 1
   },
   {
     "ModuleName": "PCPage/機器選択ポップアップ",
-    "State": 1,
-    "LockedBy": {
-      "UserName": "ZEON村上",
-      "Email": "S3.murakami@zeon.co.jp"
-    },
-    "LockDateTime": "2025-01-23T13:38:59.7222424+09:00",
-    "ModuleType": 1,
-    "ToRemoveFiles": [
-      "Pages\\機器選択ポップアップ.json"
-    ]
+    "ModuleType": 1
   },
   {
     "ModuleName": "PCPage/重複チェックコンテナ",
-    "State": 1,
-    "LockedBy": {
-      "UserName": "ZEON村上",
-      "Email": "S3.murakami@zeon.co.jp"
-    },
-    "LockDateTime": "2025-01-23T13:38:59.7262408+09:00",
-    "ModuleType": 1,
-    "ToRemoveFiles": [
-      "Pages\\重複チェックコンテナ.json"
-    ]
+    "ModuleType": 1
   },
   {
     "ModuleName": "PCPage/終夜運転機器申請",
-    "State": 1,
-    "LockedBy": {
-      "UserName": "ZEON村上",
-      "Email": "S3.murakami@zeon.co.jp"
-    },
-    "LockDateTime": "2025-01-23T13:38:59.7065598+09:00",
-    "ModuleType": 1,
-    "ToRemoveFiles": [
-      "Pages\\終夜運転機器申請.json"
-    ]
+    "ModuleType": 1
   },
   {
     "ModuleName": "PCPage/終夜運転届出",
-    "State": 1,
-    "LockedBy": {
-      "UserName": "ZEON村上",
-      "Email": "S3.murakami@zeon.co.jp"
-    },
-    "LockDateTime": "2025-01-23T13:38:59.7065598+09:00",
-    "ModuleType": 1,
-    "ToRemoveFiles": [
-      "Pages\\終夜運転届出.json"
-    ]
+    "ModuleType": 1
   },
   {
     "ModuleName": "PCPage/現場表示印刷画面_通常",
-    "State": 1,
-    "LockedBy": {
-      "UserName": "ZEON村上",
-      "Email": "S3.murakami@zeon.co.jp"
-    },
-    "LockDateTime": "2025-01-23T13:38:59.7202462+09:00",
-    "ModuleType": 1,
-    "ToRemoveFiles": [
-      "Pages\\現場表示印刷画面_通常.json"
-    ]
+    "ModuleType": 1
   },
   {
     "ModuleName": "PCPage/現場表示印刷画面_長期",
-    "State": 1,
-    "LockedBy": {
-      "UserName": "ZEON村上",
-      "Email": "S3.murakami@zeon.co.jp"
-    },
-    "LockDateTime": "2025-01-23T13:38:59.7192486+09:00",
-    "ModuleType": 1,
-    "ToRemoveFiles": [
-      "Pages\\現場表示印刷画面_長期.json"
-    ]
+    "ModuleType": 1
   },
   {
     "ModuleName": "PCPage/届出WF一覧",
-    "State": 1,
-    "LockedBy": {
-      "UserName": "ZEON村上",
-      "Email": "S3.murakami@zeon.co.jp"
-    },
-    "LockDateTime": "2025-01-23T13:38:59.72524+09:00",
-    "ModuleType": 1,
-    "ToRemoveFiles": [
-      "Pages\\届出WF一覧.json"
-    ]
+    "ModuleType": 1
   },
   {
     "ModuleName": "PCPage/届出一覧",
-    "State": 1,
-    "LockedBy": {
-      "UserName": "ZEON村上",
-      "Email": "S3.murakami@zeon.co.jp"
-    },
-    "LockDateTime": "2025-01-23T13:38:59.7242402+09:00",
-    "ModuleType": 1,
-    "ToRemoveFiles": [
-      "Pages\\届出一覧.json"
-    ]
+    "ModuleType": 1
   },
   {
     "ModuleName": "PCPage/新規申請WF一覧",
-    "State": 1,
-    "LockedBy": {
-      "UserName": "ZEON村上",
-      "Email": "S3.murakami@zeon.co.jp"
-    },
-    "LockDateTime": "2025-01-23T13:38:59.7232411+09:00",
-    "ModuleType": 1,
-    "ToRemoveFiles": [
-      "Pages\\新規申請WF一覧.json"
-    ]
+    "ModuleType": 1
   },
   {
     "ModuleName": "PCPage/実験内容マスタ編集",
-    "State": 1,
-    "LockedBy": {
-      "UserName": "ZEON村上",
-      "Email": "S3.murakami@zeon.co.jp"
-    },
-    "LockDateTime": "2025-01-23T13:38:59.72524+09:00",
-    "ModuleType": 1,
-    "ToRemoveFiles": [
-      "Pages\\実験内容マスタ編集.json"
-    ]
+    "ModuleType": 1
   },
   {
     "ModuleName": "PCPage/点検項目マスタ編集",
-    "State": 1,
-    "LockedBy": {
-      "UserName": "ZEON村上",
-      "Email": "S3.murakami@zeon.co.jp"
-    },
-    "LockDateTime": "2025-01-23T13:38:59.7202462+09:00",
-    "ModuleType": 1,
-    "ToRemoveFiles": [
-      "Pages\\点検項目マスタ編集.json"
-    ]
+    "ModuleType": 1
   },
   {
     "ModuleName": "PCPage/届出履歴ポップアップ",
-    "State": 1,
-    "LockedBy": {
-      "UserName": "ZEON村上",
-      "Email": "S3.murakami@zeon.co.jp"
-    },
-    "LockDateTime": "2025-01-23T13:38:59.7232411+09:00",
-    "ModuleType": 1,
-    "ToRemoveFiles": [
-      "Pages\\届出履歴ポップアップ.json"
-    ]
+    "ModuleType": 1
   },
   {
     "ModuleName": "PCPage/点検依頼・結果",
-    "State": 1,
-    "LockedBy": {
-      "UserName": "ZEON村上",
-      "Email": "S3.murakami@zeon.co.jp"
-    },
-    "LockDateTime": "2025-01-23T13:38:59.7212433+09:00",
-    "ModuleType": 1,
-    "ToRemoveFiles": [
-      "Pages\\点検依頼・結果.json"
-    ]
+    "ModuleType": 1
   },
   {
     "ModuleName": "PCPage/終夜機器点検",
-    "State": 1,
-    "LockedBy": {
-      "UserName": "ZEON村上",
-      "Email": "S3.murakami@zeon.co.jp"
-    },
-    "LockDateTime": "2025-01-23T13:38:59.7075878+09:00",
-    "ModuleType": 1,
-    "ToRemoveFiles": [
-      "Pages\\終夜機器点検.json"
-    ]
+    "ModuleType": 1
   },
   {
     "ModuleName": "PCPage/機器詳細ポップアップ",
-    "State": 1,
-    "LockedBy": {
-      "UserName": "ZEON村上",
-      "Email": "S3.murakami@zeon.co.jp"
-    },
-    "LockDateTime": "2025-01-23T13:38:59.7232411+09:00",
-    "ModuleType": 1,
-    "ToRemoveFiles": [
-      "Pages\\機器詳細ポップアップ.json"
-    ]
+    "ModuleType": 1
   },
   {
     "ModuleName": "PCPage/管理者設定",
-    "State": 1,
-    "LockedBy": {
-      "UserName": "ZEON村上",
-      "Email": "S3.murakami@zeon.co.jp"
-    },
-    "LockDateTime": "2025-01-23T13:38:59.7192486+09:00",
-    "ModuleType": 1,
-    "ToRemoveFiles": [
-      "Pages\\管理者設定.json"
-    ]
+    "ModuleType": 1
   },
   {
     "ModuleName": "PCPage/システム設定値",
-    "State": 1,
-    "LockedBy": {
-      "UserName": "ZEON村上",
-      "Email": "S3.murakami@zeon.co.jp"
-    },
-    "LockDateTime": "2025-01-23T13:38:59.72524+09:00",
-    "ModuleType": 1,
-    "ToRemoveFiles": [
-      "Pages\\システム設定値.json"
-    ]
+    "ModuleType": 1
   },
   {
     "ModuleName": "Pages/機器登録用_bk",
@@ -1004,159 +329,51 @@
   },
   {
     "ModuleName": "PCPage/対象機器_登録用コンテナ",
-    "State": 1,
-    "LockedBy": {
-      "UserName": "ZEON村上",
-      "Email": "S3.murakami@zeon.co.jp"
-    },
-    "LockDateTime": "2025-01-23T13:38:59.72524+09:00",
-    "ModuleType": 1,
-    "ToRemoveFiles": [
-      "Pages\\機器登録用_bk\\対象機器_登録用コンテナ.json"
-    ]
+    "ModuleType": 1
   },
   {
     "ModuleName": "PCPage/対象機器_参照用コンテナ",
-    "State": 1,
-    "LockedBy": {
-      "UserName": "ZEON村上",
-      "Email": "S3.murakami@zeon.co.jp"
-    },
-    "LockDateTime": "2025-01-23T13:38:59.72524+09:00",
-    "ModuleType": 1,
-    "ToRemoveFiles": [
-      "Pages\\機器登録用_bk\\対象機器_参照用コンテナ.json"
-    ]
+    "ModuleType": 1
   },
   {
     "ModuleName": "PCPage/機器選択ポップアップ (2)",
-    "State": 1,
-    "LockedBy": {
-      "UserName": "ZEON村上",
-      "Email": "S3.murakami@zeon.co.jp"
-    },
-    "LockDateTime": "2025-01-23T13:38:59.7262408+09:00",
-    "ModuleType": 1,
-    "ToRemoveFiles": [
-      "Pages\\機器登録用_bk\\機器選択ポップアップ (2).json"
-    ]
+    "ModuleType": 1
   },
   {
     "ModuleName": "PCPage/マスタ編集ポップアップ",
-    "State": 1,
-    "LockedBy": {
-      "UserName": "ZEON村上",
-      "Email": "S3.murakami@zeon.co.jp"
-    },
-    "LockDateTime": "2025-01-23T13:38:59.72524+09:00",
-    "ModuleType": 1,
-    "ToRemoveFiles": [
-      "Pages\\機器登録用_bk\\マスタ編集ポップアップ.json"
-    ]
+    "ModuleType": 1
   },
   {
     "ModuleName": "PCPage/代理者選択ポップアップ",
-    "State": 1,
-    "LockedBy": {
-      "UserName": "ZEON村上",
-      "Email": "S3.murakami@zeon.co.jp"
-    },
-    "LockDateTime": "2025-01-23T13:38:59.72524+09:00",
-    "ModuleType": 1,
-    "ToRemoveFiles": [
-      "Pages\\機器登録用_bk\\代理者選択ポップアップ.json"
-    ]
+    "ModuleType": 1
   },
   {
     "ModuleName": "PCPage/機器選択ポップアップ_bk",
-    "State": 1,
-    "LockedBy": {
-      "UserName": "ZEON村上",
-      "Email": "S3.murakami@zeon.co.jp"
-    },
-    "LockDateTime": "2025-01-23T13:38:59.7262408+09:00",
-    "ModuleType": 1,
-    "ToRemoveFiles": [
-      "Pages\\機器登録用_bk\\機器選択ポップアップ_bk.json"
-    ]
+    "ModuleType": 1
   },
   {
     "ModuleName": "PCPage/届出WF承認代理者設定",
-    "State": 1,
-    "LockedBy": {
-      "UserName": "ZEON村上",
-      "Email": "S3.murakami@zeon.co.jp"
-    },
-    "LockDateTime": "2025-01-23T13:38:59.7242402+09:00",
-    "ModuleType": 1,
-    "ToRemoveFiles": [
-      "Pages\\届出WF承認代理者設定.json"
-    ]
+    "ModuleType": 1
   },
   {
     "ModuleName": "PCPage/コメント入力ポップアップ",
-    "State": 1,
-    "LockedBy": {
-      "UserName": "ZEON村上",
-      "Email": "S3.murakami@zeon.co.jp"
-    },
-    "LockDateTime": "2025-01-23T13:38:59.72524+09:00",
-    "ModuleType": 1,
-    "ToRemoveFiles": [
-      "Pages\\コメント入力ポップアップ.json"
-    ]
+    "ModuleType": 1
   },
   {
     "ModuleName": "PCPage/終夜運転事由マスタ編集",
-    "State": 1,
-    "LockedBy": {
-      "UserName": "ZEON村上",
-      "Email": "S3.murakami@zeon.co.jp"
-    },
-    "LockDateTime": "2025-01-23T13:38:59.7065598+09:00",
-    "ModuleType": 1,
-    "ToRemoveFiles": [
-      "Pages\\終夜運転事由マスタ編集.json"
-    ]
+    "ModuleType": 1
   },
   {
     "ModuleName": "PCPage/重複確認画面",
-    "State": 1,
-    "LockedBy": {
-      "UserName": "ZEON村上",
-      "Email": "S3.murakami@zeon.co.jp"
-    },
-    "LockDateTime": "2025-01-23T13:38:59.727239+09:00",
-    "ModuleType": 1,
-    "ToRemoveFiles": [
-      "Pages\\重複確認画面.json"
-    ]
+    "ModuleType": 1
   },
   {
     "ModuleName": "MasterPCPage/FGC_ユーザーマスターページ",
-    "State": 1,
-    "LockedBy": {
-      "UserName": "ZEON村上",
-      "Email": "S3.murakami@zeon.co.jp"
-    },
-    "LockDateTime": "2025-01-23T13:38:59.7025277+09:00",
-    "ModuleType": 3,
-    "ToRemoveFiles": [
-      "MasterPages\\FGC_ユーザーマスターページ.json"
-    ]
+    "ModuleType": 3
   },
   {
     "ModuleName": "MasterPCPage/終夜運転マスタページ",
-    "State": 1,
-    "LockedBy": {
-      "UserName": "ZEON村上",
-      "Email": "S3.murakami@zeon.co.jp"
-    },
-    "LockDateTime": "2025-01-23T13:38:59.7045608+09:00",
-    "ModuleType": 3,
-    "ToRemoveFiles": [
-      "MasterPages\\終夜運転マスタページ.json"
-    ]
+    "ModuleType": 3
   },
   {
     "ModuleName": "PageReport/レポート1",
@@ -1184,16 +401,7 @@
   },
   {
     "ModuleName": "ShareCommand",
-    "State": 1,
-    "LockedBy": {
-      "UserName": "ZEON村上",
-      "Email": "S3.murakami@zeon.co.jp"
-    },
-    "LockDateTime": "2025-01-23T13:38:59.7326907+09:00",
-    "ModuleType": 13,
-    "ToRemoveFiles": [
-      "ShareCommand.json"
-    ]
+    "ModuleType": 13
   },
   {
     "ModuleName": "MapJsonFile",
@@ -1201,16 +409,7 @@
   },
   {
     "ModuleName": "DataContectionSet",
-    "State": 1,
-    "LockedBy": {
-      "UserName": "ZEON村上",
-      "Email": "S3.murakami@zeon.co.jp"
-    },
-    "LockDateTime": "2025-01-23T13:38:59.6962545+09:00",
-    "ModuleType": 25,
-    "ToRemoveFiles": [
-      "DataConnectionSet.json"
-    ]
+    "ModuleType": 25
   },
   {
     "ModuleName": "Upload",
@@ -1218,16 +417,7 @@
   },
   {
     "ModuleName": "MobilePage/ページ1",
-    "State": 1,
-    "LockedBy": {
-      "UserName": "ZEON村上",
-      "Email": "S3.murakami@zeon.co.jp"
-    },
-    "LockDateTime": "2025-01-23T13:38:59.7055617+09:00",
-    "ModuleType": 2,
-    "ToRemoveFiles": [
-      "Pages\\インポートフォルダー1\\ビルトイン モバイルページ\\ページ1.json"
-    ]
+    "ModuleType": 2
   },
   {
     "ModuleName": "Pages/インポートフォルダー1",
