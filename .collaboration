@@ -257,7 +257,16 @@
   },
   {
     "ModuleName": "PCPage/機器選択ポップアップ",
-    "ModuleType": 1
+    "State": 1,
+    "LockedBy": {
+      "UserName": "ZEON村上",
+      "Email": "S3.murakami@zeon.co.jp"
+    },
+    "LockDateTime": "2025-01-23T13:45:42.3354982+09:00",
+    "ModuleType": 1,
+    "ToRemoveFiles": [
+      "Pages\\機器選択ポップアップ.json"
+    ]
   },
   {
     "ModuleName": "PCPage/重複チェックコンテナ",
