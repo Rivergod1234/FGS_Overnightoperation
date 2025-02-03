@@ -290,15 +290,42 @@
   },
   {
     "ModuleName": "Table/lum_view_cost_centers_duplicated",
-    "ModuleType": 7
+    "State": 1,
+    "LockedBy": {
+      "UserName": "ZEON村上",
+      "Email": "S3.murakami@zeon.co.jp"
+    },
+    "LockDateTime": "2025-02-03T09:25:04.8124756+09:00",
+    "ModuleType": 7,
+    "ToRemoveFiles": [
+      "Tables\\L_USER_MST\\lum_view_cost_centers_duplicated.json"
+    ]
   },
   {
     "ModuleName": "Table/lum_view_employee_department_relations_duplicated",
-    "ModuleType": 7
+    "State": 1,
+    "LockedBy": {
+      "UserName": "ZEON村上",
+      "Email": "S3.murakami@zeon.co.jp"
+    },
+    "LockDateTime": "2025-02-03T09:25:04.8124756+09:00",
+    "ModuleType": 7,
+    "ToRemoveFiles": [
+      "Tables\\L_USER_MST\\lum_view_employee_department_relations_duplicated.json"
+    ]
   },
   {
     "ModuleName": "Table/lum_view_depertment_consener_relations_nac_based_duplicated",
-    "ModuleType": 7
+    "State": 1,
+    "LockedBy": {
+      "UserName": "ZEON村上",
+      "Email": "S3.murakami@zeon.co.jp"
+    },
+    "LockDateTime": "2025-02-03T09:25:04.8124756+09:00",
+    "ModuleType": 7,
+    "ToRemoveFiles": [
+      "Tables\\L_USER_MST\\lum_view_depertment_consener_relations_nac_based_duplicated.json"
+    ]
   },
   {
     "ModuleName": "Tables/LOCATION_MST",
@@ -1161,7 +1188,7 @@
       "UserName": "ZEON村上",
       "Email": "S3.murakami@zeon.co.jp"
     },
-    "LockDateTime": "2025-02-03T09:24:49.5909129+09:00",
+    "LockDateTime": "2025-02-03T09:25:04.8124756+09:00",
     "ModuleType": 25,
     "ToRemoveFiles": [
       "DataConnectionSet.json"
