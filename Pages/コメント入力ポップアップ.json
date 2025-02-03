@@ -6,22 +6,37 @@
           "DesignLengthInPixel": 5.0
         }
       },
-      "9": {
-        "GridRowColumnDefinition": {
-          "DesignLengthInPixel": 10.0
-        }
-      },
-      "16": {
+      "10": {
         "GridRowColumnDefinition": {
           "DesignLengthInPixel": 10.0
         }
       },
       "17": {
         "GridRowColumnDefinition": {
-          "DesignLengthInPixel": 30.0
+          "DesignLengthInPixel": 20.0
         }
       },
       "18": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 20.0
+        }
+      },
+      "19": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 15.0
+        }
+      },
+      "20": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 15.0
+        }
+      },
+      "21": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 30.0
+        }
+      },
+      "22": {
         "GridRowColumnDefinition": {
           "DesignLengthInPixel": 15.0
         }
@@ -32,7 +47,7 @@
       1,
       2
     ],
-    "Count": 19
+    "Count": 23
   },
   "Cols": {
     "RowColumnAttachedInfos": {
@@ -117,24 +132,25 @@
         }
       }
     },
-    "Count": 21
+    "Count": 18
   },
   "Values": {
     "1,2": "キック用キーワード",
     "4,1": "現場確認：",
-    "6,1": "現場担当者宛てにメールを送信します。よろしいですか？",
-    "8,1": "コメント：",
-    "17,12": "OK",
-    "17,16": "キャンセル"
+    "6,1": "現場担当者宛てにメールを送信します。",
+    "7,1": "よろしいですか？",
+    "9,1": "コメント：",
+    "21,9": "OK",
+    "21,13": "キャンセル"
   },
   "AttachInfos": {
-    "10,1": {
+    "11,1": {
       "CellType": {
         "$type": "Forguncy.MultilineTextBox, ServerDesignerCommon",
         "TemplateKey": "_RS_LightLine_Translucent_SmallRoundCorner_Normal1"
       }
     },
-    "17,12": {
+    "21,9": {
       "CellType": {
         "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
         "CommandList": [
@@ -160,7 +176,7 @@
         "TemplateKey": "_RS_Normal_Style7"
       }
     },
-    "17,16": {
+    "21,13": {
       "CellType": {
         "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
         "CommandList": [
@@ -225,6 +241,14 @@
       },
       {
         "Background": null,
+        "FontFamily": 1,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
+      },
+      {
+        "Background": null,
         "BorderBottom": null,
         "BorderTop": null,
         "BorderLeft": null,
@@ -255,43 +279,47 @@
       "2,0": 0,
       "4,1": 3,
       "6,1": 4,
-      "8,1": 3,
-      "10,1": 5,
-      "10,20": 5,
-      "11,20": 5,
-      "12,20": 5,
-      "13,20": 5,
-      "14,20": 5,
-      "15,20": 5,
-      "17,12": 1,
-      "17,16": 1,
-      "17,20": 1,
-      "18,12": 1,
-      "18,13": 1,
-      "18,14": 1,
-      "18,16": 1,
-      "18,17": 1,
-      "18,18": 1,
-      "18,19": 1,
-      "18,20": 1
+      "7,1": 4,
+      "9,1": 3,
+      "11,1": 5,
+      "19,17": 1,
+      "20,12": 1,
+      "20,13": 1,
+      "20,14": 1,
+      "20,16": 1,
+      "20,17": 1,
+      "21,9": 6,
+      "21,10": 6,
+      "21,11": 6,
+      "21,12": 6,
+      "21,13": 6,
+      "21,14": 6,
+      "21,15": 6,
+      "21,16": 6,
+      "21,17": 1,
+      "22,17": 1
     },
     "RowStyles": {
-      "3": 6,
-      "4": 6,
-      "5": 6,
-      "6": 6,
-      "7": 6,
-      "8": 6,
-      "9": 6,
-      "10": 6,
-      "11": 6,
-      "12": 6,
-      "13": 6,
-      "14": 6,
-      "15": 6,
-      "16": 6,
-      "17": 6,
-      "18": 6
+      "3": 7,
+      "4": 7,
+      "5": 7,
+      "6": 7,
+      "7": 7,
+      "8": 7,
+      "9": 7,
+      "10": 7,
+      "11": 7,
+      "12": 7,
+      "13": 7,
+      "14": 7,
+      "15": 7,
+      "16": 7,
+      "17": 7,
+      "18": 7,
+      "19": 7,
+      "20": 7,
+      "21": 7,
+      "22": 7
     },
     "SheetStyle": {
       "FontFamily": 1,
@@ -303,9 +331,9 @@
   },
   "Spans": [
     "1,7,1,4",
-    "10,1,6,19",
-    "17,12,1,3",
-    "17,16,1,4"
+    "11,1,9,16",
+    "21,9,1,3",
+    "21,13,1,4"
   ],
   "PageInfo": {
     "$type": "Forguncy.Model.Pages.NormalPage, ServerDesignerCommon",
@@ -319,4 +347,4 @@
     "Margin": {},
     "PaperSize": {}
   }
-}//Xe2Nd29j/nOomxvPF+gFS9aNLIT5MfjOWs8IxbomJBb3sIzhNm8euxuN9R1dmYcGfsCb+sbtAzKitE9gkoFhxngRqIM/EykoJmnsfvgf4edoLnmkKbq2T4q8OztXskdtEHmqM2ySh6YcVhbojftRg80wzBuUlXTOuWYWg3tzBkD+XbTqCasC8iw3+X70VT8BVgv0Ycgg45MBBxwYfVaL58r6IkxFezYMCt804I6zvlJBlFqgygOZxBodfhFOdI/km7Sx2s/B5u0fOnLtvXD0HoRweY/yt4ekkG0/6MqVr3l9PkvOcg7Se3DgdO86BZv8SQHd+Ytf6NPwW6aYpJEwFXIQAT6Yir77QFyJVw91SE78yfrf9081s6NjcGews0Sxn/ydLeGLNrdttfPYfp7yZ/CAZv9QvGOWvPHmdcDx0kucxbsYqOcf8V4R9xdrZSn2II5hMFe92HZAnCgpikglclO9vNHluA9+gbqNAKs1xvLd2Du8ILkvHFhF/KXhL/G0lfOWhzR4zlYVZmMenl0MZ2E+5JY9FkgiQ0huvHSLZfugylm5jaHdEwTuYqiNfAdjW9+On195IKHe5oCp+UY9wxhe0l/jkHVYGPbd8+GOfL08nLmOK56wWRbqbyILFy/L3cOHY7MpROR6BOnuc7eLWVDOPBzfJn6D7SFVRcqcUVV2qqwC6YvLVQzJ0YMTMDjbAZQcC+rYIl/c0qWI8BM++5WoREZmAUGHe3DM5aQETOnIcjY2lUjc8ZvTdF7VqytXbnTSoeETtMcOAYM3wkMAI7j/QBFg1NlKPUGUDISKilMXJOX2+RyaReGJ+K+Rc1eL+9mBXLmN6hNUop+aVLmPSPcMsTqD9qjvOxA+y/wPI+3/dKmjW3GADYAwfSi+NXnqSnIeE2QkCqMAW3vGlJ5JIw==|920
+}//utljTRRfUv7/KgRboPdTiJQ4rys+FTck5ccKfiywEDFDubC3ytziW+dZB2IwEw2wOOr+eziRArRMWCbfZwwY6P1N14FAPkYpnIBxo9+km/KY5YmyCrOCFBMujdTx0AR27fcQUNKkR/GkZyP9UHXVW7nrX7hCsNK9KAeCui3beach1NSeazKnu59VVYIszu257fUzTUOdC8GCBr2rQ/noefnvSVwvJq/3kzx0yhS+SSrwKaABm/nBtuqHtiOiz9lS4fcwApUqZG7O+/8L23t/mJr4EfbzgQWcRGlugBMOANLGhbIz/jsUa/7c64iqDTvo4cVJR7wPGGqzsbCIDwcEDRQ1MDnm/9g3uZ1e8SAsIki+a7GmvlpmzWWdDtCNKW+iKO4UlWj3gZghWYNm1RpA6GGI+fOxFcnlZe/GbSZbifQ05a8maWTiznbpFzLZgcM8FxX6OiZJ3A1WQgC/6LNMXKER84nSJ/bO8xrT6jZtOOn5cp6smbHA+Cz8Q6Wm+u6f+HGcJIZxH7Ha46N97snUPUHAG8DeBP5EshYZoVONhjL86di+aczeKdz3Kbcfo5VS3RDjCKQtUi5koOkJRON8rVkq8UU/7zTEZX5J7ZXdmbpxwlE1bpgqSH51MHXmPd6jcp33s5qFXxMX3EECcCJe1IKB2sj0ihAYxmViz2bUmHw5DVUbR9WWgXV989wXEwX42y9/XVOslGT4wYj6jwivCXos2wUB8B/PXmvrmaVm1uPv0SNkFVzLSVWlpgHTtRf/4w3simnI11QFAFbQJZ3z7vwKYRIi66pHZwPr/6OmQRNgM4qvviTTiesyoN1b1fCozKPyjEqz78Xo3/nwH53LnGVYi7mZeg3KsH+qykEDcAFRO5io+B7L5a1CEK+SBlMWEjFC8FZSGWqnku335KBqZQ==|920

@@ -198,12 +198,7 @@
     "2,36": {
       "BindingInfo": {
         "TableName": "T_OvernightInspection",
-        "ColumnName": "inspecter",
-        "RelationBinding": {
-          "RelatedTable": "lum_view_employee_department_relations_duplicated",
-          "RelatedColumn": "employee_z_code",
-          "DisplayColumn": "employee_name"
-        }
+        "ColumnName": "inspecter"
       }
     },
     "9,5": {
@@ -296,6 +291,10 @@
           {
             "Value": "NG",
             "DisplayValue": "NG"
+          },
+          {
+            "Value": "非該当",
+            "DisplayValue": "非該当"
           }
         ]
       },
@@ -1887,7 +1886,7 @@
                 ]
               }
             ],
-            "ID": "f64f44ff-ed39-45ef-90a5-7ee861d4212d"
+            "ID": "21ae13d6-8ac4-4501-94dd-037985304280"
           },
           {
             "CommandList": [
@@ -1904,7 +1903,7 @@
                 ]
               }
             ],
-            "ID": "1ab820b2-135a-46e7-9eba-4e6d9090e119"
+            "ID": "ea20650c-6280-4d97-8b66-6e152bca41f2"
           }
         ]
       }
@@ -1919,4 +1918,4 @@
     "Margin": {},
     "PaperSize": {}
   }
-}//iKZibRB0HmCqS7k9TkFoeMeZeu2ccRLLJO3+ueCya0o/HpVq/dVz3uwrXdy3TO0SaAvexav03IbXapM93yzmoK8ziiKY3GNvBZkK3yOORQHpJEZg6/DgJCPU11JVGfGn0gMRrcfq2S7lCrcccU5uHRI/PlDg8l61HUPgv2I9uJozwh8aMb5e6Wt+y8TOVoXiq3ktMd4RoDT2U7FyX/sxGFkvwdIkK1+Hyi0Z6hONgFp5vYuD5hFtTSYcbchUGKgNycCpgIE1GDB0kuAcbtswXmfA1qr/ncuKEtomb0WNrldJ/2DoK2ZIfygjmOXW8I2slEjzxK8UBpl9nyxxisaAEHGrc+Ol6PQf2KZhazd6AsCR6z7mymLXfv43K9tC45LSlxGqYF8ran+89XDo8TBSSlKMK07G/Qmpy173BtHbyo35cTfVRUC9Npj+s4Da0DXWDIMxPUF5EhWhRrKw+2yyPEX06hyoMVy/xADIDaCxM5Os3P1eLiGI2X/v/h15Bj0EFR2uE9z7UxsnGF3Ni+AeYragotUJOru8HRs4QZj9Z1gQLf0sOI06OeZBA4P4O8Le/EjYffrVE9di4w27KuOEQ62tNoI7Wlm/JjWGDUnwY3K+MCxyp+wOusPCr+pqzzgg2voLNrYX4/ddDDGmrRw0bRpkNbiZoHysxBa7zgppESBaDUx8+NYAGDd+1G+dbQCafWlLkxVoU/evg+LoJQfhDBLY8pU+XSCdztz4KQWUVeOpmrVBlny5kx3NpRzG1ZpYFPHr8q4xOOR7blG6aGxv2/qzQ+oHAa79ge1EKNPExhRmbpRDnzrlFG/Uf/SXy4n1soyxpv9PZqXXWP0+gFCOaAwdJ20jH+n/8VJwfUBadR9NmJnOEd4+dyvc0XPisX6Y35paw/IMWOoDNP3dnezZEw==|920
+}//tAQIIOp/r3bw7kH1dfmIOCZHkwlXqPHZtdzlNpQyz+NcuWHoduaPi7Mpd8EVZEp1x1yPrLMNse6Hqb++sONrE6w/MdNl+XDkoCVghYl+M6Ple5TXM7Bc1WA1l1TEKA8FD3Ivp09OXcBcD7Zl5KxXRHUKJfHhPkk69o/NhERKfWH91bZaHJ/g8CQaxbgiGWXuIQm2bv0rIRNP/63mCq8jGEbfpfQeEDe4/JnwpD9BV+tGg1Jf/2sdUURObBV6yNYgdiT1rU/ACKg1BHSg2hLN1ACUMI+z+Z2NO61QRVLsPTd2C3EOaZZtnNjrdDYz6dT2XhJEThlq+FyUquodMHjoCGREAQ4yIGjvIZ7QRGlHqCjFBhja9HBPLEEEH+bFndafswY0PrtNaJrsrVNBaVwT0cVuIAbIhvdUc0qq0Bo5v4cE9Vh6qAs/rTWNE+59HmLU8tN0QY2ZYZqf4jDwK3afMUI4S8YU5PM+O6+ORVkAMcJfNP+vXsM/razkMekgj2zEboWLaPnYwTHMEM/3LzR8VYWiXTVejWvskSUhIVDO1JFl5wiFiihwRECHazQkq6e4MmamhNkOHz2tg2AiXpsvcDbTmCI67n0J3PB4n09DQK/GYV+GhGm4bFKb/7VGP5xrykgDiBGrrIgVkw6z7YdaFxW/5iJZyMi7uO1nTVjGxY8/4ELaUcGUmdoyNEa4xKxbl6N0wleGFTJOtALW8mVwTcA+4D68+gojo907DOAj0Wups5budcBPiB3GUIK+wgug7W7FljpHQhnxQzNO+ZNU04rfULSjZMxQinX59Q1RHkDoq+w4doUay1hSKqHV0irM/Vx0hFiRRKvYhcaNECsJyZFWag1yEqfVXw7Tv2/R5zuNPlRzrxawErooDvF2dqihQ2laTIE8hNCE0zVRPeW1yQ==|920
