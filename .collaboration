@@ -269,7 +269,16 @@
   },
   {
     "ModuleName": "PCPage/終夜運転届出",
-    "ModuleType": 1
+    "State": 1,
+    "LockedBy": {
+      "UserName": "ZEON村上",
+      "Email": "S3.murakami@zeon.co.jp"
+    },
+    "LockDateTime": "2025-02-03T15:00:04.9162558+09:00",
+    "ModuleType": 1,
+    "ToRemoveFiles": [
+      "Pages\\終夜運転届出.json"
+    ]
   },
   {
     "ModuleName": "PCPage/現場表示印刷画面_通常",
