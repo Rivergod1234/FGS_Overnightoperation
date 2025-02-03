@@ -282,7 +282,16 @@
   },
   {
     "ModuleName": "Table/NAC_Acc_Account",
-    "ModuleType": 7
+    "State": 1,
+    "LockedBy": {
+      "UserName": "ZEON村上",
+      "Email": "S3.murakami@zeon.co.jp"
+    },
+    "LockDateTime": "2025-02-03T09:25:13.000588+09:00",
+    "ModuleType": 7,
+    "ToRemoveFiles": [
+      "Tables\\EMP_MST\\NAC_Acc_Account.json"
+    ]
   },
   {
     "ModuleName": "Tables/L_USER_MST",
@@ -1188,7 +1197,7 @@
       "UserName": "ZEON村上",
       "Email": "S3.murakami@zeon.co.jp"
     },
-    "LockDateTime": "2025-02-03T09:25:04.8124756+09:00",
+    "LockDateTime": "2025-02-03T09:25:13.000588+09:00",
     "ModuleType": 25,
     "ToRemoveFiles": [
       "DataConnectionSet.json"
