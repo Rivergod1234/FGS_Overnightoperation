@@ -373,16 +373,7 @@
   },
   {
     "ModuleName": "MasterPCPage/終夜運転マスタページ",
-    "State": 1,
-    "LockedBy": {
-      "UserName": "ZEON川神",
-      "Email": "makoto.kawakami@zeon.co.jp"
-    },
-    "LockDateTime": "2025-02-10T09:32:12.0058922+09:00",
-    "ModuleType": 3,
-    "ToRemoveFiles": [
-      "MasterPages\\終夜運転マスタページ.json"
-    ]
+    "ModuleType": 3
   },
   {
     "ModuleName": "PageReport/レポート1",
@@ -425,143 +416,27 @@
     "ModuleType": 26
   },
   {
-    "ModuleName": "MobilePage/ページ1",
-    "State": 2,
-    "LockedBy": {
-      "UserName": "ZEON川神",
-      "Email": "makoto.kawakami@zeon.co.jp"
-    },
-    "LockDateTime": "2025-02-10T09:30:12.6561346+09:00",
-    "ModuleType": 2,
-    "ToRemoveFiles": [
-      "Pages\\インポートフォルダー1\\ビルトイン モバイルページ\\ページ1.json"
-    ]
-  },
-  {
-    "ModuleName": "Pages/インポートフォルダー1",
-    "State": 2,
-    "LockedBy": {
-      "UserName": "ZEON川神",
-      "Email": "makoto.kawakami@zeon.co.jp"
-    },
-    "LockDateTime": "2025-02-10T09:30:12.6380229+09:00",
-    "ModuleType": 6,
-    "ToRemoveFiles": [
-      "Pages\\インポートフォルダー1"
-    ]
-  },
-  {
-    "ModuleName": "Pages/インポートフォルダー1/ビルトイン モバイルページ",
-    "State": 2,
-    "LockedBy": {
-      "UserName": "ZEON川神",
-      "Email": "makoto.kawakami@zeon.co.jp"
-    },
-    "LockDateTime": "2025-02-10T09:30:12.6561346+09:00",
-    "ModuleType": 6,
-    "ToRemoveFiles": [
-      "Pages\\インポートフォルダー1\\ビルトイン モバイルページ"
-    ]
-  },
-  {
     "ModuleName": "MobilePage/終夜運転届出_モバイル",
-    "State": 4,
-    "LockedBy": {
-      "UserName": "ZEON川神",
-      "Email": "makoto.kawakami@zeon.co.jp"
-    },
-    "LockDateTime": "2025-02-10T09:30:40.1717218+09:00",
-    "ModuleType": 2,
-    "ToRemoveFiles": [
-      "Pages\\インポートフォルダー2\\モバイル\\終夜運転届出_モバイル.json"
-    ]
-  },
-  {
-    "ModuleName": "Pages/インポートフォルダー2",
-    "State": 2,
-    "LockedBy": {
-      "UserName": "ZEON川神",
-      "Email": "makoto.kawakami@zeon.co.jp"
-    },
-    "LockDateTime": "2025-02-10T09:30:52.5420492+09:00",
-    "ModuleType": 6,
-    "ToRemoveFiles": [
-      "Pages\\インポートフォルダー2"
-    ]
-  },
-  {
-    "ModuleName": "Pages/インポートフォルダー2/モバイル",
-    "State": 2,
-    "LockedBy": {
-      "UserName": "ZEON川神",
-      "Email": "makoto.kawakami@zeon.co.jp"
-    },
-    "LockDateTime": "2025-02-10T09:30:40.1717218+09:00",
-    "ModuleType": 6,
-    "ToRemoveFiles": [
-      "Pages\\インポートフォルダー2\\モバイル"
-    ]
+    "ModuleType": 2
   },
   {
     "ModuleName": "MobilePage/終夜運転機器申請_モバイル",
-    "State": 4,
-    "LockedBy": {
-      "UserName": "ZEON川神",
-      "Email": "makoto.kawakami@zeon.co.jp"
-    },
-    "LockDateTime": "2025-02-10T09:30:40.1717218+09:00",
-    "ModuleType": 2,
-    "ToRemoveFiles": [
-      "Pages\\インポートフォルダー2\\モバイル\\終夜運転機器申請_モバイル.json"
-    ]
+    "ModuleType": 2
   },
   {
     "ModuleName": "MobilePage/届出WF_一覧_モバイル",
-    "State": 4,
-    "LockedBy": {
-      "UserName": "ZEON川神",
-      "Email": "makoto.kawakami@zeon.co.jp"
-    },
-    "LockDateTime": "2025-02-10T09:30:40.1697205+09:00",
-    "ModuleType": 2,
-    "ToRemoveFiles": [
-      "Pages\\インポートフォルダー2\\モバイル\\届出WF_一覧_モバイル.json"
-    ]
+    "ModuleType": 2
   },
   {
     "ModuleName": "MobilePage/届出履歴ポップアップ_モバイル",
-    "State": 4,
-    "LockedBy": {
-      "UserName": "ZEON川神",
-      "Email": "makoto.kawakami@zeon.co.jp"
-    },
-    "LockDateTime": "2025-02-10T09:30:40.1697205+09:00",
-    "ModuleType": 2,
-    "ToRemoveFiles": [
-      "Pages\\インポートフォルダー2\\モバイル\\届出履歴ポップアップ_モバイル.json"
-    ]
+    "ModuleType": 2
   },
   {
     "ModuleName": "MobilePage/新規申請WF_一覧_モバイル",
-    "State": 4,
-    "LockedBy": {
-      "UserName": "ZEON川神",
-      "Email": "makoto.kawakami@zeon.co.jp"
-    },
-    "LockDateTime": "2025-02-10T09:30:40.1707237+09:00",
-    "ModuleType": 2,
-    "ToRemoveFiles": [
-      "Pages\\インポートフォルダー2\\モバイル\\新規申請WF_一覧_モバイル.json"
-    ]
+    "ModuleType": 2
   },
   {
     "ModuleName": "Pages/モバイル",
-    "State": 3,
-    "LockedBy": {
-      "UserName": "ZEON川神",
-      "Email": "makoto.kawakami@zeon.co.jp"
-    },
-    "LockDateTime": "2025-02-10T09:30:40.1717218+09:00",
     "ModuleType": 6
   }
 ]
