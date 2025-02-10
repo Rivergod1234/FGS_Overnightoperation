@@ -469,7 +469,16 @@
   },
   {
     "ModuleName": "Pages/インポートフォルダー2",
-    "ModuleType": 6
+    "State": 2,
+    "LockedBy": {
+      "UserName": "ZEON川神",
+      "Email": "makoto.kawakami@zeon.co.jp"
+    },
+    "LockDateTime": "2025-02-10T09:30:52.5420492+09:00",
+    "ModuleType": 6,
+    "ToRemoveFiles": [
+      "Pages\\インポートフォルダー2"
+    ]
   },
   {
     "ModuleName": "Pages/インポートフォルダー2/モバイル",
