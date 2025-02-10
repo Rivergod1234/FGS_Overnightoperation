@@ -417,15 +417,42 @@
   },
   {
     "ModuleName": "MobilePage/ページ1",
-    "ModuleType": 2
+    "State": 2,
+    "LockedBy": {
+      "UserName": "ZEON川神",
+      "Email": "makoto.kawakami@zeon.co.jp"
+    },
+    "LockDateTime": "2025-02-10T09:30:12.6561346+09:00",
+    "ModuleType": 2,
+    "ToRemoveFiles": [
+      "Pages\\インポートフォルダー1\\ビルトイン モバイルページ\\ページ1.json"
+    ]
   },
   {
     "ModuleName": "Pages/インポートフォルダー1",
-    "ModuleType": 6
+    "State": 2,
+    "LockedBy": {
+      "UserName": "ZEON川神",
+      "Email": "makoto.kawakami@zeon.co.jp"
+    },
+    "LockDateTime": "2025-02-10T09:30:12.6380229+09:00",
+    "ModuleType": 6,
+    "ToRemoveFiles": [
+      "Pages\\インポートフォルダー1"
+    ]
   },
   {
     "ModuleName": "Pages/インポートフォルダー1/ビルトイン モバイルページ",
-    "ModuleType": 6
+    "State": 2,
+    "LockedBy": {
+      "UserName": "ZEON川神",
+      "Email": "makoto.kawakami@zeon.co.jp"
+    },
+    "LockDateTime": "2025-02-10T09:30:12.6561346+09:00",
+    "ModuleType": 6,
+    "ToRemoveFiles": [
+      "Pages\\インポートフォルダー1\\ビルトイン モバイルページ"
+    ]
   },
   {
     "ModuleName": "MobilePage/終夜運転届出_モバイル",
