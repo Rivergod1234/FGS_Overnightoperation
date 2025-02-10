@@ -456,7 +456,16 @@
   },
   {
     "ModuleName": "MobilePage/終夜運転届出_モバイル",
-    "ModuleType": 2
+    "State": 4,
+    "LockedBy": {
+      "UserName": "ZEON川神",
+      "Email": "makoto.kawakami@zeon.co.jp"
+    },
+    "LockDateTime": "2025-02-10T09:30:40.1717218+09:00",
+    "ModuleType": 2,
+    "ToRemoveFiles": [
+      "Pages\\インポートフォルダー2\\モバイル\\終夜運転届出_モバイル.json"
+    ]
   },
   {
     "ModuleName": "Pages/インポートフォルダー2",
@@ -464,22 +473,77 @@
   },
   {
     "ModuleName": "Pages/インポートフォルダー2/モバイル",
-    "ModuleType": 6
+    "State": 2,
+    "LockedBy": {
+      "UserName": "ZEON川神",
+      "Email": "makoto.kawakami@zeon.co.jp"
+    },
+    "LockDateTime": "2025-02-10T09:30:40.1717218+09:00",
+    "ModuleType": 6,
+    "ToRemoveFiles": [
+      "Pages\\インポートフォルダー2\\モバイル"
+    ]
   },
   {
     "ModuleName": "MobilePage/終夜運転機器申請_モバイル",
-    "ModuleType": 2
+    "State": 4,
+    "LockedBy": {
+      "UserName": "ZEON川神",
+      "Email": "makoto.kawakami@zeon.co.jp"
+    },
+    "LockDateTime": "2025-02-10T09:30:40.1717218+09:00",
+    "ModuleType": 2,
+    "ToRemoveFiles": [
+      "Pages\\インポートフォルダー2\\モバイル\\終夜運転機器申請_モバイル.json"
+    ]
   },
   {
     "ModuleName": "MobilePage/届出WF_一覧_モバイル",
-    "ModuleType": 2
+    "State": 4,
+    "LockedBy": {
+      "UserName": "ZEON川神",
+      "Email": "makoto.kawakami@zeon.co.jp"
+    },
+    "LockDateTime": "2025-02-10T09:30:40.1697205+09:00",
+    "ModuleType": 2,
+    "ToRemoveFiles": [
+      "Pages\\インポートフォルダー2\\モバイル\\届出WF_一覧_モバイル.json"
+    ]
   },
   {
     "ModuleName": "MobilePage/届出履歴ポップアップ_モバイル",
-    "ModuleType": 2
+    "State": 4,
+    "LockedBy": {
+      "UserName": "ZEON川神",
+      "Email": "makoto.kawakami@zeon.co.jp"
+    },
+    "LockDateTime": "2025-02-10T09:30:40.1697205+09:00",
+    "ModuleType": 2,
+    "ToRemoveFiles": [
+      "Pages\\インポートフォルダー2\\モバイル\\届出履歴ポップアップ_モバイル.json"
+    ]
   },
   {
     "ModuleName": "MobilePage/新規申請WF_一覧_モバイル",
-    "ModuleType": 2
+    "State": 4,
+    "LockedBy": {
+      "UserName": "ZEON川神",
+      "Email": "makoto.kawakami@zeon.co.jp"
+    },
+    "LockDateTime": "2025-02-10T09:30:40.1707237+09:00",
+    "ModuleType": 2,
+    "ToRemoveFiles": [
+      "Pages\\インポートフォルダー2\\モバイル\\新規申請WF_一覧_モバイル.json"
+    ]
+  },
+  {
+    "ModuleName": "Pages/モバイル",
+    "State": 3,
+    "LockedBy": {
+      "UserName": "ZEON川神",
+      "Email": "makoto.kawakami@zeon.co.jp"
+    },
+    "LockDateTime": "2025-02-10T09:30:40.1717218+09:00",
+    "ModuleType": 6
   }
 ]
