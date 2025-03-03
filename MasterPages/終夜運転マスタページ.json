@@ -13,8 +13,7 @@
     "Count": 64
   },
   "Values": {
-    "1,4": "終夜運転機器管理アプリ",
-    "1,46": "問合せはこちらへ"
+    "1,4": "終夜運転機器管理アプリ"
   },
   "AttachInfos": {
     "1,1": {
@@ -44,29 +43,6 @@
           }
         ],
         "Text": "終夜運転機器管理アプリ",
-        "ClickMode": 1
-      }
-    },
-    "1,45": {
-      "CellType": {
-        "$type": "Forguncy.ImageCellType, ServerDesignerCommon",
-        "ImagePath": "Application/121_send_1.svg",
-        "BuiltIn": true,
-        "Color": "Text 1 0"
-      }
-    },
-    "1,46": {
-      "CellType": {
-        "$type": "Forguncy.HyperlinkCellType, ServerDesignerCommon",
-        "CommandList": [
-          {
-            "$type": "Forguncy.Model.NavigateCommand, ServerDesignerCommon",
-            "URL": "http://ntvmd10060/InquiryManagement/",
-            "PassValues": [],
-            "IsOpenInNewTab": true
-          }
-        ],
-        "Text": "問合せはこちらへ",
         "ClickMode": 1
       }
     },
@@ -357,13 +333,6 @@
         "BorderRight": null
       },
       {
-        "Foreground": 1
-      },
-      {
-        "Foreground": 2,
-        "Underline": true
-      },
-      {
         "Background": null,
         "BorderBottom": null,
         "BorderTop": null,
@@ -371,7 +340,7 @@
         "BorderRight": null
       },
       {
-        "Background": 3,
+        "Background": 1,
         "BorderBottom": null,
         "BorderTop": null,
         "BorderLeft": null,
@@ -381,8 +350,6 @@
     "Types": {
       "Strs": [
         "Background 1 0",
-        "#FF000000",
-        "Blue",
         "Accent 6 -25",
         "Body"
       ]
@@ -390,16 +357,14 @@
     "CellStyles": {
       "1,1": 0,
       "1,4": 1,
-      "1,45": 2,
-      "1,46": 3,
-      "3,0": 4
+      "3,0": 2
     },
     "RowStyles": {
-      "3": 5,
-      "4": 5
+      "3": 3,
+      "4": 3
     },
     "SheetStyle": {
-      "FontFamily": 4,
+      "FontFamily": 2,
       "BorderBottom": null,
       "BorderTop": null,
       "BorderLeft": null,
@@ -410,8 +375,7 @@
     "1,1,1,2",
     "1,53,1,10",
     "3,0,2,64",
-    "5,0,31,64",
-    "1,46,1,6"
+    "5,0,31,64"
   ],
   "BackgroundPictures": [
     {
@@ -490,7 +454,7 @@
                 "RetrunParamNames": {}
               }
             ],
-            "ID": "6727942e-d0b5-496f-8b2f-1d438fddc77a"
+            "ID": "e6fb57da-b995-4260-afc9-3985a20d95e5"
           }
         ]
       }
@@ -500,4 +464,4 @@
     "Margin": {},
     "PaperSize": {}
   }
-}//fkUjsiZOpVGRk1sRwnVydKye6Vd+bFkvy60lIAKrJ3MI7PtzewvZB27/IH8iJE9UirerUmmQBK6wlbEwxZD74GDaI5mYztrGtEgDJQdK1bnCx4+5Yn9aXdpvapQGeq4LFUHvP/w1SOGGqbgvL54379JIq2OoticSIeMvWmcdem/MQg2YJsCEzKofT8irpbcLXvHl6Te4WemYUSnxTSV2z5jbQhqkOfsRiPAt54XGUtWB0j6V4tz2Geqn6NPA3MxV4BagijCgjR+ukXozra1MC0wce1qf8D1Jp/Bnz6oavlMgmfyBrcDhDj271mH1pTWxtNWaBHijXyksFlEpdvWQZChE/N2D3JmwrvWQQZBnilrYYNRz/lWr8t+rborKYUMlx7BgEgdOEVu9vk5lTr85wIhd+RARlhUmEcA93+80GAwp2aZIdOG7SX6GcHpPfF65+37G+bZqRN3zMvY2EYfF/kLck/nlKjtS8KVmv2ZokyqN5i+GHGyMTLqlVC6uuqcgiINDU3XgZ+K0HFSyfca/tcIGlSw8OAWg4ojOJyy/EZjy9wI8dqxr3oaVCMXTYA/ESfvzzdIogQ+aw6Lr37LFnGabDjiOhWyxOTbXgv6c03kXVjixJ0T6+kNSt0F1WC6dHh1A1bhNGFmwMce8xT8wjOqJ/Z2Gln860dpweHLcj5xLXLqV+wt8zLAoVgAy2vmnjfsE5vsPMAawGMXHdXZmk8VhrIMbAUxrY7qBULYHQ//5z4R7jZTDSAjOos3o+KbHn45Akr+2Z7PkQrGAe/3SNgg5yLzxu0bKR6yJQq3Ws2AQ1hjkNf7KoXRYhK5Yj0X17D+WrAG4VpxBcwhw8t7YmdEdkQBL6+F/DCUVL+QX9VOgIY+eGGxofxxrUoI6+4ARUYkKbdXF7wITskRTbJhH8A==|920
+}//CrKN2jwZ7y5XIlb684NnmCcbUhKxl4ViST6ht2nWNVYzx9EiWvQtjZMep0BV9LawrYjylMSIxuRltOmCiIVkTcLWr5r1mqtWNnZDxCnX366Di/o8v4CpCbxM/wsM2iXFsoyo/RuuDir5a5e+lk81DUJ+/BC1sitiEhLdAUlQCdOs6sKHNAWiB489cz2OMsJe0XVRcw6CQ7oqXgKiU8e7n1EtTUnxbhNEPeETJW5a0KTRDGg2kHrofLjLbBvVUMvQsLO5rWn8TIjJo3RXJApanPYy0k79Mj6xyhvl5IZ5bwzK16ZhqrTxyZmXL5/hU4YMlEaDuUhgSRyTycA3Fx+hQLfGExdjfYFZHMPNyYkF+/bzONCKCBPPrFOrsruF2fO3NnPyku+rNqzwMxGGrh3C92I6CiVPXfur77ijnhG9Lo1ey1O9W0KkC2cvzZW3GMc9MnHiBBh1HnFDZ9e0xKoSRcdDzZLobZx7f8pZgCmzwoVlC3vBe7CUXH/BnrNMj7sU2idB1SZRvdL4Qic80oveXsPn9pUEqOPtjz6fNiUD8BSgDPpKyL1L2cNHufpoEfAT6HXSJ1iGEnXbTBpqLiUxZ/qwsZ3n63sj4pRwG3jBFW8pOSekw/m7sW29ciZGgv+AR7c3sPXNXeL+GRCkWC4899c3yUGgaMsxxkxtqAyJgN0bjCPC7wXa4ENM6Mb8MV71I0HkE17qk/+87V9a7s5c+Ic1VEU1MK1aOUYMkMTef3rSACF4AmYz+/8MJCe+XL8fKlhQPnAmzrOMMRfOd9o/I+H148KxowPGNGzyN8cv0vOw9USsRHfeRU9npgTaPHubUMti7nX1yU5ZIKOQpZL8ZJO3CkGR+EBO11YGtBPIpuPyUm7Jse9EnA4gVEZ4vWNhwR2H9Hl36ifuktR7lB+pEw==|920

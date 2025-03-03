@@ -156,28 +156,52 @@
     "Styles": [
       {
         "FontSize": 37.333332061767578,
-        "Foreground": 0
+        "Foreground": 0,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
       },
       {
-        "Foreground": 1
+        "Foreground": 1,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
       },
       {
-        "Formatter": 2
+        "Formatter": 2,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
       },
       {
         "FontSize": 14.0,
         "Foreground": 3,
-        "HorizontalAlignment": 4
+        "HorizontalAlignment": 4,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
       },
       {
         "FontSize": 14.0,
-        "FontWeight": 5
+        "FontWeight": 5,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
       },
       {
         "FontSize": 14.0,
         "FontWeight": 5,
         "Foreground": 6,
-        "HorizontalAlignment": 7
+        "HorizontalAlignment": 7,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
       }
     ],
     "Types": {
@@ -210,19 +234,23 @@
     "SheetStyle": {
       "FontFamily": 8,
       "Underline": false,
-      "Strikethrough": false
+      "Strikethrough": false,
+      "BorderBottom": null,
+      "BorderTop": null,
+      "BorderLeft": null,
+      "BorderRight": null
     }
   },
   "Spans": [
     "5,12,3,23",
-    "22,25,2,6",
-    "22,31,2,5",
-    "17,20,3,15",
-    "13,20,3,15",
-    "9,20,3,15",
     "9,18,2,1",
+    "9,20,3,15",
     "13,18,2,1",
-    "17,18,2,1"
+    "13,20,3,15",
+    "17,18,2,1",
+    "17,20,3,15",
+    "22,25,2,6",
+    "22,31,2,5"
   ],
   "BackgroundPictures": [
     {
@@ -233,7 +261,7 @@
       },
       "IsAutomaticStroke": false,
       "IsAutomaticFill": false,
-      "Name": "97a1df71-4c5e-45ca-8c9d-75cfbc4c5568.png",
+      "Name": "91f096e6-0b51-498a-b26c-5342b963a452",
       "Location": "200,80",
       "Size": "540,360"
     }
@@ -241,8 +269,10 @@
   "PageInfo": {
     "$type": "Forguncy.Model.Pages.NormalPage, ServerDesignerCommon",
     "MasterPageName": "FGC_ユーザーマスターページ",
-    "MobilePageName": "FGC_パスワードの変更_モバイル",
     "Title": "パスワードの変更",
+    "AuthorizeInfo": {
+      "VisitMode": 2
+    },
     "RowBreakLines": [],
     "RepeatRangeSettings": [],
     "IsBuiltInPage": true
@@ -251,4 +281,4 @@
     "Margin": {},
     "PaperSize": {}
   }
-}//PPic62si1bSZAzo1Z+cRBYbGRkhM0uGsPYvI+aeEO6yeVPFCjNznUqcIPM+jQAuPVZDBHZifTxIO/MgQGSj5CSozjGDs9OREzumN1QEWdFnFoP7kHGPeCM27vL21FeljRe2tYoaL+MD/eT/K5nK9wDOc95fs24MGyRvXpdshT7ZqEinf+upEYz3XUi9SzAejFe/WQOyfoJhnvos5Kd/4DvL6jPQ5dfg/erXq0uDqM/Xq8CNip0SN9EeIn30M4GJ171O3UObHNUnucN9mCFxJZok1ei1gxeKlG0vgJGY12+Z+tuTYIeLAjg4sinKrdW/QTnVwkX0vPoJNS84aV9gdBWDZIzYQ5ZH2ZE0S2/YzNPuuVXD2pTxUzqL4OYhKCN4NyB7tN1hhGEYBnx5QNRLRfyIr3iWQ/HAOUNgVLzvGsatBhLZGB1sHtrWOBkQHdFxhUAe3WtgkjPT17T21Ms3yoMjMez2k5etNSf2/p/O2Aa07Cibjn42V1Pm1SPbYn5qyniSaVcF8V8spzOwZZykECRka4bDekGegwtqn255Wa7taLR5miee3Ps2MGriWd+MIgkpi025PT8EHz1W17sKQ8wDUUkslW5mONwMGLAhQj/vJyx73bUDL5PU746oNX2TozpqfWZrmt/ViPWE5tUMWLzk24eiW0DRN1KPDb7VuJdJW/mvSDIBD6mLonBB8NjiQG6Cg/n2AlNd06+/Jf+6dYEjdILmGWHPUbcuF0RvPU0HWlRg/JWgiBRTIY/NcsEpupECyAbvLgRiBb4spdteL+QO5+cCSH4kru0/HvaEiCJ6wEV0eKZ+u44bjsB4NYl7A4u6Xyc3vSrCmvDjD+C3lwkU6KyOnVoK2+rDFgjFssumM8V86ajEeHWIIALnqPiuZVK9bS2hR7NCtmANpWW7+9Q==|920
+}//zwDvF1YBESxc63VAtLTC29x1GFCu4AZrL5Hi2PSINgSUKTxZLh/Ekwa6TIJc1ghuMMkFv/CwmMI7dXiaUgqkx6MbfSobA091ittntopYmko51qkBXncSMhN5cw4Qw8bDFT/1laUQ91mBhz2sA4S7poLGWMmSoD0HldHVabLlPWwAa7tKQur8YUlpBAgyZKZ4Zb/DKlQ/ERWwCPvBkR7XL9fmHlXuXXzxgGrNFkh30sRZeXPFkWXO6PM6e7eKduYRSNPODm7Bk5rhLu74tNLcVidqiYmW91iMSwylmuHTOMLzrOviOpY7haP+YegSsl7nGKu8LPv6N67dAvWZSCw8LKse0ztZFAcKzY6kD0JVOUnmXmHP7aPkl9tVarbR96/xuXZ3K+JR5oWfhYvvogjBmNfBBK3Pn4hDwzhWvgWarpsgqrs2sF01CBn6rb8+Dm/N2pzX66aoGP2HuLc9xWGR+Os/NUPD7aBD7sRNI0uhiePsQESoEdEUCioyXxilnYjxoLu6eElY0UAi7C8qpKN2wIK6skCcYYUFwxH6Ng1mnNEVarC1djPZpRiVroImZ9cxH0Q93n6dxdPyIehTPtySW9l8Balh26q1wD+wVoxkEjaLDYsP7nZQN1N1YY0majIFFfZX7OL7qAlYI+0KDt1iOSeRFsj1uxd0+J52UctxqQpJs5N6T2TaGiQ09kphlv+P6cAwqTFQpYMCv9OmKbcx1tsFRQHwwQm/qKUMtFfUMCMXbofoj0GsB/HaethJsoZstNuaWfRNfloNIsY/dqp0k9yAlQcW9sD9zHgI/h5J/lewmnnPBG0X8E3gVEnV9PnZjcdFtd6Mhrt9k4Nlsco+ftPKKWBu00pGN2qVm433h86mg+yBc3UfWL/8g7QJjVc2+UuAL2YPgNF789qEu2GEWA==|920

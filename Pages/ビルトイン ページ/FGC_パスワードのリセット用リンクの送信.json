@@ -31,14 +31,22 @@
     "Styles": [
       {
         "FontSize": 37.333332061767578,
-        "Foreground": 0
+        "Foreground": 0,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
       },
       {
         "FontFamily": 1,
         "Foreground": 0,
         "WordWrap": true,
         "Underline": false,
-        "Strikethrough": false
+        "Strikethrough": false,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
       }
     ],
     "Types": {
@@ -54,13 +62,17 @@
     "SheetStyle": {
       "FontFamily": 1,
       "Underline": false,
-      "Strikethrough": false
+      "Strikethrough": false,
+      "BorderBottom": null,
+      "BorderTop": null,
+      "BorderLeft": null,
+      "BorderRight": null
     }
   },
   "Spans": [
     "6,12,3,23",
-    "17,29,2,6",
-    "10,12,5,23"
+    "10,12,5,23",
+    "17,29,2,6"
   ],
   "BackgroundPictures": [
     {
@@ -71,7 +83,7 @@
       },
       "IsAutomaticStroke": false,
       "IsAutomaticFill": false,
-      "Name": "0dc0080d-7217-442c-8fa6-481c8c5d690a.png",
+      "Name": "0667e264-a3c0-458f-904a-e0f96a2700d0",
       "Location": "200,80",
       "Size": "540,360"
     }
@@ -79,8 +91,10 @@
   "PageInfo": {
     "$type": "Forguncy.Model.Pages.NormalPage, ServerDesignerCommon",
     "MasterPageName": "FGC_ユーザーマスターページ",
-    "MobilePageName": "FGC_パスワードのリセット用リンクの送信_モバイル",
     "Title": "パスワードを忘れた場合",
+    "AuthorizeInfo": {
+      "VisitMode": 2
+    },
     "RowBreakLines": [],
     "RepeatRangeSettings": [],
     "IsBuiltInPage": true
@@ -89,4 +103,4 @@
     "Margin": {},
     "PaperSize": {}
   }
-}//98DnqrCXjWbSzp/+A+BoFCRTqefFbEp+5o+hq7oA0BcErRf2Amajkq54L4Vq6Od3Qs08JUCp3SS7JG1y3uSjZNdM2x3Q4x/4hFu5WHoRCP8ZfHqDLWNnNBBf79yFeFQ3kJbtIk6da6K2tGgWYswmkEJ/gz2gZwDpznZtAiGJWLBlGgFKLa4SyW4DoLxqRFPZ0h0SNyPh9+B7ONFyGtPW5KsugETuuGpalbIdiJG6Jm94fIUJioWPTnLYxKu1o3zyXm06vIU7V+D2YTMUK2B81Yx9z0lHKL2uvY/QjEHRcgEqVhmNtjkFXcGcDSI0i1N7trE1gSfc6D+zpTGwYsAwnRbFWE9J7P11zV8DtqP7xEfnmvohCyUY9UMFbHmow9gd6VKTQ3q4hUS+HvBWRcaPFzPT10FQ/YGAw5NTmxkGypanajcXMNIhes1P9VyJNhHYdq6lzMAvOll3Frg7Cql7W9cS7U1DspPQNku5dWms7m9yQMx0/VFwhH70AlZ9wI6sgJTHCBGSRuFKkEq3CZp6LInBn9CP26qBjN7pM06fZjoeBtE4miW6Nk28so/+U8MlhILskOFzAT24H8Xf7vspNiebua9adcw+G8dyXxuMMevoSUpFrONWzZe4jZcGz3aVcDBgaXrrMdJo+K0Py1Wd8fdH1u8ra/hXGlg1CQay52RHk9y3YZEr4eJuh7e140Nuql8kGYAQ4IINzSY4cUPly83TEs8/LZ6fcAfH1oxLs9O3SCe30lr8afMT12njhTZaBHxWr8vQ92vjIh3RMRQn9x5al1OQCWRxZ0PTHrGwtUEpbq9BPjAmN0jX0gspwgLg065yLzaVEgBpKVJyGasRV84OxKXa4x1mpeT8tS/aatfBay5wvmu3MRn2/+RU6DCBxToRZLUoJI1XMIxvk/Kj6A==|920
+}//fO5CRaEAsbJa0PhLeF+4xXE3OB8n8mhMs9HpTOR7jLNC3qJDvd5wwUZTnLdHX4xqa1q+ENRgBt+cPK3VyB27gPP3DDIMvLkbddJ4k4EXuDfIUnLKsqVDL2Mi+wG5AReARSVZCmzVBLTDnt4h5KMx+k3AQbDoO3IUOiVqH+clFwJiUOpmIynLlaBQbMTw/EeWyBONJXY4cWDWGj7QszPnSEMesl7pD0WIwhFBZXztkIfqmE3nIxiPcVG5FaECkBLbQfIBncQz62ZWpx3x07kfLlw+//Ruo0fqQFff6Nbo6eHDylMFgQHqZu5aTkSmjRcRyq6mAth7I4L80iR0f7Usv6BYYIJNRmHD8EU+eod7wuhvrCiDYKN8crcdJldCeA4l5DrAs7MwpXvTHPeYzg9NSR9oLr0AsMDiRf9X1M+J5CDUPaPR+yi5SYjOXDY+8Mmc+3e0/ZZ3ncFR+p7eQA/cqw6QsRKwpMaMN+1qXS80jyUgTLFdLTttLbV/7LT/A70BjSlsHxXgTKbHO4x62sbbAXosPGyG8+nger4wcRwBm6IGAXkg2c78ykO8+BHQ0/XfntnGiYg25JNE8xrTHJ36yq4DLMAE0OnqW9PO3bcrMH+1JthVIIRQEkU8BxaNBiV1lHW7+E88O8NyVDzw1Nrr+Bhl2k0/WRnU7WvO8EBuLI4V4Ck/wT81vnm8cc9iRlElITVBpSUp4kjc7ATygwSlHi3NgC2nowCJ8bTURZMo23oTWPTfSraRAjCcD2+P2edkAoI17JA9zJ40pZUn9IVFxAHFqHrexxkCNxi+eUsvia3q/gkANPjPKZ95CoratHuRcGVn3ASmj9G3Olk5wcrf5ONrjxandzDtI+ii4hndPivnRs8f5KYa9yXe9bZs9If1glBDXX5lqKizc5t6S7dFLw==|920

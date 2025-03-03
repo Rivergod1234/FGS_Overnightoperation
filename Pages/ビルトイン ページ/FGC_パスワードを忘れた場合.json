@@ -80,11 +80,19 @@
     "Styles": [
       {
         "FontSize": 37.333332061767578,
-        "Foreground": 0
+        "Foreground": 0,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
       },
       {
         "Foreground": 0,
-        "WordWrap": true
+        "WordWrap": true,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
       },
       {
         "FontSize": 14.0,
@@ -92,21 +100,37 @@
         "HorizontalAlignment": 2,
         "WordWrap": true,
         "Underline": false,
-        "Strikethrough": false
+        "Strikethrough": false,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
       },
       {
         "Formatter": 3,
         "Underline": false,
-        "Strikethrough": false
+        "Strikethrough": false,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
       },
       {
-        "FontSize": 14.0
+        "FontSize": 14.0,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
       },
       {
         "FontSize": 14.0,
         "FontWeight": 4,
         "Foreground": 5,
-        "HorizontalAlignment": 6
+        "HorizontalAlignment": 6,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
       }
     ],
     "Types": {
@@ -132,16 +156,20 @@
     "SheetStyle": {
       "FontFamily": 7,
       "Underline": false,
-      "Strikethrough": false
+      "Strikethrough": false,
+      "BorderBottom": null,
+      "BorderTop": null,
+      "BorderLeft": null,
+      "BorderRight": null
     }
   },
   "Spans": [
     "5,12,3,24",
     "8,12,5,24",
-    "17,25,2,5",
-    "17,31,2,5",
+    "13,12,3,9",
     "14,22,1,13",
-    "13,12,3,9"
+    "17,25,2,5",
+    "17,31,2,5"
   ],
   "BackgroundPictures": [
     {
@@ -152,7 +180,7 @@
       },
       "IsAutomaticStroke": false,
       "IsAutomaticFill": false,
-      "Name": "0b03a0d4-cfe9-4e90-8373-4c372736e704.png",
+      "Name": "79cc2f92-3fde-41af-ad92-b3891dff469e",
       "Location": "200,80",
       "Size": "540,360"
     }
@@ -160,8 +188,10 @@
   "PageInfo": {
     "$type": "Forguncy.Model.Pages.NormalPage, ServerDesignerCommon",
     "MasterPageName": "FGC_ユーザーマスターページ",
-    "MobilePageName": "FGC_パスワードを忘れた場合_モバイル",
     "Title": "パスワードを忘れた場合",
+    "AuthorizeInfo": {
+      "VisitMode": 2
+    },
     "RowBreakLines": [],
     "RepeatRangeSettings": [],
     "IsBuiltInPage": true
@@ -170,4 +200,4 @@
     "Margin": {},
     "PaperSize": {}
   }
-}//kg4ZYJdyRGCWvI7FrVVUivT/cWma3hazBvn6h2a/I9SSYkK5w3XCWON5iPAOL9s1ZSdZg/2N5HMkY8q8mnt2i5MpU+l8A2TB1mlz3S7J5uCU7l7QWTlhz9OflFml0NJECJMUvTjr/tTOP7WblPAkqTT0wnNz2/sPWSOoOlUlcraztntLv4ez3BNGUPniSJDs9GxKInv1qHnvRBe2kA/z9Lgkp/SFE1FR2d+peEsJVEniNXqXQB3Vo4eIZm+gqKHWKmR7jJXs48SSDXMfLiwm3Xw1p8v8Hf1xvbVl4/7I/Y/HrsQyJXiyPE0n3B3vb6I4ylyPcRcDoQlmy0Rh9zSaa+m78JHqQ1bXb+UYLbDBfLPmqUOJxjg/wLUU6Fej1N6J1+7iUnG2D0OREtgHF1K/ukyT+Zox3k8FnHTrWBbo3ZuE0vsc9d2oJ0ZlgC67O2Lb0xaa3Z78QIMOrP0ReiVWUXUEmZOmjJr6+UzcplOESMYPTtZN8MIyFQqGtl1+rgapdVD040x1bTewxtrrZxwyqxAWJJ8o3u4RvKN2jyYtbcl7+EvQAoqUHQw2ACIpTodEztQq4Yb0/Ui90ZctZ6o0wswvK2sl3VZ0Eh5GJLq/OLGeTTZ5FW/0Ogxex/OF2uomp+h6gMLE8PywzqDFIXmZFpuU0vbwzlLU5ww2dSQi7nVWK76qJ/pBhG/eiv/QnxnzLjfgXQQPBhkR51Dg8VozeK1GvBSsT0Jzu0sJY0htzYDm6/Lu+69/R+ElPAJ4fW0lCJtvKr0rhJh08/uzfabXj5Jf/Q3hDwuxoRsN64hRMXfmxezK+146GwiptIKaPm7MXJSl4YPTmhvGF0ALq0U8vsqwieoYDsfCM1gQ1EWZVLEVCDDoSTK7BUCnMKF12fyEjxsf7DNV4yaCvgKuqUCVfA==|920
+}//LZaO8rs67lovL5TdesJF7RrShDa6YP1DkK8myZ1KEK+4YLEDB+KDGYUMF5wBskxxmKJ+UnsIN033dE5wTQ/9wrW4Et6xDYjCf/j+mq0h5DnciSK/nRItk9kn+tA42joMpVqv35jK00S8reZ7ovEGXfuGyNrf9OSXBEQxjjdk2oxzKOH3Ai6Ln0o+ApLpZl4XsGYrUqlo8apjkpwS5BJJO8KoUvh7hqjZvhQ1qyR5mQR7YSdDu9yCa7dJI1oj7kAyYN0Py8zJ3bmZotqr3YzdSxjqGoecYbyqSGM1/zw13a+YWNZYJzjoHjW5iWoVtMR3/scXS3kQGNSuqXp79ParcmFcYy26CDSgxMSe0jJeuTJzW3H4jGh+2OMtCFlaCMyLhWGCV8iOky3A8GgyUDSu8wi5WbphiqWiQRk7VQ8+9+mip0hAB2bDKu2W461Kt4tYVFGRNStoebmpQRsDhPiSbtolwqNrLCBijUD6LCEA4XpxQK/w0M3+aYVvsVEMue5BJIRCXqsbuzvsdzKEFXpn2KrlNvSOiGvmzADOIGXLBBvHNFbfz7ozj6WbLAJaJMYSEjZsABJFnqy7Il8uGwGe/kIH/4JiYTDnCx8GAZwoTqSsN1yYfW/0LqK6caPh7cfyOpoN8Kt/rBdB9JPBfJGzHhNrSDn1RSk/vnWX1zWuKiWnUs9KBgLa3Ve/wSh6fuPxIzw/r2Frqz97aGFuCtQ52C8DN1UuBriz2ir5Wo7/DAD5AD27sw8+Lf0mLtWSvBDmZTZUm7UriXKSQkvo8GcJ6D4/WNtgeicAFT5xfWTGrAT1FIP4IvQAWgRySUdrn1QYbPDHUawbUwHZ6VEG0+8bdIUTEmBMH2NTV09jne0jeSRgSYqwtYoh+U3ROQOF3tEhH2bVnyLDwOlBMFa49nUVjQ==|920

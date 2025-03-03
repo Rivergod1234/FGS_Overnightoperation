@@ -58,7 +58,7 @@
             }
           }
         },
-        "ID": "193dd42549b640539d896cc25743376b"
+        "ID": "b955dda9c8b84786b8ea8df86f79da09"
       },
       {
         "$type": "Forguncy.Model.Commands.SetParameterCommand, ServerDesignerCommon",
@@ -109,7 +109,7 @@
             }
           }
         },
-        "ID": "627ef23163b94c279aee72178071f50e"
+        "ID": "3ae2ccdf491b49de8e7b0f00d6a56d62"
       },
       {
         "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
@@ -172,7 +172,7 @@
                 ]
               }
             ],
-            "ID": "41fa048d-cae4-4ff8-b5f2-2d6ff00a998b"
+            "ID": "361e8569-ce00-43ff-81c3-c955a9db88f0"
           },
           {
             "CommandList": [
@@ -186,7 +186,7 @@
                 ]
               }
             ],
-            "ID": "f992f816-a9e8-4cd0-ac21-329a9e2b8af9"
+            "ID": "f051ebfb-410c-4281-8f78-75aac4c943d3"
           }
         ]
       }
@@ -301,7 +301,7 @@
           },
           "TopCount": "1"
         },
-        "ID": "887d2f0b53ad402383bd5a9b9675e6bd"
+        "ID": "51507dfae1914a11b707179842946544"
       },
       {
         "$type": "Forguncy.Model.Commands.SetParameterCommand, ServerDesignerCommon",
@@ -360,7 +360,7 @@
           },
           "TopCount": "1"
         },
-        "ID": "09a53af3f682444d9c7ddb81c9f2aa82"
+        "ID": "5036c573b54a47a597226e15228823bf"
       },
       {
         "$type": "Forguncy.Model.Commands.SetParameterCommand, ServerDesignerCommon",
@@ -369,7 +369,7 @@
           "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
           "SerializeProperty": "=IFERROR(Comment,\"\")"
         },
-        "ID": "e93d3b1bfdbd4e738dedd07fe740f854"
+        "ID": "b16a378566d74ed88d8e3828abe9ea39"
       },
       {
         "$type": "Forguncy.Model.Commands.SetParameterCommand, ServerDesignerCommon",
@@ -378,7 +378,7 @@
           "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
           "SerializeProperty": "=\"【終夜運転申請】\"&\" \"&Registration.Unite_Classification_Name&\"_\"&Registration.overnight_epuipment_name"
         },
-        "ID": "ce5b9ad7e3514a9490e1cf4c6a5b302f"
+        "ID": "a2a615bd2ca04c6a9a3560b9000da85b"
       },
       {
         "$type": "Forguncy.Model.ShareCommand, ServerDesignerCommon",
@@ -397,43 +397,22 @@
               "SerializeProperty": "rootURL"
             }
           }
-        ],
-        "Disabled": true
+        ]
       },
       {
         "$type": "Forguncy.Model.Commands.SetParameterCommand, ServerDesignerCommon",
-        "ParameterName": "Path",
+        "ParameterName": "URL",
         "ParameterValue": {
           "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-          "SerializeProperty": "=ENCODEURL(\"新規申請WF一覧\")&\"/?registration_id=\"&registration_id"
+          "SerializeProperty": "=rootURL&ENCODEURL(\"新規申請WF一覧\")&\"/?registration_id=\"&registration_id"
         },
-        "ID": "125f48291f83416c9350bc7e290e1904"
-      },
-      {
-        "$type": "Forguncy.Model.Commands.SetParameterCommand, ServerDesignerCommon",
-        "ParameterName": "URL_PC",
-        "ParameterValue": {
-          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-          "SerializeProperty": "=\"http://ntvmd10009/Overnightoperation/\"&Path"
-        },
-        "ID": "a256db1fa3484e66b2bab3ac7acf5ce2",
-        "Comments": "PC版ドメイン"
-      },
-      {
-        "$type": "Forguncy.Model.Commands.SetParameterCommand, ServerDesignerCommon",
-        "ParameterName": "URL_Mobile",
-        "ParameterValue": {
-          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-          "SerializeProperty": "=\"https://overnightoperation-zeon01.msappproxy.net/overnightoperation/\"&Path"
-        },
-        "ID": "acc45e663045489f9619fa5a706dcc1f",
-        "Comments": "Mobile版ドメイン"
+        "ID": "0525de806b194355a43007a573c9175d"
       },
       {
         "$type": "Forguncy.Model.Commands.SetParameterCommand, ServerDesignerCommon",
         "ParameterName": "To",
         "ParameterValue": "m-okabe@connectill.jp",
-        "ID": "c662d07ac4ae47138ed0cf4ad80e4b8d",
+        "ID": "ea75e886b3f04caca809fe2b60c6cee6",
         "Comments": "仮設定",
         "Disabled": true
       },
@@ -444,7 +423,7 @@
           "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
           "SerializeProperty": "=IF(From=\"\",\"m-okabe@connectill.jp\",From)"
         },
-        "ID": "f177d8bef6c741829a897acb24be7622",
+        "ID": "1baddb91edbd40a19e071dbeeade5472",
         "Comments": "仮設定",
         "Disabled": true
       },
@@ -483,7 +462,7 @@
                 "$type": "Forguncy.Model.ReturnCommand, ServerDesignerCommon"
               }
             ],
-            "ID": "fd6f9f26-df24-484c-9a43-280363486d22"
+            "ID": "526eb764-c031-4805-8285-5011b3a3ef9d"
           }
         ]
       },
@@ -514,17 +493,17 @@
                   "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
                   "SerializeProperty": "=\"差戻_\"&Subject"
                 },
-                "Content": "[件名]\r\n　差戻_[=Subject]\r\n\r\n[申請ID]\r\n　[=Registration.overnight_registration_id]\r\n\r\n[差戻し元]\r\n　[=ログイン者名]\r\n\r\n[差戻し先]\r\n　[=Registration.applicant_name]\r\n\r\n[コメント]\r\n　[=Comment]\r\n\r\n[ステータス]\r\n　[=Status]\r\n\r\n[URL]\r\n　PC版\r\n　[=URL_PC]\r\n\r\n　モバイル版　※動作確認中のため、使用しないでください\r\n　[=URL_Mobile]",
+                "Content": "[件名]\r\n　差戻_[=Subject]\r\n\r\n[申請ID]\r\n　[=Registration.overnight_registration_id]\r\n\r\n[差戻し元]\r\n　[=ログイン者名]\r\n\r\n[差戻し先]\r\n　[=Registration.applicant_name]\r\n\r\n[コメント]\r\n　[=Comment]\r\n\r\n[ステータス]\r\n　[=Status]\r\n\r\n[URL]\r\n　[=URL]\r\n",
                 "EnhancedRecipient": {
                   "CommonValue": {
                     "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
                     "SerializeProperty": "=To"
                   }
                 },
-                "ID": "094c5c1a7d1c4e2eac7725f9cb83b8bc"
+                "ID": "0d939fa996e844a39da0f260ca209b48"
               }
             ],
-            "ID": "cb3859d7-1792-4d72-8746-de5e1744d8f5"
+            "ID": "65083e4e-fee0-4578-af38-450f841b780f"
           },
           {
             "Condition": {
@@ -550,17 +529,17 @@
                   "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
                   "SerializeProperty": "=\"回送_\"&Subject"
                 },
-                "Content": "[件名]\r\n　回送_[=Subject]\r\n\r\n[申請ID]\r\n　[=Registration.overnight_registration_id]\r\n\r\n[申請者]\r\n　[=ログイン者名]\r\n\r\n[ステータス]\r\n　[=Status]\r\n\r\n[URL]\r\n　PC版\r\n　[=URL_PC]\r\n\r\n　モバイル版　※動作確認中のため、使用しないでください\r\n　[=URL_Mobile]",
+                "Content": "[件名]\r\n　回送_[=Subject]\r\n\r\n[申請ID]\r\n　[=Registration.overnight_registration_id]\r\n\r\n[申請者]\r\n　[=ログイン者名]\r\n\r\n[ステータス]\r\n　[=Status]\r\n\r\n[URL]\r\n　[=URL]\r\n",
                 "EnhancedRecipient": {
                   "CommonValue": {
                     "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
                     "SerializeProperty": "=To"
                   }
                 },
-                "ID": "fc358eae9702493394acc5fa481fb452"
+                "ID": "c295e5aed62f4afba47ff65be966eddf"
               }
             ],
-            "ID": "cbf47a8b-197f-4855-9b76-2dc1fb5b3d21"
+            "ID": "a9b4fab3-8fbc-4043-9c34-206cae909254"
           },
           {
             "Condition": {
@@ -602,17 +581,17 @@
                   "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
                   "SerializeProperty": "=\"回送_\"&Subject"
                 },
-                "Content": "[件名]\r\n　回送_[=Subject]\r\n\r\n[申請ID]\r\n　[=Registration.overnight_registration_id]\r\n\r\n[承認者]\r\n　[=ログイン者名]\r\n\r\n[コメント]\r\n　[=Comment]\r\n\r\n[ステータス]\r\n　[=Status]\r\n\r\n[URL]\r\n　PC版\r\n　[=URL_PC]\r\n\r\n　モバイル版　※動作確認中のため、使用しないでください\r\n　[=URL_Mobile]",
+                "Content": "[件名]\r\n　回送_[=Subject]\r\n\r\n[申請ID]\r\n　[=Registration.overnight_registration_id]\r\n\r\n[承認者]\r\n　[=ログイン者名]\r\n\r\n[コメント]\r\n　[=Comment]\r\n\r\n[ステータス]\r\n　[=Status]\r\n\r\n[URL]\r\n　[=URL]\r\n",
                 "EnhancedRecipient": {
                   "CommonValue": {
                     "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
                     "SerializeProperty": "=To"
                   }
                 },
-                "ID": "f3da81672a8a44689d86205559350575"
+                "ID": "57335670581744daaaf14f396fc41b3d"
               }
             ],
-            "ID": "33ed91b5-0ccd-4d9d-b5e1-c93ce432eca2"
+            "ID": "75f9c33d-61ef-4d17-aba4-9ed0b55cde9a"
           },
           {
             "Condition": {
@@ -638,17 +617,17 @@
                   "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
                   "SerializeProperty": "=\"許可_\"&Subject"
                 },
-                "Content": "[件名]\r\n　許可_[=Subject]\r\n\r\n[申請ID]\r\n　[=Registration.overnight_registration_id]\r\n\r\n[許可者]\r\n　[=ログイン者名]\r\n\r\n[機器区分]\r\n　[=機器区分]\r\n\r\n[許可日]\r\n　[=TEXT(TODAY(), \"yyyy/M/D\")]\r\n\r\n[許可要件]\r\n　[=許可要件]\r\n\r\n[コメント]\r\n　[=Comment]\r\n\r\n[ステータス]\r\n　[=Status]\r\n\r\n[URL]\r\n　PC版\r\n　[=URL_PC]\r\n\r\n　モバイル版　※動作確認中のため、使用しないでください\r\n　[=URL_Mobile]",
+                "Content": "[件名]\r\n　許可_[=Subject]\r\n\r\n[申請ID]\r\n　[=Registration.overnight_registration_id]\r\n\r\n[許可者]\r\n　[=ログイン者名]\r\n\r\n[機器区分]\r\n　[=機器区分]\r\n\r\n[許可日]\r\n　[=TEXT(TODAY(), \"yyyy/M/D\")]\r\n\r\n[許可要件]\r\n　[=許可要件]\r\n\r\n[コメント]\r\n　[=Comment]\r\n\r\n[ステータス]\r\n　[=Status]\r\n\r\n[URL]\r\n　[=URL]\r\n",
                 "EnhancedRecipient": {
                   "CommonValue": {
                     "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
                     "SerializeProperty": "=To"
                   }
                 },
-                "ID": "219bfe9f82624ec09f328317d77f0914"
+                "ID": "c39ba815d86547e08c135569db781903"
               }
             ],
-            "ID": "bd355f64-96c4-48b1-b293-9040292c5be0"
+            "ID": "0828d46a-0464-4982-bc0a-287563343339"
           },
           {
             "Condition": {
@@ -700,7 +679,7 @@
                     }
                   }
                 },
-                "ID": "46a2d04e4a604584bc57ab2d0dab34ee"
+                "ID": "f3b6fbc31c52425c9b601a6facb2197f"
               },
               {
                 "$type": "Forguncy.Model.SendMailCommand, ServerDesignerCommon",
@@ -712,7 +691,7 @@
                   "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
                   "SerializeProperty": "=\"日程調整_\"&Subject"
                 },
-                "Content": "下記の終夜運転機器申請に対して現場確認を行いますので、\r\n日程調整をお願い致します。\r\n\r\n環境安全室長と担当室員(佐藤)のOutlook予定を確認して、\r\n空いているところに現場確認の予定を設定ください。\r\n現場確認は２０～３０分ほどを見込んでいます。\r\n\r\n現場確認は添付のチェックシートに沿って進めますので、\r\n事前に確認・対応をお願い致します。\r\n\r\n[件名]\r\n　日程調整_[=Subject]\r\n\r\n[申請ID]\r\n　[=Registration.overnight_registration_id]\r\n\r\n[コメント]\r\n  [=InputComment]\r\n\r\n[ステータス]\r\n　[=Status]\r\n\r\n[URL]\r\n　PC版\r\n　[=URL_PC]\r\n\r\n　モバイル版　※動作確認中のため、使用しないでください\r\n　[=URL_Mobile]\r\n",
+                "Content": "下記の終夜運転機器申請に対して現場確認を行いますので、\r\n日程調整をお願い致します。\r\n\r\n環境安全室長と担当室員(佐藤)のOutlook予定を確認して、\r\n空いているところに現場確認の予定を設定ください。\r\n現場確認は２０～３０分ほどを見込んでいます。\r\n\r\n現場確認は添付のチェックシートに沿って進めますので、\r\n事前に確認・対応をお願い致します。\r\n\r\n[件名]\r\n　日程調整_[=Subject]\r\n\r\n[申請ID]\r\n　[=Registration.overnight_registration_id]\r\n\r\n[コメント]\r\n  [=InputComment]\r\n\r\n[ステータス]\r\n　[=Status]\r\n\r\n[URL]\r\n　[=URL]\r\n",
                 "EnhancedRecipient": {
                   "CommonValue": {
                     "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
@@ -723,10 +702,10 @@
                   "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
                   "SerializeProperty": "=現場確認チェックシート"
                 },
-                "ID": "5c12c037ce014ebcaaed21900e8ad649"
+                "ID": "52c3f6d1fd5242dc9ef9cfa82711bd58"
               }
             ],
-            "ID": "0972880d-eb66-4b32-8302-65c9accf2364"
+            "ID": "6b8e936f-a66d-4a33-ba4b-bc4df04f6d2e"
           },
           {
             "Condition": {
@@ -752,17 +731,17 @@
                   "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
                   "SerializeProperty": "=\"廃止通知_\"&Subject"
                 },
-                "Content": "下記の終夜運転名称が[=ログイン者名] さんによって廃止されました。\r\n\r\n[件名]\r\n　廃止通知_[=Subject]\r\n\r\n[申請ID]\r\n　[=Registration.overnight_registration_id]\r\n\r\n[ステータス]\r\n　[=Status]\r\n\r\n[URL]\r\n　PC版\r\n　[=URL_PC]\r\n\r\n　モバイル版　※動作確認中のため、使用しないでください\r\n　[=URL_Mobile]",
+                "Content": "下記の終夜運転名称が[=ログイン者名] さんによって廃止されました。\r\n\r\n[件名]\r\n　廃止通知_[=Subject]\r\n\r\n[申請ID]\r\n　[=Registration.overnight_registration_id]\r\n\r\n[ステータス]\r\n　[=Status]\r\n\r\n[URL]\r\n　[=URL]",
                 "EnhancedRecipient": {
                   "CommonValue": {
                     "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
                     "SerializeProperty": "=To"
                   }
                 },
-                "ID": "f3e95ed5fa9b464b99892a2093842e49"
+                "ID": "4da354e8213942e5882021aeae2b2625"
               }
             ],
-            "ID": "2d769728-839b-4bc1-a17d-0095c4f941d6"
+            "ID": "6aa6bfde-b4df-4d15-b4e3-b8341dc577bd"
           }
         ]
       }
@@ -839,7 +818,7 @@
             }
           }
         },
-        "ID": "ab475db749934b0cae3cf3e5a1ed6b82"
+        "ID": "5b111903a83f4754a35d468731571eb1"
       },
       {
         "$type": "Forguncy.Model.UpdateDataTableCommand, ServerDesignerCommon",
@@ -975,7 +954,7 @@
             }
           }
         },
-        "ID": "70baa0c183234a2e9092d495d0e578e7"
+        "ID": "3b8e14555e5c4e45b32b63a830c83aa5"
       },
       {
         "$type": "Forguncy.Model.Commands.SetParameterCommand, ServerDesignerCommon",
@@ -1023,7 +1002,7 @@
             }
           }
         },
-        "ID": "378ddc8f49b94ace887c7796fab2d982"
+        "ID": "635cdcc5df6344cd99c4d6608cf40a69"
       },
       {
         "$type": "Forguncy.Model.Commands.SetParameterCommand, ServerDesignerCommon",
@@ -1082,7 +1061,7 @@
           },
           "TopCount": "1"
         },
-        "ID": "f4e3312ae0d942508892beed8180e4aa"
+        "ID": "a7b7bf1bb2774637a496da2ae79d28e5"
       },
       {
         "$type": "Forguncy.Model.Commands.SetParameterCommand, ServerDesignerCommon",
@@ -1091,7 +1070,7 @@
           "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
           "SerializeProperty": "=IFERROR(Comment,\"\")"
         },
-        "ID": "19add7a88d8c410a8e5738241b1eb2b0"
+        "ID": "8f780c73507640f7b88531e4aa914fe8"
       },
       {
         "$type": "Forguncy.Model.Commands.SetParameterCommand, ServerDesignerCommon",
@@ -1100,7 +1079,7 @@
           "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
           "SerializeProperty": "=IF(Notification.longterm_overnight_flag=\"1\",\"長期終夜運転届出\",\"終夜運転届出\")"
         },
-        "ID": "2dbcb02c12424ded9ba5e12cfb5977c3"
+        "ID": "382ce50ef70d4e06b080fbd82a23a63e"
       },
       {
         "$type": "Forguncy.Model.Commands.SetParameterCommand, ServerDesignerCommon",
@@ -1109,7 +1088,7 @@
           "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
           "SerializeProperty": "=\"【\"&届出種類&\"】\"&\" \"&Registration.Unite_Classification_Name&\"_\"&Registration.overnight_epuipment_name"
         },
-        "ID": "5e650eb95a754d6188d7cca01ca2cf58"
+        "ID": "f902e4e3f963408880baa5a7fccc1232"
       },
       {
         "$type": "Forguncy.Model.ShareCommand, ServerDesignerCommon",
@@ -1132,48 +1111,27 @@
       },
       {
         "$type": "Forguncy.Model.Commands.SetParameterCommand, ServerDesignerCommon",
-        "ParameterName": "Path",
+        "ParameterName": "URL",
         "ParameterValue": {
           "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-          "SerializeProperty": "=ENCODEURL(\"届出WF一覧\")&\"/?notification_id=\"&notification_id"
+          "SerializeProperty": "=rootURL&ENCODEURL(\"届出WF一覧\")&\"/?notification_id=\"&notification_id"
         },
-        "ID": "a4f75f3289cc46d480bde744212551e0"
-      },
-      {
-        "$type": "Forguncy.Model.Commands.SetParameterCommand, ServerDesignerCommon",
-        "ParameterName": "URL_PC",
-        "ParameterValue": {
-          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-          "SerializeProperty": "=\"http://ntvmd10009/Overnightoperation/\"&Path"
-        },
-        "ID": "e76280018f65465d9da4c1207807cf02",
-        "Comments": "PC版ドメイン"
-      },
-      {
-        "$type": "Forguncy.Model.Commands.SetParameterCommand, ServerDesignerCommon",
-        "ParameterName": "URL_Mobile",
-        "ParameterValue": {
-          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-          "SerializeProperty": "=\"https://overnightoperation-zeon01.msappproxy.net/overnightoperation/\"&Path"
-        },
-        "ID": "5d8b908eab49412ba7b82d41c04b55b3",
-        "Comments": "Mobile版ドメイン"
+        "ID": "eb0511fde1b3459a8c1f19a8fa01faf3"
       },
       {
         "$type": "Forguncy.Model.Commands.SetParameterCommand, ServerDesignerCommon",
         "ParameterName": "URL_print",
         "ParameterValue": {
           "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-          "SerializeProperty": "=\"http://ntvmd10009/Overnightoperation/\"&ENCODEURL(\"届出一覧\")&\"/?notification_id=\"&notification_id&\"&longterm=\"&Notification.longterm_overnight_flag"
+          "SerializeProperty": "=rootURL&ENCODEURL(\"届出一覧\")&\"/?notification_id=\"&notification_id&\"&longterm=\"&Notification.longterm_overnight_flag"
         },
-        "ID": "15dc31580c724059b8746fe2e3dac742",
-        "Comments": "届出一覧はPC版のみ"
+        "ID": "bf83de805b3b4f31af62bece69abe4ef"
       },
       {
         "$type": "Forguncy.Model.Commands.SetParameterCommand, ServerDesignerCommon",
         "ParameterName": "To",
         "ParameterValue": "m-okabe@connectill.jp",
-        "ID": "a5cb31145f334dcaa96588fdee5164d1",
+        "ID": "024717a33b8f454ba222161970252d39",
         "Comments": "仮設定",
         "Disabled": true
       },
@@ -1184,7 +1142,7 @@
           "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
           "SerializeProperty": "=IF(From=\"\",\"m-okabe@connectill.jp\",From)"
         },
-        "ID": "db54870f3a1641138eb6bce67a1bad02",
+        "ID": "e530a14550244c048f8d9d23259e7626",
         "Comments": "仮設定",
         "Disabled": true
       },
@@ -1223,7 +1181,7 @@
                 "$type": "Forguncy.Model.ReturnCommand, ServerDesignerCommon"
               }
             ],
-            "ID": "1111c562-f149-4457-b4e6-1a2735808695"
+            "ID": "3902ebdf-ad92-4976-b4f7-538a6a65d143"
           }
         ]
       },
@@ -1254,17 +1212,17 @@
                   "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
                   "SerializeProperty": "=\"差戻_\"&Subject"
                 },
-                "Content": "[件名]\r\n　差戻_[=Subject]\r\n\r\n[届出ID]\r\n　[=Notification.overnight_notification_id]\r\n\r\n[差戻し元]\r\n　[=ログイン者名]\r\n\r\n[差戻し先]\r\n　[=Notification.notifier_name]\r\n\r\n[コメント]\r\n　[=Comment]\r\n\r\n[ステータス]\r\n　[=Status]\r\n\r\n[URL]\r\n　PC版\r\n　[=URL_PC]\r\n\r\n　モバイル版　※動作確認中のため、使用しないでください\r\n　[=URL_Mobile]\r\n",
+                "Content": "[件名]\r\n　差戻_[=Subject]\r\n\r\n[届出ID]\r\n　[=Notification.overnight_notification_id]\r\n\r\n[差戻し元]\r\n　[=ログイン者名]\r\n\r\n[差戻し先]\r\n　[=Notification.notifier_name]\r\n\r\n[コメント]\r\n　[=Comment]\r\n\r\n[ステータス]\r\n　[=Status]\r\n\r\n[URL]\r\n　[=URL]\r\n",
                 "EnhancedRecipient": {
                   "CommonValue": {
                     "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
                     "SerializeProperty": "=To"
                   }
                 },
-                "ID": "9ac158ddf48b4f92b29e4c2ebebc4ee5"
+                "ID": "d316de5a302c459b9652cde87e2ec6a6"
               }
             ],
-            "ID": "c052ab25-cfce-4eba-bb2c-d6846281d440"
+            "ID": "09914a1a-dae4-4bf1-a7c8-d1b7e6c22d20"
           },
           {
             "Condition": {
@@ -1290,17 +1248,17 @@
                   "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
                   "SerializeProperty": "=\"取消通知_\"&Subject"
                 },
-                "Content": "下記の終夜運転届が[=ログイン者名] さんによって取消されました。\r\n\r\n[件名]\r\n　取消通知_[=Subject]\r\n\r\n[届出ID]\r\n　[=Notification.overnight_notification_id]\r\n\r\n[ステータス]\r\n　[=Status]\r\n\r\n[URL]\r\n　PC版\r\n　[=URL_PC]\r\n\r\n　モバイル版　※動作確認中のため、使用しないでください\r\n　[=URL_Mobile]",
+                "Content": "下記の終夜運転届が[=ログイン者名] さんによって取消されました。\r\n\r\n[件名]\r\n　取消通知_[=Subject]\r\n\r\n[届出ID]\r\n　[=Notification.overnight_notification_id]\r\n\r\n[ステータス]\r\n　[=Status]\r\n\r\n[URL]\r\n　[=URL]",
                 "EnhancedRecipient": {
                   "CommonValue": {
                     "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
                     "SerializeProperty": "=To"
                   }
                 },
-                "ID": "c43dd18fefbc417baa0af44ef0cf6f81"
+                "ID": "7269f26cdd2d463fac009f893ec366b2"
               }
             ],
-            "ID": "e6be2c28-bcf7-4e64-a5b6-f95da3bac27a"
+            "ID": "6055dd17-42b0-4b46-890d-60006e82dbae"
           },
           {
             "Condition": {
@@ -1333,10 +1291,10 @@
                     "SerializeProperty": "=To"
                   }
                 },
-                "ID": "1a8520c48c984c3d8598afa425d0f616"
+                "ID": "3dadeebcd5b8459aaff614599f435567"
               }
             ],
-            "ID": "b06c06db-7ab4-4b6b-9285-1cbaa222a54e"
+            "ID": "9076549c-d0e9-4cac-9485-f5b0e0df3f97"
           },
           {
             "Condition": {
@@ -1363,17 +1321,17 @@
                   "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
                   "SerializeProperty": "=Subject"
                 },
-                "Content": "[件名]\r\n　[=Subject]\r\n\r\n[届出ID]\r\n　[=Notification.overnight_notification_id]\r\n\r\n[届出者]\r\n　[=Notification.notifier_name]\r\n\r\n[運転期間]\r\n　[=TEXT(Notification.overnight_start_dete, \"yyyy/M/d (aaa)\")] ～ [=TEXT(Notification.overnight_end_date, \"yyyy/M/d (aaa)\")]\r\n\r\n[コメント]\r\n　[=Comment]\r\n\r\n[ステータス]\r\n　[=Status]\r\n\r\n[URL]\r\n　PC版\r\n　[=URL_PC]\r\n\r\n　モバイル版　※動作確認中のため、使用しないでください\r\n　[=URL_Mobile]",
+                "Content": "[件名]\r\n　[=Subject]\r\n\r\n[届出ID]\r\n　[=Notification.overnight_notification_id]\r\n\r\n[届出者]\r\n　[=Notification.notifier_name]\r\n\r\n[運転期間]\r\n　[=TEXT(Notification.overnight_start_dete, \"yyyy/M/d (aaa)\")] ～ [=TEXT(Notification.overnight_end_date, \"yyyy/M/d (aaa)\")]\r\n\r\n[コメント]\r\n　[=Comment]\r\n\r\n[ステータス]\r\n　[=Status]\r\n\r\n[URL]\r\n　[=URL]\r\n",
                 "EnhancedRecipient": {
                   "CommonValue": {
                     "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
                     "SerializeProperty": "=To"
                   }
                 },
-                "ID": "6d00836f92f04f5ea94d6f0a9a7ae9d5"
+                "ID": "43371ba1094b4fe7a7fc9d74517be658"
               }
             ],
-            "ID": "72501781-5936-4176-a6eb-dd9748fc48c4"
+            "ID": "e4d5415b-9981-4119-b904-5f4a2d4efc73"
           }
         ]
       }
@@ -1466,7 +1424,7 @@
                 ]
               }
             ],
-            "ID": "3b9b3de8-f893-4f16-af75-752c549a4efb"
+            "ID": "50a03a6b-16bb-49c2-b374-e46c911796d9"
           }
         ]
       }
@@ -1560,7 +1518,7 @@
                     ]
                   }
                 },
-                "ID": "60c8fbf327ee44b3afcd82df42d9b4e8"
+                "ID": "220fdc4b612a4ffaac70211aa2e527f1"
               },
               {
                 "$type": "SetCurrentRowCommand.SetCurrentRowCommand, SetCurrentRowCommand",
@@ -1597,7 +1555,7 @@
                 }
               }
             ],
-            "ID": "16903970-612f-44fa-ace2-1352be9c2a17"
+            "ID": "3c426fda-a452-439b-941b-9e844c0a8593"
           },
           {
             "Condition": {
@@ -1666,7 +1624,7 @@
                     ]
                   }
                 },
-                "ID": "033b865981e74564a3791304dc20d825"
+                "ID": "8e25087741d7402e81b62b2a80481db3"
               },
               {
                 "$type": "SetCurrentRowCommand.SetCurrentRowCommand, SetCurrentRowCommand",
@@ -1703,7 +1661,7 @@
                 }
               }
             ],
-            "ID": "8aaea74b-dc57-48ef-b666-ac9dd6973663"
+            "ID": "1d7cc40f-f0c6-4dd9-ba83-3b33d998ebe0"
           }
         ]
       }
@@ -1722,7 +1680,7 @@
       {
         "$type": "Forguncy.Model.RunJavaScriptCommand, ServerDesignerCommon",
         "JavaScript": "var helper = Forguncy.Helper;\r\n\r\n// アプリケーションのルートURLを取得する。\r\nvar root = helper.SpecialPath.getBaseUrl();\r\n\r\nvar origin = window.location.origin;\r\n\r\nvar url = origin + root;\r\n\r\n//Forguncy.Page.getCell(\"rootURL\").setValue(url);\r\n\r\nForguncy.CommandHelper.setVariableValue(\"rootURL\", url);\r\n",
-        "ID": "2791362ecc904473b445853a3e82596f"
+        "ID": "c9c33a4c274846c892108424bbc4e777"
       },
       {
         "$type": "Forguncy.Model.ReturnCommand, ServerDesignerCommon",
@@ -1788,10 +1746,10 @@
                   "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
                   "SerializeProperty": "=\"【終夜運転】 一斉点検依頼\""
                 },
-                "ID": "d93702e78571490f83e4c2dc1161141a"
+                "ID": "60887203f8cc4bf7bb37bb841f61fda3"
               }
             ],
-            "ID": "e95e7365-5908-484a-ae72-aee08d5368e9"
+            "ID": "c1cd99fa-c679-4c71-979a-42fdf0faf37f"
           },
           {
             "CommandList": [
@@ -1835,7 +1793,7 @@
                     ]
                   }
                 },
-                "ID": "4a72172e8fab4de08304d249f9e290e4"
+                "ID": "5e6ce18f357d4afcbbed15d1db6f5b74"
               },
               {
                 "$type": "Forguncy.Model.Commands.SetParameterCommand, ServerDesignerCommon",
@@ -1844,10 +1802,10 @@
                   "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
                   "SerializeProperty": "=\"【終夜運転】 点検依頼_\"&Equipment"
                 },
-                "ID": "60462fa4a26240df9e86c8ff6d6bcb4f"
+                "ID": "e6dd300338f8497db056c7e27fbb6cc5"
               }
             ],
-            "ID": "afbce28d-1f87-4866-9896-8711bca545d5"
+            "ID": "6e2e3278-de6d-4910-b429-698ef431776f"
           }
         ]
       },
@@ -1858,7 +1816,7 @@
           "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
           "SerializeProperty": "=\"点検を開始してください\""
         },
-        "ID": "98a0d0d99ac946cb9e5fd976b07a7a9d",
+        "ID": "7710a33cb78e42a3bf0165ff5e45a0ea",
         "Disabled": true
       },
       {
@@ -1887,7 +1845,7 @@
           "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
           "SerializeProperty": "=rootURL&ENCODEURL(\"点検依頼・結果\")&\"?referer=mail\""
         },
-        "ID": "fa7575d37b9648ab8b0f084b9bc63cf0"
+        "ID": "62aa45a15c9f4a4fa7644684f54d7d5d"
       },
       {
         "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
@@ -1939,7 +1897,7 @@
                 "$type": "Forguncy.Model.ReturnCommand, ServerDesignerCommon"
               }
             ],
-            "ID": "84124dea-5f7d-47c6-b958-0733b934e368"
+            "ID": "ace28884-4216-430a-af59-0b17a2cd8ca7"
           }
         ]
       },
@@ -1980,7 +1938,7 @@
           },
           "TopCount": "1"
         },
-        "ID": "a718c1674caf407385e8124caea37326"
+        "ID": "993df7de944d44c1999d5f8c8366358a"
       },
       {
         "$type": "Forguncy.Model.SendMailCommand, ServerDesignerCommon",
@@ -2009,7 +1967,7 @@
           "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
           "SerializeProperty": "=点検依頼資料"
         },
-        "ID": "77e3c5cf2fa54b5f89a88950ff60d1fb"
+        "ID": "a2772dc9dd0b4c99949e449fd602362c"
       }
     ]
   }
