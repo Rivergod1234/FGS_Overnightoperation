@@ -711,12 +711,12 @@
                             ]
                           }
                         ],
-                        "ID": "d9a608cb-10da-47cd-ad46-977623b6e938"
+                        "ID": "5ece2e43-a655-4168-a9a7-d8e83e30b23f"
                       }
                     ]
                   }
                 ],
-                "ID": "3037f214-8aa1-4013-9b4c-3cbef2949acf"
+                "ID": "14f77369-d3f6-4255-805a-45f56aec3ef6"
               },
               {
                 "CommandList": [
@@ -902,7 +902,7 @@
                     ]
                   }
                 ],
-                "ID": "49b1d938-279c-4715-a60f-85dbf0e3c79d"
+                "ID": "0617796e-3415-4d31-b4a1-067d5f59f672"
               }
             ]
           }
@@ -993,7 +993,7 @@
                             ]
                           }
                         ],
-                        "ID": "21eac244-42ca-4a15-8552-a75687ef5021"
+                        "ID": "90b8b5d4-6b9b-4933-8a8f-707aa37c01d7"
                       }
                     ],
                     "Comments": "選択済みの機器がある場合は、ポップアップ先に引き渡す"
@@ -1059,7 +1059,7 @@
                     ]
                   }
                 ],
-                "ID": "9fe1338b-a72f-4bba-aeca-45a8656297b4"
+                "ID": "5b6ed9a3-4fdc-4012-8241-50bb3aa05c6b"
               }
             ]
           }
@@ -1180,7 +1180,7 @@
                     ]
                   }
                 ],
-                "ID": "2d61f53f-d973-411e-b1d7-b17ce2bac858"
+                "ID": "70f9a35e-bb0c-4e60-9ff4-5e3a7c108646"
               },
               {
                 "Condition": {
@@ -1244,7 +1244,7 @@
                     ]
                   }
                 ],
-                "ID": "a5b4a8ab-dd45-47cd-b494-2625185d5ca7"
+                "ID": "facca2e6-460a-4879-9dda-ee051ab15cdd"
               }
             ]
           },
@@ -1290,7 +1290,7 @@
                     ]
                   }
                 ],
-                "ID": "fd62e793-d673-453a-86e6-5bb11971431e"
+                "ID": "01625042-b7ac-479d-8fa2-602c3c0ce512"
               }
             ]
           },
@@ -1373,17 +1373,17 @@
                                     ]
                                   }
                                 ],
-                                "ID": "031ee016-94ef-4460-a464-55fc18940418"
+                                "ID": "9371cb90-b928-428c-a4bc-0c6355ef94c0"
                               }
                             ]
                           }
                         ],
-                        "ID": "89d2831b-5e05-4c68-bf40-bff083fc8ce3"
+                        "ID": "a364f174-8e42-4ecd-bcef-4111a2c02dd5"
                       }
                     ]
                   }
                 ],
-                "ID": "602d7fe5-5445-4a36-ac9e-1ee33ae616ef"
+                "ID": "63ec8ce3-95e4-4126-a405-c0b7292bc1c9"
               }
             ]
           },
@@ -1469,7 +1469,7 @@
                   }
                 ],
                 "Comments": "ログイン者が申請者の場合に取下ボタンを表示（未許可の届出が対象）",
-                "ID": "c3f2185f-3bd5-4ece-82d9-283cf389c2c5"
+                "ID": "0f1f8521-7e27-4453-b074-c2143b5e729d"
               }
             ]
           }
@@ -1582,7 +1582,7 @@
                 }
               }
             },
-            "ID": "db836e4c8da54a2e9bb334ee7325ee92"
+            "ID": "28e127645a2e40518a68e6a837b8862c"
           },
           {
             "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
@@ -1635,7 +1635,30 @@
                           "ColumnName": "delete_flg",
                           "Value": "1"
                         }
-                      ]
+                      ],
+                      "NextUpdateDataTableCommand": {
+                        "TableName": "T_OvernightGroup",
+                        "ShowConfirm": false,
+                        "ConfirmText": "本当に更新してもよろしいですか？",
+                        "RowsToUpdate": 1,
+                        "RowsToUpdateCondition": {
+                          "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                          "ColumnBindingInfo": {
+                            "TableName": "T_OvernightGroup",
+                            "ColumnName": "overnight_registration_id"
+                          },
+                          "Value": {
+                            "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                            "SerializeProperty": "=終夜運転機器申請!registration_id"
+                          }
+                        },
+                        "UpdateValues": [
+                          {
+                            "ColumnName": "delete_flg",
+                            "Value": "1"
+                          }
+                        ]
+                      }
                     }
                   },
                   {
@@ -1675,7 +1698,8 @@
                         "ColumnName": "delete_flg",
                         "Value": "1"
                       }
-                    ]
+                    ],
+                    "Disabled": true
                   },
                   {
                     "$type": "Forguncy.Model.LoopCommand, ServerDesignerCommon",
@@ -1697,12 +1721,7 @@
                               "CompareType": 1,
                               "ColumnBindingInfo": {
                                 "TableName": "T_OvernightGroup",
-                                "ColumnName": "overnight_registration_id",
-                                "RelationBinding": {
-                                  "RelatedTable": "T_OvernightRegistration",
-                                  "RelatedColumn": "overnight_registration_id",
-                                  "DisplayColumn": "delete_flg"
-                                }
+                                "ColumnName": "delete_flg"
                               },
                               "Value": "1"
                             },
@@ -1719,7 +1738,7 @@
                             }
                           }
                         },
-                        "ID": "2b4d619eb6b44a1d8a4745175440ce29"
+                        "ID": "8792bf90c89c429f9902d5f731abf5e0"
                       },
                       {
                         "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
@@ -1743,6 +1762,30 @@
                                 "TableName": "T_InstrumentBasicInformation",
                                 "ShowConfirm": false,
                                 "ConfirmText": "本当に更新してもよろしいですか？",
+                                "RowsToUpdate": 1,
+                                "RowsToUpdateCondition": {
+                                  "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+                                  "Condition1": {
+                                    "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                                    "ColumnBindingInfo": {
+                                      "TableName": "T_InstrumentBasicInformation",
+                                      "ColumnName": "EquipmentId"
+                                    },
+                                    "Value": {
+                                      "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                      "SerializeProperty": "=終夜運転機器申請!BA3"
+                                    }
+                                  },
+                                  "Condition2": {
+                                    "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                                    "CompareType": 1,
+                                    "ColumnBindingInfo": {
+                                      "TableName": "T_InstrumentBasicInformation",
+                                      "ColumnName": "DeleteFlag"
+                                    },
+                                    "Value": "1"
+                                  }
+                                },
                                 "UpdateValues": [
                                   {
                                     "ColumnName": "overnight_epuipment_flg",
@@ -1751,7 +1794,7 @@
                                 ]
                               }
                             ],
-                            "ID": "f78b3cce-757e-46e5-b035-a49c672fa43d"
+                            "ID": "3a3d34e7-e7f5-490a-80e1-f45c743c3e22"
                           }
                         ]
                       }
@@ -1824,6 +1867,14 @@
                           "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
                           "SerializeProperty": "=終夜運転機器申請!ログイン者名"
                         }
+                      },
+                      {
+                        "ParamReferObject": {
+                          "ParamID": "026fed63-f772-4974-8781-99be65195560",
+                          "ShareCommandContainerReferObject": {
+                            "ShareCommandContainerID": "d1657221-264f-4c03-b9e0-9124708cb42a"
+                          }
+                        }
                       }
                     ],
                     "ReturnPropertiesTo": []
@@ -1840,7 +1891,7 @@
                     "ReloadData": true
                   }
                 ],
-                "ID": "92d76009-72eb-4992-b02a-6c3a9d8f7af9"
+                "ID": "7332962b-e1db-4175-9225-1ce6b1c19a83"
               }
             ]
           }
@@ -1996,7 +2047,7 @@
                 }
               }
             },
-            "ID": "409870db69124850b085a4b78a678aa4"
+            "ID": "55ffcfc1916745d6bfea40e81474f31a"
           },
           {
             "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
@@ -2102,7 +2153,7 @@
                     "ReloadData": true
                   }
                 ],
-                "ID": "605ac889-0442-42e6-a553-f3fd131ad380"
+                "ID": "2ede4dff-1a26-443a-ac0d-7b22e4f1f671"
               }
             ]
           }
@@ -2141,7 +2192,7 @@
                     "ActionName": "取下"
                   }
                 ],
-                "ID": "05e0014b-e21e-4d14-92a5-e6ab51e52081"
+                "ID": "f7bccd51-d36a-4cb5-af6b-44cf02669e51"
               }
             ]
           },
@@ -2920,6 +2971,19 @@
             "$type": "Forguncy.ConditionFormat.FormulaRule, ServerDesignerCommon",
             "Formula": {
               "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+              "SerializeProperty": "=AND(終夜運転機器申請!registration_id=\"\",終夜運転機器申請!WF状態=\"\")"
+            },
+            "StyleInfo": {
+              "Underline": null,
+              "Strikethrough": null
+            },
+            "IsInvisible": true,
+            "StopIfTrue": true
+          },
+          {
+            "$type": "Forguncy.ConditionFormat.FormulaRule, ServerDesignerCommon",
+            "Formula": {
+              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
               "SerializeProperty": "=AND(OR(終夜運転機器申請!WF状態=\"環境安全室長許可待ち\",終夜運転機器申請!WF状態=\"許可\"),OR(COUNTIF(終夜運転機器申請!承認者_環境,\"*\"&終夜運転機器申請!$S$2&\"*\")>0,終夜運転機器申請!$S$2=\"Administrator\"))"
             },
             "StyleInfo": {
@@ -3149,13 +3213,13 @@
                             ]
                           }
                         ],
-                        "ID": "96ceed25-832a-4531-9b4f-2e3fdb7388b5"
+                        "ID": "ff3cf8e3-b1cb-438c-8cd8-79b4c07c08ba"
                       }
                     ]
                   }
                 ],
                 "Comments": "差戻後の再申請時に、機器情報はクリアしない（注意：非表示エリアの運転部屋関連の情報もクリアしない）",
-                "ID": "e8397c51-f691-4cc1-ae59-59dadeae47ef"
+                "ID": "dda142f9-0996-4fa6-b9e9-8b4555aae0af"
               },
               {
                 "CommandList": [
@@ -3309,13 +3373,13 @@
                             "UpdateRowType": 2
                           }
                         ],
-                        "ID": "e360d2de-a7e6-4743-a3ae-35e1900a6e49"
+                        "ID": "dc1c9a12-1a2c-486b-b77c-59e043d7a097"
                       }
                     ]
                   }
                 ],
                 "Comments": "機器情報を含む全ての入力内容をクリア（注意：非表示エリアの運転部屋関連の情報もクリア）",
-                "ID": "c3b73037-c265-4400-bcc3-ef4e1000d246"
+                "ID": "9e60c76d-9281-4814-b7d9-f41214735d1a"
               }
             ]
           }
@@ -3519,7 +3583,7 @@
                     "$type": "Forguncy.Model.StopCommand, ServerDesignerCommon"
                   }
                 ],
-                "ID": "76542eae-a229-4882-8845-475d21e4cd7b"
+                "ID": "fbec212d-560c-4bd2-899e-cbe4b37c9e2b"
               }
             ]
           },
@@ -3582,7 +3646,7 @@
                     ]
                   }
                 ],
-                "ID": "42e15012-c558-40d9-a260-a8cd3f49f680"
+                "ID": "a7853d6e-97af-43aa-be64-7c0b0752b277"
               },
               {
                 "CommandList": [
@@ -3594,7 +3658,7 @@
                     "UpdateValues": []
                   }
                 ],
-                "ID": "115d5d9c-1b84-4006-a13c-385e470ebc16"
+                "ID": "6c1f5700-6066-44ca-9678-eae68136dc98"
               }
             ]
           },
@@ -4052,7 +4116,7 @@
                     "Comments": "処理後 初期化"
                   }
                 ],
-                "ID": "55cbc0bc-68c6-4fb9-8b87-d37bf9d18e4e"
+                "ID": "f2254762-5c4b-4497-b772-b23d8da5bc72"
               }
             ]
           }
@@ -6835,7 +6899,7 @@
                 "Comments": "T_OvernightRegistration（キック用）"
               }
             ],
-            "ID": "9016f4c5-afd2-4a54-95ee-d6aa7d7b856d"
+            "ID": "447f6e4d-b173-4b88-9611-dd5ecb7ba4bb"
           }
         ]
       },
@@ -6946,4 +7010,4 @@
       "Formula": "終夜運転機器申請!$BH$31"
     }
   ]
-}//cEMGdJfG7GjbgqwSPlGkSy83lZZBl7jJTG8w6T3s1xAroqYLJS8NOJQCxr8Kjsh5gJQjhJPHd6v16+9yJFjKD3nf4sm1Z+jkKZiNVmrmzTBPLIpiGR1UmRhFUEXVbBDDzeYJV0Sg42vDIZb5edqwNTIA3s1W++CITJrgPrgk93pY+F3qua/8GEcwBnml1TTLyAN1fzcqlspKTn0J07CSts1G2tIdNC1wHazErBFl/uxYOsSJx2PWMPAgIU7Qw7iItEDXqBqv8nI6KN/LZdbrtYT/ICvTRtVyUk5TkYiX2zU4tn4TT8mFduGd9A01xWZIYOic+ulaFv3J5DY+8QSQam7H2ag7kW0cNVqWFiuLPuxcn5sWYh/etSr294/mfYZW3ES+J+71BQF5VicqdcP7Jt6A9OdB+jT4sxV1fTV4GJr0n84eNv6nl3l5UDNKolpT2ZZV2rHUmlsd8ZCH/2C2oBXqMVN8GZEb5UqGCd8j/DlfUDkxtltPFtTtQVScyFcBwlLZl1wOG+8DG1TwIwo1rdmxeS2yydES2WG2cd2SN9+3X/Y/59RHZcwRIr8wn1wj22fvwxpT5pJS8gdiYmJPVus36hXUFJlG0bLWQRGu0329wnVuhcXZQRti16U9rSOe2qr4Sbng49/1DqaVHXSiq2QwIgje8lzamYhIWKhyrJ/gkHnxm1o891wbfe5AH7P+3dzEbKvfSI2H53vlz/dxtU2cVSxZ+MN+kqUbeo3NRak09QpeB6pDjhzUdq6DYGhL0XGIkyA/l35+2NNkLxQ5+f0QEvOFRfBrAJ+cHG+jsQiXQQLoKPaMniVUCwIvnAExV8MvS9OPn82wlpaTuBMSs5Ego0npFHEaamm/8LXO+9VEKvg5lVom4Tl259XWlBxg3f1dZW/d36jKWsDiBOSCIA==|920
+}//EotlJGZFHymuKzk+kRQFSrujb8Z3pQkTmbAls11eP9ia5rUljM+WWqk9qeM9mjIwLHCNfy0BHccpmwX1xTNz/Dl/KGQtc5HAHEaRns8sX05iSb4mJqdCOk91EoNxyNVL3878eXn3HBvnWnFyXoH5YI8Ggbga2qORtPGPgmMGyFi9+VybPHilxP8ODq3Ncb6kR51BsN0/1KLFfnQkYUEpjRyuqN09koGTvcjPBGbIMHTlvc4oSvVFMu2i9hUHXv/4Nwltlo4DWJGO1akUEjCaXu14+HgWBXlSH9/YQplI3jo/D4XnF2cr379a7m1u2vCsc9hTKK7O5p4Be0YoB/8Tu/ngHwAYLJkmSPbFpVrF2AFqp99rcDTbsDklMQTtGmxychHz/37zJu7Zv2JC4YU8ObYqCkCqEfE5XVi5PzFrztfD9ELEyjxzDDgcgokSDGnwnARYifz3/Bwsyx0Y7FsFHKc+tUrOLmc2XO02YS7KqyvJfmnG9U19xiFhUZBcTxURj74/3IsePjXAuTbghDXJfhUuwBaLd00dfHPAXYvC9zjpBKvdmbnOT3GbUQoaGz0vJUmKFPWckgSu4+ZXd8mE92Z7ZZpzHNwJpXMntBCFM7UmijrXy83oDNsTpOdzXolrA87if/KGWBfYoFhiAITyZ3iHe34N4vyWN5jjY2LvS4JhHWgaaP9ZGxC3iSaggNjzaPP7dQt3DIS03fw3baCXv9wrs7gOzHZL5kOfYrG93BVdBhgUiwsSkqV+qE5TF4N+cIpvX6B9XHppFAeDUoPt/VR1O6cPlrXNUab7ScQhopKAvib85VWtkx/1/LyFuAYiSFYO+NO9g8992miVeWqSOapwRgMokn4/ZTzJvbWHGcJ3XGbi1b4GhMLKOjXJ5BD9cuyj6NX84peO5qgYTZiXOw==|920
