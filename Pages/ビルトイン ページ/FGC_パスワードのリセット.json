@@ -107,62 +107,34 @@
     "Styles": [
       {
         "FontSize": 37.333332061767578,
-        "Foreground": 0,
-        "BorderBottom": null,
-        "BorderTop": null,
-        "BorderLeft": null,
-        "BorderRight": null
+        "Foreground": 0
       },
       {
-        "Foreground": 0,
-        "BorderBottom": null,
-        "BorderTop": null,
-        "BorderLeft": null,
-        "BorderRight": null
+        "Foreground": 0
       },
       {
         "Foreground": 1,
         "VerticalAlignment": 2,
         "Underline": null,
-        "Strikethrough": null,
-        "BorderBottom": null,
-        "BorderTop": null,
-        "BorderLeft": null,
-        "BorderRight": null
+        "Strikethrough": null
       },
       {
-        "Formatter": 3,
-        "BorderBottom": null,
-        "BorderTop": null,
-        "BorderLeft": null,
-        "BorderRight": null
+        "Formatter": 3
       },
       {
         "FontSize": 14.0,
         "Foreground": 4,
-        "HorizontalAlignment": 5,
-        "BorderBottom": null,
-        "BorderTop": null,
-        "BorderLeft": null,
-        "BorderRight": null
+        "HorizontalAlignment": 5
       },
       {
         "FontSize": 14.0,
-        "FontWeight": 6,
-        "BorderBottom": null,
-        "BorderTop": null,
-        "BorderLeft": null,
-        "BorderRight": null
+        "FontWeight": 6
       },
       {
         "FontSize": 14.0,
         "FontWeight": 6,
         "Foreground": 7,
-        "HorizontalAlignment": 8,
-        "BorderBottom": null,
-        "BorderTop": null,
-        "BorderLeft": null,
-        "BorderRight": null
+        "HorizontalAlignment": 8
       }
     ],
     "Types": {
@@ -194,22 +166,18 @@
     "SheetStyle": {
       "FontFamily": 9,
       "Underline": false,
-      "Strikethrough": false,
-      "BorderBottom": null,
-      "BorderTop": null,
-      "BorderLeft": null,
-      "BorderRight": null
+      "Strikethrough": false
     }
   },
   "Spans": [
     "5,12,3,23",
-    "8,14,2,20",
-    "11,19,2,1",
     "11,22,3,12",
-    "16,19,2,1",
     "16,22,3,12",
     "21,25,2,5",
-    "21,30,2,5"
+    "21,30,2,5",
+    "8,14,2,20",
+    "11,19,2,1",
+    "16,19,2,1"
   ],
   "BackgroundPictures": [
     {
@@ -220,7 +188,7 @@
       },
       "IsAutomaticStroke": false,
       "IsAutomaticFill": false,
-      "Name": "128a3b7a-42ed-467b-bac2-105b5a5b7969",
+      "Name": "3f3472c7-d700-4840-869e-07837142e4f7.png",
       "Location": "200,80",
       "Size": "540,360"
     }
@@ -228,10 +196,8 @@
   "PageInfo": {
     "$type": "Forguncy.Model.Pages.NormalPage, ServerDesignerCommon",
     "MasterPageName": "FGC_ユーザーマスターページ",
+    "MobilePageName": "FGC_パスワードのリセット_モバイル",
     "Title": "パスワードのリセット",
-    "AuthorizeInfo": {
-      "VisitMode": 2
-    },
     "RowBreakLines": [],
     "RepeatRangeSettings": [],
     "IsBuiltInPage": true
@@ -240,4 +206,4 @@
     "Margin": {},
     "PaperSize": {}
   }
-}//zLOybCuJOC3S0LQu6YU9kgJ53KqqUN9k64uxzok5mQKuFkU05vI8AqXkhHuaZS6FsswHpRS+rzy13hxtii06L7xkAm9SxGBRJ1rLCReyAlKh/j0OaCvadHddyYqJ+rJOu0plhYZJmYAVxu1OoRb1R0hc9k4zmISJOTcOScoKz/JLC16wLOFUjWL1qPNLaGgawAImgAE2hmWLW8cnWU919xxKp27iIY+BxbS0iibO+3RrXfxuYRINHccwsseiNGlChgnWNBexwekqUBJtRBUlRApNoo9gniB/9sheoMsD5HvyAo0SEZFtmJcXMtZZ5dTo2wAa3JDeposUM9+bJfrLHrfpps+lMyigtp2tWUaUBYDOwzc0lMPkD1qsAUPTENHFgaIeLNRSoY5MDLSe1nihcyNkWCG6ldSaaJuZQQJUoUY5HlUowBQiabIET3bK0thNNnXBp/yk+vRuZVgcBw8hYxHe4ls5pMMUDR8Js+YyQVY0HVAKPgKYBepomOxj8eS6mtwpbNBOxIDRJWFyXo5Ndn8GgI84Q6UIPFWpPRwfxxbj+BJ1+mMQMLyoZqGuEWan3bTCCwU5J62MRcMZ23rWCXrggcyMpiKls5Y9mcjYTBwKt82id0OVuw9R6QU6amO0cCd1y+lpd773x+OgzgbmKlW/qe7CYXBJakhJk7bDwuYrdpqIYnjxDFUUS7itDYndTz2QgYr2oXHlAs8gxaeRFhNWsR5MRIX7XrzCMc/XIePgBx2FHtCeJ0yKOrYbHKPdQsTN8PDn0fYKv6Lkod4eUFP/zF8LEps1qpimovMcm/ZgKVjhW6sajejB6sVj2aG6rBIC1lrUNIbJ9FDnNgNWRAdy+Tv2Qt8PQnE4GIgJBuSQ3KHALPqVP2P4ypkKOnsVaB4q2aJm99PiJj4JXexbJA==|920
+}//xRfIxtmbSJizf1plMOF2wpbhFrRaia8h5qu2F00wAVLik98kC75I9pFj8IwN6k77k4jD8EcrxINnxubBxTeHfN5KgOnkjsAPb/pN3KEInX2LHm5yE++dUzdM4pBEirVWnZLnQDEI0hVjpBhJMRtExWuA7fLi0MKz7d/J/eHbX1y6KJuWDG6uCxJ4z0DgcBSUfHOvFwymnCj8Rc64+E3AiYlzCktbx6xJDAwacoyFYc8X19R4xcB6ia+rq1onvEtBIz1j7xs0WJuqf8ONC7uYZTakLFybFgJST44H3qlSTOAylHzYfm81oJKnd+v5Gyv8lJAW8CHtDzUlCooS7z4ic4JjX5QAoK7vmf3qBE3jnrYyOAA2ODrWFcEZAcFFBH9T67Xos7hE4xxWPdOSZkABIXgyHOiHjpwhr6lPr/3RpQVxqxipPbbWnSjJwCnccTYtZN7EdrvTYuXVZu9lV+NbAycrB5oxw5XmFavIpsBQkf6I8P4RQ/G9e3nHIGZUvUmPn1apDpz+2Ryqsi/1DnF1f5X4/Goz0EvsOQJ/uEditf3FdzVatLSXjF5nA5++wC7C7tNZ4y6fV4efZoX0NuDVgnuIOdR6rrFLjdFCh4MGLGajhAdDAQuoBKR4hkZR6gMYGt+Z/6q1qxQGYczNkVQ7N1Yo+iEEw1rWJ/2HIy4qzVOjCogLuFy9WVvZUQ8aWM9juagojeqGSbASEvAyACc349Mea6mhs3q0PFMt9bNde9eWO9flx6RXwE2RqmYLZe2ohvhhyLIdJuvEZ56bSKZYpFI6CUSSNo54jQhRWLet1oQBKgwp3YSuoznzBS7/Y4eqv3/w0sleyjgGOttFINqjbLq8MULeDvb0oEuHibiyhM799O2PVwXvxIFHJcLtsgJ9A2tdZlOas6gSwX4Yq5Fgrw==|920

@@ -267,7 +267,24 @@
       47,
       48,
       49,
-      56
+      56,
+      57,
+      58,
+      59,
+      60,
+      61,
+      62,
+      63,
+      64,
+      65,
+      66,
+      67,
+      68,
+      69,
+      70,
+      71,
+      72,
+      73
     ],
     "Count": 74
   },
@@ -275,22 +292,37 @@
     "RowColumnAttachedInfos": {
       "66": {
         "GridRowColumnDefinition": {
-          "DesignLengthInPixel": 146.0
+          "DesignLengthInPixel": 146.0,
+          "IsHidden": true
         }
       },
       "67": {
         "GridRowColumnDefinition": {
-          "DesignLengthInPixel": 30.0
+          "DesignLengthInPixel": 30.0,
+          "IsHidden": true
         }
       },
       "68": {
         "GridRowColumnDefinition": {
-          "DesignLengthInPixel": 20.0
+          "DesignLengthInPixel": 20.0,
+          "IsHidden": true
         }
       }
     },
     "InLogicalVisibleIndexes": [
-      59
+      59,
+      60,
+      61,
+      62,
+      63,
+      64,
+      65,
+      66,
+      67,
+      68,
+      69,
+      70,
+      71
     ],
     "Count": 72
   },
@@ -636,7 +668,7 @@
                     "Comments": "編集モードフラグをセット"
                   }
                 ],
-                "ID": "878da5ea-2703-4f87-99c8-98557d346682"
+                "ID": "9f17c8a1-90d2-4f00-bd7f-522c3132720e"
               },
               {
                 "CommandList": [
@@ -725,7 +757,7 @@
                     ]
                   }
                 ],
-                "ID": "7469aa1f-9f8f-45cb-a48f-8f970e755590"
+                "ID": "a1ca140d-7a73-4cb0-807b-06264f8a361c"
               }
             ]
           },
@@ -778,7 +810,7 @@
                     ]
                   }
                 ],
-                "ID": "1e4af6d8-f084-4b4b-a02d-b8bb42bd9906"
+                "ID": "2123357c-e6c9-4673-84e3-332e183fe913"
               },
               {
                 "CommandList": [
@@ -795,7 +827,7 @@
                     ]
                   }
                 ],
-                "ID": "3b03a353-1432-4a84-8084-97914cdc12a5"
+                "ID": "1f13f363-f3eb-4d1a-9ce7-6133c4aa7a88"
               }
             ],
             "Disabled": true
@@ -843,7 +875,7 @@
                     ]
                   }
                 ],
-                "ID": "55a827b4-f7b8-4ee2-b546-9136b6b45c25"
+                "ID": "5d71055b-c5f3-47ac-8524-f3673f39e9a8"
               }
             ]
           }
@@ -958,7 +990,7 @@
                   }
                 ],
                 "Comments": "長期終夜の場合",
-                "ID": "c4d32eb9-65c9-43fd-a51e-22cccaf88a1e"
+                "ID": "0791ef1e-e53b-413e-9726-5a03db2e6d4b"
               },
               {
                 "CommandList": [
@@ -991,7 +1023,7 @@
                     ]
                   }
                 ],
-                "ID": "b9f4f200-b1d6-442e-8d66-aebb3859b103"
+                "ID": "29670381-274e-4588-80a2-adb913bde2ab"
               }
             ]
           },
@@ -1157,7 +1189,7 @@
                             ]
                           }
                         ],
-                        "ID": "3e1ee94b-3657-4908-97d2-c5c48fda490b"
+                        "ID": "00cbf905-0cc4-4f89-914d-4ad89619d97f"
                       },
                       {
                         "Condition": {
@@ -1272,7 +1304,7 @@
                             ]
                           }
                         ],
-                        "ID": "e1480109-221a-4660-9cec-4099eac1acd0"
+                        "ID": "67fcbed1-9fb0-47b5-9322-0a2c12b82cbf"
                       },
                       {
                         "Condition": {
@@ -1387,7 +1419,7 @@
                             ]
                           }
                         ],
-                        "ID": "6011e95a-3fc6-44e7-8396-98a63b40e84e"
+                        "ID": "b8a8f6fa-e3d3-419b-92fc-c81905069226"
                       },
                       {
                         "CommandList": [
@@ -1469,12 +1501,12 @@
                             ]
                           }
                         ],
-                        "ID": "e487e819-2d07-41c9-b39e-b2f22b4f9c40"
+                        "ID": "00775b13-d323-4f14-9d61-d225f4f26c85"
                       }
                     ]
                   }
                 ],
-                "ID": "f1406253-c0ac-4205-8e7d-ea706f49d903"
+                "ID": "b21b4fd6-a9d3-4532-89dd-df095e3da02d"
               }
             ]
           },
@@ -1507,7 +1539,7 @@
                     ]
                   }
                 ],
-                "ID": "9c7dfe16-cbbf-4393-93cd-df6675e016f7"
+                "ID": "2470d62d-2b27-47f6-8801-919ff114cc28"
               }
             ]
           },
@@ -1577,7 +1609,60 @@
                   }
                 ],
                 "Comments": "ログイン者が申請者の場合に取下ボタンを表示（許可された届出も対象）",
-                "ID": "647c7ca0-a021-4c8d-b97f-4aa7fce808d5"
+                "ID": "57ddefcb-42ed-4983-87c4-9d4280fbc0dc"
+              }
+            ],
+            "Disabled": true
+          },
+          {
+            "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
+            "ConditionAndCommandPairList": [
+              {
+                "Condition": {
+                  "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+                  "Condition1": {
+                    "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                    "param": {
+                      "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
+                      "cellLocations": [
+                        {
+                          "SerializeProperty": "=終夜運転届出!WF状態"
+                        }
+                      ]
+                    },
+                    "value": "取下",
+                    "compareType": 1
+                  },
+                  "Condition2": {
+                    "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                    "param": {
+                      "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
+                      "cellLocations": [
+                        {
+                          "SerializeProperty": "=終夜運転届出!WF状態"
+                        }
+                      ]
+                    },
+                    "compareType": 1
+                  }
+                },
+                "CommandList": [
+                  {
+                    "$type": "Forguncy.Model.SetCellPropertyCommand, ServerDesignerCommon",
+                    "PropertyItemsList": [
+                      {
+                        "TargetCells": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=終夜運転届出!BB17"
+                        },
+                        "PropertyType": 1,
+                        "Value": true
+                      }
+                    ]
+                  }
+                ],
+                "Comments": "ログイン者が申請者の場合に限らず、取下ボタンを表示（許可された届出も対象）",
+                "ID": "1560fa01-32a9-465c-800a-948eaae87dca"
               }
             ]
           },
@@ -1628,7 +1713,7 @@
                     ]
                   }
                 ],
-                "ID": "2e5f73ac-09e2-447e-b611-3457cb596ba1"
+                "ID": "f9bf0a0a-99c4-42c6-a499-ec934aca816e"
               }
             ]
           }
@@ -1804,107 +1889,6 @@
             "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
             "ConditionAndCommandPairList": [
               {
-                "Condition": {
-                  "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
-                  "param": {
-                    "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
-                    "cellLocations": [
-                      {
-                        "SerializeProperty": "=終夜運転届出!ログインアカウント"
-                      }
-                    ]
-                  },
-                  "value": {
-                    "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                    "SerializeProperty": "=終夜運転届出!T5"
-                  },
-                  "compareType": 1
-                },
-                "CommandList": [
-                  {
-                    "$type": "Forguncy.Model.ShareCommand, ServerDesignerCommon",
-                    "ShareCommandContainerRefer": {
-                      "ShareCommandContainerID": "ff482220-5cbd-4674-be7b-f76da8a4d74e"
-                    },
-                    "Params": [
-                      {
-                        "ParamReferObject": {
-                          "ParamID": "89ea1fe1-72f1-4ef0-82a0-c1b13a58bb87",
-                          "ShareCommandContainerReferObject": {
-                            "ShareCommandContainerID": "ff482220-5cbd-4674-be7b-f76da8a4d74e"
-                          }
-                        },
-                        "Value": {
-                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                          "SerializeProperty": "=終夜運転届出!notification_id"
-                        }
-                      },
-                      {
-                        "ParamReferObject": {
-                          "ParamID": "0c04d529-c57a-42d8-b7e4-d393e03bc89f",
-                          "ShareCommandContainerReferObject": {
-                            "ShareCommandContainerID": "ff482220-5cbd-4674-be7b-f76da8a4d74e"
-                          }
-                        },
-                        "Value": "届出取消"
-                      },
-                      {
-                        "ParamReferObject": {
-                          "ParamID": "329f661d-40e9-4e2a-988a-4b3b6f694d30",
-                          "ShareCommandContainerReferObject": {
-                            "ShareCommandContainerID": "ff482220-5cbd-4674-be7b-f76da8a4d74e"
-                          }
-                        }
-                      },
-                      {
-                        "ParamReferObject": {
-                          "ParamID": "841050d0-44dc-4966-9e4f-90f85ae2a0aa",
-                          "ShareCommandContainerReferObject": {
-                            "ShareCommandContainerID": "ff482220-5cbd-4674-be7b-f76da8a4d74e"
-                          }
-                        },
-                        "Value": {
-                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                          "SerializeProperty": "=終夜運転届出!通知元アドレス"
-                        }
-                      },
-                      {
-                        "ParamReferObject": {
-                          "ParamID": "e8a5f1c4-7dca-46db-94bc-91eed9d18ed7",
-                          "ShareCommandContainerReferObject": {
-                            "ShareCommandContainerID": "ff482220-5cbd-4674-be7b-f76da8a4d74e"
-                          }
-                        },
-                        "Value": {
-                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                          "SerializeProperty": "=終夜運転届出!差戻先アドレス"
-                        }
-                      },
-                      {
-                        "ParamReferObject": {
-                          "ParamID": "85646e77-9986-45db-9dd0-60f4cae853f8",
-                          "ShareCommandContainerReferObject": {
-                            "ShareCommandContainerID": "ff482220-5cbd-4674-be7b-f76da8a4d74e"
-                          }
-                        },
-                        "Value": {
-                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                          "SerializeProperty": "=終夜運転届出!ログイン者名"
-                        }
-                      }
-                    ],
-                    "ReturnPropertiesTo": []
-                  }
-                ],
-                "ID": "e86fabd5-3ee1-4bb2-bb21-bb5a9650b43d"
-              }
-            ],
-            "Disabled": true
-          },
-          {
-            "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
-            "ConditionAndCommandPairList": [
-              {
                 "ConfirmDialogSettings": {
                   "Title": "確認",
                   "FormulaText": "届出を取り下げます。よろしいですか？",
@@ -1918,9 +1902,109 @@
                     "TableName": "T_OvernightNotification",
                     "NextState": "取下",
                     "ActionName": "取下"
+                  },
+                  {
+                    "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
+                    "ConditionAndCommandPairList": [
+                      {
+                        "Condition": {
+                          "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                          "param": {
+                            "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
+                            "cellLocations": [
+                              {
+                                "SerializeProperty": "=終夜運転届出!ログインアカウント"
+                              }
+                            ]
+                          },
+                          "value": {
+                            "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                            "SerializeProperty": "=終夜運転届出!T5"
+                          },
+                          "compareType": 1
+                        },
+                        "CommandList": [
+                          {
+                            "$type": "Forguncy.Model.ShareCommand, ServerDesignerCommon",
+                            "ShareCommandContainerRefer": {
+                              "ShareCommandContainerID": "ff482220-5cbd-4674-be7b-f76da8a4d74e"
+                            },
+                            "Params": [
+                              {
+                                "ParamReferObject": {
+                                  "ParamID": "89ea1fe1-72f1-4ef0-82a0-c1b13a58bb87",
+                                  "ShareCommandContainerReferObject": {
+                                    "ShareCommandContainerID": "ff482220-5cbd-4674-be7b-f76da8a4d74e"
+                                  }
+                                },
+                                "Value": {
+                                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                  "SerializeProperty": "=終夜運転届出!notification_id"
+                                }
+                              },
+                              {
+                                "ParamReferObject": {
+                                  "ParamID": "0c04d529-c57a-42d8-b7e4-d393e03bc89f",
+                                  "ShareCommandContainerReferObject": {
+                                    "ShareCommandContainerID": "ff482220-5cbd-4674-be7b-f76da8a4d74e"
+                                  }
+                                },
+                                "Value": "届出取消"
+                              },
+                              {
+                                "ParamReferObject": {
+                                  "ParamID": "329f661d-40e9-4e2a-988a-4b3b6f694d30",
+                                  "ShareCommandContainerReferObject": {
+                                    "ShareCommandContainerID": "ff482220-5cbd-4674-be7b-f76da8a4d74e"
+                                  }
+                                }
+                              },
+                              {
+                                "ParamReferObject": {
+                                  "ParamID": "841050d0-44dc-4966-9e4f-90f85ae2a0aa",
+                                  "ShareCommandContainerReferObject": {
+                                    "ShareCommandContainerID": "ff482220-5cbd-4674-be7b-f76da8a4d74e"
+                                  }
+                                },
+                                "Value": {
+                                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                  "SerializeProperty": "=終夜運転届出!通知元アドレス"
+                                }
+                              },
+                              {
+                                "ParamReferObject": {
+                                  "ParamID": "e8a5f1c4-7dca-46db-94bc-91eed9d18ed7",
+                                  "ShareCommandContainerReferObject": {
+                                    "ShareCommandContainerID": "ff482220-5cbd-4674-be7b-f76da8a4d74e"
+                                  }
+                                },
+                                "Value": {
+                                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                  "SerializeProperty": "=終夜運転届出!差戻先アドレス"
+                                }
+                              },
+                              {
+                                "ParamReferObject": {
+                                  "ParamID": "85646e77-9986-45db-9dd0-60f4cae853f8",
+                                  "ShareCommandContainerReferObject": {
+                                    "ShareCommandContainerID": "ff482220-5cbd-4674-be7b-f76da8a4d74e"
+                                  }
+                                },
+                                "Value": {
+                                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                  "SerializeProperty": "=終夜運転届出!ログイン者名"
+                                }
+                              }
+                            ],
+                            "ReturnPropertiesTo": []
+                          }
+                        ],
+                        "ID": "f96eb7f6-de81-4165-a0bb-173079ba01d4"
+                      }
+                    ]
                   }
                 ],
-                "ID": "5068f11a-43c8-4f74-9abc-74c45f1532ee"
+                "ID": "625e77be-ddb7-4fcd-be3c-146013330cec"
               }
             ]
           },
@@ -2189,7 +2273,7 @@
                     "$type": "Forguncy.Model.StopCommand, ServerDesignerCommon"
                   }
                 ],
-                "ID": "010aae7f-aa06-4244-af33-73f361745deb"
+                "ID": "3d24a648-1117-4504-8083-0c26db6c2783"
               }
             ]
           },
@@ -2232,7 +2316,7 @@
                     "$type": "Forguncy.Model.StopCommand, ServerDesignerCommon"
                   }
                 ],
-                "ID": "c8aff5b1-25bc-47bd-a809-af0ee90f2c42"
+                "ID": "4c7f25ba-e7b6-4097-b185-b7171cc5fbe1"
               }
             ]
           },
@@ -2284,7 +2368,7 @@
                     "Comments": ""
                   }
                 ],
-                "ID": "5f341912-db23-49d6-9d39-47a63b5b30e1"
+                "ID": "1d85c518-af77-4b2c-9762-4964a727cc6c"
               }
             ]
           },
@@ -2326,7 +2410,7 @@
                     "Comments": ""
                   }
                 ],
-                "ID": "10b7f654-4c3d-4203-a2e9-9ad3ded8bd3c"
+                "ID": "8e5c5ac9-d24d-4b10-8ef0-7fb15de307ad"
               }
             ]
           }
@@ -2364,7 +2448,7 @@
                     "$type": "Forguncy.Model.StopCommand, ServerDesignerCommon"
                   }
                 ],
-                "ID": "49e0b423-3a1a-405a-abf9-1c6ffbb10c4c"
+                "ID": "f1e0c3f4-66ec-41d5-b90d-c3337cff4614"
               }
             ]
           },
@@ -2407,7 +2491,7 @@
                     "$type": "Forguncy.Model.StopCommand, ServerDesignerCommon"
                   }
                 ],
-                "ID": "77e8bb7d-fb99-4b13-8b59-1076f45caf99"
+                "ID": "6825b700-e65e-451f-8b1b-ab61264a35ec"
               }
             ]
           },
@@ -2468,7 +2552,7 @@
                     ]
                   }
                 ],
-                "ID": "ce87b604-5c85-43c0-8a03-9b18976e498a"
+                "ID": "6b40ae64-519d-4ac7-badb-659016fbfed8"
               }
             ]
           }
@@ -2692,7 +2776,7 @@
                     "$type": "Forguncy.Model.StopCommand, ServerDesignerCommon"
                   }
                 ],
-                "ID": "c1b6ecc0-879c-4fad-8834-da43683525be"
+                "ID": "18434fd1-50ea-4383-9aeb-ea43d8421bb4"
               }
             ]
           },
@@ -2727,7 +2811,7 @@
                     ]
                   }
                 ],
-                "ID": "1dd458ad-adb8-4c1d-9aee-e21be072fae4"
+                "ID": "6069ebe7-57c1-4f89-9bd5-be5df74303c7"
               },
               {
                 "CommandList": [
@@ -2763,7 +2847,7 @@
                     ]
                   }
                 ],
-                "ID": "b3fee451-b5a7-493a-9889-4dd4cfa2ba9a"
+                "ID": "ea729c49-9528-4e93-8e07-b875108e7d1a"
               }
             ]
           }
@@ -2876,7 +2960,7 @@
                     "$type": "Forguncy.Model.StopCommand, ServerDesignerCommon"
                   }
                 ],
-                "ID": "575dfeac-fa69-453d-89e8-64a4ed18b425"
+                "ID": "5710fe5a-bfe0-4710-a45c-c6aeb115dc40"
               }
             ]
           },
@@ -2926,7 +3010,7 @@
                     "$type": "Forguncy.Model.StopCommand, ServerDesignerCommon"
                   }
                 ],
-                "ID": "4c8eb754-4865-4eb6-a47b-fd3577388039"
+                "ID": "79dfcaaf-7bf2-4f67-bf73-51ac62fefed0"
               }
             ]
           },
@@ -2976,7 +3060,7 @@
                     ]
                   }
                 ],
-                "ID": "5e084190-63bc-422a-b8b5-1fd571d08f73"
+                "ID": "3d3f5e79-7faa-4b2c-9c5e-781dbd934eab"
               },
               {
                 "CommandList": [
@@ -3020,7 +3104,7 @@
                     ]
                   }
                 ],
-                "ID": "8425fd0e-e3cb-4d24-bc08-ce9104ea6a24"
+                "ID": "a6a0df7c-9732-4359-afaf-5c3827786b7b"
               }
             ]
           }
@@ -3072,7 +3156,7 @@
                     "$type": "Forguncy.Model.StopCommand, ServerDesignerCommon"
                   }
                 ],
-                "ID": "630a2eb0-d7dc-4cb6-a243-44b7fdb0a4f3"
+                "ID": "0a1301ef-70cf-4196-b6d4-411c86dc583b"
               }
             ]
           },
@@ -3115,7 +3199,7 @@
                     ]
                   }
                 ],
-                "ID": "041c335f-ff4a-4b3a-b36a-de317c5f1916"
+                "ID": "5baedd91-b41b-4519-b452-19c348f7bd54"
               },
               {
                 "Condition": {
@@ -3153,7 +3237,7 @@
                     ]
                   }
                 ],
-                "ID": "8602b189-6135-433b-be71-36b4a363e9c7"
+                "ID": "f1310f77-c68b-440c-b69d-4bf95f49ea33"
               },
               {
                 "CommandList": [
@@ -3173,7 +3257,7 @@
                     ]
                   }
                 ],
-                "ID": "40171f84-3dfc-4d5c-8be3-258a42721219"
+                "ID": "a6b917d4-6d79-4df4-a6a0-46ab4bf4fd9a"
               }
             ]
           }
@@ -3277,7 +3361,7 @@
                     "$type": "Forguncy.Model.StopCommand, ServerDesignerCommon"
                   }
                 ],
-                "ID": "2436916e-6460-4df3-b118-cca9f2043d9d"
+                "ID": "fe8d6d8f-34ee-470f-b463-bcb05578fd8b"
               }
             ]
           },
@@ -3314,7 +3398,7 @@
                     ]
                   }
                 ],
-                "ID": "0cf209ab-698f-4ab4-80ea-c0834bc82a12"
+                "ID": "ae59c044-75bf-47b7-aa97-ea5eb4bec7ec"
               },
               {
                 "CommandList": [
@@ -3330,7 +3414,7 @@
                     ]
                   }
                 ],
-                "ID": "2fed6e22-d31b-47ff-be7f-5eaa93e0f74b"
+                "ID": "9ec210d4-6d84-47cd-92db-a86efad3eb8b"
               }
             ]
           }
@@ -3365,7 +3449,7 @@
                     "$type": "Forguncy.Model.StopCommand, ServerDesignerCommon"
                   }
                 ],
-                "ID": "52ec5941-ec70-4cbf-b0b8-eb0ae02de5c3"
+                "ID": "b71121b8-faa6-4ccd-b97f-80b5082f962e"
               }
             ]
           },
@@ -3415,7 +3499,7 @@
                     ]
                   }
                 ],
-                "ID": "001219c8-3960-4ebe-825c-212c47968d7d"
+                "ID": "9647d91d-a743-4e3d-9c2b-296a169d2aa6"
               },
               {
                 "CommandList": [
@@ -3459,7 +3543,7 @@
                     ]
                   }
                 ],
-                "ID": "ea4539df-83f2-42bc-b9ae-32ddfa7ef79f"
+                "ID": "18f45e09-0840-48d4-9bfe-5924b9cec6d2"
               }
             ]
           }
@@ -3507,7 +3591,7 @@
                     "$type": "Forguncy.Model.StopCommand, ServerDesignerCommon"
                   }
                 ],
-                "ID": "0a4f7623-fde5-4021-9ca2-9eddbce969ef"
+                "ID": "4e6521a0-c174-4674-b568-03ac0cc74b5e"
               }
             ]
           },
@@ -3550,7 +3634,7 @@
                     ]
                   }
                 ],
-                "ID": "ab1ac740-a3e4-4421-a1f6-0999e41fca8e"
+                "ID": "9ba78503-3dbd-4e4c-943b-89b520d2a03a"
               },
               {
                 "CommandList": [
@@ -3570,7 +3654,7 @@
                     ]
                   }
                 ],
-                "ID": "049d522d-2af4-4b37-bca9-552106997b28"
+                "ID": "f2869751-e177-40fd-bb22-39eadc2959e9"
               }
             ]
           }
@@ -3674,7 +3758,7 @@
                     "$type": "Forguncy.Model.StopCommand, ServerDesignerCommon"
                   }
                 ],
-                "ID": "9340f3ef-8ffc-4106-abbf-7cb32b4134ab"
+                "ID": "27941e92-efda-4ede-9c62-e95201e87ee8"
               }
             ]
           },
@@ -3711,7 +3795,7 @@
                     ]
                   }
                 ],
-                "ID": "4080fd5c-2e65-4af3-a5e0-44b9bf859789"
+                "ID": "c3b57357-0616-493b-9451-6ac7ee209882"
               },
               {
                 "CommandList": [
@@ -3727,7 +3811,7 @@
                     ]
                   }
                 ],
-                "ID": "aa554bcf-018b-42fa-9a9d-81d55123b2d0"
+                "ID": "d2d2c96c-1cd7-4f6e-8dce-d5bf8757bf47"
               }
             ]
           }
@@ -3762,7 +3846,7 @@
                     "$type": "Forguncy.Model.StopCommand, ServerDesignerCommon"
                   }
                 ],
-                "ID": "77256c5d-ed75-4dfd-8a38-5517e1f42709"
+                "ID": "a4aedf7f-6fd2-479c-ab15-691a66ff7d41"
               }
             ]
           },
@@ -3812,7 +3896,7 @@
                     ]
                   }
                 ],
-                "ID": "ebe0ae85-35a4-4954-ac16-bf2036292a26"
+                "ID": "5e4e2e31-d52e-4c96-bc0d-cd796bddb5af"
               },
               {
                 "CommandList": [
@@ -3856,7 +3940,7 @@
                     ]
                   }
                 ],
-                "ID": "b1877805-eed4-4462-8928-e8763021c305"
+                "ID": "e6ace7d3-ff9f-49ce-b666-502a5d09f13e"
               }
             ]
           }
@@ -3904,7 +3988,7 @@
                     "$type": "Forguncy.Model.StopCommand, ServerDesignerCommon"
                   }
                 ],
-                "ID": "8eb44086-9302-476e-a18d-c3cfda343955"
+                "ID": "641ab966-0f17-42e5-9b57-1af2e4423f2b"
               }
             ]
           },
@@ -3947,7 +4031,7 @@
                     ]
                   }
                 ],
-                "ID": "319cf989-95b9-44a1-8080-c6b42a35de2f"
+                "ID": "a7c6d80d-fd03-48ed-b590-05e7a402d87e"
               },
               {
                 "CommandList": [
@@ -3967,7 +4051,7 @@
                     ]
                   }
                 ],
-                "ID": "8d9935d1-5446-49f6-a9e8-49b2d1d56cec"
+                "ID": "3d72b550-01a0-41c1-aacc-ab3de84a8e4e"
               }
             ]
           }
@@ -4071,7 +4155,7 @@
                     "$type": "Forguncy.Model.StopCommand, ServerDesignerCommon"
                   }
                 ],
-                "ID": "80479b39-86f1-4efc-a6a9-e2f23825a1fe"
+                "ID": "fb0a4784-b0a5-4469-b4a2-9c54dec2d8a4"
               }
             ]
           },
@@ -4108,7 +4192,7 @@
                     ]
                   }
                 ],
-                "ID": "022364dc-d96d-4a3d-9122-7dcd753c9eaa"
+                "ID": "7e5457a7-0be2-4895-ad28-69960e95ef25"
               },
               {
                 "CommandList": [
@@ -4124,7 +4208,7 @@
                     ]
                   }
                 ],
-                "ID": "f9dbc9a4-7fc0-4037-bb3b-c53a5c2e3476"
+                "ID": "9a3dc110-51c1-4d7d-bbe8-ae51fa134028"
               }
             ]
           }
@@ -4159,7 +4243,7 @@
                     "$type": "Forguncy.Model.StopCommand, ServerDesignerCommon"
                   }
                 ],
-                "ID": "e20d69e1-b50d-4036-b73d-375a6f72de23"
+                "ID": "f837acb8-7f0c-4554-80dd-2ebf10bce687"
               }
             ]
           },
@@ -4194,7 +4278,7 @@
                     ]
                   }
                 ],
-                "ID": "6e480e85-5421-46f0-9215-1884d5172054"
+                "ID": "7e3b4bff-e930-4060-a517-bb6a6d64f934"
               },
               {
                 "CommandList": [
@@ -4230,7 +4314,7 @@
                     ]
                   }
                 ],
-                "ID": "c0f06b28-cb6e-4dd6-a3eb-a847dd5ff014"
+                "ID": "3bd12333-969d-41cc-871d-9c3103d42202"
               }
             ]
           }
@@ -4334,7 +4418,7 @@
                     "$type": "Forguncy.Model.StopCommand, ServerDesignerCommon"
                   }
                 ],
-                "ID": "fdfe7cc3-7c9d-4d3e-8183-44067e665528"
+                "ID": "64a48fd8-0a0d-4ba7-9216-a9a954d5e25f"
               }
             ]
           },
@@ -4433,7 +4517,7 @@
                             "$type": "Forguncy.Model.StopCommand, ServerDesignerCommon"
                           }
                         ],
-                        "ID": "4a177fc1-04d0-4d10-988c-77a985af223d"
+                        "ID": "ceb12d68-9886-4af3-8988-def0213dcd82"
                       }
                     ]
                   },
@@ -4476,7 +4560,7 @@
                             "$type": "Forguncy.Model.StopCommand, ServerDesignerCommon"
                           }
                         ],
-                        "ID": "df95e1e5-b44b-4dfc-8f9a-a267b17ceec7"
+                        "ID": "2a6718f6-8147-4b72-a4b2-d901339ea660"
                       }
                     ]
                   },
@@ -4534,7 +4618,7 @@
                             "$type": "Forguncy.Model.StopCommand, ServerDesignerCommon"
                           }
                         ],
-                        "ID": "9c2a363b-5026-4f2d-afac-f5e8bb14c1f3"
+                        "ID": "105e934b-8135-41cf-ad8e-1d613f87dbbe"
                       }
                     ]
                   },
@@ -4592,7 +4676,7 @@
                             "$type": "Forguncy.Model.StopCommand, ServerDesignerCommon"
                           }
                         ],
-                        "ID": "9d34733b-7f86-42e4-9c1d-3f8bb6367c5e"
+                        "ID": "417e668b-3dd6-496d-8f2d-39a417bb5254"
                       }
                     ]
                   },
@@ -4650,7 +4734,7 @@
                             "$type": "Forguncy.Model.StopCommand, ServerDesignerCommon"
                           }
                         ],
-                        "ID": "244f3837-8e56-4d96-af31-79e098d94f39"
+                        "ID": "49238154-0429-450b-b3b2-c880c5afe9b8"
                       }
                     ]
                   },
@@ -4783,7 +4867,7 @@
                             "$type": "Forguncy.Model.StopCommand, ServerDesignerCommon"
                           }
                         ],
-                        "ID": "b80b2cb1-db82-4acc-b863-7e3a44c80107"
+                        "ID": "845cdf30-85b5-4b25-86d6-f5a8683f0001"
                       }
                     ]
                   },
@@ -4836,7 +4920,7 @@
                             "$type": "Forguncy.Model.StopCommand, ServerDesignerCommon"
                           }
                         ],
-                        "ID": "63e8c02d-4861-4ef1-b172-8c6b908af818"
+                        "ID": "e195555e-9fff-4d10-88ed-9df1ac11b6b9"
                       }
                     ]
                   },
@@ -4896,7 +4980,7 @@
                             "$type": "Forguncy.Model.StopCommand, ServerDesignerCommon"
                           }
                         ],
-                        "ID": "fc55fcef-d90a-4e75-89c8-eecdfc8ad6b0"
+                        "ID": "71fd6071-5eea-4bb8-b10d-c6dae643fb88"
                       }
                     ]
                   },
@@ -4929,7 +5013,7 @@
                             "$type": "Forguncy.Model.StopCommand, ServerDesignerCommon"
                           }
                         ],
-                        "ID": "de444913-ff25-460f-8c21-0f49f2429954"
+                        "ID": "08863ee9-5c19-4888-b09c-5f14f516432e"
                       }
                     ]
                   },
@@ -4940,7 +5024,7 @@
                       "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
                       "SerializeProperty": "=DATEDIF(終夜運転届出!H21,終夜運転届出!X21,\"d\")"
                     },
-                    "ID": "b55981dc537f41139c6199bb3629ca6f",
+                    "ID": "1323c8b99e724624806f2979287ed520",
                     "Comments": "運転期間のカウントは、開始日を0として計算（8日以上は長期終夜対象）"
                   },
                   {
@@ -4985,7 +5069,7 @@
                             "$type": "Forguncy.Model.StopCommand, ServerDesignerCommon"
                           }
                         ],
-                        "ID": "9d31dca9-9410-4dcd-a7eb-f82f41c2f028"
+                        "ID": "96127c60-f46d-41ea-bb4b-98afc67d6e5a"
                       }
                     ]
                   },
@@ -5030,7 +5114,7 @@
                             "$type": "Forguncy.Model.StopCommand, ServerDesignerCommon"
                           }
                         ],
-                        "ID": "e6d34da8-3c96-4946-8bb8-07d0ce6c5170"
+                        "ID": "dea9fcd1-da62-4218-b0bd-5eac289083df"
                       }
                     ]
                   },
@@ -5121,7 +5205,7 @@
                         }
                       }
                     },
-                    "ID": "f6eac1487b8744b5ba6d3c31c50f583d"
+                    "ID": "ef79c89b647c4855ba515a5aa0d1d7ef"
                   },
                   {
                     "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
@@ -5149,7 +5233,7 @@
                             "$type": "Forguncy.Model.StopCommand, ServerDesignerCommon"
                           }
                         ],
-                        "ID": "2d2c1eda-87ef-49a3-956a-fbc434d43af1"
+                        "ID": "d0d3f232-bb14-4f9d-8004-4925aba78652"
                       }
                     ]
                   },
@@ -5193,10 +5277,10 @@
                             "$type": "Forguncy.Model.Commands.SetParameterCommand, ServerDesignerCommon",
                             "ParameterName": "is_fire_manager",
                             "ParameterValue": "1",
-                            "ID": "bc654bf83bc3445ba9c638c01fbdfd30"
+                            "ID": "ef5fdb93771f44808d77fc289212eda4"
                           }
                         ],
-                        "ID": "f675e820-86f4-48f7-ad80-2112ad8ce875"
+                        "ID": "8d2058ea-91a1-45b8-b002-b5b65034a7c4"
                       },
                       {
                         "CommandList": [
@@ -5204,10 +5288,10 @@
                             "$type": "Forguncy.Model.Commands.SetParameterCommand, ServerDesignerCommon",
                             "ParameterName": "is_fire_manager",
                             "ParameterValue": "0",
-                            "ID": "03a471fa9d52461a9363516afe4d18c6"
+                            "ID": "5f82e4700f9c47939b5736fcfb1b9059"
                           }
                         ],
-                        "ID": "24e1367f-5ec3-4d3f-b78c-5b4a50337589"
+                        "ID": "00c032ca-c458-4113-932a-9d1d6e4ec44a"
                       }
                     ],
                     "Comments": "ログイン者が火元承認者の場合はwf_fire_flg=1",
@@ -5316,7 +5400,7 @@
                             ]
                           }
                         ],
-                        "ID": "85efb847-f852-492c-a5ff-22fa93143a1b"
+                        "ID": "41c54201-9bc7-4f25-8510-90ee947b0180"
                       },
                       {
                         "CommandList": [
@@ -5350,7 +5434,7 @@
                             ]
                           }
                         ],
-                        "ID": "13fd4102-4d55-4ae5-84eb-2b4a4af81ac3"
+                        "ID": "68b3b2bc-1c47-4c73-abe0-01b4051181e1"
                       }
                     ]
                   },
@@ -5443,7 +5527,7 @@
                     "$type": "LoadingCommand.EndLoadingCommand, LoadingCommand"
                   }
                 ],
-                "ID": "8fbf364f-6b3c-4453-8d1e-352d832537d7"
+                "ID": "f39ddcaf-e8fa-4624-993e-5afba9a76197"
               }
             ],
             "Comments": "保存"
@@ -8977,7 +9061,7 @@
                 "Comments": "T_OvernightNotification(キック用）"
               }
             ],
-            "ID": "d727954b-e40c-473b-a11a-bd81fe33a1e9"
+            "ID": "5dec5cfd-02bb-4bed-974a-2355adc79423"
           }
         ]
       },
@@ -9014,7 +9098,7 @@
                 "Comments": "T_OvernightRegistration"
               }
             ],
-            "ID": "93496639-9a01-4798-b407-d3858a30ad8b"
+            "ID": "d1c84c7d-b00e-4199-98d8-7d9316a5eceb"
           }
         ]
       },
@@ -9225,4 +9309,4 @@
       "Formula": "終夜運転届出!$X$21"
     }
   ]
-}//Mp8anwDdKxKhLkZybbxHT7v9jtJM6wRAlCDpy/oFUWr5XO3G+ywonBzyIfh7wfmfkdKf51qHe2woZg00yw3LmYAPg21HjDSUnvo/K3sb3/5+xvfPorDap6QRM9fFjk7h7ehdajOuPo2DPDhZgofedAY+yXV50X2fPK+MJ1NrmoL95dpVtOC0+RtCgwKX9VyPjJieIEebUH7yR3pE+LscY4as0ZvZV8FIq+bixBe7iBxiZlR5DzrhHV8Oj+4FgDf4P1J1nlIgT7+6YxtkRxpfYYhuXOVwzLNsWSW6xtLZKlOHNqVGdjThEcxt3xKaqANUZaO10FVVi0nR788hzZMhzNr1INQDzqKrfJpkABjnKm8NQJEXaDPVCbgz6mqOl+IFZhlvq3BRtmrhh4aBIm+MldRizGd+yV97rAi+ejTEf09c0/QfTFrCsnY7FEEVK3VkI0TkY9UPgs9r/aPjKIhZrJkuYVniBpkugg2YgrJ91HCuVVgl+wUYM9/hdHO0QxI/sM3mJuWr6jhDlLexcvTqqs/Tg4W/RM/uQhq7buI0xduwiLjucQfueqfkES+8JbCLU1f2kAEfXxkFTXD7oPB+iYOXY2WMD4ZAaZ4YpOgMIMKzMlJZJ6dx1EU61YTTh1CymOgIkHODq3xg8k8HVDmdb9TCdJL80xaEWZeF+Ivlb5OLb5rd1q7MbGJO4xqdgYovQUiyTLlmxb1ebK4ZawfHGB4nDLKp+EaKqf56spPd54SR7b/wj1fadi9NVkzdI444IC8RlXlCCUA6TNBY+oJZRanjHS78U5NCjvB3lfcA9DgAY8xrBff+ABJEcs+AELFnTyMOjla2AzkdhbY5kBDxzFvrMZf/zuQ5LZD1lSvfH7QxiRvR/PG9nOM00UwqV3L4o6d6pUexonRcatAYsRAoRg==|920
+}//GILYmzlmlgfJUTBHF2TnMITeP2M9EX8Wfq3lUf0/jZiXWM83+/l7AFoQyIoHcrUy8UmoMz1SMMbP2scAqXk4yPnWc4JJalGgqp7N0R4lh9Y/S4CXVPO5gbMEtoD3tE0KuOdn+Og1Np6GVlJqedagYpZgA/zjBamvwuCYw/UiSVVXaN3hdhiABBhZsKHBvZn3IQGo4M+/60sHctDJbtql4ubYyGPpaXv9IrCEZgI6rdwHddfYOTGoX//+3y7q2wNW+XU7UhPuV3t1EAuZPFJ5hEkrZHNQ3EdzPXiqPmQS+6/WQ2x/aejGmYnSoCcYme9eJfVIsJpcSo29uAsIlh8RJCDw91yvhrFo1MPxPbg9dsft+ZjCLr0J/y3ThmATy215NuG0aWInNFTvZvKH+bjC54UVNQzxhNTBTGH5CL0zjIA3yQa968oz2AuBmKy4oIKN3EVEZaTj60bSZ/KA3k9Chs2IBs9+wy3pX9OAgzjh9gzrW8+DvTnqWLSWRxCkqbfwnubI7d24QTgYUHG3oJkXujUcAcVmVvIzi1xpj76l27ffngK1/SmRujDUkGwZZSCHBb2dgohOmpzfUiiW2FvtxdavSbiouJg6HHhs6X7Cj/lZCItJ2iNPwQmkKLfQoRhXzgS6uaAm4ruoUALSb49fqhVQdXWlvsTVCn833CL/gNkVZn1T/+a2vcsbYcULiNlS2D1NuWolpPwVhndYEZNKRDowqvA3TCszfCSZAIDEhzfMp5sdmA232JMj5S0AQTgTNpgsIQXDgQYH4Py/dfue+lKgQaB4B6E2Xg+pFwYBK1+H5V0O/u9ykImGjITAfKGaRecI0Yk1M5W++BYcpUc2h+DcZn+wABrzhRiuNuc4eOQiQkbXBrTlb1l5Q8EdPb5MlpbZMtyAkLcoB6uABOf7vA==|920
