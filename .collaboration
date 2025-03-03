@@ -878,7 +878,16 @@
   },
   {
     "ModuleName": "ShareCommand",
-    "ModuleType": 13
+    "State": 1,
+    "LockedBy": {
+      "UserName": "ZEON村上",
+      "Email": "S3.murakami@zeon.co.jp"
+    },
+    "LockDateTime": "2025-03-03T14:17:59.7979496+09:00",
+    "ModuleType": 13,
+    "ToRemoveFiles": [
+      "ShareCommand.json"
+    ]
   },
   {
     "ModuleName": "MapJsonFile",
