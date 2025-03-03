@@ -413,16 +413,7 @@
   },
   {
     "ModuleName": "MasterPCPage/終夜運転マスタページ",
-    "State": 1,
-    "LockedBy": {
-      "UserName": "ZEON川神",
-      "Email": "makoto.kawakami@zeon.co.jp"
-    },
-    "LockDateTime": "2025-03-03T16:53:47.7185249+09:00",
-    "ModuleType": 3,
-    "ToRemoveFiles": [
-      "MasterPages\\終夜運転マスタページ.json"
-    ]
+    "ModuleType": 3
   },
   {
     "ModuleName": "PageReport/レポート1",
