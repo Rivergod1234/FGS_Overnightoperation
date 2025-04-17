@@ -1,1 +1,451 @@
-[{"ModuleName":"Tables/EMP_MST","ModuleType":22},{"ModuleName":"Table/NAC_Acc_Account","ModuleType":7},{"ModuleName":"Tables/FixedAssetDB","ModuleType":22},{"ModuleName":"Table/M_ApprovalAgent","ModuleType":7},{"ModuleName":"TableView/V_OvernightNotification_FGC_WHT","ModuleType":23},{"ModuleName":"TableView/V_OvernightGroup_Inspection","ModuleType":23},{"ModuleName":"TableView/V_OvernightGroup","ModuleType":23},{"ModuleName":"Table/T_WorkFlowHistory","ModuleType":7},{"ModuleName":"Table/T_OvernightRegistration","ModuleType":7},{"ModuleName":"Table/T_OvernightNotification","ModuleType":7},{"ModuleName":"Table/T_OvernightInspectionItem","ModuleType":7},{"ModuleName":"Table/T_OvernightInspection","ModuleType":7},{"ModuleName":"TableView/V_OvernightRegistrationHistory","ModuleType":23},{"ModuleName":"Table/T_OvernightGroup","ModuleType":7},{"ModuleName":"Table/M_SystemSettingItem","ModuleType":7},{"ModuleName":"Table/M_SystemAdministrator","ModuleType":7},{"ModuleName":"Table/M_Status","ModuleType":7},{"ModuleName":"Table/M_ReservationClassification","ModuleType":7},{"ModuleName":"Table/M_OvernightReason","ModuleType":7},{"ModuleName":"Table/M_OvernightInspectionList","ModuleType":7},{"ModuleName":"Table/M_Operation","ModuleType":7},{"ModuleName":"Table/M_EquipmentClassification","ModuleType":7},{"ModuleName":"Table/T_InstrumentBasicInformation","ModuleType":7},{"ModuleName":"TableView/V_OvernightRegistration_FGC_WHT","ModuleType":23},{"ModuleName":"Tables/LOCATION_MST","ModuleType":22},{"ModuleName":"Table/M01_First_Classification","ModuleType":7},{"ModuleName":"Table/M02_Second_Classification","ModuleType":7},{"ModuleName":"Table/M03_Third_Classification","ModuleType":7},{"ModuleName":"Table/M_BasicRoomInformation","ModuleType":7},{"ModuleName":"Table/M_FireManagement","ModuleType":7},{"ModuleName":"Table/M_RoomGroup","ModuleType":7},{"ModuleName":"Table/M_Utility","ModuleType":7},{"ModuleName":"TableView/V_BasicRoomInformation","ModuleType":23},{"ModuleName":"TableView/V_LOCATION_ForAsset","ModuleType":23},{"ModuleName":"Tables/L_USER_MST","ModuleType":22},{"ModuleName":"Table/lum_view_cost_centers_duplicated","ModuleType":7},{"ModuleName":"Table/lum_view_depertment_consener_relations_nac_based_duplicated","ModuleType":7},{"ModuleName":"Table/lum_view_employee_department_relations_duplicated","ModuleType":7},{"ModuleName":"Pages/ビルトイン ページ","ModuleType":6},{"ModuleName":"PCPage/FGC_401ページ","ModuleType":1},{"ModuleName":"PCPage/FGC_ただいまメンテナンス中です","ModuleType":1},{"ModuleName":"PCPage/FGC_メールサブスクリプション","ModuleType":1},{"ModuleName":"PCPage/FGC_パスワードの変更","ModuleType":1},{"ModuleName":"PCPage/FGC_パスワードを忘れた場合","ModuleType":1},{"ModuleName":"PCPage/FGC_プロファイルの編集","ModuleType":1},{"ModuleName":"PCPage/FGC_ログイン","ModuleType":1},{"ModuleName":"PCPage/FGC_パスワードのリセット用リンクの送信","ModuleType":1},{"ModuleName":"PCPage/FGC_パスワードのリセット","ModuleType":1},{"ModuleName":"PCPage/FGC_認証アプリの構成","ModuleType":1},{"ModuleName":"PCPage/FGC_コードの入力","ModuleType":1},{"ModuleName":"Pages/ビルトイン モバイルページ","ModuleType":6},{"ModuleName":"MobilePage/FGC_401ページ_モバイル","ModuleType":2},{"ModuleName":"MobilePage/FGC_ただいまメンテナンス中です_モバイル","ModuleType":2},{"ModuleName":"MobilePage/FGC_メールサブスクリプション_モバイル","ModuleType":2},{"ModuleName":"MobilePage/FGC_パスワードの変更_モバイル","ModuleType":2},{"ModuleName":"MobilePage/FGC_パスワードを忘れた場合_モバイル","ModuleType":2},{"ModuleName":"MobilePage/FGC_プロファイルの編集_モバイル","ModuleType":2},{"ModuleName":"MobilePage/FGC_ログイン_モバイル","ModuleType":2},{"ModuleName":"MobilePage/FGC_パスワードのリセット用リンクの送信_モバイル","ModuleType":2},{"ModuleName":"MobilePage/FGC_パスワードのリセット_モバイル","ModuleType":2},{"ModuleName":"MobilePage/FGC_認証アプリの構成_モバイル","ModuleType":2},{"ModuleName":"MobilePage/FGC_コードの入力_モバイル","ModuleType":2},{"ModuleName":"PCPage/ホーム","ModuleType":1},{"ModuleName":"PCPage/終夜運転機器申請","ModuleType":1},{"ModuleName":"PCPage/終夜運転機器一覧","ModuleType":1},{"ModuleName":"PCPage/終夜運転届出","ModuleType":1},{"ModuleName":"PCPage/終夜運転事由マスタ編集","ModuleType":1},{"ModuleName":"PCPage/終夜機器点検","ModuleType":1},{"ModuleName":"PCPage/管理者設定","ModuleType":1},{"ModuleName":"PCPage/現場表示印刷画面_長期","ModuleType":1},{"ModuleName":"PCPage/現場表示印刷画面_通常","ModuleType":1},{"ModuleName":"PCPage/点検項目マスタ編集","ModuleType":1},{"ModuleName":"PCPage/点検依頼・結果","ModuleType":1},{"ModuleName":"PCPage/機器選択ポップアップ","ModuleType":1},{"ModuleName":"PCPage/機器詳細ポップアップ","ModuleType":1},{"ModuleName":"PCPage/新規申請WF一覧","ModuleType":1},{"ModuleName":"PCPage/届出履歴ポップアップ","ModuleType":1},{"ModuleName":"PCPage/届出一覧","ModuleType":1},{"ModuleName":"PCPage/届出WF承認代理者設定","ModuleType":1},{"ModuleName":"PCPage/届出WF一覧","ModuleType":1},{"ModuleName":"PCPage/実験内容マスタ編集","ModuleType":1},{"ModuleName":"PCPage/コメント入力ポップアップ","ModuleType":1},{"ModuleName":"PCPage/重複チェックコンテナ","ModuleType":1},{"ModuleName":"PCPage/重複確認画面","ModuleType":1},{"ModuleName":"Pages/機器登録用_bk","ModuleType":6},{"ModuleName":"PCPage/マスタ編集ポップアップ","ModuleType":1},{"ModuleName":"PCPage/代理者選択ポップアップ","ModuleType":1},{"ModuleName":"PCPage/対象機器_参照用コンテナ","ModuleType":1},{"ModuleName":"PCPage/対象機器_登録用コンテナ","ModuleType":1},{"ModuleName":"PCPage/機器選択ポップアップ (2)","ModuleType":1},{"ModuleName":"PCPage/機器選択ポップアップ_bk","ModuleType":1},{"ModuleName":"PCPage/システム設定値","ModuleType":1},{"ModuleName":"Pages/モバイル","ModuleType":6},{"ModuleName":"MobilePage/終夜運転届出_モバイル","ModuleType":2},{"ModuleName":"MobilePage/終夜運転機器申請_モバイル","ModuleType":2},{"ModuleName":"MobilePage/届出WF_一覧_モバイル","ModuleType":2},{"ModuleName":"MobilePage/届出履歴ポップアップ_モバイル","ModuleType":2},{"ModuleName":"MobilePage/新規申請WF_一覧_モバイル","ModuleType":2},{"ModuleName":"MasterPCPage/FGC_ユーザーマスターページ","ModuleType":3},{"ModuleName":"MasterPCPage/終夜運転マスタページ","ModuleType":3},{"ModuleName":"PageReport/レポート1","ModuleType":17},{"ModuleName":"ApplicationSetting","ModuleType":8},{"ModuleName":"Theme","ModuleType":9},{"ModuleName":"ImageSelector","ModuleType":10},{"ModuleName":"UserService","ModuleType":11},{"ModuleName":"CustomLibrary","ModuleType":12},{"ModuleName":"ShareCommand","ModuleType":13},{"ModuleName":"MapJsonFile","ModuleType":14},{"ModuleName":"DataContectionSet","ModuleType":25},{"ModuleName":"Upload","ModuleType":26}]
+[
+  {
+    "ModuleName": "Tables/EMP_MST",
+    "ModuleType": 22
+  },
+  {
+    "ModuleName": "Table/NAC_Acc_Account",
+    "ModuleType": 7
+  },
+  {
+    "ModuleName": "Tables/FixedAssetDB",
+    "ModuleType": 22
+  },
+  {
+    "ModuleName": "Table/M_ApprovalAgent",
+    "ModuleType": 7
+  },
+  {
+    "ModuleName": "TableView/V_OvernightNotification_FGC_WHT",
+    "ModuleType": 23
+  },
+  {
+    "ModuleName": "TableView/V_OvernightGroup_Inspection",
+    "ModuleType": 23
+  },
+  {
+    "ModuleName": "TableView/V_OvernightGroup",
+    "ModuleType": 23
+  },
+  {
+    "ModuleName": "Table/T_WorkFlowHistory",
+    "ModuleType": 7
+  },
+  {
+    "ModuleName": "Table/T_OvernightRegistration",
+    "ModuleType": 7
+  },
+  {
+    "ModuleName": "Table/T_OvernightNotification",
+    "ModuleType": 7
+  },
+  {
+    "ModuleName": "Table/T_OvernightInspectionItem",
+    "ModuleType": 7
+  },
+  {
+    "ModuleName": "Table/T_OvernightInspection",
+    "ModuleType": 7
+  },
+  {
+    "ModuleName": "TableView/V_OvernightRegistrationHistory",
+    "ModuleType": 23
+  },
+  {
+    "ModuleName": "Table/T_OvernightGroup",
+    "ModuleType": 7
+  },
+  {
+    "ModuleName": "Table/M_SystemSettingItem",
+    "ModuleType": 7
+  },
+  {
+    "ModuleName": "Table/M_SystemAdministrator",
+    "ModuleType": 7
+  },
+  {
+    "ModuleName": "Table/M_Status",
+    "ModuleType": 7
+  },
+  {
+    "ModuleName": "Table/M_ReservationClassification",
+    "ModuleType": 7
+  },
+  {
+    "ModuleName": "Table/M_OvernightReason",
+    "ModuleType": 7
+  },
+  {
+    "ModuleName": "Table/M_OvernightInspectionList",
+    "ModuleType": 7
+  },
+  {
+    "ModuleName": "Table/M_Operation",
+    "ModuleType": 7
+  },
+  {
+    "ModuleName": "Table/M_EquipmentClassification",
+    "ModuleType": 7
+  },
+  {
+    "ModuleName": "Table/T_InstrumentBasicInformation",
+    "ModuleType": 7
+  },
+  {
+    "ModuleName": "TableView/V_OvernightRegistration_FGC_WHT",
+    "ModuleType": 23
+  },
+  {
+    "ModuleName": "Tables/LOCATION_MST",
+    "ModuleType": 22
+  },
+  {
+    "ModuleName": "Table/M01_First_Classification",
+    "ModuleType": 7
+  },
+  {
+    "ModuleName": "Table/M02_Second_Classification",
+    "ModuleType": 7
+  },
+  {
+    "ModuleName": "Table/M03_Third_Classification",
+    "ModuleType": 7
+  },
+  {
+    "ModuleName": "Table/M_BasicRoomInformation",
+    "ModuleType": 7
+  },
+  {
+    "ModuleName": "Table/M_FireManagement",
+    "ModuleType": 7
+  },
+  {
+    "ModuleName": "Table/M_RoomGroup",
+    "ModuleType": 7
+  },
+  {
+    "ModuleName": "Table/M_Utility",
+    "ModuleType": 7
+  },
+  {
+    "ModuleName": "TableView/V_BasicRoomInformation",
+    "ModuleType": 23
+  },
+  {
+    "ModuleName": "TableView/V_LOCATION_ForAsset",
+    "ModuleType": 23
+  },
+  {
+    "ModuleName": "Tables/L_USER_MST",
+    "ModuleType": 22
+  },
+  {
+    "ModuleName": "Table/lum_view_cost_centers_duplicated",
+    "ModuleType": 7
+  },
+  {
+    "ModuleName": "Table/lum_view_depertment_consener_relations_nac_based_duplicated",
+    "ModuleType": 7
+  },
+  {
+    "ModuleName": "Table/lum_view_employee_department_relations_duplicated",
+    "ModuleType": 7
+  },
+  {
+    "ModuleName": "Pages/ビルトイン ページ",
+    "ModuleType": 6
+  },
+  {
+    "ModuleName": "PCPage/FGC_401ページ",
+    "ModuleType": 1
+  },
+  {
+    "ModuleName": "PCPage/FGC_ただいまメンテナンス中です",
+    "ModuleType": 1
+  },
+  {
+    "ModuleName": "PCPage/FGC_メールサブスクリプション",
+    "ModuleType": 1
+  },
+  {
+    "ModuleName": "PCPage/FGC_パスワードの変更",
+    "ModuleType": 1
+  },
+  {
+    "ModuleName": "PCPage/FGC_パスワードを忘れた場合",
+    "ModuleType": 1
+  },
+  {
+    "ModuleName": "PCPage/FGC_プロファイルの編集",
+    "ModuleType": 1
+  },
+  {
+    "ModuleName": "PCPage/FGC_ログイン",
+    "ModuleType": 1
+  },
+  {
+    "ModuleName": "PCPage/FGC_パスワードのリセット用リンクの送信",
+    "ModuleType": 1
+  },
+  {
+    "ModuleName": "PCPage/FGC_パスワードのリセット",
+    "ModuleType": 1
+  },
+  {
+    "ModuleName": "PCPage/FGC_認証アプリの構成",
+    "ModuleType": 1
+  },
+  {
+    "ModuleName": "PCPage/FGC_コードの入力",
+    "ModuleType": 1
+  },
+  {
+    "ModuleName": "Pages/ビルトイン モバイルページ",
+    "ModuleType": 6
+  },
+  {
+    "ModuleName": "MobilePage/FGC_401ページ_モバイル",
+    "ModuleType": 2
+  },
+  {
+    "ModuleName": "MobilePage/FGC_ただいまメンテナンス中です_モバイル",
+    "ModuleType": 2
+  },
+  {
+    "ModuleName": "MobilePage/FGC_メールサブスクリプション_モバイル",
+    "ModuleType": 2
+  },
+  {
+    "ModuleName": "MobilePage/FGC_パスワードの変更_モバイル",
+    "ModuleType": 2
+  },
+  {
+    "ModuleName": "MobilePage/FGC_パスワードを忘れた場合_モバイル",
+    "ModuleType": 2
+  },
+  {
+    "ModuleName": "MobilePage/FGC_プロファイルの編集_モバイル",
+    "ModuleType": 2
+  },
+  {
+    "ModuleName": "MobilePage/FGC_ログイン_モバイル",
+    "ModuleType": 2
+  },
+  {
+    "ModuleName": "MobilePage/FGC_パスワードのリセット用リンクの送信_モバイル",
+    "ModuleType": 2
+  },
+  {
+    "ModuleName": "MobilePage/FGC_パスワードのリセット_モバイル",
+    "ModuleType": 2
+  },
+  {
+    "ModuleName": "MobilePage/FGC_認証アプリの構成_モバイル",
+    "ModuleType": 2
+  },
+  {
+    "ModuleName": "MobilePage/FGC_コードの入力_モバイル",
+    "ModuleType": 2
+  },
+  {
+    "ModuleName": "PCPage/ホーム",
+    "ModuleType": 1
+  },
+  {
+    "ModuleName": "PCPage/終夜運転機器申請",
+    "ModuleType": 1
+  },
+  {
+    "ModuleName": "PCPage/終夜運転機器一覧",
+    "ModuleType": 1
+  },
+  {
+    "ModuleName": "PCPage/終夜運転届出",
+    "State": 1,
+    "LockedBy": {
+      "UserName": "ZEON村上",
+      "Email": "S3.murakami@zeon.co.jp"
+    },
+    "LockDateTime": "2025-04-17T11:38:13.0754333+09:00",
+    "ModuleType": 1,
+    "ToRemoveFiles": [
+      "Pages\\終夜運転届出.json"
+    ]
+  },
+  {
+    "ModuleName": "PCPage/終夜運転事由マスタ編集",
+    "ModuleType": 1
+  },
+  {
+    "ModuleName": "PCPage/終夜機器点検",
+    "ModuleType": 1
+  },
+  {
+    "ModuleName": "PCPage/管理者設定",
+    "ModuleType": 1
+  },
+  {
+    "ModuleName": "PCPage/現場表示印刷画面_長期",
+    "ModuleType": 1
+  },
+  {
+    "ModuleName": "PCPage/現場表示印刷画面_通常",
+    "ModuleType": 1
+  },
+  {
+    "ModuleName": "PCPage/点検項目マスタ編集",
+    "ModuleType": 1
+  },
+  {
+    "ModuleName": "PCPage/点検依頼・結果",
+    "ModuleType": 1
+  },
+  {
+    "ModuleName": "PCPage/機器選択ポップアップ",
+    "ModuleType": 1
+  },
+  {
+    "ModuleName": "PCPage/機器詳細ポップアップ",
+    "ModuleType": 1
+  },
+  {
+    "ModuleName": "PCPage/新規申請WF一覧",
+    "ModuleType": 1
+  },
+  {
+    "ModuleName": "PCPage/届出履歴ポップアップ",
+    "ModuleType": 1
+  },
+  {
+    "ModuleName": "PCPage/届出一覧",
+    "ModuleType": 1
+  },
+  {
+    "ModuleName": "PCPage/届出WF承認代理者設定",
+    "ModuleType": 1
+  },
+  {
+    "ModuleName": "PCPage/届出WF一覧",
+    "ModuleType": 1
+  },
+  {
+    "ModuleName": "PCPage/実験内容マスタ編集",
+    "ModuleType": 1
+  },
+  {
+    "ModuleName": "PCPage/コメント入力ポップアップ",
+    "ModuleType": 1
+  },
+  {
+    "ModuleName": "PCPage/重複チェックコンテナ",
+    "ModuleType": 1
+  },
+  {
+    "ModuleName": "PCPage/重複確認画面",
+    "ModuleType": 1
+  },
+  {
+    "ModuleName": "Pages/機器登録用_bk",
+    "ModuleType": 6
+  },
+  {
+    "ModuleName": "PCPage/マスタ編集ポップアップ",
+    "ModuleType": 1
+  },
+  {
+    "ModuleName": "PCPage/代理者選択ポップアップ",
+    "ModuleType": 1
+  },
+  {
+    "ModuleName": "PCPage/対象機器_参照用コンテナ",
+    "ModuleType": 1
+  },
+  {
+    "ModuleName": "PCPage/対象機器_登録用コンテナ",
+    "ModuleType": 1
+  },
+  {
+    "ModuleName": "PCPage/機器選択ポップアップ (2)",
+    "ModuleType": 1
+  },
+  {
+    "ModuleName": "PCPage/機器選択ポップアップ_bk",
+    "ModuleType": 1
+  },
+  {
+    "ModuleName": "PCPage/システム設定値",
+    "ModuleType": 1
+  },
+  {
+    "ModuleName": "Pages/モバイル",
+    "ModuleType": 6
+  },
+  {
+    "ModuleName": "MobilePage/終夜運転届出_モバイル",
+    "ModuleType": 2
+  },
+  {
+    "ModuleName": "MobilePage/終夜運転機器申請_モバイル",
+    "ModuleType": 2
+  },
+  {
+    "ModuleName": "MobilePage/届出WF_一覧_モバイル",
+    "ModuleType": 2
+  },
+  {
+    "ModuleName": "MobilePage/届出履歴ポップアップ_モバイル",
+    "ModuleType": 2
+  },
+  {
+    "ModuleName": "MobilePage/新規申請WF_一覧_モバイル",
+    "ModuleType": 2
+  },
+  {
+    "ModuleName": "MasterPCPage/FGC_ユーザーマスターページ",
+    "ModuleType": 3
+  },
+  {
+    "ModuleName": "MasterPCPage/終夜運転マスタページ",
+    "ModuleType": 3
+  },
+  {
+    "ModuleName": "PageReport/レポート1",
+    "ModuleType": 17
+  },
+  {
+    "ModuleName": "ApplicationSetting",
+    "ModuleType": 8
+  },
+  {
+    "ModuleName": "Theme",
+    "ModuleType": 9
+  },
+  {
+    "ModuleName": "ImageSelector",
+    "ModuleType": 10
+  },
+  {
+    "ModuleName": "UserService",
+    "ModuleType": 11
+  },
+  {
+    "ModuleName": "CustomLibrary",
+    "ModuleType": 12
+  },
+  {
+    "ModuleName": "ShareCommand",
+    "ModuleType": 13
+  },
+  {
+    "ModuleName": "MapJsonFile",
+    "ModuleType": 14
+  },
+  {
+    "ModuleName": "DataContectionSet",
+    "ModuleType": 25
+  },
+  {
+    "ModuleName": "Upload",
+    "ModuleType": 26
+  }
+]
