@@ -257,7 +257,16 @@
   },
   {
     "ModuleName": "PCPage/終夜運転機器一覧",
-    "ModuleType": 1
+    "State": 1,
+    "LockedBy": {
+      "UserName": "ZEON村上",
+      "Email": "S3.murakami@zeon.co.jp"
+    },
+    "LockDateTime": "2025-06-06T12:17:32.3863206+09:00",
+    "ModuleType": 1,
+    "ToRemoveFiles": [
+      "Pages\\終夜運転機器一覧.json"
+    ]
   },
   {
     "ModuleName": "PCPage/終夜運転届出",
