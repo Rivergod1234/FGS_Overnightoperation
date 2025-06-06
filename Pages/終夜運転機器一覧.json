@@ -124,7 +124,8 @@
       }
     },
     "InLogicalVisibleIndexes": [
-      62
+      62,
+      63
     ],
     "Count": 65
   },
@@ -161,7 +162,7 @@
             "$type": "Forguncy.Model.Commands.SetParameterCommand, ServerDesignerCommon",
             "ParameterName": "delete_flg",
             "ParameterValue": "1",
-            "ID": "eeda5328ced2483aa7365b3a88078f12"
+            "ID": "09b78adcb7a74ccfa889988489ef2519"
           },
           {
             "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
@@ -183,10 +184,10 @@
                   {
                     "$type": "Forguncy.Model.Commands.SetParameterCommand, ServerDesignerCommon",
                     "ParameterName": "delete_flg",
-                    "ID": "df6af17be6064c61a8c0a069c2406a9e"
+                    "ID": "9f0c591373654922bf3c6992a29f9543"
                   }
                 ],
-                "ID": "9d731442-dc00-4478-8866-93ea75fbfa0b"
+                "ID": "a07a538c-a020-4fb3-a1cf-485d32fc6bd0"
               }
             ]
           },
@@ -281,7 +282,7 @@
               "=Z6",
               "=AL6"
             ],
-            "ID": "3f6027d52a2d4bc0850615b0803abaa9"
+            "ID": "bfa348c25f4c450b964fddea4e736319"
           }
         ],
         "Text": "検索用SQLクエリ",
@@ -773,16 +774,32 @@
             "ConditionAndCommandPairList": [
               {
                 "Condition": {
-                  "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
-                  "param": {
-                    "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
-                    "cellLocations": [
-                      {
-                        "SerializeProperty": "=終夜運転機器一覧!BK12"
-                      }
-                    ]
+                  "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+                  "Condition1": {
+                    "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                    "param": {
+                      "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
+                      "cellLocations": [
+                        {
+                          "SerializeProperty": "=終夜運転機器一覧!BK12"
+                        }
+                      ]
+                    },
+                    "value": "許可"
                   },
-                  "value": "許可"
+                  "Condition2": {
+                    "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                    "param": {
+                      "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
+                      "cellLocations": [
+                        {
+                          "SerializeProperty": "=終夜運転機器一覧!BL12"
+                        }
+                      ]
+                    },
+                    "value": "1",
+                    "compareType": 1
+                  }
                 },
                 "CommandList": [
                   {
@@ -803,7 +820,7 @@
                     "LoadBindingDataOption": 1
                   }
                 ],
-                "ID": "89488c89-0658-4436-9b71-41540d54e8c2"
+                "ID": "3d303539-8530-4ebb-a8da-df5329595696"
               }
             ]
           }
@@ -838,16 +855,32 @@
             "ConditionAndCommandPairList": [
               {
                 "Condition": {
-                  "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
-                  "param": {
-                    "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
-                    "cellLocations": [
-                      {
-                        "SerializeProperty": "=終夜運転機器一覧!BK12"
-                      }
-                    ]
+                  "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+                  "Condition1": {
+                    "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                    "param": {
+                      "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
+                      "cellLocations": [
+                        {
+                          "SerializeProperty": "=終夜運転機器一覧!BK12"
+                        }
+                      ]
+                    },
+                    "value": "許可"
                   },
-                  "value": "許可"
+                  "Condition2": {
+                    "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                    "param": {
+                      "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
+                      "cellLocations": [
+                        {
+                          "SerializeProperty": "=終夜運転機器一覧!BL12"
+                        }
+                      ]
+                    },
+                    "value": "1",
+                    "compareType": 1
+                  }
                 },
                 "CommandList": [
                   {
@@ -874,7 +907,7 @@
                     "LoadBindingDataOption": 1
                   }
                 ],
-                "ID": "a27fb578-4bcd-4108-928e-bbe0afd3a182"
+                "ID": "a9aa3488-97c1-4f9c-8988-02c2dea63119"
               }
             ]
           }
@@ -962,6 +995,12 @@
       "BindingInfo": {
         "TableName": "T_OvernightRegistration",
         "ColumnName": "FGC_State"
+      }
+    },
+    "11,63": {
+      "BindingInfo": {
+        "TableName": "T_OvernightRegistration",
+        "ColumnName": "delete_flg"
       }
     }
   },
@@ -1417,7 +1456,8 @@
     "11,34,1,9",
     "11,43,1,19",
     "12,1,12,63",
-    "11,24,1,10"
+    "11,24,1,10",
+    "9,63,2,1"
   ],
   "PageInfo": {
     "$type": "Forguncy.Model.Pages.NormalPage, ServerDesignerCommon",
@@ -1446,4 +1486,4 @@
     "Margin": {},
     "PaperSize": {}
   }
-}//S/fMhw8l6xSyEQDsGBQ7EGykKlfH2xChOPJxITewzNOs/UYqkmV5DMgJhRPEBvtkejxsYd+J7+uVwvp+65Bs6zkhEfjVyOi8mjsIJggxTtVoV0V49+VOntRydmicMVqREwoMqXXZUVRJaJeH//8oYdXVg9NpQZutM97Q31y1POYrQRNlWC2MY8WbgwIOwIYaSgd+5Ayc6Hls7SpaMzlsf+gm5UHGbaaIyi2Rorl6XMiuEXqrbAuuvOcgaMM1IOqqpRxZFz2ME8PwS2Yr1y4+EnQ2tpUPdMvBu/alQ6sKkefWTq7AkDZUwYVtejrZrCVJGkK8CssRYKVE8kEArRGl3U5k3W5Cg37NWgsst2sNFVtOGVomqFO8CrbmKfNe5H/dl6it1kdABNoZlhzyvP35bGujrqcQLz/a98Sz/rt4iwrg1hZRPUiWRXkyPOPmCmLLw+rHkl44Lzp2kkWTcmRMlF6Iwq7B85vIvQ+S77we0uQhRmfrsyJK8wsKkgn4SJYCbi999CdSkwuaCGEWiFPBDeuC92cc9OGnzStqreY+qSBxDKrRO83orgJy9RmQVcLKpoe6DnWEzk+4Fz0eWgjN9RJ8j2pd8AfSu7Dv6QEgBHIaBxczS2U9t12YOj8oXrFjcdGpc1R3wLFP1L7AVwCfkkYvAwYdC6CndAYw47lZX0VEjI/a8a8Ks21d1fmU2Ou2apt8suuQIAXqwr+ybe9/ZyKQiU4psOC71mzAuXbANahP1dVk/bOSCuqS8HkuKd7IpTLmXqxdzvGI+C9mLC+Dw1lYMlgOXDV3Ry1NhyuKVaxWQIuaxP+j5wc28fVS+LMJb0+F6QtqAcf0OmSnaw80QlUeD5cU2mxSHdn+9vP6zNYea5gwG4AL2Xsu7GyUT+YrFCNFf73toXn5NpYGv7+/VQ==|920
+}//ANhnlLq614KFuoZ9qYU/UXQItGNym3xcrrlKEwwDp4J3R0aN7yHhVXmXkDWacxycIeqVdqysaliiw7J7YSep4qdk0CJPleZN/fmhKTPJSQ13ucFSVhnbedVssvbfIoX+gbvUzX4lJlBFtmVO2wBoMwn/yAOunvIMIgM7e1Ew2DM6JtmpEFbcpMZzoCbWP2lG9eqOp3sO5rV0JwK4S6QwBS86kG/pfd9N3B5yiWCSQa0mxQaULj3Tn+hhW/z8B5Ix1qlrI99W2dyb8QGaZoWrXwNqxIfIz2Zy3j8dPWuqwvWGUqn0TeMu49lgSzEyS1yPZMbLQ9UEWnPjMsI5W5PPTcrItrd5SkJ4peIbNzb0GoRaNuF0F6CQBWzO5UX8xiP0gIISZRocW/mFbKsIL048CtAfKAYievTXUXim2nqjCpoNcimhal2HTpKKBbs0KCRVmZB6QrbL7qjBXY3Pj4nIFSJucCEhqRi9hNIjna/CpPVquL5ZXPq2NzfIlDVRZXcnfSKWGtVUBNvWuxC9x04onGzRCvZQ14VPLx0B7v0ESSdGdvbJLtjVwW5pZkOJrqqhwf3hCXg33q3UJiahT/f67MpyaN+crQ1SXIkZTV78R5bbkR2K5RPiIm9qfZH8n3ioq3Gc900uKs0NvhS/oXaQkCgIX4FoFm5mfcUS/IdrsFvmolVDTfHJCAOUoSlMUBlAOXL/gMm8d8xTRU5u8fbUNKVICEZy+746ELBG0Jt7+NzFOd4b3GOE+hQGGbAyRwgZ9UK7rpZ0XF5icTN+FWS6hYpUQmcQaWmaGwsqppaQBSABJYZ/jkLWX2tcm+RviS3avraN2UjZOqubgIxmUhcD1tDig4XZpnhD8ciocwaz9dyWu1/vQxFXYnArkhlHvo7bnzn9jSCdXgtdVvr2bfVxSA==|920
