@@ -13,87 +13,276 @@
   },
   {
     "ModuleName": "Table/M_ApprovalAgent",
-    "ModuleType": 7
+    "State": 1,
+    "LockedBy": {
+      "UserName": "ZEON村上",
+      "Email": "S3.murakami@zeon.co.jp"
+    },
+    "LockDateTime": "2025-06-06T12:21:00.2956323+09:00",
+    "ModuleType": 7,
+    "ToRemoveFiles": [
+      "Tables\\FixedAssetDB\\M_ApprovalAgent.json"
+    ]
   },
   {
     "ModuleName": "TableView/V_OvernightNotification_FGC_WHT",
-    "ModuleType": 23
+    "State": 1,
+    "LockedBy": {
+      "UserName": "ZEON村上",
+      "Email": "S3.murakami@zeon.co.jp"
+    },
+    "LockDateTime": "2025-06-06T12:21:00.2956323+09:00",
+    "ModuleType": 23,
+    "ToRemoveFiles": [
+      "Tables\\FixedAssetDB\\V_OvernightNotification_FGC_WHT.json"
+    ]
   },
   {
     "ModuleName": "TableView/V_OvernightGroup_Inspection",
-    "ModuleType": 23
+    "State": 1,
+    "LockedBy": {
+      "UserName": "ZEON村上",
+      "Email": "S3.murakami@zeon.co.jp"
+    },
+    "LockDateTime": "2025-06-06T12:21:00.2956323+09:00",
+    "ModuleType": 23,
+    "ToRemoveFiles": [
+      "Tables\\FixedAssetDB\\V_OvernightGroup_Inspection.json"
+    ]
   },
   {
     "ModuleName": "TableView/V_OvernightGroup",
-    "ModuleType": 23
+    "State": 1,
+    "LockedBy": {
+      "UserName": "ZEON村上",
+      "Email": "S3.murakami@zeon.co.jp"
+    },
+    "LockDateTime": "2025-06-06T12:21:00.2956323+09:00",
+    "ModuleType": 23,
+    "ToRemoveFiles": [
+      "Tables\\FixedAssetDB\\V_OvernightGroup.json"
+    ]
   },
   {
     "ModuleName": "Table/T_WorkFlowHistory",
-    "ModuleType": 7
+    "State": 1,
+    "LockedBy": {
+      "UserName": "ZEON村上",
+      "Email": "S3.murakami@zeon.co.jp"
+    },
+    "LockDateTime": "2025-06-06T12:21:00.2956323+09:00",
+    "ModuleType": 7,
+    "ToRemoveFiles": [
+      "Tables\\FixedAssetDB\\T_WorkFlowHistory.json"
+    ]
   },
   {
     "ModuleName": "Table/T_OvernightRegistration",
-    "ModuleType": 7
+    "State": 1,
+    "LockedBy": {
+      "UserName": "ZEON村上",
+      "Email": "S3.murakami@zeon.co.jp"
+    },
+    "LockDateTime": "2025-06-06T12:21:00.2976128+09:00",
+    "ModuleType": 7,
+    "ToRemoveFiles": [
+      "Tables\\FixedAssetDB\\T_OvernightRegistration.json"
+    ]
   },
   {
     "ModuleName": "Table/T_OvernightNotification",
-    "ModuleType": 7
+    "State": 1,
+    "LockedBy": {
+      "UserName": "ZEON村上",
+      "Email": "S3.murakami@zeon.co.jp"
+    },
+    "LockDateTime": "2025-06-06T12:21:00.2976128+09:00",
+    "ModuleType": 7,
+    "ToRemoveFiles": [
+      "Tables\\FixedAssetDB\\T_OvernightNotification.json"
+    ]
   },
   {
     "ModuleName": "Table/T_OvernightInspectionItem",
-    "ModuleType": 7
+    "State": 1,
+    "LockedBy": {
+      "UserName": "ZEON村上",
+      "Email": "S3.murakami@zeon.co.jp"
+    },
+    "LockDateTime": "2025-06-06T12:21:00.2976128+09:00",
+    "ModuleType": 7,
+    "ToRemoveFiles": [
+      "Tables\\FixedAssetDB\\T_OvernightInspectionItem.json"
+    ]
   },
   {
     "ModuleName": "Table/T_OvernightInspection",
-    "ModuleType": 7
+    "State": 1,
+    "LockedBy": {
+      "UserName": "ZEON村上",
+      "Email": "S3.murakami@zeon.co.jp"
+    },
+    "LockDateTime": "2025-06-06T12:21:00.2976128+09:00",
+    "ModuleType": 7,
+    "ToRemoveFiles": [
+      "Tables\\FixedAssetDB\\T_OvernightInspection.json"
+    ]
   },
   {
     "ModuleName": "TableView/V_OvernightRegistrationHistory",
-    "ModuleType": 23
+    "State": 1,
+    "LockedBy": {
+      "UserName": "ZEON村上",
+      "Email": "S3.murakami@zeon.co.jp"
+    },
+    "LockDateTime": "2025-06-06T12:21:00.2976128+09:00",
+    "ModuleType": 23,
+    "ToRemoveFiles": [
+      "Tables\\FixedAssetDB\\V_OvernightRegistrationHistory.json"
+    ]
   },
   {
     "ModuleName": "Table/T_OvernightGroup",
-    "ModuleType": 7
+    "State": 1,
+    "LockedBy": {
+      "UserName": "ZEON村上",
+      "Email": "S3.murakami@zeon.co.jp"
+    },
+    "LockDateTime": "2025-06-06T12:21:00.2976128+09:00",
+    "ModuleType": 7,
+    "ToRemoveFiles": [
+      "Tables\\FixedAssetDB\\T_OvernightGroup.json"
+    ]
   },
   {
     "ModuleName": "Table/M_SystemSettingItem",
-    "ModuleType": 7
+    "State": 1,
+    "LockedBy": {
+      "UserName": "ZEON村上",
+      "Email": "S3.murakami@zeon.co.jp"
+    },
+    "LockDateTime": "2025-06-06T12:21:00.2976128+09:00",
+    "ModuleType": 7,
+    "ToRemoveFiles": [
+      "Tables\\FixedAssetDB\\M_SystemSettingItem.json"
+    ]
   },
   {
     "ModuleName": "Table/M_SystemAdministrator",
-    "ModuleType": 7
+    "State": 1,
+    "LockedBy": {
+      "UserName": "ZEON村上",
+      "Email": "S3.murakami@zeon.co.jp"
+    },
+    "LockDateTime": "2025-06-06T12:21:00.2976128+09:00",
+    "ModuleType": 7,
+    "ToRemoveFiles": [
+      "Tables\\FixedAssetDB\\M_SystemAdministrator.json"
+    ]
   },
   {
     "ModuleName": "Table/M_Status",
-    "ModuleType": 7
+    "State": 1,
+    "LockedBy": {
+      "UserName": "ZEON村上",
+      "Email": "S3.murakami@zeon.co.jp"
+    },
+    "LockDateTime": "2025-06-06T12:21:00.2976128+09:00",
+    "ModuleType": 7,
+    "ToRemoveFiles": [
+      "Tables\\FixedAssetDB\\M_Status.json"
+    ]
   },
   {
     "ModuleName": "Table/M_ReservationClassification",
-    "ModuleType": 7
+    "State": 1,
+    "LockedBy": {
+      "UserName": "ZEON村上",
+      "Email": "S3.murakami@zeon.co.jp"
+    },
+    "LockDateTime": "2025-06-06T12:21:00.2976128+09:00",
+    "ModuleType": 7,
+    "ToRemoveFiles": [
+      "Tables\\FixedAssetDB\\M_ReservationClassification.json"
+    ]
   },
   {
     "ModuleName": "Table/M_OvernightReason",
-    "ModuleType": 7
+    "State": 1,
+    "LockedBy": {
+      "UserName": "ZEON村上",
+      "Email": "S3.murakami@zeon.co.jp"
+    },
+    "LockDateTime": "2025-06-06T12:21:00.2976128+09:00",
+    "ModuleType": 7,
+    "ToRemoveFiles": [
+      "Tables\\FixedAssetDB\\M_OvernightReason.json"
+    ]
   },
   {
     "ModuleName": "Table/M_OvernightInspectionList",
-    "ModuleType": 7
+    "State": 1,
+    "LockedBy": {
+      "UserName": "ZEON村上",
+      "Email": "S3.murakami@zeon.co.jp"
+    },
+    "LockDateTime": "2025-06-06T12:21:00.2976128+09:00",
+    "ModuleType": 7,
+    "ToRemoveFiles": [
+      "Tables\\FixedAssetDB\\M_OvernightInspectionList.json"
+    ]
   },
   {
     "ModuleName": "Table/M_Operation",
-    "ModuleType": 7
+    "State": 1,
+    "LockedBy": {
+      "UserName": "ZEON村上",
+      "Email": "S3.murakami@zeon.co.jp"
+    },
+    "LockDateTime": "2025-06-06T12:21:00.2976128+09:00",
+    "ModuleType": 7,
+    "ToRemoveFiles": [
+      "Tables\\FixedAssetDB\\M_Operation.json"
+    ]
   },
   {
     "ModuleName": "Table/M_EquipmentClassification",
-    "ModuleType": 7
+    "State": 1,
+    "LockedBy": {
+      "UserName": "ZEON村上",
+      "Email": "S3.murakami@zeon.co.jp"
+    },
+    "LockDateTime": "2025-06-06T12:21:00.2976128+09:00",
+    "ModuleType": 7,
+    "ToRemoveFiles": [
+      "Tables\\FixedAssetDB\\M_EquipmentClassification.json"
+    ]
   },
   {
     "ModuleName": "Table/T_InstrumentBasicInformation",
-    "ModuleType": 7
+    "State": 1,
+    "LockedBy": {
+      "UserName": "ZEON村上",
+      "Email": "S3.murakami@zeon.co.jp"
+    },
+    "LockDateTime": "2025-06-06T12:21:00.2976128+09:00",
+    "ModuleType": 7,
+    "ToRemoveFiles": [
+      "Tables\\FixedAssetDB\\T_InstrumentBasicInformation.json"
+    ]
   },
   {
     "ModuleName": "TableView/V_OvernightRegistration_FGC_WHT",
-    "ModuleType": 23
+    "State": 1,
+    "LockedBy": {
+      "UserName": "ZEON村上",
+      "Email": "S3.murakami@zeon.co.jp"
+    },
+    "LockDateTime": "2025-06-06T12:21:00.2976128+09:00",
+    "ModuleType": 23,
+    "ToRemoveFiles": [
+      "Tables\\FixedAssetDB\\V_OvernightRegistration_FGC_WHT.json"
+    ]
   },
   {
     "ModuleName": "Tables/LOCATION_MST",
@@ -442,7 +631,16 @@
   },
   {
     "ModuleName": "DataContectionSet",
-    "ModuleType": 25
+    "State": 1,
+    "LockedBy": {
+      "UserName": "ZEON村上",
+      "Email": "S3.murakami@zeon.co.jp"
+    },
+    "LockDateTime": "2025-06-06T12:21:00.2916136+09:00",
+    "ModuleType": 25,
+    "ToRemoveFiles": [
+      "DataConnectionSet.json"
+    ]
   },
   {
     "ModuleName": "Upload",
