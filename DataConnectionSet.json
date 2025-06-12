@@ -1,6 +1,6 @@
 [
   {
-    "ConnectionString": "Data Source=NTVMDTEST-006;Initial Catalog=FixedAssetDB_STG;Persist Security Info=True;User ID=murakami;Password=Z001374",
+    "ConnectionString": "Data Source=NTVMDTEST-006;Initial Catalog=FixedAssetDB;Persist Security Info=True;User ID=murakami;Password=Z001374",
     "DataBaseType": 1,
     "ID": "429013f0-38bf-4975-935c-24a97cefe708"
   },
