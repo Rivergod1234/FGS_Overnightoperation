@@ -5,17 +5,17 @@
     "ID": "429013f0-38bf-4975-935c-24a97cefe708"
   },
   {
-    "ConnectionString": "Data Source=rds-commondb-poc-zeon-db-001.cjzyjlprofpu.ap-northeast-1.rds.amazonaws.com;Initial Catalog=LOCATION_MST;Persist Security Info=True;User ID=CreditMgmt;Password=CreditMgmt",
+    "ConnectionString": "Data Source=rds-commondb-poc-zeon-db-001.cjzyjlprofpu.ap-northeast-1.rds.amazonaws.com;Initial Catalog=LOCATION_MST;Persist Security Info=True;User ID=CreditMgmt;Password=6gSg@Ykst",
     "DataBaseType": 1,
     "ID": "c087af1a-410f-4657-88a1-b15bf761eaec"
   },
   {
-    "ConnectionString": "Data Source=rds-commondb-poc-zeon-db-001.cjzyjlprofpu.ap-northeast-1.rds.amazonaws.com;Initial Catalog=L_USER_MST;Persist Security Info=True;User ID=CreditMgmt;Password=CreditMgmt",
+    "ConnectionString": "Data Source=rds-commondb-poc-zeon-db-001.cjzyjlprofpu.ap-northeast-1.rds.amazonaws.com;Initial Catalog=L_USER_MST;Persist Security Info=True;User ID=CreditMgmt;Password=6gSg@Ykst",
     "DataBaseType": 1,
     "ID": "cdd6042d-1102-4a37-a8c3-835e2e82b6d7"
   },
   {
-    "ConnectionString": "Data Source=rds-commondb-poc-zeon-db-001.cjzyjlprofpu.ap-northeast-1.rds.amazonaws.com;Initial Catalog=EMP_MST;Persist Security Info=True;User ID=CreditMgmt;Password=CreditMgmt",
+    "ConnectionString": "Data Source=rds-commondb-poc-zeon-db-001.cjzyjlprofpu.ap-northeast-1.rds.amazonaws.com;Initial Catalog=EMP_MST;Persist Security Info=True;User ID=CreditMgmt;Password=6gSg@Ykst",
     "DataBaseType": 1,
     "ID": "3b431767-faa7-4257-b405-c04f25a28b63"
   }
