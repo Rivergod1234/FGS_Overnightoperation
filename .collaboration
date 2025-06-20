@@ -5,7 +5,16 @@
   },
   {
     "ModuleName": "Table/NAC_Acc_Account",
-    "ModuleType": 7
+    "State": 1,
+    "LockedBy": {
+      "UserName": "ZEON川神",
+      "Email": "makoto.kawakami@zeon.co.jp"
+    },
+    "LockDateTime": "2025-06-20T19:44:07.9353174+09:00",
+    "ModuleType": 7,
+    "ToRemoveFiles": [
+      "Tables\\EMP_MST\\NAC_Acc_Account.json"
+    ]
   },
   {
     "ModuleName": "Tables/FixedAssetDB",
@@ -546,7 +555,7 @@
       "UserName": "ZEON川神",
       "Email": "makoto.kawakami@zeon.co.jp"
     },
-    "LockDateTime": "2025-06-20T19:43:59.8256523+09:00",
+    "LockDateTime": "2025-06-20T19:44:07.9353174+09:00",
     "ModuleType": 25,
     "ToRemoveFiles": [
       "DataConnectionSet.json"
