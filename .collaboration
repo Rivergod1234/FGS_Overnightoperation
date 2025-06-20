@@ -101,39 +101,120 @@
   },
   {
     "ModuleName": "Table/M01_First_Classification",
-    "ModuleType": 7
+    "State": 1,
+    "LockedBy": {
+      "UserName": "ZEON川神",
+      "Email": "makoto.kawakami@zeon.co.jp"
+    },
+    "LockDateTime": "2025-06-20T19:43:46.6960963+09:00",
+    "ModuleType": 7,
+    "ToRemoveFiles": [
+      "Tables\\LOCATION_MST\\M01_First_Classification.json"
+    ]
   },
   {
     "ModuleName": "Table/M02_Second_Classification",
-    "ModuleType": 7
+    "State": 1,
+    "LockedBy": {
+      "UserName": "ZEON川神",
+      "Email": "makoto.kawakami@zeon.co.jp"
+    },
+    "LockDateTime": "2025-06-20T19:43:46.6960963+09:00",
+    "ModuleType": 7,
+    "ToRemoveFiles": [
+      "Tables\\LOCATION_MST\\M02_Second_Classification.json"
+    ]
   },
   {
     "ModuleName": "Table/M03_Third_Classification",
-    "ModuleType": 7
+    "State": 1,
+    "LockedBy": {
+      "UserName": "ZEON川神",
+      "Email": "makoto.kawakami@zeon.co.jp"
+    },
+    "LockDateTime": "2025-06-20T19:43:46.6960963+09:00",
+    "ModuleType": 7,
+    "ToRemoveFiles": [
+      "Tables\\LOCATION_MST\\M03_Third_Classification.json"
+    ]
   },
   {
     "ModuleName": "Table/M_BasicRoomInformation",
-    "ModuleType": 7
+    "State": 1,
+    "LockedBy": {
+      "UserName": "ZEON川神",
+      "Email": "makoto.kawakami@zeon.co.jp"
+    },
+    "LockDateTime": "2025-06-20T19:43:46.6960963+09:00",
+    "ModuleType": 7,
+    "ToRemoveFiles": [
+      "Tables\\LOCATION_MST\\M_BasicRoomInformation.json"
+    ]
   },
   {
     "ModuleName": "Table/M_FireManagement",
-    "ModuleType": 7
+    "State": 1,
+    "LockedBy": {
+      "UserName": "ZEON川神",
+      "Email": "makoto.kawakami@zeon.co.jp"
+    },
+    "LockDateTime": "2025-06-20T19:43:46.6960963+09:00",
+    "ModuleType": 7,
+    "ToRemoveFiles": [
+      "Tables\\LOCATION_MST\\M_FireManagement.json"
+    ]
   },
   {
     "ModuleName": "Table/M_RoomGroup",
-    "ModuleType": 7
+    "State": 1,
+    "LockedBy": {
+      "UserName": "ZEON川神",
+      "Email": "makoto.kawakami@zeon.co.jp"
+    },
+    "LockDateTime": "2025-06-20T19:43:46.6960963+09:00",
+    "ModuleType": 7,
+    "ToRemoveFiles": [
+      "Tables\\LOCATION_MST\\M_RoomGroup.json"
+    ]
   },
   {
     "ModuleName": "Table/M_Utility",
-    "ModuleType": 7
+    "State": 1,
+    "LockedBy": {
+      "UserName": "ZEON川神",
+      "Email": "makoto.kawakami@zeon.co.jp"
+    },
+    "LockDateTime": "2025-06-20T19:43:46.6960963+09:00",
+    "ModuleType": 7,
+    "ToRemoveFiles": [
+      "Tables\\LOCATION_MST\\M_Utility.json"
+    ]
   },
   {
     "ModuleName": "TableView/V_BasicRoomInformation",
-    "ModuleType": 23
+    "State": 1,
+    "LockedBy": {
+      "UserName": "ZEON川神",
+      "Email": "makoto.kawakami@zeon.co.jp"
+    },
+    "LockDateTime": "2025-06-20T19:43:46.6960963+09:00",
+    "ModuleType": 23,
+    "ToRemoveFiles": [
+      "Tables\\LOCATION_MST\\V_BasicRoomInformation.json"
+    ]
   },
   {
     "ModuleName": "TableView/V_LOCATION_ForAsset",
-    "ModuleType": 23
+    "State": 1,
+    "LockedBy": {
+      "UserName": "ZEON川神",
+      "Email": "makoto.kawakami@zeon.co.jp"
+    },
+    "LockDateTime": "2025-06-20T19:43:46.6960963+09:00",
+    "ModuleType": 23,
+    "ToRemoveFiles": [
+      "Tables\\LOCATION_MST\\V_LOCATION_ForAsset.json"
+    ]
   },
   {
     "ModuleName": "Tables/L_USER_MST",
@@ -433,7 +514,16 @@
   },
   {
     "ModuleName": "DataContectionSet",
-    "ModuleType": 25
+    "State": 1,
+    "LockedBy": {
+      "UserName": "ZEON川神",
+      "Email": "makoto.kawakami@zeon.co.jp"
+    },
+    "LockDateTime": "2025-06-20T19:43:46.6960963+09:00",
+    "ModuleType": 25,
+    "ToRemoveFiles": [
+      "DataConnectionSet.json"
+    ]
   },
   {
     "ModuleName": "Upload",
